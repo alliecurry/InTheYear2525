@@ -1,3 +1,6 @@
+import java.util.Collections;
+import java.util.Comparator;
+
 import processing.core.*;
 import controlP5.*;
 
@@ -25,6 +28,7 @@ public class main_class extends PApplet {
 		PApplet.main(new String[] { "--present", "main_class" });
 	}
 	
+	@SuppressWarnings("unchecked")
 	public void setup() {
 		
 		size(1024,768);
@@ -34,19 +38,29 @@ public class main_class extends PApplet {
 		
 		//Parse all available transcripts.
 		pars.parseAllTranscripts();
-		pars.filterCharacters();
+		pars.filterCharacters();	//Remove characters in less than 1 episode
 		
-		///*
+		//Sort ALL_CHARACTERS where characters in more episodes are listed first.
+		Collections.sort(Parser.ALL_CHARACTERS, new Comparator(){
+            public int compare(Object ob1, Object ob2) {
+                Character c1 = (Character) ob1;
+                Character c2 = (Character) ob2;
+               return c2.getTotalEpisodes() - c1.getTotalEpisodes();
+            }
+ 
+        });
+		
+		
 		  //Prints all characters currently added. 
 		  //For testing only.
 		 
-		for(int x=0; x<pars.ALL_CHARACTERS.size(); ++x) {
-			String name = pars.ALL_CHARACTERS.get(x).getName();
-			int ep = pars.ALL_CHARACTERS.get(x).getTotalEpisodes();
+		for(int x=0; x<Parser.ALL_CHARACTERS.size(); ++x) {
+			String name = Parser.ALL_CHARACTERS.get(x).getName();
+			int ep = Parser.ALL_CHARACTERS.get(x).getTotalEpisodes();
 			
 			System.out.println(name + ":\t" + ep + " episodes.");
 		}	
-		//*/
+		
 			
 
 		setupLayerOneGUI();

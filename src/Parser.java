@@ -34,8 +34,9 @@ public class Parser {
 	
 	//Character names to ignore
     String[] backgroundChars = { "man", "men", "woman", "women", "boy", "girl", "crowd", 
-    								"people", "person", "aliens", "tenant", "announcer", 
-    								"gopher", "narrator", "robot #2", "robot #3"  };
+    								"people", "person", "alien", "aliens", "tenant", "announcer", 
+    								"gopher", "narrator", "robot #2", "robot #3", "waiter",
+    								"robot", "teacher", "judge" };
 
 
 	public Parser(PApplet parent) {
@@ -193,6 +194,8 @@ public class Parser {
     		}   		
     	}	
     }
+    
+    
     
 
 }
