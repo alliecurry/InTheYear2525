@@ -23,6 +23,9 @@ public class Parser {
         public static ArrayList<Episode> LIST_S4 = new ArrayList<Episode>();
         public static ArrayList<Episode> LIST_S5 = new ArrayList<Episode>();
         public static ArrayList<Episode> LIST_S6 = new ArrayList<Episode>(); 
+        
+        //1 Arraylist that contains all the season
+        public static ArrayList<Episode> LIST_ALL = new ArrayList<Episode>(); 
        
         int episode;    //Current episode number
         int season;             //Current season number
@@ -79,6 +82,14 @@ public class Parser {
                 parseFile("data/transcripts/S2E2.txt");
                 parseFile("data/transcripts/S2E3.txt");
                 parseFile("data/transcripts/S2E4.txt");
+                
+                //Aggregate all seasons
+                LIST_ALL.addAll(LIST_S1);
+                LIST_ALL.addAll(LIST_S2);
+                LIST_ALL.addAll(LIST_S3);
+                LIST_ALL.addAll(LIST_S4);
+                LIST_ALL.addAll(LIST_S5);
+                LIST_ALL.addAll(LIST_S6);
         }
        
         //Add episode to appropriate ArrayList

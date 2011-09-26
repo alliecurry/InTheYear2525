@@ -1,3 +1,4 @@
+import java.util.ArrayList;
 import java.util.Collections;
 import java.util.Comparator;
 import processing.core.*;
@@ -132,11 +133,13 @@ public class main_class extends PApplet{
 		// Draw all the series button
 		// Need to be dynamic, with length equals to the episodes number of the selected season, instead of 20
 		// Also the name must be taken dynamically
-		for(int i =1; i <= 20; i++) {
+		ArrayList<Episode> selectedSeason = Parser.LIST_ALL;
+		for(int i =0; i < selectedSeason.size(); i++) {
 			Button b = new Button();
-			b.setLabel("Episode "+i);
+			//b.setLabel("Episode "+i);
+			b.setLabel((i+1)+": "+selectedSeason.get(i).getName());
 			//b.backColor = GLOBAL.colorToggleOff;
-			b.draw();	
+			//b.draw();	
 			GLOBAL.allEpisodesButtons.add(b);
 			
 		}
@@ -154,7 +157,7 @@ public class main_class extends PApplet{
 		i = map(scroll.val,0, 1,0,GLOBAL.allEpisodesButtons.size()-5);
 		// Draw all the series button
 		for(int j = (int)i; j <= i + 5; j++) {
-			GLOBAL.allEpisodesButtons.get(j).x = 700;
+			GLOBAL.allEpisodesButtons.get(j).x = 300;
 			GLOBAL.allEpisodesButtons.get(j).y = 500 + elementNumber*40;
 			GLOBAL.allEpisodesButtons.get(j).draw();
 			elementNumber++;
@@ -188,9 +191,9 @@ public class main_class extends PApplet{
 					  GLOBAL.allEpisodesButtons.get(i).doAction();
 				  }
 			  }
+			  if(scroll.mouseOver())
+				  scroll.mousePressed();
 		  }
-		  if(scroll.mouseOver())
-			  scroll.mousePressed();
 	}
 	
 	public void mouseReleased() {
