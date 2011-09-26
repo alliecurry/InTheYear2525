@@ -3,6 +3,8 @@ import controlP5.*;
 
 public class main_class extends PApplet {
 	
+	public Parser pars = new Parser(this);
+	
 	public ControlP5 controlP5;
 	public RadioButton layerOneSeriesChooser;
 	public RadioButton layerOneEpisodesChooser;	
@@ -30,8 +32,23 @@ public class main_class extends PApplet {
 		controlP5  = new ControlP5(this);
 		tFont = loadFont("LucidaSans-48.vlw");
 		
-		// Load and initialize the data structures here..
+		//Parse all available transcripts.
+		pars.parseAllTranscripts();
+		pars.filterCharacters();
 		
+		///*
+		  //Prints all characters currently added. 
+		  //For testing only.
+		 
+		for(int x=0; x<pars.ALL_CHARACTERS.size(); ++x) {
+			String name = pars.ALL_CHARACTERS.get(x).getName();
+			int ep = pars.ALL_CHARACTERS.get(x).getTotalEpisodes();
+			
+			System.out.println(name + ":\t" + ep + " episodes.");
+		}	
+		//*/
+			
+
 		setupLayerOneGUI();
 		
 		smooth();
