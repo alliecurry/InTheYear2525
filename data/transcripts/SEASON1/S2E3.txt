@@ -1,4 +1,4 @@
-2	3	When Aliens Attack
+1	12	When Aliens Attack	2	3	19991107	12
 Fry	Pizza delivery! Wow, so this is a real TV station, huh?
 Technician	Well, it's a Fox affiliate.
 Fry	What are you showing right now?

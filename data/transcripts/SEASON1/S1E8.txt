@@ -1,4 +1,4 @@
-1	8	A Big Piece of Garbage
+1	8	A Big Piece of Garbage	1	8	19990511	8
 Farnsworth	Good news, everyone. Tomorrow you'll be making a delivery to Ebola 9, the virus planet.
 Hermes	Why can't they go today?
 Farnsworth	Because tonight's a special night and I want all of you to be alive. It's the Academy of Inventors' annual symposium.

@@ -1,4 +1,4 @@
-1	9	Hell Is Other Robots
+1	9	Hell Is Other Robots	1	9	19990518	9
 Fry	This is awesome! I've been waiting a thousand years to see a Beastie Boys show.
 Bender	Can I get anybody a beer?
 Fry	Sure!

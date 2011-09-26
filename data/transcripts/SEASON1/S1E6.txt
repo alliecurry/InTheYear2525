@@ -1,4 +1,4 @@
-1	6	A Fishful of Dollars
+1	6	A Fishful of Dollars	1	6	19990427	6
 Fry	I can't take it anymore! They've been at it for hours!   Give it a rest, you two!
 Robot	Sorry!
 Teacher	Good morning, class. I trust you've all prepared for today's final exam.

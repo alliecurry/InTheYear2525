@@ -1,4 +1,4 @@
-1	1	Space Plilot 3000
+1	1	Space Plilot 3000	1	1	19990328	1
 Fry	Space. It seems to go on and on forever. But then you get to the end and the gorilla starts throwing barrels at you.
 Fry	And that's how you play the game!
 Boy	You stink, loser!

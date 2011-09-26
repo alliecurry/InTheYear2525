@@ -1,4 +1,4 @@
-1	4	Lov's Labours Lost in Space
+1	4	Lov's Labours Lost in Space	1	4	19990413	4
 Leela	This place was a great choice. The food is amazing. And such generous portions.
 Doug	You like the meal just wait until you try these after-dinner mints.
 Leela	You know, Doug, most guys are put off by my eye. It's nice to finally meet someone who's open-minded.  Ew!

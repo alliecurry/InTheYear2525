@@ -1,4 +1,4 @@
-1	5	Fear of a Bot Planet
+1	5	Fear of a Bot Planet	1	5	19990420	5
 Leela	What do you think of the view Fry?
 Fry	It really puts things in perspective. I mean, from up here an entire world can seem utterly insignificant.
 Bender	Hey nice seats! We're close enough so when you knock a player down with a beer bottle, he stays down!

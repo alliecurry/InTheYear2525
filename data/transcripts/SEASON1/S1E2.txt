@@ -1,4 +1,4 @@
-1	2	The Series Has Landed
+1	2	The Series Has Landed	1	2	19990404	2
 Farnsworth	As new employees, I'd like your opinion on our commercial. I paid to have it air during the Super Bowl.
 Fry	Wow!
 Farnsworth	Not on the same channel, of course.

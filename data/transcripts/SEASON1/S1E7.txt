@@ -1,4 +1,4 @@
-1	7	My Three Suns
+1	7	My Three Suns	1	7	19990504	7
 Bender	Going through the 'bot wash!
 Bender	Goin' through the robot wash!
 Bender	Ah!
