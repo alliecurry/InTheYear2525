@@ -42,6 +42,7 @@ public class GLOBAL {
 	public static ArrayList<Button> allSeasonsButtons = new ArrayList<Button>();
 	// All buttons of the first layer
 	public static ArrayList<Button> allEpisodesButtons = new ArrayList<Button>();
+	public static ArrayList<Episode> selectedEpisodesList = new ArrayList<Episode>();
 		
 	public GLOBAL(PApplet p) {
 		processing = p;

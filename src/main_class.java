@@ -19,8 +19,8 @@ public class main_class extends PApplet{
 		frameRate(15);
 		
 		GLOBAL.gu = new GradientUtils();
-		
 		GLOBAL.tFont = loadFont("LucidaSans-48.vlw");
+		GLOBAL.selectedEpisodesList = Parser.LIST_ALL; // Initialize the displayed list to "all episodes"
 
 		//Parse all available transcripts.
 		pars.parseAllTranscripts();
@@ -131,15 +131,10 @@ public class main_class extends PApplet{
 		scroll.width = 15;
 		scroll.height = 200;	
 		// Draw all the series button
-		// Need to be dynamic, with length equals to the episodes number of the selected season, instead of 20
-		// Also the name must be taken dynamically
-		ArrayList<Episode> selectedSeason = Parser.LIST_ALL;
-		for(int i =0; i < selectedSeason.size(); i++) {
+		for(int i =0; i < GLOBAL.selectedEpisodesList.size(); i++) {
 			Button b = new Button();
-			//b.setLabel("Episode "+i);
-			b.setLabel((i+1)+": "+selectedSeason.get(i).getName());
+			b.setLabel("S"+GLOBAL.selectedEpisodesList.get(i).getSeason()+"E"+GLOBAL.selectedEpisodesList.get(i).getEpisode()+": "+ GLOBAL.selectedEpisodesList.get(i).getName());
 			//b.backColor = GLOBAL.colorToggleOff;
-			//b.draw();	
 			GLOBAL.allEpisodesButtons.add(b);
 			
 		}

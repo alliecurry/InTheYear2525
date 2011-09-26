@@ -142,7 +142,7 @@ public class Parser {
                 season = Integer.parseInt(splitLine[0]);        //Store season #
                 episode = Integer.parseInt(splitLine[1]);       //Store episode #
                
-                ep = new Episode(season, episode, splitLine[2]);
+                ep = new Episode(episode, season, splitLine[2]);
                 hashKey = "S" + season + "E" + episode;         //Store current hash map key prefix
         }
        
