@@ -44,7 +44,11 @@ public class GLOBAL {
 	public static ArrayList<Button> allEpisodesButtons = new ArrayList<Button>();
 	// All filter buttons of the first layer
 	public static ArrayList<FilterButton> allFilterButtons = new ArrayList<FilterButton>();
+	
+	// Selected list of episodes based on the filter selection
 	public static ArrayList<Episode> selectedEpisodesList = new ArrayList<Episode>();
+	
+	public static ArrayList<CharacterButton> allCharacterButtons = new ArrayList<CharacterButton>();
 		
 	public GLOBAL(PApplet p) {
 		processing = p;

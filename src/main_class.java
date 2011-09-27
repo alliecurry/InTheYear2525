@@ -47,6 +47,7 @@ public class main_class extends PApplet{
 			System.out.println(name + ":\t" + ep + " episodes.");
 		}       
 		
+		setupCharacterButtons();
 		setupSeasonsButtons();
 		setupFilterButtons();
 		setupEpisodeButtons();
@@ -64,6 +65,7 @@ public class main_class extends PApplet{
 			drawLayerOneBackground();
 			drawLayerOneText();
 			
+			drawCharacterButtons();
 			drawSeasonsButtons();
 			drawFilterButtons();
 			drawEpisodeButtons();
@@ -168,8 +170,9 @@ public class main_class extends PApplet{
 		scroll.width = 15;
 		scroll.height = 250;	
 		// Draw all the series button
-		scroll.size = (float)1 / GLOBAL.selectedEpisodesList.size();
-
+		scroll.size = (float)4 / GLOBAL.selectedEpisodesList.size();
+		if (scroll.size > 1)
+			scroll.size = 1;
 	}
 	
 	public void drawEpisodeButtons(){
@@ -180,7 +183,9 @@ public class main_class extends PApplet{
 		
 		// Draw the scrollBar
 		if (GLOBAL.selectedEpisodesList.size() != 0)
-			scroll.size = (float)1 / GLOBAL.selectedEpisodesList.size();
+			scroll.size = (float)4 / GLOBAL.selectedEpisodesList.size();
+		if (scroll.size > 1)
+			scroll.size = 1;
 		scroll.draw();
 		
 		// First, create and deactivate all buttons	
@@ -257,6 +262,37 @@ public class main_class extends PApplet{
 		}
 	}
 	
+	public void setupCharacterButtons() {
+		int offsetX = 0, offsetY= 0;
+		// TODO make all buttons after having all the occurrences. for all in ALL_CHARACTER, create a button with getName and getOccurrences
+		for(int i = 0; i < Parser.ALL_CHARACTERS.size(); i++) {	
+			// TODO eliminate this if when all the character images will be available
+			if(Parser.ALL_CHARACTERS.get(i).getTotalEpisodes() > 4) {
+				CharacterButton cb = new CharacterButton(Parser.ALL_CHARACTERS.get(i).getName(), Parser.ALL_CHARACTERS.get(i).getTotalEpisodes());
+				cb.x = 40 + offsetX;
+				cb.y = 150 + offsetY;
+				cb.active = true;
+				
+				if (offsetX == 200) {
+					offsetX = 0;
+					offsetY += 100;
+				}
+				else
+					offsetX += 100;
+				
+				//cb.setLabel(Parser.ALL_CHARACTERS.get(i).getName());
+				GLOBAL.allCharacterButtons.add(cb);
+			}
+		}
+	}
+	
+	public void drawCharacterButtons() {
+		for(int i = 0; i < GLOBAL.allCharacterButtons.size(); i++) {	
+			GLOBAL.allCharacterButtons.get(i).draw();
+		}
+	}
+	
+	
 	///
 	/// End Layer One functions
 	///
@@ -289,6 +325,12 @@ public class main_class extends PApplet{
 					  GLOBAL.allFilterButtons.get(i).doAction();
 				  }
 			  }
+			  for(int i = 0; i < GLOBAL.allCharacterButtons.size(); i++) {
+				  if( GLOBAL.allCharacterButtons.get(i).mouseOver() && GLOBAL.allCharacterButtons.get(i).active) {
+					  GLOBAL.allCharacterButtons.get(i).doAction();
+				  }
+			  }
+
 			  if(scroll.mouseOver())
 				  scroll.mousePressed();
 		  }

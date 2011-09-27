@@ -28,8 +28,6 @@ class Button extends Widget
   ////////////////////////////////////////////////////////////////////////////////////////////////////
   public void draw()
   {
-	GLOBAL.processing.textFont(GLOBAL.tFont, 19);
-    width = (int)(GLOBAL.processing.textWidth(label)) + 10;
     
     int cx = x;
     int cy = y;
@@ -39,6 +37,8 @@ class Button extends Widget
     }
     if(label != null)
     {
+    	GLOBAL.processing.textFont(GLOBAL.tFont, 19);
+        width = (int)(GLOBAL.processing.textWidth(label)) + 10;
     	GLOBAL.processing.textAlign(GLOBAL.processing.LEFT);
       
       if(mouseOver()) 
