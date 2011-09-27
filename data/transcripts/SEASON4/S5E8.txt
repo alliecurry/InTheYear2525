@@ -1,4 +1,4 @@
-5	8	The Why of Fry
+4	10	The Why of Fry	5	8	20030406	64
 Fry	Delivery boy Philip J. Fry, reporting for duty.
 Zoidberg	Dr. Zoidberg, soaking in brine.
 Fry	What is the meaning of this? We've got a delivery, people. Let's move! Let's move!  Amy? Mission profile?  Interesting, interesting. Dr. Zoidberg, mission bag?

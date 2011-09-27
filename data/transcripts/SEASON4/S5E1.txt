@@ -1,4 +1,4 @@
-5	1	Crimes of the Hot
+4	8	Crimes of the Hot	5	1	20021110	62
 Zoidberg	Hurry up with the water. I'm steaming inside my own shell, I am. It's that hot, it is!
 Leela	Hi-yah!
 Fry	Man, it's hot!  How hot is it?  It's so hot, I poured McDonald's coffee in my lap to cool off.  Johnny Carson said it.

@@ -1,4 +1,4 @@
-5	9	The Sting
+4	12	The Sting	5	9	20030601	66
 Bender	A hush comes over the crowd. The only sound is Bender calling everyone else a jerk as he swings!  Oh, he slices! Into the water! Oh, man!   Boy, I tell you, buddy!
 Farnsworth	Bad news, everyone. You're not good enough to go on your next mission.
 Fry	Hooray!

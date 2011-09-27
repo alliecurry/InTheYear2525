@@ -1,4 +1,4 @@
-5	13	Bend Her
+4	13	Bend Her	5	13	20030720	67
 TV Commentator	Welcome to the games of the 3004 Earth Olympiad. Continuing this network's tradition of sports-casting excellence.  Celebrity Ape Fight will return next week at its regular time.
 Fry	So who should I root for? America or one of those countries I learned about at the food court?
 Amy	How 'bout those guys?

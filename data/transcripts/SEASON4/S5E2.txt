@@ -1,4 +1,4 @@
-5	2	Jurassic Bark
+4	7	Jurassic Bark	5	2	20021117	61
 Bender	For my next trick, notice I have nothing up my sleeves ...  ... and nothing in my head.  So if my lovely assistant will kindly supply me with an ordinary, non-fake pitcher of milk...  Behold, the milk has vanished! Exiled, perhaps, to another dimension!
 Fry	Amazing! That's why they call you "Bender the Magnificent"!
 Bender	No, it isn't.

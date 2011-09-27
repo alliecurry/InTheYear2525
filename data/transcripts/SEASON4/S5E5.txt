@@ -1,4 +1,4 @@
-5	5	Kif Gets Knocked Up a Notch
+4	1	Kif Gets Knocked Up a Notch	5	5	20030112	55
 Amy	Shman! The Great Rad Spot is mega-sweet for party-boarding.
 Farnsworth	Indeed.
 Amy	Any calls while I was out?

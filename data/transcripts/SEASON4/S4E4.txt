@@ -1,4 +1,4 @@
-4	4	Love and Rocket
+4	3	Love and Rocket	4	4	20020210	57
 Bender	You are one narrow minded spaceship, Planet Express Ship.
 Ship	Whoa, whoa! Why should my tax money pay for art I find offensive?
 Bender	Would you censor the Venus de Venus just because you can see her spewers?

@@ -1,4 +1,4 @@
-5	14	Obsoletely Fabulous
+4	14	Obsoletely Fabulous	5	14	20030727	68
 Man	$10, please.
 Fry	Aw, man!
 Nannybot 1.0	Sleep, little dumpling. I have replaced your mother.

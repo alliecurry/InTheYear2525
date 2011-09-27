@@ -1,4 +1,4 @@
-5	15	Bender Should Not Be Allowed on Television
+4	6	Bender Should Not Be Allowed on Television	5	15	20030803	60
 Announcer	Previously on All My Circuits...
 Antonio	I'm sorry, Father. But, somewhere along the way, I forgot how to be your son.
 Calculon	Why, Antonio?

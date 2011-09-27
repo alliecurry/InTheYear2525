@@ -1,4 +1,4 @@
-5	11	Three Hundred Big Boys
+4	16	Three Hundred Big Boys	5	11	20030615	70
 Announcer	This week in the universe.  Dateline, Turantulon 6 The brave warriors of Earth, under the command of General Major Webelo Zapp Brannigan, have achieved victory over the spider homeworld.  And to the victor belong the spoils; one trillion dollars in silken treasure.
 Zapp	Mmm!
 Nixon	My fellow Earthicans, after meeting with top voodoo economists, I have decided to refund our silk surplus to you, the taxpayers. That's right! I've sent you each 300 buckaroos in the form of a Tricky Dick Fun Bill. Knock yourselves out!

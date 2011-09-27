@@ -1,4 +1,4 @@
-5	10	The Farnsworth Parabox
+4	15	The Farnsworth Parabox	5	10	20030608	69
 Farnsworth	Oh, Lordy Lou! Help!
 Fry	I know you've rejected me a lot before but, frankly, I wasn't sure we were right for each other either. But now I am. So how 'bout a date tonight?
 Leela	Sorry. I think I, um, I think I left my toaster on.

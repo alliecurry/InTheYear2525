@@ -1,4 +1,4 @@
-5	4	A Taste of Freedom
+4	5	A Taste of Freedom	5	4	20021222	59
 Zoidberg	Freedom, freedom, freedom, oy!
 Fry	There's no denying it, the future's crazy! Oh, well. Don't wanna stand out.
 Zoidberg	Freedom, freedom, freedom, oy!

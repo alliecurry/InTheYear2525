@@ -1,4 +1,4 @@
-4	12	Where No Fan Has Gone Before
+4	11	Where No Fan Has Gone Before	4	12	20020421	65
 Shatner	Shatner's log, airdate ... unknown.
 Shatner	The impossible has happened. It would take days to recount the events I have witnessed. So, settle in. It all began--
 Zapp	Quiet, you! This court martial is now in session. The honourably sexy Zapp Brannigan residing. Bring in the accused.

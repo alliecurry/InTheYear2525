@@ -1,4 +1,4 @@
-5	16	The Devil's Hands Are Idle Playthings
+4	18	The Devil's Hands Are Idle Playthings	5	16	20030810	72
 Bender	Huh?  I choose to not understand these signs.
 Bender	Aha!
 Fry	Bender? I was just not playing the holophonor.
