@@ -1,4 +1,4 @@
-8	8	Möbius Dick
+6	15	Möbius Dick	8	8	20110804	103
 Leela	Where's the Professor?
 Bender	Eh, probably dead. Already dissolving in a bathtub if we're lucky.
 Professor Farnsworth	I was out on the widow's walk keeping a hopeless vigil for the return of my first delivery crew.  It's been fifty years since they disappeared.

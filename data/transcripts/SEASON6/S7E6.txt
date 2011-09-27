@@ -1,4 +1,4 @@
-7	6	Lethal Inspection
+6	6	Lethal Inspection	7	6	20100722	94
 Farnsworth	I fear I may not survive this war reenactment. We’re only twelve feet from the parking lot.
 Fry	This is every bit as fun as the real Civil War.
 Leela	Not the Civil War private. We’re reinacting the Sith-il War. 

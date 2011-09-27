@@ -1,4 +1,4 @@
-7	2	In-A-Gadda-Da-Leela
+6	2	In-A-Gadda-Da-Leela	7	2	20100624	90
 Transition Announcer	And now, The Transcredible Exploits of Zapp Brannigan!  Brought to you by Bartley's Rocket Wax.
 Zapp	I wax my rocket every day.
 Emperor Chop Chop	No one can save you now, Leela.

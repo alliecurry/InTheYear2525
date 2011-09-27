@@ -1,4 +1,4 @@
-7	8	That Darn Katz!
+6	8	That Darn Katz!	7	8	20100812	97
 Leela	Aw! Nibbler made a bobo for Mamma. I'll pick it up with my super-dupey poopy scoopy. 
 Amy	Core magnetic field, 31 microteslas.
 Prof. Farnsworth	Nice.

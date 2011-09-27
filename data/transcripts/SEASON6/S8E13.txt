@@ -1,4 +1,4 @@
-8	13	Reincarnation
+6	26	Reincarnation	8	13	20110908	114
 Galactic Entity	A wise man once said that nothing really dies. It just comes back in a new form. Then he died. So, next time you see a lowly salamander, think twice before you step on it. It might be you. Stand by for "Reincarnation".
 Planet Express headquarters	'Owdy, folks! Come on in!
 Leela	Jumpin' Joe an' golly jeeper,

@@ -1,4 +1,4 @@
-8	7	All the Presidents' Heads
+6	23	All the Presidents' Heads	8	7	20110728	111
 Professor Farnsworth	Good news, everyone! Remember when you asked to see my family tree?
 Leela, Bender, Zoidberg, Hermes, Amy, and Fry	No.
 Professor Farnsworth	Ta-da!  This is my ancestor Philo Farnsworth, inventor of television and, as a bonus, childhood obesity.  And here's Dean Farnsworth, developer of the Farnsworth test for colour blindness.  Where is he, blast it?!  And, just recently, I learned of a modern-day Farnsworth, who invented the anti-senility truss.

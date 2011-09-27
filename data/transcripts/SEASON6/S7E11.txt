@@ -1,4 +1,4 @@
-7	11	Lrrreconcilable Ndndifferences
+6	11	Lrrreconcilable Ndndifferences	7	11	20100826	99
 The Scary Announcer	You're taking a vacation from normalcy, the setting a weird motel where the bed is stained with mystery, and there's also some mystery floating in the pool. Your key card may not open the exercise room because someone smeared mystery on the lock. But it will open the Scary Door.
 Announcer	Submitted for your Emmy consideration, a popular Senator with unpopular ideas.
 Senator	There's no such thing as space aliens!

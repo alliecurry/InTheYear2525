@@ -1,4 +1,4 @@
-7	9	A Clockwork Origin
+6	9	A Clockwork Origin	7	9	20100812	97
 Hermes	Item one... Duck! [Most duck just in time, but Bender is clipped by Cubert on a party board.
 Prof. Farnsworth	Cubert, you crapscallion! What aren't you in school?
 Cubert	I couldn't get past the protesters. A bunch of smiling, angry people were handing out these anti-evolution flyers.

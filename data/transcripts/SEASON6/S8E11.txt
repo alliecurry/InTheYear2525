@@ -1,4 +1,4 @@
-8	11	Cold Warriors
+6	24	Cold Warriors	8	11	20110825	112
 Yancy Fry Sr	Double time, soldier.  I want this ice-fishin' operation up and runnin' by oh-eight-hundred hours.
 Fry	It's too cold, Dad. My teen region is freezing off.
 Yancy Fry Sr	You dunno what cold is.  I once survived an entire week trapped in a Swiss glacier, eatin' nothin' but frozen Neanderthal.  To this day, I can't stand the taste of early hominid.

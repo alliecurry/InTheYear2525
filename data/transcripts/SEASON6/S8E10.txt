@@ -1,4 +1,4 @@
-8	10	The Tip of the Zoidberg
+6	18	The Tip of the Zoidberg	8	10	20110818	106
 Man	Mom on deck! Ten
 Mom	Alright, grunts. Here's your pre-mission pep talk.  Shoot anyone who doesn't obey hard enough.
 Man	But

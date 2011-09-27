@@ -1,4 +1,4 @@
-8	4	Law and Oracle
+6	16	Law and Oracle	8	4	104
 Fry	After centuries as a delivery boy, nothin' surprises me.
 Zoidberg	You stink, loser.
 Leela	Hey, Fry!  Pizza goin' out. Come on!

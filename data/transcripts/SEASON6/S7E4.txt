@@ -1,4 +1,4 @@
-7	4	Proposition Infinity
+6	4	Proposition Infinity	7	4	20100715
 Linda	We now go live to our eye-in-the-sky hovercopter on the scene of that terrible hovercopter crash. Jim?
 Jim	The scene is not good, Linda. I've just learned that my last words were back to you, Linda. 
 Linda	One for the blooper reel.

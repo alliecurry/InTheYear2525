@@ -1,4 +1,4 @@
-7	7	The Late Philip J. Fry
+6	7	The Late Philip J. Fry	7	7	20100729	95
 Bender	Don't wake up Fry.
 Bender	My roommate's sleeping.
 Bender	Wake up already!  I'm about to get down and funky with this ladybot.  And I'd appreciate it if as many people as possible could know about it.   Now can we get some privacy?

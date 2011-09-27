@@ -1,4 +1,4 @@
-8	5	The Silence of the Clamps
+6	14	The Silence of the Clamps	8	5	20110714	102
 Professor Farnsworth	Who likes good news?  Everyone.  Then good news, everyone! Our next delivery isn't to some dangerous, outer-space planet. It's to Earth!
 Fry	Earth is dangerous. I fell off my chair there once.  Ow! Quit it, Earth.
 Leela	We won't even have to leave New New York! The package is going to Long Long Island.

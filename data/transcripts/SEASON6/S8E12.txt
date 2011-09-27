@@ -1,4 +1,4 @@
-8	12	Overclockwise
+6	25	Overclockwise	8	12	20110901	113
 Fry	Bucket of hot dogs?
 Cubert	Check.
 Fry	Butt massager engaged?

@@ -1,4 +1,4 @@
-7	13	The Futurama Holiday Spectacular
+6	13	The Futurama Holiday Spectacular	7	13	20101121	101
 Transition Announcer	It's "The Futurama Holiday Spectacular"! Brought to you by...
 Transition Announcer	Gunderson's Unshelled Nuts!
 Amy	Ah, the Xmas season. Who wants a delicious unshelled nut?

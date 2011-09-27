@@ -1,4 +1,4 @@
-8	9	Fry Am the Egg Man
+6	22	Fry Am the Egg Man	8	9	20110811	110
 Fry	Run, Leela! They're bouncing right at us!
 Bender	So... Anybody hungry?
 Fry	I could stuff myself.
