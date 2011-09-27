@@ -1,4 +1,4 @@
-2	18	The Problem with Popplers
+2	15	The Problem with Popplers	2	18	20000507	28
 Announcer	... Molten Boron!
 Jingle Singer	Nobody doesn't like Molten Boron!
 Fry	I hate the Planet of the Moochers. They take you out for a drink but when the check comes, their wallet's always in their other pants -- which they borrowed from me!

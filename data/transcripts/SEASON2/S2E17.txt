@@ -1,4 +1,4 @@
-2	17	Bender Gets Made
+2	13	Bender Gets Made	2	17	20000430	26
 Bender	Wow! I'm finally gonna see my favourite chef, TV's Elzar. Oh this is the greatest nanosecond of my life. No, this one is-- No, this one. Wait ... that one was slightly worse. Ah, so far, so good on this one.
 Announcer	And now, here he is Chef, restaurateur, author of Cooking Slugs For Dinner and Cooking Dinner For Slugs ... Elzar!
 Bender	Yeah!  Alright! Yeah, yeah, baby!

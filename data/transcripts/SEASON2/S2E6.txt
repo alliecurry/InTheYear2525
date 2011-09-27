@@ -1,4 +1,4 @@
-2	6	Brannigan Begin Again
+2	2	Brannigan Begin Again	2	6	19991128	15
 Fry	Hmm. Horsey to pointy guy six.  Check.
 Bender	Hmm. Get him, boys!
 Fry	Good move.

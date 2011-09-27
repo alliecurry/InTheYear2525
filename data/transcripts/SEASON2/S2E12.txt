@@ -1,4 +1,4 @@
-2	12	Raging Bender
+2	8	Raging Bender	2	12	20000227	21
 Farnsworth	Good news, everyone. I've taught the toaster to feel love.  And Hermes returns from his vacation today.
 Hermes	Good morning, people.
 Fry	Hey, Hermes!

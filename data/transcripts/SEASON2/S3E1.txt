@@ -1,4 +1,4 @@
-3	1	The Honking
+2	18	The Honking	3	1	20001105	31
 Doctorbot	Notify his survivors.
 Bender	B-E-N-D-E-R! Be-ender! Sayin' B-E-N-D-ER--
 Hermes	Mail call! Amy, here's your designer lingerie catalogue. Fry, Sadie's Bra Parade and, Leela, Bulk Underpants Outlet.

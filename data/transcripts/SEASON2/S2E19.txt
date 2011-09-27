@@ -1,4 +1,4 @@
-2	19	Mother's Day
+2	14	Mother's Day	2	19	20000514	27
 Linda	And in sports, Yankees' fifth blernsman, William Wu, is out with an injured knee.
 Morbo	So, humans have easily injured knees. My race will find this information very useful indeed.
 Linda	Across Earth, robots built in Mom's factories are buying thoughtful gifts for the sweet old tycoon who brought them into the world.

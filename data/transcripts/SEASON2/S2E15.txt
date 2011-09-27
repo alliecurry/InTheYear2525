@@ -1,4 +1,4 @@
-2	15	A Clone of My Own
+2	10	A Clone of My Own	2	15	20000409	23
 Farnsworth	Good news, everyone! The university is bringing me up on disciplinary charges. Wait, that's not good news at all.
 Leela	Whatever you did, Professor, I'm sure there's a reasonable explanation.
 Farnsworth	Yes, but they won't listen. Everyone's always in favour of saving Hitler's brain but when you put it in the body of a great white shark, ooh, suddenly you've gone too far.

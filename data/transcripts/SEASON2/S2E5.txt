@@ -1,4 +1,4 @@
-2	5	I Second that Emotion
+2	1	I Second that Emotion	2	5	19991121	14
 Announcer	... Glagnar's Human Rinds. It's a buncha muncha cruncha human!
 Leela	Aww! Somebody likes snouts.
 Fry	Is it me?

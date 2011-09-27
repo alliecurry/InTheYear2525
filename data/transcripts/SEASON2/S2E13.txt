@@ -1,4 +1,4 @@
-2	13	A Bicyclops Built for Two
+2	9	A Bicyclops Built for Two	2	13	20000306	22
 Farnsworth	Good news, everyone! Several years ago I tried to log on to AOL, and it just went through. Whee! We're online!
 Farnsworth	Go ahead, get into these net suits. I designed and tested them myself.
 Leela	They smell like burning Rhesus Monkey.

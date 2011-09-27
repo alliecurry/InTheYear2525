@@ -1,4 +1,4 @@
-3	3	The Cryonic Woman
+2	19	The Cryonic Woman	3	3	20001203	32
 Fry	Giant Space Robot, this is Captain Fry of the USS Planet Express Ship. We come in peace.
 Bender	Tough luck!
 Fry	Well, we destroyed the toy spaceship. Now what are we gonna do?

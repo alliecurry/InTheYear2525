@@ -1,4 +1,4 @@
-2	7	A Head in the Polls
+2	3	A Head in the Polls	2	7	19991212	16
 Narrator	As per your request, please find enclosed the last man on earth.
 Man	Hey, look at that weird mirror!
 Bender	Cursed by his own hubris!

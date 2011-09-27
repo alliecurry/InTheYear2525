@@ -1,4 +1,4 @@
-2	9	Why Must I Be a Crustacean in Love?
+2	5	Why Must I Be a Crustacean in Love?	2	9	20000206	18
 Singer	Call Robo-Rooter when you flush your towel.
 Plumber-bot	And we can also help with an impacted bowel.
 Singer	Robo-Rooter!

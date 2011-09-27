@@ -1,4 +1,4 @@
-2	20	Anthology of Interest I
+2	16	Anthology of Interest I	2	20	20000521	29
 Dial L for Leela	Ken Keeler
 Farnsworth	Good news, everyone! I've invented a device that allows you to operate equipment from great distances. I call it "the fing-longer".  There!
 Fry	Ooh!

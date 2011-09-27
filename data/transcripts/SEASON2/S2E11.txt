@@ -1,4 +1,4 @@
-2	11	The Lesser of Two Evils
+2	6	The Lesser of Two Evils	2	11	20000220	19
 Announcer	... Arachno Spores! The fatal spore, with the funny name!
 Announcer #1	Cop Department is real. The people you see are not actors. Most of them aren't even people.
 Centipede Man	C'mon, man, I didn't fire off no laser.

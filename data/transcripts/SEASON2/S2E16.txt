@@ -1,4 +1,4 @@
-2	16	The Deep South
+2	12	The Deep South	2	16	20000416	25
 Hermes	Exciting news, people! The pet licence I requisitioned for Nibbler has arrived.
 Leela	Hermes, that's sweet. I didn't know you cared about Nibbler.
 Hermes	Dream on, woman. I'd like to put the little bastard in a sack and toss the sack in a river and hurl the river into space. But I do like filling out requisitions and these were some doozies!  Great Jah's dreadlocks! There's been a mix-up. This isn't a pet licence, it's a fishing licence. And it's mandatory!
