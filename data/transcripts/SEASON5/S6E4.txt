@@ -1,4 +1,4 @@
-6	4	Bender's Big Score Part 4
+5	4	Bender's Big Score Part 4	6	4	20080323	76
 TV Announcer	And now it's time for Everybody Loves Hypnotoad. 
 Zoidberg	Even in a depression, the entertainment industry thrives. 
 Fry	Are you okay, Leela? 

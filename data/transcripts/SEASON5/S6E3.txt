@@ -1,4 +1,4 @@
-6	3	Bender's Big Score Part 3
+5	3	Bender's Big Score Part 3	6	3	20080323	75
 Bender	Preparing to terminate Philip Fry. 
 Schlump	What's with the doofy sun glasses? 
 Bender	It's really bright in the past.

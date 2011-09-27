@@ -1,4 +1,4 @@
-6	1	Bender's Big Score Part 1
+5	1	Bender's Big Score Part 1	6	1	20080323	73
 Hermes 	Planet Express delivery company roll call! Captain Turanga Leela! 
 Leela	Here! 
 Hermes 	Delivery boy, first class, Philip J. Fry! 
