@@ -1,4 +1,4 @@
-3	9	The Birdbot of Ice-Catraz
+3	5	The Birdbot of Ice-Catraz	3	9	20010304	37
 Leela	Fry, I know those cookies are fresh-a-licious but they produce an awful lot of trash.
 Bender	Ah!
 Leela	And, Bender, that aerosol head spray makes your antenna smell nice--

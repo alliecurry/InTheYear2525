@@ -1,4 +1,4 @@
-4	6	Where the Buggalo Roam
+3	10	Where the Buggalo Roam	4	6	20020303	42
 Mr. Wong	Yes?
 Amy	Hi, Dad. It's me and my co-workers.
 Mrs. Wong	Open up, Leo. It's Amy and her weirdos.

@@ -1,4 +1,4 @@
-4	2	A Tale of Two Santas
+3	3	A Tale of Two Santas	4	2	20011223	35
 Linda	In what has become a winter tradition, members of the Zarlon 7 Polar Bear Club today took the plunge into a river of liquid ammonia.
 Morbo	There were no survivors.
 Linda	Takes all kinds! And now, with his annual Xmas message, here's the head of the Xmas Safety Council, the head of Walter Cronkite.

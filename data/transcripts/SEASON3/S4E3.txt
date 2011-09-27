@@ -1,4 +1,4 @@
-4	3	Anthology of Interest II
+3	18	Anthology of Interest II	4	3	20020106	50
 Raiders of the Lost Arcade	David X. Cohen
 Farnsworth	There. I've finished fine-tuning my What-If machine. It can answer any "What-If" question, accurate to within one-tenth of a plausibility unit.
 Leela	That's so plausible I can't believe it!

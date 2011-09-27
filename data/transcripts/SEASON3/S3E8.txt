@@ -1,4 +1,4 @@
-3	8	That's Lobstertainment!
+3	8	That's Lobstertainment!	3	8	20010225	40
 Humorbot 5.0	So I says, "Super collider? I just met her!"  And then they built the super collider. Thank you, you've been a great audience.
 Florp	Humorbot 5.0, ladies and gentlemen. Our next stand-up's a veteran of four comedy traffic schools. Give it way up for Bobcat Zoidberg!
 Fry	Alright!

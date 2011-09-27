@@ -1,4 +1,4 @@
-3	10	The Luck of the Fryrish
+3	4	The Luck of the Fryrish	3	10	20010311	36
 Doctor	Push, Mrs. Fry. You're almost there.
 Mr. Fry	You can do it, honey! Squeeze one out for America.
 Mrs. Fry	Hey, keep it down! It's the 9th inning.

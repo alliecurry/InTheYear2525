@@ -1,4 +1,4 @@
-3	4	Parasites Lost
+3	2	Parasites Lost	3	4	20010121	34
 Man #1	Breaker-breaker, this here's the Duck. Uh, you wanna back off them hogs?
 Man #1	Ten-four, five miles or so.
 Man #2	Ten, roger!

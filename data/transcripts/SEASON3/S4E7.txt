@@ -1,4 +1,4 @@
-4	7	A Pharaoh to Remember
+3	17	A Pharaoh to Remember	4	7	20020310	49
 Linda	Up next, daring daylight robbery at a municipal swimming pool.
 Bender	Ooh! This is it! Turn me up!
 Linda	Earlier today, a foul-mouthed bandit robbed the municipal pool, making off with the contents of over three lockers.

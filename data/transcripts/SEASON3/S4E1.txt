@@ -1,4 +1,4 @@
-4	1	Rosewell that Ends Well
+3	19	Rosewell that Ends Well	4	1	20011209	51
 Fry	I've never seen a supernova blow up, but if it's anything like my old Chevy Nova, it'll light up the night sky!
 Bender	Yeah! Anyone who misses this will regret it the rest of his life. Hey, Fry, could you go make some popcorn?
 Fry	OK.

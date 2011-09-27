@@ -1,4 +1,4 @@
-4	9	Future Stock
+3	21	Future Stock	4	9	20020331	53
 Man	Yes! Good thing I noticed the similar shapes.
 Hermes	Planet Express stockholders, I present our chief executive officer, Professor Hubert Farnsworth.
 Farnsworth	Oh!

@@ -1,4 +1,4 @@
-3	5	Amazon Women in the Mood
+3	1	Amazon Women in the Mood	3	5	20010204	33
 Hermes	People, we got a problem Little Nibbler's been coughing up hairballs.
 Leela	Well, so has Fry. What's the big deal?
 Fry	He's got me beat!

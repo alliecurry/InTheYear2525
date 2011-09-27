@@ -1,4 +1,4 @@
-4	10	A Leela of Her Own
+3	16	A Leela of Her Own	4	10	20020407	48
 Leela	Oh, put down the binoculars, Fry. The wall of that strip club isn't going to collapse twice in one day.
 Fry	I know, and I've grown to accept that. Now I'm more interested in that new pizza parlour across the street. Kinda makes me pine for my days as a pizza delivery boy. "Here's you pizza," I'd say. "I didn't order any," they'd say. And then I'd be off to my next adventure.
 Leela	That story stunk. Hand me the binoculars.  I think the owner is from Cygnus 5.

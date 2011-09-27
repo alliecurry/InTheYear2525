@@ -1,4 +1,4 @@
-3	15	Dated a Robot
+3	15	Dated a Robot	3	15	20010513	47
 Narrator	Please send a man round back and pick up Clyde Smith, a professional gambler who's about to have an unfortunate accident.
 Smith	A casino where I always win? That's boring. I must really be ... in hell!
 Sebastian Cabot	No, Mr. Smith. You're not in heaven or hell. You're on an aeroplane.

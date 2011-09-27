@@ -1,4 +1,4 @@
-3	7	The Day the Earth Stood Stupid
+3	7	The Day the Earth Stood Stupid	3	7	20010218	39
 Amy	Is Nibbler stoked for the big pet show?
 Leela	He ought to be with all the strict training I've been putting him through.  You are so adorable! Who wants a ham?
 Farnsworth	Zooka barooka! First prize is $500 and a year's supply of dog food!

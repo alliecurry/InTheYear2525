@@ -1,4 +1,4 @@
-4	11	The 30% Iron Chef
+3	22	The 30% Iron Chef	4	11	20020414	54
 Morbo	Welcome back. Our next guest has been teaching the world to cook for over 20 years. But apparently my, uh, wife hasn't been listening.
 Linda	Oh, funny!
 Morbo	So, uh, Elzar, what will you be cooking for Morbo to devour with his mighty jaws?

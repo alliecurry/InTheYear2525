@@ -1,4 +1,4 @@
-5	3	The Route of All Evil
+3	12	The Route of All Evil	5	3	20021208	44
 Bender	Ah, beer! So many choices, and it makes so little difference.
 Fry	How 'bout Lbrau? It has dots on it.
 Bender	Overruled. The choice of champions is Pabst Blue Robot!
