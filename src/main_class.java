@@ -27,25 +27,26 @@ public class main_class extends PApplet{
 		pars.filterCharacters();        //Remove characters in less than 1 episode
 
 		//Sort ALL_CHARACTERS where characters in more episodes are listed first.
-		Collections.sort(Parser.ALL_CHARACTERS, new Comparator(){
-			public int compare(Object ob1, Object ob2) {
-				Character c1 = (Character) ob1;
-				Character c2 = (Character) ob2;
-				return c2.getTotalEpisodes() - c1.getTotalEpisodes();
-			}
-
-		});
-
-
+		Collections.sort(Parser.ALL_CHARACTERS, new Comparator<Object>(){
+            public int compare(Object ob1, Object ob2) {
+                Character c1 = (Character) ob1;
+                Character c2 = (Character) ob2;
+               return c2.getTotalEpisodes() - c1.getTotalEpisodes();
+            }
+ 
+        });
+		
+		
 		//Prints all characters currently added. 
 		//For testing only.
-
-		for(int x=0; x<Parser.ALL_CHARACTERS.size(); ++x) {
+		/*for(int x=0; x<Parser.ALL_CHARACTERS.size(); ++x) {
 			String name = Parser.ALL_CHARACTERS.get(x).getName();
 			int ep = Parser.ALL_CHARACTERS.get(x).getTotalEpisodes();
 
 			System.out.println(name + ":\t" + ep + " episodes.");
 		}       
+		//*/
+		
 		
 		setupCharacterButtons();
 		setupSeasonsButtons();

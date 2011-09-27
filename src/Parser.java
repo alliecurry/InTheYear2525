@@ -66,42 +66,65 @@ public class Parser {
        
         //Sends all Futurama transcripts through the method parseFile()
         public void parseAllTranscripts() {
-                //Season 1
-                parseFile("data/transcripts/S1E1.txt");
-                parseFile("data/transcripts/S1E2.txt");
-                parseFile("data/transcripts/S1E3.txt");
-                parseFile("data/transcripts/S1E4.txt");
-                parseFile("data/transcripts/S1E5.txt");
-                parseFile("data/transcripts/S1E6.txt");
-                parseFile("data/transcripts/S1E7.txt");
-                parseFile("data/transcripts/S1E8.txt");
-                parseFile("data/transcripts/S1E9.txt");
-               
-                //Season 2
-                parseFile("data/transcripts/S2E1.txt");
-                parseFile("data/transcripts/S2E2.txt");
-                parseFile("data/transcripts/S2E3.txt");
-                parseFile("data/transcripts/S2E4.txt");
-                
-                //Aggregate all seasons
-                LIST_ALL.addAll(LIST_S1);
-                LIST_ALL.addAll(LIST_S2);
-                LIST_ALL.addAll(LIST_S3);
-                LIST_ALL.addAll(LIST_S4);
-                LIST_ALL.addAll(LIST_S5);
-                LIST_ALL.addAll(LIST_S6);
+        	String path;
+        	
+            //Season 1  	
+            parseFile("data/transcripts/SEASON1/S1E1.txt"); //Series 1
+            parseFile("data/transcripts/SEASON1/S1E2.txt");
+            parseFile("data/transcripts/SEASON1/S1E3.txt");
+            parseFile("data/transcripts/SEASON1/S1E4.txt");
+            parseFile("data/transcripts/SEASON1/S1E5.txt");
+            parseFile("data/transcripts/SEASON1/S1E6.txt");
+            parseFile("data/transcripts/SEASON1/S1E7.txt");
+            parseFile("data/transcripts/SEASON1/S1E8.txt");
+            parseFile("data/transcripts/SEASON1/S1E9.txt");
+            parseFile("data/transcripts/SEASON1/S2E1.txt");	//Series 2
+            parseFile("data/transcripts/SEASON1/S2E2.txt");
+            parseFile("data/transcripts/SEASON1/S2E3.txt");
+            parseFile("data/transcripts/SEASON1/S2E4.txt");
+           
+            //Season 2
+            /*path = "data/transcripts/SEASON2/S2E";	//Series 2, continued
+            for(int x=5; x<21; ++x) { //Build path name dynamically.
+            	parseFile(path + x + ".txt");	
+            }
+            parseFile("data/transcripts/SEASON2/S3E1.txt"); //Series 3
+            parseFile("data/transcripts/SEASON2/S3E2.txt");
+            parseFile("data/transcripts/SEASON2/S3E3.txt");
+            
+            //Season 3
+            path = "data/transcripts/SEASON3/S3E";	//Series 3, continued
+            for(int y=4; y<16; ++y) {
+            	parseFile(path + y + ".txt");
+            }
+            
+            path = "data/transcripts/SEASON3/S4E";	//Series 4
+            for(int z=1; z<12; ++z) {
+            	parseFile(path + z + ".txt");
+            }
+            
+            //Season 4
+            */
+            
+            //Aggregate all seasons
+            LIST_ALL.addAll(LIST_S1);
+            LIST_ALL.addAll(LIST_S2);
+            LIST_ALL.addAll(LIST_S3);
+            LIST_ALL.addAll(LIST_S4);
+            LIST_ALL.addAll(LIST_S5);
+            LIST_ALL.addAll(LIST_S6);
         }
        
         //Add episode to appropriate ArrayList
         private void updateArray() {
-                switch(season) {
-                case 1: LIST_S1.add(ep); return;
-                case 2: LIST_S2.add(ep); return;
-                case 3: LIST_S3.add(ep); return;
-                case 4: LIST_S4.add(ep); return;
-                case 5: LIST_S5.add(ep); return;
-                case 6: LIST_S6.add(ep); return;
-                }
+            switch(season) {
+            case 1: LIST_S1.add(ep); return;
+            case 2: LIST_S2.add(ep); return;
+            case 3: LIST_S3.add(ep); return;
+            case 4: LIST_S4.add(ep); return;
+            case 5: LIST_S5.add(ep); return;
+            case 6: LIST_S6.add(ep); return;
+            }
         }
        
         //Store Line of dialog
