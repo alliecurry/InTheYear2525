@@ -10,6 +10,8 @@ class Widget
     public int style;
     public int alpha;
     public int backColor;
+    
+    public boolean active = false;
   
     ////////////////////////////////////////////////////////////////////////////////////////////////////
     public Widget()

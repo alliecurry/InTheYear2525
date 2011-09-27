@@ -38,10 +38,12 @@ public class GLOBAL {
 	/// Layer 1
 	// Var for storing the selected season, for draw all the episods related
 	public static int SEASON_SELECTED;
-	// All buttons of the first layer
+	// All seasons buttons of the first layer
 	public static ArrayList<Button> allSeasonsButtons = new ArrayList<Button>();
-	// All buttons of the first layer
+	// All episodes buttons of the first layer
 	public static ArrayList<Button> allEpisodesButtons = new ArrayList<Button>();
+	// All filter buttons of the first layer
+	public static ArrayList<FilterButton> allFilterButtons = new ArrayList<FilterButton>();
 	public static ArrayList<Episode> selectedEpisodesList = new ArrayList<Episode>();
 		
 	public GLOBAL(PApplet p) {
