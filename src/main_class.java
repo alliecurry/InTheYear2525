@@ -23,6 +23,7 @@ public class main_class extends PApplet{
 		GLOBAL.selectedEpisodesList = Parser.LIST_ALL; // Initialize the displayed list to "all episodes"
 
 		//Parse all available transcripts.
+		pars.parseBackgroundChars();
 		pars.parseAllTranscripts();
 		pars.filterCharacters();        //Remove characters in less than 1 episode
 
@@ -39,13 +40,13 @@ public class main_class extends PApplet{
 		
 		//Prints all characters currently added. 
 		//For testing only.
-		/*for(int x=0; x<Parser.ALL_CHARACTERS.size(); ++x) {
+		for(int x=0; x<Parser.ALL_CHARACTERS.size(); ++x) {
 			String name = Parser.ALL_CHARACTERS.get(x).getName();
 			int ep = Parser.ALL_CHARACTERS.get(x).getTotalEpisodes();
 
 			System.out.println(name + ":\t" + ep + " episodes.");
-		}       
-		//*/
+		}     
+		//
 		
 		
 		setupCharacterButtons();
