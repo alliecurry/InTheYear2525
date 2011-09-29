@@ -214,7 +214,7 @@ public class Parser {
         //Called only for first line when .txt file is opened
         private void storeLineTitle(String line) {
                 //Split line so season #, episode #, episode title are seperated
-                String[] splitLine = line.split("\t", 3);
+                String[] splitLine = line.split("\t", 6);
                
                 season = Integer.parseInt(splitLine[0]);        //Store season #
                 episode = Integer.parseInt(splitLine[1]);       //Store episode #
@@ -282,7 +282,7 @@ public class Parser {
     //	even if they go by multiple names
    public String updateName(String c) {
 	   if(c.charAt(c.length()-1) == ' ') {
-		   c = c.substring(0,c.length()-1);	//Remove extra whitespace character if needed.
+		   c = c.substring(0,c.length()-1);	//Remove extra whitespace character if needed.  // DANI : you can use global.processing.trim(String) ;)
 	   }
 	   
 	   if(c.equals("inez")){ //Inez is Mrs. Wong's first name
