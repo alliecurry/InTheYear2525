@@ -8,8 +8,9 @@ public class main_class extends PApplet{
 	public GLOBAL g = new GLOBAL(this);
 	public Parser pars = new Parser();
 	
-	public Menu menu;
-	public GraphsArea graphArea;
+	public static Menu menu;
+	public static GraphsArea graphArea;
+	public static Button analysisTypeButton;
 	
 	// test
 	public ScrollBar scroll;
@@ -58,13 +59,29 @@ public class main_class extends PApplet{
 //		setupFilterButtons();
 //		setupEpisodeButtons();
 		
-		// testing
+		
+		// Initialization of the first kind of analysis
+		GLOBAL.ANALYSIS_TYPE = "season";
+		
+		// Create the menu
 		menu = new Menu();
-		menu.width = 400;
-		menu.height = 700;
+		menu.width = 200;
+		menu.height = height;
+		
+		// Create the plotting area, composed at most by 3 plots
 		graphArea = new GraphsArea();
-		// tristate button
-								
+		graphArea.x = 220;
+		graphArea.y = 90;
+		graphArea.width = 1000 - 220;
+		graphArea.height = 750 - 90;
+		
+		// tristate button for setting type of analysis
+		analysisTypeButton = new Button();
+		analysisTypeButton.x = 900;
+		analysisTypeButton.y = 50;
+		analysisTypeButton.setLabel(GLOBAL.ANALYSIS_TYPE);
+		analysisTypeButton.active = true;
+		
 		smooth();
 		
 	}
@@ -92,6 +109,8 @@ public class main_class extends PApplet{
 			//drawGraph();
 			graphArea.draw();
 			menu.draw();
+			analysisTypeButton.draw();
+			
 			
 		}
 		// layer 3
@@ -333,11 +352,13 @@ public class main_class extends PApplet{
 	public void drawLayerTwoText() {
 		fill(GLOBAL.colorText);
 		textFont(GLOBAL.tFont,20);
-		// TODO now only for season
-		if (GLOBAL.SEASON_SELECTED == 0)
-			text("You have selected: all seasons", width/2 - 150, 40);
-		else
-		text("You have selected: season " + GLOBAL.SEASON_SELECTED, width/2 - 150, 40);
+//		// TODO now only for season
+//		if (GLOBAL.SEASON_SELECTED == 0)
+//			text("You have selected: all seasons", width/2 - 150, 40);
+//		else
+//		text("You have selected: season " + GLOBAL.SEASON_SELECTED, width/2 - 150, 40);
+		text("In the year 2525", width/2 - 150, 40);
+		
 	}
 	
 	public void drawLayerTwoStats(){
@@ -386,6 +407,7 @@ public class main_class extends PApplet{
 		GLOBAL.colorButtonLabel = color(224);	
 		GLOBAL.colorPlotArea = color(0);
 		GLOBAL.colorStatsArea = color(28,28,28);
+		GLOBAL.colorMenuBackground = color(28,28,28);
 	}
 	
 	// If mouse is pressed, check what has been pressed and activate the action

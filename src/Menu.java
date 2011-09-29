@@ -20,18 +20,18 @@ public class Menu extends Widget{
 		seasonPicker = new SeasonSelectionPanel(300,200);
 		
 		cButton = new Button();
-		cButton.x = 25;
-		cButton.y = 100;
+		cButton.x = 20;
+		cButton.y = 150;
 		cButton.active = true;
 		cButton.setLabel("Pick a character");
 		sButton = new Button();
-		sButton.x = 25;
-		sButton.y = 160;
+		sButton.x = 20;
+		sButton.y = 210;
 		sButton.active = true;
 		sButton.setLabel("Pick a season");
 		eButton = new Button();
-		eButton.x = 25;
-		eButton.y = 220;
+		eButton.x = 20;
+		eButton.y = 270;
 		eButton.active = true;
 		eButton.setLabel("Pick a episode");
 		
@@ -39,10 +39,23 @@ public class Menu extends Widget{
 	
 	public void draw() {
 		
+		GLOBAL.processing.noStroke();
+		GLOBAL.processing.rectMode(GLOBAL.processing.CORNERS);
+		GLOBAL.processing.fill(GLOBAL.colorMenuBackground);
+		GLOBAL.processing.rect(x, y, x+width, y+height);
+		
+		GLOBAL.processing.strokeWeight(2);
+		GLOBAL.processing.stroke(GLOBAL.colorLinesLayerOne);
+		GLOBAL.processing.line(x + width, y, x+ width, y+height);
+		GLOBAL.processing.noFill();
+
 		cButton.draw();
 		sButton.draw();
 		eButton.draw();
 		
+		GLOBAL.processing.fill(GLOBAL.colorText);
+		GLOBAL.processing.textFont(GLOBAL.tFont,24);
+		GLOBAL.processing.text("Menu", 20, 100);
 		
 		if (selectingCharacter)
 			characterPicker.draw();

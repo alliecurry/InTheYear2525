@@ -93,14 +93,26 @@ public class CharacterButton extends Widget{
 
 	////////////////////////////////////////////////////////////////////////////////////////////////////
 	public void doAction() {
-		if (GLOBAL.characterSelected.size() < 3)
-			GLOBAL.characterSelected.add(label);
+		
+		// Add the character to the list to be analyzed in graphs, add it in 1st position if it is full ( size = 3 )
+		if (GLOBAL.charactersSelected.size() < 3) {
+			for (int i = 0 ; i < Parser.ALL_CHARACTERS.size() ; i++ ) {
+				if (Parser.ALL_CHARACTERS.get(i).getName().equalsIgnoreCase(label))
+					GLOBAL.charactersSelected.add(Parser.ALL_CHARACTERS.get(i));
+			}
+		}
 		else {
-			GLOBAL.characterSelected.add(0, label);
-			GLOBAL.characterSelected.remove(3);
+			for (int i = 0 ; i < Parser.ALL_CHARACTERS.size() ; i++ ) {
+				if (Parser.ALL_CHARACTERS.get(i).getName().equalsIgnoreCase(label)) {
+					GLOBAL.charactersSelected.remove(3);
+					GLOBAL.charactersSelected.add(Parser.ALL_CHARACTERS.get(i));
+				}
+			}
 		}
 		
-		System.out.println("You have selected " + GLOBAL.characterSelected.toString());
+		// Create the new graph to be plot
+		main_class.graphArea.createCharacterGraph();
+		
 		Menu.selectingCharacter = false;
 	}
 
@@ -108,7 +120,7 @@ public class CharacterButton extends Widget{
 	// Private stuff.
 	PImage icon;
 	String label;
-
+	
 }
 
 

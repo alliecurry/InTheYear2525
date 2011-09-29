@@ -32,6 +32,7 @@ public class GLOBAL {
 	public static int colorBackgroundLayerTwo;
 	public static int colorPlotArea;	
 	public static int colorStatsArea;
+	public static int colorMenuBackground;
 
 	
 	////
@@ -68,8 +69,10 @@ public class GLOBAL {
 	public static int statY1 = 70;
 	public static int statY2 = 190;
 	
-	//New
-	public static ArrayList<String> characterSelected = new ArrayList<String>();
+	// Graph to be shown in the graph area, their size is at most 3
+	public static ArrayList<Character> charactersSelected = new ArrayList<Character>();
+	public static ArrayList<Integer> seasonsSelected = new ArrayList<Integer>();
+	public static ArrayList<Episode> episodesSelected = new ArrayList<Episode>();
 		
 	public GLOBAL(PApplet p) {
 		processing = p;
