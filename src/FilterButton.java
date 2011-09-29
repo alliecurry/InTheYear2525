@@ -32,6 +32,7 @@ public class FilterButton extends Button {
 			break;
 		}
 
+		GLOBAL.selectedEpisodesListChanged = true;
 		System.out.println("switched to " + seasonFilter);
 	}
 	

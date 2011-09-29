@@ -1,0 +1,94 @@
+
+public class Menu extends Widget{
+	
+	public Button cButton;
+	public Button eButton;
+	public Button sButton;
+	
+	public CharacterSelectionPanel characterPicker;
+	public EpisodeSelectionPanel episodePicker;
+	public SeasonSelectionPanel seasonPicker;
+	
+	public static boolean selectingCharacter = false;
+	public static boolean selectingEpisode = false;
+	public static boolean selectingSeason = false;
+
+	// Menu contents
+	public Menu() {
+		characterPicker = new CharacterSelectionPanel(250,100);
+		episodePicker = new EpisodeSelectionPanel(250,200);
+		seasonPicker = new SeasonSelectionPanel(300,200);
+		
+		cButton = new Button();
+		cButton.x = 25;
+		cButton.y = 100;
+		cButton.active = true;
+		cButton.setLabel("Pick a character");
+		sButton = new Button();
+		sButton.x = 25;
+		sButton.y = 160;
+		sButton.active = true;
+		sButton.setLabel("Pick a season");
+		eButton = new Button();
+		eButton.x = 25;
+		eButton.y = 220;
+		eButton.active = true;
+		eButton.setLabel("Pick a episode");
+		
+	}
+	
+	public void draw() {
+		
+		cButton.draw();
+		sButton.draw();
+		eButton.draw();
+		
+		
+		if (selectingCharacter)
+			characterPicker.draw();
+		else if (selectingSeason)
+			seasonPicker.draw();
+		else if(selectingEpisode)
+			episodePicker.draw();
+		
+	}
+	
+	public void doAction() {
+		if (cButton.mouseOver()) {
+			selectingEpisode = false;
+			selectingSeason = false;
+			if (selectingCharacter)
+				selectingCharacter = false;
+			else
+				selectingCharacter = true;
+			}
+
+		else if (sButton.mouseOver()){
+			selectingEpisode = false;
+			selectingCharacter= false;
+			if (selectingSeason)
+				selectingSeason = false;
+			else
+				selectingSeason = true;
+			}
+		
+		else if (eButton.mouseOver()){
+			selectingSeason = false;
+			selectingCharacter= false;
+			if (selectingEpisode)
+				selectingEpisode = false;
+			else
+				selectingEpisode = true;
+			}
+		
+		if (selectingCharacter && characterPicker.mouseOver()) {
+			characterPicker.doAction();
+		}
+		else if (selectingEpisode && episodePicker.mouseOver())
+			episodePicker.doAction();
+		else if(selectingSeason && seasonPicker.mouseOver())
+			seasonPicker.doAction();
+
+	}
+	
+}

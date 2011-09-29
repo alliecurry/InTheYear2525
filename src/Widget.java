@@ -22,6 +22,7 @@ class Widget
     ////////////////////////////////////////////////////////////////////////////////////////////////////
     public void draw()
     {
+		GLOBAL.processing.rectMode(GLOBAL.processing.CORNER);
         if(style == 0)
         {
         	GLOBAL.processing.noStroke();

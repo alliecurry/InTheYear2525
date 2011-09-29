@@ -8,6 +8,9 @@ public class main_class extends PApplet{
 	public GLOBAL g = new GLOBAL(this);
 	public Parser pars = new Parser();
 	
+	public Menu menu;
+	public GraphsArea graphArea;
+	
 	// test
 	public ScrollBar scroll;
 
@@ -26,6 +29,7 @@ public class main_class extends PApplet{
 		pars.parseBackgroundChars();
 		pars.parseAllTranscripts();
 		pars.filterCharacters();        //Remove characters in less than 1 episode
+		
 
 		//Sort ALL_CHARACTERS where characters in more episodes are listed first.
 		Collections.sort(Parser.ALL_CHARACTERS, new Comparator<Object>(){
@@ -49,10 +53,17 @@ public class main_class extends PApplet{
 		//
 		
 		
-		setupCharacterButtons();
-		setupSeasonsButtons();
-		setupFilterButtons();
-		setupEpisodeButtons();
+//		setupCharacterButtons();
+//		setupSeasonsButtons();
+//		setupFilterButtons();
+//		setupEpisodeButtons();
+		
+		// testing
+		menu = new Menu();
+		menu.width = 400;
+		menu.height = 700;
+		graphArea = new GraphsArea();
+		// tristate button
 								
 		smooth();
 		
@@ -75,7 +86,12 @@ public class main_class extends PApplet{
 		}
 		// layer 2
 		else if(GLOBAL.LAYER == 2){
-			
+			drawLayerTwoBackground();
+			drawLayerTwoText();
+			//drawLayerTwoStats();
+			//drawGraph();
+			graphArea.draw();
+			menu.draw();
 			
 		}
 		// layer 3
@@ -110,37 +126,37 @@ public class main_class extends PApplet{
 	
 	// SEASON BUTTONS
 	public void setupSeasonsButtons(){
-		Button b1 = new Button();
+		SeasonButton b1 = new SeasonButton(1);
 		b1.setLabel("Season 1");
 		b1.x = 565;
 		b1.y = 190;
 		b1.active = true;
-		Button b2 = new Button();
+		SeasonButton b2 = new SeasonButton(2);
 		b2.setLabel("Season 2");
 		b2.x = 715;
 		b2.y = 190;
 		b2.active = true;
-		Button b3 = new Button();
+		SeasonButton b3 = new SeasonButton(3);
 		b3.setLabel("Season 3");
 		b3.x = 865;
 		b3.y = 190;
 		b3.active = true;
-		Button b4 = new Button();
+		SeasonButton b4 = new SeasonButton(4);
 		b4.setLabel("Season 4");
 		b4.x = 565;
 		b4.y = 230;
 		b4.active = true;
-		Button b5 = new Button();
+		SeasonButton b5 = new SeasonButton(5);
 		b5.setLabel("Season 5");
 		b5.x = 715;
 		b5.y = 230;
 		b5.active = true;
-		Button b6 = new Button();
+		SeasonButton b6 = new SeasonButton(6);
 		b6.setLabel("Season 6");
 		b6.x = 865;
 		b6.y = 230;
 		b6.active = true;
-		Button bAll = new Button();
+		SeasonButton bAll = new SeasonButton(0);
 		bAll.setLabel("All seasons");
 		bAll.x = 715;
 		bAll.y = 270;
@@ -188,6 +204,10 @@ public class main_class extends PApplet{
 			scroll.size = (float)4 / GLOBAL.selectedEpisodesList.size();
 		if (scroll.size > 1)
 			scroll.size = 1;
+		if (GLOBAL.selectedEpisodesListChanged) {
+			scroll.val = 0;
+			GLOBAL.selectedEpisodesListChanged = false;
+		}
 		scroll.draw();
 		
 		// First, create and deactivate all buttons	
@@ -270,7 +290,7 @@ public class main_class extends PApplet{
 		for(int i = 0; i < Parser.ALL_CHARACTERS.size(); i++) {	
 			// TODO eliminate this if when all the character images will be available
 			if(Parser.ALL_CHARACTERS.get(i).getTotalEpisodes() > 4) {
-				CharacterButton cb = new CharacterButton(Parser.ALL_CHARACTERS.get(i).getName(), Parser.ALL_CHARACTERS.get(i).getTotalEpisodes());
+				CharacterButton cb = new CharacterButton(Parser.ALL_CHARACTERS.get(i).getName(), Parser.ALL_CHARACTERS.get(i).getTotalEpisodes(), true);
 				cb.x = 40 + offsetX;
 				cb.y = 150 + offsetY;
 				cb.active = true;
@@ -299,19 +319,79 @@ public class main_class extends PApplet{
 	/// End Layer One functions
 	///
 	
+	///
+	/// Layer two functions
+	///
+	
+	// Draw the background of the second layer
+	public void drawLayerTwoBackground() {
+
+		background(GLOBAL.colorBackgroundLayerTwo);
+		
+	}
+	
+	public void drawLayerTwoText() {
+		fill(GLOBAL.colorText);
+		textFont(GLOBAL.tFont,20);
+		// TODO now only for season
+		if (GLOBAL.SEASON_SELECTED == 0)
+			text("You have selected: all seasons", width/2 - 150, 40);
+		else
+		text("You have selected: season " + GLOBAL.SEASON_SELECTED, width/2 - 150, 40);
+	}
+	
+	public void drawLayerTwoStats(){
+		  noStroke();
+		  rectMode(CORNERS);
+		  fill(GLOBAL.colorStatsArea);
+		  rect(GLOBAL.statX1,GLOBAL.statY1, GLOBAL.statX2, GLOBAL.statY2);
+		  fill(GLOBAL.colorText);
+		  text("Statistics:",24,90);
+	}
+	
+	// testing the bar chart for all season button
+	public void drawGraph() {
+		noStroke();
+		rectMode(CORNERS);
+		fill(GLOBAL.colorPlotArea);
+		rect(300,300, 1000,700);
+		fill(color(255));
+
+		float rectWidth = (float)(1000 - 300)/(2*pars.ALL_CHARACTERS.size());
+		//float x = 300 + rectWidth; //starting point for plot
+		for(int i =0; i < pars.ALL_CHARACTERS.size(); i++) {
+			float value = pars.ALL_CHARACTERS.get(i).getTotalEpisodes();
+			float x = map(i, 0, pars.ALL_CHARACTERS.size(), 300,1000);
+			float y = map(value, 0, pars.LIST_ALL.size(), 700,300);
+			rect( x - rectWidth/2, y, x+ rectWidth/2, 700);
+		}
+
+		//		  for (int row = 0; row < rowCount; row++) {
+		//		    if (data.isValid(row, col)) {
+		//		      float value = data.getFloat(row, col);
+		//		      float x = map(years[row], yearMin, yearMax, plotX1, plotX2);
+		//		      float y = map(value, dataMin, dataMax, plotY2, plotY1);
+		//		      rect(x-barWidth/2, y, x+barWidth/2, plotY2);
+		//		    }
+		//		  }
+	}
+	
 	// Color setup function, all colors should be set here, so every change will be global
 	public void setupColors() {
 		GLOBAL.colorToggleOff = color(152);
 		GLOBAL.colorText = color(224);
 		GLOBAL.colorBackgroundLayerOne = color(36);
+		GLOBAL.colorBackgroundLayerTwo = GLOBAL.colorBackgroundLayerOne;
 		GLOBAL.colorLinesLayerOne = color(128);		
-		GLOBAL.colorButtonLabel = color(224);		
+		GLOBAL.colorButtonLabel = color(224);	
+		GLOBAL.colorPlotArea = color(0);
+		GLOBAL.colorStatsArea = color(28,28,28);
 	}
 	
 	// If mouse is pressed, check what has been pressed and activate the action
 	public void mousePressed() { 
 		  println("x = " + mouseX+ "y =" + mouseY);
-		  if (GLOBAL.LAYER == 1 || !scroll.dragging) {
+		  if (GLOBAL.LAYER == 1 && !scroll.dragging) {
 			  for(int i = 0; i < GLOBAL.allSeasonsButtons.size(); i++) {
 				  if( GLOBAL.allSeasonsButtons.get(i).mouseOver() && GLOBAL.allSeasonsButtons.get(i).active) {
 					  GLOBAL.allSeasonsButtons.get(i).doAction();
@@ -336,11 +416,14 @@ public class main_class extends PApplet{
 			  if(scroll.mouseOver())
 				  scroll.mousePressed();
 		  }
+		  if(GLOBAL.LAYER ==2 && (menu.mouseOver() || menu.characterPicker.mouseOver() || menu.seasonPicker.mouseOver() || menu.episodePicker.mouseOver()))
+			  menu.doAction();
 	}
 	
 	public void mouseReleased() {
-		// Scroll must be released 
-		scroll.mouseReleased();
+		// Scrolls must be released 
+		menu.episodePicker.scroll.mouseReleased();
+		menu.characterPicker.scroll.mouseReleased();
 	}
 
 	public static void main(String args[]) {
