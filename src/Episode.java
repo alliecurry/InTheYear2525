@@ -44,13 +44,13 @@ public class Episode {
             
                 // If new, add character and #lines = 1
                 numberOfLinesPerCharacter.put(c, new Integer(1));
-            	System.out.println("Character lines: " + numberOfLinesPerCharacter.get(c).intValue());
+//            	System.out.println(c.getName() + "lines: " + numberOfLinesPerCharacter.get(c).intValue());
                 
         }
         else {
         	// If already added, increment number of lines of that character        	
 	        	numberOfLinesPerCharacter.put(foundCharacter, new Integer(numberOfLinesPerCharacter.get(foundCharacter).intValue() +1));
-	        	System.out.println("Character" +  " lines: " + numberOfLinesPerCharacter.get(foundCharacter).intValue());
+//	        	System.out.println( foundCharacter.getName() +" lines: " + numberOfLinesPerCharacter.get(foundCharacter).intValue());
         	
         }
 
@@ -78,6 +78,20 @@ public class Episode {
     //return list of characters
     public ArrayList<Character> getChars() {
         return chars;
+    }
+    
+    // Return the number of lines of the character in this episode
+    public int getNumberOfLinesPerCharacter( Character c ) {
+       	
+    	for(int i=0; i<chars.size(); i++) {
+    		if (chars.get(i).getName().equals(c.getName())) {
+//    	    	System.out.println(numberOfLinesPerCharacter.get(chars.get(i)).intValue());
+    	    	return numberOfLinesPerCharacter.get(chars.get(i)).intValue();
+    		}
+    	}
+    	
+    	return 0; // if not found, he/she speaks 0 lines in this episode
+    	
     }
 
 }

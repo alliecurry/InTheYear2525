@@ -83,8 +83,23 @@ public class BarChart extends Widget{
 		
 		else if (GRAPH_TYPE == EPISODE_GRAPH) {
 			
-		}
+			// Width of a single bar
+			float rectWidth = (float)(width)/(2*Parser.ALL_CHARACTERS.size());
 
+			float barY = y + height;
+			float value;
+			
+			// For each character
+			for(int i =0; i < Parser.ALL_CHARACTERS.size(); i++) {
+				
+				value = episode.getNumberOfLinesPerCharacter(Parser.ALL_CHARACTERS.get(i));
+				barY = GLOBAL.processing.map(value, 0, 100, y + height, y);					 // TODO 100 is a default value, must be set as the max	
+				float barX = GLOBAL.processing.map(i, 0, Parser.ALL_CHARACTERS.size(), x, x + width);
+				GLOBAL.processing.rect( barX - rectWidth/2, barY, barX+ rectWidth/2, y + height);
+			}
+			
+		} // end if
+		
 		else if (GRAPH_TYPE == SEASON_GRAPH) {
 
 			// Width of a single bar
