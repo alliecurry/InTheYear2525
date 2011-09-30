@@ -93,7 +93,7 @@ public class EpisodeSelectionPanel extends Widget{
 		// First, create and deactivate all buttons	
 		GLOBAL.allEpisodesButtons.clear();
 		for(int i =0; i < GLOBAL.selectedEpisodesList.size(); i++) {
-			Button b = new Button();
+			EpisodeButton b = new EpisodeButton(GLOBAL.selectedEpisodesList.get(i));
 			b.setLabel("S"+GLOBAL.selectedEpisodesList.get(i).getSeason()+"E"+GLOBAL.selectedEpisodesList.get(i).getEpisode()+": "+ GLOBAL.selectedEpisodesList.get(i).getName());
 			b.active = false;
 			GLOBAL.allEpisodesButtons.add(b);

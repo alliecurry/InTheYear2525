@@ -43,14 +43,14 @@ public class GLOBAL {
 	// what kind of analysis to make: character, season or episode
 	public static String ANALYSIS_TYPE; // could be seasons, characters or episodes
 	public static int SEASON_SELECTED; // 0 means ALL
-	public static int EPISODE_SELECTED;
-	public static String CHARACTER_SELECTED;
+	public static Episode EPISODE_SELECTED;
+	public static Character CHARACTER_SELECTED;
 
 	/// Layer 1
 	// All seasons buttons of the first layer
 	public static ArrayList<SeasonButton> allSeasonsButtons = new ArrayList<SeasonButton>();
 	// All episodes buttons of the first layer
-	public static ArrayList<Button> allEpisodesButtons = new ArrayList<Button>();
+	public static ArrayList<EpisodeButton> allEpisodesButtons = new ArrayList<EpisodeButton>();
 	// All filter buttons of the first layer
 	public static ArrayList<FilterButton> allFilterButtons = new ArrayList<FilterButton>();
 	
@@ -61,13 +61,6 @@ public class GLOBAL {
 	public static ArrayList<CharacterButton> allCharacterListButtons = new ArrayList<CharacterButton>();
 	
 	public static boolean selectedEpisodesListChanged = false;
-	
-	/// Layer 2
-	// Corners of the stats rect
-	public static int statX1 = 20; 
-	public static int statX2 = 380;
-	public static int statY1 = 70;
-	public static int statY2 = 190;
 	
 	// Graph to be shown in the graph area, their size is at most 3
 	public static ArrayList<Character> charactersSelected = new ArrayList<Character>();

@@ -104,8 +104,8 @@ public class CharacterButton extends Widget{
 		else {
 			for (int i = 0 ; i < Parser.ALL_CHARACTERS.size() ; i++ ) {
 				if (Parser.ALL_CHARACTERS.get(i).getName().equalsIgnoreCase(label)) {
-					GLOBAL.charactersSelected.remove(3);
-					GLOBAL.charactersSelected.add(Parser.ALL_CHARACTERS.get(i));
+					GLOBAL.charactersSelected.remove(2);
+					GLOBAL.charactersSelected.add(0,Parser.ALL_CHARACTERS.get(i));
 				}
 			}
 		}

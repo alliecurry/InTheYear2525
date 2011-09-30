@@ -13,8 +13,6 @@ public class SeasonButton extends Button{
 	public void doAction() {
 
 		GLOBAL.SEASON_SELECTED = seasonNumber;
-		//GLOBAL.ANALYSIS_TYPE = "season";
-		GLOBAL.LAYER = 2;
 		
 		main_class.graphArea.createSeasonGraph();
 		

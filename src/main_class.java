@@ -339,14 +339,14 @@ public class main_class extends PApplet{
 		
 	}
 	
-	public void drawLayerTwoStats(){
-		  noStroke();
-		  rectMode(CORNERS);
-		  fill(GLOBAL.colorStatsArea);
-		  rect(GLOBAL.statX1,GLOBAL.statY1, GLOBAL.statX2, GLOBAL.statY2);
-		  fill(GLOBAL.colorText);
-		  text("Statistics:",24,90);
-	}
+//	public void drawLayerTwoStats(){
+//		  noStroke();
+//		  rectMode(CORNERS);
+//		  fill(GLOBAL.colorStatsArea);
+//		  rect(GLOBAL.statX1,GLOBAL.statY1, GLOBAL.statX2, GLOBAL.statY2);
+//		  fill(GLOBAL.colorText);
+//		  text("Statistics:",24,90);
+//	}
 	
 	// testing the bar chart for all season button
 	public void drawGraph() {
