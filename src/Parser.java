@@ -199,11 +199,12 @@ public class Parser {
                
                 //Add character to episode (unless is a background character)
                 if(!isBackgroundCharacter(character)){
-                        ep.addCharacter(character);
-                       
+//                        ep.addCharacter(character);
+                        Character chr = new Character(character);      //make a new Character object
+                        ep.addCharacter(chr);
                         //Add character to ArrayList ALL_CHARACTERS (unless already added)
                         if(!isInAllCharacters(character)){
-                                Character chr = new Character(character);      //make a new Character object
+//                                Character chr = new Character(character);      //make a new Character object
                                 ALL_CHARACTERS.add(chr);        //Add Character object to ArrayList
                         }                      
                 }
@@ -250,12 +251,12 @@ public class Parser {
     //Add current episode to Character objects' episode lists
     private void updateCharacterEpisodes() {
         //Retrieve all chracters added to the current episode
-        ArrayList<String> chars = ep.getChars();        
+        ArrayList<Character> chars = ep.getChars();        
        
         //Parse characters from current episode
         for(int x=0; x<chars.size(); ++x) {
                 for(int y=0; y<ALL_CHARACTERS.size(); ++y) {
-                        if(chars.get(x).equals(ALL_CHARACTERS.get(y).getName())) {
+                        if(chars.get(x).getName().equals(ALL_CHARACTERS.get(y).getName())) {
                                 ALL_CHARACTERS.get(y).addEpisode(season, episode);
                                 //System.out.println(chars.get(x) + "\tep# " + episode);
                         }

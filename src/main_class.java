@@ -10,7 +10,7 @@ public class main_class extends PApplet{
 	
 	public static Menu menu;
 	public static GraphsArea graphArea;
-	public static Button analysisTypeButton;
+	public static MultistateButton analysisTypeButton;
 	
 	// test
 	public ScrollBar scroll;
@@ -61,7 +61,7 @@ public class main_class extends PApplet{
 		
 		
 		// Initialization of the first kind of analysis
-		GLOBAL.ANALYSIS_TYPE = "season";
+		GLOBAL.ANALYSIS_TYPE = "seasons";
 		
 		// Create the menu
 		menu = new Menu();
@@ -76,8 +76,8 @@ public class main_class extends PApplet{
 		graphArea.height = 750 - 90;
 		
 		// tristate button for setting type of analysis
-		analysisTypeButton = new Button();
-		analysisTypeButton.x = 900;
+		analysisTypeButton = new MultistateButton();
+		analysisTypeButton.x = 860;
 		analysisTypeButton.y = 50;
 		analysisTypeButton.setLabel(GLOBAL.ANALYSIS_TYPE);
 		analysisTypeButton.active = true;
@@ -418,6 +418,11 @@ public class main_class extends PApplet{
 //		  }
 		  if(menu.mouseOver() || menu.characterPicker.mouseOver() || menu.seasonPicker.mouseOver() || menu.episodePicker.mouseOver())
 			  menu.doAction();
+		  
+		  // Change type of analysis
+		  if ( analysisTypeButton.mouseOver() ) 
+			  analysisTypeButton.doAction();
+			  
 	}
 	
 	public void mouseReleased() {

@@ -9,24 +9,24 @@ public class Episode {
     private int episode;        //episode number
     private int season;         //season number
     private String name;        //episode name
-    private ArrayList<String> chars;    //list of characters in episode
+    private ArrayList<Character> chars;    //list of characters in episode
     
 
     public Episode(int e, int s, String n) {
             episode = e;
             season = s;
             name = n;
-            chars = new ArrayList<String>();
+            chars = new ArrayList<Character>();
     }
     
     //Add a character to the list of characters
     //  Checks to make sure character is not already in list
-    public void addCharacter(String c)
+    public void addCharacter(Character c)
     {
         //ignore characters already added to ArrayList
         if(chars.indexOf(c) < 0) {
                 chars.add(c);
-                //System.out.println("Character " + c + " added");
+                System.out.println("Character " + c + " added");
         }       
     }
     
@@ -49,7 +49,7 @@ public class Episode {
     }
     
     //return list of characters
-    public ArrayList<String> getChars() {
+    public ArrayList<Character> getChars() {
         return chars;
     }
 

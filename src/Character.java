@@ -69,6 +69,8 @@ public class Character {
         //Return number of episodes character appears in by season
         public int getTotalEpisodesBySeason(int s){
         	switch(s) {
+        	case 0: // 0 means all seasons
+        		return getTotalEpisodes();
         	case 1:
         		return episodes_s1.size();
         	case 2:

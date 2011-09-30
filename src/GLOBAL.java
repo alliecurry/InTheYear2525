@@ -41,7 +41,7 @@ public class GLOBAL {
 	
 	/// Var storing selections for graphs
 	// what kind of analysis to make: character, season or episode
-	public static String ANALYSIS_TYPE;
+	public static String ANALYSIS_TYPE; // could be seasons, characters or episodes
 	public static int SEASON_SELECTED; // 0 means ALL
 	public static int EPISODE_SELECTED;
 	public static String CHARACTER_SELECTED;
