@@ -1,8 +1,3 @@
-import apple.laf.JRSUIUtils.Tree;
-
-import com.sun.source.tree.TreeVisitor;
-
-
 public class CharacterSelectionPanel extends Widget {
 	
 	public Button treeView;
