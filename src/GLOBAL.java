@@ -66,6 +66,10 @@ public class GLOBAL {
 	public static ArrayList<Character> charactersSelected = new ArrayList<Character>();
 	public static ArrayList<Integer> seasonsSelected = new ArrayList<Integer>();
 	public static ArrayList<Episode> episodesSelected = new ArrayList<Episode>();
+	
+	// Variables storing starting and ending point for characters analysis
+	public static Episode episodeStart;
+	public static Episode episodeEnd;
 		
 	public GLOBAL(PApplet p) {
 		processing = p;

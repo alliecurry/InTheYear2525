@@ -12,9 +12,6 @@ public class main_class extends PApplet{
 	public static GraphsArea graphArea;
 	public static MultistateButton analysisTypeButton;
 	
-	// test
-	public ScrollBar scroll;
-
 	public void setup() {
 		
 		setupColors();
@@ -66,6 +63,7 @@ public class main_class extends PApplet{
 		graphArea.y = 90;
 		graphArea.width = 1000 - 220;
 		graphArea.height = 750 - 90;
+		graphArea.createScrollBar();
 		
 		// tristate button for setting type of analysis
 		analysisTypeButton = new MultistateButton();
@@ -79,6 +77,9 @@ public class main_class extends PApplet{
 		// Initialization of the first kind of analysis
 		GLOBAL.ANALYSIS_TYPE = analysisTypeButton.getState();
 		
+		GLOBAL.episodeStart = Parser.LIST_ALL.get(0);
+		GLOBAL.episodeEnd = Parser.LIST_ALL.get(Parser.LIST_ALL.size() - 1 );
+
 		smooth();
 		
 	}
@@ -87,10 +88,21 @@ public class main_class extends PApplet{
 	public void draw() {
 
 			drawLayerTwoBackground();
-			drawLayerTwoText();
 			graphArea.draw();
 			menu.draw();
 			analysisTypeButton.draw();
+//			
+//			int dateSelectorX = (width - Parser.LIST_ALL.size()*2)/2;
+//			
+//			strokeWeight(2);
+//			stroke(GLOBAL.colorText);
+//			for (int i = 0; i< Parser.LIST_ALL.size() ; i++) {
+//				int x = dateSelectorX + i*5;
+//				line(x,height,x,height - 7);
+//			}
+			
+			drawLayerTwoText();
+			noFill();
 
 	}
 	
@@ -104,12 +116,13 @@ public class main_class extends PApplet{
 	public void drawLayerTwoText() {
 		fill(GLOBAL.colorText);
 		textFont(GLOBAL.tFont,20);
+		textAlign(CENTER);
 //		// TODO now only for season
 //		if (GLOBAL.SEASON_SELECTED == 0)
 //			text("You have selected: all seasons", width/2 - 150, 40);
 //		else
 //		text("You have selected: season " + GLOBAL.SEASON_SELECTED, width/2 - 150, 40);
-		text("In the year 2525", width/2 - 150, 40);
+		text("In the year 2525", 100, 40);
 		textFont(GLOBAL.tFont,16);
 		text("Select type of analysis: ",750, 70);
 		
@@ -147,6 +160,9 @@ public class main_class extends PApplet{
 		  // Change type of analysis
 		  if ( analysisTypeButton.mouseOver() ) 
 			  analysisTypeButton.doAction();
+		  
+		  if (graphArea.mouseOver())
+			  graphArea.doAction();
 			  
 	}
 	
@@ -154,6 +170,7 @@ public class main_class extends PApplet{
 		// Scrolls must be released 
 		menu.episodePicker.scroll.mouseReleased();
 		menu.characterPicker.scroll.mouseReleased();
+		graphArea.scroll.mouseReleased();
 	}
 
 	public static void main(String args[]) {

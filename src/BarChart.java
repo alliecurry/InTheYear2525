@@ -67,24 +67,51 @@ public class BarChart extends Widget{
 	
 	public void draw() {
 		
+		GLOBAL.processing.noStroke();
+		GLOBAL.processing.rectMode(GLOBAL.processing.CORNERS);
+		GLOBAL.processing.fill(GLOBAL.colorPlotArea);
+		GLOBAL.processing.rect(x,y, x + width, y + height);
+		GLOBAL.processing.fill(GLOBAL.processing.color(255));
+		
 		if (GRAPH_TYPE == CHARACTER_GRAPH) {
 			
 			// TODO now only season aggregation, need to implement others
 			
 			// Width of a single bar
-			float rectWidth = (float)(width)/(2*6); // 6 is the number of seasons
+//			float rectWidth = (float)(width)/(2*6); // 6 is the number of seasons
 
 			float barY = y + height;
 			float value;
+			
+			int indexStart = 0;
+			int indexEnd = Parser.LIST_ALL.size() -1;
 
-			// For each season
-			for(int i = 1; i < 7; i++) {
-				value = character.getTotalEpisodesBySeason(i);
-//				System.out.println(value);
-				barY = GLOBAL.processing.map(value, 0, 30, y + height, y);					 // TODO 30 is a default value, must be set as the max	
-				float barX = GLOBAL.processing.map(i, 1, 6, x, x + width);
-				GLOBAL.processing.rect( barX - rectWidth/2 + 20, barY, barX+ rectWidth/2, y + height);
+			for (int i = 0; i< Parser.LIST_ALL.size() ; i++) {
+				if (Parser.LIST_ALL.get(i).getSeason() == GLOBAL.episodeStart.getSeason() && Parser.LIST_ALL.get(i).getEpisode() == GLOBAL.episodeStart.getEpisode())
+					indexStart = i;
+				if (Parser.LIST_ALL.get(i).getSeason() == GLOBAL.episodeEnd.getSeason() && Parser.LIST_ALL.get(i).getEpisode() == GLOBAL.episodeEnd.getEpisode())
+					indexEnd = i;
 			}
+			
+			float rectWidth = (float)(width)/(2*(indexEnd - indexStart));
+			
+			// For each season
+//			for(int i = 1; i < 7; i++) {
+//				value = character.getTotalEpisodesBySeason(i);
+////				System.out.println(value);
+//				barY = GLOBAL.processing.map(value, 0, 30, y + height, y);					 // TODO 30 is a default value, must be set as the max	
+//				float barX = GLOBAL.processing.map(i, 1, 6, x, x + width);
+//				GLOBAL.processing.rect( barX - rectWidth/2 + 20, barY, barX+ rectWidth/2, y + height);
+//			}
+			
+			for ( int i = indexStart; i <= indexEnd; i++ ) {
+				value = Parser.LIST_ALL.get(i).getNumberOfLinesPerCharacter(character);
+				barY = GLOBAL.processing.map(value, 0, 100, y + height, y);					 // TODO 100 is a default value, must be set as the max	
+				float barX = GLOBAL.processing.map(i, indexStart, indexEnd, x, x + width);
+				GLOBAL.processing.rect( barX - rectWidth/2, barY, barX+ rectWidth/2, y + height);
+			}
+				
+			
 
 		}
 		

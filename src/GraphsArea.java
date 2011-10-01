@@ -14,16 +14,14 @@ public class GraphsArea extends Widget{
 	// Number of charts we want to display at the moment
 	public int chartsNumber = 0;
 	
+	// Horizontal scrollbar for selecting starting and ending episodes
+	public HorizontalScrollBar scroll;
+	
 	public GraphsArea() {
 	
 	}
 	
 	public void draw() {
-		GLOBAL.processing.noStroke();
-		GLOBAL.processing.rectMode(GLOBAL.processing.CORNERS);
-		GLOBAL.processing.fill(GLOBAL.colorPlotArea);
-		GLOBAL.processing.rect(x,y, x + width, y + height);
-		GLOBAL.processing.fill(GLOBAL.processing.color(255));
 		
 		if (chart1 != null)
 			chart1.draw();
@@ -31,28 +29,16 @@ public class GraphsArea extends Widget{
 			chart2.draw();
 		if (chart3 != null)
 			chart3.draw();
+		
+		if (GLOBAL.ANALYSIS_TYPE.equals("characters"))
+			scroll.draw();
 
 	}
 	
 	// Create a new graph for character analysis
 	public void createCharacterGraph() {
-		
-//		if (chart1 == null)
-//			chart1 = new BarChart(GLOBAL.charactersSelected.get(0), x + 20, y + 20, width - 100, height - 20, CHARACTER_GRAPH);
-//		else if (chart2 == null) {
-//			chart2 = chart1;
-//			//chart1 = change x y width height
-//			//chart1 = new BarChart();
-//		}
-//		else {
-//			chart2 = chart1;
-//			chart3 = chart2;
-//			// chart 2 and 3 = change x y width height
-//			//chart1 = new BarChart();
-//		}
-		
 		if (chart1 == null)
-			chart1 = new BarChart(GLOBAL.CHARACTER_SELECTED, x + 20, y + 20, width - 100, height - 20, CHARACTER_GRAPH);
+			chart1 = new BarChart(GLOBAL.CHARACTER_SELECTED, x + 20, y + 20, width - 100, height - 80, CHARACTER_GRAPH);
 		else if (chart2 == null) {
 			chart2 = chart1;
 			chart2.changePosition(x + 20, y + (height)/2 + 30, width - 100, (height - 100) /2);
@@ -117,4 +103,20 @@ public class GraphsArea extends Widget{
 		chart3 = null;
 	}
 	
+	public void doAction() {
+
+		if (scroll.mouseOver())
+			scroll.mousePressed();
+	}
+
+	public void createScrollBar() {
+		
+		scroll = new HorizontalScrollBar(Parser.LIST_ALL);
+		scroll.x = this.x + 50;
+		scroll.y = this.y + this.height - 50;
+		scroll.width = this.width - 100;
+		scroll.height = 15;	
+		scroll.size = (float)2/ Parser.LIST_ALL.size();
+		
+	}
 }

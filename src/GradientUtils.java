@@ -31,6 +31,7 @@ class GradientUtils
 	////////////////////////////////////////////////////////////////////////////////////////////////////
 	public void drawVGradient(float x, float y, float width, float height, int start, int sa, int end, int ea, float pc)
 	{
+		GLOBAL.processing.rectMode(GLOBAL.processing.CORNER);
 		GLOBAL.processing.noStroke();
 		GLOBAL.processing.fill(start, sa);
 
