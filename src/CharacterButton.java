@@ -97,8 +97,11 @@ public class CharacterButton extends Widget{
 		// Add the character to the list to be analyzed in graphs, add it in 1st position if it is full ( size = 3 )
 		if (GLOBAL.charactersSelected.size() < 3) {
 			for (int i = 0 ; i < Parser.ALL_CHARACTERS.size() ; i++ ) {
-				if (Parser.ALL_CHARACTERS.get(i).getName().equalsIgnoreCase(label))
+				if (Parser.ALL_CHARACTERS.get(i).getName().equalsIgnoreCase(label)) {
 					GLOBAL.charactersSelected.add(Parser.ALL_CHARACTERS.get(i));
+					GLOBAL.CHARACTER_SELECTED = Parser.ALL_CHARACTERS.get(i);
+					break;
+				}
 			}
 		}
 		else {
@@ -106,13 +109,15 @@ public class CharacterButton extends Widget{
 				if (Parser.ALL_CHARACTERS.get(i).getName().equalsIgnoreCase(label)) {
 					GLOBAL.charactersSelected.remove(2);
 					GLOBAL.charactersSelected.add(0,Parser.ALL_CHARACTERS.get(i));
+					GLOBAL.CHARACTER_SELECTED = Parser.ALL_CHARACTERS.get(i);
+					break;
 				}
 			}
 		}
 		
 		// Create the new graph to be plot
 		main_class.graphArea.createCharacterGraph();
-		
+				
 		Menu.selectingCharacter = false;
 	}
 

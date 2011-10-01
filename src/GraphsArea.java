@@ -37,18 +37,35 @@ public class GraphsArea extends Widget{
 	// Create a new graph for character analysis
 	public void createCharacterGraph() {
 		
+//		if (chart1 == null)
+//			chart1 = new BarChart(GLOBAL.charactersSelected.get(0), x + 20, y + 20, width - 100, height - 20, CHARACTER_GRAPH);
+//		else if (chart2 == null) {
+//			chart2 = chart1;
+//			//chart1 = change x y width height
+//			//chart1 = new BarChart();
+//		}
+//		else {
+//			chart2 = chart1;
+//			chart3 = chart2;
+//			// chart 2 and 3 = change x y width height
+//			//chart1 = new BarChart();
+//		}
+		
 		if (chart1 == null)
-			chart1 = new BarChart(GLOBAL.charactersSelected.get(0), x + 20, y + 20, width - 100, height - 20, CHARACTER_GRAPH);
+			chart1 = new BarChart(GLOBAL.CHARACTER_SELECTED, x + 20, y + 20, width - 100, height - 20, CHARACTER_GRAPH);
 		else if (chart2 == null) {
 			chart2 = chart1;
-			//chart1 = change x y width height
-			//chart1 = new BarChart();
-		}
+			chart2.changePosition(x + 20, y + (height)/2 + 30, width - 100, (height - 100) /2);
+			chart1 = new BarChart(GLOBAL.CHARACTER_SELECTED, x + 20, y + 20, width - 100, (height - 100) /2, CHARACTER_GRAPH);
+			}
 		else {
-			chart2 = chart1;
+			int chartHeight = (height - 160)/3;
 			chart3 = chart2;
+			chart2 = chart1;
 			// chart 2 and 3 = change x y width height
-			//chart1 = new BarChart();
+			chart2.changePosition(x + 20, y + 80 + chartHeight, width - 100, chartHeight);
+			chart3.changePosition(x + 20, y + 140 + 2*chartHeight, width - 100, chartHeight);
+			chart1 = new BarChart(GLOBAL.CHARACTER_SELECTED, x + 20, y + 20, width - 100, chartHeight, CHARACTER_GRAPH);	
 		}
 		
 	}
