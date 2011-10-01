@@ -76,6 +76,9 @@ public class main_class extends PApplet{
 		analysisTypeButton.addState("seasons");
 		analysisTypeButton.active = true;
 		
+		// Initialization of the first kind of analysis
+		GLOBAL.ANALYSIS_TYPE = analysisTypeButton.getState();
+		
 		smooth();
 		
 	}
@@ -107,6 +110,8 @@ public class main_class extends PApplet{
 //		else
 //		text("You have selected: season " + GLOBAL.SEASON_SELECTED, width/2 - 150, 40);
 		text("In the year 2525", width/2 - 150, 40);
+		textFont(GLOBAL.tFont,16);
+		text("Select type of analysis: ",750, 70);
 		
 	}
 	

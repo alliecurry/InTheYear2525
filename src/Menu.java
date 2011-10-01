@@ -26,32 +26,37 @@ public class Menu extends Widget{
 		cButton.setLabel("Pick a character");
 		sButton = new Button();
 		sButton.x = 20;
-		sButton.y = 210;
+		//sButton.y = 270;
+		sButton.y = 150;
 		sButton.active = true;
 		sButton.setLabel("Pick a season");
 		eButton = new Button();
 		eButton.x = 20;
-		eButton.y = 270;
+		//eButton.y = 210;
+		eButton.y = 150;
 		eButton.active = true;
 		eButton.setLabel("Pick a episode");
-		
+
 	}
-	
+
 	public void draw() {
-		
+
 		GLOBAL.processing.noStroke();
 		GLOBAL.processing.rectMode(GLOBAL.processing.CORNERS);
 		GLOBAL.processing.fill(GLOBAL.colorMenuBackground);
 		GLOBAL.processing.rect(x, y, x+width, y+height);
-		
+
 		GLOBAL.processing.strokeWeight(2);
 		GLOBAL.processing.stroke(GLOBAL.colorLinesLayerOne);
 		GLOBAL.processing.line(x + width, y, x+ width, y+height);
 		GLOBAL.processing.noFill();
 
-		cButton.draw();
-		sButton.draw();
-		eButton.draw();
+		if (GLOBAL.ANALYSIS_TYPE.equals("characters"))
+			cButton.draw();
+		else if (GLOBAL.ANALYSIS_TYPE.equals("seasons"))
+			sButton.draw();
+		else if (GLOBAL.ANALYSIS_TYPE.equals("episodes"))
+			eButton.draw();
 		
 		GLOBAL.processing.fill(GLOBAL.colorText);
 		GLOBAL.processing.textFont(GLOBAL.tFont,24);
@@ -67,7 +72,7 @@ public class Menu extends Widget{
 	}
 	
 	public void doAction() {
-		if (cButton.mouseOver()) {
+		if (GLOBAL.ANALYSIS_TYPE.equals("characters") && cButton.mouseOver()) {
 			selectingEpisode = false;
 			selectingSeason = false;
 			if (selectingCharacter)
@@ -76,7 +81,7 @@ public class Menu extends Widget{
 				selectingCharacter = true;
 			}
 
-		else if (sButton.mouseOver()){
+		else if (GLOBAL.ANALYSIS_TYPE.equals("seasons") && sButton.mouseOver()){
 			selectingEpisode = false;
 			selectingCharacter= false;
 			if (selectingSeason)
@@ -85,7 +90,7 @@ public class Menu extends Widget{
 				selectingSeason = true;
 			}
 		
-		else if (eButton.mouseOver()){
+		else if (GLOBAL.ANALYSIS_TYPE.equals("episodes") && eButton.mouseOver()){
 			selectingSeason = false;
 			selectingCharacter= false;
 			if (selectingEpisode)
