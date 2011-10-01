@@ -115,6 +115,8 @@ public class CharacterButton extends Widget{
 			}
 		}
 		
+		//main_class.graphArea.clearGraphs();
+		
 		// Create the new graph to be plot
 		main_class.graphArea.createCharacterGraph();
 				

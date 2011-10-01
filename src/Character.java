@@ -14,6 +14,8 @@ public class Character {
         private ArrayList<Integer> episodes_s4;    //List of episode numbers character appears (season 4)
         private ArrayList<Integer> episodes_s5;    //List of episode numbers character appears (season 5)
         private ArrayList<Integer> episodes_s6;    //List of episode numbers character appears (season 6)
+        
+        private ArrayList<Episode> episodes;       //List of all episodes character appears (among all seasons)
        
         public Character (String n){
 	        name = n;
@@ -23,12 +25,20 @@ public class Character {
 	        episodes_s4 = new ArrayList<Integer>();
 	        episodes_s5 = new ArrayList<Integer>();
 	        episodes_s6 = new ArrayList<Integer>();
+	        
+	        episodes = new ArrayList<Episode>();
         }
        
         //Add episode # to list of episodes character appears in
         public void addEpisode(int s, int e) {
                 //Convert int to Integer
                 Integer e2 = new Integer(e);
+                
+                for (int i=0; i< Parser.LIST_ALL.size(); i++)
+                	if( Parser.LIST_ALL.get(i).getSeason() == s &&  Parser.LIST_ALL.get(i).getEpisode() == e) {
+                		episodes.add(Parser.LIST_ALL.get(i));
+                	}
+                		
                
                 switch(s) {
                 case 1: //If season 1
@@ -85,6 +95,11 @@ public class Character {
         		return episodes_s6.size();
         	}
         	return -1;
+        }
+        
+        //Return the list of episodes character appears
+        public ArrayList<Episode> getEpisodes() {
+        	return episodes;
         }
        
         //Return character name

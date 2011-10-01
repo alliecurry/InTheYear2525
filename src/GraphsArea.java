@@ -111,4 +111,10 @@ public class GraphsArea extends Widget{
 		
 	}
 	
+	public void clearGraphs() {
+		chart1 = null;
+		chart2 = null;
+		chart3 = null;
+	}
+	
 }

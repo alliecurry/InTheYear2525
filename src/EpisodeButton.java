@@ -22,6 +22,8 @@ public class EpisodeButton extends Button{
 			GLOBAL.episodesSelected.remove(2);
 			GLOBAL.episodesSelected.add(0,episode);
 		}
+		
+		//main_class.graphArea.clearGraphs();
 
 		// Create the new graph to be plot
 		main_class.graphArea.createEpisodeGraph();

@@ -1,7 +1,13 @@
+import java.util.ArrayList;
+
 import processing.core.PImage;
 
 
 public class MultistateButton extends Widget{
+	
+	private ArrayList<String> states = new ArrayList<String>();
+	private int stateIndex;
+	private String label;
 
 	////////////////////////////////////////////////////////////////////////////////////////////////////
 	public MultistateButton()
@@ -44,21 +50,30 @@ public class MultistateButton extends Widget{
 		GLOBAL.processing.strokeWeight(1);
 
 		GLOBAL.processing.fill(GLOBAL.colorButtonLabel);
-		GLOBAL.processing.text(label, cx + 10 + GLOBAL.processing.textWidth("characters")/2, cy + 20);
+		GLOBAL.processing.text(states.get(stateIndex), cx + 10 + GLOBAL.processing.textWidth("characters")/2, cy + 20);
 
 	}
 	
-	public void doAction() {
-		 if ( label.equals("characters") )
-			  setLabel("seasons");
-		  else if ( label.equals("seasons") )
-			  setLabel("episodes");
-		  else if ( label.equals("episodes") )
-			  setLabel("characters");
+	
+	public void addState(String s) {
+		states.add(s);
 	}
 
-	////////////////////////////////////////////////////////////////////////////////////////////////////
-	// Private stuff.
-	String label;
-	  
+	public void changeState() {
+		
+		stateIndex++;
+		
+		if (stateIndex == states.size())
+			stateIndex = 0;
+		
+	}
+	
+	public String getState() {
+		return states.get(stateIndex);
+	}
+	
+	public void doAction() {
+		 changeState();
+	}
+ 
 }

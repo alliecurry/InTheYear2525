@@ -14,6 +14,8 @@ public class SeasonButton extends Button{
 
 		GLOBAL.SEASON_SELECTED = seasonNumber;
 		
+		//main_class.graphArea.clearGraphs();
+
 		main_class.graphArea.createSeasonGraph();
 		
 		System.out.println("Season selected: " + seasonNumber);

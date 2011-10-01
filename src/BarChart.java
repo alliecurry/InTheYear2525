@@ -80,9 +80,10 @@ public class BarChart extends Widget{
 			// For each season
 			for(int i = 1; i < 7; i++) {
 				value = character.getTotalEpisodesBySeason(i);
-				System.out.println(value);
+//				System.out.println(value);
 				barY = GLOBAL.processing.map(value, 0, 30, y + height, y);					 // TODO 30 is a default value, must be set as the max	
 				float barX = GLOBAL.processing.map(i, 1, 6, x, x + width);
+				GLOBAL.processing.rect( barX - rectWidth/2 + 20, barY, barX+ rectWidth/2, y + height);
 			}
 
 		}
