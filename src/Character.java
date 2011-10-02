@@ -16,7 +16,10 @@ public class Character {
         private ArrayList<Integer> episodes_s6;    //List of episode numbers character appears (season 6)
         
         private ArrayList<Episode> episodes;       //List of all episodes character appears (among all seasons)
-       
+        
+        private ArrayList<Catchphrase> phrases;		//List of catchphrases the Character is known to say.
+        
+        
         public Character (String n){
 	        name = n;
 	        episodes_s1 = new ArrayList<Integer>();
