@@ -3,7 +3,8 @@ import java.util.HashMap;
 
 public class Catchphrase {
 	
-	private String thePhrase;
+	private String thePhrase;		// The phrase is a way that can be displayed.
+	private String phraseRegex;		// The phrase in regex form for parsing.
 	
 	HashMap<String, Integer> episodeTotals;	//Key: season#_episode#  
 											//Value: Number of times phrase is said
@@ -11,8 +12,19 @@ public class Catchphrase {
 	int[] seasonTotals = {0,0,0,0,0,0};		//Total number of times catchphrase is said in season
 											//index = season# - 1
 	
-	public Catchphrase(String p) {
+	public Catchphrase(String p, String r) {
 		thePhrase = p;
+		phraseRegex = r;
+	}
+	
+	//Get the catchphrsae
+	public String getPhrase() {
+		return thePhrase;
+	}
+	
+	//Get the catchphrase regex.
+	public String getRegex() {
+		return phraseRegex;
 	}
 	
 	//Add the number n to total count in season s, episode e

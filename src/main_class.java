@@ -27,6 +27,7 @@ public class main_class extends PApplet{
 		pars.parseBackgroundChars();
 		pars.parseAllTranscripts();
 		pars.filterCharacters();        //Remove characters in less than 1 episode
+		pars.parseCatchphrases();
 		
 
 		//Sort ALL_CHARACTERS where characters in more episodes are listed first.
@@ -49,7 +50,7 @@ public class main_class extends PApplet{
 
 			System.out.println(name + ":\t" + ep + " episodes.");
 		}   
-		*/  
+		*/
 		//
 		
 		// Create the menu

@@ -196,7 +196,6 @@ public class Parser {
                 }
                 value += splitLine[1] + "\n";   //Append dialog to any other episode dialog
                 ALL_DATA.put(fullKey, value);
-               
                 //Add character to episode (unless is a background character)
                 if(!isBackgroundCharacter(character)){
 //                        ep.addCharacter(character);
@@ -206,7 +205,7 @@ public class Parser {
                         if(!isInAllCharacters(character)){
 //                                Character chr = new Character(character);      //make a new Character object
                                 ALL_CHARACTERS.add(chr);        //Add Character object to ArrayList
-                        }                      
+                        }
                 }
                
         }
@@ -230,9 +229,9 @@ public class Parser {
        
         //Parse every background character name
         for(int x=0; x<backgroundChars.size(); ++x){
-                if(c.startsWith(backgroundChars.get(x))){
-                        return true;
-                }              
+            if(c.startsWith(backgroundChars.get(x))){
+                    return true;
+            }              
         }
        
         return false;
@@ -241,9 +240,9 @@ public class Parser {
     //Returns true if character (name String c) is already in ArrayList ALL_CHARATCTERS
     private boolean isInAllCharacters(String c) {
         for(int x=0; x<ALL_CHARACTERS.size(); ++x){
-                if(c.equals(ALL_CHARACTERS.get(x).getName())){
-                        return true;
-                }
+            if(c.equals(ALL_CHARACTERS.get(x).getName())){
+                    return true;
+            }
         }
         return false;
     }
@@ -255,15 +254,13 @@ public class Parser {
        
         //Parse characters from current episode
         for(int x=0; x<chars.size(); ++x) {
-                for(int y=0; y<ALL_CHARACTERS.size(); ++y) {
-                        if(chars.get(x).getName().equals(ALL_CHARACTERS.get(y).getName())) {
-                                ALL_CHARACTERS.get(y).addEpisode(season, episode);
-                                //System.out.println(chars.get(x) + "\tep# " + episode);
-                        }
+            for(int y=0; y<ALL_CHARACTERS.size(); ++y) {
+                if(chars.get(x).getName().equals(ALL_CHARACTERS.get(y).getName())) {
+                        ALL_CHARACTERS.get(y).addEpisode(season, episode);
+                        //System.out.println(chars.get(x) + "\tep# " + episode);
                 }
-               
-        }
-       
+            } 
+        }   
     }
    
     //Parse entire list of Characters (ALL_CHARACTERS).
@@ -284,6 +281,10 @@ public class Parser {
    public String updateName(String c) {
 	   if(c.charAt(c.length()-1) == ' ') {
 		   c = c.substring(0,c.length()-1);	//Remove extra whitespace character if needed.  // DANI : you can use global.processing.trim(String) ;)
+	   }
+	   
+	   if(c.equals("professor farnsworth")) {	//ensures correct stats on farnsworth
+		   return "farnsworth";
 	   }
 	   
 	   if(c.equals("inez")){ //Inez is Mrs. Wong's first name
@@ -313,6 +314,88 @@ public class Parser {
 	   return c;
    }
    
+   //-------------------------------------------
+   // NOTE (10/2/2011)
+   //---------------------------------------------
+   //Still working on parsing the catchphrases.
+   //Will be back after dinner to work some more.
+   //So, if you're reading this, the code below may not be of much use yet ;)
+   
+   //Parse file phrases.txt for list of catchphrases
+   public void parseCatchphrases(){
+	   Scanner scan;    //Scanner for reading file
+   	
+   	try {
+   		scan = new Scanner(new FileReader("data/phrases.txt"));   //Initialize scanner with file.
+       } catch (FileNotFoundException e) {
+               e.printStackTrace();
+               return;
+       }
 
+       //Scan all dialog
+       while (scan.hasNextLine()) {    //Executes if a line of text exists
+               storeCatchphrase(scan.nextLine());
+       }
+       
+       scan.close();
+   }
+   
+   public void storeCatchphrase(String line){
+	   //Split line into character + catchphrase (regex) + catchphrase
+	   String[] splitLine = line.split("\t", 3);
+       
+       if(splitLine.length<2) { return; }
+       
+       String character = splitLine[0];
+       
+       //just testing...
+       if(character.equals("fry")) {
+    	   int c = 0;
+    	   //parsing season 3
+    	   for(int x=1; x<23; ++x) {
+    		  String dialog =  ALL_DATA.get("S3E" + x + "fry");
+    		  
+    		  //parse each individual line
+    		  c += countOccurrences(dialog, splitLine[1]);
+    		  
+    	   }
+    	   //test
+    	  // System.out.println(splitLine[2] + ":\t"+ c);
+    	   
+    	  // int index = findCharacter("fry");
+    	  
+       }
+   }
+   
+   //Count number of times regex appears in s
+   private int countOccurrences(String s, String regex) {
+	   int c = 0;	//counter for number of occurrences
+	   
+	   int m = 0;	//start index to search
+	   int n = s.indexOf("\n"); //end index (exclusive) to search.
+	   
+	   while(n < s.length() && n >= 0) {
+		   if(s.substring(m, n).toLowerCase().matches(regex)) {
+			   ++c;
+			   
+		   }
+
+		   m = ++n;
+		   n = s.indexOf("\n", m);
+	   }
+	   
+	   return c;
+   }
+   
+   //Find index number of character c in ALL_CHARACTERS
+   public int findCharacter(String c){
+	   for(int x=0; x<ALL_CHARACTERS.size(); ++x) {
+		   if(c.equals(ALL_CHARACTERS.get(x).getName())) {
+			   return x;
+		   }
+	   }
+	   
+	   return -1;
+   }
 }
 

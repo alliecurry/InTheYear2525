@@ -30,6 +30,7 @@ public class Character {
 	        episodes_s6 = new ArrayList<Integer>();
 	        
 	        episodes = new ArrayList<Episode>();
+	        phrases = new ArrayList<Catchphrase>();
         }
        
         //Add episode # to list of episodes character appears in
@@ -108,5 +109,9 @@ public class Character {
         //Return character name
         public String getName() {
                 return name;
+        }
+        
+        public void addPhrase(String p, String r) {
+        	phrases.add(new Catchphrase(p, r));
         }
 }

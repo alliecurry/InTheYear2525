@@ -1,3 +1,4 @@
+all
 man
 men
 woman
@@ -18,6 +19,8 @@ aliens
 tenant
 announcer
 female announcer
+male voice
+female voice
 narrator
 commentator
 salesman
@@ -76,3 +79,4 @@ waltazar
 titanius anglesmith
 leegola
 younger mom
+nibblonian
