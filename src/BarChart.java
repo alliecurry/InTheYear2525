@@ -83,15 +83,10 @@ public class BarChart extends Widget{
 		GLOBAL.processing.noStroke();
 		GLOBAL.processing.rectMode(GLOBAL.processing.CORNERS);
 		GLOBAL.processing.fill(GLOBAL.colorPlotArea);
-		GLOBAL.processing.rect(x,y, x + plotWidth, y + height);
+		GLOBAL.processing.rect( x,y, x + plotWidth, y + height);
 		GLOBAL.processing.fill(GLOBAL.processing.color(255));
 		
 		if (GRAPH_TYPE == CHARACTER_GRAPH) {
-			
-			// TODO now only season aggregation, need to implement others
-			
-			// Width of a single bar
-//			float rectWidth = (float)(width)/(2*6); // 6 is the number of seasons
 
 			float barY = y + height;
 			float value;
@@ -121,7 +116,7 @@ public class BarChart extends Widget{
 				value = Parser.LIST_ALL.get(i).getNumberOfLinesPerCharacter(character);
 				barY = GLOBAL.processing.map(value, 0, 100, y + height, y);					 // TODO 100 is a default value, must be set as the max	
 				float barX = GLOBAL.processing.map(i, indexStart, indexEnd, x + rectWidth, x + plotWidth - rectWidth);
-				GLOBAL.processing.rect( barX - rectWidth/2, barY, barX+ rectWidth/2, y + height);
+				GLOBAL.processing.rect( barX - rectWidth/2, barY, barX + rectWidth/2, y + height);
 				
 				// Check for any mouse rollover functionality to be displayed
 				if (GLOBAL.processing.mouseX > (barX - rectWidth/2) && GLOBAL.processing.mouseX < (barX + rectWidth) 
@@ -146,18 +141,26 @@ public class BarChart extends Widget{
 		
 		else if (GRAPH_TYPE == EPISODE_GRAPH) {
 			
+			ArrayList<Character> charactersInEpisode = new ArrayList<Character>();
+			
+			// For each character, add to the charactersInEpisode only the one that appears
+			for(int i =0; i < Parser.ALL_CHARACTERS.size(); i++) {
+				if (episode.getNumberOfLinesPerCharacter(Parser.ALL_CHARACTERS.get(i)) > 0)
+					charactersInEpisode.add(Parser.ALL_CHARACTERS.get(i));
+			}		
+			
 			// Width of a single bar
-			float rectWidth = (float)(width)/(2*Parser.ALL_CHARACTERS.size());
+			rectWidth = (float)(width)/(2*charactersInEpisode.size());
 
 			float barY = y + height;
 			float value;
 			
-			// For each character
-			for(int i =0; i < Parser.ALL_CHARACTERS.size(); i++) {
+			// For each character that appears, plot the bar
+			for(int i =0; i < charactersInEpisode.size(); i++) {
 				
-				value = episode.getNumberOfLinesPerCharacter(Parser.ALL_CHARACTERS.get(i));
+				value = episode.getNumberOfLinesPerCharacter(charactersInEpisode.get(i));
 				barY = GLOBAL.processing.map(value, 0, 100, y + height, y);					 // TODO 100 is a default value, must be set as the max	
-				float barX = GLOBAL.processing.map(i, 0, Parser.ALL_CHARACTERS.size(), x, x + width);
+				float barX = GLOBAL.processing.map(i, 0, charactersInEpisode.size() - 1, x + rectWidth, x + width - rectWidth);
 				GLOBAL.processing.rect( barX - rectWidth/2, barY, barX+ rectWidth/2, y + height);
 			}
 			
@@ -166,7 +169,7 @@ public class BarChart extends Widget{
 		else if (GRAPH_TYPE == SEASON_GRAPH) {
 
 			// Width of a single bar
-			float rectWidth = (float)(width)/(2*Parser.ALL_CHARACTERS.size());
+			rectWidth = (float)(width)/(2*Parser.ALL_CHARACTERS.size());
 
 			float barY = y + height;
 			float value;
@@ -205,7 +208,7 @@ public class BarChart extends Widget{
 					break;
 				}
 								
-				float barX = GLOBAL.processing.map(i, 0, Parser.ALL_CHARACTERS.size(), x, x + width);
+				float barX = GLOBAL.processing.map(i, 0, Parser.ALL_CHARACTERS.size() - 1, x + rectWidth, x + width - rectWidth);
 				GLOBAL.processing.rect( barX - rectWidth/2, barY, barX+ rectWidth/2, y + height);
 			}
 			

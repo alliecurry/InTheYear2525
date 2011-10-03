@@ -37,7 +37,7 @@ public class GraphsArea extends Widget{
 		if (GLOBAL.ANALYSIS_TYPE.equals("characters")) {
 			scroll.draw();
 			
-			if (rolloverRect != null && chart1.mouseOver() || ( chart2 != null && chart2.mouseOver()) || (chart3 != null && chart3.mouseOver()) ) {
+			if (rolloverRect != null && ( chart1 != null && chart1.mouseOver()) || ( chart2 != null && chart2.mouseOver()) || (chart3 != null && chart3.mouseOver()) ) {
 				rolloverRect.draw();
 				GLOBAL.processing.fill(GLOBAL.colorText);
 				GLOBAL.processing.textFont(GLOBAL.tFont,18);
@@ -51,7 +51,7 @@ public class GraphsArea extends Widget{
 	// Create a new graph for character analysis
 	public void createCharacterGraph() {
 		if (chart1 == null) {
-			chart1 = new BarChart(GLOBAL.CHARACTER_SELECTED, x + 20, y + 20, width - 20, height - 100, CHARACTER_GRAPH);
+			chart1 = new BarChart(GLOBAL.CHARACTER_SELECTED, x + 20, y + 20, width - 20, height - 120, CHARACTER_GRAPH);
 		}
 		else if (chart2 == null) {
 			int chartHeight = (height - 140)/2;
@@ -129,7 +129,7 @@ public class GraphsArea extends Widget{
 		scroll = new HorizontalScrollBar(Parser.LIST_ALL);
 		scroll.x = this.x + 20;
 		scroll.y = this.y + this.height - 50;
-		scroll.width = this.width - 100;
+		scroll.width = this.width - 120;
 		scroll.height = 15;	
 		scroll.size = (float)2/ Parser.LIST_ALL.size();
 		

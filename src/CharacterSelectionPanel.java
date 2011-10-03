@@ -1,3 +1,5 @@
+import processing.core.PImage;
+
 public class CharacterSelectionPanel extends Widget {
 	
 	public Button treeView;
@@ -7,14 +9,18 @@ public class CharacterSelectionPanel extends Widget {
 	
 	public boolean list = false;  // false = treeMap view. true = listView
 	
+	// test
+	public PImage treemap;
+	
 	public CharacterSelectionPanel( int xValue, int yValue) {
 		
 		x = xValue;
 		y=yValue;
 		
 		height = 600;
-		width = 600;
-			
+		width = 660;
+		
+		/*
 		int offsetX = 0, offsetY= 0;
 		// TODO make all buttons after having all the occurrences. for all in ALL_CHARACTER, create a button with getName and getOccurrences
 		for(int i = 0; i < Parser.ALL_CHARACTERS.size(); i++) {	
@@ -38,6 +44,7 @@ public class CharacterSelectionPanel extends Widget {
 				GLOBAL.allCharacterButtons.add(cb);
 			}
 		}
+		*/
 		
 		// Create a new scrollbar
 		scroll = new ScrollBar();
@@ -59,6 +66,8 @@ public class CharacterSelectionPanel extends Widget {
 		listView.active = true;
 		listView.setLabel("List View");
 		
+		// test
+		treemap = GLOBAL.processing.loadImage("images/treemap.jpg");
 		
 	}
 	
@@ -74,10 +83,13 @@ public class CharacterSelectionPanel extends Widget {
 		treeView.draw();
 		listView.draw();
 
-		if ( !list ) {
+		if ( !list ) {/*
 			for(int i = 0; i < GLOBAL.allCharacterButtons.size(); i++) {	
 				GLOBAL.allCharacterButtons.get(i).draw();
-			}
+			}*/
+			
+			GLOBAL.processing.image(treemap, x, y + 100, 660, 500);
+			
 		}
 		else {
 			scroll.draw();

@@ -15,7 +15,7 @@ public class Menu extends Widget{
 
 	// Menu contents
 	public Menu() {
-		characterPicker = new CharacterSelectionPanel(250,100);
+		characterPicker = new CharacterSelectionPanel(240,80);
 		episodePicker = new EpisodeSelectionPanel(250,200);
 		seasonPicker = new SeasonSelectionPanel(300,200);
 		
