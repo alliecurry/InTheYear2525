@@ -14,6 +14,11 @@ public class BarChart extends Widget{
 	public Episode episode;
 	public Integer season;
 	
+	public int plotWidth;
+	public int infoWidth;
+	
+	public float rectWidth;
+		
 	public BarChart(Character c, int xValue, int yValue, int w, int l, int TYPE) {
 		
 		x = xValue;
@@ -21,6 +26,10 @@ public class BarChart extends Widget{
 		
 		width = w;
 		height = l;
+		
+		infoWidth = 100;
+		
+		plotWidth = width - infoWidth; // Need space for icons and stat
 		
 		character = c;
 		
@@ -36,6 +45,8 @@ public class BarChart extends Widget{
 		width = w;
 		height = l;
 		
+		plotWidth = width;
+		
 		episode = e;
 		
 		GRAPH_TYPE = TYPE;
@@ -48,6 +59,8 @@ public class BarChart extends Widget{
 		
 		width = w;
 		height = l;
+		
+		plotWidth = width;
 		
 		season = new Integer(s);
 		
@@ -70,7 +83,7 @@ public class BarChart extends Widget{
 		GLOBAL.processing.noStroke();
 		GLOBAL.processing.rectMode(GLOBAL.processing.CORNERS);
 		GLOBAL.processing.fill(GLOBAL.colorPlotArea);
-		GLOBAL.processing.rect(x,y, x + width, y + height);
+		GLOBAL.processing.rect(x,y, x + plotWidth, y + height);
 		GLOBAL.processing.fill(GLOBAL.processing.color(255));
 		
 		if (GRAPH_TYPE == CHARACTER_GRAPH) {
@@ -93,7 +106,7 @@ public class BarChart extends Widget{
 					indexEnd = i;
 			}
 			
-			float rectWidth = (float)(width)/(2*(indexEnd - indexStart));
+			rectWidth = (float)(width)/(2*(indexEnd - indexStart));
 			
 			// For each season
 //			for(int i = 1; i < 7; i++) {
@@ -107,10 +120,26 @@ public class BarChart extends Widget{
 			for ( int i = indexStart; i <= indexEnd; i++ ) {
 				value = Parser.LIST_ALL.get(i).getNumberOfLinesPerCharacter(character);
 				barY = GLOBAL.processing.map(value, 0, 100, y + height, y);					 // TODO 100 is a default value, must be set as the max	
-				float barX = GLOBAL.processing.map(i, indexStart, indexEnd, x, x + width);
+				float barX = GLOBAL.processing.map(i, indexStart, indexEnd, x + rectWidth, x + plotWidth - rectWidth);
 				GLOBAL.processing.rect( barX - rectWidth/2, barY, barX+ rectWidth/2, y + height);
-			}
 				
+				// Check for any mouse rollover functionality to be displayed
+				if (GLOBAL.processing.mouseX > (barX - rectWidth/2) && GLOBAL.processing.mouseX < (barX + rectWidth) 
+						&& GLOBAL.processing.mouseY > y && GLOBAL.processing.mouseY < (y  + height)) {
+					String label = "S"+ Parser.LIST_ALL.get(i).getSeason() + " E" + Parser.LIST_ALL.get(i).getEpisode()+ " " + Parser.LIST_ALL.get(i).getName();
+					main_class.graphArea.mouseRolloverFunction(rectWidth, barX, label);
+					
+				}
+			}
+			
+			// Draw icon and info		
+			GLOBAL.processing.fill(GLOBAL.colorText);
+			GLOBAL.processing.textFont(GLOBAL.tFont,16);
+			GLOBAL.processing.textAlign(GLOBAL.processing.CENTER);
+			GLOBAL.processing.text(character.getName(), x + width - 40, y + 20);
+			
+			if (character.getIcon() != null)
+				GLOBAL.processing.image( character.getIcon(), x + width - 80, y + 30, 80, 80);
 			
 
 		}
@@ -183,7 +212,5 @@ public class BarChart extends Widget{
 		} // end if
 		
 	}
-	
-	
 
 }

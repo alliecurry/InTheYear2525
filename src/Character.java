@@ -1,13 +1,15 @@
 import java.util.ArrayList;
 
 import processing.core.PApplet;
+import processing.core.PImage;
 
 //Character object
 //      Stores data for a specific character.
 public class Character {
 
         PApplet processing;
-        private String name;                                    //Character name (all lowercase by convention)
+        private String name;                       //Character name (all lowercase by convention)
+        private PImage icon;                       //Character icon
         private ArrayList<Integer> episodes_s1;    //List of episode numbers character appears (season 1)
         private ArrayList<Integer> episodes_s2;    //List of episode numbers character appears (season 2)
         private ArrayList<Integer> episodes_s3;    //List of episode numbers character appears (season 3)
@@ -113,5 +115,13 @@ public class Character {
         
         public void addPhrase(String p, String r) {
         	phrases.add(new Catchphrase(p, r));
+        }
+        
+        public void setIcon() {
+        	icon = GLOBAL.processing.loadImage("images/" +name+ ".jpg");
+        }
+        
+        public PImage getIcon() {
+        	return icon;
         }
 }

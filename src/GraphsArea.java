@@ -17,6 +17,10 @@ public class GraphsArea extends Widget{
 	// Horizontal scrollbar for selecting starting and ending episodes
 	public HorizontalScrollBar scroll;
 	
+	// Rollover rectangle and label to be displayed 
+	public Widget rolloverRect;
+	public String rolloverLabel;
+	
 	public GraphsArea() {
 	
 	}
@@ -30,28 +34,39 @@ public class GraphsArea extends Widget{
 		if (chart3 != null)
 			chart3.draw();
 		
-		if (GLOBAL.ANALYSIS_TYPE.equals("characters"))
+		if (GLOBAL.ANALYSIS_TYPE.equals("characters")) {
 			scroll.draw();
+			
+			if (rolloverRect != null && chart1.mouseOver() || ( chart2 != null && chart2.mouseOver()) || (chart3 != null && chart3.mouseOver()) ) {
+				rolloverRect.draw();
+				GLOBAL.processing.fill(GLOBAL.colorText);
+				GLOBAL.processing.textFont(GLOBAL.tFont,18);
+				GLOBAL.processing.textAlign(GLOBAL.processing.CENTER);
+				GLOBAL.processing.text(rolloverLabel, x + width/2 - 50, y + height - 70);
+			}
+		}
 
 	}
 	
 	// Create a new graph for character analysis
 	public void createCharacterGraph() {
-		if (chart1 == null)
-			chart1 = new BarChart(GLOBAL.CHARACTER_SELECTED, x + 20, y + 20, width - 100, height - 80, CHARACTER_GRAPH);
+		if (chart1 == null) {
+			chart1 = new BarChart(GLOBAL.CHARACTER_SELECTED, x + 20, y + 20, width - 20, height - 100, CHARACTER_GRAPH);
+		}
 		else if (chart2 == null) {
+			int chartHeight = (height - 140)/2;
 			chart2 = chart1;
-			chart2.changePosition(x + 20, y + (height)/2 + 30, width - 100, (height - 100) /2);
-			chart1 = new BarChart(GLOBAL.CHARACTER_SELECTED, x + 20, y + 20, width - 100, (height - 100) /2, CHARACTER_GRAPH);
+			chart2.changePosition(x + 20, y + 40 + chartHeight, width - 20, chartHeight);
+			chart1 = new BarChart(GLOBAL.CHARACTER_SELECTED, x + 20, y + 20, width - 20, chartHeight, CHARACTER_GRAPH);
 			}
 		else {
 			int chartHeight = (height - 160)/3;
 			chart3 = chart2;
 			chart2 = chart1;
 			// chart 2 and 3 = change x y width height
-			chart2.changePosition(x + 20, y + 80 + chartHeight, width - 100, chartHeight);
-			chart3.changePosition(x + 20, y + 140 + 2*chartHeight, width - 100, chartHeight);
-			chart1 = new BarChart(GLOBAL.CHARACTER_SELECTED, x + 20, y + 20, width - 100, chartHeight, CHARACTER_GRAPH);	
+			chart2.changePosition(x + 20, y + 40 + chartHeight, width - 20, chartHeight);
+			chart3.changePosition(x + 20, y + 60 + 2*chartHeight, width - 20, chartHeight);
+			chart1 = new BarChart(GLOBAL.CHARACTER_SELECTED, x + 20, y + 20, width - 20, chartHeight, CHARACTER_GRAPH);	
 		}
 		
 	}
@@ -112,11 +127,24 @@ public class GraphsArea extends Widget{
 	public void createScrollBar() {
 		
 		scroll = new HorizontalScrollBar(Parser.LIST_ALL);
-		scroll.x = this.x + 50;
+		scroll.x = this.x + 20;
 		scroll.y = this.y + this.height - 50;
 		scroll.width = this.width - 100;
 		scroll.height = 15;	
 		scroll.size = (float)2/ Parser.LIST_ALL.size();
 		
 	}
+	
+	public void mouseRolloverFunction( float RectWidth, float x, String s ) {
+		
+		rolloverRect = new Widget();
+		rolloverRect.x = (int)(x - RectWidth/2);
+		rolloverRect.y = (int)(y + 20);
+		rolloverRect.width = (int)(RectWidth);
+		rolloverRect.height = (int)(height - 120);
+		
+		rolloverLabel = s;
+		
+	}
+
 }

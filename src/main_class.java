@@ -40,18 +40,25 @@ public class main_class extends PApplet{
  
         });
 		
-		
-		//Prints all characters currently added. 
-		//For testing only.
-		/*
+		// Load character image
+		for(int i=0; i< Parser.ALL_CHARACTERS.size(); i++)
+			Parser.ALL_CHARACTERS.get(i).setIcon();
+
+		/*// TreeMap .tm3 file -> copy & paste on the Characters.tm3 file  
+		System.out.println("Appearence");
+		System.out.println("INTEGER");
+
 		for(int x=0; x<Parser.ALL_CHARACTERS.size(); ++x) {
 			String name = Parser.ALL_CHARACTERS.get(x).getName();
 			int ep = Parser.ALL_CHARACTERS.get(x).getTotalEpisodes();
 
-			System.out.println(name + ":\t" + ep + " episodes.");
-		}   
-		*/
-		//
+			//System.out.println(name + ":\t" + ep + " episodes.");
+
+			if ( Parser.ALL_CHARACTERS.get(x).getTotalEpisodes() > 4)
+				//System.out.println("<leaf>\n<label>"+ Parser.ALL_CHARACTERS.get(x).getName() +"</label>\n<weight>"+ Parser.ALL_CHARACTERS.get(x).getTotalEpisodes() +"</weight>\n<value>"+ Parser.ALL_CHARACTERS.get(x).getTotalEpisodes() +"</value>\n</leaf>");
+				System.out.println(Parser.ALL_CHARACTERS.get(x).getTotalEpisodes() + "\tCharacters\t" + Parser.ALL_CHARACTERS.get(x).getName());
+		}
+		*/   
 		
 		// Create the menu
 		menu = new Menu();
@@ -61,15 +68,15 @@ public class main_class extends PApplet{
 		// Create the plotting area, composed at most by 3 plots
 		graphArea = new GraphsArea();
 		graphArea.x = 220;
-		graphArea.y = 90;
+		graphArea.y = 40;
 		graphArea.width = 1000 - 220;
-		graphArea.height = 750 - 90;
+		graphArea.height = 750 - 40;
 		graphArea.createScrollBar();
 		
 		// tristate button for setting type of analysis
 		analysisTypeButton = new MultistateButton();
 		analysisTypeButton.x = 860;
-		analysisTypeButton.y = 50;
+		analysisTypeButton.y = 10;
 		analysisTypeButton.addState("characters");
 		analysisTypeButton.addState("episodes");
 		analysisTypeButton.addState("seasons");
@@ -125,7 +132,7 @@ public class main_class extends PApplet{
 //		text("You have selected: season " + GLOBAL.SEASON_SELECTED, width/2 - 150, 40);
 		text("In the year 2525", 100, 40);
 		textFont(GLOBAL.tFont,16);
-		text("Select type of analysis: ",750, 70);
+		text("Select type of analysis: ",750, 30);
 		
 	}
 	

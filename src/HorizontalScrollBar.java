@@ -90,9 +90,9 @@ public class HorizontalScrollBar extends Widget{
 		GLOBAL.processing.fill(GLOBAL.colorText);
 		GLOBAL.processing.textFont(GLOBAL.tFont,14);
 		GLOBAL.processing.textAlign(GLOBAL.processing.LEFT);
-		GLOBAL.processing.text(GLOBAL.episodeStart.getName(), x, y + 40);
+		GLOBAL.processing.text("S"+GLOBAL.episodeStart.getSeason()+" E"+GLOBAL.episodeStart.getEpisode()+" "+GLOBAL.episodeStart.getName(), x, y + 40);
 		GLOBAL.processing.textAlign(GLOBAL.processing.RIGHT);
-		GLOBAL.processing.text(GLOBAL.episodeEnd.getName(), x + width, y + 40);
+		GLOBAL.processing.text("S"+GLOBAL.episodeEnd.getSeason()+" E"+GLOBAL.episodeEnd.getEpisode()+" "+GLOBAL.episodeEnd.getName(), x + width, y + 40);
 		
         
     }
