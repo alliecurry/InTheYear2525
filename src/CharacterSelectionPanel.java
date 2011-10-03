@@ -1,3 +1,6 @@
+import java.util.ArrayList;
+import java.util.HashMap;
+
 import processing.core.PImage;
 
 public class CharacterSelectionPanel extends Widget {
@@ -11,6 +14,8 @@ public class CharacterSelectionPanel extends Widget {
 	
 	// test
 	public PImage treemap;
+	
+	public ArrayList<CharacterButton> characterIconsTreemap;
 	
 	public CharacterSelectionPanel( int xValue, int yValue) {
 		
@@ -45,6 +50,18 @@ public class CharacterSelectionPanel extends Widget {
 			}
 		}
 		*/
+		
+		// Treemap
+		
+		characterIconsTreemap = new ArrayList<CharacterButton>();
+		
+		// Treemap list of character, it depends on the jpeg of treemap.jpg !!
+		setCharacterIconsTreemap(240, 180, 348, 433, "fry");
+		setCharacterIconsTreemap(351, 181, 572, 302, "leela");
+		
+		// TODO : to be completed ........
+		
+		
 		
 		// Create a new scrollbar
 		scroll = new ScrollBar();
@@ -90,6 +107,10 @@ public class CharacterSelectionPanel extends Widget {
 			
 			GLOBAL.processing.image(treemap, x, y + 100, 660, 500);
 			
+			for (int i=0; i< characterIconsTreemap.size() ; i++) {
+				characterIconsTreemap.get(i).draw();
+			}
+			
 		}
 		else {
 			scroll.draw();
@@ -97,7 +118,8 @@ public class CharacterSelectionPanel extends Widget {
 			// First, create and deactivate all buttons	
 			GLOBAL.allCharacterListButtons.clear();
 			for(int i =0; i < Parser.ALL_CHARACTERS.size(); i++) {
-				CharacterButton b = new CharacterButton(Parser.ALL_CHARACTERS.get(i).getName(), Parser.ALL_CHARACTERS.get(i).getTotalEpisodes(), false);
+//				CharacterButton b = new CharacterButton(Parser.ALL_CHARACTERS.get(i).getName(), Parser.ALL_CHARACTERS.get(i).getTotalEpisodes(), false);
+				CharacterButton b = new CharacterButton(Parser.ALL_CHARACTERS.get(i).getName(), CharacterButton.LABEL_TYPE);
 				b.active = false;
 				GLOBAL.allCharacterListButtons.add(b);
 				
@@ -122,11 +144,33 @@ public class CharacterSelectionPanel extends Widget {
 		
 	}
 	
+	// Create a new Character Button for each one of the tree map
+	public void setCharacterIconsTreemap(int x_min, int y_min, int x_max , int y_max, String name ) {
+		
+		CharacterButton w = new CharacterButton(name, CharacterButton.NO_LABEL_TYPE);
+		
+		w.x = x_min;
+		w.y = y_min;
+		
+		w.width = x_max - x_min;
+		w.height = y_max - y_min;
+		
+		w.active = true;
+		
+		characterIconsTreemap.add(w);
+
+	}
+	
 	public void doAction() {
 		if(!list) {
-			for(int i = 0; i < GLOBAL.allCharacterButtons.size(); i++) {
-				if( GLOBAL.allCharacterButtons.get(i).mouseOver() && GLOBAL.allCharacterButtons.get(i).active) {
-					GLOBAL.allCharacterButtons.get(i).doAction();
+//			for(int i = 0; i < GLOBAL.allCharacterButtons.size(); i++) {
+//				if( GLOBAL.allCharacterButtons.get(i).mouseOver() && GLOBAL.allCharacterButtons.get(i).active) {
+//					GLOBAL.allCharacterButtons.get(i).doAction();
+//				}
+//			}
+			for(int i = 0; i < characterIconsTreemap.size(); i++) {
+				if( characterIconsTreemap.get(i).mouseOver() && characterIconsTreemap.get(i).active) {
+					characterIconsTreemap.get(i).doAction();
 				}
 			}
 		}
@@ -148,3 +192,10 @@ public class CharacterSelectionPanel extends Widget {
 	}
 	
 }
+
+
+
+
+
+
+

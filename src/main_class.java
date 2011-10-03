@@ -156,6 +156,7 @@ public class main_class extends PApplet{
 		GLOBAL.colorPlotArea = color(0);
 		GLOBAL.colorStatsArea = color(28,28,28);
 		GLOBAL.colorMenuBackground = color(28,28,28);
+		GLOBAL.colorIconBackground = color(224);
 	}
 	
 	// If mouse is pressed, check what has been pressed and activate the action

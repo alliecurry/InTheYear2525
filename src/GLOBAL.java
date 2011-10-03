@@ -33,6 +33,7 @@ public class GLOBAL {
 	public static int colorPlotArea;	
 	public static int colorStatsArea;
 	public static int colorMenuBackground;
+	public static int colorIconBackground;
 
 	
 	////
