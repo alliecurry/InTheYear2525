@@ -24,11 +24,11 @@ Bender	dunno,I'll,try,feet
 Leela	Alright,here's,plan,Zoidberg,pick,pieces
 Zoidberg	Zoidberg,picks,piece,crowd,goes,wild
 Man	General,years,covering,secret,discoveries,sheets,I've,dramatically,revealed,shocking,Dun,dun,dun,debris,alien,spaceship
-General	Son,think,safely,say,,
+General	Son,think,safely,say,
 Man	1947,going,eventful,year,town,Roswell,New,Mexico
 Farnsworth	Remarkable,According,high,precision,digital,chronograph,it's,July,9th,1947,explain,chronograph,turned,pin,up,calendar
 Bender	Wait,second,mean,travelled,time
-Farnsworth	Doy,idiot,metal,microwave,,
+Farnsworth	Doy,idiot,metal,microwave,
 Fry	Yo
 Farnsworth	microwave,radiation,combined,gravitons,graviolis,supernova,blasted,time,itself
 Leela	seen,today's,news
@@ -132,7 +132,7 @@ Fry	Aw,know,feel,grandfather,died,recently
 Mildred	It's,sad,times,like,just,need,hold,like,holding,don't
 Fry	Hey,know,cheers,Baking,nice,tray,sugar,cookies
 Mildred	'bout,cookies,sugar
-Fry	shouldn't,shouldn't,exist,exist,proves,can't,really,grandm,,
+Fry	shouldn't,shouldn't,exist,exist,proves,can't,really,grandm,
 Bender	Oh,God
 Farnsworth	hell,Fry
 Fry	Relax,can't,grandmother,figured
@@ -157,20 +157,20 @@ Zoidberg	Hey,don't,cut,need,speak
 Pathologist #2	Oh
 Truman	Sweet,Roosevelt's,ghost
 Leela	Hi,yah,Yah
-Fry	Mr,President,,,Sir
+Fry	Mr,President,Sir
 Zoidberg	President,gagging,gas,bladder,honour
 Farnsworth	Huh,wha,Oh,right
 Sergeant	Enos
 Fry	He's,dead,Sorry
 Fry	Yay
 Farnsworth	Choke,causality
-Bender	1947,kiss,shiny,metal,,
+Bender	1947,kiss,shiny,metal,
 Fry	Turn,We've,gotta,Bender
 Farnsworth	Impossible,supernova,time,hole,closing,don't,leave,we'll,31st,century
 Fry	Bender
 Zoidberg	Good,new
 Leela	Don't,need
-Zoidberg	Oh,That's,my,,,Gotcha
+Zoidberg	Oh,That's,my,Gotcha
 Fry	Oh,poor,Bender,lonely,right,trapped,thousand,years,past,Hey,Wait,second
 Leela	
 Fry	Wait

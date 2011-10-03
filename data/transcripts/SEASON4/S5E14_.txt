@@ -13,7 +13,7 @@ Farnsworth	Wernstrom
 Farnsworth's Killbot	senseless,aggression
 Wernstrom's Killbot	Come,Let's,paddle,boat,ride
 Bender	secret,scratching,really,really,hard
-Announcer	woman,Mom,opolises,robot,industry,,
+Announcer	woman,Mom,opolises,robot,industry,
 Fry	
 Announcer	Mom
 Fry	Oh
@@ -59,7 +59,7 @@ Bender
 Leela	can't,accept,help
 Bender	hate
 Leela	he's,just,tool,make,life,easier,Like,socket,wrench,burglar's,kit
-Bender	can't,ask,help,because,,
+Bender	can't,ask,help,because,
 Farnsworth	Yes
 Bender	I'm,scared
 Leela	Oh,sorry
@@ -85,7 +85,7 @@ Bender	Hey,mad,turn
 Bender	Beer,Ow
 Bender	Ow
 Bender	care
-Cartridge Unit	We're,community,outdated,robots,refused,upgrade,came,here,,,B,live,simpler,existence,free,technology
+Cartridge Unit	We're,community,outdated,robots,refused,upgrade,came,here,B,live,simpler,existence,free,technology
 Bender	working,cartridge,unit,Wow,guys,went,obsolete,years,ago
 Cartridge Unit	mother
 Lisa	Cartridge,Unit,means,things,make,obsolete,make,unique,example,need,refilling,waterwheel,I'll,power,forever,Oh,God,I'll,make,time,end,like
@@ -107,7 +107,7 @@ Lisa	CDs,unnatural,don't,just,listen,ocean
 Bender	ocean,ocean,Whoa,It's,like,earth,making,sweet,salty,love,itself,fish,groove,garbage,Beethoven,deaf,bastard
 Bender	Bang,bang,bang,sure,got,life,thing,figured,cymbal,banging,monkey
 Lisa	Hi,Bender,know,miss,technology,brought,washing,machine,drifted,ashore
-Bender	Ooh,I'm,gonna,wash,linen,hard,w,,,You,,
+Bender	Ooh,I'm,gonna,wash,linen,hard,w,You,
 Lisa	don't,understand
 Sinclair	alright
 Bender	Wretched,technology,brought,misery
@@ -149,10 +149,10 @@ Sinclair	Who's,Robot,1,X,Launching
 Zoidberg	guess,worked,fine
 Leela	Great,we're,crushed
 Amy	Help,wooden,Bender
-Bender	Heck,guys,hate,gotta,the,,,Termites,don't,need,legs,save,friends,I'll,just,use,old,extentromatic,arms
+Bender	Heck,guys,hate,gotta,the,Termites,don't,need,legs,save,friends,I'll,just,use,old,extentromatic,arms
 Hermes	Bender,hurry,fuel's,expensive,we're,dying
 Bender	I'm,a,comin',Ow,Lousy,primitive,body,Oh,didn't,upgrade,I'm,outdated,piece,junk
-Robot 1 X	Sir,recommend,,
+Robot 1 X	Sir,recommend,
 Bender	shut,wait,use,tool,save,friends,I'll,hero,says,great
 Robot 1 X	help
 Bender	Save,friends,Zoidberg
@@ -160,10 +160,10 @@ Amy	Look,hair,got,singed,cuter
 Fry	Hey,where's,Bender
 Bender	I'm,sorry,guys,meant,hurt,Just,destroy,believed
 Leela	saved,uh,Thank,God,finally,overcame,incompatibility,Robot,1,X
-Bender	Oh,yeah,totally,sync,like,Save,problem,did,it,,
+Bender	Oh,yeah,totally,sync,like,Save,problem,did,it,
 Bender	new,technology,great,love,magnificent,1,X,robots,1,X,robots,friends
 Fatbot	It's,like,personality,totally,different,Oh,maybe,upgrade,isn't,good,idea
-Bender	I'd,like,Robot,1,X,big,smooch,the,,,Hey,What's,dealy,o
+Bender	I'd,like,Robot,1,X,big,smooch,the,Hey,What's,dealy,o
 Technician	upgrade,complete
 Bender	destroyed,technology,world,ran,beach,felt,sand,foot,cups
 Technician	experiences,upgrade,differently

@@ -54,13 +54,13 @@ Leela	permanent,career,assignment
 Fry	Delivery,boy
 Leela	hands,You've,assigned,job,you're,best,just,like
 Fry	refuse
-Leela	you'll,fired,,
+Leela	you'll,fired,
 Fry	Fine
 Leela	cannon,Sun
 Fry	don't,like,delivery,boy
 Leela	that's,tough,Lots,people,don't,like,jobs,gotta,gotta,hold,hand,I'm,gonna,implant,career,chip,It'll,permanently,label,delivery,boy
 Fry	thing,away
-Leela	Hold,dammit,don't,good,depth,perception,You've,got,count,let,One,,
+Leela	Hold,dammit,don't,good,depth,perception,You've,got,count,let,One,
 Fry	thousand,years,owe
 Fry	Whoa
 Man #1	JFK,Jr,Airport
@@ -150,7 +150,7 @@ Fry	God,She's,gone,knew,cared,gone
 Bender	Wait,There's,know
 Fry	Oh,can't,leave,I'm,miserable
 Leela	Look,know,it's,consolation,understand,feel
-Fry	don't,I've,got,home,family,,
+Fry	don't,I've,got,home,family,
 Bender	friends
 Fry	world,gone,can't,possibly,understand,feels,like
 Leela	understand,I'm,one,eyed,alien,planet,parents,abandoned,baby,don't,know,galaxy,know,feels
@@ -201,7 +201,7 @@ Smitty	can't,Pretty
 Fry	guess,jobs,we'll,fugitives,forever
 Farnsworth	necessarily,chance,interested,new,spaceship,crew
 Bender	New,crew,W,What,happened,old,crew
-Farnsworth	poor,sons,of,,,that's,important,important,thing,need,new,crew,interested
+Farnsworth	poor,sons,of,that's,important,important,thing,need,new,crew,interested
 Fry	Yes,Yes,That's,exactly,job,I've,wanted
 Leela	Thanks,offer,Professor,don't,proper,career,chips
 Farnsworth	Oh,won't,problem,luck,saved,chips,previous,crew

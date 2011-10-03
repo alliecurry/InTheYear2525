@@ -22,7 +22,7 @@ Boy	bring,coffin,Grandpa,choked,chestnut,year,he's,beginning,smell,lot,like,Xmas
 Fry	It's,fair,day,Xmas,supposed,bring,people,blow,apart
 Bender	Sure,who's,going,Certainly,sir
 Fry	Certainly,yes,uh,huh,sir,We've,gotta,bring,kind,Xmas,remember
-Leela	Fry's,right,It's,time,sit,Santa's,lap,,,,hard
+Leela	Fry's,right,It's,time,sit,Santa's,lap,hard
 Leela	Oh,look,cute,little,welcoming,party
 Aide #1	Hey,Wanna,buy,tiny,little,kidney
 Aide #2	I'll,let,punch,buck
@@ -56,7 +56,7 @@ Leela	Wait,we're,running
 Fry	Faster,Faster
 Fry	aren't,moving
 Leela	don't,know,Usually,stuff,like,ship,moves
-Santa	Ho,ho,,,Eh
+Santa	Ho,ho,Eh
 Fry	He's,trapped
 Aide #2	make,toys
 Neptunians	Toys,Toys,Toys
@@ -80,7 +80,7 @@ Leela	you'll,work,triple,shifts
 Fry	It's,work,Xmas,Eve
 Neptunians	Hooray
 Leela	you're,cold,sore,ugly
-Fry	Let,happy,smile,warm,hearts,,
+Fry	Let,happy,smile,warm,hearts,
 Aide #5	There's,toy,lodged,brain
 Neptunians	getting,awfully,tired
 Bender	selfish,little,bastards
@@ -116,7 +116,7 @@ Fry	Ah,Bathtub,eggnog,Just,way,Grandma,used,drink,Ew,went,sour
 Zoidberg	Can't,scented,bath,peace
 Leela	Remember,Professor,Bender,Santa,don't,need,hurt,right
 Farnsworth	Yes,yes,yes,sound,like,broken,mp3
-Bender	Ho,ho,,,Ow
+Bender	Ho,ho,Ow
 Leela	Professor,Don't,remember,told
 Farnsworth	
 Bender	Oh,there's,gotta,better,way
@@ -140,7 +140,7 @@ Whitey	ham,dinner,mayonnaise,waiting,mansion,defendant,guilty,Santa,Claus,senten
 Leela	It's,fair,just,hope,dumb,chicken,ashamed,himself
 Smitty	Deactivated,robot,walking,got,deactivated,robot,walking
 Robot	Hey,Santa,Robot,Devil,tell,I'm,a,comin'
-Bender	Hey,guy,said,tell,that,,
+Bender	Hey,guy,said,tell,that,
 Robot Devil	heard
 Aide #1	Greetings,masters,companion,lots,toys
 Leela	Outta,way,shrimp,oh,We're,bring,Santa,prove,Bender's,innocent
@@ -194,7 +194,7 @@ Hermes	Huddled,fear,like,lice,burning,wig
 Fry	Wait,second,Maybe,futuristic,Xmas,isn't,rotten
 Leela	talking,crouton,said,Xmas,bringing,people,blowing,apart
 Fry	don't,Fear,brought,That's,magic,Xmas
-Farnsworth	That's,big,crock,of,,,Hold
+Farnsworth	That's,big,crock,of,Hold
 Bender	Trasher,Smasher,Hey,Kwanzaabot
 Kwanzaabot	Ah,didn't,hear,Chanukah,Zombie's,having,luau,B'nai,B'rith,comin'
 Bender	Word

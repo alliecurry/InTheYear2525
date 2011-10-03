@@ -24,7 +24,7 @@ Leela	Hey,guys,missed,great,delivery,Space,Earth,afternoon
 Fry	uh,uh,concert
 Leela	Ooh,jazz,noodling,ex,boyfriend,Sean,played,sax,used,listen,hours,sat,naked,couch,improvised
 Bender	musicians,really,Rodger,Hammerstein,huh
-Leela	Yeah,it's,weird,Sean,uneducated,unambitious,pastey,hunched,,
+Leela	Yeah,it's,weird,Sean,uneducated,unambitious,pastey,hunched,
 Fry	Pretty,boy
 Leela	played,sense,incredible,beautiful,creative,soul,day,else's,couch,fibres,butt,couldn't,believe,really
 Fry	beautiful,soul,sitting,naked,couch,just,learn,play,stupid,thing
@@ -37,7 +37,7 @@ Fry	Sure,Oh,Goodbye
 Bender	Fry,smelly,idiot,think,he's,willing,make,kind,deal,devil
 Fry	He,He,He,Great,Wait,what's,catch
 Robot Devil	catch,I'll,merely,pick,robot,random,universe,probably,you've,met,I'll,remove,hands,switch,It's,just,sort,guy,say
-Fry	don't,know,doesn't,entirely,moral,to,,
+Fry	don't,know,doesn't,entirely,moral,to,
 Bender	Fry,don't,offer,right,lose,respect,punch
 Fry	alright,sure,probably,won't,know
 Robot Devil	Definitely,probably,Just,sign,contract
@@ -109,7 +109,7 @@ Leela	Oh,horrible,won't,able,hear,Fry's,opera
 Robot Devil	Ah,delightfully,ironic
 Bender	It's,ironic,it's,just,mean
 Robot Devil	Ooh,aerosol,ironic
-Bender	Oh,yeah,bite,shiny,metal,,,Oh,nooo
+Bender	Oh,yeah,bite,shiny,metal,Oh,nooo
 Leela	tell,Fry,I'm,deaf,couldn't,hear,opera,it'd,break,heart
 Bender	OK,deaf,o
 Hedonismbot	Courtesans,gentle,fops,bid,welcome,opera,Let,cavort,like,Greeks,old,know,ones,mean
@@ -131,7 +131,7 @@ Leela	new,ears,Wait,seemingly,reasonable,thing,want,return
 Robot Devil	Just,hands,dear
 Leela	said,forget
 Robot Devil	Alright,just,hand
-Leela	Just,left,hand,Um,uh,,
+Leela	Just,left,hand,Um,uh,
 Announcer	seats,act
 Hedonismbot	I'm,vomiting
 Leela	can't,stand,OK,hand
@@ -155,7 +155,7 @@ Robot Devil	marriage
 Leela	
 Robot Devil	You'd,hand,marriage
 Hermes	really,happening,just,staged
-Farnsworth	can't,real,,
+Farnsworth	can't,real,
 Amy	Leela,engaged
 Leela	isn't,meant
 Robot Devil	checked,wording,fine,Print

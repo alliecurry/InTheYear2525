@@ -148,7 +148,7 @@ Bender	I'm,hallucinating,right
 Robot,Devil	Bender,Robot,Hell,quite,real,Here's,brochure
 Bender	don't,belong,don't,like,things,scary,painful
 Robot,Devil	Sorry,Bender,agreed,joined,religion,sin,Robot,Hel,eternity
-Bender	Aw,hell,,,mean,heck
+Bender	Aw,hell,mean,heck
 Robot,Devil	It's,alright,say
 Fry	Wait,remember,place,shut,people,caught,salmonella,flume,ride
 Leela	Hmm,Look,It's,symbol,Bender's,old,religion

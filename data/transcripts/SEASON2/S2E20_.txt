@@ -17,7 +17,7 @@ Bender	I'm,big,robot,want,big,cereal
 Fry	you,friend
 Bender	pal,meant,wallet
 Bender	Oh,yeah,calms,shakes,Aw,quit,Come
-Fry	Stop,robot's,enemy,He's,just,poor,misunderstood,,
+Fry	Stop,robot's,enemy,He's,just,poor,misunderstood,
 Zapp	Uh
 Amy	goes,neighbourhood,goes,neighbourhood
 Hermes	We're,jerked,stop,monster,big
@@ -70,12 +70,12 @@ Zoidberg	Alright,anteater,number,protecting,spell
 Hermes	hacking,torso,precious,torso
 Zoidberg	Hermes,quiet,I'm,deducing,things
 Bender	Whattya,got,Disposal,trouble
-Leela	Everything's,just,,
+Leela	Everything's,just,
 Bender	Sure,shocking,Professor,huh,Hermes,mysteriously,missing,doesn't,affect,Bender,Hey,what's,Hermes',dreadlocks,arm,Leela,I'm,shocked,Food,goes,disposal,hair,flesh,trash
-Leela	I'm,sorry,couldn't,stop,,,W,Wait,Don't,care,murdered,Hermes
+Leela	I'm,sorry,couldn't,stop,W,Wait,Don't,care,murdered,Hermes
 Bender	little,There's,wrong,murder,just,long,let,Bender,wet,beak
 Leela	You're,blackmailing
-Bender	Blackmail,ugly,word,prefer,extortion,X,makes,sound,cool,honey,I'm,metal,Like,you're,really,gonna,hurt,a,,,Hey,doing,microwave
+Bender	Blackmail,ugly,word,prefer,extortion,X,makes,sound,cool,honey,I'm,metal,Like,you're,really,gonna,hurt,a,Hey,doing,microwave
 Leela	OK,that's,killing,time,feel,like,killing,just,stick,gum,dispose,body
 Amy	Wow,Sporty,go,cart,Leela,hip,sexy,like
 Leela	gum
@@ -88,10 +88,10 @@ Scruffy	I've,seen
 Zoidberg	Quiet,I've,called,parlour,watch,gradually,solve,crime,people,room,big,murderer,killer,left,fatal,clue,boot,print,Professor's,lab,coat
 Leela	Uh,couldn't,wear,boots
 Fry	Ew,smells,like,boot,feet
-Cubert	preposterous,Obviously,murderer,is,,
+Cubert	preposterous,Obviously,murderer,is,
 Zoidberg	clue,came,415,clock,stopped,came,hours,later,415,discovered,murdered,body,Amy's,dead,deceased,corpse
-Scruffy	Scruffy,knows,killed,people,Scruffy's,opinion,were,,
-Zoidberg	it's,just,suspected,crime,unsolvable,God,can't,murderer,was,,
+Scruffy	Scruffy,knows,killed,people,Scruffy's,opinion,were,
+Zoidberg	it's,just,suspected,crime,unsolvable,God,can't,murderer,was,
 Fry	I'm,bored,You're,boring,Zoidberg,I'm,gonna,watch,TV
 Leela	lights,way
 Fry	Whatcha,eating
@@ -134,7 +134,7 @@ Hawking	concerned
 Panucci	Hey,Hawking,pizza's,ready
 Hawking	Toss,garbage
 Hawking	Seize
-Fry	Hey,the,,,Ooh,Ow,Ow
+Fry	Hey,the,Ooh,Ow,Ow
 Fry	people
 Gore	I'm,Al,Gore,Vice,Presidential,Action,Rangers,group,nerds,sole,duty,prevent,disruptions,space,time,continuum
 Fry	thought,duty,cast,tie,breaking,vote,Senate
@@ -164,12 +164,12 @@ Fry	instead,falling,getting,frozen,missed,wanged,head
 Gore	it's,obvious,happened,wang,head,killed
 Fry	Uh
 Nichols	Let's,finish,job
-Gore	Wait,peaceful,,
+Gore	Wait,peaceful,
 Hawking	Hold
 Deep Blue	Check
 Fry	Ow,Ow,Ow,Ow
 Nichols	Something's,wrong,Murder,isn't,working,that's,we're,good
-Gygax	Let's,try,Maybe,should,,
+Gygax	Let's,try,Maybe,should,
 Gore	dice,away,away
 Nichols	Wait,I'm,getting,idea,Fry,supposed,frozen
 Hawking	Yes,Shove,tube,idea

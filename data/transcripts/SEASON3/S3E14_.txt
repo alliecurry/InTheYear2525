@@ -14,7 +14,7 @@ Hermes	Hooray,Professor
 Farnsworth	Behold,mutant,atomic,supermen
 Leela	They're,foot,high,Professor
 Farnsworth	they're,young,Mere,atomic,super,boys,really,We'll,need,speed,growth,time,particles,called,Chronitons
-Bender	Aren't,particles,destroyed,entire,civilisa,,
+Bender	Aren't,particles,destroyed,entire,civilisa,
 Farnsworth	Good,news,You're,Tempus,Nebula,gather,Chronitons
 Fry	Hey,Leela,look
 Leela	face,lot,punishment,That's,good,know
@@ -27,7 +27,7 @@ Leela	Hot,nebula
 Farnsworth	soon,gone,Trotters,held,news,conference,announce,jive,sucker,Behold,invincible,nuclear,mutants
 Amy	Hi
 Arachneon	Hello
-Albert	Marv,Albert,Madison,Cube,Garden,Harlem,Globetrotters,squad,atomic,supermen,promises,by,the,numbers,athletic,contest,surprises,whatsoever,Here's,tip,off,Globetrotter,ball,Sweet,Clyde,Dixon,Bubblegum,Tate,Drives,down,court,,,Curly,Joe,rear
+Albert	Marv,Albert,Madison,Cube,Garden,Harlem,Globetrotters,squad,atomic,supermen,promises,by,the,numbers,athletic,contest,surprises,whatsoever,Here's,tip,off,Globetrotter,ball,Sweet,Clyde,Dixon,Bubblegum,Tate,Drives,down,court,Curly,Joe,rear
 Zoidberg	grabbed,behindus
 Leela	Sh
 Hermes	Quiet
@@ -37,7 +37,7 @@ Albert	Supermen,lead,45,42,Arachneon,steal,Thorias,Thorias,downtown,Yes,He's,rea
 Farnsworth	showboarding,atomic,hotdog
 Albert	that's,half,Supermen,48,42,Surprisingly,dull,far,Bubblegum,Trotters,Reactions
 Tate	plan,trail,half,deepening,Earth's,eventual,humiliation,game,refs,watching
-Albert	Curly,Joe,easily,amused,antics,continues,wreak,havoc,on,,
+Albert	Curly,Joe,easily,amused,antics,continues,wreak,havoc,on,
 Farnsworth	the,Did,just,jump,did,brain,just,stroke,second
 Albert	Ladies,gentlemen,strange,just,happened,basketball,game,space,clowns,atomic,monsters
 Farnsworth	Time,out,Time,out
@@ -49,7 +49,7 @@ Thorias	Oops
 Farnsworth	Oh,great,need,new,fifth,man
 Fry	Ooh,Ooh,Ooh,Professor,wanna,Leela,skills
 Farnsworth	Hmm,said,skills,pay,bills
-Fry	cares,We're,35,points,ahead,minutes,left,possibly,,
+Fry	cares,We're,35,points,ahead,minutes,left,possibly,
 Albert	Globetrotters,win,244,86,dark,day,humanity,folks,beaten,basketball
 Curly Joe	Yeah,that's
 'Sweet' Clyde	How's
@@ -65,14 +65,14 @@ Tate	sure,ain't,grandma,look,Prof,think,got,excess,Chronitons,subatomic,intersti
 Farnsworth	Yes,involving,big,words,easily,destabilise,time,itself
 Fry	problem
 Farnsworth	rate,Tuesday,Thursday,Wednesday,August,Thursday,end,existence,know
-Man	I'll,ask,clear,circus,need,set,tomorrow's,big,,
+Man	I'll,ask,clear,circus,need,set,tomorrow's,big,
 Linda	Time,continues,skip,forward,randomly,Details,11
-Linda	news,11,mysterious,unexplained,,
-Linda	Turning,entertainment,news,teen,singer,Wendy,just,latest,,
-Linda	,won,Grammys,night,,
+Linda	news,11,mysterious,unexplained,
+Linda	Turning,entertainment,news,teen,singer,Wendy,just,latest,
+Linda	,won,Grammys,night,
 Linda	,found,dead,bathtub
 Farnsworth	Interesting,It's,behave,normally,time,skips,memory
-Fry	mean,just,,
+Fry	mean,just,
 Farnsworth	yes,Ooh,just,like,luck,Bubblegum
 Tate	Listen,hope,don't,mind,dribble,little,work
 Farnsworth	you'll,grant,liberty
@@ -80,12 +80,12 @@ Bender	Ooh,Ooh,Bubblegum,name's,Bender,I'm,huge,fan,work,court,Globetrotter
 Tate	Shut,turkey
 Farnsworth	Bubblegum,look,background,time,radiation,fluctuating,wildly
 Tate	Good,Lord,sucker's,shaking,like,fine,imported,booty
-Hermes	Say,I'm,physicist,think,know,stop,skipping,We'll,just,,
+Hermes	Say,I'm,physicist,think,know,stop,skipping,We'll,just,
 Hermes	don't,know,suppose,work
-Amy	Professor,hope,what's,wrong,skip,right,past,birth,,
+Amy	Professor,hope,what's,wrong,skip,right,past,birth,
 All	,ppy,birthday,Amy
 Amy	Hooray,Look,presents
-Zoidberg	hope,tomorrow,birth,,
+Zoidberg	hope,tomorrow,birth,
 Zoidberg	
 Fry	Psst,Leela,I've,set,time,proof,shelter,closet,There's,room,you're,wanna,share
 Leela	Fry,that's,sweet,Let
@@ -107,12 +107,12 @@ Tate	Pretend,basketballs,time,particles,silver,honky,nebula,bounce,passes,cause,
 Bender	smart
 Tate	Hold,cluster,starts,algebraic,co,ordinates
 Farnsworth	gravity,just,divert,Chronitons,the,universe
-Tate	Yeah,possible,Moving,stars,require,bad,ass,gravity,pump,we'd,need,money,Earth,to,,
+Tate	Yeah,possible,Moving,stars,require,bad,ass,gravity,pump,we'd,need,money,Earth,to,
 Tate	the
 Farnsworth	Wha
 Nixon	Here's,funding,gravity,pump,damn,better,work,can't,spend,Earth's,money,day,long,build
-Tate	won't,easy,Nixon,jim,jam,complex,months,even,,
-Farnsworth	Ah,gravity,pump,Powerful,stars,begin,arduous,task,attaching,ship,th,,
+Tate	won't,easy,Nixon,jim,jam,complex,months,even,
+Farnsworth	Ah,gravity,pump,Powerful,stars,begin,arduous,task,attaching,ship,th,
 Farnsworth	apparently
 Tate	Easy,Leela,Just,finger,roll,star,cosmic,basket
 Leela	Just,thousand,miles
@@ -140,8 +140,8 @@ Fry	Look,I've,studying,pilot,ship,Impressed
 Leela	Yeah,actually,You're,doing,OK,core,reactor,temperature's,nominal,blinker's
 Fry	learned,work,gravity,pump,case,need,stars,dating
 Leela	just,cut
-Fry	Look,Leela,know,there's,perfect,amazing,thing,make,love,figure,is,,
-Leela	Fry,stop,don't,wanna,hurt,absolutely,positively,way,ever,,
+Fry	Look,Leela,know,there's,perfect,amazing,thing,make,love,figure,is,
+Leela	Fry,stop,don't,wanna,hurt,absolutely,positively,way,ever,
 Preacherbot	,man,wife,kiss,bride
 Albert	Yes
 Zoidberg	looks,radiant
@@ -150,7 +150,7 @@ Tate	formal,shorts,feel,like,failure
 Leela	tricked,marrying,didn't
 Fry	course
 Leela	How'd,Drugs,champagne,Hypnosis
-Fry	Drugs,losers,hypnosis,losers,big,weird,eyebrows,don't,know,amazing,thing,did,make,love,we're,married,We've,got,rest,lives,work,,
+Fry	Drugs,losers,hypnosis,losers,big,weird,eyebrows,don't,know,amazing,thing,did,make,love,we're,married,We've,got,rest,lives,work,
 Whitey	Divorce,final
 Fry	
 Leela	let's,divide,china,guess,I'll,NFC,helmets,AFC,helmets
@@ -170,7 +170,7 @@ Bender	Vintage,Bubblegum
 Farnsworth	time,skips,worse,Isolated,spots,jumping,years,time,Look
 Boy	Stupid,senior,citizens,pay,social,security,benefits
 Old Man	deserve,free,money
-Farnsworth	I'm,stumped,We'll,finest,scientific,minds,univ,,
+Farnsworth	I'm,stumped,We'll,finest,scientific,minds,univ,
 Farnsworth	explode,damned,nebula,think,Curly,Joe
 Curly Joe	man,explosion,big,destroy,mama,half,universe
 Sweet Clyde	gotta,Globetrotter,explosion,little,Farnsy,Make,implosion
@@ -181,7 +181,7 @@ Tate	skin,Prof,I'm,making,honorary,Globetrotter,fact,everybody,room's,honorary,G
 Amy	Hooray
 Hermes	Yes
 Zoidberg	I'm,Globetrotter
-Bender	Did,just,say,,
+Bender	Did,just,say,
 Tate	late,hot,plate
 Bender	Oh,crap
 Tate	leave,needed,wish,Godspeed
@@ -189,7 +189,7 @@ Bender	please,let,come,make,myself,taller
 Tate	Bender,talk,trash,handle,ball,look,heart,ask,funky,Globetrotter
 Bender	Yes
 Tate	
-Bender	mean,time,funk,level,could,,
+Bender	mean,time,funk,level,could,
 Tate	
 Bender	
 Tate	Deal

@@ -146,7 +146,7 @@ Bender	Guys,Guys,You're,gonna,believe
 Amy	know,shmooped,Manhattan,blasted,Sun
 Bender	did,Aw,that's,unguarded
 Wernstrom	People,New,New,York,Surgeon,General,Ogden,Vernstrom
-Professor Farnsworth	Wern,,strom
+Professor Farnsworth	Wern,strom
 Wernstrom	doctor,likes,hurling,patients,Sun,way,make,vaccine,common,cold
 Professor Farnsworth	way,make,vaccine
 Fry	Yay

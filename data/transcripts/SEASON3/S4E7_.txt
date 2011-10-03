@@ -50,19 +50,19 @@ Leela	Bender,shush,You're,supposed,dead
 Bender	Say,great,where's,crying,people,look,like,you're,waiting,bus
 Zoidberg	Oh,Danny,boy
 Bender	Who,y,boy
-Zoidberg	glen,glen,down,,
+Zoidberg	glen,glen,down,
 Bender	Danny,boy,You're,funeral,singing,dead,stiff,named,Danny,boy,really,massive,bonehead
 Zoidberg	I'm,expressing,sorrow
 Bender	lost,I'd,say,Don't,quit,day,job,you're,awful
 Leela	We're,trying,best
 Bender	best,idiot,Let's,pick,people,far,it's,crap,crap,croaked,love
-Amy	Bender,truly,special,,
+Amy	Bender,truly,special,
 Bender	Louder,sadder
-Amy	Bender,truly,special,,
+Amy	Bender,truly,special,
 Bender	
-Preacherbot	Dear,Lord,,
+Preacherbot	Dear,Lord,
 Bender	Oh
-Zoidberg	Oh,Danny,boy,,
+Zoidberg	Oh,Danny,boy,
 Bender	Come,Surely,knows,great
 Fry	Yes,Bender,Bender,lot,things,lot,people,looking,number,thing,say,simply,Bender,friend
 Bender	That's,You're,worst,funeral,hope,you're,happy,You've,succeeded,convincing,life,worth,living,showing,bad,funeral,suck
@@ -103,11 +103,11 @@ Osiran	Pharaoh,Hermenthotip,approaches
 Bender	Hurry,Hurry,Pharaoh's,coming,nose,place,Come
 Hermenthotip	Excellent,work,proud,slaves
 Bender	Viva,Hermenthotip
-Hermenthotip	grand,announcement,honour,achievement,you're,hereby,,
+Hermenthotip	grand,announcement,honour,achievement,you're,hereby,
 Bender	
-Hermenthotip	Tell,slaves,go,,
+Hermenthotip	Tell,slaves,go,
 Bender	faster,told,they're,damn,lazy
-Hermenthotip	mean,free,,
+Hermenthotip	mean,free,
 Bender	Free,loading,agree
 Hermenthotip	I
 Osiran	Pharaoh,Hermenthotip,dead

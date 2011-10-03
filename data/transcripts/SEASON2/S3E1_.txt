@@ -1,6 +1,6 @@
 2	18	The Honking	3	1	20001105	31
 Doctorbot	Notify,survivors
-Bender	B,E,N,D,E,R,Be,ender,Sayin',B,E,N,D,ER,,
+Bender	B,E,N,D,E,R,Be,ender,Sayin',B,E,N,D,ER,
 Hermes	Mail,Amy,here's,designer,lingerie,catalogue,Fry,Sadie's,Bra,Parade,Leela,Bulk,Underpants,Outlet
 Leela	buy,pound,underwear,you're,list,forever
 Hermes	Bender,Uh,oh,black,bordered,envelope
@@ -23,11 +23,11 @@ Execu Tor	loving,nephew,Bender,assuming,he's,responsible,death,leave,castle
 Bender	Yes,Let's,stay,tonight
 Execu Tor	condition,spend,night,walls
 Bender	Oh,man,there's,catch
-Bender	Ah,got,good,vibe,place,Nice,long,dinner,table,quiet,well,behaved,spiders,graveyard,adjacent,Yep,It's,gonna,be,,
+Bender	Ah,got,good,vibe,place,Nice,long,dinner,table,quiet,well,behaved,spiders,graveyard,adjacent,Yep,It's,gonna,be,
 Leela	
 Bender	painting,eyes,watching
 Farnsworth	Hmm,motor,eye,sensors,attached,motion,detectors
-Bender	does,butt,don't,frame,wall,Although,,,What's
+Bender	does,butt,don't,frame,wall,Although,What's
 Zoidberg	don't,know,it's,infectious
 Bender	doubt,place,haunted
 Hermes	Don't,silly,mon,ghost,died,200,years,ago
@@ -61,7 +61,7 @@ Vandal #1	Ah,probably,just,golden,marmoset
 Vandal #2	don't,sound,like,golden,marmoset,heard
 Vandal #1	
 Vandal #2	what're,wearing,tomorrow
-Bender	Where,the,,,Transmission,fluid,happened
+Bender	Where,the,Transmission,fluid,happened
 Sal	Gets,outta,yous,lousy,bum
 Bender	I'm,scared
 Sal	We're,scared,it's,human,condition,thinks,tough,guy,facade,beat
@@ -90,7 +90,7 @@ Gypsy	said,Sure,die,want,die
 Bender	wanna,live,There's,things,don't
 Gypsy	live,forever,cursed,night,attacks,gruesome,dark,night,doomed,kill,dearest,friend
 Fry	wouldn't,wanna,right
-Gypsy	Uh,just,,,Ah,forget,I'll,just,sleep
+Gypsy	Uh,just,Ah,forget,I'll,just,sleep
 Leela	rampaging,tonight
 Bender	Wouldn't,make,sense,weld,wall
 Leela	Just,relax,Bender,Tomorrow,we'll,pry,nice,breakfast,hunt,slaughter,ancient,evil
@@ -115,7 +115,7 @@ Bender
 Leela	tracks,lead
 Fry	Thanks,eagle,eye
 Leela	it's,daylight,robot,form,careful,robots,stupid,violent
-Bender	wish,stupid,violent,we'd,what's,I'd,pound,till,,
+Bender	wish,stupid,violent,we'd,what's,I'd,pound,till,
 Yokelbot	ye,houses,ye,ignorant,villagers
 Leela	ignorant,villagers,we're,sophisticated,New,New,Yorkers,Whup,butt
 Yokelbot	Stop,ye,doing

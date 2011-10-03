@@ -61,10 +61,10 @@ Fry	sort,thing,girl,work
 Leela	Really,type,know,blonde,Chinese,Cyclops
 Fry	Cyclops
 Leela	Aww,sounds,sweet
-Bender	sweet,girls,aren't,eh,hard,fighting,hard,farting,ugly,ugly,son,a,,
+Bender	sweet,girls,aren't,eh,hard,fighting,hard,farting,ugly,ugly,son,a,
 Leela	Stop,Stop,flattering
-Zapp	well,isn't,Lee,Lemon,flaming,star,Brannigan's,Rough,Rangers,Say,uh,Lemon,like,read,just,got,great,book,tape,It's,life,Ancient,Greece,and,,
-Leela	Sir,alarm,think,I'd,better,,
+Zapp	well,isn't,Lee,Lemon,flaming,star,Brannigan's,Rough,Rangers,Say,uh,Lemon,like,read,just,got,great,book,tape,It's,life,Ancient,Greece,and,
+Leela	Sir,alarm,think,I'd,better,
 Zapp	Shh,Don't,talk,Just
 Nixon	position,Spheron,moment,training,yesterday,afternoon
 Zapp	battle,plan,know,key,victory,element,surprise,Surprise
@@ -85,7 +85,7 @@ Bender	Hey,think,son,like,boots
 Hick	Cover,buddy,You've,got,wounded,up,positron,shooter,Fry,emu,bellied,coward
 Fry	Bender
 Bender	stamp,tell,use,young,Bender
-PA Announcer	Incoming,wounded,operating,personnel,report,tent,repeat,four,,,mean,Repeat
+PA Announcer	Incoming,wounded,operating,personnel,report,tent,repeat,four,mean,Repeat
 Nurse	ready,operate,doctor
 Zoidberg	kid,kid
 Zoidberg	Scalpel,Priest,patient
@@ -114,7 +114,7 @@ Zoidberg	That's,joke,I'll,kill
 Zapp	Ah,Pre,war,scotch,Welcome,Lieutenant,Bender,You're,looking,sharp
 Bender	got,wheels,clickety,clack,ers
 Zapp	Damnit,Kif,where's,little,umbrella,That's,makes,scotch,on,the,rocks
-Kif	Actually,sir,,
+Kif	Actually,sir,
 Zapp	Make,new
 Kif	Use,brush,dunderhead,mix,mixed,nuts,almonds,touching
 Nixon	listen,Bender,war,danger,going,quagmire,I'm,sending,mission
@@ -142,7 +142,7 @@ Zapp	doctors,implant,gullible,Bender,robot
 Nixon	Zapp,Zapp
 Zapp	Hm
 Nixon	Inspect,troops,later,It's,time,activate,bomb
-Kissenger	economic,co,operation,,
+Kissenger	economic,co,operation,
 Bender	Whoa,Scuse
 PA Announcer	Attention,personnel,evacuate,planet,immediately,just,it's,meat,loaf,night
 Zapp	Come,Lemon,dump,blows
@@ -169,7 +169,7 @@ Zapp	it's,I've,attracted,Oh,God,I've,happy,beaten,woman
 Leela	Let's
 Brain Ball #2	Elders,tell,young,ball,like,bounced,metres,air,bounced,18,metres,air,bounced,metres,air,make,myself,clear
 Kissenger	Mr,Ambassador,people,tell,story,Oy
-Bender	balls,making,testy,don't,stop,bouncing,jiggling,swear,I'm,gonna,shove,treaty,their,,,Wait,second,shove,things,ball
+Bender	balls,making,testy,don't,stop,bouncing,jiggling,swear,I'm,gonna,shove,treaty,their,Wait,second,shove,things,ball
 Kissenger	isn't,productive,area,discussion
 Leela	We're,followed,bouncing,balls,I'll,chopper,safe,altitude,parachute
 Fry	OK,best,friend's,life,stake,finally,prove,I'm,coward,push
@@ -177,14 +177,14 @@ Leela	did
 Fry	war,man
 Kissenger	gentlemen,end,bloodshed,seen,body,bags,ball,sacks
 Brain Ball #1	condone,bouncing,seventh,variety
-Bender	crap,I'm,catching,pimpmobile,outta,I,thing,say,Bite,shiny,metal,,
+Bender	crap,I'm,catching,pimpmobile,outta,I,thing,say,Bite,shiny,metal,
 Fry	Stop,can't,say,word
 Bender	chump,said,906,times,lunch
 Fry	Bender,say,A,word,you'll,blow,planet,straight,H,word
 Kissenger	Young,man,bravery,hero,breath,fresh,summer,ham,What,funny
 Bender	Bender's,got,upper,hand,I'd,die,everybody,sit,minute,listening,idiots,talk,bouncing
 Brain Ball #1	stay,calm,There's,need,bounce,handle
-Bender	That's,I'm,saying,for,,
+Bender	That's,I'm,saying,for,
 Brain Ball #1	Wait,stop,Earth's,demands,war,home,planet
 Fry	Alright,Hey,wait,minute,home,planet,We're,evil,invading,aliens
 Brain Ball #2	Correct

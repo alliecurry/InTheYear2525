@@ -44,7 +44,7 @@ Amy	Yeah,Fry,maybe,need,to,
 Fry	You're,right,Amy,Maybe,need,fresh,air
 Bender	Man,I'm,worried,stop,gambling,single,second
 Three Leos Machine	win,damn
-Fry	Voices,yelling,,,said,I'm,insane,Stop,Stop,talking
+Fry	Voices,yelling,said,I'm,insane,Stop,Stop,talking
 Hutch Waterfall	Voices,bothering,man,need,doodangs
 Fry 	foil,hat,course,likes,pastrami,dog's,testicles,Hey,worked,voices,stopped
 Hutch	They've,got,huge,selection,carburetors,Hang,Hang,That's,better,name's,Hutch

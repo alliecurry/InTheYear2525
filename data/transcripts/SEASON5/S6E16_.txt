@@ -48,7 +48,7 @@ Fry	Tomorrow
 Mr Wong	Tomorrow
 Fry	Ka,boom
 Mr Wong	Ka,boom,boom
-Fry	Hello,Madfellows,need,to,,Okay,Leo,Wong's,destroy,violet,dwarf,need,know,stop,tell
+Fry	Hello,Madfellows,need,to,Okay,Leo,Wong's,destroy,violet,dwarf,need,know,stop,tell
 Nine	Alas,Stopping,Wong,isn't,problem,Dark,Ones,try,stop,stopping,stop,stopping,stopping
 Fry	stop,stop,stop
 Nine	Stop,Behold,Omega,Device
@@ -103,7 +103,7 @@ Bender	I'm,Bender,king,combination,shot,busting,commit,15,felonies,Puttin',rap,s
 Leela	devious,bastard
 Bender	That's,says,vanity,plate
 Leela	sentries
-Leela	Okay,Plan,B,knows,men,fatal,weakness,,,can't,resist,hookers,Dixie,Trixie,know
+Leela	Okay,Plan,B,knows,men,fatal,weakness,can't,resist,hookers,Dixie,Trixie,know
 Bender	Hello,boys,eyes,say,machine,gun,says,
 Mr Wong	Ladies,gentleman,welcome,environmentally,disastrous,implosion,star
 Zapp	Kif,old,boy,mind,sit,shoulders,better,view

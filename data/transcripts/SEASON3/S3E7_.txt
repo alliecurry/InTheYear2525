@@ -73,7 +73,7 @@ Nibbler	sake,time,pronounce,letter,true,trillion,cosmoses,flair,existence,sink,e
 Leela	Oh,you're,cute
 Ken	we're,universe,forged,crucible,Big,Bang,mighty,race,17,years,old
 Leela	Aww
-Ken	millisecond,time,things,OK,arose,terrible,enemy,Brain,Spawn,waged,unceasing,war,dreadful,,
+Ken	millisecond,time,things,OK,arose,terrible,enemy,Brain,Spawn,waged,unceasing,war,dreadful,
 Nibblonian Chef	Lunch,ready
 Ken	let,feast,thousand,hams,begin
 Leela	Brain,Spawn,attacking,Earth,Nibbler
@@ -102,7 +102,7 @@ Amy	Um
 Bender	pickle,jar
 Washington	Thomas,Jefferson
 Fry	Leela,I've,worried,bonehead
-Leela	tell,important,something,,
+Leela	tell,important,something,
 Fry	Whoa,whoa,Slow,You're,going,mile,minute
 Leela	
 Fry	Thanks
@@ -144,13 +144,13 @@ Big Brain	Tom,Sawyer,tricked,fun,previously,indicated,Let,corny,slice,Americana,
 Tom Sawyer	
 Fry	Come
 Woman	Mr,Fry,Mama,tells,you're,quite,oddity,bachelor,age
-Fry	think,I'm,oddity,Wait'll,see,,
+Fry	think,I'm,oddity,Wait'll,see,
 Butler	Presenting,eligible,landowner,Hertfordshire,Mr,Brainly
 Big Brain	I'm,gigantic,brain
 Man #1	say
 Man #2	un,gentleman,like
 Woman	Mr,Brainly,news,London,season
-Big Brain	Well,,
+Big Brain	Well,
 Fry	Hey,Brain,y,Think,fast
 Big Brain	think,fast
 Ahab	whale,white

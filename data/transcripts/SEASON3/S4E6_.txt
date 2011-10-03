@@ -39,7 +39,7 @@ Kif	Amy,parents',planet
 RJ	Howdy,Amy,Glad,you've,come,country,It's,flavour
 Amy	RJ,boyfriend,Kif
 RJ	wimp,You've,gone,long,way,baby,Cigarette,partner
-Kif	Oh,don't,,
+Kif	Oh,don't,
 RJ	haven't,lit
 Kif	Oh,lit
 RJ	Yep,You're,pathetic
@@ -55,7 +55,7 @@ Amy	Mom,Dad,remember,Kif
 Mr Wong	boyfriend,instant,dislike
 Mrs Wong	scrawny,father,grandchildren
 Amy	He's,scrawny,he's,just,small,boned
-Kif	Actually,don't,bones,I'm,supported,fluid,filled,bladders,that,,
+Kif	Actually,don't,bones,I'm,supported,fluid,filled,bladders,that,
 Mr Wong	Yes,yes,big,squishy,wuss,Amy,dating,real,man,Like
 Kif	manly,think,I'll,uh,light,smoke
 Amy	Wrong,way
@@ -79,7 +79,7 @@ Mr Wong	rustled,cover,storm,ruined
 Zoidberg	Nooo
 Amy	Don't,worry,Daddy,It'll,OK
 Mr Wong	Oh,really,gonna,save,Drunken,garbage
-Hermes	sounds,like,job,for,,
+Hermes	sounds,like,job,for,
 Kif	Lieutenant,Kif,Kroker
 Hermes	Alright
 Mr Wong	Aye,ah,buggalo,Wong,family,rich,powerful,Oh,Inez,stolen,ruined
@@ -112,14 +112,14 @@ Fry
 Bender	unplugged,image,stayed,screen,Windows,logo
 Fry	Pft,that's,scary
 Bender	you're,laser,printer
-Leela	OK,turn,tell,ghost,story,woman,driving,,
+Leela	OK,turn,tell,ghost,story,woman,driving,
 Fry	Hook,hand
-Kif	OK,I've,got,family,,
+Kif	OK,I've,got,family,
 Fry	Man,attic
 Leela	Fine,Mr,Know,It,All,About,Something,Finally,tell,story
-Fry	pleasure,far,people,set,cattle,drive,,
+Fry	pleasure,far,people,set,cattle,drive,
 Bender	Sorry
-Fry	sat,helplessly,campfire,demented,knife,wielding,escaped,lunatic,libertarian,zombie,mutant,snuck,and,,
+Fry	sat,helplessly,campfire,demented,knife,wielding,escaped,lunatic,libertarian,zombie,mutant,snuck,and,
 Amy	Surprise
 Kif	Amy,doing
 Amy	forgot,you,left
@@ -167,12 +167,12 @@ Mr Wong	Oh,Martians,kidnap,Amy,know,'cause,use,good,grammar
 Kif	I'll,daughter,sir,swear
 Mr Wong	Forget,squishy,lose,place
 Mrs Wong	Yeah,time,decorated,law,man,universe
-Kif	mean,Oh,beg,Oh,love,of,,
+Kif	mean,Oh,beg,Oh,love,of,
 Zapp	man,Zapp,Brannigan,service
 Mrs Wong	Mr,Brannigan,need,daughter
 Zapp	I'll,clean,Kif's,mess,shall,bargain,Martian's,personally,gasps,intrigue,Explain
 Mr Wong	Martians,land,gently,encouraged,live,reservation,deep,underground,dare
-Farnsworth	mission,incredibly,dangerous,Someone's,sure,killed,Fry,Leela,Bender,,
+Farnsworth	mission,incredibly,dangerous,Someone's,sure,killed,Fry,Leela,Bender,
 Bender	Damn,old,man
 Leela	Aw,look,Betsy,followed,Kif
 Zapp	didn't,realise,bringing,girlfriend,lieutenant
@@ -214,7 +214,7 @@ Kif	Smoke,em
 Singing Wind	
 Kif	Ooh,thanks,I'm,peace,patch
 Singing Wind	smoke,peace,pipe,peacefully,we'll,kill
-Kif	it's,just,really,don't,feel,that,,
+Kif	it's,just,really,don't,feel,that,
 Zapp	Don't,chicken,Kif,Teenagers,smoke,pretty,on,the,ball
 Fry	Yeah
 Zapp	Yes,sir
@@ -222,7 +222,7 @@ Bender	Way,suck
 Kif	Hey,I'm,smoking,I'm,greatest,Oh,monkey,trumpets
 Singing Wind	coughed,offer,peace,die
 Martian #3	bead,used,crush,dreams,shall,used,crush,bones
-Kif	actually,don't,bones,I'm,supported,fluid,filled,bladders,that,,
+Kif	actually,don't,bones,I'm,supported,fluid,filled,bladders,that,
 Fry	Wait,That's,bead,traded,land
 Leela	It's,gigantic,diamond,thing,worth,fortune
 Singing Wind	Really

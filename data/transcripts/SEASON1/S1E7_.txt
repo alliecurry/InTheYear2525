@@ -51,11 +51,11 @@ Organ Dealer	Yes,gills,uh,don't,need,lungs,anymore,right
 Fry	Can't,imagine
 Organ Dealer	Lie,table,lungs,gills,come,week,Nurse
 Nurse	Let's
-Organ Dealer	feel,small,pain,,
+Organ Dealer	feel,small,pain,
 Bender	Thank
 Leela	hell,doing,warned,stay,away,guys
 Fry	I'm,capable,making,decisions,Leela,Did,stop,think,happier,gills
-Farnsworth	Good,news,everyone,,
+Farnsworth	Good,news,everyone,
 Bender	Uh,oh,don't,like,sound
 Farnsworth	You'll,making,delivery,planet,Trisol
 Bender	comes
@@ -63,7 +63,7 @@ Farnsworth	mysterious,world,darkest,depths,Forbidden,Zone
 Bender	Thank,goodnight
 Leela	Uh,Professor,allowed,Forbidden,Zone
 Farnsworth	course,It's,just,Like,Death,Zone,Zone,Return,zones,names,like,Galaxy,Terror
-Leela	Uh,Professor,,
+Leela	Uh,Professor,
 Farnsworth	Pleasant,trip
 Fry	Hey,Bender,how's,dinner,coming
 Bender	ready
@@ -151,7 +151,7 @@ Merg	People,Trisol,honour,present,new,Emperor
 Fry	
 Merg	Stick,oath
 Fry	Right,Fry,drank,Bont,Viscous,drank,Ungo,Moist,guzzled,Zorn,Stagnant
-Fry	slurped,Hudge,Dewy,enjoyed,soup,composed,principally,Throm,Chunky,solemnly,swear,rule,honour,insanity,,,Uh,integrity
+Fry	slurped,Hudge,Dewy,enjoyed,soup,composed,principally,Throm,Chunky,solemnly,swear,rule,honour,insanity,Uh,integrity
 Merg	Congratulations,Highness,present,royal,unisex,robe,Long,live,Fry,Solid
 Bender	Hey,look,suns,setting,finally,switch,hard,liquor
 Bender	Check,glowing,freaks,It's,beautiful,Hey,what's
@@ -198,7 +198,7 @@ Bender	Fry's,trouble
 Bender	needs,help,don't,like,you,don't,like
 Leela	like
 Bender	Look,going,help
-Leela	don't,know,mean,he,,
+Leela	don't,know,mean,he,
 Bender	Wait,wait,wait,wait,like,best
 Amy	coming
 Bender	I'm,sure,know,likes,in,your,face,attitude
@@ -213,7 +213,7 @@ Bender	Hmm
 Fry	alright
 Bender	don't,know,I'll,look,window,Oh,dear,God,heaven,they're,swarming
 Fry	No
-Amy	talking,Bender,She's,al,,,Oh
+Amy	talking,Bender,She's,al,Oh
 Bender	They're,strapping,juicer,Oh,they're,putting,ice,cubes,glass
 Fry	can't,happening
 Bender	know,I'm,sorry,Fry,She's,dead
@@ -230,7 +230,7 @@ Fry	Thanks,Leela,I'll,help,you're,willing,know,just,want,what's,best,hurt
 Leela	know,Amy,bottle
 Fry	Oh,understand
 Leela	Come,Everybody,help,Fry
-Fry	Thanks,everybody,love,You,guys,true,,,Ow,Cut,Bender,That's,tender,area
+Fry	Thanks,everybody,love,You,guys,true,Ow,Cut,Bender,That's,tender,area
 Leela	doing,Amy
 Amy	Great,We're,one,tenth,way
 Amy	OK,it's,turn

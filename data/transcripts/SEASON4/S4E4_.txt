@@ -49,7 +49,7 @@ Ship	Yeah,It's,cute,song
 Bender	Listen,Ship,changes,stations,hope,good,mechanic
 Farnsworth	comes,adjustable,voice
 Ship	buttons,Remember,Bender,deal
-Bender	Did,just,say,,
+Bender	Did,just,say,
 Ship	don't,like,stations,just,play,buttons,till,enjoy,Oh,gosh,came,wrong
 Bender	late,baby,said,what'll,place
 Fry	deliver,hearts,I'm,gonna,sums,feelings,Love,Hmm,conventional,You're,Man,Ooh,close
@@ -63,7 +63,7 @@ Bender	know,love,sugar,engine
 Ship	
 Leela	Bender,What's,going,Planet,Express,Ship,Cover,shame
 Ship	It's,looks,like,Uh,Bender,just,helping,zip,turbine
-Fry	Wow,Bender,ship,item,mean,know,you're,items,but,,,date,ship,It'd,like,dating,really,fat,lady,living,inside,she'd,like,,
+Fry	Wow,Bender,ship,item,mean,know,you're,items,but,date,ship,It'd,like,dating,really,fat,lady,living,inside,she'd,like,
 Bender	Fry,order,busy,maximum,efficiency,need,girl,big,400,ton,booty
 Leela	Bender,dating,co,worker,primary,mode,transportation,immoral,illogical,violation,interstellar,shipping,statute,437,B
 Bender	That's,makes,nasty
@@ -104,7 +104,7 @@ Bender	Phew
 Ship	I'm,gonna,home,dinner,started
 Liu	talking
 Bender	baby,Lucy,Liu,girl,Bender
-Liu	love,you,,
+Liu	love,you,
 Leela	Planet,Express,Ship,wrong
 Ship	Oh,it's,Bender,He's,acting,strange,lately,think,he's,going,ask,marry
 Leela	Uh
@@ -146,7 +146,7 @@ Ship	moments,power,10,billion,black,holes,smush,Bender,beautiful,eternal,quantum
 Bender	Uh,don't,need,kill,Planet,Express,Ship,love,Oh,yeah,baby,feel,like,doing,stuff,stuff
 Ship	Hmm,don't,believe,you,really,wanted,you'd,merge,programming
 Bender	Whoa,whoa,whoa,Slow,friends,who've,said,passion,went,relationship
-Leela	Look,don't,know,want,opinion,,
+Leela	Look,don't,know,want,opinion,
 Ship	Leela,Bender,really,need,I'm,turning,oxygen
 Leela	look,missy,don't,turn,I'm,going,to,shut,brain
 Ship	detected,vicinity,Leela

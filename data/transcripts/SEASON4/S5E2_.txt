@@ -12,7 +12,7 @@ Bender	Truly,gods,built,place
 Tour Guide	come,splendidly,preserved,wooden,pizza,paddle,Scientists,theorise,used,gently,discipline,delivery,boy
 Fry	Wait,second,Panucci's,used,work,exact,pizzeria,information,lady,just,used,paddle,butt,used,pizzas,crush,rats
 Tour Guide	don't,know,facts,sir,volunteer,housewife,45,minutes,orientation,Harlequin,romance,archaeologists
-Fry	Don't,wave,fancy,degrees,recognise,stuff,Petrified,sausages,old,Mr,Patelli,that's,,
+Fry	Don't,wave,fancy,degrees,recognise,stuff,Petrified,sausages,old,Mr,Patelli,that's,
 Man	Yes
 Fry	Pizza,delivery,Mr,Seymour,Asses
 Man	There's,hope,time,you'll,realise,idiot,you've
@@ -66,7 +66,7 @@ Farnsworth	Amazingly,yes,cases,rapid,fossilisation,press,brain,scan,button,retri
 Fry	I'm,gonna,puppy,face,Grim,Reaper
 Bender	Crappy,ineffective,Reaper
 Farnsworth	just,need,reset,Clone,O,Mat,Human,Mode,Dog,Mode
-Computer Voice	dog,says,,
+Computer Voice	dog,says,
 Farnsworth	Uh,oh
 Boy	stink,loser
 Panucci	Hey,Fry,Pizza,goin',C'mon
@@ -93,7 +93,7 @@ Bender	asks,Bender,like,live,tiny,little,house,tiny,little,house,says,Bender,Ow
 Fry	Fry,you're,calling,used,towels,sale,they're,available,$45
 Mr Fry	Phil,it's,father,You're,holding,New,Year's,brunch,brother,can't,wait,longer
 Yancy	Hello,baloney,new,millennium,Ah,comes,That's,Seymour
-Mrs Fry	that's,weird,Seymour's,but,,,Go,Touchdown,where's,Philip
+Mrs Fry	that's,weird,Seymour's,but,Go,Touchdown,where's,Philip
 Mr Fry	I'm,tellin',Y2K,computer's,got,We'll,face,burnin',roads,rivers,exploding,calculators,transformed,Scud,missiles,There's,What's,Seymour,walking,sunshine
 Yancy	He's,trying,tell,Maybe,lead,Philip
 Yancy	follow

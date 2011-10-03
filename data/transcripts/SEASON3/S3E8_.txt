@@ -4,11 +4,11 @@ Florp	Humorbot,50,ladies,gentlemen,stand,up's,veteran,comedy,traffic,schools,way
 Fry	Alright
 Leela	Yeah
 Bender	Alright,Zoidberg
-Zoidberg	Earth,planet,Earth,enjoy,eating,tasty,clam,planet,clams,enjoy,eating,tasty,Earth,everybody,looking,giant,squid,planet,,
+Zoidberg	Earth,planet,Earth,enjoy,eating,tasty,clam,planet,clams,enjoy,eating,tasty,Earth,everybody,looking,giant,squid,planet,
 Bender	Reload
-Zoidberg	parasitic,worms,bore,human's,head,,
+Zoidberg	parasitic,worms,bore,human's,head,
 Woman #1	Ew,gross
-Zoidberg	walk,bar,then,,,Uh,oh,Wait,stop,I've,got
+Zoidberg	walk,bar,then,Uh,oh,Wait,stop,I've,got
 Zoidberg	life,worked,act,hated
 Hermes	You're,crazy,penniless,lobster,doctor,combination,comedian
 Zoidberg	comedy,valves,Uncle,Harold,big,Hollywood,star,era,silent,holograms
@@ -45,7 +45,7 @@ Zoid	Eating,real,food,restaurant,want,comedian
 Zoidberg	It's,lifelong,dream
 Zoid	You're,unfunny,untalented,That's,you're,perfect,drama
 Zoidberg	Hmm,drama,time,comedy
-Zoid	I'm,putting,big,drama,picture,right,speak,script,dynamite,know,wrote,myself,directing,starring,I'll,50,miserable,years,,,Uh,fame
+Zoid	I'm,putting,big,drama,picture,right,speak,script,dynamite,know,wrote,myself,directing,starring,I'll,50,miserable,years,Uh,fame
 Zoidberg	Ah,fame,come
 Zoid	fame,film,juicy,you,completely,finance,doctor,money
 Zoidberg	Uh,OK,invest
@@ -151,7 +151,7 @@ Crystal	nominees,Best,Soft,Drink,Product,Placement
 Slurm Machine	Star,Trek,Pepsi,Generation,Mr,Pibb,Snow,White,7,Ups
 Bender	present,award,Best,Actor,Dr,Zoidberg
 Calculon	OK,Boxy,prong,trigger
-Zoidberg	nominees,Best,Actor,Sir,Lawrence,,,Merchant,Venus,Hive,Mind,Gamma,7X,Bikini,Party,Summer,Soda,Machine,Robot,Bikini,Party,Summer,Mark,Jones,Beige,Jacket,instead,fifth,guy,Calculon,powerhouse,performance,Magnificent
+Zoidberg	nominees,Best,Actor,Sir,Lawrence,Merchant,Venus,Hive,Mind,Gamma,7X,Bikini,Party,Summer,Soda,Machine,Robot,Bikini,Party,Summer,Mark,Jones,Beige,Jacket,instead,fifth,guy,Calculon,powerhouse,performance,Magnificent
 Man #1	Uh,oh,read,wrong
 Man #2	Shh,just,play,like,did,Marisa,Tomei
 Zoid	Hooray,won't,murdered,I'll,live,day,day,pathetic,forgotten,misery
@@ -169,4 +169,4 @@ Zoidberg	Earthquake
 Bender	Hit,deck
 Zoid	Let,earth,quake,I've,got,somebody's,Oscar
 Fry	I'm,Hollywood,party
-Doorman	I'm,sorry,sir,private,,,Oh,pardon,you're,Mr,Stallone
+Doorman	I'm,sorry,sir,private,Oh,pardon,you're,Mr,Stallone

@@ -64,12 +64,12 @@ Leela	It's,ponytail
 Guard	We're,Mr,President
 Richard Nixon's head	Arroo,Let's,play,mini,golf
 Nixon	Just,light,tap,Agnew,no,just,light
-Zoidberg	triple,clam,dip,double,,,OW,OW
+Zoidberg	triple,clam,dip,double,OW,OW
 Nixon	Tough,luck,Agnew,Looks,like,Wong,owe,Charleston,Chew
 Feministas	Shut,hear,wisdom,Save,ecosystem,Shut,hear,wisdom
 Nixon	gives,Wong,said,chicks,allowed
 Frida	Greenorita,Eco,Feminist,Collective,let,youWhat
-Leela	let,implode,violet,dwarf,star,galactic,coordinates,16784,,5803,mark,948
+Leela	let,implode,violet,dwarf,star,galactic,coordinates,16784,5803,mark,948
 Mr Wong	approved,cackling,hens,I'll,vice,president,Agnew's,headless,body,throw
 Leela	I'd,like,try
 Nixon	look,funny,Sic,'em,Agnew
@@ -125,7 +125,7 @@ Leela	miss,Fry,probably,think,I'm,doing,wrong,it's,really,care
 Fry	don't,explain,Leela,You're,That's,need,know
 Leela	Goodbye,sweet,goofbag
 Bender	I'll,miss,buddy,Dibs,iPod
-Zoidberg	Dibs,her,,ohh
+Zoidberg	Dibs,her,ohh
 Hutch	Hey,Fry,Long,time,man
 Fry	Hey,Hutch
 Hutch	old,old,Searching,dumpsters,protecting,thoughts,tin,foil,peeing,myself

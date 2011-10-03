@@ -127,7 +127,7 @@ Fry	dunno,Hey,wanna,come,house,play
 Clamps	Yeah,Sounds,like,freakin',fun
 Clamps	stinkin',years,clampin',school
 Zoidberg	Greetings,Francis,Sorry,little,hostile,snipping,reason,I'm,tolerated,like,magnificent,squeezers
-Clamps	Squeezers,Squeezers,They're,clamps,wanna,,in',snip,clamps,snip,,ing,clamps,think,Francis
+Clamps	Squeezers,Squeezers,They're,clamps,wanna,in',snip,clamps,snip,ing,clamps,think,Francis
 Professor Farnsworth	Eh,Francis,good,news,It's,time,delivery,Moon
 Clamps	Fan,in',tastic
 Fry	Here's,two,hundred,feet,rope,ordered,Sheriff,Burley
@@ -182,7 +182,7 @@ Billy West	Okay,God,bless,grandma,grandpa
 Clamps	They're,Right,I'm,gonna,cut,damn,head
 Zoidberg	Drop,Robut,thought,told,cutting
 Clamps	Scuttle,home,ain't,business,Slick
-Zoidberg	isn't,Slick,It's,Zoidberg,John,,ing,Zoidberg
+Zoidberg	isn't,Slick,It's,Zoidberg,John,ing,Zoidberg
 Fry	Stop,Zoidberg,You'll,hurt,Francis
 Clamps	Oh,yeah,that
 Zoidberg	Oy

@@ -2,7 +2,7 @@
 Announcer	Ladies,gentlemen,Conan,O'Brien's,head
 O'Brien	Thank,thank,Let's,started,Max,play,people,getting,pretty,worried,Y2K,problem,huh
 Bender	fixed,900,years,ago
-O'Brien	Just,bear,sir,I'm,walking,work,morning,,
+O'Brien	Just,bear,sir,I'm,walking,work,morning,
 Bender	doubt
 O'Brien	Listen,pal,lost,freakishly,long,legs,war,2012,I've,got,you'll,soul
 Bender	Eh
@@ -36,7 +36,7 @@ Fry	Yup,remember,came,Olympics,retired,promote,alcoholic,beverages
 Hermes	true,inspiration,children,Nooo
 Fry	Oh,hell,Ow
 Amy	poor,man,happened
-Man #2	triple,diamond,slope,suddenly,,
+Man #2	triple,diamond,slope,suddenly,
 Amy	Oh,excuse,Hello
 Farnsworth	Wha
 Bender	Ah,like,warm,Super,Soaker,fine,cognac
@@ -86,7 +86,7 @@ Fry	blood
 Bender	guy's
 Fry	I've,got,to,Leela,sorry
 Zoidberg	what's,problem,Just,claws,apology,dance
-Fry	it's,left,left,right,,,Wait,better,idea,I'll,perfect,Xmas,present,great,she'll,want,unhappy
+Fry	it's,left,left,right,Wait,better,idea,I'll,perfect,Xmas,present,great,she'll,want,unhappy
 Hermes	Just,sundown,mon
 Fry	We'll,like,haggle
 Amy	can't,stay,Xmas,Eve,You'll,killed

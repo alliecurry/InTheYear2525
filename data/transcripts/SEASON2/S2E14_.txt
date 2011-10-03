@@ -112,7 +112,7 @@ Morgan	Mr,Bender,high,five,continue,meeting,Meeting,adjourned
 Amy	can't,figure,she's,nice,Fry
 Zoidberg	She's,hateful,monster,Morgan,scolded,hit,tell,she's,risking,friendship
 Leela	Bender,happened
-Bender	Morgan,walk,Professor,park,suddenly,old,lady,says,stole,purse,chucked,Professor,kept,coming,hit,purse,Ah,point,it's,Morgan's,fault,pencil,pushing,scazwag,I'd,,,Uh,oh
+Bender	Morgan,walk,Professor,park,suddenly,old,lady,says,stole,purse,chucked,Professor,kept,coming,hit,purse,Ah,point,it's,Morgan's,fault,pencil,pushing,scazwag,I'd,Uh,oh
 Morgan	I'm
 Fry	Morgan,It's,3am
 Morgan	know,skunk,knocked,garbage,suddenly,think,uh,eat
@@ -120,7 +120,7 @@ Fry	Eat,sleep
 Morgan	Oh,Fry
 Fry	Uh,wait,Bender's,roommate,second
 Morgan	likely,ordered,flush,Professor's,ear,wax
-Bender	Hey,Fry,candle,with,,,It's,coming
+Bender	Hey,Fry,candle,with,It's,coming
 Bender	say,opens,eyes,case,closed,dear,Watson
 Fry	Morgan,come,He's,stuck,loop
 Bender	blind
@@ -193,7 +193,7 @@ Hermes	Dr,Zoidberg,brought
 Zoidberg	I'm,hero
 Number 10	Request,explanation,incident,meeting
 Morgan	Number,10
-Hermes	Number,10,petition,emergency,sort,and,file,regulation,2,point,,
+Hermes	Number,10,petition,emergency,sort,and,file,regulation,2,point,
 Number 10	D,D,D,D,Don't,quote,regulations,co,chaired,committee,reviewed,recommendation,revise,colour,book,regulation's,kept,grey
 Hermes	Sir,located,disk,friend's,brain
 Number 10	bureaucratic,licence,revoked,fail,sort,master,pile,closing,time,1pm
@@ -220,16 +220,16 @@ Fry	Yeah
 Zoidberg	Congratulations
 Number 10	Congratulations,finished,second,spare,I'm,demoting,good,bureaucrat,finishes,early
 Amy	That's,OK,Hermes
-Morgan	don't,I'm,acting,bureaucrat,Planet,Express,changes,make,Fry,you're,fired,Second,,
+Morgan	don't,I'm,acting,bureaucrat,Planet,Express,changes,make,Fry,you're,fired,Second,
 Hermes	fast,sorting,came,certain,document,filed,Morgan,Proctor,Form,B,Notification,Romantic,Entanglement
 Fry	That's,right,fraternised
 Morgan	form,isn't,refers,high,school,prom,date,regulation,date,ended,regulation,disappointment
 Hermes	Yes,stamped,times
 Morgan	No,young,reckless
-Number 10	Bureaucrat,Conrad,technically,correct,,,,best,kind,correct,promote,grade,37,Bring,forms,need,to,taken,away
+Number 10	Bureaucrat,Conrad,technically,correct,best,kind,correct,promote,grade,37,Bring,forms,need,to,taken,away
 Farnsworth	looks,like,I'll,needing,heroic,bureaucrat,severely,reduced,pay,course
 LaBarbara	It's,better
 Fry	come,severely,reduced,pay
 Hermes	got,mon,fact,severely,reduced,pay,Come,wife,let's,blow,joint
-Zoidberg	it's,time,song,was,tidal,wave,in,,
+Zoidberg	it's,time,song,was,tidal,wave,in,
 Zoidberg	Aw

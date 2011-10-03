@@ -26,7 +26,7 @@ Zoidberg	weight
 Fry	Hey,Dr,Zoidberg,what's,jazz,head
 Zoidberg	questions,weight
 Leela	Maybe,reps,weight
-Bender	Hey,looks,like,Zoidberg's,finally,coming,shell,He's,coming,out,,
+Bender	Hey,looks,like,Zoidberg's,finally,coming,shell,He's,coming,out,
 Randy	Nice,gentle,don't,want,unnecessary,stress,doctor,gym
 Zoidberg	I'm,doctor
 Leela	wonder,Dr,Zoidberg,acting,way,of,normal
@@ -47,7 +47,7 @@ Farnsworth	Relax,chiton,y,chum,There's,problem,You're,just,heavy,male,jelly
 Leela	Bleck
 Farnsworth	mating,season,Zoidberg's,people,chaotic,time,behaviour,dictated,tiny,brain,rump
 Fry	Eck
-Farnsworth	There's,thing,do,,
+Farnsworth	There's,thing,do,
 Bender	I'll,water,boiling
 Farnsworth	mean,rush,ancient,homeworld,shortly,erupt,orgy,invertebrate,sex
 Fry	Oh,baby,I'm
@@ -57,7 +57,7 @@ Amy	Dr,Zoidberg,said,hold,he's,gone
 Bender	Moron
 Decapodian Man #1	Welcome,home,old,friend,Just,19,hours,mating,frenzy
 Zoidberg	Excellent,excellent
-Decapodian Man #1	Doctor,,
+Decapodian Man #1	Doctor,
 Fry	say,Zoidberg
 Zoidberg	didn't,attention,speech,impediment
 Bender	You're,looking,nuts,crabby
@@ -94,7 +94,7 @@ Fry	Hey,girl,want,anytime,want,I'm,just,busy
 Zoidberg	Edna,Edna,it's,Zoidberg,Remember,high,school,used,laugh,face,covered,barnacles
 Edna	Zoidberg,didn't,know,town,heard,went,rich,doctor
 Zoidberg	I've,performed,mercy,killings,long,I'm,town,wondering,maybe,craw
-Edna	Oh,gee,yeah,I'm,just,going,lot,things,right,and,,,Look,Zoidberg,carry,eggs,female,owe,race,pick,mate,who's,stuffed,male,jelly,Maybe,rock,star
+Edna	Oh,gee,yeah,I'm,just,going,lot,things,right,and,Look,Zoidberg,carry,eggs,female,owe,race,pick,mate,who's,stuffed,male,jelly,Maybe,rock,star
 Zoidberg	maybe,doctor
 Edna	I'm,sorry,Zoidberg,You're,just,inferior,male,specimen,Nice,seeing
 Zoidberg	want,mate,with,puny,claw,like,Did,guys,looked,like,giant,claws,bodies,attached
@@ -155,7 +155,7 @@ Fry	thanks,just,came,tell,Zoidberg's,really,great,He's,got,male,jelly,coming,waz
 Edna	comes,jelly,isn't,know,Zoidberg's,magical,words,really,Teach,love,squishy,poet,stars
 Fry	Uh,I'm,flattered,really,gonna,big,freaky,mud,bug,you'd,way,list
 Edna	Hush,romantic,fool,Engage,mandibles,kiss
-Zoidberg	Edna,couldn't,stand,longer,I,,,Fry
+Zoidberg	Edna,couldn't,stand,longer,I,Fry
 Fry	Dr,Zoidberg,it's,looks
 Zoidberg	caviar,neck
 Fry	But
@@ -180,7 +180,7 @@ Zoidberg	Fry,it's,years,medical,school,remind,Disembowelling,species,Fatal,non,f
 Fry	Fatal
 Zoidberg	Large,bet,myself,round
 Decapodian Emperor	Edna,say,begins,Claw,Plach
-Edna	I,just,want,say,today,got,piece,toast,brushed,teeth,,
+Edna	I,just,want,say,today,got,piece,toast,brushed,teeth,
 Fry	Shut
 Edna	love,Fry
 Decapodian Emperor	Fry,having,guessed,animal,thinking,shall,choice,weapon,doctor

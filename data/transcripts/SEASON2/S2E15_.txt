@@ -11,7 +11,7 @@ Hermes	Surprise
 Farnsworth	Coach,Smalley,say,Coach,hairpiece
 Leela	Professor,It's,surprise,party,150th,birthday
 Farnsworth	Ooh
-Bender	Good,evening,I'm,,,Whoa,sorry,I'm,Bender,I'll,emceeing,roast,Y'know,say,judge,man,company,keeps,here's,Professor's,oldest,friend,grotesque,stinking,lobster
+Bender	Good,evening,I'm,Whoa,sorry,I'm,Bender,I'll,emceeing,roast,Y'know,say,judge,man,company,keeps,here's,Professor's,oldest,friend,grotesque,stinking,lobster
 Zoidberg	Good,evening,ladies,germs,Hey,Ringo,joke,Oh,it's,Showtime,Apollo
 Bender	Professor,students,love,respect,Right,seriously,crew,members,Professor's,delivery,ship,speaker,far,alive,Captain,Musky
 Zoidberg	wouldn't,wanna,follow,guy
@@ -55,7 +55,7 @@ Leela	Yes,know
 Hermes	True,mon
 Amy	Buh
 Fry	foot,grave
-Farnsworth	I've,picked,successor,It's,great,faith,,,,mind,undeveloped,he's,accomplished,closest,living,relative
+Farnsworth	I've,picked,successor,It's,great,faith,mind,undeveloped,he's,accomplished,closest,living,relative
 Fry	Oh,yeah
 Farnsworth	clone,Cubert,Farnsworth
 Zoidberg	He's,horrible
@@ -78,7 +78,7 @@ Cubert	need,bending,robot,possible,use
 Bender	Uh,speaka,English
 Cubert	does,space,pilot,eye,There's,I'd,like,meet,depth,perception
 Leela	little
-Cubert	Wow,hurt,,,,air
+Cubert	Wow,hurt,air
 Bender	Im,pending,para,bending
 Farnsworth	Oh,Cubert,come,amazing
 Cubert	competent,employee,doubt
@@ -119,7 +119,7 @@ Elzar	folks,doing,alright
 Bender	Oh,yes,Elzar
 Elzar	Good,'cause,turns,forgot,cook,chicken
 Farnsworth	Bad,news,time,watch,tape,I'll,gone,leaving,history,failure,original,hip,bones,I've,lying,age,I'm,actually,150,I'm,160,Oh,vanity,thy,Professor,Farnsworth,live,I've,alerted,Sunset,Squad,robots,away
-Farnsworth	Goodbye,cruel,world,cute,little,pom,pom,curtain,pull,cords,cruel,a,,
+Farnsworth	Goodbye,cruel,world,cute,little,pom,pom,curtain,pull,cords,cruel,a,
 Farnsworth	I've,live,I've,alerted,Sunset,Squad,robots,away
 Amy	
 Hermes	Oh
@@ -182,7 +182,7 @@ Guardbot #1	Freeze,Seize
 Guardbot #2	Seize
 Guardbot #3	Seize
 Guardbot #4	Seize
-Guardbot #1	them,,,mean,seize
+Guardbot #1	them,mean,seize
 Guardbot #2	Aww,I'm,bad
 Guardbot #3	Uh,oh
 Leela	We're,probably,gonna,make

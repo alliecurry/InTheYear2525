@@ -134,7 +134,7 @@ Zapp	Let,ask,question,Leela,Does,company,bra,make,girdle,ask,friend
 Leela	Just,work
 Bender	I'm,Leela,work,neh,neh,neh
 Fry	agree
-Kif	point,it's,just,humiliating,working,man,actually,ordered,shave,armpits,bathtub,said,,
+Kif	point,it's,just,humiliating,working,man,actually,ordered,shave,armpits,bathtub,said,
 Leela	Y'know,don't,talk,Zapp
 Kif	Oh,alright,Um,'bout,um,OK,tub,alright
 Fry	Ah,good,old,high,gravity,rain,That'll,cool
@@ -194,7 +194,7 @@ Fry	Leela,want,captain
 Leela	Let,guess,cancelled,naptime,he's,kill
 Fry	want,Leela,captain
 Zapp	it's,mutiny,thought,I'd,day,Come,Kif,let's,eject,children's,spacesuit,wear
-Kif	honest,sir,I'd,stay,Captain,Leela,actually,listens,to,,
+Kif	honest,sir,I'd,stay,Captain,Leela,actually,listens,to,
 Leela	Oh,He's,disabled,steering,We're,gonna,crash
 Bender	Leela,save,guess,banjo,Fry
 Leela	OK,OK,chance,willing,say,captain

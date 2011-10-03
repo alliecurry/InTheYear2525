@@ -2,7 +2,7 @@
 Farnsworth	new,employees,I'd,like,opinion,commercial,paid,air,Super,Bowl
 Fry	Wow
 Farnsworth	channel,course
-Announcer	Interplanetary,deliveries,,,headache
+Announcer	Interplanetary,deliveries,headache
 Horrible,Gelatinous,Blob	Evans,Where's,package,Earth
 Man	I'm,Evans
 Horrible,Gelatinous,Blob	should've,used,Planet,Express
@@ -70,7 +70,7 @@ Leela	OK,we're
 Fry	Eightsevensixfivefourthreetwooneblastoff
 Fry	Hurry,wanna,moon
 Leela	Relax,It's,open,till,9
-Fry	That's,small,step,Fry,,
+Fry	That's,small,step,Fry,
 Man	giant,line,admission
 Fry	Wow,Um,cuts
 Man	Hmm
@@ -80,12 +80,12 @@ Fry	Let's
 Leela	Fry,crate,deliver
 Fry	Let's,just,dump,sewer,say,delivered
 Bender	work,Let's,burn,say,dumped,sewer
-Leela	OK,everyone's,finished,stupid,,
+Leela	OK,everyone's,finished,stupid,
 Fry	ahead
 Leela	We'll,deliver,crate,like,professionals,we'll,home
 Fry	I've,moon
 Leela	Alright,We'll,deliver,crate,like,professionals,we'll,ride,bumper,cars,Amy,don't,help,Fry,hoist,crate,lock,you're,Just,careful
-Amy	Aye,aye,Captain,mean,eye,mean,yes,sir,,,Um,ma'am
+Amy	Aye,aye,Captain,mean,eye,mean,yes,sir,Um,ma'am
 Amy	Clear
 Fry	Clear
 Amy	Ready,hoist
@@ -102,7 +102,7 @@ Craterface	self,respect
 Leela	buys,trash
 Bender	Idiots,need,gifts,idiots
 Fry	Hey,got,guys,refrigerator,magnets
-Bender	off,it,,,Uh,oh,things,Magnets,screw,inhibition,unit
+Bender	off,it,Uh,oh,things,Magnets,screw,inhibition,unit
 Fry	flip,start,acting,like,crazy,folk,singer
 Bender	Yes,guess,robot,crazy,wanna,folk,singer
 Whalerbots	We're,whalers,moon
@@ -137,7 +137,7 @@ Narrator	fun,gineers,think,happened,like
 Whalerbots	We're,whalers,moon
 Gophers	carry,harpoon
 Whalerbots	ain't,whales,tell,tall,tale
-Leela	sing,whaling,tune,We're,whalers,moon,,
+Leela	sing,whaling,tune,We're,whalers,moon,
 Fry	That's,happened
 Leela	Oh,really,don't,fun,gineering,degree
 Fry	stupid,I'm,taking,thing,real,moon
@@ -146,7 +146,7 @@ Fry	long
 Whalerbot	Ooh,Ah,died,doin',loved
 Leela	OK,you're,surface,I'll,10,minutes,you'll,bored,turn,apologise,jerk,Agreed
 Fry	Agreed,Yeah,Crank,radio
-Whalerbots	We're,whalers,the,,
+Whalerbots	We're,whalers,the,
 Fry	Yee,haw
 Leela	Time's,Make,U,turn,crater
 Fry	'bout,look,original,moon,landing,site
@@ -170,7 +170,7 @@ Leela	car,broke,we're,oxygen,borrow
 Farmer	Huh,borry,Looky,city,girl,oxygen,don't,grow,trees,You'll,earn,doing,chores,hydroponic,farm,precious,theme,park,sun
 Fry	guess,chores,hours
 Leela	Fry,night,lasts,weeks,moon
-Farmer	Yup,Drops,,173
+Farmer	Yup,Drops,173
 Fry	Fahrenheit,Celsius
 Farmer	th'other,spacesuits,ain't,a,heated,ain't,goin',till,sunrise,sleep,barn,Just,don't,a,touchin',beautiful,robot,daughters,Y'hear
 Fry	Robot,daughters
@@ -216,7 +216,7 @@ Leela	Fry,look,really,beautiful,don't,know,noticed
 Farmer	come,Crushinator,eh,robot,got,time
 Fry	It's,Amy,We're,saved
 Leela	Amy,Where'd,learn,operate,controls,like
-Bender	magnet,No,No,,,Uh,oh
+Bender	magnet,No,No,Uh,oh
 Bender	She'll,comin',round,mountain,comes
 Farmer	Aw,dang
 Bender	She'll,riding,white,horses,comes

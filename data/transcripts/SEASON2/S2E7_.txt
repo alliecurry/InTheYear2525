@@ -118,13 +118,13 @@ Washington	Hocked,wouldst,thou
 Bender	reason,hocked,teeth
 Washington	Ah,Booze,money
 Nixon	remember,body,flabby,pastey,skinned,riddled,phlebitis,good,Republican,body,God,loved
-Fry	hear,spent,teen,years,loving,body,Course,tough,love,but,,,Ooh
+Fry	hear,spent,teen,years,loving,body,Course,tough,love,but,Ooh
 Leela	Fry,opened,relations,China,doesn't,want,hear,ding,dong
 Bender	Nixon,miss,body,head's,great,right
 Nixon	son,It's,sad,lonely,life
 Bender	Oh,great,tell
 Nixon	That's,style,like,kick,'em,they're
-Bender	Ones,zeros,one,zero,zero,one,,
+Bender	Ones,zeros,one,zero,zero,one,
 Fry	Bender
 Bender	Whoa,awful,dream,Ones,zeros,thought,saw
 Fry	just,dream,Bender,There's,thing

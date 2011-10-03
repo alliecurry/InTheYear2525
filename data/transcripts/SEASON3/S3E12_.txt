@@ -6,7 +6,7 @@ Leela	Huzzah
 Amy	Huzzah
 Zoidberg	Hooray,Hooray,Zoidberg
 Hermes	read,mandatory,speech,Dear,employee,really,10,15,years,disregard,work,Distribute,token,appreciation,applaud
-Zoidberg	Look,Coupons,oil,changes,price,afford,car,Ah,years,memories,strange,fluids,gushing,patients',bodies,,
+Zoidberg	Look,Coupons,oil,changes,price,afford,car,Ah,years,memories,strange,fluids,gushing,patients',bodies,
 Hermes	Yes,yes,here's,pension,statement,It's,haven't,paid,dumb,stinkbug
 Zoidberg	kept,track,years
 Fry	Oh,I'm,boned,haven't,paid,pension,What'll,retire
@@ -22,7 +22,7 @@ Teller	You're,opening,retirement,account,$6,I'm,sure,wealthy,mule,farmer,like,aw
 Fry	gotta,spend,money,make,money
 Teller	sir,account,overdrawn,$4
 Robot	Gee,I've,seen,lines,faster,sperm,bank
-Bender	That's,sure,,,Roberto
+Bender	That's,sure,Roberto
 Roberto	Bender,Hey,man
 Bender	old,lunatic
 Roberto	bad,bad,Everybody,floor,stick,up
@@ -41,9 +41,9 @@ Hyper Chicken	surveillance,camera,bank,judge,a,jawing,y'all,tell,seen,day,crime
 Camera	let's,memory's,little,fuzzy,went,exactly,like
 Hyper Chicken	Honour,disbarred,introducing,evidence,clients
 Hyper Chicken	Mr,Fry,recognise,robot,a,huggin',hologram
-Fry	sure,That's,real,robber,I'll,forget,long,live,is,,
+Fry	sure,That's,real,robber,I'll,forget,long,live,is,
 Leela	Fry,Just,don't,wanna,look,stupid,Court,TV
-Fry	You're,right,You're,right,was,,
+Fry	You're,right,You're,right,was,
 Whitey	Yes,say,testify,I'll,killed,Oh,It's
 Roberto	hamburger
 Roberto	lungs,long,pal
@@ -64,7 +64,7 @@ Farnsworth	chin
 Fry	Ow,chin
 Fry	don't,belong,Bender,asylum,insane,robots
 Bender	meet,half,qualifications
-Fry	Oh,good,physical,examine,fragile,naked,pink,body,they'll,I'm,a,,
+Fry	Oh,good,physical,examine,fragile,naked,pink,body,they'll,I'm,a,
 Fry	the
 Bender	offensive
 Dr Perceptron	Greetings,Dr,Perceptron,Let,help,relax
@@ -87,10 +87,10 @@ Unit 2013	Hey,man,believe,you're,human
 Fry	
 Unit 2013	Sure,don't,believe,I'm,human,Name's,Unit,2013,C'mon,Lemme,introduce,Fry,meet,Norm,How's,going,pal,picking,transmissions,CIA,teeth
 Norm	just,won't,stop
-Woman	CIA,cafeteria,menu,week,15th,follows,Monday,shepherd's,pie,Tu,,
+Woman	CIA,cafeteria,menu,week,15th,follows,Monday,shepherd's,pie,Tu,
 Unit 2013	Cuckoo
 Fry	Let,guess,thinks,he's,Lincoln
-Unit 2013	he's,supposed,Problem,he's,got,multiple,personalities,,,,Lincoln
+Unit 2013	he's,supposed,Problem,he's,got,multiple,personalities,Lincoln
 Lincolnbot	born,200,log,cabins
 Unit 2013	Frankie,He's,convinced,he's,lunchroom,worker,work,lunchroom,work,lunchroom,Frankie
 Frankie	It's,alright
@@ -98,11 +98,11 @@ Unit 2013	Poor,Frankie
 Mad Hatterbot	Change,places
 Fry	Bender,can't,want,outta
 Bender	crazy,place,great,Electroshock,want,Lincolns,Napoleon,Ah,Sweet,light,crude
-Fry	I'm,robot,like,don't,like,having,discs,crammed,Unless,they're,Oreos,,,,mouth,Don't,understand,I'm,gonna,die
+Fry	I'm,robot,like,don't,like,having,discs,crammed,Unless,they're,Oreos,mouth,Don't,understand,I'm,gonna,die
 Bender	Ah,quit,bellyaching,like,robot
 Mad Hatterbot	Change,places
 Victor	doctor,says,making,great,strides,exploding,problem
-Malfunctioning Eddie	way,it,,
+Malfunctioning Eddie	way,it,
 Fry	gotta,starved,death,sick,vending,machine,robot,Gimme,Gimme
 Hermes	Poor,Fry,He's,got,munchies,freedom
 Leela	We're,trying,help,We've,petitioned,governor,doesn't,want,appear,soft,people,who've,falsely,imprisoned
@@ -126,7 +126,7 @@ Fry	Roberto,W,W,W,What,doing
 Roberto	got,busted,robbing,bank
 Fry	hold,bank,twice
 Roberto	Ah,time,just,case,joint,rob,little,What's,matter,scared
-Fry	N,N,,,N,,
+Fry	N,N,N,
 Roberto	Noticeably,I'll,say,stand,gotta,practise,stabbing
 Fry	Help,Stop
 Bender	Hey,I'm,tuning,banjo
@@ -201,7 +201,7 @@ Roberto	Shut,Stop,telling
 Zoidberg	Oh,fear
 Roberto	I'm,thinking,number,Guess,die
 Bender	Um,OK,Fifty,ish
-Roberto	56,56,Oh,man,that's,think,I'm,gonna,kill,you,good,56,ing,,
+Roberto	56,56,Oh,man,that's,think,I'm,gonna,kill,you,good,56,ing,
 Bender	Don't,kill,I'm,starting,come,Stockholm,Syndrome,handsome
 Fry	Halt,fellow,robot
 Roberto	Hey,Red,You're,just,time,join,hostage,situation,wanna
@@ -220,7 +220,7 @@ Amy	Hooray
 Zoidberg	Bravo
 Leela	did,Fry
 Bender	Congratulations,buddy,You're,credit,race
-Fry	Blood,Robots,don't,blood,a,,
+Fry	Blood,Robots,don't,blood,a,
 Zoidberg	squid
 Fry	human,Oh,God,I'm,human
 Zoidberg	good

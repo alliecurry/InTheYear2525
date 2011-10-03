@@ -1,7 +1,7 @@
 2	15	The Problem with Popplers	2	18	20000507	28
 Announcer	Molten,Boron
 Jingle Singer	doesn't,like,Molten,Boron
-Fry	hate,Planet,Moochers,drink,check,comes,wallet's,pants,,,,borrowed
+Fry	hate,Planet,Moochers,drink,check,comes,wallet's,pants,borrowed
 Leela	Dinner,ready
 Bender	Nah,lousy,Moochers,cleaned,pantry,left,baking,soda,capers
 Fry	Ugh
@@ -236,7 +236,7 @@ Fry
 Bender	can't,look
 Poppler	Stop,Leela,gets,eaten,eaten
 Nd Nd	Little,I'm,going,count,blorx
-Jrrr	elder,one,,
+Jrrr	elder,one,
 Nd Nd	Flingle,glorg,glorg,gloob
 Jrrr	Hear,good,reasons,eat,Hunger,boredom,wanting,world's,fattest,man,revenge,better,Leela's,friend
 Lrrr	true,Earthling
@@ -250,7 +250,7 @@ Lrrr	think,funny,hippie
 Leela	Thank,Jrrr,hope,you'll,think,mom
 Jrrr	species,grows,eat,moms
 Leela	Whoop
-Lrrr	People,Earth,,,Oh,hippie's,starting,kick,we've,learned,valuable,lesson,today,realise,that,,,Oh,wait
+Lrrr	People,Earth,Oh,hippie's,starting,kick,we've,learned,valuable,lesson,today,realise,that,Oh,wait
 Nd Nd	Let's
 Lrrr	Whoa
 Lrrr	Whoa,feel,like,I'm,flying

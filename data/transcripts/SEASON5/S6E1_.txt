@@ -76,7 +76,7 @@ De Gaulle	freed,France,Nazis
 Fry	Hey,Leela,I'm,French,guy
 Bender	Rock,Frenchman,baby
 LaBarbara	Oh,poor,little,love,pirate,Caribbean
-Hermes	there,wife,all,,
+Hermes	there,wife,all,
 LaBarbara	Okay,look,Hermes,got,think,boy,needs,daddy
 Hermes	daddy
 LaBarbara	got,half,daddies,body,right
@@ -187,7 +187,7 @@ Lars	maybe,going
 Fry	Yes,I'll
 Amy	Leela
 Leela	Leela,Leela
-Lars	friend,Fry,nice,dati,,
+Lars	friend,Fry,nice,dati,
 Leela	Nope
 Lars	Good,maybe,thinking,asking,dinner
 Leela	Ohhhh,I'll,start,maybe,thinking,saying,Sure

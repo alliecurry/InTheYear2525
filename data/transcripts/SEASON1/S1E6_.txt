@@ -20,7 +20,7 @@ Amy	Yeah,mean,commercials,dreams,don't,running,buy,brand,name,merchandise,low,lo
 Perfume,saleswoman	Hi,Care,sample,latest,fragrance,Calvin,Clone
 Amy	thanks
 Perfume,saleswoman	sir
-Bender	thanks,I,,
+Bender	thanks,I,
 Cosmetologist	lovely,face,just,need,draw,attention,away,eye,area
 Fry	Cool,try,buy
 Salesman	I'm,afraid,can't,let,open,package,try,demo,pair
@@ -47,7 +47,7 @@ Announcer	Mom,love,screen,door,registered,trademarks,Momcorp
 Fry	Hey,Bender,Sounds,like,use,little,oil
 Bender	I'm,boned
 Smitty	Freeze,scuzzbot
-Bender	Uh,there's,obviously,sort,mistake,I'm,sure,there's,reasonable,,
+Bender	Uh,there's,obviously,sort,mistake,I'm,sure,there's,reasonable,
 Amy	money,pay,Bender's,fine
 Fry	78,79,7950,Crud,We're,50,cents,short
 Leela	I'd,love,chip,Bender,stole,wallet
@@ -73,7 +73,7 @@ Farnsworth	I'm,sorry,Fry,anchovy,extinct,2200's
 Fry	
 Farnsworth	Oh,yes,Fished,death,Just,time,people,arrived,Earth,wasn't,Zoidberg
 Zoidberg	I'm,trial
-Fry	anchovies,Oh,man,don't,know,you're,missing,salty,oily,melted,mouth,and,,
+Fry	anchovies,Oh,man,don't,know,you're,missing,salty,oily,melted,mouth,and,
 Zoidberg	Stop,Stop,admit,people,ate,kept,saying,can't,hurt,gone,We're,sorry
 Fry	just,wish,could've,showed,guys,great,rich,can't,buy,things,miss,20th,century
 Bender	Maybe,you're,forgetting,just,rich,Huh,Huh
@@ -100,7 +100,7 @@ Decapodian,Woman	30,40
 Fry	50000
 Leela	crazy,It's,old,fish
 Fry	Don't,tell,spend,money
-Auctioneer	50,going,twice,,
+Auctioneer	50,going,twice,
 Mom	75000
 Leela	Oh,God,It's,Mom,I've,seen,person
 Fry	100000
@@ -136,12 +136,12 @@ Bender	Yeah,gonna,come,squid,fights,sit,wallowing,prehistoric,junk
 Fry	Junk,Maybe,can't,understand,I've,finally,need,happy,it's,friends,it's,things
 Bender	I'm,thing
 Fry	Just,leave
-Leela	Fry,please,,,ponytail's,caught,door
+Leela	Fry,please,ponytail's,caught,door
 Fry	don't,need,antique,videos,bucket,fossilised,KFC,50,million,dollars,worth,anchovies
 Mom	Mercy,day
 Mom	shut,door,Igner,dear,think,feel,draught,coming,Walt,Cream,soda
 Walt	Right,away,mother,Larry,mother,cream,soda
-Larry	Mom,said,,
+Larry	Mom,said,
 Walt	heard
 Igner	What's,wrong,Mommy
 Mom	It's,damned,anchovies,dirtbag,Fry,know,secret,won't,rest,hands,messes,Mom
@@ -161,13 +161,13 @@ Mom	don't,forget
 Larry	supposed,Fry's,money,bank
 Mom	easy,thanks,nice,people,Mom's,Old,Fashioned,Video,Surveillance,Unit
 Teller	remember,PIN,number
-Fry	It's,price,cheese,pizza,large,soda,,
+Fry	It's,price,cheese,pizza,large,soda,
 Mom	know,needs
 Larry	
 Mom	I'm,charity,BS,knocked,up,teenage,sluts
 Walt	Mr,Fry,it's,plumbers,called
 Larry	We're,tighten,drain
-Fry	didn't,order,any,,
+Fry	didn't,order,any,
 Walt	Quick,tranquilliser
 Larry	That's,good,boy
 Walt	Wake,Mr,Fry
@@ -196,7 +196,7 @@ Fry	Wait,You're,Pamela,Anderson,Cool
 Anderson	Oh,I'll,cheese,pizza,large,uh,line
 Larry	Soda
 Anderson	Oh,right,Cheese,pizza,large,soda
-Fry	Uh,cheese,a,,,quick
+Fry	Uh,cheese,a,quick
 Anderson	owe
 Fry	1077,PIN,number
 Igner	Hey,don't,laugh
@@ -215,7 +215,7 @@ Fry	Bender,Leela,Don't,leave,Wait,minute,Hey,buddy,year
 Repo bot	Uh,3000
 Fry	3000,Yes,I'm,future,Life,wonderful,Wait,doing,stuff
 Repo,bot	Uh,cheque,bounced,We're,taking
-Fry	Oh,ATM,card,secret,PIN,number,,,,1077,I've,got,left
+Fry	Oh,ATM,card,secret,PIN,number,1077,I've,got,left
 Leela	You're,Fry's,relative,idea,got,crazy
 Farnsworth	Uh,wha,Oh,yes,say,madness,runs,family,mad,dared,dream,race,atomic,monsters,Atomic,supermen,octagonal,shaped,bodies,suck,blood
 Fry	Leela,Bender,missed

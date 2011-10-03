@@ -8,7 +8,7 @@ Farnsworth
 Blek	sure,chairs,Guidebook,says,human,legs,bend,knee
 Blek	It's,OK,Mama,complains,bend,legs,free,Welcome,Earth,pizza,store,sit,bend,knees
 Bender	Ooh,That's,a,comfy
-Blek	OK,kind,pizza,goes,Silt,Asbestos,got,guano,,,,fresh
+Blek	OK,kind,pizza,goes,Silt,Asbestos,got,guano,fresh
 Fry	Uh,hmm,food
 Blek	try,deep,dish,pizza,Contains,kind,things
 Leela	don't,mean,offend,tastes,like,vomit
@@ -53,7 +53,7 @@ Doubledeal	Close,don't,draw,crowd,like,wanna,sign,team
 Leela	mean,I'd,woman,play,Major,League,Blernsball
 Commissioner	yeah,basically,you'd,just,publicity,stunt,figure,one,eyed,lady,skull,buster,bring,freakshow,crowd
 Leela	Wow,woman,play,Major,League,Blernsball
-Commissioner	yeah,basically,you'd,just,be,,
+Commissioner	yeah,basically,you'd,just,be,
 Leela	Ta,da,woman,play,Major,League,Blernsball,look
 Hermes	Like,sexy,Yogi,Berra
 Farnsworth	number,seven,eighth's
@@ -74,7 +74,7 @@ Uecker	history,making,folks,Bjornson,steps,plate,Leela,delivers
 Bender	Bullseye
 Uecker	Ooh,inauspicious,start,career,woman,blernsballer,inauspicious,continuation,career,woman,blernsballer
 Crowd	Bean,Bean,Bean,Bean,Bean,Bean,Bean,Bean,Bean,Bean
-Uecker	Ouch,It's,three,bean,ball,salad,Mets,fans,love,blame,haven't,cheer,year,,
+Uecker	Ouch,It's,three,bean,ball,salad,Mets,fans,love,blame,haven't,cheer,year,
 Doubledeal	Kid,great,got,publicity,cowboy,shark,tank,Poor,Tex,quite,shark
 Man #1	Hey
 Man #2	Hey
@@ -164,7 +164,7 @@ Uecker	fans,Boston's,turning,game,real,squeeeker,that's,e's,men,they're
 Leela	Come,skipper,It's,chance,prove,I'm,worst,player
 Skipper	We're,actually,winning,game,joke,we're,runs,pitchers,sneak,early,beat,traffic,Aw,darn,darn,darn,bases,loaded,Isn't,man,team
 Leela	
-Skipper	repeat,Isn't,man,team,this,,
+Skipper	repeat,Isn't,man,team,this,
 Leela	I've,training,Hank,Aaron
 Skipper	You've,training,Hank,Aaron
 Leela	I've,training,Hank,Aaron
@@ -181,7 +181,7 @@ Leela	cool,She's,just,like,player,puts,sports,bra,arm,time
 Umpire	Strike
 Leela	Strike,personal,best
 Umpire	Strike
-Uecker	tonight,witnessed,beginning,great,career,woman,play,sport,,,,Jackie,Anderson
+Uecker	tonight,witnessed,beginning,great,career,woman,play,sport,Jackie,Anderson
 Jackie	Leela
 Leela	Jackie,guess,right,I'm,lousy,role,model,I'm,sorry
 Jackie	don't,turns,inspiration

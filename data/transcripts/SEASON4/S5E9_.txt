@@ -35,14 +35,14 @@ Leela	Relax,Everything'll,fine
 Fry	Oh,God,old,Planet,Express,ship
 Leela	There's,black,box
 Man	Captain,bees,surrounded,Oh,Professor,right,We're,good,old,crew
-Captain	aim,prove,wrong,It'll,deadly,deadly,bees,to,,,Oh,Lord
+Captain	aim,prove,wrong,It'll,deadly,deadly,bees,to,Oh,Lord
 Leela	Uh,couldn't,make,static
 Bender	Ew
 Leela	honeycomb,hideout
 Fry	Hey,what's,goop
 Leela	Royal,jelly,feed,queen
 Fry	Bees,make,honey,jelly,Huh,come,humans,make,tastes,good,Help,can't,swim,jelly,far,know
-Leela	Look,It's,baby,queen,Aw,she's,cute,adorable,wittle,itty,bitty,fuzzy,wuzzy,,
+Leela	Look,It's,baby,queen,Aw,she's,cute,adorable,wittle,itty,bitty,fuzzy,wuzzy,
 Fry	Leela,Stop,bonding,let's,got,jelly,underpants
 Leela	I'm,taking,bee,With,queen,build,hive,make,honey,Let,just,pack,lunch,we'll
 Bender	Pick,pace,lady,I'm,sick,shaking,booty,fat,jerks,didn't,mean,you're,fat,Just,fatso
@@ -82,7 +82,7 @@ Leela	It's,beautiful,open,open
 Fry	Sure,There's,just,thing,want
 Leela	
 Fry	want,wake
-Leela	Wake,I'm,not,,
+Leela	Wake,I'm,not,
 Leela	dream,Fry,said,hid,gift,locker,it's,true,exist,form
 Farnsworth	course,exists,frozen,corpse,outer,space,Oh,myself,sad
 Leela	goes
@@ -100,7 +100,7 @@ Farnsworth	sort,yes,France,it's,called,guillotine
 Leela	Professor,Can't,examine,brain,removing
 Farnsworth	Yes,easily
 Bender	Hey,Fry,wasn't,actually,dead,buried,Y'know,like,Julia,Roberts
-Farnsworth	suppose,there's,slim,,,don't,believe
+Farnsworth	suppose,there's,slim,don't,believe
 Leela	Fry,alive,dimension
 Farnsworth	According,gizmometer,Fry,dead,bring,Remarkable
 Leela	dream,science,can't,unprove,known,gift,Fry's,locker
@@ -127,7 +127,7 @@ Bender
 Hermes	I'm,Jamaica,island,you're,blowing,fanny
 Leela	gave,jacket,Look
 Farnsworth	That's,Fry's,jacket,Fry's,jacket,red,That's,jacket,off,the,rack,lime,green,affair
-Leela	Fry,jacket,,,woke
+Leela	Fry,jacket,woke
 Hermes	You're,lot,guilt,stress,Leela,work
 Leela	stress,damnit
 Amy	Everything's,going,alright,Leela
@@ -142,7 +142,7 @@ Hermes
 Bender	
 Leela	spoonful,calm,OK,I've,got,pretty,good,calm,going,spoonfuls,help,sleep,Uh,oh,awake,guess,spoonful,couldn't,hurt,Oh,gosh,I'd,better,sponge,Fry,don't,need,sponge
 Fry	sticky,naked,Did,miss,fun
-Farnsworth	Incredible,According,gizmometer,Fry,touched,royal,jelly,space,hive,leaving,imprint,DNA,brainwaves,spilled,couch,recombined,trace,amounts,Fry's,hair,skin,,
+Farnsworth	Incredible,According,gizmometer,Fry,touched,royal,jelly,space,hive,leaving,imprint,DNA,brainwaves,spilled,couch,recombined,trace,amounts,Fry's,hair,skin,
 Bender	blood,Don't,forget,Fry's,blood
 Farnsworth	Yes,Bender,thank,short,various,fluids,Fry,left,couch,caused,royal,jelly,regenerate,entire
 Fry	Neat

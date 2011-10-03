@@ -26,8 +26,8 @@ Leela	Men,worst,bet
 Amy	just,wish,decent,guy,instead,spleeze,ball,terrified,answer,phone,Hello
 Amy	Hello
 Kif	love,coward
-Zapp	Kif,I'm,headed,men's,room,I'll,needing,attendant,so,,,Oh,I'm,sorry,You're,crying,like,woman,It's,alright,I've,thought,myself,father,figure,pathetic,men,Kif,old,friend,let's,rap
-Kif	I'm,love,girl,,
+Zapp	Kif,I'm,headed,men's,room,I'll,needing,attendant,so,Oh,I'm,sorry,You're,crying,like,woman,It's,alright,I've,thought,myself,father,figure,pathetic,men,Kif,old,friend,let's,rap
+Kif	I'm,love,girl,
 Zapp	
 Kif	met,year,ago
 Kif	escaping,cruise,ship,piloted,directly,black,hole
@@ -64,8 +64,8 @@ Zapp	Waiter,bring,bottle,wine
 Leela	Half,bottle
 Zapp	oysters,half,shell
 Leela	Quarter,shell
-Kif	Oh,I'd,like,,
-Zapp	Kif's,hungry,I'd,like,steaks,ladies,sensual,salads,,,,low,cal,sensual,dressing
+Kif	Oh,I'd,like,
+Zapp	Kif's,hungry,I'd,like,steaks,ladies,sensual,salads,low,cal,sensual,dressing
 Morbo	Oh,won't,funkytown
 Amy	Kif,you're,quiet,haven't,said,word,night
 Kif	um,um,hello
@@ -91,7 +91,7 @@ Chef	sickens
 Zapp	walked,asked,dance
 Leela	We're,going,home,space,taxi
 Zapp	need,There's,restaurant,built,can't,fly,ladies
-Kif	sir,Let's,just,divide,check,and,,
+Kif	sir,Let's,just,divide,check,and,
 Zapp	Let's,eatery
 Zapp	Ah,she's,built,like,steakhouse,handles,like,bistro,She's,control
 Zapp	win,gravity
@@ -105,7 +105,7 @@ Fry	gotta,rescue
 Bender	Eh,don't,know
 Fry	Bender,Think,seoritas
 Bender	Vmonos
-Kif	Amy,um,well,,
+Kif	Amy,um,well,
 Amy	It's,line
 Leela	planet
 Zapp	sector,uncharted
@@ -114,13 +114,13 @@ Zapp	repopulate,human,race,maybe
 Amy	
 Kug	hear,people,people
 Thog	big,deal,Everybody,make,mistake
-Zapp	hello,usually,don't,say,beautiful,trio,gigantic,ladies,I've,laid,eyes,erotic,woman,boo,,
+Zapp	hello,usually,don't,say,beautiful,trio,gigantic,ladies,I've,laid,eyes,erotic,woman,boo,
 Fry	Oh,sign,Leela,Amy
 Bender	make
 Fry	don't,know
 Bender	Oh,God
 Kug	
-Fry	Alright,here's,plan,,
+Fry	Alright,here's,plan,
 Bender	kind,moronic,plan,Wow
 Thog	Women,free,Men,stay,chains
 Ornik	leader,know

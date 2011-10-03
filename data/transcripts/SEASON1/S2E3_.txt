@@ -12,7 +12,7 @@ Judge	Overruled,counselor
 Stenographer	repeat
 Technician	Oh,God,You've,knocked,Fox,air
 Fry	Pft,Like,Earth,cares
-Stenographer	repeat,par,,
+Stenographer	repeat,par,
 Lrrr	outrage,demand,know,happened,plucky,lawyer,compellingly,short,garment
 Announcer	technical,difficulties,bring,animated,shows,row
 Hermes	Bob,Marley's,ghost,work,lazy,boat,bag
@@ -67,7 +67,7 @@ Hermes	Faster
 Fry	We're,gonna,die,aren't
 Farnsworth	Oh,think,time,aliens,invaded,did,force,intelligent,pair,mate,continuously,Oh,yes
 Linda	today's,winning,lotto,number,4,news,alien,saucers,continue,rain,destruction,Earth,live,emergency,address,Earth,President,McNeal
-McNeal	Ladies,gentlemen,course,clear,time,come,knuckle,fours,really,lick,boot,alien,masters,want,a,,
+McNeal	Ladies,gentlemen,course,clear,time,come,knuckle,fours,really,lick,boot,alien,masters,want,a,
 Lrrr	want,McNeal,McNeal,lay,waste,cities,anti,monument,laser,demand,McNeal
 McNeal	man,lead,proud,struggle,freedom,fresh,bloody,triumph,pacifists,Gandhi,Nebula,25,star,General,Zapp,Brannigan
 Man	Yeah
@@ -82,7 +82,7 @@ Bender	know,coward
 Zapp	emergency,robots,patriotism,circuits,activated
 Bender	robot's,duty,life,good,humanity,Oh,crap
 Zapp	We're,different,cultures,white,black,right,soldier
-Bender	actually,I,,,Sir,yes,sir,Sir
+Bender	actually,I,Sir,yes,sir,Sir
 Zapp	Remember,mission,simple,Destroy,aliens
 Kif	Um,uh,sir
 Zapp	Oh,yes,right,destroy,Kif,turning,sex,ay,struggle,future,human,race
@@ -92,7 +92,7 @@ Zapp	key,victory,discipline,means,well,made,bed,practise,make,bed,sleep
 Fry	mean,I'm,sleeping
 Zapp	won't,time,sleeping,soldier,bed,making,you'll,doing
 Zapp	alien,mothership,orbit,hit,bullseye,rest,dominoes,fall,like,house,cards,Checkmate,like,great,plans,strategy,simple,idiot,devised,command,ships,line,file,directly,alien,death,cannons,clogging,wreckage
-Fry	W,Wouldn't,make,sense,send,robots,a,,
+Fry	W,Wouldn't,make,sense,send,robots,a,
 Bender	Sir,volunteer,suicide,mission,Aw,cut
 Zapp	You're,brave,robot,son,I'm,command,mission's,suicide,mission,reminds,Leela,head,battle,you'd,like,make,love,case,doesn't,come
 Leela	Maybe,wait,till,case,comes
@@ -112,16 +112,16 @@ Zapp	did,just,blow
 Kif	Hubble,Telescope
 Zapp	Stop,exploding,cowards
 Leela	hopeless,we're,gonna,blown,bits,comfort,home
-Farnsworth	You'll,captain,you'll,delivery,boy,you'll,alcoholic,foul,mouthed,,,Sorry,check,days,week
+Farnsworth	You'll,captain,you'll,delivery,boy,you'll,alcoholic,foul,mouthed,Sorry,check,days,week
 Lrrr	want,McNeal,Stop,stalling
 Linda	rebuttal,President,McNeal
-McNeal	people,Earth,remain,united,refusal,hand,myself,Total,annihilation,small,price,pay,compared,with,,
+McNeal	people,Earth,remain,united,refusal,hand,myself,Total,annihilation,small,price,pay,compared,with,
 Zapp	Come
 Lrrr	McNeal
 Zapp	Huh
 McNeal	Huh
 Nd,Nd	want
-McNeal	Oh,thank,Thank,glorious,masters,I,,
+McNeal	Oh,thank,Thank,glorious,masters,I,
 Lrrr	McNeal
 Zapp	McNeal
 Nd,Nd	McNeal,single,female,lawyer
@@ -135,11 +135,11 @@ Fry	Wait,know
 Leela	you,big,fat,liar,don't,know,watch,TV
 Fry	That's,know,She's,Jenny,McNeal,character,TV,20th,century,Single,Female,Lawyer
 Bender	they're,hoping,TV,hasn't,existed,thousand,years,pft,royally,boned
-Lrrr	raise,planet's,temperature,million,degrees,day,days,unless,McNeal,9pm,tomorrow,,,,8,central
+Lrrr	raise,planet's,temperature,million,degrees,day,days,unless,McNeal,9pm,tomorrow,8,central
 Farnsworth	I'm,beginning,think,there'll,forced,mating
 Leela	They're,going,destroy,entire,Earth,don't,stupid,TV,bimbo,lawyer
 Fry	It's,crazy,know,thousand,years,ago
-Farnsworth	Omicron,Persei,8,thousand,light,years,away,electro,magnetic,waves,just,recently,gotten,see,,
+Farnsworth	Omicron,Persei,8,thousand,light,years,away,electro,magnetic,waves,just,recently,gotten,see,
 Fry	Magic,Got
 Amy	Check,1999,season,finale,Single,Female,Lawyer,interrupted,technical,problems,Apparently,zidiot,spilled,Coke,transmitter
 Fry	Beer,think
@@ -151,7 +151,7 @@ Zoidberg	make,costumes
 Farnsworth	old,five,megawatt,broadcasting,tower,attic
 Bender	I,acting,coach
 Fry	Let's
-Fry	OK,Leela,you'll,starring,Jenny,,
+Fry	OK,Leela,you'll,starring,Jenny,
 Leela	Uh,uh,forget,I'm,camera,shy,B,tongue,tied,audience,armed,death,rays
 Amy	Plus,don't,really,thighs,miniskirt
 Leela	Gimme,script
@@ -170,7 +170,7 @@ Farnsworth	witness,Prosecutor,Ramirez
 Zoidberg	Gracias,Single,Female,Lawyer,night,August,23rd
 Leela	Sleeping
 Zoidberg	Aha
-Leela	Uh,g,,,uh,getting,uh,matter,uh,uh,court,Fry,there's,wrote,pages,dialogue
+Leela	Uh,g,uh,getting,uh,matter,uh,uh,court,Fry,there's,wrote,pages,dialogue
 Fry	took,hour,write,thought,hour,read
 Leela	supposed
 Fry	don't,know,don't,know,Just,say,long,it's,compelling,mesmerising,tour,force
@@ -182,7 +182,7 @@ Bender	We'll,word,Crazy,Bender's,Discount,Stereo
 Fry	Married,Jenny,can't,married
 Leela	It's,clever,it's,unexpected
 Fry	that's,people,watch,TV,Clever,things,make,people,feel,stupid,unexpected,things,make,feel,scared
-Lrrr	Attention,McNeal,unexpected,marriage,plan,scares,stole,hearts,single,female,lawyer,shall,remain,,,
+Lrrr	Attention,McNeal,unexpected,marriage,plan,scares,stole,hearts,single,female,lawyer,shall,remain,
 Fry	TV,audiences,don't,want,original,wanna,thing,they've,seen,thousand,times
 Bender	Whatchoo,talkin','bout,Fry
 Fry	Trust,people,living,lives,wasted,watching,TV,deep,knew,day,help,save,world,Plus,lost,Workman's,Comp,gone,outside,just,read,cue,cards

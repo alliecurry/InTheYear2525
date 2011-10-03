@@ -111,7 +111,7 @@ Leela	secret,ingredient
 Grunka Lunkas	Grunka,Lunka,dunkity,dingredient
 Bender	OK,OK,point
 Leela	just,curious,armed,guards
-Grunka Lunkas	Grunka,Lunka,dunkity,darmed,guards,,
+Grunka Lunkas	Grunka,Lunka,dunkity,darmed,guards,
 Bender	Shut,hell
 Hermes	you're,telling,staff,hire,Grunka,Lunkas,half,cost
 Glurmo	That's,right,think,good,union,don't,They're,basically,slaves
@@ -133,7 +133,7 @@ Fry	Oh
 Leela	varies,person,person
 Farnsworth	Ooh
 Zoidberg	aren't,tight,thorax
-Glurmo	Yes,in,,,Say,weren't,people,group,start,tour
+Glurmo	Yes,in,Say,weren't,people,group,start,tour
 Amy	Hey,yeah,Fry,Leela,Bender,missing
 Glurmo	you'll,excuse
 Leela	Quick
@@ -174,7 +174,7 @@ Slurm Queen	resist,concentrated,super,Slurm,It's,delicious,you'll,eat,explode,Oh
 Fry	Mmm
 Slurm Queen	Farewell,Oh,congratulations,winning,contest
 Leela	Fry,untie,quick
-Fry	come,Let,just,,,taste
+Fry	come,Let,just,taste
 Leela	pig,Stop,stuffing,craw,save
 Bender	can't,what's,happening,boned
 Leela	Yeah,we're,boned

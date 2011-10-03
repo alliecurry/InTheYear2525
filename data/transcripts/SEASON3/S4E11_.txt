@@ -6,7 +6,7 @@ Elzar	Morbo,I'm,gonna,whip,nice,unnameable,horror,mango,chutney
 Morbo	Pathetic,humans,prepare,write,recipe
 Fry	Hey,uh,what's,pots,pans,building,wife
 Bender	Meantime,I'm,cooking,tasty,Sunday,brunch,best,friends
-Fry	Brunch,Right,I'd,better,warn,,,tell,,,warntell
+Fry	Brunch,Right,I'd,better,warn,tell,warntell
 Bender	Okey,dokey
 Hermes	Ooh
 Leela	Nice

@@ -28,11 +28,11 @@ Amy	feel,kinda,shallow,blowing,rebate,cool,talking,tattoo
 Tattoo #1	Hey,Gordon,Gecko,cost,crummy,date
 Amy	Shut,Ow
 Farnsworth	Uh,ma'am,chore,clean,wrinkles,day,true,stem,cells,fight,aging,process
-Geneworks Woman	yes,way,infant,fight,Muhammad,Ali,But,,
+Geneworks Woman	yes,way,infant,fight,Muhammad,Ali,But,
 Farnsworth	pound,stem,cells
 Geneworks Woman	course,age,reversing,effects,purely,temporary
 Bender	Say,buddy,why's,Grand,Cigar,pricey
-Clerk	wrapper,piece,original,Constitution,hand,rolled,Queen,Elizabeth,wild,years,buried,George,Burns,graverobbing,space,mushrooms,,,Uh,know,rest
+Clerk	wrapper,piece,original,Constitution,hand,rolled,Queen,Elizabeth,wild,years,buried,George,Burns,graverobbing,space,mushrooms,Uh,know,rest
 Bender	300,bucks
 Clerk	
 Bender	Oh,alright,I'll,just,$300,burglars,tools
@@ -43,9 +43,9 @@ Hermes	Came,went,You're,proud,owner,Bamboo,Boogie,Boots,warning,label,big,know,g
 Dwight	Pops,don't,wanna,fun,wanna,like,boring,prudently,invested
 Hermes	Babylon's,bells,tallied,300,bananas,entertainment,product,'em,fun
 Dwight	don't,wanna
-Hermes	I'm,gonna,'em,make,watch,fun,Fun,Fun,,,Dwight,Help
+Hermes	I'm,gonna,'em,make,watch,fun,Fun,Fun,Dwight,Help
 Dwight	I'll,save,Pops
-Farnsworth	Hey,Turn,damn,music,,
+Farnsworth	Hey,Turn,damn,music,
 Hermes	Isn't,fun
 Dwight	wish,mommies
 Randy	Try,uh,sir
@@ -56,7 +56,7 @@ Whale Biologist	asked,right,guy,I'm,whale,biologist,personally,hate,whales,Espec
 Leela	why'd,whale,biologist
 Whale Biologist	don't,know,$300,Noon,tomorrow,you're,late,tread,water,scallop,tank
 Fry	Uh,I'll,coffee
-Man #2	Guppy,trout,mermaid,or,,
+Man #2	Guppy,trout,mermaid,or,
 Fry	Whale
 Kif	Amy,I,I,spent,tax,rebate,gift
 Amy	Oh,Kiffie
@@ -110,7 +110,7 @@ Amy	C'mon,Mushu,Barf,Barf,like,freshman
 Whale Biologist	ignorant,whale,lovers,we'll,who's,boss,make,Mushu,jump,hoop,Jump,Mushu,wants,fish
 Sam	Mushu,sad
 URL	just,keeps,comin',comin'
-Kif	Wait,chunk,It's,watch,got,Amy,got,plan,went,a,,
+Kif	Wait,chunk,It's,watch,got,Amy,got,plan,went,a,
 Whale Biologist	He's,got,aquarium,property,Stop
 URL	Better,says,He's,whale,biologist
 Smitty	You're,arrest,squishy,punk
@@ -141,7 +141,7 @@ Woman	It's,better,just,wrinkled,prune
 Farnsworth	fat,queen,sea,cows
 Woman	love
 Farnsworth	Oh
-Kif	putrid,waxy,substance,coated,was,,
+Kif	putrid,waxy,substance,coated,was,
 Amy	precious,ambergris
 Kif	Yes,managed,sneak,usual,place,Ta,da,Using,I'll,make,perfume,lilac,jasmine,frankenberry
 Amy	Oh,Kif,it's,romantic,can't,wait,I'm,gonna,wear,right

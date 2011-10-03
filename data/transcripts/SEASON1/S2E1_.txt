@@ -20,7 +20,7 @@ Leela	Let's,just,say,we've,crossed,paths
 Bender	slept
 Zapp	She's,beautiful,ship,alright,Shapely,seductive,I'm,gonna,fly,brains,adieu,christen,ship,Titanic
 Zapp	well,Lady,Leela,notes,Kif,You're,witness,subtle,waltz,known,seduction,trapped,ship,say,knock,sensual,boots
-Leela	It's,tempting,uh,fianc,Uh,hmm,uh,hmm,uh,we,,,uh,Fry,darling,meet,Zapp,Brannigan
+Leela	It's,tempting,uh,fianc,Uh,hmm,uh,hmm,uh,we,uh,Fry,darling,meet,Zapp,Brannigan
 Fry	Huh,Ooh
 Farnsworth	Ah,here's,stateroom
 Bender	Come
@@ -47,7 +47,7 @@ Countess	Charmed,I'm,Countess,la,Roca,surprised,robot,staying,class,robots,meet,
 Bender	assure,barely,know,meaning,word,labour
 Countess	Oh,Mr,Bender
 Bender	Bender
-Countess	Oh,goodness,don't,,
+Countess	Oh,goodness,don't,
 Zapp	Kif,I'm,feeling,captain's,itch
 Kif	I'll,powder,sir
 Zapp	itch,adventure,Prepare,change,course
@@ -68,8 +68,8 @@ Mrs,Wong	Really
 Mr,Wong	isn't,right,fathering,grandchild
 Amy	Uh
 Leela	accommodations,aren't,great,sure,beautiful
-Fry	Yeah,it's,pretty,romantic,,,Uh,mean,platonic,Th,That,sure,platonic,view
-Leela	Fry,just,quiet,I'm,beginning,think,fake,fianc,thing,terrible,terrible,,
+Fry	Yeah,it's,pretty,romantic,Uh,mean,platonic,Th,That,sure,platonic,view
+Leela	Fry,just,quiet,I'm,beginning,think,fake,fianc,thing,terrible,terrible,
 Fry	Hmm,Mmm
 Zapp	Leela,awkward,time,things,don't,work,pipsqueak,just,want,know,I'll,score,rebound
 Leela	Uh,look,crazy,ideas,Zapp
@@ -108,7 +108,7 @@ Hermes	Don't,dog,heart,woman,know,can't,happened
 Announcer	limbo,ing,Earth,team,Hermes,Conrad
 Boy	You're,hero,Hermes,I'm,gonna,just,like
 Hermes	boy,stop,It's,low,backbone,can't
-Boy	I'm,just,like,Hermes,I'm,just,like,,
+Boy	I'm,just,like,Hermes,I'm,just,like,
 Hermes	Nooo
 LaBarbara	there,don't,limbo,don't,want,doesn't,make,man
 Farnsworth	did,action
@@ -134,7 +134,7 @@ Fry	Sure,I,learned,handle,delicate,social,situations,little,called,Three's,Compa
 Zapp	I'd,like,impose,toast,happy,couple,hatch
 Mrs,Wong	Hear,hear,let's,kiss
 Zapp	Yes,Fry,Plant,woman
-Fry	Um,let,think,Come,knock,door,nuh,nuh,nuh,nuh,nuh,nuh,Uh,Mr,Roper,,
+Fry	Um,let,think,Come,knock,door,nuh,nuh,nuh,nuh,nuh,nuh,Uh,Mr,Roper,
 Mr,Wong	What's,hold,Kiss,daughter
 Farnsworth	Wait,I'm,confused,tell,Fry,ladies,involved
 Fry	Uh
@@ -201,10 +201,10 @@ Mrs,Wong	Amy
 Amy	Mom,Dad,You're,alive
 Mr,Wong	Yeah,important,thing,new,man
 Mrs,Wong	captain
-Amy	Uh,Mom,don't,,,Hi
+Amy	Uh,Mom,don't,Hi
 Kif	Hello
 Farnsworth	don't,feel
-Fry	Look,It's,nebula,I'll,think,moment,almost,,,mind
+Fry	Look,It's,nebula,I'll,think,moment,almost,mind
 Hermes	ship,Babylon,Bender
 Leela	don't,know,can't,wait,longer
 Fry	Goodbye,Bender

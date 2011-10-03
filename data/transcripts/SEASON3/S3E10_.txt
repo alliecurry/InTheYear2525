@@ -30,7 +30,7 @@ Mrs Wong	just,best,jockey,stud,Amy,He's,perfect
 Jockey	Hey,baby,suitcase
 Bender	Ooh,Look,It's,Centaur,race
 Fry	Come,Come,Hey,Leela,kiss,good,luck,meant,tongue,luck
-Announcer	winner,number,,,,Steven
+Announcer	winner,number,Steven
 Fry	unlucky,I've,run,black,cats,luckier
 Paper hatted salesman	piping,hot,horse,burgers,horse,fries,horse,cake,shakes,got,tongue,straight,horse's,mouth
 Leela	Hmm
@@ -46,7 +46,7 @@ Bender
 Fry	Dear,Horse,God,know,don't,usually,pray,doubt,exist,you're,willing,grant,luck,stamp,hoof,Man,it's,contagious
 Announcer	winner,Harry,Trotter,entire,racetrack
 Bender	That'll,teach,horses,drugs
-Fry	That's,money,long,say,think,bad,luck,defeat,don't,know,Philip,J,,
+Fry	That's,money,long,say,think,bad,luck,defeat,don't,know,Philip,J,
 Paper hatted salesman	unlucky,guy
 Fry	Kareem's,got,sky,hook,Philip,J,Fry's,got,space,hook
 Yancy	Yancy,drives,goes,patented,space,hook
@@ -153,7 +153,7 @@ Fry	held,OK
 Bender	Sports,Huey,Lewis
 Fry	don't,know,brother,hated
 Leela	Oh,brothers,fight,I'm,sure,deep,loved,just,got,chance,say,got,frozen
-Fry	think,'Cause,kinda,wished,that,,
+Fry	think,'Cause,kinda,wished,that,
 Bender	God,like,figure
 Fry	It's,brother,Yancy,lapel,seven,leaf,clover,knew,stole
 Leela	Hold,phone,that's,Yancy,does,inscription,say,Philip,J,Fry
@@ -197,7 +197,7 @@ Fry	It's,lies,word,wasn't,original,wasn't,Martian,wasn't,Philip,Fry
 Bender	You're,twice,the
 Fry	It's,clovering,time
 Yancy's Wife	ideas,names,Yancy
-Yancy	Uh,I'm,sorta,thinking,It's,lucky,clover,help,successful,,,,breakdancing,,,,belonged,special
+Yancy	Uh,I'm,sorta,thinking,It's,lucky,clover,help,successful,breakdancing,belonged,special
 Yancy's Wife	know,wanna,Yancy,It's,OK
 Yancy	Really,Son,I'm,naming,Philip,J,Fry,honour,little,brother,miss,day,love,Philip
 Fry	lies,Philip,J,Fry,named,uncle,carry,spirit

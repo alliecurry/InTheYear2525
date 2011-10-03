@@ -26,7 +26,7 @@ Bender	I'll,kill
 Hattie	share,Planet,kajiggers,I'm,entitled,answers,Question,1,does,visit,home
 Farnsworth	'Cause,apartment,smells,like,Polygrip,cat,pee
 Fry	perfect
-Zoidberg	Question,cryogenically,frozen,free,,,didn't,let,finish,going,say,free,food
+Zoidberg	Question,cryogenically,frozen,free,didn't,let,finish,going,say,free,food
 Joe	name's,Joe,I'm,defrostee
 All	Hello,Joe
 Joe	frozen,giant,carrots,ruled,Earth,don't,takes,getting,used
@@ -59,17 +59,17 @@ Leela	vote,10000,shares,Professor
 Hermes	Yeah,Professor
 Farnsworth	
 Fry	nominate,Guy,just,suit,knows,business,stuff,tie,shares,count,went,washing,machine,right
-Hermes	know,number,bigger,number,I'd,say,that,,
+Hermes	know,number,bigger,number,I'd,say,that,
 Scruffy	hold,Scruffy,votes,40000,shares,mysterious,stranger
 Leela	40000,come,four,times,stock,rest
 Scruffy	Scruffy,believes,company
-Hermes	tie,event,tie,Professor,current,CEO,remains,,
+Hermes	tie,event,tie,Professor,current,CEO,remains,
 Hattie	demand,floor,share,vote,I'm,voting,cat,hater,Hey,ate,change
 Hermes	it's,settled,new,chief,executive,officer,Planet,Express,corporation,Guy
 Hermes	welcome,new,chief,executive,officer,Guy
 Steve Castle	Let's,cut,chase,kinds,people,Sheep,sharks,who's,sheep,fired,Who's,sheep
 Zoidberg	Uh,excuse,people,like,hug
-Steve Castle	Gutsy,question,You're,shark,Sharks,winners,don't,look,'cause,don't,necks,Necks,sheep,proud,shepherd,herd,sharks,gonna,lead,industry,of,,
+Steve Castle	Gutsy,question,You're,shark,Sharks,winners,don't,look,'cause,don't,necks,Necks,sheep,proud,shepherd,herd,sharks,gonna,lead,industry,of,
 Fry	Package,delivery
 Steve Castle	Package,delivery,Oh,God,Fantastic,order,business,blame,guy,Professor
 Farnsworth	I'll,ruin,like,ruined,company
@@ -134,7 +134,7 @@ Fry	pleasant,surprise
 Mom	Shut,booger,blaster,It's,time,talk
 Steve Castle	I'll,handle,Fry,farm,shift,paradigms,revolutionise,outside,box
 Fry	I'm,need,know,I'll
-Fry	booger,blaster,I'll,blast,booger,hard,that,,
+Fry	booger,blaster,I'll,blast,booger,hard,that,
 Leela	Fry,we're,worried,Planet,Express
 Fry	Don't,worry,Planet,Express,Let,worry,blank
 Hermes	Guy,flashy,man,you've,hypnotised,swinging,baloney
@@ -200,7 +200,7 @@ Hermes	didn't,refrigerate,spineless,lobster
 Zoidberg	drag,spines
 Fry	vice,chairman,Planet,Express,I'd,like,say,words,comes,time,man,rich,deserts,friends,goes,time
 Fry	ask,friend,won't,stop,deal
-Steve Castle	Fry,I'm,80's,guy,Friendship,means,bucks,I'd,beat,pool,cue,till,got,detached,retinas,deal,ahead,as,,,bones
+Steve Castle	Fry,I'm,80's,guy,Friendship,means,bucks,I'd,beat,pool,cue,till,got,detached,retinas,deal,ahead,as,bones
 Fry	Oh,God,boneitis
 Steve Castle	busy,80's,guy,forgot,cure,regret,boneitis
 Fry	He's,dead
@@ -214,7 +214,7 @@ Leela	Let,Mom,buy,company,wanna,filthy,stinking,rich
 Zoidberg	Trust,doesn't,cut
 Fry	mean,you'd,rich,work
 Leela	Hell,yeah
-Fry	life,company,place,I'd,really,felt,home,millionaires,important,our,,
+Fry	life,company,place,I'd,really,felt,home,millionaires,important,our,
 Bender	
 Fry	Friendship,I'll,sell,Planet,Express
 Hattie	Millionaires,stock's,worth,kajiggers

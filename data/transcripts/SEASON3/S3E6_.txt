@@ -101,7 +101,7 @@ Farnsworth	new,bent,outlook,completely,re,energised,I'm,dating,young,Brazilian,r
 Fry	Alright
 Farnsworth	say,I'm,robbing,cradle,say,she's,robbing,grave
 Bender	Howdy,doodies,What's,new
-Farnsworth	just,regaling,co,workers,tale,bedroom,antics,likes,which,,
+Farnsworth	just,regaling,co,workers,tale,bedroom,antics,likes,which,
 Bender	Yeah,yeah,Big,whoop,cares,got,Bender,related,news,I'm,love,I'm,taking,friends,celebrate
 Amy	Let's,liquored
 Elzar	Hey,look,crowd,guys,gotta,try,pasta,It's,got,real,nice,profit,margin,Bam,special,occasion,tonight
@@ -173,7 +173,7 @@ Angleyne	goodnight,I,I,great,time
 Bender	'bout,lift,place
 Angleyne	
 Bender	Admit,felt,tonight,mean,Flexo
-Angleyne	Hey,look,fun,but,,
+Angleyne	Hey,look,fun,but,
 Bender	
 Angleyne	But
 Bender	

@@ -13,9 +13,9 @@ Farnsworth	course,wouldn't,Freedom,Day,traditional,Freedom,Tub
 Hermes	Mmm,That'll,feel,nice,shattered,bones
 Fry	Wow,Nude,hot,tubbing,That's,need,hear,Freedom,Day
 Zoidberg	consider,following,lecture,bonus,Earth,freedom,given,planet,suffer
-Decapodian Woman	Sure,comedian,instead,doctor,,,,want,parents,roll,graves
-Decapodian Man	Sure,vote,Shkinadel,,,,want,recession
-Decapodian Woman	Sure,medical,school,,,,you've,given,dream,comedian
+Decapodian Woman	Sure,comedian,instead,doctor,want,parents,roll,graves
+Decapodian Man	Sure,vote,Shkinadel,want,recession
+Decapodian Woman	Sure,medical,school,you've,given,dream,comedian
 Zoidberg	That's,love,Earth,you,want,makes,feel,guilty,cares
 Fry	We're,listening
 Zoidberg	That's,I'm,talking
@@ -43,7 +43,7 @@ Nixon	Kill,Kill,traitor
 Man #1	Hey,it's,guy,desecrated,flag
 Nixon	Stop,red,menace
 Zoidberg	I'm,scuttled,Huh,planet's,embassy,They're,paid,kill,A,yoop
-Zoidberg	thought,understood,world,thought,fitting,guess,don't,belong,anymore,belong,crappy,home,planet,,,Ooh,sorry
+Zoidberg	thought,understood,world,thought,fitting,guess,don't,belong,anymore,belong,crappy,home,planet,Ooh,sorry
 Decapodian Man	sorry,planet,stinks,know
 Ambassador Mervin	persecution,I'm,saying,Zoidberg,Ambassador,promise,support,government
 Decapodian Woman	Poor,boy,want,maybe,nice,mug,cocoa
@@ -61,7 +61,7 @@ Crowd	Don't,mess,Earth
 Fry	sure,hate,Dr,Zoidberg
 Bender	Pft,Posers,hating,Zoidberg,cool
 Fry	going,lawyer,case
-Leela	I'll,ask,head,ACLU,,,,he's,singing
+Leela	I'll,ask,head,ACLU,he's,singing
 Man #2	Don't,mess,Earth,Kill,Zoidberg,Goodnight
 Old Man Waterfall	Howdy,I'm,lawyer,I'd,like,help,friend,pickle
 Fry	old,man
@@ -88,7 +88,7 @@ Holo Zoidberg	Oh,God,I'm,nervous,hearts,having,attacks
 Bender	Court's,kinda,fun,it's,ass,line,Nachos
 Old Man Waterfall	Oh,land,o,Goshen,Honours,I'm,slick,big,city,lawyer,like,opponent,veteran,fought,planet,hand
 Scalia	Yes
-Old Man Waterfall	don't,'Cause,lost,real,hand,plantin',flag,took,Halley's,Comet,worth,love,flag,love,love,seven,wives,,,,that's,right,I'm,polygamist,gladly,eat,flag,myself,used,intestine,rope,hoist,flag,skin,protect,freedoms,proud,people,salute,flag,Freedom,polygamy,rest,case,Whoa,jeez
+Old Man Waterfall	don't,'Cause,lost,real,hand,plantin',flag,took,Halley's,Comet,worth,love,flag,love,love,seven,wives,that's,right,I'm,polygamist,gladly,eat,flag,myself,used,intestine,rope,hoist,flag,skin,protect,freedoms,proud,people,salute,flag,Freedom,polygamy,rest,case,Whoa,jeez
 Myrtle Fu	Justices,confer,using,high,speed,telepathy,vote,six,to,three,flag,eating,protected,Constitution
 Bender	Six,to,three,beat,spread
 Myrtle Fu	court,orders,immediate,public,apology
@@ -115,7 +115,7 @@ Computer Voice	Commence,lip,identification,scan,tongue
 Zapp	can't,careful,codes,Rumour,double,agent,aboard,ship,I'm,watching,You,ensign,what's
 Ensign	Hugh,Man,sir
 Zapp	Hugh,Man,that's,trust,Run,central,battle,enter,codes,Chop,chop
-Kif	Um,sir,There's,ensign,that's,,
+Kif	Um,sir,There's,ensign,that's,
 Zapp	You're,damn,right,strapping,young,lad's,gunning,job,just
 Zapp	enemy,approacheth,Lieutenant,missile,recommend,medal,Make,gaudy,I'm,going,clubbing,later,Tick,tock
 Kif	Sir,planetary,defences,disabled,Decapodians,acquired,secret,codes
@@ -135,7 +135,7 @@ Fry	Hey,wait,I'm,having,things,know,headache,pictures
 Leela	idea
 Fry	day,didn't,fancy,all,digital,weapons,managed,kill,just,fine
 Bender	Ah,crossbow,pitiless,elegant,killing,machine,Bender,15th,century
-Fry	big,need,entire,army,commit,war,crime,with,,
+Fry	big,need,entire,army,commit,war,crime,with,
 Bender	Wow,Ow
 Ambassador Mervin	Earth,slaves,behold,fruit,labours,Mobile,Oppression,Palace
 Bender	Neat

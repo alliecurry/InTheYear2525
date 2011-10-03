@@ -63,7 +63,7 @@ Bender	Cheese
 Fatbot	They're,gonna,catch
 Fry	Hey,pretty,nice,single,desks,chairs,couple,beds,woodpecker
 Leela	think,that's,probably,roommate
-Fry	Oh,right,cool,the,,
+Fry	Oh,right,cool,the,
 Monkey	bunk
 Fry	roommate's,monkey
 Monkey	Brilliant,deduction,you're,credit,species
@@ -96,7 +96,7 @@ Vernon	love,dean,students,peace,quiet,respect,receive,what's
 Woman	Dean,Vernon,students,Robot,House
 Vernon	Robot,House
 Bender	Hey,dean,nice,looking,model
-Vernon	away,robots,disgrace,university,alarm,pulled,it's,Robot,House,campus,liquor,store,looted,Robot,House,human,corpse,desecrated,,
+Vernon	away,robots,disgrace,university,alarm,pulled,it's,Robot,House,campus,liquor,store,looted,Robot,House,human,corpse,desecrated,
 Bender	explain
 Vernon	That's,day,forth,Robot,House,dodecatupple,secret,probation
 Bender	fair
@@ -182,7 +182,7 @@ Fry	There's,man
 Leela	Professor,you'll,offer,Guenter,hat,Fry,you'll,offer,banana,We'll,let,choose,wants,intelligent,just,mindless,animal
 Farnsworth	Come,Guenter,hat
 Fry	banana,banana
-Farnsworth	Consider,philosophical,metaphysical,ramifications,the,,
+Farnsworth	Consider,philosophical,metaphysical,ramifications,the,
 Fry	Banana,banana,banana
 Leela	Wait,what's,sound
 Gearshift	Hey,Bender,sure,short,cut
@@ -200,7 +200,7 @@ Guenter	Oh,goodness,Grab
 Farnsworth	We're,saved
 Fry	'Preciate,Guenter
 Leela	Oh,Hurry,Guenter,climb,vine,save
-Guenter	bother,I've,got,live,miserable,genius,monkey,dumb,tried,wear,hat,butt,hand,,
+Guenter	bother,I've,got,live,miserable,genius,monkey,dumb,tried,wear,hat,butt,hand,
 Farnsworth	Oh,poor,sweet,monkey,let's,gather,There's,sense,letting,waste
 Fry	Guenter,You're,alive
 Guenter	guess,hat,broke,fall

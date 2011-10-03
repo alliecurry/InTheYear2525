@@ -3,7 +3,7 @@ Announcer	Previously,Circuits
 Antonio	I'm,sorry,Father,way,forgot,son
 Calculon	Antonio
 Antonio	amnesia
-Monique	Calculon,thought,were,,
+Monique	Calculon,thought,were,
 Calculon	Egyptian
 Monique	kill,ask,question,I,amnesia
 Calculon	Let,straight,Does,amnesia
@@ -27,7 +27,7 @@ Cubert	Dad,birthday
 Farnsworth	Hmm,didn't,birth,technically,Oh,don't,feel,bad,celebrate,day,extracted,cloning,tank,day,scraped,DNA,growth
 Cubert	Ooh
 Farnsworth	Ah,yes,13,years,ago,week,used,fork
-Hermes	Aw,isn't,that,,,Ew
+Hermes	Aw,isn't,that,Ew
 Dwight	Hey,week'll,birthday
 Hermes	That's,true,way,party,office,write,business,expense,Wait,thought,way,way,just,said
 Cubert	Yeah
@@ -36,14 +36,14 @@ Bender	Something's,happening,television
 Calculon	Oh,Monique,did,wait,years,bathe,champagne
 Antonio	Father,I've,discovered,shocking,secret,mother,kept,200,years
 Monique	No
-Antonio	Brace,speak,words,suffer,attack,explosive,amnesia,horrible,secret,is,,
+Antonio	Brace,speak,words,suffer,attack,explosive,amnesia,horrible,secret,is,
 Bender	Whoever's,directing,master,suspense
 Sal	He's,busteds,Let's,hims,outta,heres
 Announcer	join,America's,popular,progress,Everybody,Loves,Hypno,Toad
 Fry	show's,going,downhill,season
 Zoidberg	Look,who's,It's,Zoidberg,lovable,tramp
 Leela	performing,children's,parties
-Zoidberg	Performing,spare,money,buy,shoes,,
+Zoidberg	Performing,spare,money,buy,shoes,
 Dwight	party,pukes
 Cubert	Yeah,guests,supposed,hours,ago
 Farnsworth	doesn't,mean,coming,total,losers,gave,idea
@@ -71,12 +71,12 @@ Casting Director	scene,you've,just,real,father,Calculon's,fourth,evil,identical,
 Emotitron Jr	know,truth,Father,ride,south,join,robo,bandidos,Veracruz
 Bender	Awful,Boo,kid,sucks,want,Bender,Boo
 Calculon	thought,good,audience,turned
-Casting Director	don't,think,,
+Casting Director	don't,think,
 Calculon	
-Macaulay Culkon	,,At,Veracruz,you'll,kindly,hand,poncho,,
+Macaulay Culkon	,At,Veracruz,you'll,kindly,hand,poncho,
 Bender	Boo,Bring,Bender,Boo,Bender's,greatest
 Calculon	Sorry,kid,You're,flailing,90,actors,got,boo,ed,just,wish,Bender,hearing,say,he's,greatest
-Casting Director	robot,named,Bender,he's,old,for,,
+Casting Director	robot,named,Bender,he's,old,for,
 Calculon	Send,forthwith
 Bender	Boo,good,Bender,Boo
 Casting Director	Mr,Bender
@@ -97,13 +97,13 @@ Director	character's,coma,bed,don't,action
 Bender	Stupid,dumb,coma,coulda,British
 Calculon	Alas,son,sink,irreversible,permanent,coma
 Bender	Permanent,That's,completely,character,Antonio,I'm,gettin'
-Calculon	Curse,tragic,wildebeest,accident,that,,
+Calculon	Curse,tragic,wildebeest,accident,that,
 Bender	Hey,Antonio,Bender,got,ants,butt,needs,strut,C'mon,baby,Come
 Calculon	I'm,familiar,type,thing,I'm,seeing
 Bender	Bite,shiny,metal,ass,Ooh,yeah,C'mon,baby,Come,Yeah
 Director	Cut,That's,worst,coma,acting,I've,seen,We'll,shoot
 Calculon	No,no,don't,takes
-Director	guy,was,,
+Director	guy,was,
 Calculon	Amateurs,like,takes,Print,I'll,three,storey,trailer
 Bender	Bite,shiny,metal,ass,Ooh,yeah,C'mon,baby,Come,Yeah
 Bender	that's,hospital,dancing,Pretty,good,eh,Calcky
@@ -190,12 +190,12 @@ Tinny Tim	Oh,crumb
 Bender	What's,going
 Farnsworth	I'll,tell,boys,taken,stealing,worst,coolest,crimes
 Hermes	watching,TV,cool,jerk
-Bender	Hey,lay,TV,stink,positive,role,model,Bender,entertainment,baby,can't,hold,responsible,kids,when,,,Hey,stuff,stole,That's,straw,Bender,allowed,television
+Bender	Hey,lay,TV,stink,positive,role,model,Bender,entertainment,baby,can't,hold,responsible,kids,when,Hey,stuff,stole,That's,straw,Bender,allowed,television
 Bender	Bender,stopped,I've,gone,far,does,guy,think,Come,We're,gonna,march,way,Hollywood,make,stop,forcing,filthy,throats
 FART Mob	Bender,Bender,Bender,Bender
 Bender	mob's
 Security Guard	ahead
-FART Mob	Bender,Bender,Bender,with,,,Bender,Bender
+FART Mob	Bender,Bender,Bender,with,Bender,Bender
 Calculon	doctor,captain,hospital,ship,pronounce,man,wife,months,live
 Farnsworth	Listen,Hollywood,We're,exciting,new,mob
 Bender	Yeah
@@ -209,7 +209,7 @@ Network President	don't,quit,think,you'll,finishing,scene,Mr,Bender,don't,skimp,
 Farnsworth	There'll,nasty,option,resorting,violence
 Hermes	makes,think,that'll,work
 Farnsworth	saw,TV,episode,Bender,shot,Calculon,cool
-Bender	Ooh,yeah,C'mon,,
+Bender	Ooh,yeah,C'mon,
 Farnsworth	Quit
 Network President	scene
 Farnsworth	I'm,cold,blooded,punk

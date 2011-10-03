@@ -48,7 +48,7 @@ Bender	it's,cake,want,I'll,make,cake,you'll,forget
 Bender	That'll,care,annoying,rats,bake,cake,delicious,they'll,choice,love,worship
 Bender	This'll,teach,filthy,bastards,who's,lovable,spell,check,it's,ready,admiring,public,That's
 Bender	Happy,birthday
-Leela	Bender,what's,going,,
+Leela	Bender,what's,going,
 Bender	Hey,Can't,I'm,using,toilet
 Amy	Bender,flush,Nibbler,toilet
 Bender	step,lift,seat,little,annoyance,right,men
@@ -74,7 +74,7 @@ Bender	don't,just,use,potted,plant,like,Fry
 Farnsworth	Quiet,I'm,installing,empathy,chip
 Fry	that'll,allow,Bender,feel,people's,emotions
 Farnsworth	Yes,allow,mean,force
-Bender	Ooh,Ow,Son,a,,,Careful,Ow
+Bender	Ooh,Ow,Son,a,Careful,Ow
 Farnsworth	Oh,dear,Oh,got
 Bender	Ow,Professor
 Farnsworth	Steady
@@ -105,8 +105,8 @@ Fry
 Bender	reason,guys,dress,like,tramp
 Fry	They're,just,responding,personality
 Amy	Um,Leela,Armando,going,seat,car,coffee,gonna,alright
-Leela	Sure,I'm,having,great,time,,,,really,enjoy
-Bender	bucket,of,,
+Leela	Sure,I'm,having,great,time,really,enjoy
+Bender	bucket,of,
 Fry	spoon's,foot,powder
 Bender	I'm,end,rope,can't,live,minute,poor,sweet,Nibbler
 Fry	bad,wasn't,alligator,Y'know,flush,things,stay,alive,sewers

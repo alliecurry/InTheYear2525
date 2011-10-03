@@ -60,7 +60,7 @@ Fry A	Oh,wow,It's,like,drug,trip,saw,movie,drug,trip
 Farnsworth A	Astonishing,created,parallel,universe
 Farnsworth 1	Baldercrap,created,universe,created,fist,parallel,face
 Farnsworth A	Ow
-Leela A	Look,doesn't,matter,created,important,thing,is,,,Yah
+Leela A	Look,doesn't,matter,created,important,thing,is,Yah
 Leela 1	We're,exactly,know,moves,I've,got,upper,hand
 Farnsworth 1	now,Perfectly,symmetrical,violence,solved
 Farnsworth A	Let's,recap,what's,happened,far,accidentally,created,box,containing,universe
@@ -96,7 +96,7 @@ Bender A	Good,point,Whattya,say,just,hit,strip,joint
 Bender 1	waitin',say,Bender,you're,prince,robots,forgive,distrusting
 Bender A	Aw,can't,stay,mad,essentially,love
 Amy 1	great,wanted,imaginary,friend
-Amy A	I'm,imaginary,I'm,parallel,We're,exactly,right,the,,,Splech,pink,nail,polish
+Amy A	I'm,imaginary,I'm,parallel,We're,exactly,right,the,Splech,pink,nail,polish
 Amy 1	pink,nail,polish,Professor's,right,evil,shallow
 Amy A	evil
 Leela A	Fry,Leela,how'd
@@ -157,7 +157,7 @@ Fry A	Nope,cold
 Farnsworth A	Hmm,women,I'll,aside,later
 Hermes 1	Oh,man,it's,hopeless,We'll,universe,time,Plus,box,stuck,fat,head
 Farnsworth 1	Yes,it's,apocalypse,alright,thought,I'd,hand
-Bender 1	I'm,sad,finally,great,It's,like,say,Make,new,friends,old,silver,,
+Bender 1	I'm,sad,finally,great,It's,like,say,Make,new,friends,old,silver,
 Bender A	other's,gold
 Zoidberg 1	long,faces
 Leela 1	idiots,box
@@ -204,7 +204,7 @@ Leela	Y'know,let's,just,say,it's,heads
 Farnsworth	Ready
 Farnsworth	pull
 Farnsworth	space,time,eversion,given,box,vice,versa
-Leela	think,just,explained,that,,
+Leela	think,just,explained,that,
 Farnsworth	Correct,box,contains,universe
 Hermes	Sweet,honey,bee,infinity
 Leela	Bender,Quit,destroying,universe

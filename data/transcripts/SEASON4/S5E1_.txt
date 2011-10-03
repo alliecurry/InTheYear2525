@@ -83,7 +83,7 @@ Man	Ooh,That's,little,bright
 Gore	Alright,got
 Fry	Professor,you're,professor,ideas
 Farnsworth	Absolutely,won't,speak,I've,got,hide
-Gore	speaker,Professor,,
+Gore	speaker,Professor,
 Farnsworth	demand,floor
 Gore	Yes,it's,turn,speak
 Farnsworth	nuts,I'm,taking,stage,know,source,greenhouse,gases,shame,I've,kept,secret,75,long,years,Oh,haunts,memory
@@ -112,7 +112,7 @@ Wernstrom	Huh,robots,blame,suspected,left,possible,course,action,grim
 Bender	got,good,feeling
 Wernstrom	immediately,permanently,shut,dismantle,destroy,robots
 Bender	
-Farnsworth	Wait,surely,there's,better,,
+Farnsworth	Wait,surely,there's,better,
 Van	conference
 Gore	help,collect,cans,Jupiter,Peace,y'all
 Crowd	Destroy,robots,Destroy,robots
@@ -135,16 +135,16 @@ Fry	Bender,world,isn't,good
 Bender	close,Goodbye,everybody,Don't,touch,stuff,I'm,dead,It's,booby,trapped
 Robot #1	Oh,yeah
 Robot #2	Come,baby
-Bender	Poor,guy,Maybe,you'd,feel,better,drink,Crummy,keg,It's,completely,ta,,,Oh,you're,robot
+Bender	Poor,guy,Maybe,you'd,feel,better,drink,Crummy,keg,It's,completely,ta,Oh,you're,robot
 Keg Robot	Don't,stop
 Bender	Ew
 Nixon	Attention,happening,robots,Who's,got,takes,party,Nixon,fellas,enjoy,hours,sure,leave,island,uh,hours,I'm,going,pick,smokes,uh,really,good,smokes,hours,OK,headless,body,Agnew,let's,blow,joint
 Crushinator	want,dance
-Bender	Nah,I'm,really,the,,
+Bender	Nah,I'm,really,the,
 Crushinator	know,want
 Wernstrom	orders,modified,mirror,colossal,electromagnetic,pulse,Galapagos,robot,instantly,painfully,terminated,bargain
 Nixon	Aroo,Agnew,belong,Wernstrom
-Bender	I'll,say,goodbye,ain't,turtles,daddy's,a,going,Don't,tell,anybody,Nixon's,shut,robots,and,,
+Bender	I'll,say,goodbye,ain't,turtles,daddy's,a,going,Don't,tell,anybody,Nixon's,shut,robots,and,
 Boom Mic bot	
 Robot #3	We're,gonna,die
 Preacherbot	We're,going,great
@@ -159,7 +159,7 @@ Bender	Come
 Hedonismbot	Let,games,begin
 Farnsworth	listen
 Preacherbot	Aw,damn
-Farnsworth	I've,devised,way,save,stop,global,warming,time,Granted,you're,blasting,greenhouse,gases,,
+Farnsworth	I've,devised,way,save,stop,global,warming,time,Granted,you're,blasting,greenhouse,gases,
 Bender	You're,talk
 Farnsworth	use,gases,save,planet,vent,exhaust,directly,upward,burst,thrust,Earth,sun,cooling,calculations,we'll,need,force,robot,quickly,point,exhaust,vents,straight,upwards,vent,Vent,like,wind,Harder,Harder
 Fry	isn't,working

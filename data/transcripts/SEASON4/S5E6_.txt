@@ -22,7 +22,7 @@ Bender	Ah,Finished,missing,pieces
 Fry	Swedes,sure,know,need
 Leela	Man,I'm,sore,feel,like,just,went,rounds,Mighty,Thor
 Fry	feel,like,mauled,Jesus
-Zoidberg	I've,got,just,thing,Genuine,miracle,cream,bought,travelling,salesman,Come,come,said,Step,right,sounds,good,true,thought,said,looked,like,smart,young,man,deal,enquired,hours,later,gone,60,dollars,miracle,cream,,
+Zoidberg	I've,got,just,thing,Genuine,miracle,cream,bought,travelling,salesman,Come,come,said,Step,right,sounds,good,true,thought,said,looked,like,smart,young,man,deal,enquired,hours,later,gone,60,dollars,miracle,cream,
 Farnsworth	Bad,news,super,collider,super,exploded,need,exchange,wobbly,CD,rack,rancid,meatballs
 Man #1	Excuse,hi,minute,live,Jersey,City,car,broke,need,Aunt's,real,sick,needs,medicine,need,money,bus,I'm,mugging,Hand,wallets
 Leela	don't,believe,story,second
@@ -31,7 +31,7 @@ Fry	There's,bus,Jersey,City
 Man #1	wallets,robot'll,shoot
 Andrew	Don't,make,hurt
 Fry	I'm,scared,pocket,I'll,just,pants
-Man #1	Hey,don't,like,I'm,seeing,Andrew,Andrew,the,,,Laser,proof,shirts,huh,I'll
+Man #1	Hey,don't,like,I'm,seeing,Andrew,Andrew,the,Laser,proof,shirts,huh,I'll
 Leela	Huh,Hey,Quit,Hi,yah
 Man #1	Foiled,years,planning
 Andrew	You're,outta,game
@@ -61,7 +61,7 @@ Bender	Wow,Crime,fighting,Cool,say,you're,duo,Yeah,duos,good,course,they're,litt
 Leela	We'd,love,team,Bender,aren't,supply,crime
 Fry	Plus,cream,won't,superpowers,You're,robot
 Bender	I'm,super,strong,arms,got,going
-Leela	Listen,New,New,York,There's,new,group,superheroes,town,we're,,
+Leela	Listen,New,New,York,There's,new,group,superheroes,town,we're,
 Hattie	Quiet,It's,4am,just,fell,asleep,time,30,years
 Leela	Sorry,new,era,justice,begun
 Hattie	
@@ -83,7 +83,7 @@ Song	Miracle,cream
 Song	It's,effects,wear,sure
 Bender	Ta,da
 Woman	Captain,Yesterday,skintight,high,waters,incredibly,sexy,Let's
-Fry	Sure,I'm,listed,phone,book,reveal,real,home,address,copy,birth,certificate,,
+Fry	Sure,I'm,listed,phone,book,reveal,real,home,address,copy,birth,certificate,
 Leela	crazy,secret,identities,secret
 Fry	everybody
 Leela	Especially,everybody
@@ -106,7 +106,7 @@ Poopenmeyer	Clobberella,Captain,Yesterday,liege,You're,just,time,We've,received,
 Fry	Who's,perp
 Poopenmeyer	dangerous,villain,known,Zookeeper,commits,crimes,aided,pack,highly,trained,animals
 Fry	Pack,highly,Got
-Poopenmeyer	crew,includes,badger,troubled,past,left,lose,elephant,forgets,,,,kill,seldom,used,crab,named,Lucky,aka,Citizen,Snips
+Poopenmeyer	crew,includes,badger,troubled,past,left,lose,elephant,forgets,kill,seldom,used,crab,named,Lucky,aka,Citizen,Snips
 Leela	count,Mr,Mayor,Justice,away
 Bender	Hold,elevator
 Bender	We're
@@ -216,7 +216,7 @@ Morris	That's,true
 Leela	just,couldn't,stand,think,ashamed
 Munda	That's,sweet,honey,it's,natural,children,little,ashamed,parents
 Fry	Oh,yeah
-Morris	Just,like,it's,natural,parents,little,disappointed,children,,,N,Not
+Morris	Just,like,it's,natural,parents,little,disappointed,children,N,Not
 Munda	little
 Leela	OK
 Munda	kill,use,mouthwash

@@ -11,7 +11,7 @@ Leela	Fry,battlestations,torpedo,number
 Fry	Firing,torpedo,number
 Bender	Huh
 Leela	That's,torpedo,That's,torpedo
-Bender	Damn,Fry,Lee,,,,,la
+Bender	Damn,Fry,Lee,la
 Pirate	late,realise,children,real,treasures
 Bender	Help,Mechanical,man,overboard
 Fry	Leela
@@ -45,7 +45,7 @@ Zoidberg	Hooray,People,paying,attention
 Amy	Fry,brought,cheer
 Hermes	Helper,he's,eager,new,best,friend
 Helper	Hello,chum,understand,miss,buddy,pudding,pop
-Fry	thanks,don't,,
+Fry	thanks,don't,
 Helper	wants,to,amusement,park
 Fry	guess,sounds,OK
 Helper	good,time,Hey,heard,friend,Bender
@@ -59,7 +59,7 @@ Bender	It's,fault,Malachi,tell,thy,people,Lord,moved,plight
 Malachi's Wife	Malachi,Jr
 Malachi Jr	Daddy,can't,hold,longer,arms,tired,hugging
 Malachi	Save,Save,son,oh,Metal,Lord
-Bender	looks,like,job,God,the,,,Malachi,manner,deal,chanting
+Bender	looks,like,job,God,the,Malachi,manner,deal,chanting
 Malachi	saw,save,son,praying,miracles
 Bender	want
 Malachi	people,village,pray,wealth
@@ -95,13 +95,13 @@ Leela	Look,miss,Bender,half,you,can't,bring,way,It's,hopeless
 Fry	can't,hope,just,it's,hopeless,gotta,hope,cover,ears,blah,blah,blah,blah,blah,blah,blah,blah,I'd,like,pack,mule
 Salesman	sir
 Leela	obviously,won't,listen,reason,guess,I'll,listen,idiotic,ness,come,we'll,need,sherpa,guide
-Bender	that's,Bible,doesn't,disappoint,page,Looks,like,society's,running,pretty,meddling,,,Atomic,bombs,Oh,unbelievers,backside,nuclear,pile
+Bender	that's,Bible,doesn't,disappoint,page,Looks,like,society's,running,pretty,meddling,Atomic,bombs,Oh,unbelievers,backside,nuclear,pile
 Malachi	Fear,Lord,shall,soon
 Bender	You're,maximum,level
 Malachi	solve,problems,commanded,time,come,convert,unbelievers
 Bender	Convert
 Malachi	radioactive,vapour
-Malachi Jr	Look,Daddy,I'm,hugging,God,Mmm,Mmm,Maybe,hug,real,hard,he'll,save,from,,
+Malachi Jr	Look,Daddy,I'm,hugging,God,Mmm,Mmm,Maybe,hug,real,hard,he'll,save,from,
 Bender	Ooh,tickles
 Bender	Hello,alive,porno,theatre,They're,dead,dead,known,playing,God,terrible,consequences
 Leela	Fry,drop,dead,exhaustion,make,sure,body,freezes,dignified,position,huddled,warmth,crap
@@ -129,7 +129,7 @@ Leela	Sort,like,giant,karaoke,machine
 Monk #1	really,like,giant,karaoke,machine
 Leela	really
 Fry	Hmm,Finding,God,That,That's,important,yeah,know,treat,let,use,telescope,lost,friend,Bender
-Monk #1	don't,know,say,absolutely,loss,tragedy,work,,
+Monk #1	don't,know,say,absolutely,loss,tragedy,work,
 Fry	Aw,come,guys,forever,look,God,I'm,asking,measly,lifetime,friend
 Monk #2	speaks,love,friend,love,heart,God
 Monk #1	Oh,convenient,theory,God,doesn't,require,looking,telescope,work
@@ -148,7 +148,7 @@ Bender	Y'know,God
 God	Yes,saw,doing,died
 Bender	awful,tried,helping,tried,helping,end,couldn't,good,think,did,wrong
 God	Right,wrong,just,words,matters
-Bender	Yeah,know,that's,asked,did,,,Forget
+Bender	Yeah,know,that's,asked,did,Forget
 God	Bender,God,isn't,easy,people,dependent,you,lose,hope,use,light,touch,like,safecracker,pickpocket
 Bender	guy,burns,bar,insurance,money
 God	Yes,make,look,like,electrical,thing,things,right,people,won't,sure,you've

@@ -45,7 +45,7 @@ Fry	I'm,It's,working
 Bender	die,happy,knowing,fell
 Farnsworth	power,supply,shot,flatlining,thing,alive,Possibly,thing
 Bender	Woo,I've,felt,energetic
-Farnsworth	That's,doomsday,device,shoved,puts,50,gigawatts,That's,times,recommended,,
+Farnsworth	That's,doomsday,device,shoved,puts,50,gigawatts,That's,times,recommended,
 Bender	warranty
 Farnsworth	God's,sake,Bender,dancing,whooping,burn,doomsday,energy,fast,produces,build,critical,levels
 Bender	don't,mean

@@ -96,7 +96,7 @@ Fry
 Farnsworth	Oh,dear,She's,stuck,infinite,loop,he's,idiot,that's,love
 Bender	Humans,dating,robots,sick,people,wonder,I'm,single,It's,'cause,fine,robot,sisters,dating,humans
 Leela	Bender,Fry's,decision,wrong,it's,time,interfere,life
-Leela	doesn't,really,love,can't,She's,just,machine,that,,
+Leela	doesn't,really,love,can't,She's,just,machine,that,
 Bender	Stay,away,women,got,metal,fever,boy,Metal,fever
 Fry	love,robot,It's,hurting,anybody
 Hermes	God,took,middle,school,hygiene,saw,propaganda,film
@@ -149,12 +149,12 @@ Nerd	Um,Lucy,Liu
 Albright bot	Sure
 Jeff Jervis	Oh,we're,doomed,got,head,uncovered,sign,Soon,world,learn,we're,cyber,criminals,gotten,away,it,weren't,meddling,adults
 Man	We'll,stop,like,Lucy,Liu,we'll,Lucy,Liu,handle,Hand,back,up,disk
-Zoidberg	Did,escaping,like,,
+Zoidberg	Did,escaping,like,
 Liu	Thanks,rescuing,Especially,Bender,Mmm,Quite,masculine,piece,metal,aren't
 Bender	Hey,Don't,look,like,you're,thinking,crossing,line,Bender,forget,Bender,don't,bend,way
 Leela	Hey,look,It's,Lucy,Liubot
 Liubot #2	Lucy,Liu,spines
-Zoidberg	Hey,the,,
+Zoidberg	Hey,the,
 Liubot #2	
 Liu	Hey,Cut,don't,need,kind,publicity
 Leela	Alright,Liu,Time,kick,frosty,well,toned,ass,Yah
@@ -216,7 +216,7 @@ Liu	Fry,downloaded,permission,stole,image,end,that's,really,largest,gold,nugget,
 Fry	just,downloaded,love
 Liu	love,real,Lucy,Liu,just,you've,seen,movies,genre,straddling,lawyer,shows,kiss,ass,articles,People,magazine,you'll,blank,robot
 Fry	I'm,sorry,Hug,Liubot
-Liubot	I'll,remember,Fry,,,Memory,deleted
+Liubot	I'll,remember,Fry,Memory,deleted
 Bender	know,hurts,buddy,you're,sick,relationship,robot,anymore
 Fry	Uh,huh,guess,maybe,know,real,Lucy,Liu
 Bender	Pft,Yeah,wedding

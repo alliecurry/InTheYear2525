@@ -41,7 +41,7 @@ Cubert	I'm,sick
 Cubert	Hey,Dad,useless,contraption,half,baking,today
 Farnsworth	Eh,wha,Oh,latest,invention,device,lets,sound,exactly,like
 Cubert	Good,news,I'm,horse's,butt
-Farnsworth	That's,good,news,little,,
+Farnsworth	That's,good,news,little,
 Dwight	What's,devices,marketability,Who's,target,consumer
 Farnsworth	target,consumer,targets,Targets,tremble,fear,new,master,hands,edicts,glorious,booming,voice,quit,pestering,scoundrels
 Hermes	Stamp,file,Oh,yeah,Send,overnight

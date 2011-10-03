@@ -87,7 +87,7 @@ Hooded Robot	Kneel,candle
 Bender	Don't,hurt,I'll,betray
 Hooded Robot	Bender,Bending,Rodriguez
 Calculon	Welcome,League,Robots
-Zapp	Ready,Fi,,fooled
+Zapp	Ready,Fi,fooled
 Francine	Missile,jam,Missile,jam
 Zapp	heard,time,Francine
 Francine	Sorry

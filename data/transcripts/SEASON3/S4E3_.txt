@@ -10,7 +10,7 @@ Leela	does,work
 Farnsworth	regular,fossilisation,flesh,bone,turn,minerals,Realising,simple,matter,reverse,process,I've,tested,turning,toaster,racoon
 Fry	Kinda,game,y
 Farnsworth	ready,Bender
-Bender	dunno,I'm,beginning,second,thoughts,,
+Bender	dunno,I'm,beginning,second,thoughts,
 Hermes	Cover,shame,mon
 Farnsworth	worked,Eat,won,Nobel,Prize,includes,Amy
 Bender	human,body,huh,Neat,just,moved,I'm,getting,good,reception,Maybe,wiggle,little
@@ -50,7 +50,7 @@ Bender	C'mere,old,Bender,kiss,Hey,like,grilled,cheese
 Farnsworth	um,that's,believe,deserve,Nobel,Prize
 Wernstrom	deserve,Nobel,Prize,loosing,bloated,man,ball,world,kicked,Academy,Science
 Bender	Wait,men,science,minds,open,new,ideas,say,judge,tried,way,life
-Wernstrom	Young,man,opened,minds,swayed,hearts,Let,therefore,,
+Wernstrom	Young,man,opened,minds,swayed,hearts,Let,therefore,
 Bender	Party
 Wernstrom	Bender,right,Truly,lived,week,human,rest,entire,lives
 Bender	Woo
@@ -70,12 +70,12 @@ Farnsworth	Oh,great,machine,beseech,thee,life,like,video,game
 Nixon	Good,evening,ignorant,pigs,crack,pipes,beer,bongs,pay,attention,sign,historic,peace,accord,Ambassador,Kong,planet,Nintendu,64
 Fry	Wait,second,know,monkey,Donkey
 Farnsworth	Monkeys,aren't,donkeys,Quit,messing,head
-Nixon	I'll,just,old,John,Q,Nixon,the,,
+Nixon	I'll,just,old,John,Q,Nixon,the,
 Mario	Mama,Mia,cruel,meatball,war,rolled,laps,ruined,white,pants,peace
 Man	Mr,Fry,rumour,know,secrets,video,game,Chance,step,war,room
 Man	You'll,meeting,General,Colin,Pac,Man
 Pac Man	Wakka,wakka,wakka,wakka,Let's,business,tell,Nintendians
-Fry	sir,spent,ninth,grade,studying,day,eyeballs,started,bleed,opinion,,
+Fry	sir,spent,ninth,grade,studying,day,eyeballs,started,bleed,opinion,
 Pac Man	Quickly,escape,tunnels
 Pac Man	way,damnit
 Zoidberg	Mmm,delicious,Just,like,stale,marshmallows,Ooh,cherry
@@ -83,7 +83,7 @@ Fry	Hey,watch
 Zoidberg	Uh,oh
 Leela	Oh,God,ate,Fry,Fry,dead
 Fry	It's,OK,guy
-Pac Man	Wakka,wakka,wa,,
+Pac Man	Wakka,wakka,wa,
 Leela	Invaders,Possibly,space
 Lrrr	People,Earth,Lrrr,planet,Nintendu,64,Tremble,fear,different,kinds,ships
 Fry	Alright,It's,Saturday,night,date,two,litre,bottle,Shasta,all,Rush,mix,tape,Let's,rock
@@ -130,7 +130,7 @@ Cubert	Look,killed,Man,Witch,West
 Leela	witch,explains,boots,magically,appeared,feet
 Small Glurmo #1	stole,saw
 Leela	i,it's,hard,shoes,fit,people,Haven't,seen,copyrighted,movie
-Small Glurmo #1	resemble,legally,distinct,lollipop,guild,lollipop,,
+Small Glurmo #1	resemble,legally,distinct,lollipop,guild,lollipop,
 Amy	Greetings,Leela,I'm,Cute,Witch,North
 Leela	Yeah,fix,ship,home
 Amy	Abraca,duh,Just,ask,Professor,lives,Emerald,Laboratory,Martin,Luther,King,Boulevard
@@ -143,7 +143,7 @@ Leela	Wow,talking,scarecrow,Wanna,come,Professor,able,brain
 Fry	Hey,That's,nice,thing,say
 Bender	Beer,Beer
 Leela	Whiskey,OK
-Bender	did,say,Professor,'Cause,use,heart,,,,human,heart,need,pump,lot,blood,basement
+Bender	did,say,Professor,'Cause,use,heart,human,heart,need,pump,lot,blood,basement
 Zoidberg	I'm,guy,courage,Need,whatshisname
 Mom	Damn,DSL,Fly,stupids,Fly
 Igner	Mom,promised,you'd,bake,monkey,cake,today

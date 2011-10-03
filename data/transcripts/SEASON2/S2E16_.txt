@@ -19,14 +19,14 @@ Leela	I'm,afraid,you're,league,boys,'cause,you're,looking,woman,owns,harpoon
 Bender	Harpoon,ass
 Leela	OK
 Hermes	Let's,bait,use,Crickets,Squid,Chicken,necks
-Zoidberg	Excuse,bold,I'm,willing,offer,services,bait,critic,very,juicy,,
+Zoidberg	Excuse,bold,I'm,willing,offer,services,bait,critic,very,juicy,
 Hermes	don't,believe,It's,eating,bait,Beat,mooching,crawdad
 Bender	Hey,Fry,check,laser,guided,fishing,rod
 Fry	Quiet,Bender,you're,scaring,away,fish
 Bender	Fine,I'll,head,Good,luck,fishing
 Fry	hit,fish,eyes,20,yards
 Bender	Oh,yeah,hit,shrimp
-Fry	shrimp,bit,hard,believe,that,,
+Fry	shrimp,bit,hard,believe,that,
 Leela	Aha,Gather,round,chumps,got,winner
 Amy	Oh,shop,boots
 Bender	Couple,you'll,fish,stick
@@ -72,7 +72,7 @@ Fry	Did
 Bender	People,it's,far,far,worse,thought,fish,got,away
 Leela	Good,new,we're,miles,surface,don't,food,ship,won't,work,underwater
 Bender	Tempers,wearing,Let's,just,hope,robot,doesn't,kill,everybody
-Hermes	important,thing,don't,panic,rules,situations,like,order,business,lunch,suggest,nice,lobster,Zoidberg,,,mean,lobster,Newburg,,,mean,Doctor,Zoidberg
+Hermes	important,thing,don't,panic,rules,situations,like,order,business,lunch,suggest,nice,lobster,Zoidberg,mean,lobster,Newburg,mean,Doctor,Zoidberg
 Leela	OK,calm,Professor,work,ship,Bender,Zoidberg,survive,underwater,you'll,look,food
 Fry	I'd,better,don't,know,like
 Hermes	Fry,pressure,crush,like,green,snake,sugar,cane,truck
@@ -207,7 +207,7 @@ Amy	Umbriel
 Fry	turns,loved,wasn't,love
 Amy	Trouble,bed
 Bender	Ah,it's,great,buddy
-Poopenmeyer	Wait,a,,,record,Gimme,cheque,I'm,giving,giant,orphans
+Poopenmeyer	Wait,a,record,Gimme,cheque,I'm,giving,giant,orphans
 Fry	Ow,Bender,you're,hurting,Ow
 Zoidberg	Hey,I'm,trying,sleep
 Donovan	Hail,Atlanta

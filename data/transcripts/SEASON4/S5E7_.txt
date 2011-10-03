@@ -63,7 +63,7 @@ LaBarbara	We're,little,stub,husband,home,Hermes,say,goodbye,Mr,Farnsworth
 Hermes	Goodbye,Mr,Dumbsworth
 Leela	Hey,chance,spend,time,parents
 Fry	parents,gross,sewer,mutants
-Leela	orphan,wished,grow,mom,dad,thanks,hurled,backwards,time,,
+Leela	orphan,wished,grow,mom,dad,thanks,hurled,backwards,time,
 Farnsworth	That's,happened,Shut,live,parents
 Leela	It's,gonna,totally,awesome,Mom,bake,argue,hairstyle,hiding,pretty,face,kid,picks,dad,beat,dad
 Morris	Can't,just,beat,kid
@@ -193,7 +193,7 @@ Farnsworth	older,Huzzah
 Fry	I'm,sorry,kid,Leela
 Leela	guess,adult,wants,kid,worked,hard,person
 Fry	fabulous,person
-Leela	friends,like,guys,,
+Leela	friends,like,guys,
 Fry	Fabulous,friends
 Leela	I'm,really,happy,life
 Farnsworth	faithful,fiend,repay

@@ -51,9 +51,9 @@ Hermes	hour,gotta,business,tree
 Amy	Bender,wasn't,Fry's,tent
 Bender	Bender
 Leela	Bender,raises,good,point,Fry
-Fry	Amy,won't,believe,happened,scary,wouldn't,,,know,listen,gets,scarier
+Fry	Amy,won't,believe,happened,scary,wouldn't,know,listen,gets,scarier
 Farnsworth	Fry,Sega,Genesis,happened
-Fry	That's,I'm,trying,tell,See,,,staring,like,face
+Fry	That's,I'm,trying,tell,See,staring,like,face
 Hermes	Uh
 Leela	tell
 Fry	Tell
@@ -123,7 +123,7 @@ Fry	mean,singed,flesh,smell,lilacs,table
 Lrrr	noticed
 Nd Nd	time,don't,like,lilacs,wife,liked,lilacs
 Lrrr	liked,shut
-Fry	great,seeing,guess,we'll,our,,
+Fry	great,seeing,guess,we'll,our,
 Bender	Yo,Highness,Uh,just,robo,curiosity,use,guy's,nose,aphrodisiac,instead,know,wing,dang,doodle
 Lrrr	uh,thought,horn,human,wing,dang,doodle
 Bender	sir,chief,main,event,speak,downstairs,near,wallet,seen,soccer,players,line,block,free,kick,ain't,covering,noses,I'll,tell,you
@@ -137,7 +137,7 @@ Lrrr	Remove,human's,lower,horn,prepare,eaten
 Nd Nd	words,slop,lot,ketchup,salt
 Lrrr	bring,royal,bedchamber,sock,drawer,things,failed,arouse,passion,woman
 Guard #2	Remove,pants
-Fry	Wait,Listen,I'm,usually,guy,toot,lower,horn,,
+Fry	Wait,Listen,I'm,usually,guy,toot,lower,horn,
 Bender	I'll,say
 Fry	case,I,I,just,don't,think,it'll,good
 Bender	That's,said
@@ -195,7 +195,7 @@ Lrrr	leave,gentle,Sasquatch,Wood,Ape,peace,finally,long,harvest,pathetic,human's
 Fry	Yeah
 Lrrr	Wait,saying,poach,beast's,lower,horn,better,ranger,demented,foot,lust,Yes
 Ranger Park	Score
-Lrrr	human's,lower,horn,God's,creatures,living,thing,living,things,large,small,,
+Lrrr	human's,lower,horn,God's,creatures,living,thing,living,things,large,small,
 Bender	case,small
 Lrrr	dignity,spark,divine
 Nd Nd	That's,gentle,sensitive,poet,warlord,fell,love

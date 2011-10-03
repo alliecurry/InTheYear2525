@@ -28,7 +28,7 @@ Announcer #2	Located,site,Brooklyn
 Leela	Sounds,like,kinda,place,Fry,Wanna
 Fry	Nah,wanna,year,2000,I'll,just,freeze,myself
 Bender	C'mon,Fry,really,wanna,know,yearn,simpler,time,time,barn,dances,buggy,rides,life,cheapened,heartless,hi,tech,machines
-Leela	Bender,are,,
+Leela	Bender,are,
 Bender	Blah,blah,blah,blah,blah,blah,blah,blah,blah,blah,blah,blah
 Fry	Cool,it's,just,like,good,old,days
 Mugger	wallet,I'll,cut
@@ -68,13 +68,13 @@ Narrator	stately,1992,Latoura
 Fry	Hey,girlfriend,Actually,wasn't,dad's,Actually,wasn't,girlfriend,just,lived,door,closed,curtains
 Leela	Fry,remember,told,ending,stories,sentence,earlier
 Fry	C'mon,let's,sneak,closer,look
-Man	Sir,don't,touch,antiques,sir,You,,,Oh,I'm,sorry,work,realised,ridiculous,getup,you're,wearing
-Fry	Hey,Miller's,Outpo,,,Uh,mean,yeah,work,alright
+Man	Sir,don't,touch,antiques,sir,You,Oh,I'm,sorry,work,realised,ridiculous,getup,you're,wearing
+Fry	Hey,Miller's,Outpo,Uh,mean,yeah,work,alright
 Man	rust,bucket,outside,Saint,Koch's,Cathedral
 Leela	Did,drive,20th,century,Fry
 Fry	Nope,Nice,Listen,baby,purr
 Bender	There's,baby,huh
-Fry	It's,just,like,riding,bicyc,,
+Fry	It's,just,like,riding,bicyc,
 Bender	think,got,whiplash
 Leela	can't,whiplash,don't,neck
 Bender	meant,ass,whiplash
@@ -82,7 +82,7 @@ Fry	I'm,just,glad,hit,thought,we'd,stop
 Bending Unit	Ow,think,got,whiplash
 Fry	How's,robot,ran
 Farnsworth	did
-Fry	mean,he's,,
+Fry	mean,he's,
 Farnsworth	Good,new,Yes
 Farnsworth	Leela,Zoidberg,rest,Flexo
 Hermes	Sweet,llamas,Bahamas,stylish,beard,looks,just,like,Bender
@@ -107,7 +107,7 @@ Robot #2	Yeah,Spin,fans,baby
 Robot #3	Alright,mama
 Robot #4	Gyrate,baby
 Fry	don't,like,place,It's,120,degrees,there's,little,oxygen
-Bender	Shut,hoot,Hubba,hubba,built,,,,Mexico,believe
+Bender	Shut,hoot,Hubba,hubba,built,Mexico,believe
 Flexo	ain't,silicon,it's,tungsten,plenty
 Fry	Uh,yeah,Look,exhaust,fan
 Flexo	Ew
@@ -146,7 +146,7 @@ Leela
 Amy	Really,Maybe,it's,just,cute,girls
 Farnsworth	atoms,tremendous,value,Planet,Express,bankrupt,stolen,we'll,need,hire,additional,security,mission
 Flexo	Oh,oh,oh,oh,Mr,Professor,right
-Fry	Uh,maybe,stick,people,know,trust,mean,Flexo's,great,but,,
+Fry	Uh,maybe,stick,people,know,trust,mean,Flexo's,great,but,
 Farnsworth	Flexo's,great,say,that's,good,Welcome,aboard,lad
 Leela	Space,bandidos,operating,quadrant,you'll,8,hour,shifts,guarding,safe,Bender,Flexo,Fry
 Fry	Wait,hold,don't,like,sound,Let's,just,alphabetically
@@ -223,12 +223,12 @@ Bender	200001
 Barker	You're,closest,going
 Fry	uh,we'll,leaving,you'll,just,sign,form,saying,received,atom
 Barker	I'm,signing,squat,damn,tiara,pageant,ends
-Leela	Mr,Barker,,
+Leela	Mr,Barker,
 Barker	fur,industry,won't,stop,skinning,alive,long,wears,skin
 Leela	gentlemen,appears,we're,boned
 Fry	Flexo
 Leela	
-Barker	generously,called,Talent,Competition,performing,traditional,gangsta,rap,Miss,,,the,,
+Barker	generously,called,Talent,Competition,performing,traditional,gangsta,rap,Miss,the,
 Bender	Gotcha
 Women	Fight,Fight,Fight,Fight,Fight
 Bender	Shoot,he's,choking
@@ -242,19 +242,19 @@ Fry	Bender,stole,atom
 Bender	Yeah,explain,it's,valuable
 Flexo	saw,snatch,Fry,asleep,That's,ran,tell,Bob,Barker
 Fry	Whoa,whoa,wait,second,mean,Bender,evil,Bender,shocked,Shocked,shocked
-Leela	I'm,sorry,suspected,Flexo,It's,just,beard,all,,
+Leela	I'm,sorry,suspected,Flexo,It's,just,beard,all,
 Flexo	Don't,bother,people,sicken,life,line,guard,atom,repay,rot,care,Nah,I'm,just,kidding,guys,alright
 Fry	I'm,confused,Bender,liked,turn,evil,Bender,hated,good,live,life,can't,tell,good,evil
 Bender	Eh,they're,fine,choices,floats,boat
 URL	guy
 Barker	Huh,Oh,yeah,looks,like
-Flexo	Wait,I,,
+Flexo	Wait,I,
 Barker	away
 Barker	Alright,let's,end,pathetic,hoedown,Brannigan,read,thing
 Zapp	winner
-Leela	figures,Zapp,Brannigan,judging,chauvinistic,degrading,dehumanising,,
+Leela	figures,Zapp,Brannigan,judging,chauvinistic,degrading,dehumanising,
 Zapp	Huh,Leela
-Leela	Wait,you're,making,a,,,feel,like,princess
+Leela	Wait,you're,making,a,feel,like,princess
 Zapp	Wait,people,Idiots,I'm,going,mano,mano,envelope,Miss,Universe,looking,weird
 Leela	tiara
 Bender	

@@ -34,7 +34,7 @@ Panucci	Great,I'll,cover,Big,Whoop,magazine
 Fry	Mmmm,I'm,starving,slice
 Panucci	Help,Cash
 HG Blob 	note,legal,tender
-Fry	Unfortunately,money,era,that's,hit,,,knew,free,pizza
+Fry	Unfortunately,money,era,that's,hit,knew,free,pizza
 Fry	Ohh,ice,cold
 Fry	That's,hit
 Fry	hour,ago,pizza's,luke,warm,Zero,zero,one,zero
@@ -99,7 +99,7 @@ Dr Schlovinowitz	don't
 Morbo	business,news,weak,gullible,inhabitants,Earth,plunged,economic,depression,today,scammer,aliens,finished,stealing,item,value,including,ownership,station
 Linda	
 Nudar	Tough,times,earth,chumps,We're,repossessing,TV,can't,afford,you're,unemployed
-Zoidberg	We're,unemplo,,,
+Zoidberg	We're,unemplo,
 Lars	love,hard,museum,night,It's,come
 Heads	Hi,Lars
 De Gaulle	Ah,Lars,la,belle,Leela,trust,brought,haute,cuisine,old,Frenchman

@@ -35,13 +35,13 @@ Hermes	ready,fun,Fry,Nowadays,type,game,played,entirely,video
 Leela	video,game
 Fry	Uh,video,game,say,golly,gee,mighty,spacemen,future,works
 Zoidberg	doctor,doctor
-Holo Farnsworth	sign,delivery,Plus,use,phone,,,Leela,tell,that,,
+Holo Farnsworth	sign,delivery,Plus,use,phone,Leela,tell,that,
 Leela	
 Cyclops	saw,chat,room,left,chance,talk,years,searching,Cyclops
 Leela	can't,believe,I've,dreamed,moment,life
-Cyclops	think,I,,
+Cyclops	think,I,
 Leela	Fry,idiot,abandoned,Earth,I've,searching,people,come,finally,meet,Cyclops,blast,wrecked,chance,learn
-Fry	Oh,Leela,feel,terrible,there's,do,,,won,I'm,greatest
+Fry	Oh,Leela,feel,terrible,there's,do,won,I'm,greatest
 Leela	Come,work
 Fry	mad,wrecking,once,in,a,lifetime,chance,learn,meaning,existence
 Leela	I'm,just,happy,able,win,video,game,let's,concentrate,getting,desperately,needed,popcorn,people,Cineplex,14,OK
@@ -82,7 +82,7 @@ Leela	It's,sad,happened,people
 Alcazar	It's,painful,speak,Come,I'll,quarters
 Bender	Ow,Ow,Ow
 Leela	heard,room,What's,wrong
-Alcazar	It's,just,,,Leela,don't,want,tears,perfect,eye
+Alcazar	It's,just,Leela,don't,want,tears,perfect,eye
 Leela	fate,people,I'm,interested
 Alcazar	OK,it's,chilly,you're,going,wet,tears,Let's,chamber
 Alcazar	Unfortunately,40,planets,hit
@@ -107,10 +107,10 @@ Fry	Mmm,Great,pancakes,Leela
 Alcazar	Yeah,they'll,come,handy,need,cover,tiny,manholes,Listen,hon',don't,want,look,like,slobs,species
 Leela	
 Alcazar	work,dishes,organise,collection,naked,celebrity,photos
-Leela	Look,Alcazar,,
+Leela	Look,Alcazar,
 Alcazar	Al
 Leela	Look,Al,know,you've,living,long,time,sympathise,I'm,maid
-Alcazar	You're,right,I'm,sorry,guess,relationship,isn't,going,work,Cyclops,race,thought,pretty,good,race,uh,,
+Alcazar	You're,right,I'm,sorry,guess,relationship,isn't,going,work,Cyclops,race,thought,pretty,good,race,uh,
 Leela	OK,OK,I'll,dishes,Hey,where'd
 Bender	Ah,Leela's,experiencing,greatest,joy,woman,feel,Worshipping,low,life,jerk
 Fry	low,life,jerk,don't,trust,think,he's,hiding,I'm,gonna
@@ -125,7 +125,7 @@ Alcazar	way,pal,Fry,fell,dungeon,taco,doesn't,die,stink,place
 Leela	Come,Al,can't,let,little,guy
 Alcazar	Jeez,Leela,twice,day,I'm,Superman
 Leela	sneaking,people's,forbidden,valley
-Fry	'Cause,think,Alcazar's,hiding,Listen,Leela,like,believe,wanna,hear,Alcazar's,jerk,He's,bad,He,,
+Fry	'Cause,think,Alcazar's,hiding,Listen,Leela,like,believe,wanna,hear,Alcazar's,jerk,He's,bad,He,
 Leela	know
 Fry	
 Leela	Fry,it's,obvious,learning,disability,course,it's,obvious,He's,crude,gross,treats,like,slave
@@ -177,7 +177,7 @@ Amy	Oh,God
 Alcazar	the
 Fry	Hey,Alcazar,left,somebody,guest,list
 Five Eyed Woman	Alcazar,late,wedding,eye
-Alcazar	ooh,uh,She,,,She's,nuts,morph,five,eyed,alien,kinda,said,I'd,marry,I'm,really,Cyclops,I'm,really,going,marry
+Alcazar	ooh,uh,She,She's,nuts,morph,five,eyed,alien,kinda,said,I'd,marry,I'm,really,Cyclops,I'm,really,going,marry
 Fry	Oh,yeah
 Alcazar	bit,awkward
 Five Eyed Woman	Who's

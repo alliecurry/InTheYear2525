@@ -1,7 +1,7 @@
 3	5	The Birdbot of Ice-Catraz	3	9	20010304	37
 Leela	Fry,know,cookies,fresh,a,licious,produce,awful,lot,trash
 Bender	Ah
-Leela	Bender,aerosol,head,spray,makes,antenna,smell,nice,,
+Leela	Bender,aerosol,head,spray,makes,antenna,smell,nice,
 Bender	Thank
 Leela	it's,doing,long,term,damage,planet
 Bender	It's,like,it's,we've,got
@@ -10,7 +10,7 @@ Fry	Controversial
 Farnsworth	Oh
 Farnsworth	highly,controversial,mission,you'll,towing,Juan,Valdez,orbiting,supertanker,rich,Columbian,dark,matter
 Leela	Dark,matter,oil,hit,tanker,leak
-Farnsworth	Impossible,you've,hauled,tanker,past,protestors,,
+Farnsworth	Impossible,you've,hauled,tanker,past,protestors,
 Leela	Protestors
 Farnsworth	Correct,6000,hulls
 Leela	fly,feet,penguin,preserve,Pluto
@@ -25,7 +25,7 @@ Farnsworth	said,hand,shouldn't,Bender,new,captain
 Fry	Bender
 Farnsworth	That's,right,captain,intuition,heart,good,captain,can't,That's,cold,logical,Bender,perfect,job
 Bender	think,human,life,expendable
-Fry	fair,Leela,training,captain,let,sit,lap,steer,,,,comic,drew
+Fry	fair,Leela,training,captain,let,sit,lap,steer,comic,drew
 Zoidberg	Ooh,new,one's
 Bender	Fry,title,captain,inflate,human,ego,it's,beneath,notice,mighty,robo,logic,look,spry,men,launch,bells
 Waterfall Sr	Greetings,Econauts,I'm,Free,Waterfall,Sr,founder,Penguins,Unlimited,hold,thumbs,end,folks,it's,time,stop,tanker,non,violent,human,circle
@@ -76,7 +76,7 @@ Zoidberg	6000,hulls,breached
 Fry	Oh,fools,they'd,built,6001,hulls,learn
 Linda	story,crisis,Pluto,worsens,dark,matter,spreads,penguin,habitat,images,truly,horrific
 Leela	don't,think,understand,poor,oil,drenched,penguins,feel
-Morbo	time,crash,tanker,captain,alcohol,level,08,percent,,,,legal,limit,robots
+Morbo	time,crash,tanker,captain,alcohol,level,08,percent,legal,limit,robots
 Hyper Chicken	Son,lawyer,declare,y'all,12,piece,bucket,o',trouble,struck,deal,hours,community,service,cleanin',ol',mess,caused
 Bender	hours,Aw,man,Couldn't,just,got,death,penalty
 Hyper Chicken	I'd,better,it's,plum,hard,pleadin',case,awaitin',trial,incompetence
@@ -123,7 +123,7 @@ Leela	We'll
 Waterfall Sr	grab,guns,declare,penguin,hunting,season,officially,open
 Leela	can't,shoot,penguins,Isn't,way,breeding
 Waterfall Sr	Cold,showers,don't,work,Antarctic,creatures,surely,agree,quick,semi,painless,death,damn,sight,better,weeks,starvation
-Leela	suppose,But,,,mean,,,joined,Penguins,Unlimited,love,penguins,hunt
+Leela	suppose,But,mean,joined,Penguins,Unlimited,love,penguins,hunt
 Waterfall Sr	time,you,gonna,let,innocent,penguins,suffer
 Leela	Oh,God,It's,inhuman,It's,like,Hong,Kong,I'll
 Waterfall Sr	That's,good,old,fashioned,gun,Simple,point,and,click,interface,Rifle,check
@@ -150,7 +150,7 @@ Waterfall Sr	you're,tree,hugging,kook
 Leela	Look,don't,know,shooting,penguins,help,environment,know,decision,shouldn't,hands,people,just,wanna,kill,fun
 Waterfall Sr	Leela,just,farming,free,range,truth,hand,200,pounds,batter,penguin,tempura,OK,boys,it's
 Leela	
-Waterfall Sr	Hey,Where'd,they,,
+Waterfall Sr	Hey,Where'd,they,
 Bender	Attack
 Hunter #1	Whoa
 Hunter #2	Ow

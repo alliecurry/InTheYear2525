@@ -45,13 +45,13 @@ Farnsworth	Watch,subtle,irregularity,Fry's,bowel
 Amy	It's,gorgeous,place,used,big,dump
 Bender	Oh,Ew
 Amy	Worms,Ew,Puke,a,tronic
-Leela	eggs,egg,salad,sandwich,were,,
+Leela	eggs,egg,salad,sandwich,were,
 Farnsworth	Correct,Worm,eggs,mayonnaise,probably,fresh
 Hermes	It's,nauseating,mon,way,rid,disgusting,maggots
 Farnsworth	We'll,travel,deep,inside,Fry
 Bender	Shotgun
 Zoidberg	Shotgun
-Farnsworth	gastro,survival,kit,you'll,rain,slicker,disposable,fun,camera,protect,bacteria,,,,harpoon
+Farnsworth	gastro,survival,kit,you'll,rain,slicker,disposable,fun,camera,protect,bacteria,harpoon
 Bender	Yo,old,guy,use,tiny,micro,droids,Can't,just,shrink
 Farnsworth	Oh,require,extremely,tiny,atoms,priced,lately,I'm,money,Leave
 Zoidberg	
@@ -128,7 +128,7 @@ Leela	Bender
 Fry	Bender's,involved,Leela,love
 Leela	
 Fry	Yes,it's,recently,I've,able,articulate,thoughts,love,Leela
-Leela	Fry,that's,sweetest,wonderful,,,Wait,Recently,Like,ate,toilet,sandwich
+Leela	Fry,that's,sweetest,wonderful,Wait,Recently,Like,ate,toilet,sandwich
 Fry	Yeah,don't,know,life,really,turned,day
 Leela	Stay
 Waitress	Freshen,noc,a,tina
@@ -148,7 +148,7 @@ Farnsworth	Leela,ignorant,dope,worms,Fry,forever
 Leela	Did,stop,think,Fry,better,worms
 Farnsworth	Oh,that's,stupid
 Fry	wants,tell,what's,going,I'll,lounge
-Fry	parasites,I've,years,worms,the,,,Hell,best,Leela,repay,saving
+Fry	parasites,I've,years,worms,the,Hell,best,Leela,repay,saving
 Leela	I'll,think
 Bender	'Ello,What's
 Fry	Apartment,1I,old,joke
@@ -188,7 +188,7 @@ Fry	I'm,Leela,let,play,time
 Leela	don't,I'm,seduced
 Fry	it's,important
 Leela	What's,supposed,mean
-Fry	don't,know,got,nervous,started,thinking,neck,bolts,Wow,Did,vase,break,like,,
+Fry	don't,know,got,nervous,started,thinking,neck,bolts,Wow,Did,vase,break,like,
 Leela	What's,happened
 Fry	got,rid,worms
 Leela	
@@ -196,7 +196,7 @@ Fry	Leela,worms,needed,know,loved
 Leela	wrote,sonnet
 Fry	did,think,probably,50/50,that's,really,felt,swear
 Leela	don't,know
-Fry	chance,romantic,I've,got,baggy,massage,oil,I'm,gonna,super,rub,just,like,used,Amy,going,seemed,,,Uh,oh
+Fry	chance,romantic,I've,got,baggy,massage,oil,I'm,gonna,super,rub,just,like,used,Amy,going,seemed,Uh,oh
 Bender	Sorry,struck,sausage,link
 Bender	it's,consolation,life,great,Babes,Bucks,got
 Fry	learned,Leela's,lost,cause

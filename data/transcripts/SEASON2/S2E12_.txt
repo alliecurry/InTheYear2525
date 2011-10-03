@@ -41,7 +41,7 @@ Bender	stopped,making,halfway
 Fembot	Whee
 Calculon	Calculon,Enterprises
 Monique	Calculon,fight,scene,broken,special,effects,warehouse,Come,quickly,fiery,explosion,chases,hallway
-Calculon	choice,to,,
+Calculon	choice,to,
 Mr Moviefone	want,Calculon,race,laser,gun,battle,hover,Ferarri,press,1,want,Calculon,double,check,paperwork,press,2,Enter
 Mr Moviefone	pressed,2
 Fry	didn't
@@ -95,7 +95,7 @@ Bender	Let's,commence,preparations,rumbling
 Referee	Ladies,gentlemen,smizmars,welcome,tonight's,main,event,corner,Mom's,Friendly,Robot,Factory,America's,heartland,Mexico,Bender,corner,Parts,Unknown,Clearcutter
 Fry	Bender,rules
 Hermes	got,official,Bender,hat
-Fry	Wow,Thanks,Hermes,I,,,Hey,Cut
+Fry	Wow,Thanks,Hermes,I,Hey,Cut
 Bender	can't,hit,can't
 Leela	Bender,can't,quit,time,axe,drill,face,quit,scratching,axe,hole
 Bender	Huh
@@ -168,7 +168,7 @@ Nixon	hippie,ring
 Referee	corners,weighing,400,tons,gizmo,Pismo,Beach,Destructor
 Fnog	meet,amusing,Girl,acts,like,fighter,training,fighter,acts,like,girl
 Leela	laughing,Fnog,Ready,Bender
-Bender	born,ready,Gimme,bell,boarding,standby,passengers,,
+Bender	born,ready,Gimme,bell,boarding,standby,passengers,
 Foreman	like,good,time,time,bring,new,grill,reason,patented,design,fat,drains,directly,mouth
 Bender	God's,sakes,Fry
 Hermes	That's,exactly,thinking
@@ -183,7 +183,7 @@ Leela	Oh,right,Girls,lack,warrior
 Bender	Huh,It's,bendering,time,this
 Fnog	excellent,student,bad,lousy,teacher
 Bender	think,misunderstood,concept,bendering,time
-Fnog	girl,hell,I'll,boy,hell,,,,nicer
+Fnog	girl,hell,I'll,boy,hell,nicer
 Leela	Yes
 Bender	Yes,Oh
 Referee	winner,Destructor

@@ -1,7 +1,7 @@
 3	09	The Cyber House Rules	3	11	20010401	41
-Morbo	gave,cookies,Fawn,kids,couldn't,believe,,,,delicious,digress,Tremble,puny,earthlings,day,race,destroy
+Morbo	gave,cookies,Fawn,kids,couldn't,believe,delicious,digress,Tremble,puny,earthlings,day,race,destroy
 Leela	guys
-Leela	It's,doorbell,baby,Hello,little,guy,know,abandoned,baby,so,,
+Leela	It's,doorbell,baby,Hello,little,guy,know,abandoned,baby,so,
 Bender	Garbage,huh,I'll,care
 Leela	Bender,stop,It's,baby
 Bender	Ow
@@ -47,7 +47,7 @@ Kirk	isn't,old,one,eye
 Leela	Oh,yeah,shut,cane,boy
 Man #3	can't,hear,He's,deaf
 Adlai	Leave,Leela,She's,leading,perfectly,normal,life,She's,gussied,duded,getting,it's,run
-Leela	Thanks,Adlai,guess,really,outgrow,eyeball,,,Oddball
+Leela	Thanks,Adlai,guess,really,outgrow,eyeball,Oddball
 Adlai	Nonsense,You're,space,captain,That's,fine,conventional,profession
 Leela	know,it's,just,package,delivery,service
 Adlai	Ah,ah,package,just,box,it's,delivered
@@ -98,7 +98,7 @@ Bender	Kids,meet,jerkbags,work
 Kids	Hello,jerkbags
 Amy	Oh,they're,cute,names
 Bender	Kids,names
-Nina	name's,Nina,name's,Albert,,
+Nina	name's,Nina,name's,Albert,
 Bender	you're,named,Bender,Jr,Lookie,government,stipend,cheque,12,baby,humans,1200,wing,wangs
 Sally	Daddy,Bender,we're,hungry
 Bender	kids,day,it's,food,food,food,Oh,fine,I'll,stupid,food
@@ -183,7 +183,7 @@ Albert	Yeah,picture
 Bender	OK,kids,It's,900,know,means,Daddy's,sick,looking,bed,grown,ups,talk,Come,Ma
 Bender	figure,money,I'm,raking,twerps,Oh,need,calculator
 Fry	calculator
-Bender	mean,good,calculator,Minus,food,bunny,rabbit,wallpaper,,,I'm,getting,100,bucks,kid,they're,costing,110
+Bender	mean,good,calculator,Minus,food,bunny,rabbit,wallpaper,I'm,getting,100,bucks,kid,they're,costing,110
 Fry	goes,new,kitchen,cabinets
 Bender	I'm,sitting,PTA,meeting,kids,got
 Sam	Daddy,flush

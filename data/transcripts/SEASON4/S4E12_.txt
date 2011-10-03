@@ -1,6 +1,6 @@
 4	11	Where No Fan Has Gone Before	4	12	20020421	65
 Shatner	Shatner's,log,airdate,unknown
-Shatner	impossible,happened,days,recount,events,witnessed,settle,began,,
+Shatner	impossible,happened,days,recount,events,witnessed,settle,began,
 Zapp	Quiet,court,martial,session,honourably,sexy,Zapp,Brannigan,residing,Bring,accused
 Takei	Oh
 Zapp	Philip,J,Fry,stand,accused,travelling,forbidden,planet,Omega,3,crime,punishable,12,concurrent,death,sentences,understand,charges
@@ -37,12 +37,12 @@ Zapp	use,beeps
 Fry	Mr,Nimoy,came,soon,heard,happened,centuries,ago,can't,believe,banned
 Nimoy	absolutely,idea,you're,talking
 Fry	know,1966,79,episodes,30,good,ones
-Nimoy	Oh,really,I've,things,remember,particular,TV,series,if,if,want,discuss,books,poetry,,
+Nimoy	Oh,really,I've,things,remember,particular,TV,series,if,if,want,discuss,books,poetry,
 Fry	Come,Remember,episode,high,spores,smacked,Kirk
-Nimoy	you're,thinking,man,Vincent,van,Spock,,,Uh,uh,mean,van,Gogh,Damn
+Nimoy	you're,thinking,man,Vincent,van,Spock,Uh,uh,mean,van,Gogh,Damn
 Fry	Aha,can't,escape
 Nimoy	Oh,you're,right,can't
-Fry	Uh,jeez,don't,upset,mean,OK,outwitted,but,,
+Fry	Uh,jeez,don't,upset,mean,OK,outwitted,but,
 Nimoy	it's,fellow,cast,members,300,years,ago,left,Earth
 Shatner	planet,doesn't,appreciate,anymore,Leonard
 Nimoy	shall,friend,just,signed,six,month,lease,apartment,can't,walk,away,commitment,like
@@ -65,7 +65,7 @@ Leela	I've,lost,control,ship
 Fry	Oh,dip
 Nimoy	Dip
 Fry	It's,stuff,forbidden
-Nimoy	cardboard,sets,memories,others,,
+Nimoy	cardboard,sets,memories,others,
 Shatner	guess,that's,cue
 Nimoy	
 Shatner	L,Dog
@@ -87,7 +87,7 @@ Koenig
 Takei	You'll,love,provided,age,Check,abs
 Bender	Yowza
 Leela	who's,doing
-Shatner	know,thought,We're,famous,celebrities,,,,we're,used,sort,treatment
+Shatner	know,thought,We're,famous,celebrities,we're,used,sort,treatment
 Melllvar	
 Bender	Whoa,cheesy,effect
 Melllvar	effect,doubt,power
@@ -108,7 +108,7 @@ Melllvar	time,stops
 Leela	
 Shatner	can't
 Nimoy	can't
-Melllvar	schedule,events,,
+Melllvar	schedule,events,
 Bender	Uh,people,hate,Star,Trek,leave
 Koenig	Good,question
 Melllvar	stay,longer
@@ -167,7 +167,7 @@ Melllvar	getting
 Zapp	Melllvar,ordered,battle,death,assume,survived
 Leela	foot's,getting,tired
 Melllvar	standard,battle,death,weapons,warn,signalled,start,combat,OK,start
-Koenig	don't,experience,fighting,,,,guys
+Koenig	don't,experience,fighting,guys
 Shatner	idea,Wasn't,episode,threw,shoe,enemy
 Nimoy	mean,Doohan
 Shatner	did,like
@@ -213,8 +213,8 @@ Nimoy	Uh,did
 Shatner	escape
 Leela	can't,use,ship,life,support,engines,wrecked
 Takei	Ironic,engines,work,life,support,systems,don't
-Leela	Hey,engines,work,,
-Takei	life,support,systems,work,,
+Leela	Hey,engines,work,
+Takei	life,support,systems,work,
 Fry	Stop,You're,just,goin',circles,Think,Fry,think,Everyone's,depending
 Leela	We're,heavy,guys,need,lose,weight,fast
 Fry	Look,Leonard,we're,light,tapes,Isn't,great
@@ -227,7 +227,7 @@ Zapp	You're,arrest,Prepare,boarded
 Zapp	boarded,eh,happened
 Leela	started,stupid,court,martial,don't,mind,we're,fighting,Melllvar
 Leela	hit,we're
-Takei	Let's,'em,guys,self,destruct,code,Like,destruct,sequence,1,A,2,B,3,,
+Takei	Let's,'em,guys,self,destruct,code,Like,destruct,sequence,1,A,2,B,3,
 Bender	Thanks,lot,Takei,everybody,knows
 Melllvar	can't,original,cast,Star,Trek,Prepare,die
 Fry	Wait,mean,you,wanna,kill

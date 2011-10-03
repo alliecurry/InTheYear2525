@@ -27,12 +27,12 @@ Bender	Alright,environment,you've,met,match
 Smitty	Hey,sewer,weird,y,mutants,surface
 Vyolet	ruined,wedding,dress
 Bender	Honey,thing,ruined,minute,went,That's,I'm,talkin','bout
-Vogel	Y'know,it's,easy,orphan,,,,today's,honouree,Turanga,Leela,really,herself,I'll,forget,night,cute,little,alien,baby,abandoned,doorstep,photographic,memory,remember,night
-Vogel	the,alien,language,guess,you're,alien,beautiful,gigantic,eye,ha,,,come
+Vogel	Y'know,it's,easy,orphan,today's,honouree,Turanga,Leela,really,herself,I'll,forget,night,cute,little,alien,baby,abandoned,doorstep,photographic,memory,remember,night
+Vogel	the,alien,language,guess,you're,alien,beautiful,gigantic,eye,ha,come
 Vogel	humble,beginnings,Leela,went,county,certified,starship,captain,pleasure,today,nail,picture,alongside,distinguished,alumni
 Leela	Thank,Like,knew,parents
 Vogel	a
-Leela	don't,know,mighty,alien,overlords,simply,underpaid,alien,janitors,fought,crime,side,,
+Leela	don't,know,mighty,alien,overlords,simply,underpaid,alien,janitors,fought,crime,side,
 Vogel	Picture's
 Bender	It's,crooked
 Leela	end,doesn't,matter,parents,matters,learned,unscalable,walls,strength,make,just,like,kids,today
@@ -55,7 +55,7 @@ Leela	know,I'm,lonely,look,sky,feeling,unknown,planet,circling,distant,star,pare
 Fry	Yo,yo,Bezender
 Bender	dumping,business,booming,just,got,hired,clean,set,Free,Willy,3
 Leela	Bender,Cut,sewer,mutants,mad,Second,that's,horribly,wrong,you're,doing
-Bender	Ah,stupid,mutants,can't,forgetting,simple,fact,I'm,safely,down,,
+Bender	Ah,stupid,mutants,can't,forgetting,simple,fact,I'm,safely,down,
 Bender	did,deserve
 Dwayne	Behold,beautiful,mutagenic,sewage,lake
 Vyolet	radioactive,waste,dumped,bright,ugly,really
@@ -154,14 +154,14 @@ Mother	won't,pass,human,cutie,PhD,exo,linguistics,worth,diddly,poop,note,convinc
 Father	She'll,know,we're,parents
 Mother	That's,gift,Better,die,learn,shameful,truth,origin
 Father	I'm
-Vogel	beautiful,gigantic,eye,ha,,,come
+Vogel	beautiful,gigantic,eye,ha,come
 Hooded Figure #1	quiet,doesn't,hear
 Hooded Figure #2	What's,talk
 Hooded Figure #1	Sh
 Leela	Hands,Tentacles
 Hooded Figure #1	Don't,say,stupid,Morris
 Leela	game,kind,boring,Truman,believe,I'm,Messiah,Mutant,Dalai,Lama,Stop,guess
-Hooded Figure #2	actually,there,,
+Hooded Figure #2	actually,there,
 Hooded Figure #1	Morris,Sh
 Leela	did,bracelet,Did,steal,baby,parents,robbed,parents,didn't,bet,sick,mutants,killed,parents,confused,aliens,lost,Earth,killed,Admit
 Hooded Figure #2	Yes,killed

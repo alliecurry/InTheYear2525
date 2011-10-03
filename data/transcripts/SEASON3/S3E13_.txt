@@ -73,7 +73,7 @@ Fry	Hey,idea,wants,cram,van,follow,Bender,tour,live,van
 Zoidberg	Oh,don't,know,Fry,think,I'm,poor,follow,band,van
 Beck	Come,gotta,concert,make,audience,wait,start
 Zoidberg	Bad,news,friends,shell,ran
-Amy	Zoidberg,idiot,outfit,It's,it's,,
+Amy	Zoidberg,idiot,outfit,It's,it's,
 Leela	Kinda,cool
 Fry	Yeah,like
 Amy	I'm,used
@@ -96,8 +96,8 @@ Robot #1	don't,believe,broken,eyes,It's,Bender,washboard,player,Hey,man,caught,c
 Robot #2	rock
 Fembot	Oh,oh,Bender,Sign,chest,It's,bin
 Robot #3	Yo,brother,thanks,showing,broken,robots,useful
-Bender	Aw,hang,folks,I'll,bet,know,guys'll,be,,,wrong,can't,just,melt,broken,robots,right,they're,kissing,ass
-Beck	Whoa,dog,Just,cold,chill,know,I'm,upset,write,song,Like,wrote,Devil's,Haircut,feeling,really,,,What's,song
+Bender	Aw,hang,folks,I'll,bet,know,guys'll,be,wrong,can't,just,melt,broken,robots,right,they're,kissing,ass
+Beck	Whoa,dog,Just,cold,chill,know,I'm,upset,write,song,Like,wrote,Devil's,Haircut,feeling,really,What's,song
 Bender	Hey,yeah,write,song,real,words,phoney,ones,like,odelay
 Beck	Odelay,word,Just,look,Becktionary
 Bender	Ooh
@@ -128,7 +128,7 @@ Fry	Bender,don't,claim,understand,biz,wouldn't,able,help,music,career
 Bender	Wait,that's,I'll,fake
 Amy	You'd,better,concert
 Zoidberg	can't,stop,eat,dirt,stuff,throat
-Amy	disgusting,I,,
+Amy	disgusting,I,
 Leela	They're,beautiful
 Zoidberg	Ew,you're,touching
 Amy	I've,seen,pearls,like,Dr,Zoidberg,you're,amazing
@@ -229,7 +229,7 @@ Leela	Bummer
 Bender	I'm,broken,can't
 Beck	Good
 Bender	I'm,really,sorry,lied,Beck,wanted,make,music,meant,hurt,help
-Beck	Bender,that's,played,out,new,jack,horse,crap,,,know,don't,mean,apology,accepted
+Beck	Bender,that's,played,out,new,jack,horse,crap,know,don't,mean,apology,accepted
 Bender	uh,cheque
 Garfunkel	dead,career
 Bender	worth,shot

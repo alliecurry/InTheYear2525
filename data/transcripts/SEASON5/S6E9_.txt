@@ -121,7 +121,7 @@ Leela	can't,believe,TiVo,suggested,piece,Ow,Come,Hermes,Surely,authority,remove,
 Hermes	Alas,got,key,authority
 Leela	Yeow,does,authority
 Hermes	staff,doctor,You'll,convince,resolved,anger,issues
-Leela	don't,god,da,,mother,f,,anger,issues
+Leela	don't,god,da,mother,f,anger,issues
 Dwight	dwarf,skin,canoe,rounds,bend,suddenly,terrifying,red,dragon
 Indian Boy	What
 Bender	Wait,know,make,use,rod,fireballs

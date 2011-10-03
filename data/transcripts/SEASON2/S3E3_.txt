@@ -21,7 +21,7 @@ Italian #1	Alright,yeah
 Italian #2	like,lot
 Fry	great
 Bender	suspects,thing,that's,learned,lesson
-Farnsworth	You've,gone,far,time,,,
+Farnsworth	You've,gone,far,time,
 Leela	did
 Farnsworth	left,keys,ignition,mean,look,Wasn't,obvious,happen
 Fry	Yeah,Leela
@@ -51,7 +51,7 @@ Leela	I'd,like,reapply,old,job,Counselling,defrostees,assigning,careers
 Ipgee	Oh,hoping,come,saved,poster,chimp,expressing,distaste,Mondays
 Leela	Monday,Monkey,lives,weekend,sir
 Ipgee	Just,hand,scanner,verify,career,chip,Calcutta,problem
-Leela	Delivery,boy,mixed,chips,It's,simple,mi,,
+Leela	Delivery,boy,mixed,chips,It's,simple,mi,
 Ipgee	Oh,here's,cryogenic,counsellor,like,Mondays
 Fry	They're,OK
 Ipgee	we'll,redecorate,office,feel,helping,crazy,work,necessary
@@ -118,7 +118,7 @@ Michelle	did,chance,think
 Fry	I'm,sorry
 Michelle	remembered,time,truly,happy
 Fry	Aww,froze,come,look
-Michelle	did,fresh,start,didn't,know,happened,,,,did,police,going,conduct,search,parents,felt,waste,taxpayer,money
+Michelle	did,fresh,start,didn't,know,happened,did,police,going,conduct,search,parents,felt,waste,taxpayer,money
 Fry	That's,reason,kept,school,cared,gone
 Michelle	really,person
 Fry	
@@ -139,13 +139,13 @@ Farnsworth	Og,Everything's,running,smoothly,yes,Fry,fired,finally,leave,jigsaw,p
 Leela	Forget,Fry,hire,he'd,know
 Fry	Hey,guys
 Leela	Oh,uh,hey,Fry
-Bender	Leela,saying,Fry,shove,big,old,,,Ow
+Bender	Leela,saying,Fry,shove,big,old,Ow
 Fry	I'm,glad,you're,wanted,introduce,on,again,off,again,girlfriend,past,thousand,years,Michelle,Hermes,Amy
 Michelle	Nice,meet
 Fry	Dr,Zoidberg
 Hermes	Dating,ex,Fry,lost,self,respect
 Fry	
-Farnsworth	end,badly,Fry,Kids,house,,
+Farnsworth	end,badly,Fry,Kids,house,
 Bender	home,invasion,roommate
 Fry	things,different,time,demanding,possessive,wants,stuff,stay,time
 Zoidberg	dearies
@@ -201,7 +201,7 @@ Michelle	mother,said,loser,Fry,prove,wrong
 Fry	Beth,said
 Butch's Girlfriend	Achat,shtayim,shalosh
 Butch	It's,cool,knee,scraped
-Fry	Aww,Poor,little,guy,Let,just,look,at,,,Aha,won,I'm,new,chief,I'm,tallest,weigh
+Fry	Aww,Poor,little,guy,Let,just,look,at,Aha,won,I'm,new,chief,I'm,tallest,weigh
 Butch	Hand,giant,idiot
 Butch's Girlfriend	Hey,Butch,mom's
 Butch	Aw,man
@@ -229,7 +229,7 @@ Fry	driving,cars,shooting
 Bender	That's,LA
 Fry	air,green,there's,sign,civilisation,whatsoever
 Bender	just,won't,stop,social,commentary
-Fry	people,phoneys,reads,cilantro,it,,,Michelle,baby
+Fry	people,phoneys,reads,cilantro,it,Michelle,baby
 Michelle	It's,working,Fry
 Shore	Tis,better,loved,lost,n'est,ce,pas
 Fry	That's,I've,women,I'm,concentrating,career,old,job

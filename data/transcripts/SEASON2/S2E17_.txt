@@ -1,5 +1,5 @@
 2	13	Bender Gets Made	2	17	20000430	26
-Bender	Wow,I'm,finally,gonna,favourite,chef,TV's,Elzar,Oh,greatest,nanosecond,life,is,,,Wait,slightly,worse,Ah,far,good
+Bender	Wow,I'm,finally,gonna,favourite,chef,TV's,Elzar,Oh,greatest,nanosecond,life,is,Wait,slightly,worse,Ah,far,good
 Announcer	Chef,restaurateur,author,Cooking,Slugs,Dinner,Cooking,Dinner,Slugs,Elzar
 Bender	Yeah,Alright,Yeah,yeah,baby
 Man	Elzar,Alright
@@ -51,7 +51,7 @@ Zoidberg	Wood
 Bender	Oh,Fry,gotta,try,sterno,nicoise
 Fry	thanks,That's,robot,food
 Bender	It's,good,Oh,just,try,little
-Fry	really,don't,,,Mmm
+Fry	really,don't,Mmm
 Amy	doing,alright,Leela
 Leela	Oh,yeah,salad's,fantastic,fresh
 Farnsworth	Oh,steamed,carrot,bit,spicy
@@ -111,8 +111,8 @@ Elzar	Yes
 Donbot	table,table,wouldn't,hit,guy,head,table
 Clamps	hear,Donbot,don't,like,oughta,clamp,You,wanna,clamped
 Joey	Whoa,Whoa,Calm,Clamps,boss,likes,wall,like
-Waitress	table's,already,,
-Bender	Ah,let,bus,gentlemen,meant,was,,
+Waitress	table's,already,
+Bender	Ah,let,bus,gentlemen,meant,was,
 Woman	Oh
 Man	can't,believe
 Bender	Mind,business
@@ -211,7 +211,7 @@ Bender	Sorry,I'm,tardy,old,bean,just,enjoying,tasty,watercress,sandwich
 Donbot	Hey,He's,classy,realised,Tie,prisoners
 Bender	Capital,idea,old,sport,say,hell
 Leela	guy,sounds,familiar
-Bender	word,we,,,Uh,old,girl
+Bender	word,we,Uh,old,girl
 Joey	Hey,boss,crew,list,lists,robot,crew
 Donbot	Alright,want,plug,unplug
 Fry	

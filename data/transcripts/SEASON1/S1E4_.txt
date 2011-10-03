@@ -6,7 +6,7 @@ Fry	wrong,date,night
 Leela	don't,know,couldn't,quite,finger,Possibly,vile,lizard,tongue
 Amy	You're,picky
 Fry	Yeah,rule,guy,lizard,tongue,low,IQ,explosive,violent,temper,course,you're,gonna,lonely
-Leela	There's,wrong,having,high,standards,stop,,
+Leela	There's,wrong,having,high,standards,stop,
 Zoidberg	female,Leela's,problem,purely,medical,Soon,drop,eggs,hatch
 Amy	just,guys,chance,meet,guy,think,he's,pig,later,realise,actually,really,good,body
 Leela	Thank,inspiring,advice,I'm,perfectly,happy,life,way
@@ -95,14 +95,14 @@ Fry	Leela's,got,boyfriend
 Leela	don't,think,ought,meet,he'll,help,rescue,animals
 Bender	just,case,guys,hit,you'll,wanna
 Kif	Sir,they're,headed,straight
-Zapp	well,calculated,straight,Sun,Tzu's,classic,text,Art,War,masterwork,Zapp,Brannigan's,Big,Book,War,thing,captain,doesn't,realise,that,,
+Zapp	well,calculated,straight,Sun,Tzu's,classic,text,Art,War,masterwork,Zapp,Brannigan's,Big,Book,War,thing,captain,doesn't,realise,that,
 Kif	Sir,they've,docked,come,aboard
 Zapp	risked,lost,Kif,old,man,I'll,escape,pod,wicker,chair,like,survives,slaughter,sent,PO,box
 Leela	Hello,I'm,Leela,captain,Planet,Express,delivery,ship,We've,come,aboard,plead,assistance
-Kif	there's,anything,,
+Kif	there's,anything,
 Zapp	I'm,command,Zapp,Brannigan,fame,preceded,quick
 Leela	Oh,I'm,just,uh,really,thrilled,meet
-Zapp	You're,impressive,piece,captain,Beautiful,deadly,,,,potent,combination
+Zapp	You're,impressive,piece,captain,Beautiful,deadly,potent,combination
 Leela	don't,mean
 Zapp	I,doubt,I've,seen,captains,sexier,deadlier
 Fry	heard,time,single,handedly,defeated,horde,rampaging,somethings,something,something,system
@@ -113,7 +113,7 @@ Zapp	little,going
 Leela	Captain,Brannigan,really,need,talk,mission
 Zapp	I'm,willing,wave,wave,men,disposal,Right,men
 Crewman	suck
-Leela	We're,hoping,save,animals,Vergon,6,extinction,just,,
+Leela	We're,hoping,save,animals,Vergon,6,extinction,just,
 Zapp	Vergon,6,light,dinner
 Leela	Wait,What's,wrong
 Zapp	Democratic,Order,Planets,prohibits,interfering,undeveloped,worlds,It's,little,rule,known,Brannigan's,Law
@@ -150,7 +150,7 @@ Leela	didn't,realise,coin,a,sewer
 Zapp	studied,abroad
 Leela	Captain
 Zapp	Uh,huh
-Leela	speak,seriously,moment,,
+Leela	speak,seriously,moment,
 Zapp	Uh,huh
 Leela	I'd,like,reconsider,letting,rescue,animals
 Zapp	Mm,hm,like,style,erotic
@@ -189,7 +189,7 @@ Leela	kind,crawling,I'm,doing,away
 Zapp	Leela,you're,obviously,confused,aroused
 Leela	Look,I'm,going,Vergon,6,save,animals,like
 Zapp	ahead,won't,stop
-Leela	Threaten,you,,,Wait
+Leela	Threaten,you,Wait
 Zapp	know,won't,make,halfway,Vergon,6,craving,sets,you'll,come,crawling,taste,sweet,sweet,candy,bam
 Leela	Eurgh
 Zapp	Kif
@@ -214,7 +214,7 @@ Kif	That's,shame,sir
 Zapp	let's,make,time,shall,mind,Just,rub
 Bender	pair,hermaphlamingos
 Leela	Good,That's,species
-Bender	Hey,the,,
+Bender	Hey,the,
 Fry	Where'd
 Leela	Nibbler
 Fry	can't,believe,flew,halfway,galaxy,enjoyed,steam,just,lunch,stupid,animal
@@ -255,7 +255,7 @@ Bender	hell
 Fry	Pew
 Leela	don't,believe,It's,dark,matter
 Bender	guy,just,unloaded,steaming,pile,starship,fuel
-Leela	species,must've,filled,entire,planet,Did,you,cute,little,,,Come,fuel,outta,Bender,pick,engine
+Leela	species,must've,filled,entire,planet,Did,you,cute,little,Come,fuel,outta,Bender,pick,engine
 Leela	animals,survived
 Bender	couple,animals,didn't,die,Leela,got,lucky,That's,successful,mission
 Fry	We're,heroes

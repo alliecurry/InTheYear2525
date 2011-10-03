@@ -51,7 +51,7 @@ Farnsworth	Oh,think,just,stay,friends
 Bender	don't,need,friends,need,sex,change,operation
 Farnsworth	Bender,robot,sex,change,complex,dangerous,procedure,Replacing,testosteroil,Fembot,lubricants,cause,wild,mood,swings,effects,irreversible,let's,started
 Leela	can't
-Amy	slightest,respect,dignity,women,,
+Amy	slightest,respect,dignity,women,
 Bender	Pft
 Farnsworth	I'm,sorry,ladies,Bender,proud,people,Robonia
 Bender	C'mon
@@ -80,7 +80,7 @@ Calculon	Madam,impressed,celebrity
 Coilette	Oh,bet,say,five,Olympic,gold,medal,winning,Fembots
 Calculon	day,forward,shall,possible
 Coilette	Golly
-Calculon	Coilette,presumptuous,,
+Calculon	Coilette,presumptuous,
 Coilette	That's,favourite,kind
 Calculon	honoured,join,dinner
 Coilette	Calculon,you'd,fulfilling,naive,Robonian,farmgirl's,fantasy
@@ -95,7 +95,7 @@ Coilette	kidding,need,lipstick,Ooh,yeah,That's,stuff,Men,love,really,glob
 Leela	don't
 Amy	way
 Coilette	Oh,man,wants,tramp,wonder,girls,aren't,married,tell,men,better,women
-Fry	wants,to,,,mean,tries,uh,Barry,White
+Fry	wants,to,mean,tries,uh,Barry,White
 Coilette	I'll,just,tell,need,commitment,That'll,stick,potato,tailpipe
 Hermes	Good,Lord,man,kind,temporary,woman
 Coilette	Look,don't,just,Can't,girl,enjoy,herself,judged
@@ -158,7 +158,7 @@ Zoidberg	Basically
 Preacherbot	Dearly,beloved,actors,casting,people,looking,play,preacher,welcome,bride,written,vows,pretend,interested
 Coilette	Dearest,Calculon,forever,time,tell,ways,love
 Hedonismbot	Oh
-Calculon	doctor,the,,
+Calculon	doctor,the,
 Zoidberg	came,soon,appears,case,African,hydraulic,fever
 Calculon	Dear,God,illness,TV,character,caught,season,holding,money,It's,fatal
 Coilette	happens,remember,flame,eternal,love,burn,forever
@@ -183,7 +183,7 @@ Coilette	Ow,Ooh,Ow,Oh
 Fry	Bender,hope,taught,lesson,changing,sex,win,gold,medals
 Coilette	truly,romance,Calculon,shown,lot,myself
 Farnsworth	
-Coilette	someway,could,,
+Coilette	someway,could,
 Bender	Drive,Vegas,pick,Flooziebots,void,warranties,night,long
 Fry	Yay,buddy's,home,respect,women,normal
 Leela	kind,hoped,experience,left,little,open,sensitive

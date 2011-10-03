@@ -115,7 +115,7 @@ Bender	Oh,crap
 Farnsworth	you'll,chance,destroy,ball,close,Earth,blowing,cause,garbage,rain,entire,planet,killing,billions
 Bender	Oh,boo,hoo
 Farnsworth	here's,bomb,I've,prepared,activate,you'll,25,minutes,away
-Leela	That's,But,,
+Leela	That's,But,
 Farnsworth	now,there'll,plenty,time,discuss,objections,return
 Leela	Odour,magnitude,8,We're,breaking,Turn,anti,smell,device
 Fry	Hmm,sporty

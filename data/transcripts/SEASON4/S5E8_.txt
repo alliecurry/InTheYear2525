@@ -14,11 +14,11 @@ Leela	got,medals,Good,work,team,really,pulled
 Zoidberg	got,medals
 Fry	I'm,real,sorry,missed,mission,wasn't,needed
 Bender	Nope
-Fry	I'd,I,,
+Fry	I'd,I,
 Bender	Nope
 Fry	Look
 Bender	Nope
-Fry	Bender's,great,,
+Fry	Bender's,great,
 Bender	Nope
 Fry	Listen,Leela,let,make,taking,dinner,tonight
 Leela	Nope,I've,got,date,Chaz
@@ -49,7 +49,7 @@ Fry	Oh,Perfect
 Smitty	Whoa,Smells,like,289,progress
 URL	Failure,scoop,Aw,yeah
 Fry	Wait,I'm,trying,weighs,thousand,suns
-Chaz	Don't,worry,Fry,I'll,pull,strings,,,,can't,tried,juvenile
+Chaz	Don't,worry,Fry,I'll,pull,strings,can't,tried,juvenile
 Leela	Oh,Chaz
 Fry	I'm,worthless,trash
 Trash Can	think,I'm,worthless,Try,catching,garbage,head,raising,kids,dumb,townie
@@ -65,7 +65,7 @@ Nibbler	Welcome,acknowledged,bring,Mighty
 Fry	Eh
 Ken	centuries,centuries,waiting,achieved,fruition
 Fry	Aw,Aren't,fuzzy,wittle,guy
-Ken	Stop,Uh,Mightiness,,
+Ken	Stop,Uh,Mightiness,
 Fry	Mightiness,nut,just,got,kidnapped,bunch,guinea,pigs
 Ken	Does,know
 Nibbler	does,know
@@ -100,7 +100,7 @@ Ken	task,complete,ensure,new,information,arises,way,possible,destroying,universe
 Fry	it's,personal
 Fiona	mission,infiltrate,Infosphere,plant,quantum,interface,bomb,blasting,alternate,universe,return
 Nibbler	outrun,blast,Scooty,Puff,Jr
-Fry	OK,let's,more,,
+Fry	OK,let's,more,
 Fry	Brains
 Ken	Fear,Mighty,missing,brainwave,makes,invisible,long,avoid,intense,thinking
 Fry	Sorry,wasn't,paying,attention
@@ -115,7 +115,7 @@ Nibbler	Roger
 Ken	press,detonator,60,seconds,exciting,escape
 Fry	Hey,wait,brain,knows,everything,right
 Ken	soon,That's,you're,supposed,setting,bomb
-Fry	Yeah,yeah,can't,pass,chance,learn,answers,greatest,questions,time,true,postage,stamp,glue,of,,
+Fry	Yeah,yeah,can't,pass,chance,learn,answers,greatest,questions,time,true,postage,stamp,glue,of,
 Huge Brain	Correct,Toad,mucus
 Ken	There's,time,Activate,bomb
 Fry	Wait,wait,wait,really,killed,dinosaurs
@@ -154,7 +154,7 @@ Nibbler	explain
 Fry	can't,Shut,adorable,trap
 Nibbler	choice,help,life,weighed,entire,universe
 Fry	life
-Computer Voice	Detonation,owner,white,Pontiac,Firebird,,,Oh,mind,Zero
+Computer Voice	Detonation,owner,white,Pontiac,Firebird,Oh,mind,Zero
 Big Brain	Trapped,eternity
 Brain #2	sing,American,Pie
 Fry	ahead,deserve,wish,stupid,racoons,brought,future

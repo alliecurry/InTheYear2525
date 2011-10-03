@@ -18,7 +18,7 @@ Fry	care,care,plenty,just,don't,know,make,stop
 Salesman	word,Thundercougarfalconbird
 Victor	luxurious,seats,stuffed,eagle,dashboard,inlaid,beaks,thousand,eagles,eagles,floorboards
 Amy	That's,awful,lot,eagle
-Victor	Yes,yet,,
+Victor	Yes,yet,
 Amy	What's,wrong
 Victor	just,luxury,edition,eagle,saddens,think,missing
 Amy	Oh,don't,sad,parents,paying,they're,incredibly,rich
@@ -27,7 +27,7 @@ Bender	sir,defaced,national,treasure,demand,restore,buttocks,glory
 Mechanic	Alright,sooner,later,ass,gonna,blow,does,just,pray,you're,moonin',care
 Amy	Smeesh,Leela,car,beautiful,woman,like,needs,Victor,said
 Victor	dog,food,Victor,tonight
-Leela	OK,sticker,says,55000,we'll,high,say,,
+Leela	OK,sticker,says,55000,we'll,high,say,
 Amy	60000
 Victor	Oh,ask,manager
 Leela	Amy,don't,sticker,price
@@ -82,7 +82,7 @@ Farnsworth	hear,wedding,bells
 Fry	
 Farnsworth	Really,Oh,dear
 Zoidberg	You're,lucky,I'd,pay,end,miserable,loneliness,weren't,desperately,poor
-Bender	Wait,mean,people,pay,good,money,romance,Hmm,think,scheme,deviously,clever,I,,
+Bender	Wait,mean,people,pay,good,money,romance,Hmm,think,scheme,deviously,clever,I,
 Judge	$500,time,served
 Bender	Stupid,anti,pimping,laws,pay,man
 Hookerbot	Bender,honey,love
@@ -123,7 +123,7 @@ Amy	Fry,busy,tomorrow,got,tickets,big,ape,fight
 Fry	Jeez,we're,planning,spend,Valentine's,Day,Isn't
 Amy	OK,sure,wanna,Valentine's,Day
 Fry	Oh,sudden,we're,spending,Valentine's,Day
-Amy	just,said,,
+Amy	just,said,
 Fry	That's,Amy,talk,Zoidberg,drive
 Zoidberg	Wahoo
 Fry	Pardon,excuse
@@ -132,7 +132,7 @@ Fry	Amy,know,like,chocolate,start,tired,it,wants,hang
 Amy	Huh,don't,like,chocolate
 Fry	Look,chocolate,just,let,finish
 Zoidberg	Vroom,vroom,winner,big,car,race,Hot,Rod,Zoidberg
-Fry	Amy,I'm,trying,say,think,maybe,stop,,
+Fry	Amy,I'm,trying,say,think,maybe,stop,
 Zoidberg	Uh,oh,drive
 Zoidberg	Fry,alright
 Fry	Ow,head,killing,happened,anybody,hurt
@@ -204,7 +204,7 @@ Bender	rose,lady,bucks,pop
 Gary	I'll
 Fry	Oh,yeah,want
 Bender	bucks
-Fry	just,said,,
+Fry	just,said,
 Bender	Demand,suddenly,skyrocketed,saw
 Bender	Leela,meet,future,husband,Sal
 Sal	Nice,eyeball,eyeball
@@ -214,7 +214,7 @@ Sal	Eh,I'll,chances
 Zapp	Cheers
 Woman	Cheers
 Petunia	tell,prospects,good,gambler
-Fry	ma'am,I,,
+Fry	ma'am,I,
 Petunia	What's,game,Bingo,Keno,Wait,minute,don't,body
 Fry	control,arm
 Petunia	Slots,player,huh,Sorry,think,better

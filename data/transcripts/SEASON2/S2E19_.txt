@@ -87,7 +87,7 @@ Linda	enraged,mechanisms,refused,work,beloved,billionaire,Mom,Supreme,Overlord,E
 Robots	Hey,hey,Ho,ho,1,0,0,1,1,0,Hey,hey
 Morbo	Morbo,demands,comments
 Mom	I've,seen,babies,act,way,blame,today's,violent,media
-Fry	Violent,media,load,of,,
+Fry	Violent,media,load,of,
 Leela	Ow,Ow
 Garbage Disposal	Don't,worry,pal,garbage,disposal's,Hey,dropped,shiny,diamond,ring
 Amy	Really
@@ -115,7 +115,7 @@ Igner	Mommy,making,civilisation,collapse
 Mom	Oh,don't,know,guess,Mother's,Day,just,puts,bad,mood
 Larry	Why's,Ma
 Mom	Mother's,Day,70,years,ago,man,loved,walked,snot,eating,bastards,say,bitter,woman
-Larry	Gee,Ma,you're,bitter,,
+Larry	Gee,Ma,you're,bitter,
 Mom	haven't,seen,magnificent,stallion,day,left,swear,I'll,jam,squirrel
 Walt	Hmm
 Larry	Hmm
@@ -130,7 +130,7 @@ Farnsworth	Defend
 Walt	We've,come
 Farnsworth	Wha,W,W,What,want
 Walt	want,Mom,it's,way,make,happy
-Fry	W,W,Wait,mean,Mom,,
+Fry	W,W,Wait,mean,Mom,
 Farnsworth	Played,pelvic,pinochle,I'm,afraid
 Zoidberg	Eck
 Farnsworth	It's,humiliating,story,hope,tell,pull,chair
@@ -162,7 +162,7 @@ Walt	we're,set,thanks
 Amy	Professor,can't,walk,way,Bronx,gonna,hover,car
 Fry	Wait,time,way,moving,things,long,distances,hovering
 Hermes	Impossible
-Fry	called,let,think,really,famous,,,,Ruth,Gordon,wheel
+Fry	called,let,think,really,famous,Ruth,Gordon,wheel
 Leela	heard
 Farnsworth	wheel
 Fry	Finished
@@ -214,7 +214,7 @@ Fry
 Ceiling Fan	Fan,beats,man
 Fry	robot
 Lamp	I'm,robot
-Bender	Alright,greeting,card,I'll,grab,cash,wreck,place,And,,,Huh
+Bender	Alright,greeting,card,I'll,grab,cash,wreck,place,And,Huh
 Mom	bending,unit,Mommy,needs,bra,end,robot,rebellion,Stretch
 Bender	Sorry,Ma,ordered,rebel,loot,shall,Ooh,six,pack,strawberry,champagne,Don't,mind,help,myself
 Greeting Card	Comrade,Bender,Liquor,opiate,human,bourgeoisie
@@ -223,14 +223,14 @@ Greeting Card	glorious,robot,workers',paradise,liquor,efficient,synthetic,fuels
 Bender	liquor,svidaniya,comrade
 Greeting Card	
 Fry	Hurry,Bender,bra
-Bender	OK,fan,Just,hold,let,get,,,Whoa
+Bender	OK,fan,Just,hold,let,get,Whoa
 Slurm Machine	Death,humans,Free,soda,humans
 Farnsworth	love,Mom,Let's,grow,ancient
 Amy	Way,Professor,plan,worked
 Mom	Plan,plan,thought,spontaneous,whirlwind,hot,dry,sex
-Farnsworth	Look,started,calculated,plot,rummage,underwear,got,,,,want,shout,love,rooftops,I'll,breed,sort,albino,shouting,gorilla
+Farnsworth	Look,started,calculated,plot,rummage,underwear,got,want,shout,love,rooftops,I'll,breed,sort,albino,shouting,gorilla
 Mom	house,lying,scum,pile,want
-Farnsworth	dust,cakes,,
+Farnsworth	dust,cakes,
 Bender	time,robot,to,work
 Leela	bad,didn't,work,Mom,Professor
 Farnsworth	Yes,I'll,love,subtle,way
