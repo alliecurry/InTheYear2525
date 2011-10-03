@@ -1,0 +1,175 @@
+3	20	Godfellas	4	8	20020317	52
+Leela	Space,pirates
+Fry	Space,pirates
+Leela	know,Pirates,space
+Pirate	Avast,mateys
+Pirate	Electronically,transfer,space,doubloons,afore,send,thee,Davey,Jarg's,locker
+Bender	Hey,kids,I'm,trying,nap
+Fry	Come,Come
+Bender	Come,I've,sleep,baby
+Leela	Fry,battlestations,torpedo,number
+Fry	Firing,torpedo,number
+Bender	Huh
+Leela	That's,torpedo,That's,torpedo
+Bender	Damn,Fry,Lee,,,,,la
+Pirate	late,realise,children,real,treasures
+Bender	Help,Mechanical,man,overboard
+Fry	Leela
+Leela	It's,use,going,speed,fired,he's,going,faster
+Fry	mean,catch,rub,engine,cheetah,blood
+Leela	don't,know,say,Fry,Bender,doomed,drift,space,forever
+Fry	wanted,drift,forever,American,Southwest
+Bender	I'm,going,fast,I've,gotta,lose,momentum,Damn
+Bender	I'm,million,years,people,know,score,fun,eons,loneliness
+Bender	Huh
+Shrimpkin Priest	Fellow,Shrimpkins,behold,hath,taken,unto,breast
+Bender	Holy,frijoles
+Shrimpkin Priest	bow,great,Metal,Lord
+Bender	Worshippers,ought,liven,endless,tragic,voyage
+Shrimpkin Priest	hail,Metal,Lord
+Shrimpkins	hailed
+Bender	Hmm,peewees,think,I'm,God,huh,Hard,blame,'em,Metal,Lord
+Malachi	called,Malachi,Lord,means,um,really,loves,Metal,Lord
+Bender	Listen,Malachi,Time,religious,donation,Hand,wallet
+Malachi	Lord,poor,simple,folk
+Bender	Poor,Oh,crap
+Malachi	Pity,richened,love,family
+Malachi's Wife	art,thou,doing,Malachi,Jr
+Malachi Jr	I'm,practising,hug,Daddy,gets,God,Mmm,Mmm
+Bender	Eck,Gag,unto,spoon,Malachi,it's,high,time,laid,commandments,got,chisel,Number
+Malachi	Behold,Commandment
+Bender	Make,double
+Fry	Professor
+Farnsworth	I'm,afraid,Smellescope,isn't,powerful,Bender's,odour,mild,it's,overpowered,local,sources
+Zoidberg	Hooray,People,paying,attention
+Amy	Fry,brought,cheer
+Hermes	Helper,he's,eager,new,best,friend
+Helper	Hello,chum,understand,miss,buddy,pudding,pop
+Fry	thanks,don't,,
+Helper	wants,to,amusement,park
+Fry	guess,sounds,OK
+Helper	good,time,Hey,heard,friend,Bender
+Fry	Really
+Helper	just,thought,enjoy,moment
+Bender	Ooh,Microbrewed,guys,did,alright,think,I'll,make,countenance,shine,Malachi,good,work,There's,slowing,Metal,Lord,tonight
+Malachi	Yes,tonight,kind,special
+Bender	Wait,second,Did,rip,arm,joke
+Malachi	Nay,Like,followers,maimed,building,Great,Brewery,course,liquor,industry,attracted,organised,crime
+Bender	It's,fault,Malachi,tell,thy,people,Lord,moved,plight
+Malachi's Wife	Malachi,Jr
+Malachi Jr	Daddy,can't,hold,longer,arms,tired,hugging
+Malachi	Save,Save,son,oh,Metal,Lord
+Bender	looks,like,job,God,the,,,Malachi,manner,deal,chanting
+Malachi	saw,save,son,praying,miracles
+Bender	want
+Malachi	people,village,pray,wealth
+Bender	Um,practice,miracle,Who's
+Malachi	farmers,pray,sunlight,barley,make,refreshing,beer,today's,God
+Bender	Let,light,Um,you're,writing,Bible,want,omit,miracle
+Fry	decided,let,can't,believe,you're,gone,won't,can't,reach,physically,I'll,just,try,desperate,crazy
+Fry	that's,story,Father,Changstein,el,Gamahl,religion,help,friend
+Changstein el Gamahl	join,prayer
+Fry	Uh,huh,useful
+Changstein el Gamahl	
+Gypsy	Sure,hold,sance,channel,friend,problem,Insert,coin,friend,Bonder
+Fry	Bonder,really
+Gypsy	Yes,fine,gypsy,$10
+Fry	Wait,minute,Bender's,isn't,Bonder,it's,Bender,You're,fraud
+Gypsy	Look,want,false,hope
+Fry	don't,real,hope
+Gypsy	way,heard,Monks,Deshuba
+Fry	I've,heard
+Gypsy	ancient,order,believes,God,exists,depths,space,built,universe's,powerful,radio,telescope,high,Himalayas,search
+Fry	think,they'd,let,use,look,Bender
+Gypsy	psychic,mean,yes,Yes,I'm,I'm,sure,Yes
+Malachi	Oh,Metal,Lord,hear,prayer
+Bender	Yes,Malachi,time
+Malachi	Lord,infidels,longer,believe,say,prayers,unheeded
+Bender	course,they're,unheeded,supposed,hear,prayers,coming,ass
+Malachi	talk,war,faithful,beseech,thee,Rise,Smite,deserves
+Bender	Malachi,time,interfere,make,things,worse,You're,best,solving,problems
+Malachi	But,But,Metal,Lord
+Bender	nay,doesn't,thou,understand
+Fry	Sir,I'm,outfitting,expedition,monastery,high,Himalayas,I'll,need,long,sleeved,coat
+Leela	Look,miss,Bender,half,you,can't,bring,way,It's,hopeless
+Fry	can't,hope,just,it's,hopeless,gotta,hope,cover,ears,blah,blah,blah,blah,blah,blah,blah,blah,I'd,like,pack,mule
+Salesman	sir
+Leela	obviously,won't,listen,reason,guess,I'll,listen,idiotic,ness,come,we'll,need,sherpa,guide
+Bender	that's,Bible,doesn't,disappoint,page,Looks,like,society's,running,pretty,meddling,,,Atomic,bombs,Oh,unbelievers,backside,nuclear,pile
+Malachi	Fear,Lord,shall,soon
+Bender	You're,maximum,level
+Malachi	solve,problems,commanded,time,come,convert,unbelievers
+Bender	Convert
+Malachi	radioactive,vapour
+Malachi Jr	Look,Daddy,I'm,hugging,God,Mmm,Mmm,Maybe,hug,real,hard,he'll,save,from,,
+Bender	Ooh,tickles
+Bender	Hello,alive,porno,theatre,They're,dead,dead,known,playing,God,terrible,consequences
+Leela	Fry,drop,dead,exhaustion,make,sure,body,freezes,dignified,position,huddled,warmth,crap
+Namgyal	Behold,Monastery,Deshuba,leave,holy,enter
+Fry	OK
+Leela	Looks,rickety,We'd,better,test
+Female Voice	Welcome,monastery,stand,to,let,faster,pilgrims
+Bender	Hey,galaxy's,signalling,binary,gotta,signal,know,binary,ask,bathroom,speak,English
+Galaxy	
+Bender	kind,galactic
+Galaxy	Possible,user,friendly,good,chum
+Bender	built
+Galaxy	
+Bender	Oh,God,God
+God	Possible,feel,compassion,living,things,good,chum
+Bender	God,think,binary,Unless,you're,God,remains,computerised,space,probe,collided,God
+God	probable
+Monk #1	member,brotherhood,sits,controls,hour,day,scanning,heavens,God
+Monk #2	No,wait
+Leela	long
+Monk #1	700,years,We've,examined,one,ten,millionth,sky,Almighty,takes,till,end,time
+Fry	
+Monk #1	utter,unto,short,prayer,telescope,amplifying,transmitter
+Leela	Sort,like,giant,karaoke,machine
+Monk #1	really,like,giant,karaoke,machine
+Leela	really
+Fry	Hmm,Finding,God,That,That's,important,yeah,know,treat,let,use,telescope,lost,friend,Bender
+Monk #1	don't,know,say,absolutely,loss,tragedy,work,,
+Fry	Aw,come,guys,forever,look,God,I'm,asking,measly,lifetime,friend
+Monk #2	speaks,love,friend,love,heart,God
+Monk #1	Oh,convenient,theory,God,doesn't,require,looking,telescope,work
+Fry	telescope,anybody's,I'm,using,permission
+Leela	Hi,yah,You're,order,famous,martial,arts,I've,met,holy,man,couldn't,clobber
+Monk #1	Actually,practise,martial,arts,form,meditation,strictly,non,violent,sect
+Leela	Oh,laundry,room,I'll,kick,butts
+Monk #3	worst,crazy,sect,I've
+Bender	know,I'm,gonna
+God	Yes
+Bender	different
+God	don't,know
+Bender	Cool,Cool,bet,lot,people,pray,huh
+God	Yes,asking,just,sorta,tune
+Bender	Y'know,God
+God	Yes,saw,doing,died
+Bender	awful,tried,helping,tried,helping,end,couldn't,good,think,did,wrong
+God	Right,wrong,just,words,matters
+Bender	Yeah,know,that's,asked,did,,,Forget
+God	Bender,God,isn't,easy,people,dependent,you,lose,hope,use,light,touch,like,safecracker,pickpocket
+Bender	guy,burns,bar,insurance,money
+God	Yes,make,look,like,electrical,thing,things,right,people,won't,sure,you've
+Bender	Does,mean,wouldn't,send,Earth,prayed
+God	Earth,way
+Bender	don't,know
+Fry	Bender,Bender
+Monk #2	Let,cooked,shoes,dryer,ate,we're,bored
+Fry	Hello,seen,Bender
+HG Blob	Quit,asking
+Leela	Fry,it's,days,stay,rest,life,virtually,chance,finding,It's,time
+Fry	wish,Bender
+God	Huh
+Bender	Huh,Wha,say
+God	no,long,Remember,talked
+Bender	Hot,hot,hot,hot
+Fry	Bender,It's,miracle,Ow
+Leela	wide,margin,likely,thing,happened
+Bender	Guys,you'll,believe,happened,God,met,God
+Fry	climbed,mountain,locked,monks
+Leela	Oh,monks,forgot,let,laundry,room
+Fry	mean,they're,monks,I'm,sure,God,let,them,shoes,eat
+Bender	Fat,chance,can't,count,God,jack,pretty,told,himself,come,don't,save,monks
+God	things,right,people,won't,sure,you've

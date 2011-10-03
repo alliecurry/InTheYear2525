@@ -1,0 +1,168 @@
+2	18	The Honking	3	1	20001105	31
+Doctorbot	Notify,survivors
+Bender	B,E,N,D,E,R,Be,ender,Sayin',B,E,N,D,ER,,
+Hermes	Mail,Amy,here's,designer,lingerie,catalogue,Fry,Sadie's,Bra,Parade,Leela,Bulk,Underpants,Outlet
+Leela	buy,pound,underwear,you're,list,forever
+Hermes	Bender,Uh,oh,black,bordered,envelope
+Amy	Oh,know,must've,died
+Bender	hope,enemies,guys,suck,Oh,uncle,Vladimir
+Fry	Oh,I'm,sorry,Bender,When's,funeral
+Bender	Tomorrow,family,castle,Followed,reading,C'mon,it'll,fun
+Bender	Uh,pardon,good,simpleton,yon,castle
+Robot #1	say,unholy,things,happen
+Robot #2	example,say
+Farnsworth	Fuf,Superstitious,robot,mumbo,jumbo
+Robot #2	Mumbo,Jumbo,modern,science,closer,understanding,mystery,robot,walks,talks
+Farnsworth	Yes,idiot,circuit,diagram,right,inside,case
+Robot #2	choose,believe,programmed,believe
+Robot #2	far
+Preacherbot	commend,Vladimir's,remains,earth,Filings,filings,rust,rust
+Execu Tor	lazy,spoiled,son,Tandy,learned,value,dollar,leave,entire,$10,million,fortune
+Tandy	lot
+Execu Tor	loving,nephew,Bender,assuming,he's,responsible,death,leave,castle
+Bender	Yes,Let's,stay,tonight
+Execu Tor	condition,spend,night,walls
+Bender	Oh,man,there's,catch
+Bender	Ah,got,good,vibe,place,Nice,long,dinner,table,quiet,well,behaved,spiders,graveyard,adjacent,Yep,It's,gonna,be,,
+Leela	
+Bender	painting,eyes,watching
+Farnsworth	Hmm,motor,eye,sensors,attached,motion,detectors
+Bender	does,butt,don't,frame,wall,Although,,,What's
+Zoidberg	don't,know,it's,infectious
+Bender	doubt,place,haunted
+Hermes	Don't,silly,mon,ghost,died,200,years,ago
+Bender	human,ghost,robot,ghosts
+Leela	does,mean
+Bender	It's,just,gibberish,1010011010
+Bender	Uncle,Vladimir
+Vladimir Ghost	Come,Bender,You'll,like,dead
+Bender	That's,said,alive
+Robot Ghosts	Join,Join,Join,Bender
+Farnsworth	Just,suspected,robots,buried,improperly,shielded,coffins,programming,leaked,castles,wiring,old,abandoned,modem,allowing,project,holograms
+Hermes	course,obvious
+Farnsworth	Yes,sequence,words,said,perfect,sense,really,tell,Bender,there's,afraid
+Bender	Nooo
+Fry	Bender,wake,He's,OK,Quick,does,liquor
+Leela	Bender,happened
+Bender	Somebody,tried,run,normal,hover,car,crept,ground,round,rubber,feet,like,wolf
+Fry	Poor,Bender,you're,seeing,things,You've,drinking,too,little,forget,works,you,haven't,drunk,exactly,right
+Amy	Maybe,Look,tracks
+Leela	think,Bender,telling,truth
+Zoidberg	Bender,look,awful,prescribe,make,up,just,happens,Mary,Kay,sample,case
+Bender	Ah,just,need,sleep,nightmares,night,cars,running,people
+Zoidberg	people,dream,fresh,new,look,Mary,Kay,make,dreams,come,true
+Leela	Look,rubbery,tracks,right,New,New,York,hit,and,run,robot,porno,theatre
+Bender	Robot,porno,theatre,general,area,night,ran,moors,must've,followed
+Hermes	Bender,mon,one's,trying,run,Stop,big,hallucinating,baby
+Bender	Yeah,big,hallucinating,baby,scared
+Vandal #1	don't,know,like,Smashing,cars,smashing,faces
+Vandal #2	lucky,don't,gotta,decide,tonight,come,got,church,tomorrow,Did,hear
+Vandal #1	Ah,probably,just,golden,marmoset
+Vandal #2	don't,sound,like,golden,marmoset,heard
+Vandal #1	
+Vandal #2	what're,wearing,tomorrow
+Bender	Where,the,,,Transmission,fluid,happened
+Sal	Gets,outta,yous,lousy,bum
+Bender	I'm,scared
+Sal	We're,scared,it's,human,condition,thinks,tough,guy,facade,beat
+Bender	passed,midnight,earlier,usual,woke,chest,cabinet
+Fry	Aw,relax,buddy,probably,just,shooting,big,fuzzy,craps
+Bender	think,hurt,Oh,Lord,I'm,verge,nervous,meltdown
+Fry	Jeez,Bender,you're,scaring,You're,going,wacko
+Bender	You're,right,need,professional,help,damn,expense
+Bender	Damn,expense
+Gypsy	friend,worry,nightmare,ish,life,unremitting,horror
+Bender	Phew
+Gypsy	you,were,car
+Bender	were,car
+Gypsy	car,ran,moors,were,car,beamed,virus,demonic,headlights
+Leela	That's,crazy
+Gypsy	Yes,crazy,true,midnight,clock,resets,zero,hardware,reconfigures,murderous,four,wheeled,car
+Bender	can't,running,people,I'm,famous,away,Can't,help
+Gypsy	Yes,willing,pay,terrible,price
+Bender	Yeah,yeah,yeah
+Gypsy	Follow
+Gypsy	According,ancient,read,me,file,hope,destroy,original,were,car
+Bender	I'm
+Gypsy	death,throes,dread,car,beam,virus's,uninstall,program,ridding,curse
+Bender	die
+Gypsy	said,Sure,die,want,die
+Bender	wanna,live,There's,things,don't
+Gypsy	live,forever,cursed,night,attacks,gruesome,dark,night,doomed,kill,dearest,friend
+Fry	wouldn't,wanna,right
+Gypsy	Uh,just,,,Ah,forget,I'll,just,sleep
+Leela	rampaging,tonight
+Bender	Wouldn't,make,sense,weld,wall
+Leela	Just,relax,Bender,Tomorrow,we'll,pry,nice,breakfast,hunt,slaughter,ancient,evil
+Fry	It'll,rich,day
+Leela	goodnight,I'm,gonna,make,dinners,month,freeze
+Fry	Bender
+Leela	Fry,stay
+Fry	jerk,thought,best,friend,kind,two,timing,kill,mobile
+Fry	can't,believe,Bender,supposed,murder,closest,friend,thought,went,straight,didn't,try,second,degree,murder
+Leela	help,think,Bender,crushed,foot
+Fry	Stop,rubbing
+Bender	Oh,God,Fry,I'm,glad,didn't,hurt,did
+Fry	physically,don't,ask,new,best,friend,Leela
+Bender	tried,run
+Leela	sweet,Bender
+Bender	Fry,doesn't,mean,love
+Fry	Words,sweet,sweet,words,turn,bitter,orange,wax,ears
+Leela	feelings,we're,gonna,cure,Bender,we've,got,to,castle,hunt,original,were,car
+Fry	Yeah,yeah,yeah
+Leela	Cursed,got
+Bender	
+Leela	tracks,lead
+Fry	Thanks,eagle,eye
+Leela	it's,daylight,robot,form,careful,robots,stupid,violent
+Bender	wish,stupid,violent,we'd,what's,I'd,pound,till,,
+Yokelbot	ye,houses,ye,ignorant,villagers
+Leela	ignorant,villagers,we're,sophisticated,New,New,Yorkers,Whup,butt
+Yokelbot	Stop,ye,doing
+Bender	We're,whaling,original,were,car,you,jerk
+Yokelbot	Ye,think
+Bender	S
+Yokelbot	Nee,mean,given,curse,year,ago,bird,watching,trip,Arctic
+Yokelbot	attacked,vicious,motorised,sled,natives,called,Abominable,Snowmobile
+Inuitbot	Yes,it's,true,ran,bird,watching,jerk,best,friend,aromatherapy,school
+Fry	best,friend,liked,smell,things
+Inuitbot	Alas,I'm,afraid,I'm,original,were,car,received,curse,taking,learning,annex,class,famous,robot,actor
+Inuitbot	know,Calculon
+Calculon	Oh,fate,cruel,boundless,acting,skills,avail,sword,slay,wretched,curse
+Bender	Let's,kick
+Calculon	wait,let,explain,began,fateful,night,thousand,years,ago
+Bender	Whoa,whoa,whoa,whoa,You're,thousand,years,old,bio,says,you're,27
+Calculon	Lies,change,identity,upgrade,appearance,decades,avoid,suspicion,history's,great,acting,robots,Acting,Unit,08,Thespo,mat,David,Duchovny
+Fry	Look,original,were,car
+Calculon	nearing,end,search,attacked,original,were,car
+Bender	MacButt
+Calculon	year,2019,just,lowly,robot,arm
+Calculon	savage,intelligent,military,vehicle,built,evil,parts,evil,cars,world,steering,wheel,Hitler's,staff,car,left,turn,signal,Charles,Manson's,VW,windshield,wipers,car,played,Knight,Rider
+Fry	Knight,Rider,wasn't,evil
+Calculon	windshield,wipers,didn't,come
+Calculon	pure,evil
+Leela	happened,Project,Satan
+Calculon	It's,Paris,likely
+Calculon	abandoned,automotive,lab
+Leela	guys,distract,were,car,I'll,kill,plugging,exhaust,pipe,silver,potato
+Bender	Psst
+Leela	looks,unhappy,Excuse,Project,Satan,Don't,afraid,know
+Project Satan	
+Leela	like,misery
+Project Satan	Misery,misery,love,killing,people,Squishing,till,organs,squirt,like,chunky,mustard
+Bender	Look,loves,killing,people,don't,wanna,hurt,friends
+Leela	Oh,It's,midnight
+Bender	Hey,starting,feel,pretty,good
+Leela	Fry,distract
+Fry	Hey,Project,Satan,I'm,blind,pedestrian,20,points
+Leela	Oh,There's,exhaust,pipe
+Project Satan	That's,right,Thanks,Ed,Begley,Jr's,electric,motor,evil,propulsion,conceived,whichever,want
+Bender	Oh,boy,feel,like,car,candy,store
+Fry	tight,tight
+Leela	Whoa
+Bender	Uh,oh
+Leela	Bender,you're,cured,happened,Fry
+Bender	must've,killed,He's,best,friend,killed,felt,inside
+Fry	Bender,I'm,alive,Here's
+Bender	Hey,that's,beer,bastard,I'll,kill
+Fry	I'll,kill,buddy,I'll,kill

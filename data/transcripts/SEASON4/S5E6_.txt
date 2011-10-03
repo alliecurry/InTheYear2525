@@ -1,0 +1,226 @@
+4	4	Less than Hero	5	6	20030302	58
+SewerCom Operator	connected,SewerCom,Reach,touch,sewers
+Munda	Look,Morris,it's,Leela,calling
+Leela	Hi,Mom,Hi,Dad,Ready,big,trip,surface
+Morris	We're,excited,honey,don't,wanna,embarrass,mean,mother,basically,monsters
+Leela	Dad,relax,mutant
+Munda	adorable,little,bag,wear,head,sale
+Leela	one's,wearing,adorable,head,listen,ashamed,parents,I'll,weekend
+Leela	Hey,guess,just,got,videophone
+Bender	
+Leela	parents,They're,coming,sewers,visit,Sunday
+Amy	rocket,parents,mutants,It's,illegal,come,ground,'cause,they're,inferior,genetic,scum,Uh,present,company,excluded,course
+Leela	I'm,getting,special,one,day,surface,permit,Citihall
+Hermes	Ooh,you're,pick,licence,kill
+Leela	Sure,Bare,hands,weapon
+Hermes	Uh,does,piano,wire,count
+Farnsworth	Good,news,Swedish,robot,Pi,kea,super,collider,ordered
+πkea Robot	Enjoy,affordable,Swedish,crap
+Fry	Let's,tools,we'll,need,Uh,huh,Uh,huh,Uh,huh,Alright,we're,set
+Bender	like,rustic,wholesomeness,working,one's,hand
+Bender	Ah,Finished,missing,pieces
+Fry	Swedes,sure,know,need
+Leela	Man,I'm,sore,feel,like,just,went,rounds,Mighty,Thor
+Fry	feel,like,mauled,Jesus
+Zoidberg	I've,got,just,thing,Genuine,miracle,cream,bought,travelling,salesman,Come,come,said,Step,right,sounds,good,true,thought,said,looked,like,smart,young,man,deal,enquired,hours,later,gone,60,dollars,miracle,cream,,
+Farnsworth	Bad,news,super,collider,super,exploded,need,exchange,wobbly,CD,rack,rancid,meatballs
+Man #1	Excuse,hi,minute,live,Jersey,City,car,broke,need,Aunt's,real,sick,needs,medicine,need,money,bus,I'm,mugging,Hand,wallets
+Leela	don't,believe,story,second
+Man #1	doesn't,matter,I'm,mugging
+Fry	There's,bus,Jersey,City
+Man #1	wallets,robot'll,shoot
+Andrew	Don't,make,hurt
+Fry	I'm,scared,pocket,I'll,just,pants
+Man #1	Hey,don't,like,I'm,seeing,Andrew,Andrew,the,,,Laser,proof,shirts,huh,I'll
+Leela	Huh,Hey,Quit,Hi,yah
+Man #1	Foiled,years,planning
+Andrew	You're,outta,game
+Leela	did,manage,survive,gave,strange,powers
+Fry	Maybe,we're,wearing,magic,rings,they're,invisible,rings,don't,realise,can't,feel,rings
+Leela	Fry,shut,look,cause,superpowers,humans
+Fry	Wow,superpowers,drug,just,rub,skin,You'd,think,it'd,freebase
+Leela	Let's,powers,Super,strength
+Fry	Yup
+Leela	Uh,huh,Lickety,speed
+Fry	Check
+Leela	Yes,sir,Ability,command,loyalty,sea,creatures
+Fry	Hey,Zoidberg
+Zoidberg	Screw
+Leela	Ain't,got
+Fry	Nope
+Leela	Wow,Superpowers,I'll,able,pack,day,twice,humdrum,activities
+Fry	Leela,think,you're,missing,big,picture,kid,biggest,fantasy
+Leela	parents
+Fry	correct,answer,superhero,superpowers,we're,Americans,chance
+Leela	Hmm,looking,way,serve,community,incorporates,violence,Let's
+Fry	You'll,barely,regret
+Bender	Hey,friend,said,mugged,today,superpowers
+Leela	It's,true,Thanks,funky,fresh,cream
+Fry	Leela,forming,awesome,crime,fighting,duo
+Bender	Wow,Crime,fighting,Cool,say,you're,duo,Yeah,duos,good,course,they're,little,short,handed,humans,you'd,think,there'd,robot,balance,things,costumes,use,guess,I'll,just,throw,away
+Leela	We'd,love,team,Bender,aren't,supply,crime
+Fry	Plus,cream,won't,superpowers,You're,robot
+Bender	I'm,super,strong,arms,got,going
+Leela	Listen,New,New,York,There's,new,group,superheroes,town,we're,,
+Hattie	Quiet,It's,4am,just,fell,asleep,time,30,years
+Leela	Sorry,new,era,justice,begun
+Hattie	
+Narrator	Attention,crooks,lowlifes,lawbreakers,favour,crawl,filthy,tenements,human,cockroaches,ugly,face,punched,custard,New,Justice,Team
+Fry	Captain,Yesterday
+Leela	Clobberella
+Bender	Superking,best
+Fry	Wow
+Song	go,New,Justice,Team
+Song	team
+Song	Who's,newest,Justice,Team
+Song	Captain,Yesterday,fast
+Song	Captain,Yesterday
+Song	Superking,powers,king
+Song	Clobberella,beats
+Song	Clobberella
+Song	Citizens,fear
+Song	Miracle,cream
+Song	It's,effects,wear,sure
+Bender	Ta,da
+Woman	Captain,Yesterday,skintight,high,waters,incredibly,sexy,Let's
+Fry	Sure,I'm,listed,phone,book,reveal,real,home,address,copy,birth,certificate,,
+Leela	crazy,secret,identities,secret
+Fry	everybody
+Leela	Especially,everybody
+Fry	reasons
+Leela	superheroes,cause,lot,collateral,damage,don't,wanna,butts,sued
+Fry	guess
+Leela	identities,crook,city,God,forbid,loved,ones
+Bender	Superking,need,loved,ones,ya,doin',kid
+Poopenmeyer	one,day,mutant,surface,passes
+Leela	Thank,Mayor,Poopenmeyer
+Poopenmeyer	Mayor,What's,Horrible,crime,works,Ruthless,villain,Citizens,danger,That's,fantastic,news,summon,New,Justice,Team
+Leela	Sh
+Poopenmeyer	Uh,they're,usually
+Leela	long,touch
+Poopenmeyer	Wait,stay,meet,superheroes,There's,it'll,perfect,clown,daring,crime,stoppers
+Leela	Oh,completely,forgot,left,apartment
+Bender	Uh,I'm,late,LSAT's
+Fry	can't,life,anymore
+Poopenmeyer	Clobberella,Captain,Yesterday,liege,You're,just,time,We've,received,tip,Museum,Natural,History,robbed,tomorrow,exactly,9am,target,priceless,Quantum,Gemerald
+Fry	Who's,perp
+Poopenmeyer	dangerous,villain,known,Zookeeper,commits,crimes,aided,pack,highly,trained,animals
+Fry	Pack,highly,Got
+Poopenmeyer	crew,includes,badger,troubled,past,left,lose,elephant,forgets,,,,kill,seldom,used,crab,named,Lucky,aka,Citizen,Snips
+Leela	count,Mr,Mayor,Justice,away
+Bender	Hold,elevator
+Bender	We're
+Fry	Uh,Leela,gonna,meet,folks,tomorrow,We've,scheduled,Zookeeper,9am,foiling,museum
+Leela	problem,I've,cleverly,arranged,meet,parents,right,museum,10
+Bender	9,10,big,fat,hen,name's,Bender
+Leela	can't,believe,Zookeeper,late,heist,It's,just,rude,Total,hell,It's,10,I'm,supposed,meet,parents,I'm,secret,costume
+Munda	Leela,think,forgot
+Morris	Relax,I'm,sure,she's,just,ashamed
+Security Guard	Yo,Freakjobs,Hit,nearest,manhole,pronto,like
+Morris	passes,allow,mayor,himself
+Security Guard	dunno,heard,mayor
+Randy	Zookeeper
+Zookeeper	Sorry,I'm,late,Long,story,everybody,hit,deck,I'm,cutting,entire,line,stealing,exhibit
+Leela	You're,stealing,hit,deck
+Zookeeper	Ah,superheroes,say,superzeroes
+Fry	uncalled
+Zookeeper	Animals,attack
+Tour Guide	feed,animals
+Bender	You're,going,friend
+Roosevelt	Man,boxing,kangaroo,peculiar,spectacle,kangaroo,boxing,robot,I'm,afraid,you've,lost,Citizen,Snips
+Zookeeper	Nice,job,Fingers
+Munda	I'm,scared,confused,think,we've,wandered,off,Broadway,play
+Morris	way,people
+Zookeeper	Later,asks,got,away,tell,right
+Leela	Forget,Zookeeper,You're,going,captivity
+Zookeeper	Fool,quip,putting,bars,far,delicious,catch
+Leela	Fry,can't,fall,fast
+Bender	got,got,don't,got
+Roosevelt	You've,saved,Gemerald
+Fry	Zookeeper,escaped,proving,deadliest,animal,Zookeeper
+Bender	anytime
+Leela	Oh,parents,leaving,I've,gotta,change,street,Leela
+Photographer #1	It's,New,Justice,Team
+Photographer #2	photos
+Poopenmeyer	Thank,mysterious,heroes,value,Gemerald,saved,slightly,greater,cost,damage,caused,museum,net,gain,great,city
+Munda	It's,good,Leela,doesn't,love,She'll,sad,die
+Leela	Mom,Dad,showed,got,audio,tour,Treasures,Liberace's,Tomb
+Morris	Sweetie,it's,OK,don't,apologise,standing,visit,surface,we'll
+Leela	wanna,tell,didn't,can't,Just,believe,good,reason,I'm,sorry,disappointed
+Munda	Leela,disappoint
+Morris	We're,proud,you're,baby,girl
+Leela	Oh,can't,Mom,Dad,I'm,Clobberella
+Morris	Galloping,gators
+Munda	You're,superhero,that's,wonderful,did,make,costume,revealing
+Morris	Look,Proud,dad,superhero,print,T,shirts,F,shirts,friends,arms
+Leela	listen,It's,important,tell,circumstance
+Morris	I've
+Leela	Dad,drink
+Morris	Alright,sucker,sealed
+Leela	fact,shouldn't,wearing,brisk,dressed,layers
+Munda	That's,girl
+Morris	uh,daughter's,Clobberella
+Raoul	Leela,Clobberella
+Leg Mutant	You're,pulling
+Morris	Sh,sock,It's,big,secret,That's,I'm,telling
+Big Eared Mutant	Oh,God,guy's,daughter,Clobberella,don't,tell
+Big Mouthed Mutant	Gotcha
+Zookeeper	Greetings,superheroes,Remember
+Farnsworth	don't,remember,buddy,you're,looker
+Leela	Uh,Professor,isn't,time,nap
+Farnsworth	Yes,damnit
+Leela	Zookeeper,did,know,real,identities
+Zookeeper	Let's,just,say,little,bird,told
+Parrot	Leela,told,parents,Leela's,parents,blabbed
+Fry	Leela,person,parrot,mimicking,telling,truth,proxy
+Leela	Yes,parents,hurt,couldn't,help,distinctly,told,tell
+Bender	amused
+Zookeeper	here's,interesting
+Leela	Mom,Dad
+Munda	Leela,forgive,Especially,father,who's,told,Thank,Morris
+Leela	alright,hurt
+Morris	allergies,going,nuts,Oh,God
+Munda	couch,table,animal,fur,lets,climb
+Leela	Alright,Zookeeper,want
+Zookeeper	Quantum,Gemerald,course,steal,midnight,parents,devoured,piranhas,shall,say,persuaded,walk,dry,land
+Munda	Save,Leela,mean,don't,better
+Leela	We're,options,steal,Gemerald
+Fry	superheroes,commit,crime,save,lives,need,moral,guidance,Bender
+Bender	Hmm,thought,stealing,fills,Superking,disgust,let,museum,heist,pulled
+Fry	Oh,superpower,cream,itself
+Leela	Check,inside,cap,caked,in,goldmine
+Fry	El,zilcho,I'm,afraid,we're,boned
+Bender	El,zilcho,late,change,superhero
+Leela	Just,cool,knows,we're,super,powerly,challenged
+Fry	Man,costume,damn,heavy
+7¹¹ Clerk	Hey,Captain,Yesterday,like,wail,2,by,4,doesn't,hurt
+Fry	Ow,didn't,hurt
+Security Guard	Hi,superheroes,OK
+Leela	Big,O,little,k,friend,Just,checking,everything's,alright
+Security Guard	It's,OK,alright
+Leela	OK,Grab
+Tate	Yo,superheroes,turned,evil,uncool
+Security Guard	'em
+Leela	Stay,we'll,beat,tar,using,superpowers
+Fry	lair
+Zookeeper	course,think,I'd,lair,lair's,million,times,nicer
+Fry	OK,easy
+Bender	here's,lousy,Gemerald
+Zookeeper	Hawk,Fetch
+Fry	unnecessary
+Zookeeper	transaction,complete,Come,Solomon,lair
+Leela	Mom,Dad,Oh,I'm,sorry,got,kidnapped,crazy,madman,tried,feed,piranhas
+Munda	We're,just,happy,involved,life
+Leela	no,It's,fault,telling,superhero
+Morris	That's,true
+Leela	just,couldn't,stand,think,ashamed
+Munda	That's,sweet,honey,it's,natural,children,little,ashamed,parents
+Fry	Oh,yeah
+Morris	Just,like,it's,natural,parents,little,disappointed,children,,,N,Not
+Munda	little
+Leela	OK
+Munda	kill,use,mouthwash
+Bender	Hey,Fry,we've,got,costumes,Wanna,steal,stuff
+Fry	guess,long,think,it's,right
+Bender	Superheroes,away
+Song	go,New,Justice,Team
