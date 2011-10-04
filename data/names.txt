@@ -13,6 +13,8 @@ person
 old man
 decapodian woman
 doorman
+blond man
+chinese boy
 nurse
 alien
 aliens
@@ -64,7 +66,16 @@ vendor
 jeffery
 hippie #1
 hippie #2
+inuit
+inuit #1
+inuit #2
+bender-2
+fry-2
+soldier
+soldier #1
+soldier #2
 brown-haired man
+mutants
 mysterious voice
 bender doll
 feministas
@@ -76,7 +87,16 @@ hermaphrodite
 greyfarn
 larius
 waltazar
+joe
 titanius anglesmith
 leegola
 younger mom
 nibblonian
+"god"
+god
+priest
+nerd
+momon
+frydo
+scene
+enema bot

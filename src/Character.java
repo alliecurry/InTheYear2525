@@ -143,6 +143,7 @@ public class Character {
         
         //Return total number of phrases character has
         public int getTotalPhrases() {
+        	if(phrases == null) { return -1; }
         	return phrases.size();
         }
         

@@ -27,7 +27,7 @@ public class Parser {
         public static ArrayList<Episode> LIST_ALL = new ArrayList<Episode>(); 
         
         //Array that lists characters who have catchphrases
-        String[] phraseChars = {"fry", "bender", "leela"};
+        String[] phraseChars = {"fry", "bender", "leela", "farnsworth", "zoidberg", "amy", "zapp brannigan", "lrrr","kif"};
        
         int episode;    //Current episode number
         int season;		//Current season number
@@ -343,7 +343,7 @@ public class Parser {
 		   c = c.substring(0,c.length()-1);	//Remove extra whitespace character if needed.  // DANI : you can use global.processing.trim(String) ;)
 	   }
 	   
-	   if(c.equals("professor farnsworth")) {	//ensures correct stats on farnsworth
+	   if(c.equals("professor farnsworth") || c.equals("prof. farnsworth")) {	//ensures correct stats on farnsworth
 		   return "farnsworth";
 	   }
 	   
@@ -370,6 +370,44 @@ public class Parser {
 	   if(c.equals("joey")) {
 		   return "joey mouspad";
 	   }
+	   
+	   if(c.equals("stephen hawking's head")) {
+		   return "stephen hawking";
+	   }
+	   
+	   if(c.equals("slim")) {
+		   return "barbados slim";
+	   }
+	   
+	   if(c.equals("h.g. blob")) {
+		   return "horrible gelatinous blob";
+	   }
+	   
+	   if(c.equals("joey mouspad")) {
+		   return "joey mousepad";
+	   }
+	   
+	   if(c.equals("inger")) {
+		   return "igner";
+	   }
+	   
+	   if(c.equals("turanga morris")) {
+		   return "morris";
+	   }
+	   
+	   if(c.equals("turanga munda")) {
+		   return "munda";
+	   }
+	   
+	   if(c.equals("vogel")) {
+		   return "warden vogel";
+	   }
+	   
+	   if(c.equals("mayor poopenmeyer")) {
+		   return "poopenmeyer";
+	   }
+	   
+	   
 	   
 	   return c;
    }
@@ -399,56 +437,16 @@ public class Parser {
 	   //Split line into character + catchphrase (regex) + catchphrase
 	   String[] splitLine = line.split("\t", 3);
        
-       if(splitLine.length<2) { return; }		//Ignore invalid lines of text
+       if(splitLine.length<3) { return; }		//Ignore invalid lines of text
        
        //splitLine[0] = Character name.
        //splitLine[1] = Phrase in readable form.
        //splitLine[2] = Phrase in regex form.   
 
        int index = findCharacter(splitLine[0]);	//Find index of character in ALL_CHARACTERS
-       
        //Add current catchphrase to the character's list of catchphrases.
        ALL_CHARACTERS.get(index).addPhrase(splitLine[1], splitLine[2]);
-       
-       //just testing...
-       /*if(character.equals("fry")) {
-    	  // int c = 0;
-    	   //parsing season 3
-    	   for(int x=1; x<23; ++x) {
-    		  //String dialog =  ALL_DATA.get("S3E" + x + "fry");
-    		  
-    		  //parse each individual line
-    		  //c += countOccurrences(dialog, splitLine[1]);
-    		  
-    	   }
-    	   //test
-    	  // System.out.println(splitLine[2] + ":\t"+ c);
-    	   
-    	  // int index = findCharacter("fry");
-    	  
-       }*/
    }
-   
-   
-   //Count number of times regex appears in s
-   /*private int countOccurrences(String s, String regex) {
-	   int c = 0;	//counter for number of occurrences
-	   
-	   int m = 0;	//start index to search
-	   int n = s.indexOf("\n"); //end index (exclusive) to search.
-	   
-	   while(n < s.length() && n >= 0) {
-		   if(s.substring(m, n).toLowerCase().matches(regex)) {
-			   ++c;
-			   
-		   }
-
-		   m = ++n;
-		   n = s.indexOf("\n", m);
-	   }
-	   
-	   return c;
-   }*/
    
    //Determine if character 'c' is a character with catchphrases
    //	Then, determine if 'line' is one of their catchphrases.
@@ -458,12 +456,16 @@ public class Parser {
 	   
 	   line = line.toLowerCase();	//convert line to lower case for simplicity.
 	   
+	   int abc = 0;
+	   if(c.equalsIgnoreCase("kif") && line.contains("sigh")) { System.out.println(line); abc++;}
+	   
 	   //Find character in ALL_CHARACTERS array
 	   int index = findCharacter(c);
 	   
 	   for(int x=0; x<ALL_CHARACTERS.get(index).getTotalPhrases(); ++x) {
 		   if(line.matches(ALL_CHARACTERS.get(index).getPhrase(x).getRegex())) {
 			   ALL_CHARACTERS.get(index).getPhrase(x).addToTotals(season, episode, 1);
+			   if(abc > 0) { System.out.println("\tFOUND"); }
 		   }
 	   }
    }

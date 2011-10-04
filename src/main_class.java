@@ -41,29 +41,27 @@ public class main_class extends PApplet{
         });
 		
 		// Load character image
-		for(int i=0; i< Parser.ALL_CHARACTERS.size(); i++)
+		/*for(int i=0; i< Parser.ALL_CHARACTERS.size(); i++)
 			Parser.ALL_CHARACTERS.get(i).setIcon();
 
-		/*// TreeMap .tm3 file -> copy & paste on the Characters.tm3 file  
+		// TreeMap .tm3 file -> copy & paste on the Characters.tm3 file  
 		System.out.println("Appearence");
 		System.out.println("INTEGER");
-
-		for(int x=0; x<Parser.ALL_CHARACTERS.size(); ++x) {
+		
+		/*for(int x=0; x<Parser.ALL_CHARACTERS.size(); ++x) {
 			String name = Parser.ALL_CHARACTERS.get(x).getName();
 			int ep = Parser.ALL_CHARACTERS.get(x).getTotalEpisodes();
 
-			//System.out.println(name + ":\t" + ep + " episodes.");
+			System.out.println(name + ":\t\t" + ep + " episodes.");
 
-			if ( Parser.ALL_CHARACTERS.get(x).getTotalEpisodes() > 4)
+			/*if ( Parser.ALL_CHARACTERS.get(x).getTotalEpisodes() > 1)
 				//System.out.println("<leaf>\n<label>"+ Parser.ALL_CHARACTERS.get(x).getName() +"</label>\n<weight>"+ Parser.ALL_CHARACTERS.get(x).getTotalEpisodes() +"</weight>\n<value>"+ Parser.ALL_CHARACTERS.get(x).getTotalEpisodes() +"</value>\n</leaf>");
 				System.out.println(Parser.ALL_CHARACTERS.get(x).getTotalEpisodes() + "\tCharacters\t" + Parser.ALL_CHARACTERS.get(x).getName());
-		}
-		*/  
+		}*/
+		 
 		
 		//TESTING... 1 2 3! 
-		/*Parser.ALL_CHARACTERS.get(0).printPhrases();
-		Parser.ALL_CHARACTERS.get(1).printPhrases();
-		Parser.ALL_CHARACTERS.get(2).printPhrases();*/
+		//Parser.ALL_CHARACTERS.get(30).printPhrases();
 		
 		// Create the menu
 		menu = new Menu();
