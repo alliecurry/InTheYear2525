@@ -1,7 +1,5 @@
 import java.util.ArrayList;
 import java.util.HashMap;
-import java.util.Set;
-
 import processing.core.PApplet;
 
 //Object containing episode information

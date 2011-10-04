@@ -1,8 +1,8 @@
-import java.util.ArrayList;
 import java.util.Collections;
 import java.util.Comparator;
 import processing.core.*;
 
+@SuppressWarnings("serial")
 public class main_class extends PApplet{
 	
 	public GLOBAL g = new GLOBAL(this);
@@ -24,10 +24,10 @@ public class main_class extends PApplet{
 		GLOBAL.selectedEpisodesList = Parser.LIST_ALL; // Initialize the displayed list to "all episodes"
 
 		//Parse all available transcripts.
-		pars.parseBackgroundChars();
-		pars.parseAllTranscripts();
+		pars.parseCatchphrases();		//Loads cathphrases (& their regular expressions) into corresponding Character objects
+		pars.parseBackgroundChars();	//Loads unacceptable character names from file names.txt
+		pars.parseAllTranscripts();		//Parse all episode transcripts
 		pars.filterCharacters();        //Remove characters in less than 1 episode
-		pars.parseCatchphrases();
 		
 
 		//Sort ALL_CHARACTERS where characters in more episodes are listed first.
@@ -58,7 +58,12 @@ public class main_class extends PApplet{
 				//System.out.println("<leaf>\n<label>"+ Parser.ALL_CHARACTERS.get(x).getName() +"</label>\n<weight>"+ Parser.ALL_CHARACTERS.get(x).getTotalEpisodes() +"</weight>\n<value>"+ Parser.ALL_CHARACTERS.get(x).getTotalEpisodes() +"</value>\n</leaf>");
 				System.out.println(Parser.ALL_CHARACTERS.get(x).getTotalEpisodes() + "\tCharacters\t" + Parser.ALL_CHARACTERS.get(x).getName());
 		}
-		*/   
+		*/  
+		
+		//TESTING... 1 2 3! 
+		/*Parser.ALL_CHARACTERS.get(0).printPhrases();
+		Parser.ALL_CHARACTERS.get(1).printPhrases();
+		Parser.ALL_CHARACTERS.get(2).printPhrases();*/
 		
 		// Create the menu
 		menu = new Menu();
@@ -92,8 +97,7 @@ public class main_class extends PApplet{
 		
 	}
 	
-    @SuppressWarnings("unchecked")
-	public void draw() {
+    public void draw() {
 
 			drawLayerTwoBackground();
 			graphArea.draw();

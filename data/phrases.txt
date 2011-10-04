@@ -1,9 +1,9 @@
-fry	(?i)((help)(,|!)?(\s)(police))(.+?)	Help, Police!
-fry	(?i)((he)(')?(s)(\s)(dead))(.+?)	He's Dead
-fry	(?i)[o]+[w]+(,|!)?(\s)(my)(.+?)	OW! My (body part)!
-fry	(?i)((bender)(,|!)?(\s)(is)(\s)(that)(\s)(you))(.+?)	Bender? Is that you?
-leela	(?i)(h)[i](-|(\s))(y)[a](h)(.+?)	Hi-yah!
-leela	(?i)[o][h](,)?(\s)(lord)(.+?)	Oh, Lord
-bender	(?i)(bite)(\s)(my)(\\s)(shiny)(\s)(metal)(\s)(ass)	Bite by shiny metal ass
-bender	(?i)(me)(,)?(\s)(bender)	Me, Bender
-bender	(?)(we)(')?(re)(\s)(boned)	We're boned
+fry	Help, Police!	(?i)((help)(,|!)?(\s)(police))(.+?)
+fry	He's Dead	(?i)((he)(')?(s)(\s)(dead))(.+?)
+fry	OW! My (body part)!	(?i)[o]+[w]+(,|!)?(\s)(my)(.+?)
+fry	Bender? Is that you?	(?i)((bender)(,|!)?(\s)(is)(\s)(that)(\s)(you))(.+?)
+leela	Hi-yah!	(?i)((h)[i](-|(\s))(y)[a](h)(.+?))
+leela	Oh, Lord	(?i)([o]+[h]+(,)?(\s)(lord)(.+?))
+bender	Bite my shiny metal ass	(?i)((.+?)(bite)(\s)(my)(\\s)(shiny)(\s)(metal)(\s)(ass)(.+?))
+bender	Me, Bender	(?i)((.+?)(me)(,)?(\s)(bender)(.+?))
+bender	We're boned	(?i)((.+?)(we)(')?(re)(\s)(boned)(.+?))

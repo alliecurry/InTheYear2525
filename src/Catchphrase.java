@@ -6,7 +6,8 @@ public class Catchphrase {
 	private String thePhrase;		// The phrase is a way that can be displayed.
 	private String phraseRegex;		// The phrase in regex form for parsing.
 	
-	HashMap<String, Integer> episodeTotals;	//Key: season#_episode#  
+	HashMap<String, Integer> episodeTotals = new HashMap<String, Integer>();	
+											//Key: season#_episode#  
 											//Value: Number of times phrase is said
 	
 	int[] seasonTotals = {0,0,0,0,0,0};		//Total number of times catchphrase is said in season

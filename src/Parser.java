@@ -1,4 +1,3 @@
-import processing.core.PApplet;
 import java.io.*;
 import java.util.ArrayList;
 import java.util.HashMap;
@@ -26,11 +25,14 @@ public class Parser {
         
         //1 Arraylist that contains all the season
         public static ArrayList<Episode> LIST_ALL = new ArrayList<Episode>(); 
+        
+        //Array that lists characters who have catchphrases
+        String[] phraseChars = {"fry", "bender", "leela"};
        
         int episode;    //Current episode number
-        int season;             //Current season number
+        int season;		//Current season number
         String hashKey; //HashMap key based on episode and season
-        Episode ep;             //Current object to be added to arraylist
+        Episode ep;		//Current object to be added to arraylist
        
        
         //Character names to ignore
@@ -83,7 +85,7 @@ public class Parser {
         public void parseAllTranscripts() {
         	String path;
         	
-            //Season 1  	
+            //SEASON 1  	
             parseFile("data/transcripts/SEASON1/S1E1.txt"); //Series 1
             parseFile("data/transcripts/SEASON1/S1E2.txt");
             parseFile("data/transcripts/SEASON1/S1E3.txt");
@@ -98,58 +100,104 @@ public class Parser {
             parseFile("data/transcripts/SEASON1/S2E3.txt");
             parseFile("data/transcripts/SEASON1/S2E4.txt");
            
-            //Season 2
+            //SEASON 2
             path = "data/transcripts/SEASON2/S2E";	//Series 2, continued
-            for(int x=5; x<21; ++x) { //Build path name dynamically.
+            for(int x=5; x<10; ++x) { //Build path name dynamically.
             	parseFile(path + x + ".txt");	
             }
-            parseFile("data/transcripts/SEASON2/S3E1.txt"); //Series 3
-            parseFile("data/transcripts/SEASON2/S3E2.txt");
+            parseFile("data/transcripts/SEASON2/S2E11.txt");
+            parseFile("data/transcripts/SEASON2/S2E10.txt");
+            parseFile("data/transcripts/SEASON2/S2E12.txt");
+            parseFile("data/transcripts/SEASON2/S2E13.txt");
+            parseFile("data/transcripts/SEASON2/S2E15.txt");
+            parseFile("data/transcripts/SEASON2/S2E14.txt");
+            parseFile("data/transcripts/SEASON2/S2E16.txt");
+            parseFile("data/transcripts/SEASON2/S2E17.txt");
+            parseFile("data/transcripts/SEASON2/S2E19.txt");
+            parseFile("data/transcripts/SEASON2/S2E18.txt");
+            parseFile("data/transcripts/SEASON2/S2E20.txt");
+            
+            parseFile("data/transcripts/SEASON2/S3E2.txt"); //Series 3
+            parseFile("data/transcripts/SEASON2/S3E1.txt");
             parseFile("data/transcripts/SEASON2/S3E3.txt");
             
-            //Season 3
-            path = "data/transcripts/SEASON3/S3E";	//Series 3, continued
-            for(int y=4; y<16; ++y) {
-            	parseFile(path + y + ".txt");
-            }
+            //SEASON 3
+            parseFile("data/transcripts/SEASON3/S3E5.txt");
+            parseFile("data/transcripts/SEASON3/S3E4.txt");
             
-            path = "data/transcripts/SEASON3/S4E";	//Series 4
-            for(int z=1; z<12; ++z) {
-            	if(z != 4 && z != 5) {	//Season 3 does not include series 4.4 or 4.5
-            		parseFile(path + z + ".txt");
-            	}
-            }
+            parseFile("data/transcripts/SEASON3/S4E2.txt");
+            
+            parseFile("data/transcripts/SEASON3/S3E10.txt");
+            parseFile("data/transcripts/SEASON3/S3E9.txt");
+            parseFile("data/transcripts/SEASON3/S3E6.txt"); 
+            parseFile("data/transcripts/SEASON3/S3E7.txt");
+            parseFile("data/transcripts/SEASON3/S3E8.txt");
+            parseFile("data/transcripts/SEASON3/S3E11.txt");
+            
+            parseFile("data/transcripts/SEASON3/S4E6.txt");
+            parseFile("data/transcripts/SEASON3/S3E12.txt");
             parseFile("data/transcripts/SEASON3/S5E3.txt");
             
+            parseFile("data/transcripts/SEASON3/S3E13.txt");
+            parseFile("data/transcripts/SEASON3/S3E14.txt");
+            parseFile("data/transcripts/SEASON3/S3E15.txt");
             
-            //Season 4
-            parseFile("data/transcripts/SEASON4/S4E4.txt");
+            parseFile("data/transcripts/SEASON3/S4E10.txt");
+            parseFile("data/transcripts/SEASON3/S4E7.txt");
+            parseFile("data/transcripts/SEASON3/S4E3.txt");
+            parseFile("data/transcripts/SEASON3/S4E1.txt");
+            parseFile("data/transcripts/SEASON3/S4E8.txt");
+            parseFile("data/transcripts/SEASON3/S4E9.txt");
+            parseFile("data/transcripts/SEASON3/S4E11.txt");
+            
+            //SEASON 4
+            parseFile("data/transcripts/SEASON4/S5E5.txt");
             parseFile("data/transcripts/SEASON4/S4E5.txt");
+            parseFile("data/transcripts/SEASON4/S4E4.txt");
+            
+            parseFile("data/transcripts/SEASON4/S5E6.txt");
+            parseFile("data/transcripts/SEASON4/S5E4.txt");
+            parseFile("data/transcripts/SEASON4/S5E15.txt");
+            parseFile("data/transcripts/SEASON4/S5E2.txt");
+            parseFile("data/transcripts/SEASON4/S5E1.txt");
+            parseFile("data/transcripts/SEASON4/S5E7.txt");
+            parseFile("data/transcripts/SEASON4/S5E8.txt");
+            
             parseFile("data/transcripts/SEASON4/S4E12.txt");
             
-            path = "data/transcripts/SEASON4/S5E";
-            for(int a=1; a<17; ++a) {
-            	if(a != 3) {	//Season 4 does include series 5.3
-            		parseFile(path + a + ".txt");
-            	}
-            }
+            parseFile("data/transcripts/SEASON4/S5E9.txt");
+            parseFile("data/transcripts/SEASON4/S5E13.txt");
+            parseFile("data/transcripts/SEASON4/S5E14.txt");
+            parseFile("data/transcripts/SEASON4/S5E10.txt");
+            parseFile("data/transcripts/SEASON4/S5E11.txt");
+            parseFile("data/transcripts/SEASON4/S5E12.txt");
+            parseFile("data/transcripts/SEASON4/S5E16.txt");
             
-            //Season 5
+            //SEASON 5
             path = "data/transcripts/SEASON5/S6E";
             for(int b=1; b<17; ++b) {
             	parseFile(path + b + ".txt");
             }
             
-            //Season 6
+            //SEASON 6
             path = "data/transcripts/SEASON6/S7E";
             for(int c=1; c<14; ++c) {
             	parseFile(path + c + ".txt");
             }
             
-            path = "data/transcripts/SEASON6/S8E";
-            for(int d=1; d<14; ++d) {
-            	parseFile(path + d + ".txt");
-            }
+            parseFile("data/transcripts/SEASON6/S8E5.txt");
+            parseFile("data/transcripts/SEASON6/S8E8.txt");
+            parseFile("data/transcripts/SEASON6/S8E4.txt");
+            parseFile("data/transcripts/SEASON6/S8E2.txt");
+            parseFile("data/transcripts/SEASON6/S8E10.txt");
+            parseFile("data/transcripts/SEASON6/S8E3.txt");
+            parseFile("data/transcripts/SEASON6/S8E1.txt");
+            parseFile("data/transcripts/SEASON6/S8E6.txt");
+            parseFile("data/transcripts/SEASON6/S8E9.txt");
+            parseFile("data/transcripts/SEASON6/S8E7.txt");
+            parseFile("data/transcripts/SEASON6/S8E11.txt");
+            parseFile("data/transcripts/SEASON6/S8E12.txt");
+            parseFile("data/transcripts/SEASON6/S8E13.txt");
             
             
             //Aggregate all seasons
@@ -198,14 +246,17 @@ public class Parser {
                 ALL_DATA.put(fullKey, value);
                 //Add character to episode (unless is a background character)
                 if(!isBackgroundCharacter(character)){
-//                        ep.addCharacter(character);
-                        Character chr = new Character(character);      //make a new Character object
-                        ep.addCharacter(chr);
-                        //Add character to ArrayList ALL_CHARACTERS (unless already added)
-                        if(!isInAllCharacters(character)){
+//                  ep.addCharacter(character);
+                    Character chr = new Character(character);      //make a new Character object
+                    ep.addCharacter(chr);
+                    //Add character to ArrayList ALL_CHARACTERS (unless already added)
+                    if(!isInAllCharacters(character)){
 //                                Character chr = new Character(character);      //make a new Character object
-                                ALL_CHARACTERS.add(chr);        //Add Character object to ArrayList
-                        }
+                            ALL_CHARACTERS.add(chr);        //Add Character object to ArrayList
+                    }
+                    
+                    //Determine if current line is a catchphrase of character
+                    findCatchphrase(character, splitLine[1]);
                 }
                
         }
@@ -274,6 +325,15 @@ public class Parser {
                 }              
         }      
     }
+    
+    //Create characters that have catchprases
+    //	This is opposed to all other characters created dynamically (when parsing transcripts).
+    //		& allows for phrases.txt to be parsed before the transcripts.
+    private void createCatchphraseCharacters() {
+    	for(int x=0; x<phraseChars.length; ++x) {
+    		ALL_CHARACTERS.add(new Character(phraseChars[x])); 
+    	}	
+    }
    
     //Returns character name with changes, if needed.
     //Allows for one Character object per Character, 
@@ -314,29 +374,24 @@ public class Parser {
 	   return c;
    }
    
-   //-------------------------------------------
-   // NOTE (10/2/2011)
-   //---------------------------------------------
-   //Still working on parsing the catchphrases.
-   //Will be back after dinner to work some more.
-   //So, if you're reading this, the code below may not be of much use yet ;)
-   
    //Parse file phrases.txt for list of catchphrases
    public void parseCatchphrases(){
+	   createCatchphraseCharacters();	//Create characters needed for this method.
+	   
 	   Scanner scan;    //Scanner for reading file
    	
-   	try {
-   		scan = new Scanner(new FileReader("data/phrases.txt"));   //Initialize scanner with file.
-       } catch (FileNotFoundException e) {
+   		try {
+	   		scan = new Scanner(new FileReader("data/phrases.txt"));   //Initialize scanner with file.
+	    } catch (FileNotFoundException e) {
                e.printStackTrace();
                return;
-       }
-
+	    }
+	
        //Scan all dialog
        while (scan.hasNextLine()) {    //Executes if a line of text exists
                storeCatchphrase(scan.nextLine());
        }
-       
+   
        scan.close();
    }
    
@@ -344,19 +399,26 @@ public class Parser {
 	   //Split line into character + catchphrase (regex) + catchphrase
 	   String[] splitLine = line.split("\t", 3);
        
-       if(splitLine.length<2) { return; }
+       if(splitLine.length<2) { return; }		//Ignore invalid lines of text
        
-       String character = splitLine[0];
+       //splitLine[0] = Character name.
+       //splitLine[1] = Phrase in readable form.
+       //splitLine[2] = Phrase in regex form.   
+
+       int index = findCharacter(splitLine[0]);	//Find index of character in ALL_CHARACTERS
+       
+       //Add current catchphrase to the character's list of catchphrases.
+       ALL_CHARACTERS.get(index).addPhrase(splitLine[1], splitLine[2]);
        
        //just testing...
-       if(character.equals("fry")) {
-    	   int c = 0;
+       /*if(character.equals("fry")) {
+    	  // int c = 0;
     	   //parsing season 3
     	   for(int x=1; x<23; ++x) {
-    		  String dialog =  ALL_DATA.get("S3E" + x + "fry");
+    		  //String dialog =  ALL_DATA.get("S3E" + x + "fry");
     		  
     		  //parse each individual line
-    		  c += countOccurrences(dialog, splitLine[1]);
+    		  //c += countOccurrences(dialog, splitLine[1]);
     		  
     	   }
     	   //test
@@ -364,11 +426,12 @@ public class Parser {
     	   
     	  // int index = findCharacter("fry");
     	  
-       }
+       }*/
    }
    
+   
    //Count number of times regex appears in s
-   private int countOccurrences(String s, String regex) {
+   /*private int countOccurrences(String s, String regex) {
 	   int c = 0;	//counter for number of occurrences
 	   
 	   int m = 0;	//start index to search
@@ -385,6 +448,24 @@ public class Parser {
 	   }
 	   
 	   return c;
+   }*/
+   
+   //Determine if character 'c' is a character with catchphrases
+   //	Then, determine if 'line' is one of their catchphrases.
+   public void findCatchphrase(String c, String line) {
+	   //Do nothing if character does not have catchphrases...
+	   if(!isphraseChars(c)) { return; }
+	   
+	   line = line.toLowerCase();	//convert line to lower case for simplicity.
+	   
+	   //Find character in ALL_CHARACTERS array
+	   int index = findCharacter(c);
+	   
+	   for(int x=0; x<ALL_CHARACTERS.get(index).getTotalPhrases(); ++x) {
+		   if(line.matches(ALL_CHARACTERS.get(index).getPhrase(x).getRegex())) {
+			   ALL_CHARACTERS.get(index).getPhrase(x).addToTotals(season, episode, 1);
+		   }
+	   }
    }
    
    //Find index number of character c in ALL_CHARACTERS
@@ -397,5 +478,16 @@ public class Parser {
 	   
 	   return -1;
    }
+   
+   //determine if String c is in the Array phraseChars
+   public boolean isphraseChars(String c) {
+	   for(int x=0; x<phraseChars.length; ++x) {
+		   if(phraseChars[x].equals(c)) {
+			   return true;
+		   }
+	   }
+	   return false;
+   }
+   
 }
 

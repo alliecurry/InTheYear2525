@@ -21,7 +21,6 @@ public class Character {
         
         private ArrayList<Catchphrase> phrases;		//List of catchphrases the Character is known to say.
         
-        
         public Character (String n){
 	        name = n;
 	        episodes_s1 = new ArrayList<Integer>();
@@ -32,7 +31,6 @@ public class Character {
 	        episodes_s6 = new ArrayList<Integer>();
 	        
 	        episodes = new ArrayList<Episode>();
-	        phrases = new ArrayList<Catchphrase>();
         }
        
         //Add episode # to list of episodes character appears in
@@ -113,8 +111,52 @@ public class Character {
                 return name;
         }
         
+        //Add a new catchphrase to phrases arraylist
         public void addPhrase(String p, String r) {
+        	if(phrases == null) {
+        		phrases = new ArrayList<Catchphrase>();
+        	}
         	phrases.add(new Catchphrase(p, r));
+        }
+        
+        //add a new occurrence of a catchphrase (which may or may not already be in the list)
+        public void addPhraseOccurrence(String p, String r, int s, int e) {
+        	int i = getPhraseIndex(p);
+        	if(i == -1) {
+        		addPhrase(p, r);
+        		i = phrases.size()-1;
+        	}
+        	
+        	phrases.get(i).addToTotals(s, e, 1);
+        }
+        
+        //get index of phrase p
+        private int getPhraseIndex(String p) {
+        	for(int x=0; x<phrases.size(); ++x) {
+        		if(phrases.get(x).getPhrase().equals(p)) {
+        			return x;
+        		}
+        	}
+
+        	return -1;
+        }
+        
+        //Return total number of phrases character has
+        public int getTotalPhrases() {
+        	return phrases.size();
+        }
+        
+        //Return a phrase bsed on index number
+        public Catchphrase getPhrase(int i) {
+        	return phrases.get(i);
+        }
+        
+        //FOR TESTING::
+        public void printPhrases() {
+        	System.out.println(name.toUpperCase());
+        	for(int x=0; x<getTotalPhrases(); ++x) {
+        		System.out.println("\t" + phrases.get(x).getTotal() + "\t" + phrases.get(x).getPhrase());
+        	}
         }
         
         public void setIcon() {
@@ -124,4 +166,5 @@ public class Character {
         public PImage getIcon() {
         	return icon;
         }
+
 }
