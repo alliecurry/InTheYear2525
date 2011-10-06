@@ -130,8 +130,21 @@ public class HorizontalScrollBar extends Widget{
     ////////////////////////////////////////////////////////////////////////////////////////////////////
     public void mouseReleased()
     {
+        
+        // If we are in the tag cloud visualization
+        if (GLOBAL.WORD_ANALYSIS && draggingStart) {
+        	main_class.graphArea.clearGraphs();
+        	
+        	// UPDATE the tag clouds on releasing 
+        	for (int i = 0; i < GLOBAL.charactersSelected.size() ; i++) {
+        		GLOBAL.CHARACTER_SELECTED = GLOBAL.charactersSelected.get(i);
+        		main_class.graphArea.createCharacterGraph();
+        	}
+        }
+        
         draggingStart = false;
         draggingEnd = false;
+        
     }
     
     ////////////////////////////////////////////////////////////////////////////////////////////////////

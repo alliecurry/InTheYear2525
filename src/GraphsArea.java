@@ -149,6 +149,9 @@ public class GraphsArea extends Widget{
 		chart1 = null;
 		chart2 = null;
 		chart3 = null;
+		tagCloud1 = null;
+		tagCloud2 = null;
+		tagCloud3 = null;
 	}
 	
 	public void doAction() {

@@ -87,7 +87,7 @@ public class TagCloud extends Widget{
 				//.withColors(color(255,0,0), color(0), color(0,0,255)) // red, black, and blue
 		  .withCustomCanvas(buffer)
 		 .withColor(GLOBAL.colorText)
-				    .sizedByWeight(-10,40).withWordPadding(2).withAngler(Anglers.horiz())
+				    .sizedByWeight(0,40).withWordPadding(2).withAngler(Anglers.horiz())
 				    .withPlacer(Placers.centerClump())
 				    .maxNumberOfWordsToDraw(max)
 				    .withStopWords(StopWords.ENGLISH)
@@ -95,6 +95,12 @@ public class TagCloud extends Widget{
 	}
 	
 	public void draw() {
+		
+		GLOBAL.processing.noStroke();
+		GLOBAL.processing.rectMode(GLOBAL.processing.CORNERS);
+		GLOBAL.processing.fill(GLOBAL.colorPlotArea);
+		GLOBAL.processing.rect( x,y, x + plotWidth, y + height);
+		GLOBAL.processing.fill(GLOBAL.processing.color(255));
 
 		if (wc.hasMore()) {  
 
@@ -114,7 +120,16 @@ public class TagCloud extends Widget{
 			//System.out.println(wc.getSkippedWords().length);
 
 		}
-		//if (!wc.hasMore())
+
+		// Draw icon and info		
+		GLOBAL.processing.fill(GLOBAL.colorText);
+		GLOBAL.processing.textFont(GLOBAL.tFont,16);
+		GLOBAL.processing.textAlign(GLOBAL.processing.CENTER);
+		GLOBAL.processing.text(character.getName(), x + width - 40, y + 20);
+
+		if (character.getIcon() != null)
+			GLOBAL.processing.image( character.getIcon(), x + width - 80, y + 30, 80, 80);
+		
 	}
 	
 	
