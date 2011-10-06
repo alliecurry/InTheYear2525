@@ -49,24 +49,32 @@ public class TagCloud extends Widget{
 		int max = 50;  //if we want to display 50 words.
 		//Why? because the list could contain hundreds of words! I don't know how big the treeMap can be, but
 		//I figure you may need a limit.
-		
-		if(myList.size()<50) { max = myList.size(); }
-		
-		w = new wordcram.Word[max];
 
 		System.out.println(myList.size());
-
-		//Parse your new ArrayList
-		for(int x=0; x<max; ++x) {
+		
+		if(myList.size() == 0) {
+			w = new wordcram.Word[1];
+			w[0] = new wordcram.Word("No Words Said in Range", 1);
+			max = 1;
+		}
 			
-			String aWord = myList.get(x).getWord();  
-			int itsWeight = myList.get(x).getWeight();
+		else { 
+			//Set max to a lower number if array size is less than max
+			if(myList.size() < max) { max = myList.size(); }
+			w = new wordcram.Word[max];
 			
-			wordList.add( new wordcram.Word(aWord,itsWeight) );
-			System.out.println("Added Word " + aWord + " - Weight " + itsWeight);
-			
-			w[x] = new wordcram.Word(aWord,itsWeight);
-			
+			//Parse your new ArrayList
+			for(int x=0; x<max; ++x) {
+				
+				String aWord = myList.get(x).getWord();  
+				int itsWeight = myList.get(x).getWeight();
+				
+				wordList.add( new wordcram.Word(aWord,itsWeight) );
+				System.out.println("Added Word " + aWord + " - Weight " + itsWeight);
+				
+				w[x] = new wordcram.Word(aWord,itsWeight);
+				
+			}
 		}
 		
 		
