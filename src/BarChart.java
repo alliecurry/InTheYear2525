@@ -87,21 +87,11 @@ public class BarChart extends Widget{
 		GLOBAL.processing.fill(GLOBAL.processing.color(255));
 		
 		if (GRAPH_TYPE == CHARACTER_GRAPH) {
-
-			float barY = y + height;
-			float value;
 			
-			int indexStart = 0;
-			int indexEnd = Parser.LIST_ALL.size() -1;
-
-			for (int i = 0; i< Parser.LIST_ALL.size() ; i++) {
-				if (Parser.LIST_ALL.get(i).getSeason() == GLOBAL.episodeStart.getSeason() && Parser.LIST_ALL.get(i).getEpisode() == GLOBAL.episodeStart.getEpisode())
-					indexStart = i;
-				if (Parser.LIST_ALL.get(i).getSeason() == GLOBAL.episodeEnd.getSeason() && Parser.LIST_ALL.get(i).getEpisode() == GLOBAL.episodeEnd.getEpisode())
-					indexEnd = i;
-			}
-			
-			rectWidth = (float)(width)/(2*(indexEnd - indexStart));
+			if (GLOBAL.CATCHPHRASES_ANALYSIS == false)
+				createDialogueBarChart();
+			else
+				createCatchphraseBarChart();
 			
 			// For each season
 //			for(int i = 1; i < 7; i++) {
@@ -112,31 +102,6 @@ public class BarChart extends Widget{
 //				GLOBAL.processing.rect( barX - rectWidth/2 + 20, barY, barX+ rectWidth/2, y + height);
 //			}
 			
-			for ( int i = indexStart; i <= indexEnd; i++ ) {
-				value = Parser.LIST_ALL.get(i).getNumberOfLinesPerCharacter(character);
-				barY = GLOBAL.processing.map(value, 0, 100, y + height, y);					 // TODO 100 is a default value, must be set as the max	
-				float barX = GLOBAL.processing.map(i, indexStart, indexEnd, x + rectWidth, x + plotWidth - rectWidth);
-				GLOBAL.processing.rect( barX - rectWidth/2, barY, barX + rectWidth/2, y + height);
-				
-				// Check for any mouse rollover functionality to be displayed
-				if (GLOBAL.processing.mouseX > (barX - rectWidth/2) && GLOBAL.processing.mouseX < (barX + rectWidth) 
-						&& GLOBAL.processing.mouseY > y && GLOBAL.processing.mouseY < (y  + height)) {
-					String label = "S"+ Parser.LIST_ALL.get(i).getSeason() + " E" + Parser.LIST_ALL.get(i).getEpisode()+ " " + Parser.LIST_ALL.get(i).getName();
-					main_class.graphArea.mouseRolloverFunction(rectWidth, barX, label);
-					
-				}
-			}
-			
-			// Draw icon and info		
-			GLOBAL.processing.fill(GLOBAL.colorText);
-			GLOBAL.processing.textFont(GLOBAL.tFont,16);
-			GLOBAL.processing.textAlign(GLOBAL.processing.CENTER);
-			GLOBAL.processing.text(character.getName(), x + width - 40, y + 20);
-			
-			if (character.getIcon() != null)
-				GLOBAL.processing.image( character.getIcon(), x + width - 80, y + 30, 80, 80);
-			
-
 		}
 		
 		else if (GRAPH_TYPE == EPISODE_GRAPH) {
@@ -213,6 +178,99 @@ public class BarChart extends Widget{
 			}
 			
 		} // end if
+		
+	}
+
+	// Dialogue analysis for character
+	public void createDialogueBarChart() {
+		float barY = y + height;
+		float value;
+
+		int indexStart = 0;
+		int indexEnd = Parser.LIST_ALL.size() -1;
+
+		for (int i = 0; i< Parser.LIST_ALL.size() ; i++) {
+			if (Parser.LIST_ALL.get(i).getSeason() == GLOBAL.episodeStart.getSeason() && Parser.LIST_ALL.get(i).getEpisode() == GLOBAL.episodeStart.getEpisode())
+				indexStart = i;
+			if (Parser.LIST_ALL.get(i).getSeason() == GLOBAL.episodeEnd.getSeason() && Parser.LIST_ALL.get(i).getEpisode() == GLOBAL.episodeEnd.getEpisode())
+				indexEnd = i;
+		}
+
+		rectWidth = (float)(width)/(2*(indexEnd - indexStart));
+
+		for ( int i = indexStart; i <= indexEnd; i++ ) {
+			value = Parser.LIST_ALL.get(i).getNumberOfLinesPerCharacter(character);
+			barY = GLOBAL.processing.map(value, 0, 100, y + height, y);					 // TODO 100 is a default value, must be set as the max	
+			float barX = GLOBAL.processing.map(i, indexStart, indexEnd, x + rectWidth, x + plotWidth - rectWidth);
+			GLOBAL.processing.rect( barX - rectWidth/2, barY, barX + rectWidth/2, y + height);
+
+			// Check for any mouse rollover functionality to be displayed
+			if (GLOBAL.processing.mouseX > (barX - rectWidth/2) && GLOBAL.processing.mouseX < (barX + rectWidth) 
+					&& GLOBAL.processing.mouseY > y && GLOBAL.processing.mouseY < (y  + height)) {
+				String label = "S"+ Parser.LIST_ALL.get(i).getSeason() + " E" + Parser.LIST_ALL.get(i).getEpisode()+ " " + Parser.LIST_ALL.get(i).getName();
+				main_class.graphArea.mouseRolloverFunction(rectWidth, barX, label);
+
+			}
+		}
+
+		// Draw icon and info		
+		GLOBAL.processing.fill(GLOBAL.colorText);
+		GLOBAL.processing.textFont(GLOBAL.tFont,16);
+		GLOBAL.processing.textAlign(GLOBAL.processing.CENTER);
+		GLOBAL.processing.text(character.getName(), x + width - 40, y + 20);
+
+		if (character.getIcon() != null)
+			GLOBAL.processing.image( character.getIcon(), x + width - 80, y + 30, 80, 80);
+	}
+	
+
+	public void createCatchphraseBarChart() {
+		
+		float barY = y + height;
+		float value;
+
+		int indexStart = 0;
+		int indexEnd = Parser.LIST_ALL.size() -1;
+
+		for (int i = 0; i< Parser.LIST_ALL.size() ; i++) {
+			if (Parser.LIST_ALL.get(i).getSeason() == GLOBAL.episodeStart.getSeason() && Parser.LIST_ALL.get(i).getEpisode() == GLOBAL.episodeStart.getEpisode())
+				indexStart = i;
+			if (Parser.LIST_ALL.get(i).getSeason() == GLOBAL.episodeEnd.getSeason() && Parser.LIST_ALL.get(i).getEpisode() == GLOBAL.episodeEnd.getEpisode())
+				indexEnd = i;
+		}
+
+		rectWidth = (float)(width)/(2*(indexEnd - indexStart));
+		
+		for ( int i = indexStart; i <= indexEnd; i++ ) {
+			value = 0;
+			ArrayList<Catchphrase> phrases = character.getAllPhrases();
+			for (int j=0; j < phrases.size(); j++) {
+				int numberOfTime = phrases.get(j).getTotalEpisode(Parser.LIST_ALL.get(i).getSeason(), Parser.LIST_ALL.get(i).getEpisode());
+				if ( numberOfTime > 0){
+					value += numberOfTime;
+				}
+			}
+			barY = GLOBAL.processing.map(value, 0, 4, y + height, y);					 // TODO 100 is a default value, must be set as the max	
+			float barX = GLOBAL.processing.map(i, indexStart, indexEnd, x + rectWidth, x + plotWidth - rectWidth);
+			GLOBAL.processing.rect( barX - rectWidth/2, barY, barX + rectWidth/2, y + height);
+
+			// Check for any mouse rollover functionality to be displayed
+			if (GLOBAL.processing.mouseX > (barX - rectWidth/2) && GLOBAL.processing.mouseX < (barX + rectWidth) 
+					&& GLOBAL.processing.mouseY > y && GLOBAL.processing.mouseY < (y  + height)) {
+				String label = "S"+ Parser.LIST_ALL.get(i).getSeason() + " E" + Parser.LIST_ALL.get(i).getEpisode()+ " " + Parser.LIST_ALL.get(i).getName();
+				main_class.graphArea.mouseRolloverFunction(rectWidth, barX, label);
+
+			}
+		}
+
+		// Draw icon and info		
+		GLOBAL.processing.fill(GLOBAL.colorText);
+		GLOBAL.processing.textFont(GLOBAL.tFont,16);
+		GLOBAL.processing.textAlign(GLOBAL.processing.CENTER);
+		GLOBAL.processing.text(character.getName(), x + width - 40, y + 20);
+
+		if (character.getIcon() != null)
+			GLOBAL.processing.image( character.getIcon(), x + width - 80, y + 30, 80, 80);
 		
 	}
 

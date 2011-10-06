@@ -58,6 +58,7 @@ public class CharacterSelectionPanel extends Widget {
 		// Treemap list of character, it depends on the jpeg of treemap.jpg !!
 		setCharacterIconsTreemap(240, 180, 348, 433, "fry");
 		setCharacterIconsTreemap(351, 181, 572, 302, "leela");
+		setCharacterIconsTreemap(868,555,900,583,"panucci");
 		
 		// TODO : to be completed ........
 		

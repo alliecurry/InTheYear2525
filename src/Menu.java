@@ -4,6 +4,8 @@ public class Menu extends Widget{
 	public Button cButton;
 	public Button eButton;
 	public Button sButton;
+	public Button phButton;
+	public Button dialButton;
 	
 	public CharacterSelectionPanel characterPicker;
 	public EpisodeSelectionPanel episodePicker;
@@ -36,6 +38,24 @@ public class Menu extends Widget{
 		eButton.y = 150;
 		eButton.active = true;
 		eButton.setLabel("Pick a episode");
+		
+		// Character buttons
+		// Number of lines
+		dialButton = new Button();
+		dialButton.x = 20;
+		dialButton.y = 190;
+		dialButton.setLabel("Number of dialogues");
+		dialButton.active = true;
+		dialButton.setFontSize(14);
+		
+		// Catchphrases
+		phButton = new Button();
+		phButton.x = 20;
+		phButton.y = 230;
+		phButton.setLabel("Catchphrases");
+		phButton.active = true;
+		phButton.setFontSize(14);
+		
 
 	}
 
@@ -51,8 +71,11 @@ public class Menu extends Widget{
 		GLOBAL.processing.line(x + width, y, x+ width, y+height);
 		GLOBAL.processing.noFill();
 
-		if (GLOBAL.ANALYSIS_TYPE.equals("characters"))
+		if (GLOBAL.ANALYSIS_TYPE.equals("characters")) {
 			cButton.draw();
+			dialButton.draw();
+			phButton.draw();
+		}
 		else if (GLOBAL.ANALYSIS_TYPE.equals("seasons"))
 			sButton.draw();
 		else if (GLOBAL.ANALYSIS_TYPE.equals("episodes"))
@@ -98,6 +121,14 @@ public class Menu extends Widget{
 			else
 				selectingEpisode = true;
 			}
+		else if ( dialButton.mouseOver() && GLOBAL.CATCHPHRASES_ANALYSIS == true) {
+			GLOBAL.CATCHPHRASES_ANALYSIS = false;
+			main_class.graphArea.clearGraphs();
+		}
+		else if ( phButton.mouseOver() && GLOBAL.CATCHPHRASES_ANALYSIS == false) {
+			GLOBAL.CATCHPHRASES_ANALYSIS = true;
+			main_class.graphArea.clearGraphs();
+		}
 		
 		if (selectingCharacter && characterPicker.mouseOver()) {
 			characterPicker.doAction();

@@ -2,6 +2,7 @@ import java.util.ArrayList;
 import java.util.Collections;
 import java.util.Comparator;
 import processing.core.*;
+import wordcram.*;
 
 @SuppressWarnings("serial")
 public class main_class extends PApplet{
@@ -12,13 +13,16 @@ public class main_class extends PApplet{
 	public static Menu menu;
 	public static GraphsArea graphArea;
 	public static MultistateButton analysisTypeButton;
+	public TagCloud tc;
 	
 	public void setup() {
 		
 		setupColors();
 		
-		size(1024,768);
-		frameRate(15);
+		size(1024,768, JAVA2D);
+		frameRate(60);
+		
+		background(GLOBAL.colorBackgroundLayerTwo);
 		
 		GLOBAL.gu = new GradientUtils();
 		GLOBAL.tFont = loadFont("LucidaSans-48.vlw");
@@ -48,6 +52,11 @@ public class main_class extends PApplet{
             }
  
         });
+		// Set incons of the characters after the parsing end
+		for (int i = 0; i< Parser.ALL_CHARACTERS.size(); i++) {
+			Parser.ALL_CHARACTERS.get(i).setIcon();
+		}
+		
 		// Load character image
 		for(int i=0; i< Parser.ALL_CHARACTERS.size(); i++)
 			Parser.ALL_CHARACTERS.get(i).setIcon();
@@ -98,13 +107,16 @@ public class main_class extends PApplet{
 		
 		GLOBAL.episodeStart = Parser.LIST_ALL.get(0);
 		GLOBAL.episodeEnd = Parser.LIST_ALL.get(Parser.LIST_ALL.size() - 1 );
+	  
+		tc = new TagCloud();
 
 		smooth();
 		
 	}
 	
     public void draw() {
-
+		
+    		
 			drawLayerTwoBackground();
 			graphArea.draw();
 			menu.draw();
@@ -121,14 +133,15 @@ public class main_class extends PApplet{
 			
 			drawLayerTwoText();
 			noFill();
+//			tc.draw();
+
+
 
 	}
-	
+    	
 	// Draw the background of the second layer
 	public void drawLayerTwoBackground() {
-
 		background(GLOBAL.colorBackgroundLayerTwo);
-		
 	}
 	
 	public void drawLayerTwoText() {

@@ -72,6 +72,9 @@ public class GLOBAL {
 	public static Episode episodeStart;
 	public static Episode episodeEnd;
 	
+	// Character analysis: dialogues or catchphrases
+	public static boolean CATCHPHRASES_ANALYSIS = false;
+	
 	//Variable used to determine if parsing transcripts with full dialog (= false), 
 	//	or only mapping words (= true)
 	public static boolean parseForWordMap = false;

@@ -174,6 +174,9 @@ public class Character {
         	return icon;
         }
         
+        public ArrayList<Catchphrase> getAllPhrases() {
+        	return phrases;
+        }        
         
         //METHODS FOR WORD MAPPING ---------------------------
         //----------------------------------------------------
@@ -335,7 +338,7 @@ public class Character {
         	}
         }
         
-        //return total sumber of episodes in season s
+        //return total number of episodes in season s
         private int getSeasonTotal(int s) {
         	switch(s) {
         	case 1:	return 13;

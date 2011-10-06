@@ -5,6 +5,7 @@ class Button extends Widget
   ////////////////////////////////////////////////////////////////////////////////////////////////////
   public Button()
   {
+	  fontSize = 19;
   }
   
   ////////////////////////////////////////////////////////////////////////////////////////////////////
@@ -37,7 +38,7 @@ class Button extends Widget
     }
     if(label != null)
     {
-    	GLOBAL.processing.textFont(GLOBAL.tFont, 19);
+    	GLOBAL.processing.textFont(GLOBAL.tFont, fontSize);
         width = (int)(GLOBAL.processing.textWidth(label)) + 10;
     	GLOBAL.processing.textAlign(GLOBAL.processing.LEFT);
       
@@ -68,6 +69,10 @@ class Button extends Widget
     }
   }
   
+  public void setFontSize(int size) {
+	  fontSize = size;
+  }
+  
   ////////////////////////////////////////////////////////////////////////////////////////////////////
   public void doAction() {
 		System.out.println("You have selected " + label);
@@ -77,4 +82,5 @@ class Button extends Widget
   // Private stuff.
   PImage icon;
   String label;
+  int fontSize;
 }
