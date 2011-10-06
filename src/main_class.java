@@ -43,15 +43,27 @@ public class main_class extends PApplet{
 		for(int z=0; z<max; ++z) {
 			System.out.println(a1.get(z).getWord() + "\t" + a1.get(z).getFreq());
 		}------------------------------------------------*/
+		
 		//Sort ALL_CHARACTERS where characters in more episodes are listed first.
-		Collections.sort(Parser.ALL_CHARACTERS, new Comparator<Object>(){
+		/*Collections.sort(Parser.ALL_CHARACTERS, new Comparator<Object>(){
             public int compare(Object ob1, Object ob2) {
                 Character c1 = (Character) ob1;
                 Character c2 = (Character) ob2;
                return c2.getTotalEpisodes() - c1.getTotalEpisodes();
             }
  
-        });
+        });*/
+		
+		//Sort ALL_CHARACTERS alphabetically
+			Collections.sort(Parser.ALL_CHARACTERS, new Comparator<Object>(){
+	            public int compare(Object ob1, Object ob2) {
+	                Character c1 = (Character) ob1;
+	                Character c2 = (Character) ob2;
+	               return c1.getName().compareToIgnoreCase(c2.getName());
+	            }
+	 
+	        });
+		
 		// Set incons of the characters after the parsing end
 		for (int i = 0; i< Parser.ALL_CHARACTERS.size(); i++) {
 			Parser.ALL_CHARACTERS.get(i).setIcon();

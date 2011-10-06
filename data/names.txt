@@ -25,6 +25,7 @@ male voice
 female voice
 narrator
 commentator
+official
 salesman
 saleswoman
 gopher

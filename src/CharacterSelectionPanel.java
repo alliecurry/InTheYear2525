@@ -85,7 +85,7 @@ public class CharacterSelectionPanel extends Widget {
 		listView.setLabel("List View");
 		
 		// test
-		treemap = GLOBAL.processing.loadImage("images/treemap.jpg");
+		treemap = GLOBAL.processing.loadImage("images/treemap2.jpg");
 		
 	}
 	
