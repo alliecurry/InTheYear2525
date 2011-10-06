@@ -11,6 +11,7 @@ public class HorizontalScrollBar extends Widget{
     public float valEnd;
     public boolean draggingStart;
     public boolean draggingEnd;
+    public boolean draggingAll;
     
     public ArrayList<Episode> episodes;
 
@@ -56,8 +57,22 @@ public class HorizontalScrollBar extends Widget{
         //GLOBAL.gu.drawVGradient(selectionEnd.x + selectionEnd.width, selectionEnd.y, -selectionEnd.width, selectionEnd.height, GLOBAL.processing.color(200, 200, 200), 255, GLOBAL.processing.color(255, 255, 255), 255, (float) 0.5);
         GLOBAL.gu.drawVGradient(selectionEnd.x + selectionEnd.width, selectionEnd.y, -(selectionEnd.x - selectionStart.x+ selectionEnd.width), selectionStart.height, GLOBAL.processing.color(200, 200, 200), 255, GLOBAL.processing.color(255, 255, 255), 255, (float) 0.5);
        
+        // Handle moving all the scrollbar
+        if(draggingAll )
+        {
+            float d = (float)(GLOBAL.processing.mouseX - dragX) / width;
+            float tmpV = valStart + d;
+            float tmpV2 = valEnd + d;
+            if(tmpV >= 0 && tmpV + size <= 1 && tmpV2 >= 0 && tmpV2 + size <= 1)
+            {
+                valStart = tmpV;
+                valEnd = tmpV2;
+            }
+            dragX = GLOBAL.processing.mouseX;
+        }
+        
         // Handle start widget dragging.
-        if(draggingStart && GLOBAL.processing.mouseX < selectionEnd.x)
+        else if(draggingStart && GLOBAL.processing.mouseX < selectionEnd.x)
         {
             float d = (float)(GLOBAL.processing.mouseX - dragX) / width;
             float tmpV = valStart + d;
@@ -68,7 +83,7 @@ public class HorizontalScrollBar extends Widget{
             dragX = GLOBAL.processing.mouseX;
         }
         // Handle start widget dragging.
-        if(draggingEnd  && GLOBAL.processing.mouseX > (selectionStart.x + selectionStart.width))
+        else if(draggingEnd  && GLOBAL.processing.mouseX > (selectionStart.x + selectionStart.width))
         {
             float d = (float)(GLOBAL.processing.mouseX - dragX) / width;
             float tmpV = valEnd + d;
@@ -124,6 +139,16 @@ public class HorizontalScrollBar extends Widget{
     			return;
     		}
     	}
+    	else if( GLOBAL.processing.mouseX > selectionStart.x + selectionStart.width && GLOBAL.processing.mouseX < selectionEnd.x
+    				&& GLOBAL.processing.mouseY > selectionStart.y && GLOBAL.processing.mouseX < selectionStart.y + selectionStart.height) {
+    		
+    		int bh = (int)(size * width);
+    		if(bh < 10) bh = 10;
+    		draggingAll = true;
+			dragX = GLOBAL.processing.mouseX;
+			return;
+			
+    	}
         
     }
   
@@ -132,7 +157,7 @@ public class HorizontalScrollBar extends Widget{
     {
         
         // If we are in the tag cloud visualization
-        if (GLOBAL.WORD_ANALYSIS && draggingStart) {
+        if (GLOBAL.WORD_ANALYSIS && (draggingStart || draggingEnd || draggingAll) ) {
         	main_class.graphArea.clearGraphs();
         	
         	// UPDATE the tag clouds on releasing 
@@ -144,6 +169,7 @@ public class HorizontalScrollBar extends Widget{
         
         draggingStart = false;
         draggingEnd = false;
+        draggingAll = false;
         
     }
     
@@ -154,5 +180,4 @@ public class HorizontalScrollBar extends Widget{
     private int dragX;
     private float indexStart;
     private float indexEnd;
-
 }
