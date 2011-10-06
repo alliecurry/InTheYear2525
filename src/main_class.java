@@ -1,3 +1,4 @@
+import java.util.ArrayList;
 import java.util.Collections;
 import java.util.Comparator;
 import processing.core.*;
@@ -28,7 +29,16 @@ public class main_class extends PApplet{
 		pars.parseBackgroundChars();	//Loads unacceptable character names from file names.txt
 		pars.parseAllTranscripts();		//Parse all episode transcripts
 		pars.filterCharacters();        //Remove characters in less than 1 episode
+		GLOBAL.parseForWordMap = true;	//Flag to enable parsing on .txt files for word mapping
+		pars.parseAllTranscripts();		//Parse all word file transcripts.
 		
+		
+		//WORD FREQUENCY TESTING ------------------------
+		/*ArrayList<Word> a1 = Parser.ALL_CHARACTERS.get(0).getWordRange(1, 1, 1, 6);
+		int max=50; if(a1.size()<max) { max = a1.size(); }
+		for(int z=0; z<max; ++z) {
+			System.out.println(a1.get(z).getWord() + "\t" + a1.get(z).getFreq());
+		}------------------------------------------------*/
 
 		//Sort ALL_CHARACTERS where characters in more episodes are listed first.
 		Collections.sort(Parser.ALL_CHARACTERS, new Comparator<Object>(){
@@ -41,23 +51,23 @@ public class main_class extends PApplet{
         });
 		
 		// Load character image
-		/*for(int i=0; i< Parser.ALL_CHARACTERS.size(); i++)
+		for(int i=0; i< Parser.ALL_CHARACTERS.size(); i++)
 			Parser.ALL_CHARACTERS.get(i).setIcon();
 
 		// TreeMap .tm3 file -> copy & paste on the Characters.tm3 file  
 		System.out.println("Appearence");
 		System.out.println("INTEGER");
 		
-		/*for(int x=0; x<Parser.ALL_CHARACTERS.size(); ++x) {
+		for(int x=0; x<Parser.ALL_CHARACTERS.size(); ++x) {
 			String name = Parser.ALL_CHARACTERS.get(x).getName();
 			int ep = Parser.ALL_CHARACTERS.get(x).getTotalEpisodes();
 
-			System.out.println(name + ":\t\t" + ep + " episodes.");
+			//System.out.println(name + ":\t\t" + ep + " episodes.");
 
-			/*if ( Parser.ALL_CHARACTERS.get(x).getTotalEpisodes() > 1)
+			if ( Parser.ALL_CHARACTERS.get(x).getTotalEpisodes() > 5)
 				//System.out.println("<leaf>\n<label>"+ Parser.ALL_CHARACTERS.get(x).getName() +"</label>\n<weight>"+ Parser.ALL_CHARACTERS.get(x).getTotalEpisodes() +"</weight>\n<value>"+ Parser.ALL_CHARACTERS.get(x).getTotalEpisodes() +"</value>\n</leaf>");
 				System.out.println(Parser.ALL_CHARACTERS.get(x).getTotalEpisodes() + "\tCharacters\t" + Parser.ALL_CHARACTERS.get(x).getName());
-		}*/
+		}
 		 
 		
 		//TESTING... 1 2 3! 

@@ -58,6 +58,20 @@ public class Parser {
         }
 
         public void parseFile(String fileName) {
+        	if(GLOBAL.parseForWordMap) {	//If we are parsing word map transcripts
+        		//remove last four characters from filename (".txt")
+        		int i = fileName.indexOf(".txt");
+        		fileName = fileName.substring(0, i);
+        		//add underscore & re-insert ".txt"
+        		fileName += "_.txt";
+        	}
+        	
+        	parseFile(fileName, GLOBAL.parseForWordMap);
+        }
+        
+        //Parses transcripts (wordsFile = false)
+        //OR word transcripts (have an added underscore to filename, and are used for word mapping) (wordsFile = true)
+        public void parseFile(String fileName, boolean wordsFile) {
             Scanner scan = null;    //Scanner for reading file
             ep = null;
            
@@ -73,12 +87,16 @@ public class Parser {
            
             //Scan all dialog
             while (scan.hasNextLine()) {    //Executes if a line of text exists
-                    storeLine(scan.nextLine());     //Sends line to method storeLine()
+            	if(wordsFile) { storeLineWords(scan.nextLine()); }
+            	else { storeLine(scan.nextLine()); }    //Sends line to method storeLine()
             }
            
             scan.close();
-            updateCharacterEpisodes();      //Add episode to appropriate Character objects.
-            updateArray();  //Add episode to appropriate array list
+            
+            if(!wordsFile) { //Only do the following when parsing initial transcripts
+            	updateCharacterEpisodes();      //Add episode to appropriate Character objects.
+            	updateArray();  //Add episode to appropriate array list
+            }
         }
        
         //Sends all Futurama transcripts through the method parseFile()
@@ -270,8 +288,39 @@ public class Parser {
                 season = Integer.parseInt(splitLine[0]);        //Store season #
                 episode = Integer.parseInt(splitLine[1]);       //Store episode #
                
-                ep = new Episode(episode, season, splitLine[2]);
-                hashKey = "S" + season + "E" + episode;         //Store current hash map key prefix
+                if(!GLOBAL.parseForWordMap) {
+                	ep = new Episode(episode, season, splitLine[2]);
+                	hashKey = "S" + season + "E" + episode;         //Store current hash map key prefix
+                }
+        }
+        
+        //Store Line of words (as opposed to dialog, for only the 'main' words are included in the file)
+        private void storeLineWords(String line) {
+        	//Split line so character name and dialog are seperated.
+            String[] splitLine = line.split("\t", 2);
+            
+            if(splitLine.length<2) { return; }
+           
+            String character = splitLine[0].toLowerCase();  //get character name
+            
+            if(character.length() < 1) { return; }
+            
+            character = updateName(character);	//Check to see if name needs to be changed (eg. "inez" is also = "mrs. wong")
+
+            int i = findCharacter(character);	//Find index of character in the array ALL_CHARACTERS
+            
+            if(i == -1) { return; }	//Ignore characters not part of list
+            
+            String[] splitWords = splitLine[1].split(",", 0);
+            
+            if(splitWords == null) { return; }
+            
+            for(int x=0; x<splitWords.length; ++x){
+            	if(!splitWords[x].equals("")) {
+            		ALL_CHARACTERS.get(i).addWord(splitWords[x], season, episode);
+            	}
+            }
+            
         }
        
         //Returns true if character (name String c) is not a reoccurring character.
@@ -364,7 +413,7 @@ public class Parser {
 	   }
 	   
 	   if(c.equals("richard nixon's head")) {	//Switch these two arround if you'd rather it the other way, 
-		   c = "nixon";									//but I had to pick one :)
+		   return "nixon";									//but I had to pick one :)
 	   }
 	   
 	   if(c.equals("joey")) {
@@ -456,8 +505,9 @@ public class Parser {
 	   
 	   line = line.toLowerCase();	//convert line to lower case for simplicity.
 	   
-	   int abc = 0;
-	   if(c.equalsIgnoreCase("kif") && line.contains("sigh")) { System.out.println(line); abc++;}
+	   //For testing...
+	   //int abc = 0;
+	   /*if(c.equalsIgnoreCase("kif") && line.contains("sigh")) { System.out.println(line); abc++;}*/
 	   
 	   //Find character in ALL_CHARACTERS array
 	   int index = findCharacter(c);
@@ -465,7 +515,7 @@ public class Parser {
 	   for(int x=0; x<ALL_CHARACTERS.get(index).getTotalPhrases(); ++x) {
 		   if(line.matches(ALL_CHARACTERS.get(index).getPhrase(x).getRegex())) {
 			   ALL_CHARACTERS.get(index).getPhrase(x).addToTotals(season, episode, 1);
-			   if(abc > 0) { System.out.println("\tFOUND"); }
+			   //if(abc > 0) { System.out.println("\tFOUND"); } 	(for testing)
 		   }
 	   }
    }
@@ -489,6 +539,24 @@ public class Parser {
 		   }
 	   }
 	   return false;
+   }
+   
+   public void parseWordFiles() {
+	   	Scanner scan;    //Scanner for reading file
+	   	
+  		try {
+	   		scan = new Scanner(new FileReader("data/phrases.txt"));   //Initialize scanner with file.
+	    } catch (FileNotFoundException e) {
+              e.printStackTrace();
+              return;
+	    }
+	
+      //Scan all dialog
+      while (scan.hasNextLine()) {    //Executes if a line of text exists
+              storeCatchphrase(scan.nextLine());
+      }
+  
+      scan.close();
    }
    
 }

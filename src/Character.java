@@ -1,4 +1,7 @@
 import java.util.ArrayList;
+import java.util.Collections;
+import java.util.Comparator;
+import java.util.HashMap;
 
 import processing.core.PApplet;
 import processing.core.PImage;
@@ -17,9 +20,11 @@ public class Character {
         private ArrayList<Integer> episodes_s5;    //List of episode numbers character appears (season 5)
         private ArrayList<Integer> episodes_s6;    //List of episode numbers character appears (season 6)
         
-        private ArrayList<Episode> episodes;       //List of all episodes character appears (among all seasons)
-        
+        private ArrayList<Episode> episodes;       	//List of all episodes character appears (among all seasons)
         private ArrayList<Catchphrase> phrases;		//List of catchphrases the Character is known to say.
+        
+        //Lists of 'important' words and how often they appear. (per season)
+        private ArrayList<Word> wordWeights;
         
         public Character (String n){
 	        name = n;
@@ -29,8 +34,9 @@ public class Character {
 	        episodes_s4 = new ArrayList<Integer>();
 	        episodes_s5 = new ArrayList<Integer>();
 	        episodes_s6 = new ArrayList<Integer>();
-	        
+
 	        episodes = new ArrayList<Episode>();
+	        wordWeights = new ArrayList<Word>();
         }
        
         //Add episode # to list of episodes character appears in
@@ -152,13 +158,13 @@ public class Character {
         	return phrases.get(i);
         }
         
-        //FOR TESTING::
+        //FOR TESTING:: -------
         public void printPhrases() {
         	System.out.println(name.toUpperCase());
         	for(int x=0; x<getTotalPhrases(); ++x) {
         		System.out.println("\t" + phrases.get(x).getTotal() + "\t" + phrases.get(x).getPhrase());
         	}
-        }
+        }//--------------------
         
         public void setIcon() {
         	icon = GLOBAL.processing.loadImage("images/" +name+ ".jpg");
@@ -167,5 +173,179 @@ public class Character {
         public PImage getIcon() {
         	return icon;
         }
+        
+        
+        //METHODS FOR WORD MAPPING ---------------------------
+        //----------------------------------------------------
+        
+        public ArrayList<Word> getWordRange(int s1, int e1, int s2, int e2) {
+        	ArrayList<Word> a1 = getWords(s1, e1);	//Get first episode from the season s1
+        	ArrayList<Word> a2;	//Used as temporary array to merge into a1
+        	
+        	//Range is only over 1 season
+        	if(s1 == s2) {	
+        		for(int x=(e1+1); x<=e2; ++x) {
+        			a2 = getWords(s1, x);	//Get next episode
+        			a1 = mergeWordArrays(a1, a2);	//Merge current arrays
+        		}
+        	}
+        	
+        	//Range is over multiple seasons
+        	else {
+        		//Parse first season given (seperate b/c first episode may not = 1)
+        		for(int x=(e1+1); x<=getSeasonTotal(s1); ++x) {
+        			a2 = getWords(s1, x);	//Get next episode
+        			a1 = mergeWordArrays(a1, a2);	//Merge current arrays
+        		}
+        		
+        		//Parse all other seasons up to (not including) s2 (seperate b/c includes all episodes)
+        		for(int y=s1+1; y<s2; ++y) {
+        			for(int z=1; z<=getSeasonTotal(y); ++z) {
+        				a2 = getWords(y, z);	//Get next episode
+            			a1 = mergeWordArrays(a1, a2);	//Merge current arrays
+        			}
+        		}
+        		
+        		//Parse last season in range (s2) 
+        		for(int a=1; a<=e2; ++a) {
+        			a2 = getWords(s2, a);	//Get next episode
+        			a1 = mergeWordArrays(a1, a2);	//Merge current arrays
+        		}
+        	}
+        	
+        	//sort array by frequency
+        	Collections.sort(a1, new Comparator<Object>(){    		 
+                public int compare(Object o1, Object o2) {
+                    Word w1 = (Word) o1;
+                    Word w2 = (Word) o2;
+                   return w2.getFreq()-w1.getFreq();
+                }
+            });
+        	
+        	return a1;
+        }
+        
+        public ArrayList<Word> mergeWordArrays(ArrayList<Word> a1, ArrayList<Word> a2) {
+        	ArrayList<Word> temp = new ArrayList<Word>();
+        	int i = -1;
+        	
+        	//No need to merge anything if any of the arrays are empty...
+        	if(a1.size() == 0) { return a2; }
+        	if(a2.size() == 0) { return a1; }
+        	
+        	//Parse first list
+        	for(int x=0; x<a1.size(); ++x) {
+        		i = getWordIndex(a1.get(x).getWord(), a2);	//Check if word from a1 exists in a2
+        		
+        		if(i >= 0) {	//Word exists in both arrays
+        			int f = a1.get(x).getFreq() + a2.get(i).getFreq();
+        			temp.add(new Word(a1.get(x).getWord(), 0, 0, f));
+        			a2.remove(i);
+        		}
+        		else {
+        			temp.add(a1.get(x));
+        		}
+        	}
+        	
+        	return temp;
+        }
+ 
+        
+        //Return arrayList of all words character says in season s, episode e
+        public ArrayList<Word> getWords(int s, int e) {
+        	ArrayList<Word> temp = new ArrayList<Word>();	//to be converted to array
+        	
+        	//Parse wordWeights array list
+        	for(int x=0; x<wordWeights.size(); ++x) {
+        		if(wordWeights.get(x).getSeason() > s) {
+        			break;
+        		}
+        		if(wordWeights.get(x).getSeason() == s && wordWeights.get(x).getEpisode() == e) {
+        			temp.add(wordWeights.get(x));
+        		}
+        	}
+        	
+        	return temp;
+        }
+        
+        //Return arrayList of all weights (of words) for season s, episode s
+        public ArrayList<Integer> getWeights(int s, int e) {
+        	ArrayList<Integer> temp = new ArrayList<Integer>();	//to be converted to array
+        	
+        	//Parse wordWeights array list
+        	for(int x=0; x<wordWeights.size(); ++x) {
+        		if(wordWeights.get(x).getSeason() > s) {
+        			break;
+        		}
+        		if(wordWeights.get(x).getSeason() == s && wordWeights.get(x).getEpisode() == e) {
+        			temp.add(wordWeights.get(x).getFreq());
+        		}
+        	}
+        	
+        	return temp;
+        }
+        
+        //Get index (wordWeights) of word w from season s, episode e
+        //	returns -1 if word does not exist in wordWeights
+        public int getWordIndex(String w, int s, int e) {
+        	for(int x=0; x<wordWeights.size(); ++x) {	//Parse wordWeights
+        		if(wordWeights.get(x).getSeason() > s) {	//Word does not exist if we reached a further season
+        			break;
+        		}
+        		else if(wordWeights.get(x).getSeason() == s && wordWeights.get(x).getEpisode() == e && wordWeights.get(x).getWord().equals(w)) { //Found word
+        			return x;
+        		}
+        	}
+        	
+        	return -1;
+        }
+        
+        //Get index (in any ArrayList<Word> = a) of word w
+        //	returns -1 if word does not exist in a
+        public int getWordIndex(String w, ArrayList<Word> a) {
+        	for(int x=0; x<a.size(); ++x) {	//Parse wordWeights
+        		if(wordWeights.get(x).getWord().equals(w)) { //Found word
+        			return x;
+        		}
+        	}
+        	return -1;
+        }
+        
+        public void addWord(String w, int s, int e) {
+        	w = w.toLowerCase();
+        	
+        	//System.out.println(w);
+        	
+        	int i = getWordIndex(w,s,e);	//See if word already exists for this episode.
+        	if(i == -1) { //Word does not exist
+        		wordWeights.add(new Word(w, s, e));
+        		return;
+        	}
 
+        	//Word exists already...
+        	wordWeights.get(i).addOne();	//Add one to the weight/frequency of this word
+        }
+        
+        //For Testing...
+        public void printWords(int s, int e) {
+        	ArrayList<Word> temp = getWords(s, e);
+        	
+        	for(int x=0; x<temp.size(); ++x) {
+        		System.out.println(temp.get(x).getWord() + "\t" + temp.get(x).getFreq());
+        	}
+        }
+        
+        //return total sumber of episodes in season s
+        private int getSeasonTotal(int s) {
+        	switch(s) {
+        	case 1:	return 13;
+        	case 2:	return 19;
+        	case 3:	return 22;
+        	case 4: return 18;
+        	case 5:	return 16;
+        	case 6:	return 26;
+        	default: return 0;
+        	}
+        }
+        
 }

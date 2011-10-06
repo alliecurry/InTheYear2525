@@ -71,6 +71,10 @@ public class GLOBAL {
 	// Variables storing starting and ending point for characters analysis
 	public static Episode episodeStart;
 	public static Episode episodeEnd;
+	
+	//Variable used to determine if parsing transcripts with full dialog (= false), 
+	//	or only mapping words (= true)
+	public static boolean parseForWordMap = false;
 		
 	public GLOBAL(PApplet p) {
 		processing = p;

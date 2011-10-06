@@ -12,7 +12,7 @@ public class Episode {
     private ArrayList<Character> chars;    //list of characters in episode
     private HashMap<Character, Integer> numberOfLinesPerCharacter; // hash map containing for each character the number of lines he/she speak
     
-
+    
     public Episode(int e, int s, String n) {
             episode = e;
             season = s;
