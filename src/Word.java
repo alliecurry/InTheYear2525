@@ -38,6 +38,10 @@ public class Word {
 		return frequency;
 	}
 	
+	public int getWeight() {	//Same as getFreq() but helps in confusion b/w weight vs frequency.
+		return frequency;
+	}
+	
 	public int getSeason() {
 		return season;
 	}

@@ -9,7 +9,7 @@ public class Parser {
         //HashMap for storing all dialog.
         //      Key:    (String) S# + E# + CharacterName
         //      Value:  (String) Dialog
-        public static HashMap<String, String> ALL_DATA = new HashMap<String, String>();
+        //public static HashMap<String, String> ALL_DATA = new HashMap<String, String>();
        
         //ArrayList for storing all characters.
         public static ArrayList<Character> ALL_CHARACTERS = new ArrayList<Character>();
@@ -31,7 +31,8 @@ public class Parser {
        
         int episode;    //Current episode number
         int season;		//Current season number
-        String hashKey; //HashMap key based on episode and season
+        //String hashKey; //HashMap key based on episode and season
+        
         Episode ep;		//Current object to be added to arraylist
        
        
@@ -254,14 +255,18 @@ public class Parser {
                 String character = splitLine[0].toLowerCase();  //Store character name
                 character = updateName(character);	//Check to see if name needs to be changed (eg. "inez" is also = "mrs. wong")
                 
-                String fullKey = hashKey + character;           //Full hash map key includes character name.
-                String value = ALL_DATA.get(fullKey);           //Get current episode dialog for this character
+                
+                //Code for hashmap.... not needed for current implementation.
+                //String fullKey = hashKey + character;           //Full hash map key includes character name.
+                /*String value = ALL_DATA.get(fullKey);           //Get current episode dialog for this character
                
                 if(value == null) {
                         value = "";
                 }
                 value += splitLine[1] + "\n";   //Append dialog to any other episode dialog
-                ALL_DATA.put(fullKey, value);
+                ALL_DATA.put(fullKey, value);*/
+                
+                
                 //Add character to episode (unless is a background character)
                 if(!isBackgroundCharacter(character)){
 //                  ep.addCharacter(character);
@@ -290,7 +295,7 @@ public class Parser {
                
                 if(!GLOBAL.parseForWordMap) {
                 	ep = new Episode(episode, season, splitLine[2]);
-                	hashKey = "S" + season + "E" + episode;         //Store current hash map key prefix
+                	//hashKey = "S" + season + "E" + episode;         //Store current hash map key prefix
                 }
         }
         
@@ -521,7 +526,7 @@ public class Parser {
    }
    
    //Find index number of character c in ALL_CHARACTERS
-   public int findCharacter(String c){
+   public static int findCharacter(String c){
 	   for(int x=0; x<ALL_CHARACTERS.size(); ++x) {
 		   if(c.equals(ALL_CHARACTERS.get(x).getName())) {
 			   return x;
