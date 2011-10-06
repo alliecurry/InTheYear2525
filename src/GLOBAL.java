@@ -34,6 +34,7 @@ public class GLOBAL {
 	public static int colorStatsArea;
 	public static int colorMenuBackground;
 	public static int colorIconBackground;
+	public static int colorTagCloudBackground;
 
 	
 	////

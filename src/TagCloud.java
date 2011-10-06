@@ -13,7 +13,7 @@ public class TagCloud extends Widget{
 	PGraphics buffer;
 	
 	public int plotWidth;
-	public int infoWidth;
+	public int infoWidth = 100;
 	
 	public Character character;
 	
@@ -24,15 +24,18 @@ public class TagCloud extends Widget{
 		
 		width = WEIGHT;
 		height = HEIGHT;
-		
-		infoWidth = 100;
-		
+				
 		plotWidth = width - infoWidth; // Need space for icons and stat
 		
 		character = c;
 		
 		wordList = new ArrayList<wordcram.Word>();
-				
+		
+		setTagCloud();
+
+	}
+	
+	public void setTagCloud() {
 		int i = Parser.findCharacter(character.getName()); //Find index of the character based on String name.
 		//The above is a static method.
 
@@ -71,9 +74,9 @@ public class TagCloud extends Widget{
 //			}
 //		}
 
-		buffer = GLOBAL.processing.createGraphics(plotWidth + 200, height + 200, GLOBAL.processing.JAVA2D);
+		buffer = GLOBAL.processing.createGraphics(plotWidth, height, GLOBAL.processing.JAVA2D);
 		buffer.beginDraw();
-		buffer.background(GLOBAL.colorBackgroundLayerTwo);
+		buffer.background(GLOBAL.colorTagCloudBackground);
 		
 		//w = new wordcram.Word[wordList.size()];
 		
@@ -88,8 +91,7 @@ public class TagCloud extends Widget{
 				    .withPlacer(Placers.centerClump())
 				    .maxNumberOfWordsToDraw(max)
 				    .withStopWords(StopWords.ENGLISH)
-				    .maxAttemptsToPlaceWord(1000000);
-
+				    .maxAttemptsToPlaceWord(10000);
 	}
 	
 	public void draw() {
@@ -107,12 +109,30 @@ public class TagCloud extends Widget{
 		else {
 
 			buffer.endDraw();
-			GLOBAL.processing.image(buffer, x - 100, y - 100);
+			GLOBAL.processing.image(buffer, x, y);
 
-			System.out.println(wc.getSkippedWords().length);
+			//System.out.println(wc.getSkippedWords().length);
 
 		}
 		//if (!wc.hasMore())
+	}
+	
+	
+	public void changePosition(int xValue, int yValue, int w, int l) {
+		
+		x = xValue;
+		y = yValue;
+		
+		width = w;
+		height = l;
+		
+		plotWidth = width - infoWidth;
+		
+		buffer.width = plotWidth;
+		buffer.height = height;
+		
+		setTagCloud();
+		
 	}
 
 //	void drawProgressBar(float progress) {

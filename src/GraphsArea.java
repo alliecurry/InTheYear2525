@@ -87,8 +87,8 @@ public class GraphsArea extends Widget{
 			}
 			else if (tagCloud2 == null) {
 				int chartHeight = (height - 140)/2;
-//				tagCloud2 = tagCloud1;
-//				tagCloud2.changePosition(x + 20, y + 40 + chartHeight, width - 20, chartHeight);
+				tagCloud2 = tagCloud1;
+				tagCloud2.changePosition(x + 20, y + 40 + chartHeight, width - 20, chartHeight);
 				tagCloud1 = new TagCloud(GLOBAL.CHARACTER_SELECTED, x + 20, y + 20, width - 20, chartHeight);
 				}
 			else {
@@ -96,8 +96,8 @@ public class GraphsArea extends Widget{
 				tagCloud3 = tagCloud2;
 				tagCloud2 = tagCloud1;
 				// chart 2 and 3 = change x y width height
-//				tagCloud2.changePosition(x + 20, y + 40 + chartHeight, width - 20, chartHeight);
-//				tagCloud3.changePosition(x + 20, y + 60 + 2*chartHeight, width - 20, chartHeight);
+				tagCloud2.changePosition(x + 20, y + 40 + chartHeight, width - 20, chartHeight);
+				tagCloud3.changePosition(x + 20, y + 60 + 2*chartHeight, width - 20, chartHeight);
 				tagCloud1 = new TagCloud(GLOBAL.CHARACTER_SELECTED, x + 20, y + 20, width - 20, chartHeight);	
 			}
 		}
