@@ -24,7 +24,7 @@ public class Character {
         private ArrayList<Catchphrase> phrases;		//List of catchphrases the Character is known to say.
         
         //Lists of 'important' words and how often they appear. (per season)
-        private ArrayList<Word> wordWeights;
+        private ArrayList<Word> wordWeights  = new ArrayList<Word>();
         
         public Character (String n){
 	        name = n;
@@ -36,7 +36,6 @@ public class Character {
 	        episodes_s6 = new ArrayList<Integer>();
 
 	        episodes = new ArrayList<Episode>();
-	        wordWeights = new ArrayList<Word>();
         }
        
         //Add episode # to list of episodes character appears in

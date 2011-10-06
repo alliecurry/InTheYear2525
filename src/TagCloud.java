@@ -50,14 +50,14 @@ public class TagCloud extends Widget{
 		//Why? because the list could contain hundreds of words! I don't know how big the treeMap can be, but
 		//I figure you may need a limit.
 		
+		if(myList.size()<50) { max = myList.size(); }
+		
 		w = new wordcram.Word[max];
 
 		System.out.println(myList.size());
 
 		//Parse your new ArrayList
 		for(int x=0; x<max; ++x) {
-			//Make sure to check that max is still under length of array
-			if(max >= myList.size()) { break; }
 			
 			String aWord = myList.get(x).getWord();  
 			int itsWeight = myList.get(x).getWeight();
@@ -68,7 +68,9 @@ public class TagCloud extends Widget{
 			w[x] = new wordcram.Word(aWord,itsWeight);
 			
 		}
-				
+		
+		
+		
 //		for (int i =0; i< Parser.ALL_CHARACTERS.size(); i++) {
 //			if (Parser.ALL_CHARACTERS.get(i).getTotalEpisodes() > 7) {
 //			alphabet.add( new wordcram.Word(Parser.ALL_CHARACTERS.get(i).getName(), (int) Parser.ALL_CHARACTERS.get(i).getTotalEpisodes()));
