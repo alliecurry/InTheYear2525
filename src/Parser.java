@@ -321,7 +321,7 @@ public class Parser {
             if(splitWords == null) { return; }
             
             for(int x=0; x<splitWords.length; ++x){
-            	if(!splitWords[x].equals("")) {
+            	if(!splitWords[x].equals("") && !splitWords[x].contains("'")) {
             		ALL_CHARACTERS.get(i).addWord(splitWords[x], season, episode);
             	}
             }

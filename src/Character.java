@@ -230,11 +230,12 @@ public class Character {
         
         public ArrayList<Word> mergeWordArrays(ArrayList<Word> a1, ArrayList<Word> a2) {
         	ArrayList<Word> temp = new ArrayList<Word>();
+        	ArrayList<Integer> ignore = new ArrayList<Integer>();
         	int i = -1;
         	
         	//No need to merge anything if any of the arrays are empty...
-        	if(a1.size() == 0) { return a2; }
-        	if(a2.size() == 0) { return a1; }
+        	if(a1.isEmpty()) { return a2; }
+        	if(a2.isEmpty()) { return a1; }
         	
         	//Parse first list
         	for(int x=0; x<a1.size(); ++x) {
@@ -243,10 +244,17 @@ public class Character {
         		if(i >= 0) {	//Word exists in both arrays
         			int f = a1.get(x).getFreq() + a2.get(i).getFreq();
         			temp.add(new Word(a1.get(x).getWord(), 0, 0, f));
-        			a2.remove(i);
+        			ignore.add(i);
         		}
         		else {
         			temp.add(a1.get(x));
+        		}
+        	}
+        	
+        	//Add remaining words from second array
+        	for(int y=0; y<a2.size(); ++y) {
+        		if(!ignore.contains(y)) {
+        			temp.add(a2.get(y));
         		}
         	}
         	
@@ -307,7 +315,7 @@ public class Character {
         //	returns -1 if word does not exist in a
         public int getWordIndex(String w, ArrayList<Word> a) {
         	for(int x=0; x<a.size(); ++x) {	//Parse wordWeights
-        		if(wordWeights.get(x).getWord().equals(w)) { //Found word
+        		if(a.get(x).getWord().equals(w)) { //Found word
         			return x;
         		}
         	}
@@ -317,7 +325,8 @@ public class Character {
         public void addWord(String w, int s, int e) {
         	w = w.toLowerCase();
         	
-        	//System.out.println(w);
+        	//if(w.equals("michelle")) { 
+        	//System.out.println("Mmmm ... \t" + s + ", " + e); }
         	
         	int i = getWordIndex(w,s,e);	//See if word already exists for this episode.
         	if(i == -1) { //Word does not exist

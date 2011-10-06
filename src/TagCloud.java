@@ -56,7 +56,9 @@ public class TagCloud extends Widget{
 
 		//Parse your new ArrayList
 		for(int x=0; x<max; ++x) {
-
+			//Make sure to check that max is still under length of array
+			if(max >= myList.size()) { break; }
+			
 			String aWord = myList.get(x).getWord();  
 			int itsWeight = myList.get(x).getWeight();
 			
