@@ -68,10 +68,6 @@ public class main_class extends PApplet{
 		for (int i = 0; i< Parser.ALL_CHARACTERS.size(); i++) {
 			Parser.ALL_CHARACTERS.get(i).setIcon();
 		}
-		
-		// Load character image
-		for(int i=0; i< Parser.ALL_CHARACTERS.size(); i++)
-			Parser.ALL_CHARACTERS.get(i).setIcon();
 
 		// TreeMap .tm3 file -> copy & paste on the Characters.tm3 file  
 		System.out.println("Appearence");
@@ -120,7 +116,7 @@ public class main_class extends PApplet{
 		GLOBAL.episodeStart = Parser.LIST_ALL.get(0);
 		GLOBAL.episodeEnd = Parser.LIST_ALL.get(Parser.LIST_ALL.size() - 1 );
 	  
-		tc = new TagCloud();
+		//tc = new TagCloud();
 
 		smooth();
 		

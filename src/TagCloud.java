@@ -2,44 +2,93 @@ import java.util.ArrayList;
 
 import processing.core.*;
 import wordcram.*;
+import wordcram.text.StopWords;
 
-public class TagCloud{
+public class TagCloud extends Widget{
 	
-	public ArrayList<wordcram.Word> alphabet;
+	public ArrayList<wordcram.Word> wordList;
 	public wordcram.Word[] w;
 	
 	public WordCram wc;
 	PGraphics buffer;
 	
-	public TagCloud() {
+	public int plotWidth;
+	public int infoWidth;
 	
-		alphabet = new ArrayList<wordcram.Word>();
+	public Character character;
+	
+	public TagCloud(Character c, int xValue, int yValue, int WEIGHT, int HEIGHT) {
+	
+		x = xValue;
+		y = yValue;
 		
-		for (int i =0; i< Parser.ALL_CHARACTERS.size(); i++) {
-			if (Parser.ALL_CHARACTERS.get(i).getTotalEpisodes() > 7) {
-			alphabet.add( new wordcram.Word(Parser.ALL_CHARACTERS.get(i).getName(), (int) Parser.ALL_CHARACTERS.get(i).getTotalEpisodes()));
-			//System.out.println("found");
-			}
+		width = WEIGHT;
+		height = HEIGHT;
+		
+		infoWidth = 100;
+		
+		plotWidth = width - infoWidth; // Need space for icons and stat
+		
+		character = c;
+		
+		wordList = new ArrayList<wordcram.Word>();
+				
+		int i = Parser.findCharacter(character.getName()); //Find index of the character based on String name.
+		//The above is a static method.
+
+		//You need to create a new ArrayList<Word> 
+		// The following method will populate it with all the words said from season s1 episode e1, through (and including) season s2, episode e2
+//		    To clarify,if you want the words from season 1 episode 1 only, [s1=1, e1 =1, s2=1, s2=1]
+		//   if you want the words from season 2 episode 3 through season 4 episode 6 : [s1=2 e1=3 s2=4 e2=6]
+		ArrayList<Word> myList = Parser.ALL_CHARACTERS.get(i).getWordRange(GLOBAL.episodeStart.getSeason(), GLOBAL.episodeStart.getEpisode(), GLOBAL.episodeEnd.getSeason(), GLOBAL.episodeEnd.getEpisode());
+
+		//Now you have myList (ordered by weight! biggest first! yay!)... so you need to decide how many words you want to display on the map. make a variable for this...
+		int max = 50;  //if we want to display 50 words.
+		//Why? because the list could contain hundreds of words! I don't know how big the treeMap can be, but
+		//I figure you may need a limit.
+		
+		w = new wordcram.Word[max];
+
+		System.out.println(myList.size());
+
+		//Parse your new ArrayList
+		for(int x=0; x<max; ++x) {
+
+			String aWord = myList.get(x).getWord();  
+			int itsWeight = myList.get(x).getWeight();
+			
+			wordList.add( new wordcram.Word(aWord,itsWeight) );
+			System.out.println("Added Word " + aWord + " - Weight " + itsWeight);
+			
+			w[x] = new wordcram.Word(aWord,itsWeight);
+			
 		}
-		
+				
+//		for (int i =0; i< Parser.ALL_CHARACTERS.size(); i++) {
+//			if (Parser.ALL_CHARACTERS.get(i).getTotalEpisodes() > 7) {
+//			alphabet.add( new wordcram.Word(Parser.ALL_CHARACTERS.get(i).getName(), (int) Parser.ALL_CHARACTERS.get(i).getTotalEpisodes()));
+//			//System.out.println("found");
+//			}
+//		}
 
-		
-//		 wc = new WordCram(GLOBAL.processing)
-//		  .fromTextFile("data/transcripts/SEASON1/S1E1.txt");
-
-		buffer = GLOBAL.processing.createGraphics(600, 300, GLOBAL.processing.JAVA2D);
+		buffer = GLOBAL.processing.createGraphics(plotWidth + 200, height + 200, GLOBAL.processing.JAVA2D);
 		buffer.beginDraw();
-		buffer.background(0);
+		buffer.background(GLOBAL.colorBackgroundLayerTwo);
 		
-		w = new wordcram.Word[alphabet.size()];
+		//w = new wordcram.Word[wordList.size()];
 		
 		  wc = new WordCram(GLOBAL.processing)
 		  //.fromTextFile("data/names.txt")
-		  .fromWords(alphabet.toArray(w))
+//		  .fromWords(wordList.toArray(w))
+		  .fromWords(w)
 				//.withColors(color(255,0,0), color(0), color(0,0,255)) // red, black, and blue
 		  .withCustomCanvas(buffer)
 		 .withColor(GLOBAL.colorText)
-				    .sizedByWeight(9, 30).withWordPadding(4).withAngler(Anglers.horiz()).withPlacer(Placers.centerClump());
+				    .sizedByWeight(-10,40).withWordPadding(2).withAngler(Anglers.horiz())
+				    .withPlacer(Placers.centerClump())
+				    .maxNumberOfWordsToDraw(max)
+				    .withStopWords(StopWords.ENGLISH)
+				    .maxAttemptsToPlaceWord(1000000);
 
 	}
 	
@@ -53,36 +102,37 @@ public class TagCloud{
 			//drawProgressText(progress);
 
 			wc.drawNext();
+			
 		}
 		else {
 
 			buffer.endDraw();
-			GLOBAL.processing.image(buffer, 300, 200);
+			GLOBAL.processing.image(buffer, x - 100, y - 100);
 
-			//System.out.println("done.");
+			System.out.println(wc.getSkippedWords().length);
 
 		}
 		//if (!wc.hasMore())
 	}
 
-	void drawProgressBar(float progress) {
-		int gray = GLOBAL.processing.color(progress * 255);
-
-		// Draw the empty box:
-		GLOBAL.processing.noFill();
-		GLOBAL.processing.stroke(255);
-		GLOBAL.processing.strokeWeight(2);
-		GLOBAL.processing.rectMode(GLOBAL.processing.CORNER);
-		GLOBAL.processing.rect(100, (300/2)-30, (600-200), 60);
-		  
-		  // Fill in the portion that's done:
-		  GLOBAL.processing.fill(gray);
-		  GLOBAL.processing.rect(100, (300/2)-30, (600) * progress, 60);
-		}
-
-		void drawProgressText(float progress) {
-			GLOBAL.processing.text(GLOBAL.processing.round(progress * 100) + "%", 600/2, (300/2)+50);
-		}
+//	void drawProgressBar(float progress) {
+//		int gray = GLOBAL.processing.color(progress * 255);
+//
+//		// Draw the empty box:
+//		GLOBAL.processing.noFill();
+//		GLOBAL.processing.stroke(255);
+//		GLOBAL.processing.strokeWeight(2);
+//		GLOBAL.processing.rectMode(GLOBAL.processing.CORNER);
+//		GLOBAL.processing.rect(100, (300/2)-30, (600-200), 60);
+//		  
+//		  // Fill in the portion that's done:
+//		  GLOBAL.processing.fill(gray);
+//		  GLOBAL.processing.rect(100, (300/2)-30, (600) * progress, 60);
+//		}
+//
+//		void drawProgressText(float progress) {
+//			GLOBAL.processing.text(GLOBAL.processing.round(progress * 100) + "%", 600/2, (300/2)+50);
+//		}
 	
 }
 

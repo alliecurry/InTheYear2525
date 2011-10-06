@@ -6,6 +6,7 @@ public class Menu extends Widget{
 	public Button sButton;
 	public Button phButton;
 	public Button dialButton;
+	public Button wordButton;
 	
 	public CharacterSelectionPanel characterPicker;
 	public EpisodeSelectionPanel episodePicker;
@@ -56,6 +57,14 @@ public class Menu extends Widget{
 		phButton.active = true;
 		phButton.setFontSize(14);
 		
+		// Word
+		wordButton= new Button();
+		wordButton.x = 20;
+		wordButton.y = 270;
+		wordButton.setLabel("Tag cloud");
+		wordButton.active = true;
+		wordButton.setFontSize(14);
+		
 
 	}
 
@@ -75,6 +84,7 @@ public class Menu extends Widget{
 			cButton.draw();
 			dialButton.draw();
 			phButton.draw();
+			wordButton.draw();
 		}
 		else if (GLOBAL.ANALYSIS_TYPE.equals("seasons"))
 			sButton.draw();
@@ -129,6 +139,11 @@ public class Menu extends Widget{
 			GLOBAL.CATCHPHRASES_ANALYSIS = true;
 			main_class.graphArea.clearGraphs();
 		}
+		else if (wordButton.mouseOver() && GLOBAL.WORD_ANALYSIS == false) {
+			GLOBAL.WORD_ANALYSIS = true;
+			main_class.graphArea.clearGraphs();
+		}
+		
 		
 		if (selectingCharacter && characterPicker.mouseOver()) {
 			characterPicker.doAction();

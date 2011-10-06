@@ -74,6 +74,7 @@ public class GLOBAL {
 	
 	// Character analysis: dialogues or catchphrases
 	public static boolean CATCHPHRASES_ANALYSIS = false;
+	public static boolean WORD_ANALYSIS = false;
 	
 	//Variable used to determine if parsing transcripts with full dialog (= false), 
 	//	or only mapping words (= true)

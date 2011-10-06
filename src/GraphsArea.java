@@ -11,6 +11,10 @@ public class GraphsArea extends Widget{
 	BarChart chart2;
 	BarChart chart3;
 	
+	TagCloud tagCloud1;
+	TagCloud tagCloud2;
+	TagCloud tagCloud3;
+	
 	// Number of charts we want to display at the moment
 	public int chartsNumber = 0;
 	
@@ -34,6 +38,13 @@ public class GraphsArea extends Widget{
 		if (chart3 != null)
 			chart3.draw();
 		
+		if (tagCloud1 != null)
+			tagCloud1.draw();
+		if (tagCloud2 != null)
+			tagCloud2.draw();
+		if (tagCloud3 != null)
+			tagCloud3.draw();
+		
 		if (GLOBAL.ANALYSIS_TYPE.equals("characters")) {
 			scroll.draw();
 			
@@ -50,23 +61,45 @@ public class GraphsArea extends Widget{
 	
 	// Create a new graph for character analysis
 	public void createCharacterGraph() {
-		if (chart1 == null) {
-			chart1 = new BarChart(GLOBAL.CHARACTER_SELECTED, x + 20, y + 20, width - 20, height - 120, CHARACTER_GRAPH);
-		}
-		else if (chart2 == null) {
-			int chartHeight = (height - 140)/2;
-			chart2 = chart1;
-			chart2.changePosition(x + 20, y + 40 + chartHeight, width - 20, chartHeight);
-			chart1 = new BarChart(GLOBAL.CHARACTER_SELECTED, x + 20, y + 20, width - 20, chartHeight, CHARACTER_GRAPH);
+		if (GLOBAL.WORD_ANALYSIS == false) {
+			if (chart1 == null) {
+				chart1 = new BarChart(GLOBAL.CHARACTER_SELECTED, x + 20, y + 20, width - 20, height - 120, CHARACTER_GRAPH);
 			}
+			else if (chart2 == null) {
+				int chartHeight = (height - 140)/2;
+				chart2 = chart1;
+				chart2.changePosition(x + 20, y + 40 + chartHeight, width - 20, chartHeight);
+				chart1 = new BarChart(GLOBAL.CHARACTER_SELECTED, x + 20, y + 20, width - 20, chartHeight, CHARACTER_GRAPH);
+				}
+			else {
+				int chartHeight = (height - 160)/3;
+				chart3 = chart2;
+				chart2 = chart1;
+				// chart 2 and 3 = change x y width height
+				chart2.changePosition(x + 20, y + 40 + chartHeight, width - 20, chartHeight);
+				chart3.changePosition(x + 20, y + 60 + 2*chartHeight, width - 20, chartHeight);
+				chart1 = new BarChart(GLOBAL.CHARACTER_SELECTED, x + 20, y + 20, width - 20, chartHeight, CHARACTER_GRAPH);	
+			}
+		}
 		else {
-			int chartHeight = (height - 160)/3;
-			chart3 = chart2;
-			chart2 = chart1;
-			// chart 2 and 3 = change x y width height
-			chart2.changePosition(x + 20, y + 40 + chartHeight, width - 20, chartHeight);
-			chart3.changePosition(x + 20, y + 60 + 2*chartHeight, width - 20, chartHeight);
-			chart1 = new BarChart(GLOBAL.CHARACTER_SELECTED, x + 20, y + 20, width - 20, chartHeight, CHARACTER_GRAPH);	
+			if (tagCloud1 == null) {
+				tagCloud1 = new TagCloud(GLOBAL.CHARACTER_SELECTED, x + 20, y + 20, width - 20, height - 120);
+			}
+			else if (tagCloud2 == null) {
+				int chartHeight = (height - 140)/2;
+//				tagCloud2 = tagCloud1;
+//				tagCloud2.changePosition(x + 20, y + 40 + chartHeight, width - 20, chartHeight);
+				tagCloud1 = new TagCloud(GLOBAL.CHARACTER_SELECTED, x + 20, y + 20, width - 20, chartHeight);
+				}
+			else {
+				int chartHeight = (height - 160)/3;
+				tagCloud3 = tagCloud2;
+				tagCloud2 = tagCloud1;
+				// chart 2 and 3 = change x y width height
+//				tagCloud2.changePosition(x + 20, y + 40 + chartHeight, width - 20, chartHeight);
+//				tagCloud3.changePosition(x + 20, y + 60 + 2*chartHeight, width - 20, chartHeight);
+				tagCloud1 = new TagCloud(GLOBAL.CHARACTER_SELECTED, x + 20, y + 20, width - 20, chartHeight);	
+			}
 		}
 		
 	}
