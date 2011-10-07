@@ -36,7 +36,7 @@ public class TableEntry extends Widget {
 		
 		GLOBAL.processing.fill(GLOBAL.colorText);
 		GLOBAL.processing.strokeWeight(1);
-		GLOBAL.processing.textAlign(GLOBAL.processing.RIGHT);
+		GLOBAL.processing.textAlign(GLOBAL.processing.LEFT);
 		GLOBAL.processing.text(label, cx + 5, cy + 20);
 		
 		GLOBAL.COLORS.reset();
@@ -45,10 +45,13 @@ public class TableEntry extends Widget {
 		int color2 = GLOBAL.COLORS.getNextColor();
 		int color3 = GLOBAL.COLORS.getNextColor();
 		
+		GLOBAL.processing.textAlign(GLOBAL.processing.RIGHT);
+		
 		switch (values.size()) {
 		
 		case 1:
 			GLOBAL.processing.fill(color1);
+			
 			GLOBAL.processing.text(values.get(0), cx + width - 120 , cy + 20);
 			break;
 		case 2:

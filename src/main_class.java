@@ -141,7 +141,7 @@ public class main_class extends PApplet{
 			noFill();
 
 
-
+			noLoop();
 	}
     	
 	// Draw the background of the second layer
@@ -190,27 +190,41 @@ public class main_class extends PApplet{
 		int[] c = {color(136,204,238), color(68,170,153), color(17,119,51), color(221,204,119), 
 					color(204,102,119), color(136,34,85), color(146,189,16), color(170,68,153), 
 					color(51,34,136)
-					 };
+		};
 		GLOBAL.COLORS = new ColorSwatch(c);
 	}
-	
+
 	// If mouse is pressed, check what has been pressed and activate the action
 	public void mousePressed() { 
-		  println("x = " + mouseX+ "y =" + mouseY);
-		  
-		  if(menu.mouseOver() || menu.characterPicker.mouseOver() || menu.seasonPicker.mouseOver() || menu.episodePicker.mouseOver())
-			  menu.doAction();
-		  
-		  // Change type of analysis
-		  if ( analysisTypeButton.mouseOver() ) {
-			  analysisTypeButton.doAction();
-			  GLOBAL.ANALYSIS_TYPE = analysisTypeButton.getState();
-				graphArea.clearGraphs();
-		  }
-		  
-		  if (graphArea.mouseOver())
-			  graphArea.doAction();
-			  
+
+		loop();
+		
+		println("x = " + mouseX+ "y =" + mouseY);
+
+		if(menu.mouseOver() || menu.characterPicker.mouseOver() || menu.seasonPicker.mouseOver() || menu.episodePicker.mouseOver())
+			menu.doAction();
+
+		// Change type of analysis
+		if ( analysisTypeButton.mouseOver() ) {
+			analysisTypeButton.doAction();
+			GLOBAL.ANALYSIS_TYPE = analysisTypeButton.getState();
+			graphArea.clearGraphs();
+		}
+
+		if (graphArea.mouseOver())
+			graphArea.doAction();
+
+	}
+	
+	public void mouseClicked() {
+		  loop();
+		}
+	public void mouseMoved() {
+		  loop();
+		}	
+	
+	public void mouseDragged() {
+		loop();
 	}
 	
 	public void mouseReleased() {

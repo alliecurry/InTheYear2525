@@ -163,6 +163,10 @@ public class TableChart extends Widget {
 			}
 			
 			allTableEntries.clear();
+			
+			resetAverageToBePlot();
+			
+			GLOBAL.COLORS.reset();
 
 			// Create new table entries and deactivate all entries
 			for ( int i = indexStart; i <= indexEnd; i++ ) {
@@ -174,14 +178,18 @@ public class TableChart extends Widget {
 				ArrayList<Integer> values = new ArrayList<Integer>();
 				
 				for (int j=0; j<GLOBAL.charactersSelected.size(); j++){
-					values.add(new Integer(Parser.LIST_ALL.get(i).getNumberOfLinesPerCharacter(GLOBAL.charactersSelected.get(j))));
+					int value = Parser.LIST_ALL.get(i).getNumberOfLinesPerCharacter(GLOBAL.charactersSelected.get(j));
+					values.add(new Integer(value));
 					
+					averagesToBePlot[j] = (averagesToBePlot[j] + value);
+					countersForAverage[j] = countersForAverage[j] + 1;
+
 				}
 				
 				TableEntry newTableEntry = new TableEntry(label, values, 14, plotWidth - 50 - 35, 25);
 				newTableEntry.active = false;
 				allTableEntries.add(newTableEntry);
-
+				
 			}
 
 			for (int j=0; j<GLOBAL.charactersSelected.size(); j++){
@@ -193,6 +201,16 @@ public class TableChart extends Widget {
 
 				if (character.getIcon() != null)
 					GLOBAL.processing.image( GLOBAL.charactersSelected.get(j).getIcon(), x + width - 80, y + 30 + j*200, 80, 80);
+			}
+			
+			// Averagesinfo		
+			GLOBAL.processing.textFont(GLOBAL.tFont,14);
+			GLOBAL.processing.textAlign(GLOBAL.processing.LEFT);
+			GLOBAL.processing.text("Average amounts of dialogue among the selected episodes: ", x + 20, y + 20);
+			for (int j=0; j<GLOBAL.charactersSelected.size(); j++) {
+				GLOBAL.processing.fill(GLOBAL.COLORS.getNextColor());
+				GLOBAL.processing.text(GLOBAL.charactersSelected.get(j).getName(), x + 20, y + 40 + 20*j);
+				GLOBAL.processing.text(averagesToBePlot[j]/countersForAverage[j], x + 100, y + 40 + 20*j);
 			}
 			
 		}
