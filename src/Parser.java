@@ -416,7 +416,7 @@ public class Parser {
 	   }
 	   
 	   if(c.equals("zapp")) {	//Changing Zapp to his full name
-		   return "zapp\nbrannigan";
+		   return "zapp brannigan";
 	   }
 	   
 	   if(c.equals("farsnworth")){	//This one was likely a typo
@@ -440,11 +440,11 @@ public class Parser {
 	   }
 	   
 	   if(c.equals("h.g. blob") || c.equals("horrible gelatinous blob")) {
-		   return "horrible\ngelatinous\nblob";
+		   return "horrible gelatinous blob";
 	   }
 	   
 	   if(c.equals("joey mouspad")) {
-		   return "joey\nmousepad";
+		   return "joey mousepad";
 	   }
 	   
 	   if(c.equals("inger")) {
@@ -460,14 +460,14 @@ public class Parser {
 	   }
 	   
 	   if(c.equals("vogel")) {
-		   return "warden\nvogel";
+		   return "warden vogel";
 	   }
 	   
 	   if(c.equals("mayor poopenmeyer")) {
 		   return "poopenmeyer";
 	   }
 	   
-		c = c.replaceAll("\\s", "\n");
+		//c = c.replaceAll("\\s", "\n");
 	   
 	   return c;
    }
