@@ -208,8 +208,11 @@ public class main_class extends PApplet{
 			  menu.doAction();
 		  
 		  // Change type of analysis
-		  if ( analysisTypeButton.mouseOver() ) 
+		  if ( analysisTypeButton.mouseOver() ) {
 			  analysisTypeButton.doAction();
+			  GLOBAL.ANALYSIS_TYPE = analysisTypeButton.getState();
+				graphArea.clearGraphs();
+		  }
 		  
 		  if (graphArea.mouseOver())
 			  graphArea.doAction();

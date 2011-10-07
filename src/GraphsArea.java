@@ -15,6 +15,10 @@ public class GraphsArea extends Widget{
 	TagCloud tagCloud2;
 	TagCloud tagCloud3;
 	
+	TableChart tableChart1;
+	TableChart tableChart2;
+	TableChart tableChart3;
+	
 	// Number of charts we want to display at the moment
 	public int chartsNumber = 0;
 	
@@ -45,6 +49,13 @@ public class GraphsArea extends Widget{
 		if (tagCloud3 != null)
 			tagCloud3.draw();
 		
+		if (tableChart1 != null)
+			tableChart1.draw();
+		if (tableChart2 != null)
+			tableChart2.draw();
+		if (tableChart3 != null)
+			tableChart3.draw();
+		
 		if (GLOBAL.ANALYSIS_TYPE.equals("characters")) {
 			scroll.draw();
 			
@@ -58,50 +69,76 @@ public class GraphsArea extends Widget{
 		}
 
 	}
-	
+
 	// Create a new graph for character analysis
 	public void createCharacterGraph() {
-		if (GLOBAL.WORD_ANALYSIS == false) {
-			if (chart1 == null) {
-				chart1 = new BarChart(GLOBAL.CHARACTER_SELECTED, x + 20, y + 20, width - 20, height - 120, CHARACTER_GRAPH);
-			}
-			else if (chart2 == null) {
-				int chartHeight = (height - 140)/2;
-				chart2 = chart1;
-				chart2.changePosition(x + 20, y + 40 + chartHeight, width - 20, chartHeight);
-				chart1 = new BarChart(GLOBAL.CHARACTER_SELECTED, x + 20, y + 20, width - 20, chartHeight, CHARACTER_GRAPH);
+		// IF plot graphs
+		if (GLOBAL.STAT_VIEW == false) {
+			if (GLOBAL.WORD_ANALYSIS == false) {
+				if (chart1 == null) {
+					chart1 = new BarChart(GLOBAL.CHARACTER_SELECTED, x + 20, y + 20, width - 20, height - 120, CHARACTER_GRAPH);
 				}
+				else if (chart2 == null) {
+					int chartHeight = (height - 140)/2;
+					chart2 = chart1;
+					chart2.changePosition(x + 20, y + 40 + chartHeight, width - 20, chartHeight);
+					chart1 = new BarChart(GLOBAL.CHARACTER_SELECTED, x + 20, y + 20, width - 20, chartHeight, CHARACTER_GRAPH);
+				}
+				else {
+					int chartHeight = (height - 160)/3;
+					chart3 = chart2;
+					chart2 = chart1;
+					// chart 2 and 3 = change x y width height
+					chart2.changePosition(x + 20, y + 40 + chartHeight, width - 20, chartHeight);
+					chart3.changePosition(x + 20, y + 60 + 2*chartHeight, width - 20, chartHeight);
+					chart1 = new BarChart(GLOBAL.CHARACTER_SELECTED, x + 20, y + 20, width - 20, chartHeight, CHARACTER_GRAPH);	
+				}
+			}
 			else {
-				int chartHeight = (height - 160)/3;
-				chart3 = chart2;
-				chart2 = chart1;
-				// chart 2 and 3 = change x y width height
-				chart2.changePosition(x + 20, y + 40 + chartHeight, width - 20, chartHeight);
-				chart3.changePosition(x + 20, y + 60 + 2*chartHeight, width - 20, chartHeight);
-				chart1 = new BarChart(GLOBAL.CHARACTER_SELECTED, x + 20, y + 20, width - 20, chartHeight, CHARACTER_GRAPH);	
+				if (tagCloud1 == null) {
+					tagCloud1 = new TagCloud(GLOBAL.CHARACTER_SELECTED, x + 20, y + 20, width - 20, height - 120);
+				}
+				else if (tagCloud2 == null) {
+					int chartHeight = (height - 140)/2;
+					tagCloud2 = tagCloud1;
+					tagCloud2.changePosition(x + 20, y + 40 + chartHeight, width - 20, chartHeight);
+					tagCloud1 = new TagCloud(GLOBAL.CHARACTER_SELECTED, x + 20, y + 20, width - 20, chartHeight);
+				}
+				else {
+					int chartHeight = (height - 160)/3;
+					tagCloud3 = tagCloud2;
+					tagCloud2 = tagCloud1;
+					// chart 2 and 3 = change x y width height
+					tagCloud2.changePosition(x + 20, y + 40 + chartHeight, width - 20, chartHeight);
+					tagCloud3.changePosition(x + 20, y + 60 + 2*chartHeight, width - 20, chartHeight);
+					tagCloud1 = new TagCloud(GLOBAL.CHARACTER_SELECTED, x + 20, y + 20, width - 20, chartHeight);	
+				}
 			}
 		}
+		// ELSE plot table view
 		else {
-			if (tagCloud1 == null) {
-				tagCloud1 = new TagCloud(GLOBAL.CHARACTER_SELECTED, x + 20, y + 20, width - 20, height - 120);
-			}
-			else if (tagCloud2 == null) {
-				int chartHeight = (height - 140)/2;
-				tagCloud2 = tagCloud1;
-				tagCloud2.changePosition(x + 20, y + 40 + chartHeight, width - 20, chartHeight);
-				tagCloud1 = new TagCloud(GLOBAL.CHARACTER_SELECTED, x + 20, y + 20, width - 20, chartHeight);
+			if (GLOBAL.WORD_ANALYSIS == false) {
+				if (tableChart1 == null) {
+					tableChart1 = new TableChart(GLOBAL.CHARACTER_SELECTED, x + 20, y + 20, width - 20, height - 120, CHARACTER_GRAPH);
 				}
-			else {
-				int chartHeight = (height - 160)/3;
-				tagCloud3 = tagCloud2;
-				tagCloud2 = tagCloud1;
-				// chart 2 and 3 = change x y width height
-				tagCloud2.changePosition(x + 20, y + 40 + chartHeight, width - 20, chartHeight);
-				tagCloud3.changePosition(x + 20, y + 60 + 2*chartHeight, width - 20, chartHeight);
-				tagCloud1 = new TagCloud(GLOBAL.CHARACTER_SELECTED, x + 20, y + 20, width - 20, chartHeight);	
+				else if (tableChart2 == null) {
+					int chartHeight = (height - 140)/2;
+					tableChart2 = tableChart1;
+					tableChart2.changePosition(x + 20, y + 40 + chartHeight, width - 20, chartHeight);
+					tableChart1 = new TableChart(GLOBAL.CHARACTER_SELECTED, x + 20, y + 20, width - 20, chartHeight, CHARACTER_GRAPH);
+				}
+				else {
+					int chartHeight = (height - 160)/3;
+					tableChart3 = tableChart2;
+					tableChart2 = tableChart1;
+					// chart 2 and 3 = change x y width height
+					tableChart2.changePosition(x + 20, y + 40 + chartHeight, width - 20, chartHeight);
+					tableChart3.changePosition(x + 20, y + 60 + 2*chartHeight, width - 20, chartHeight);
+					tableChart1 = new TableChart(GLOBAL.CHARACTER_SELECTED, x + 20, y + 20, width - 20, chartHeight, CHARACTER_GRAPH);	
+				}
 			}
 		}
-		
+
 	}
 	
 	// Create a new graph for episode analysis	
@@ -152,12 +189,24 @@ public class GraphsArea extends Widget{
 		tagCloud1 = null;
 		tagCloud2 = null;
 		tagCloud3 = null;
+		tableChart1 = null;
+		tableChart2 = null;
+		tableChart3 = null;
 	}
 	
 	public void doAction() {
 
 		if (scroll.mouseOver())
 			scroll.mousePressed();
+		
+		if (GLOBAL.STAT_VIEW) {
+			if (tableChart1 != null && tableChart1.mouseOver())
+				tableChart1.doAction();
+			if (tableChart2 != null && tableChart2.mouseOver())
+				tableChart2.doAction();
+			if (tableChart3 != null && tableChart3.mouseOver())
+				tableChart3.doAction();
+		}
 	}
 
 	public void createScrollBar() {

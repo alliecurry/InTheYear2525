@@ -66,9 +66,6 @@ public class MultistateButton extends Widget{
 		if (stateIndex == states.size())
 			stateIndex = 0;
 		
-		GLOBAL.ANALYSIS_TYPE = getState();
-		main_class.graphArea.clearGraphs();
-		
 	}
 	
 	public String getState() {

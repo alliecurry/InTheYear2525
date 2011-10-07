@@ -46,7 +46,7 @@ public class TagCloud extends Widget{
 		ArrayList<Word> myList = Parser.ALL_CHARACTERS.get(i).getWordRange(GLOBAL.episodeStart.getSeason(), GLOBAL.episodeStart.getEpisode(), GLOBAL.episodeEnd.getSeason(), GLOBAL.episodeEnd.getEpisode());
 
 		//Now you have myList (ordered by weight! biggest first! yay!)... so you need to decide how many words you want to display on the map. make a variable for this...
-		int max = 50;  //if we want to display 50 words.
+		int max = 100;  //if we want to display 50 words.
 		//Why? because the list could contain hundreds of words! I don't know how big the treeMap can be, but
 		//I figure you may need a limit.
 
@@ -99,7 +99,7 @@ public class TagCloud extends Widget{
 				//.withColors(color(255,0,0), color(0), color(0,0,255)) // red, black, and blue
 		  .withCustomCanvas(buffer)
 		 .withColor(GLOBAL.colorText)
-				    .sizedByWeight(0,40).withWordPadding(2).withAngler(Anglers.horiz())
+				    .sizedByWeight(6,60).withWordPadding(2).withAngler(Anglers.horiz())
 				    .withPlacer(Placers.centerClump())
 				    .maxNumberOfWordsToDraw(max)
 				    .withStopWords(StopWords.ENGLISH)

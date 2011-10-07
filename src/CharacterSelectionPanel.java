@@ -25,32 +25,6 @@ public class CharacterSelectionPanel extends Widget {
 		height = 600;
 		width = 660;
 		
-		/*
-		int offsetX = 0, offsetY= 0;
-		// TODO make all buttons after having all the occurrences. for all in ALL_CHARACTER, create a button with getName and getOccurrences
-		for(int i = 0; i < Parser.ALL_CHARACTERS.size(); i++) {	
-			// TODO eliminate this if when all the character images will be available
-			if(Parser.ALL_CHARACTERS.get(i).getTotalEpisodes() > 4) {
-				CharacterButton cb = new CharacterButton(Parser.ALL_CHARACTERS.get(i).getName(), Parser.ALL_CHARACTERS.get(i).getTotalEpisodes(), true);
-				//cb.x = 40 + offsetX;
-				cb.x = x + 20 + offsetX;
-//				cb.y = 150 + offsetY;
-				cb.y = y + 100 + offsetY;
-				cb.active = true;
-				
-				if (offsetX == 200) {
-					offsetX = 0;
-					offsetY += 100;
-				}
-				else
-					offsetX += 100;
-				
-				//cb.setLabel(Parser.ALL_CHARACTERS.get(i).getName());
-				GLOBAL.allCharacterButtons.add(cb);
-			}
-		}
-		*/
-		
 		// Treemap
 		
 		characterIconsTreemap = new ArrayList<CharacterButton>();
@@ -164,11 +138,6 @@ public class CharacterSelectionPanel extends Widget {
 	
 	public void doAction() {
 		if(!list) {
-//			for(int i = 0; i < GLOBAL.allCharacterButtons.size(); i++) {
-//				if( GLOBAL.allCharacterButtons.get(i).mouseOver() && GLOBAL.allCharacterButtons.get(i).active) {
-//					GLOBAL.allCharacterButtons.get(i).doAction();
-//				}
-//			}
 			for(int i = 0; i < characterIconsTreemap.size(); i++) {
 				if( characterIconsTreemap.get(i).mouseOver() && characterIconsTreemap.get(i).active) {
 					characterIconsTreemap.get(i).doAction();

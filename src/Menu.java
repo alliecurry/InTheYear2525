@@ -8,6 +8,8 @@ public class Menu extends Widget{
 	public Button dialButton;
 	public Button wordButton;
 	
+	public MultistateButton viewTypeButton;
+	
 	public CharacterSelectionPanel characterPicker;
 	public EpisodeSelectionPanel episodePicker;
 	public SeasonSelectionPanel seasonPicker;
@@ -65,6 +67,14 @@ public class Menu extends Widget{
 		wordButton.active = true;
 		wordButton.setFontSize(14);
 		
+		//Statistical view button
+		viewTypeButton = new MultistateButton();
+		viewTypeButton.x = 20;
+		viewTypeButton.y = 400;
+		viewTypeButton.addState("Plots");
+		viewTypeButton.addState("Statistical");
+		viewTypeButton.active = true;
+		
 
 	}
 
@@ -101,6 +111,8 @@ public class Menu extends Widget{
 			seasonPicker.draw();
 		else if(selectingEpisode)
 			episodePicker.draw();
+		
+		viewTypeButton.draw();
 		
 	}
 	
@@ -160,6 +172,11 @@ public class Menu extends Widget{
 			episodePicker.doAction();
 		else if(selectingSeason && seasonPicker.mouseOver())
 			seasonPicker.doAction();
+		
+		if (viewTypeButton.mouseOver()) {
+			GLOBAL.STAT_VIEW = !GLOBAL.STAT_VIEW;
+			viewTypeButton.doAction();
+		}
 
 	}
 	
