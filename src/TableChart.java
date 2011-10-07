@@ -1,6 +1,8 @@
 import java.util.ArrayList;
 import java.util.HashMap;
 
+import org.omg.PortableInterceptor.SYSTEM_EXCEPTION;
+
 
 public class TableChart extends Widget {
 
@@ -66,7 +68,7 @@ public class TableChart extends Widget {
 		
 	}
 	
-	public TableChart(int s, int xValue, int yValue, int w, int l, int TYPE) {
+	public TableChart(Integer s, int xValue, int yValue, int w, int l, int TYPE) {
 		
 		x = xValue;
 		y = yValue;
@@ -76,7 +78,7 @@ public class TableChart extends Widget {
 		
 		plotWidth = width;
 		
-		season = new Integer(s);
+		season = s;
 		
 		GRAPH_TYPE = TYPE;
 		
@@ -84,18 +86,6 @@ public class TableChart extends Widget {
 
 		createScrollBar();
 		
-	}
-	
-	public void changePosition(int xValue, int yValue, int w, int l) {
-		
-		x = xValue;
-		y = yValue;
-
-		width = w;
-		height = l;
-		
-		createScrollBar();
-
 	}
 
 	public void draw() {
@@ -109,16 +99,17 @@ public class TableChart extends Widget {
 		if (GRAPH_TYPE == CHARACTER_GRAPH) {
 			
 			if (GLOBAL.CATCHPHRASES_ANALYSIS == false)
-				createDialogueBarChart();
+				createDialogueTableChart();
 			else
-				createCatchphraseBarChart();
+				createCatchphraseTableChart();
 			
-		}// end if
+		}
 		else if (GRAPH_TYPE == EPISODE_GRAPH) {		
-
-		} // end if
+			createEpisodeTableChart();
+		} 
 		else if (GRAPH_TYPE == SEASON_GRAPH) {
-		}// end if
+			createSeasonTableChart();
+		}
 		
 		int numberOfElements = (int) (height - 100)/27;
 		
@@ -155,7 +146,7 @@ public class TableChart extends Widget {
 	}
 	
 	// Dialogue analysis for character
-		public void createDialogueBarChart() {
+		public void createDialogueTableChart() {
 
 			int indexStart = 0;
 			int indexEnd = Parser.LIST_ALL.size() -1;
@@ -183,7 +174,7 @@ public class TableChart extends Widget {
 					
 				}
 				
-				TableEntry newTableEntry = new TableEntry(label, values, 14, plotWidth - 100 - 35, 25);
+				TableEntry newTableEntry = new TableEntry(label, values, 14, plotWidth - 50 - 35, 25);
 				newTableEntry.active = false;
 				allTableEntries.add(newTableEntry);
 
@@ -203,7 +194,7 @@ public class TableChart extends Widget {
 		}
 		
 
-		public void createCatchphraseBarChart() {
+		public void createCatchphraseTableChart() {
 			
 			float barY = y + height;
 			float value;
@@ -276,6 +267,48 @@ public class TableChart extends Widget {
 			if (character.getIcon() != null)
 				GLOBAL.processing.image( character.getIcon(), x + width - 80, y + 30, 80, 80);
 			
+		}
+		
+		public void createEpisodeTableChart() {
+						
+			allTableEntries.clear();
+			
+			// For each character that appears, plot the bar
+			for(int i =0; i < Parser.ALL_CHARACTERS.size(); i++) {
+				
+				ArrayList<Integer> values = new ArrayList<Integer>();
+				
+				String label = Parser.ALL_CHARACTERS.get(i).getName(); 
+				for (int j=0; j<GLOBAL.episodesSelected.size(); j++){
+					values.add(GLOBAL.episodesSelected.get(j).getNumberOfLinesPerCharacter(Parser.ALL_CHARACTERS.get(i)));
+				}
+				TableEntry newTableEntry = new TableEntry(label, values, 14, plotWidth -50 - 35, 25);
+				newTableEntry.active = false;
+				allTableEntries.add(newTableEntry);
+
+			}
+			
+			
+		}
+		
+		public void createSeasonTableChart() {
+						
+			allTableEntries.clear();
+			
+			// For each character
+			for(int i =0; i < Parser.ALL_CHARACTERS.size(); i++) {
+								
+				String label = Parser.ALL_CHARACTERS.get(i).getName();
+				ArrayList<Integer> values = new ArrayList<Integer>();
+				
+				for (int j=0; j<GLOBAL.seasonsSelected.size(); j++){
+					values.add(new Integer(Parser.ALL_CHARACTERS.get(i).getTotalEpisodesBySeason(GLOBAL.seasonsSelected.get(j))));
+				}
+				
+				TableEntry newTableEntry = new TableEntry(label, values, 14, plotWidth - 50 - 35, 25);
+				newTableEntry.active = false;
+				allTableEntries.add(newTableEntry);
+			}
 		}
 		
 		public void doAction() {

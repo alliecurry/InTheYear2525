@@ -42,15 +42,15 @@ public class TableEntry extends Widget {
 		switch (values.size()) {
 		
 		case 1:
-			GLOBAL.processing.text(values.get(0), cx + width - 80 , cy + 20);
+			GLOBAL.processing.text(values.get(0), cx + width - 120 , cy + 20);
 			break;
 		case 2:
-			GLOBAL.processing.text(values.get(0), cx + width - 80 , cy + 20);
-			GLOBAL.processing.text(values.get(1), cx + width - 50 , cy + 20);
+			GLOBAL.processing.text(values.get(0), cx + width - 120 , cy + 20);
+			GLOBAL.processing.text(values.get(1), cx + width - 70 , cy + 20);
 			break;
 		case 3:
-			GLOBAL.processing.text(values.get(0), cx + width - 80 , cy + 20);
-			GLOBAL.processing.text(values.get(1), cx + width - 50 , cy + 20);
+			GLOBAL.processing.text(values.get(0), cx + width - 120 , cy + 20);
+			GLOBAL.processing.text(values.get(1), cx + width - 70 , cy + 20);
 			GLOBAL.processing.text(values.get(2), cx + width - 20, cy + 20);
 			break;
 		}

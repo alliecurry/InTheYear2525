@@ -143,6 +143,7 @@ public class Menu extends Widget{
 			else
 				selectingEpisode = true;
 			}
+		
 		else if ( dialButton.mouseOver() && (GLOBAL.CATCHPHRASES_ANALYSIS == true || 
 				GLOBAL.WORD_ANALYSIS == true)) {
 			GLOBAL.WORD_ANALYSIS = false;
@@ -176,6 +177,7 @@ public class Menu extends Widget{
 		if (viewTypeButton.mouseOver()) {
 			GLOBAL.STAT_VIEW = !GLOBAL.STAT_VIEW;
 			viewTypeButton.doAction();
+			
 		}
 
 	}

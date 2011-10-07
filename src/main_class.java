@@ -79,7 +79,7 @@ public class main_class extends PApplet{
 		}
 
 		// TreeMap .tm3 file -> copy & paste on the Characters.tm3 file  
-		System.out.println("Appearence");
+		/*System.out.println("Appearence");
 		System.out.println("INTEGER");
 		
 		for(int x=0; x<Parser.ALL_CHARACTERS.size(); ++x) {
@@ -92,7 +92,7 @@ public class main_class extends PApplet{
 				//System.out.println("<leaf>\n<label>"+ Parser.ALL_CHARACTERS.get(x).getName() +"</label>\n<weight>"+ Parser.ALL_CHARACTERS.get(x).getTotalEpisodes() +"</weight>\n<value>"+ Parser.ALL_CHARACTERS.get(x).getTotalEpisodes() +"</value>\n</leaf>");
 				System.out.println(Parser.ALL_CHARACTERS.get(x).getTotalEpisodes() + "\tCharacters\t" + Parser.ALL_CHARACTERS.get(x).getName());
 		}
-		 
+		*/
 		
 		//TESTING... 1 2 3! 
 		//Parser.ALL_CHARACTERS.get(30).printPhrases();
@@ -125,8 +125,6 @@ public class main_class extends PApplet{
 		GLOBAL.episodeStart = Parser.LIST_ALL.get(0);
 		GLOBAL.episodeEnd = Parser.LIST_ALL.get(Parser.LIST_ALL.size() - 1 );
 	  
-		//tc = new TagCloud();
-
 		smooth();
 		
 	}
@@ -138,19 +136,9 @@ public class main_class extends PApplet{
 			graphArea.draw();
 			menu.draw();
 			analysisTypeButton.draw();
-//			
-//			int dateSelectorX = (width - Parser.LIST_ALL.size()*2)/2;
-//			
-//			strokeWeight(2);
-//			stroke(GLOBAL.colorText);
-//			for (int i = 0; i< Parser.LIST_ALL.size() ; i++) {
-//				int x = dateSelectorX + i*5;
-//				line(x,height,x,height - 7);
-//			}
-			
+
 			drawLayerTwoText();
 			noFill();
-//			tc.draw();
 
 
 
