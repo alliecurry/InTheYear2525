@@ -100,8 +100,9 @@ public class TableChart extends Widget {
 			
 			if (GLOBAL.CATCHPHRASES_ANALYSIS == false)
 				createDialogueTableChart();
-			else
-				createCatchphraseTableChart();
+			else {
+//				createCatchphraseTableChart();
+			}
 			
 		}
 		else if (GRAPH_TYPE == EPISODE_GRAPH) {		
@@ -194,80 +195,61 @@ public class TableChart extends Widget {
 		}
 		
 
-		public void createCatchphraseTableChart() {
-			
-			float barY = y + height;
-			float value;
-
-			int indexStart = 0;
-			int indexEnd = Parser.LIST_ALL.size() -1;
-
-			for (int i = 0; i< Parser.LIST_ALL.size() ; i++) {
-				if (Parser.LIST_ALL.get(i).getSeason() == GLOBAL.episodeStart.getSeason() && Parser.LIST_ALL.get(i).getEpisode() == GLOBAL.episodeStart.getEpisode())
-					indexStart = i;
-				if (Parser.LIST_ALL.get(i).getSeason() == GLOBAL.episodeEnd.getSeason() && Parser.LIST_ALL.get(i).getEpisode() == GLOBAL.episodeEnd.getEpisode())
-					indexEnd = i;
-			}
-
-			rectWidth = (float)(width)/(2*(indexEnd - indexStart));
-			
-			for ( int i = indexStart; i <= indexEnd; i++ ) {
-				
-				value = 0;
-				ArrayList<Catchphrase> phrases = character.getAllPhrases();
-				HashMap<String, Integer> stringPhrase  = new HashMap();
-				
-				// for each phrase
-				for (int j=0; j < phrases.size(); j++) {
-					int numberOfTime = phrases.get(j).getTotalEpisode(Parser.LIST_ALL.get(i).getSeason(), Parser.LIST_ALL.get(i).getEpisode());
-					if ( numberOfTime > 0){
-						value += numberOfTime;
-					    stringPhrase.put(phrases.get(j).getPhrase(), new Integer((int)numberOfTime));
-					}
-				}
-				
-				barY = GLOBAL.processing.map(value, 0, 10, y + height, y);					 // TODO 10 is a default value, must be set as the max	
-				float barX = GLOBAL.processing.map(i, indexStart, indexEnd, x + rectWidth, x + plotWidth - rectWidth);
-				GLOBAL.processing.rect( barX - rectWidth/2, barY, barX + rectWidth/2, y + height);
-
-				// Check for any mouse rollover functionality to be displayed
-				if (GLOBAL.processing.mouseX > (barX - rectWidth/2) && GLOBAL.processing.mouseX < (barX + rectWidth) 
-						&& GLOBAL.processing.mouseY > y && GLOBAL.processing.mouseY < (y  + height)) {
-					String label = "S"+ Parser.LIST_ALL.get(i).getSeason() + " E" + Parser.LIST_ALL.get(i).getEpisode()+ " " + Parser.LIST_ALL.get(i).getName();
-					main_class.graphArea.mouseCharacterRolloverFunction(rectWidth, barX, label);
-					
-					Object[] stringSet = stringPhrase.keySet().toArray();
-					
-					int padding = 15; // padding between catchphrases
-					
-					for (int k = 0; k< stringSet.length; k++) {
-						// Draw the rect
-						GLOBAL.processing.noStroke();
-						GLOBAL.processing.rectMode(GLOBAL.processing.CORNERS);
-						GLOBAL.processing.fill(GLOBAL.colorPlotArea);
-						GLOBAL.processing.rect(GLOBAL.processing.mouseX - 15 - GLOBAL.processing.textWidth((String)stringSet[k]) , GLOBAL.processing.mouseY - 8 - padding -10 , GLOBAL.processing.mouseX - 8, GLOBAL.processing.mouseY - 8 - padding);
-						GLOBAL.processing.fill(GLOBAL.processing.color(255));
-						
-						// Draw the catchphrases
-						GLOBAL.processing.fill(GLOBAL.colorText);
-						GLOBAL.processing.textFont(GLOBAL.tFont,14);
-						GLOBAL.processing.textAlign(GLOBAL.processing.RIGHT);
-						GLOBAL.processing.text(stringSet[k] + " = " + stringPhrase.get(stringSet[k]) , GLOBAL.processing.mouseX - 8, GLOBAL.processing.mouseY - padding);
-						padding += 15;
-					}
-				}
-			}
-
-			// Draw icon and info		
-			GLOBAL.processing.fill(GLOBAL.colorText);
-			GLOBAL.processing.textFont(GLOBAL.tFont,16);
-			GLOBAL.processing.textAlign(GLOBAL.processing.CENTER);
-			GLOBAL.processing.text(character.getName(), x + width - 40, y + 20);
-
-			if (character.getIcon() != null)
-				GLOBAL.processing.image( character.getIcon(), x + width - 80, y + 30, 80, 80);
-			
-		}
+//		public void createCatchphraseTableChart() {
+//			
+//			float value;
+//
+//			int indexStart = 0;
+//			int indexEnd = Parser.LIST_ALL.size() -1;
+//
+//			allTableEntries.clear();
+//
+//			for (int i = 0; i< Parser.LIST_ALL.size() ; i++) {
+//				if (Parser.LIST_ALL.get(i).getSeason() == GLOBAL.episodeStart.getSeason() && Parser.LIST_ALL.get(i).getEpisode() == GLOBAL.episodeStart.getEpisode())
+//					indexStart = i;
+//				if (Parser.LIST_ALL.get(i).getSeason() == GLOBAL.episodeEnd.getSeason() && Parser.LIST_ALL.get(i).getEpisode() == GLOBAL.episodeEnd.getEpisode())
+//					indexEnd = i;
+//			}
+//
+//			
+//			for ( int i = indexStart; i <= indexEnd; i++ ) {
+//				
+//				ArrayList<Catchphrase> phrases = character.getAllPhrases();
+//				
+//				ArrayList<Integer> values = new ArrayList<Integer>();
+//				
+//				String label = "S" + Parser.LIST_ALL.get(i).getSeason() +
+//						  " E"+ Parser.LIST_ALL.get(i).getEpisode();
+//				
+//				for (int j=0; j<GLOBAL.charactersSelected.size(); j++){
+//					values.add(new Integer());
+//					
+//				}
+//				
+//				// for each phrase
+//				for (int j=0; j < phrases.size(); j++) {
+//					int numberOfTime = phrases.get(j).getTotalEpisode(Parser.LIST_ALL.get(i).getSeason(), Parser.LIST_ALL.get(i).getEpisode());
+//					if ( numberOfTime > 0){
+//					    stringPhrase.put(phrases.get(j).getPhrase(), new Integer((int)numberOfTime));
+//					    
+//					    
+//					}
+//				}
+//				
+//
+//
+//			}
+//
+//			// Draw icon and info		
+//			GLOBAL.processing.fill(GLOBAL.colorText);
+//			GLOBAL.processing.textFont(GLOBAL.tFont,16);
+//			GLOBAL.processing.textAlign(GLOBAL.processing.CENTER);
+//			GLOBAL.processing.text(character.getName(), x + width - 40, y + 20);
+//
+//			if (character.getIcon() != null)
+//				GLOBAL.processing.image( character.getIcon(), x + width - 80, y + 30, 80, 80);
+//			
+//		}
 		
 		public void createEpisodeTableChart() {
 						

@@ -111,11 +111,16 @@ public class Menu extends Widget{
 			seasonPicker.draw();
 		else if(selectingEpisode)
 			episodePicker.draw();
-		
-		viewTypeButton.draw();
-		
+
+		if (GLOBAL.CATCHPHRASES_ANALYSIS == false) {
+			viewTypeButton.draw();
+			viewTypeButton.active = true;
+		}
+		else
+			viewTypeButton.active = false;
+
 	}
-	
+
 	public void doAction() {
 		if (GLOBAL.ANALYSIS_TYPE.equals("characters") && cButton.mouseOver()) {
 			selectingEpisode = false;
@@ -144,21 +149,21 @@ public class Menu extends Widget{
 				selectingEpisode = true;
 			}
 		
-		else if ( dialButton.mouseOver() && (GLOBAL.CATCHPHRASES_ANALYSIS == true || 
+		else if ( GLOBAL.ANALYSIS_TYPE.equals("characters") && dialButton.mouseOver() && (GLOBAL.CATCHPHRASES_ANALYSIS == true || 
 				GLOBAL.WORD_ANALYSIS == true)) {
 			GLOBAL.WORD_ANALYSIS = false;
 			GLOBAL.CATCHPHRASES_ANALYSIS = false;
 			main_class.graphArea.clearGraphs();
 			GLOBAL.charactersSelected.clear();
 		}
-		else if ( phButton.mouseOver() && (GLOBAL.CATCHPHRASES_ANALYSIS == false|| 
+		else if ( GLOBAL.ANALYSIS_TYPE.equals("characters") && phButton.mouseOver() && (GLOBAL.CATCHPHRASES_ANALYSIS == false|| 
 				GLOBAL.WORD_ANALYSIS == true)) {
 			GLOBAL.WORD_ANALYSIS = false;
 			GLOBAL.CATCHPHRASES_ANALYSIS = true;
 			main_class.graphArea.clearGraphs();
 			GLOBAL.charactersSelected.clear();
 		}
-		else if (wordButton.mouseOver() && GLOBAL.WORD_ANALYSIS == false) {
+		else if (GLOBAL.ANALYSIS_TYPE.equals("characters") && wordButton.mouseOver() && GLOBAL.WORD_ANALYSIS == false) {
 			GLOBAL.WORD_ANALYSIS = true;
 			GLOBAL.CATCHPHRASES_ANALYSIS = false;
 			main_class.graphArea.clearGraphs();
@@ -174,7 +179,7 @@ public class Menu extends Widget{
 		else if(selectingSeason && seasonPicker.mouseOver())
 			seasonPicker.doAction();
 		
-		if (viewTypeButton.mouseOver()) {
+		if (viewTypeButton.mouseOver() && viewTypeButton.active) {
 			GLOBAL.STAT_VIEW = !GLOBAL.STAT_VIEW;
 			viewTypeButton.doAction();
 			
