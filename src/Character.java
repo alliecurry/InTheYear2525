@@ -13,6 +13,7 @@ public class Character {
         PApplet processing;
         private String name;                       //Character name (all lowercase by convention)
         private PImage icon;                       //Character icon
+        private int color;						   //Colors corresponding to character in graphs.
         private ArrayList<Integer> episodes_s1;    //List of episode numbers character appears (season 1)
         private ArrayList<Integer> episodes_s2;    //List of episode numbers character appears (season 2)
         private ArrayList<Integer> episodes_s3;    //List of episode numbers character appears (season 3)
@@ -26,8 +27,10 @@ public class Character {
         //Lists of 'important' words and how often they appear. (per season)
         private ArrayList<Word> wordWeights  = new ArrayList<Word>();
         
-        public Character (String n){
+        public Character(String n, int c){
 	        name = n;
+	        color = c;
+	        
 	        episodes_s1 = new ArrayList<Integer>();
 	        episodes_s2 = new ArrayList<Integer>();
 	        episodes_s3 = new ArrayList<Integer>();
@@ -38,6 +41,14 @@ public class Character {
 	        episodes = new ArrayList<Episode>();
         }
        
+        public int getColor() {
+        	return color;
+        }
+        
+        public void setColor(int c) {
+        	color = c;
+        }
+        
         //Add episode # to list of episodes character appears in
         public void addEpisode(int s, int e) {
                 //Convert int to Integer
@@ -121,7 +132,7 @@ public class Character {
         	if(phrases == null) {
         		phrases = new ArrayList<Catchphrase>();
         	}
-        	phrases.add(new Catchphrase(p, r));
+        	phrases.add(new Catchphrase(p, r, GLOBAL.COLORS.getNextColor()));
         }
         
         //add a new occurrence of a catchphrase (which may or may not already be in the list)
@@ -302,7 +313,7 @@ public class Character {
         		if(wordWeights.get(x).getSeason() > s) {	//Word does not exist if we reached a further season
         			break;
         		}
-        		else if(wordWeights.get(x).getSeason() == s && wordWeights.get(x).getEpisode() == e && wordWeights.get(x).getWord().equals(w)) { //Found word
+        		else if(wordWeights.get(x).matches(w, s, e)) { //Found word
         			return x;
         		}
         	}
@@ -323,9 +334,6 @@ public class Character {
         
         public void addWord(String w, int s, int e) {
         	w = w.toLowerCase();
-        	
-        	//if(w.equals("michelle")) { 
-        	//System.out.println("Mmmm ... \t" + s + ", " + e); }
         	
         	int i = getWordIndex(w,s,e);	//See if word already exists for this episode.
         	if(i == -1) { //Word does not exist

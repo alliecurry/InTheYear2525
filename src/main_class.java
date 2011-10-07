@@ -198,6 +198,12 @@ public class main_class extends PApplet{
 		GLOBAL.colorMenuBackground = color(28,28,28);
 		GLOBAL.colorIconBackground = color(224);
 		GLOBAL.colorTagCloudBackground = color(224,224,224,0);
+		
+		int[] c = {color(136,204,238), color(68,170,153), color(17,119,51), color(221,204,119), 
+					color(204,102,119), color(136,34,85), color(146,189,16), color(170,68,153), 
+					color(51,34,136)
+					 };
+		GLOBAL.COLORS = new ColorSwatch(c);
 	}
 	
 	// If mouse is pressed, check what has been pressed and activate the action

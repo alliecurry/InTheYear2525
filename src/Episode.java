@@ -9,14 +9,18 @@ public class Episode {
     private int episode;        //episode number
     private int season;         //season number
     private String name;        //episode name
+    private String airdate;		//"MM/DD/YYYY"
+    
     private ArrayList<Character> chars;    //list of characters in episode
     private HashMap<Character, Integer> numberOfLinesPerCharacter; // hash map containing for each character the number of lines he/she speak
     
     
-    public Episode(int e, int s, String n) {
+    public Episode(int e, int s, String n, String a) {
             episode = e;
             season = s;
             name = n;
+            airdate = a;
+            
             chars = new ArrayList<Character>();
             numberOfLinesPerCharacter = new HashMap<Character, Integer>();
     }
@@ -71,6 +75,17 @@ public class Episode {
     //return episode name
     public String getName() {
         return name;
+    }
+    
+    //return air date
+    public String getAirDate() {
+    	return airdate;
+    }
+    
+    //get network the episode aired on
+    public String getNetwork() {
+    	if(season < 5) { return "FOX"; }
+    	return "Comedy Central";
     }
     
     //return list of characters

@@ -47,7 +47,7 @@ public class Menu extends Widget{
 		dialButton = new Button();
 		dialButton.x = 20;
 		dialButton.y = 190;
-		dialButton.setLabel("Number of dialogues");
+		dialButton.setLabel("All Dialog");
 		dialButton.active = true;
 		dialButton.setFontSize(14);
 		

@@ -13,9 +13,17 @@ public class Catchphrase {
 	int[] seasonTotals = {0,0,0,0,0,0};		//Total number of times catchphrase is said in season
 											//index = season# - 1
 	
-	public Catchphrase(String p, String r) {
+	int color;		//Color corresponding to catchphrase.
+	
+	public Catchphrase(String p, String r, int c) {
 		thePhrase = p;
 		phraseRegex = r;
+		color = c;
+	}
+	
+	//Get the color value
+	public int getColor() {
+		return color;
 	}
 	
 	//Get the catchphrsae

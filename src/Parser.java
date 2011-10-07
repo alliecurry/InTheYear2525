@@ -1,6 +1,5 @@
 import java.io.*;
 import java.util.ArrayList;
-import java.util.HashMap;
 import java.util.Scanner;
 
 // Class for managing the parsing of the text file
@@ -271,7 +270,7 @@ public class Parser {
                 //Add character to episode (unless is a background character)
                 if(!isBackgroundCharacter(character)){
 //                  ep.addCharacter(character);
-                    Character chr = new Character(character);      //make a new Character object
+                    Character chr = new Character(character, GLOBAL.COLORS.getNextColor());      //make a new Character object
                     ep.addCharacter(chr);
                     //Add character to ArrayList ALL_CHARACTERS (unless already added)
                     if(!isInAllCharacters(character)){
@@ -289,13 +288,19 @@ public class Parser {
         //Called only for first line when .txt file is opened
         private void storeLineTitle(String line) {
                 //Split line so season #, episode #, episode title are seperated
-                String[] splitLine = line.split("\t", 6);
+                String[] splitLine = line.split("\t", 8);
                
                 season = Integer.parseInt(splitLine[0]);        //Store season #
                 episode = Integer.parseInt(splitLine[1]);       //Store episode #
-               
+
                 if(!GLOBAL.parseForWordMap) {
-                	ep = new Episode(episode, season, splitLine[2]);
+                	//"19990328" : format of date in text file
+                    //"03/28/1990" : format of String airdate below...
+                    String airdate = splitLine[5].substring(4,6) + "/" +
+                    					splitLine[5].substring(6) + "/" +
+                    						splitLine[5].substring(0,4);
+                	
+                	ep = new Episode(episode, season, splitLine[2], airdate);
                 	//hashKey = "S" + season + "E" + episode;         //Store current hash map key prefix
                 }
         }
@@ -386,7 +391,7 @@ public class Parser {
     //		& allows for phrases.txt to be parsed before the transcripts.
     private void createCatchphraseCharacters() {
     	for(int x=0; x<phraseChars.length; ++x) {
-    		ALL_CHARACTERS.add(new Character(phraseChars[x])); 
+    		ALL_CHARACTERS.add(new Character(phraseChars[x], GLOBAL.COLORS.getNextColor())); 
     	}	
     }
    
@@ -411,7 +416,7 @@ public class Parser {
 	   }
 	   
 	   if(c.equals("zapp")) {	//Changing Zapp to his full name
-		   return "zapp brannigan";
+		   return "zapp\nbrannigan";
 	   }
 	   
 	   if(c.equals("farsnworth")){	//This one was likely a typo
@@ -434,12 +439,12 @@ public class Parser {
 		   return "barbados slim";
 	   }
 	   
-	   if(c.equals("h.g. blob")) {
-		   return "horrible gelatinous blob";
+	   if(c.equals("h.g. blob") || c.equals("horrible gelatinous blob")) {
+		   return "horrible\ngelatinous\nblob";
 	   }
 	   
 	   if(c.equals("joey mouspad")) {
-		   return "joey mousepad";
+		   return "joey\nmousepad";
 	   }
 	   
 	   if(c.equals("inger")) {
@@ -455,14 +460,14 @@ public class Parser {
 	   }
 	   
 	   if(c.equals("vogel")) {
-		   return "warden vogel";
+		   return "warden\nvogel";
 	   }
 	   
 	   if(c.equals("mayor poopenmeyer")) {
 		   return "poopenmeyer";
 	   }
 	   
-	   
+		c = c.replaceAll("\\s", "\n");
 	   
 	   return c;
    }

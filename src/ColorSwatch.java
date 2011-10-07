@@ -1,5 +1,3 @@
-import processing.core.PApplet;
-
 public class ColorSwatch {
 	private int index;
 	private int[] colors;
@@ -14,7 +12,7 @@ public class ColorSwatch {
 	}
 	
 	//Start from beginnng of colors
-	public void toTop() {
+	public void reset() {
 		index = 0;
 	}
 	
@@ -26,6 +24,10 @@ public class ColorSwatch {
 		if(index == colors.length) { index  = 0; }
 		
 		return c;
+	}
+	
+	public int[] getArray() {
+		return colors;
 	}
 	
 }

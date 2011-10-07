@@ -98,7 +98,7 @@ public class TagCloud extends Widget{
 		  .fromWords(w)
 				//.withColors(color(255,0,0), color(0), color(0,0,255)) // red, black, and blue
 		  .withCustomCanvas(buffer)
-		 .withColor(GLOBAL.colorText)
+		 .withColors(GLOBAL.COLORS.getArray())
 				    .sizedByWeight(6,60).withWordPadding(2).withAngler(Anglers.horiz())
 				    .withPlacer(Placers.centerClump())
 				    .maxNumberOfWordsToDraw(max)

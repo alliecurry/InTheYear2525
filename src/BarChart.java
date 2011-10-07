@@ -80,8 +80,8 @@ public class BarChart extends Widget{
 		
 	}
 	
-	public void draw() {
-		
+	public void draw() {	
+
 		GLOBAL.processing.noStroke();
 		GLOBAL.processing.rectMode(GLOBAL.processing.CORNERS);
 		GLOBAL.processing.fill(GLOBAL.colorPlotArea);
@@ -123,7 +123,7 @@ public class BarChart extends Widget{
 				float barX = GLOBAL.processing.map(i, 0, charactersInEpisode.size() - 1, x + rectWidth, x + width - rectWidth);
 				
 				GLOBAL.processing.rectMode(GLOBAL.processing.CORNERS);
-				GLOBAL.processing.fill(GLOBAL.processing.color(255));
+				GLOBAL.processing.fill(charactersInEpisode.get(i).getColor());//GLOBAL.processing.color(255));
 				GLOBAL.processing.rect( barX - rectWidth/2, barY, barX+ rectWidth/2, y + height);
 				
 				// Draw the character name
@@ -200,7 +200,7 @@ public class BarChart extends Widget{
 								
 				float barX = GLOBAL.processing.map(i, 0, Parser.ALL_CHARACTERS.size() - 1, x + rectWidth, x + width - rectWidth);
 				GLOBAL.processing.rectMode(GLOBAL.processing.CORNERS);
-				GLOBAL.processing.fill(GLOBAL.processing.color(255));
+				GLOBAL.processing.fill(Parser.ALL_CHARACTERS.get(i).getColor());
 				GLOBAL.processing.rect( barX - rectWidth/2, barY, barX+ rectWidth/2, y + height);
 				
 				if (Parser.ALL_CHARACTERS.get(i).getName().toCharArray()[0] != c.toCharArray()[0]) {
@@ -247,8 +247,11 @@ public class BarChart extends Widget{
 		}
 
 		rectWidth = (float)(width)/(2*(indexEnd - indexStart));
-
+		GLOBAL.COLORS.reset();
 		for ( int i = indexStart; i <= indexEnd; i++ ) {
+			//GLOBAL.processing.stroke(GLOBAL.COLORS.getNextColor());
+			GLOBAL.processing.fill(GLOBAL.COLORS.getNextColor());
+			
 			value = Parser.LIST_ALL.get(i).getNumberOfLinesPerCharacter(character);
 			barY = GLOBAL.processing.map(value, 0, 100, y + height, y);					 // TODO 100 is a default value, must be set as the max	
 			float barX = GLOBAL.processing.map(i, indexStart, indexEnd, x + rectWidth, x + plotWidth - rectWidth);
@@ -259,7 +262,7 @@ public class BarChart extends Widget{
 					&& GLOBAL.processing.mouseY > y && GLOBAL.processing.mouseY < (y  + height)) {
 				String label = "S"+ Parser.LIST_ALL.get(i).getSeason() + " E" + Parser.LIST_ALL.get(i).getEpisode()+ " " + Parser.LIST_ALL.get(i).getName();
 				main_class.graphArea.mouseCharacterRolloverFunction(rectWidth, barX, label);
-
+				
 			}
 		}
 
@@ -275,6 +278,7 @@ public class BarChart extends Widget{
 	
 
 	public void createCatchphraseBarChart() {
+		//TODO: Figure out how to color chatchphrases so that same phrases are the same color.
 		
 		float barY = y + height;
 		float value;
@@ -290,7 +294,7 @@ public class BarChart extends Widget{
 		}
 
 		rectWidth = (float)(width)/(2*(indexEnd - indexStart));
-		
+		GLOBAL.COLORS.reset();
 		for ( int i = indexStart; i <= indexEnd; i++ ) {
 			
 			value = 0;
@@ -308,6 +312,7 @@ public class BarChart extends Widget{
 			
 			barY = GLOBAL.processing.map(value, 0, 10, y + height, y);					 // TODO 10 is a default value, must be set as the max	
 			float barX = GLOBAL.processing.map(i, indexStart, indexEnd, x + rectWidth, x + plotWidth - rectWidth);
+			GLOBAL.processing.fill(GLOBAL.COLORS.getNextColor());
 			GLOBAL.processing.rect( barX - rectWidth/2, barY, barX + rectWidth/2, y + height);
 
 			// Check for any mouse rollover functionality to be displayed

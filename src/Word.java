@@ -51,5 +51,14 @@ public class Word {
 	}
 	
 	
+	public boolean matches(String w, int s, int e) {
+		if( theWord.equals(w)
+				&& season == s
+				&& episode == e ) {
+			return true;
+		}
+			
+		return false;
+	}
 
 }
