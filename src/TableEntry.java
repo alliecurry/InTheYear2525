@@ -33,24 +33,36 @@ public class TableEntry extends Widget {
 				cy += 2;
 			}
 		}
-
+		
+		GLOBAL.processing.fill(GLOBAL.colorText);
 		GLOBAL.processing.strokeWeight(1);
-		GLOBAL.processing.fill(GLOBAL.colorButtonLabel);
-		GLOBAL.processing.textAlign(GLOBAL.processing.LEFT);
+		GLOBAL.processing.textAlign(GLOBAL.processing.RIGHT);
 		GLOBAL.processing.text(label, cx + 5, cy + 20);
+		
+		GLOBAL.COLORS.reset();
+		
+		int color1 = GLOBAL.COLORS.getNextColor();
+		int color2 = GLOBAL.COLORS.getNextColor();
+		int color3 = GLOBAL.COLORS.getNextColor();
 		
 		switch (values.size()) {
 		
 		case 1:
+			GLOBAL.processing.fill(color1);
 			GLOBAL.processing.text(values.get(0), cx + width - 120 , cy + 20);
 			break;
 		case 2:
+			GLOBAL.processing.fill(color1);
 			GLOBAL.processing.text(values.get(0), cx + width - 120 , cy + 20);
+			GLOBAL.processing.fill(color2);
 			GLOBAL.processing.text(values.get(1), cx + width - 70 , cy + 20);
 			break;
 		case 3:
+			GLOBAL.processing.fill(color1);
 			GLOBAL.processing.text(values.get(0), cx + width - 120 , cy + 20);
+			GLOBAL.processing.fill(color2);
 			GLOBAL.processing.text(values.get(1), cx + width - 70 , cy + 20);
+			GLOBAL.processing.fill(color3);
 			GLOBAL.processing.text(values.get(2), cx + width - 20, cy + 20);
 			break;
 		}

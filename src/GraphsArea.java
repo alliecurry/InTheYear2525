@@ -45,7 +45,8 @@ public class GraphsArea extends Widget{
 				tableChart2.draw();
 			if (tableChart3 != null)
 				tableChart3.draw();
-			scroll.draw();
+			if (GLOBAL.ANALYSIS_TYPE.equals("characters"))
+				scroll.draw();
 		}
 		else if (GLOBAL.STAT_VIEW == false && GLOBAL.WORD_ANALYSIS == false) {
 			if (chart1 != null)

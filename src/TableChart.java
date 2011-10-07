@@ -25,6 +25,9 @@ public class TableChart extends Widget {
 	public ScrollBar scroll; // scrollbar for the table
 	
 	public ArrayList<TableEntry> allTableEntries;
+	
+	public float[] averagesToBePlot;
+	public int[] countersForAverage;
 		
 	public TableChart(Character c, int xValue, int yValue, int w, int l, int TYPE) {
 		
@@ -255,6 +258,10 @@ public class TableChart extends Widget {
 						
 			allTableEntries.clear();
 			
+			resetAverageToBePlot();
+			
+			GLOBAL.COLORS.reset();
+						
 			// For each character that appears, plot the bar
 			for(int i =0; i < Parser.ALL_CHARACTERS.size(); i++) {
 				
@@ -262,7 +269,14 @@ public class TableChart extends Widget {
 				
 				String label = Parser.ALL_CHARACTERS.get(i).getName(); 
 				for (int j=0; j<GLOBAL.episodesSelected.size(); j++){
-					values.add(GLOBAL.episodesSelected.get(j).getNumberOfLinesPerCharacter(Parser.ALL_CHARACTERS.get(i)));
+					int value = GLOBAL.episodesSelected.get(j).getNumberOfLinesPerCharacter(Parser.ALL_CHARACTERS.get(i));
+					values.add(value);
+					
+					if (value > 0) {
+						averagesToBePlot[j] = (averagesToBePlot[j] + value);
+						countersForAverage[j] = countersForAverage[j] + 1;
+					}
+
 				}
 				TableEntry newTableEntry = new TableEntry(label, values, 14, plotWidth -50 - 35, 25);
 				newTableEntry.active = false;
@@ -270,6 +284,17 @@ public class TableChart extends Widget {
 
 			}
 			
+			
+			// Averagesinfo		
+			GLOBAL.processing.textFont(GLOBAL.tFont,14);
+			GLOBAL.processing.textAlign(GLOBAL.processing.LEFT);
+			GLOBAL.processing.text("Average amounts of dialogue among the characters appearing in the episode: ", x + 20, y + 20);
+			for (int j=0; j<GLOBAL.episodesSelected.size(); j++) {
+				GLOBAL.processing.fill(GLOBAL.COLORS.getNextColor());
+				GLOBAL.processing.text("S" + GLOBAL.episodesSelected.get(j).getSeason() +
+									  " E" + GLOBAL.episodesSelected.get(j).getEpisode() , x + 20, y + 40 + 20*j);
+				GLOBAL.processing.text(averagesToBePlot[j]/countersForAverage[j], x + 100, y + 40 + 20*j);
+			}
 			
 		}
 		
@@ -291,6 +316,19 @@ public class TableChart extends Widget {
 				newTableEntry.active = false;
 				allTableEntries.add(newTableEntry);
 			}
+		}
+		
+		public void resetAverageToBePlot() {
+			averagesToBePlot = new float[3];
+			averagesToBePlot[0] = 0;
+			averagesToBePlot[1] = 0;
+			averagesToBePlot[2] = 0;
+			
+			countersForAverage = new int[3];
+			countersForAverage[0] = 0;
+			countersForAverage[1] = 0;
+			countersForAverage[2] = 0;
+
 		}
 		
 		public void doAction() {
