@@ -129,7 +129,7 @@ public class GraphsArea extends Widget{
 	// Create a new graph for episode analysis	
 	public void createEpisodeGraph() {
 		if (chart1 == null)
-			chart1 = new BarChart(GLOBAL.EPISODE_SELECTED, x + 20, y + 20, width - 100, height - 20, EPISODE_GRAPH);
+			chart1 = new BarChart(GLOBAL.EPISODE_SELECTED, x + 20, y + 20, width - 100, height - 80, EPISODE_GRAPH);
 		else if (chart2 == null) {
 			chart2 = chart1;
 			chart2.changePosition(x + 20, y + (height)/2 + 30, width - 100, (height - 100) /2);
@@ -205,7 +205,7 @@ public class GraphsArea extends Widget{
 		
 	}
 	
-	public void mouseRolloverFunction( float RectWidth, float x, String s ) {
+	public void mouseCharacterRolloverFunction( float RectWidth, float x, String s ) {
 		
 		rolloverRect = new Widget();
 		rolloverRect.x = (int)(x - RectWidth/2);

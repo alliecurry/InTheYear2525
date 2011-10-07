@@ -95,15 +95,6 @@ public class BarChart extends Widget{
 			else
 				createCatchphraseBarChart();
 			
-			// For each season
-//			for(int i = 1; i < 7; i++) {
-//				value = character.getTotalEpisodesBySeason(i);
-////				System.out.println(value);
-//				barY = GLOBAL.processing.map(value, 0, 30, y + height, y);					 // TODO 30 is a default value, must be set as the max	
-//				float barX = GLOBAL.processing.map(i, 1, 6, x, x + width);
-//				GLOBAL.processing.rect( barX - rectWidth/2 + 20, barY, barX+ rectWidth/2, y + height);
-//			}
-			
 		}
 		
 		else if (GRAPH_TYPE == EPISODE_GRAPH) {
@@ -122,13 +113,31 @@ public class BarChart extends Widget{
 			float barY = y + height;
 			float value;
 			
+			Widget rolloverWidget = new Widget();
+			
 			// For each character that appears, plot the bar
 			for(int i =0; i < charactersInEpisode.size(); i++) {
 				
 				value = episode.getNumberOfLinesPerCharacter(charactersInEpisode.get(i));
 				barY = GLOBAL.processing.map(value, 0, 100, y + height, y);					 // TODO 100 is a default value, must be set as the max	
 				float barX = GLOBAL.processing.map(i, 0, charactersInEpisode.size() - 1, x + rectWidth, x + width - rectWidth);
+				
+				GLOBAL.processing.fill(GLOBAL.processing.color(255));
 				GLOBAL.processing.rect( barX - rectWidth/2, barY, barX+ rectWidth/2, y + height);
+				
+				// Check for any mouse rollover functionality to be displayed
+				if (GLOBAL.processing.mouseX > (barX - rectWidth/2) && GLOBAL.processing.mouseX < (barX + rectWidth) 
+						&& GLOBAL.processing.mouseY > y && GLOBAL.processing.mouseY < (y  + height)) {
+					String label = charactersInEpisode.get(i).getName();
+					
+					// Draw the rollover string
+					GLOBAL.processing.fill(GLOBAL.colorText);
+					GLOBAL.processing.textFont(GLOBAL.tFont,20);
+					GLOBAL.processing.textAlign(GLOBAL.processing.CENTER);
+					GLOBAL.processing.text(label, x + width/2, y + height + 30);
+
+				}
+				
 			}
 			
 		} // end if
@@ -210,7 +219,7 @@ public class BarChart extends Widget{
 			if (GLOBAL.processing.mouseX > (barX - rectWidth/2) && GLOBAL.processing.mouseX < (barX + rectWidth) 
 					&& GLOBAL.processing.mouseY > y && GLOBAL.processing.mouseY < (y  + height)) {
 				String label = "S"+ Parser.LIST_ALL.get(i).getSeason() + " E" + Parser.LIST_ALL.get(i).getEpisode()+ " " + Parser.LIST_ALL.get(i).getName();
-				main_class.graphArea.mouseRolloverFunction(rectWidth, barX, label);
+				main_class.graphArea.mouseCharacterRolloverFunction(rectWidth, barX, label);
 
 			}
 		}
@@ -266,7 +275,7 @@ public class BarChart extends Widget{
 			if (GLOBAL.processing.mouseX > (barX - rectWidth/2) && GLOBAL.processing.mouseX < (barX + rectWidth) 
 					&& GLOBAL.processing.mouseY > y && GLOBAL.processing.mouseY < (y  + height)) {
 				String label = "S"+ Parser.LIST_ALL.get(i).getSeason() + " E" + Parser.LIST_ALL.get(i).getEpisode()+ " " + Parser.LIST_ALL.get(i).getName();
-				main_class.graphArea.mouseRolloverFunction(rectWidth, barX, label);
+				main_class.graphArea.mouseCharacterRolloverFunction(rectWidth, barX, label);
 				
 				Object[] stringSet = stringPhrase.keySet().toArray();
 				

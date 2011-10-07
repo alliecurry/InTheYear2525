@@ -243,7 +243,7 @@ public class TableChart extends Widget {
 				if (GLOBAL.processing.mouseX > (barX - rectWidth/2) && GLOBAL.processing.mouseX < (barX + rectWidth) 
 						&& GLOBAL.processing.mouseY > y && GLOBAL.processing.mouseY < (y  + height)) {
 					String label = "S"+ Parser.LIST_ALL.get(i).getSeason() + " E" + Parser.LIST_ALL.get(i).getEpisode()+ " " + Parser.LIST_ALL.get(i).getName();
-					main_class.graphArea.mouseRolloverFunction(rectWidth, barX, label);
+					main_class.graphArea.mouseCharacterRolloverFunction(rectWidth, barX, label);
 					
 					Object[] stringSet = stringPhrase.keySet().toArray();
 					
