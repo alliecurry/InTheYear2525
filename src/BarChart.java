@@ -113,7 +113,7 @@ public class BarChart extends Widget{
 			float barY = y + height;
 			float value;
 			
-			Widget rolloverWidget = new Widget();
+			Widget rolloverRect = new Widget();
 			
 			// For each character that appears, plot the bar
 			for(int i =0; i < charactersInEpisode.size(); i++) {
@@ -122,22 +122,35 @@ public class BarChart extends Widget{
 				barY = GLOBAL.processing.map(value, 0, 100, y + height, y);					 // TODO 100 is a default value, must be set as the max	
 				float barX = GLOBAL.processing.map(i, 0, charactersInEpisode.size() - 1, x + rectWidth, x + width - rectWidth);
 				
+				GLOBAL.processing.rectMode(GLOBAL.processing.CORNERS);
 				GLOBAL.processing.fill(GLOBAL.processing.color(255));
 				GLOBAL.processing.rect( barX - rectWidth/2, barY, barX+ rectWidth/2, y + height);
 				
+				// Draw the character name
+				String label = charactersInEpisode.get(i).getName();
+				GLOBAL.processing.fill(GLOBAL.colorText);
+				GLOBAL.processing.textFont(GLOBAL.tFont,8);
+				GLOBAL.processing.textAlign(GLOBAL.processing.CENTER);
+				GLOBAL.processing.text(label, barX , y + height + 15);
+				
+			}
+			
+			// Search for rollover functions
+			for(int i =0; i < charactersInEpisode.size(); i++) {
+				float barX = GLOBAL.processing.map(i, 0, charactersInEpisode.size() - 1, x + rectWidth, x + width - rectWidth);
+
 				// Check for any mouse rollover functionality to be displayed
 				if (GLOBAL.processing.mouseX > (barX - rectWidth/2) && GLOBAL.processing.mouseX < (barX + rectWidth) 
-						&& GLOBAL.processing.mouseY > y && GLOBAL.processing.mouseY < (y  + height)) {
+						&& GLOBAL.processing.mouseY > y && GLOBAL.processing.mouseY < (y  + height)) {					
+					rolloverRect.x = (int)(barX - rectWidth/2);
+					rolloverRect.y = (int)(y);
+					rolloverRect.width = (int)(rectWidth);
+					rolloverRect.height = (int)(height);
+					rolloverRect.draw();
 					String label = charactersInEpisode.get(i).getName();
+					mouseEpisodeRolloverFunction(label, charactersInEpisode.get(i));
 					
-					// Draw the rollover string
-					GLOBAL.processing.fill(GLOBAL.colorText);
-					GLOBAL.processing.textFont(GLOBAL.tFont,20);
-					GLOBAL.processing.textAlign(GLOBAL.processing.CENTER);
-					GLOBAL.processing.text(label, x + width/2, y + height + 30);
-
 				}
-				
 			}
 			
 		} // end if
@@ -310,5 +323,26 @@ public class BarChart extends Widget{
 		
 	}
 	
+	public void mouseEpisodeRolloverFunction(String charName, Character character) {
+		
+		// Draw a rectangle, the label and an image inside, now the image is set to 100x100
+		
+		// Rectangle
+		GLOBAL.processing.noStroke();
+		GLOBAL.processing.rectMode(GLOBAL.processing.CORNER);
+		GLOBAL.processing.fill(GLOBAL.colorIconBackground);
+		GLOBAL.processing.rect( GLOBAL.processing.mouseX + 10 , GLOBAL.processing.mouseY - 40 - 100 , 100, 130); //x,y,width,height
+		
+		// Text
+		GLOBAL.processing.fill(GLOBAL.colorBackgroundLayerTwo);
+		GLOBAL.processing.textFont(GLOBAL.tFont,14);
+		GLOBAL.processing.textAlign(GLOBAL.processing.CENTER);
+		GLOBAL.processing.text(charName, GLOBAL.processing.mouseX + 60, GLOBAL.processing.mouseY - 18 - 100); // center in the upper side, middle point, of the icon 100x100
+		
+		// Image
+		if (character.getIcon()!= null)
+			GLOBAL.processing.image(character.getIcon(), GLOBAL.processing.mouseX + 10, GLOBAL.processing.mouseY - 10 - 100, 100,100);
+		
+	}
 
 }
