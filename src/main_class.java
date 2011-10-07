@@ -223,7 +223,7 @@ public class main_class extends PApplet{
 		// Scrolls must be released 
 		menu.episodePicker.scroll.mouseReleased();
 		menu.characterPicker.scroll.mouseReleased();
-		graphArea.scroll.mouseReleased();
+		graphArea.mouseReleased();
 	}
 
 	public static void main(String args[]) {

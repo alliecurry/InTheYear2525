@@ -232,4 +232,15 @@ public class GraphsArea extends Widget{
 		
 	}
 
+	public void mouseReleased() {
+		scroll.mouseReleased();
+		if (GLOBAL.STAT_VIEW) {
+			if (tableChart1 != null)
+				tableChart1.scroll.mouseReleased();
+			if (tableChart2 != null)
+				tableChart2.scroll.mouseReleased();
+			if (tableChart3 != null)
+				tableChart3.scroll.mouseReleased();
+		}	}
+
 }

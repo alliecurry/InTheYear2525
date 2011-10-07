@@ -218,6 +218,7 @@ public class Parser {
             parseFile("data/transcripts/SEASON6/S8E12.txt");
             parseFile("data/transcripts/SEASON6/S8E13.txt");
             
+            LIST_ALL.clear(); // DANI mod : Temporary fix for list double long
             
             //Aggregate all seasons
             LIST_ALL.addAll(LIST_S1);

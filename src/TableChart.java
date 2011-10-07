@@ -103,8 +103,8 @@ public class TableChart extends Widget {
 		GLOBAL.processing.noStroke();
 		GLOBAL.processing.rectMode(GLOBAL.processing.CORNERS);
 		GLOBAL.processing.fill(GLOBAL.colorPlotArea);
-		GLOBAL.processing.rect( x,y, x + plotWidth, y + height);
-		GLOBAL.processing.fill(GLOBAL.processing.color(255));
+		GLOBAL.processing.rect( x ,y, x + plotWidth, y + height);
+		GLOBAL.processing.fill(GLOBAL.processing.color(255));			
 
 		if (GRAPH_TYPE == CHARACTER_GRAPH) {
 			
@@ -120,17 +120,22 @@ public class TableChart extends Widget {
 		else if (GRAPH_TYPE == SEASON_GRAPH) {
 		}// end if
 		
+		int numberOfElements = (int) (height - 100)/27;
+		
+		// Resize based on number of graphs and number of episodes
+		scroll.height = (numberOfElements + 1) * 25;
+		scroll.size = (float)4 / allTableEntries.size();
 		scroll.draw();
 		
 		// elementNumber: var for offset calculation
 		int elementNumber = 0;	
 					
 		// Find from what button we have to print, based on the value of the scrollbar in this moment
-		float val = GLOBAL.processing.map(scroll.val,0, 1,0,allTableEntries.size()-10);
+		float val = GLOBAL.processing.map(scroll.val,0, 1,0,allTableEntries.size() - 5);
 		// Draw all the visible series buttons
-		for(int j = (int)val; j <= val + 10 && j < allTableEntries.size(); j++) {
-			allTableEntries.get(j).x = x + 50;
-			allTableEntries.get(j).y = y + 100 + elementNumber*40;
+		for(int j = (int)val; j <= val + numberOfElements && j < allTableEntries.size(); j++) {
+			allTableEntries.get(j).x = x + 60;
+			allTableEntries.get(j).y = y + 100 + elementNumber*25;
 			allTableEntries.get(j).active = true;
 			allTableEntries.get(j).draw();
 			elementNumber++;
@@ -146,7 +151,6 @@ public class TableChart extends Widget {
 		scroll.y = y + 100;	
 		scroll.width = 15;
 		scroll.height = 450;	
-		scroll.size = (float)1 / allTableEntries.size();
 		
 	}
 	
@@ -173,7 +177,7 @@ public class TableChart extends Widget {
 							  " " +Parser.LIST_ALL.get(i).getName();
 				int value = Parser.LIST_ALL.get(i).getNumberOfLinesPerCharacter(character);
 				
-				TableEntry newTableEntry = new TableEntry(label, value);
+				TableEntry newTableEntry = new TableEntry(label, value, 14, plotWidth - 100 - 35, 25);
 				newTableEntry.active = false;
 				allTableEntries.add(newTableEntry);
 

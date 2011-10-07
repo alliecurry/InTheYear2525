@@ -1,10 +1,13 @@
 
 public class TableEntry extends Widget {
 
-	public TableEntry (String s, int v) {
+	public TableEntry (String s, int v, int font_size, int Width, int Height) {
 		
 		label = s;
 		val = v;
+		fontSize = font_size;
+		height = Height;
+		width = Width;
 		
 	}
 	
@@ -14,9 +17,7 @@ public class TableEntry extends Widget {
 		int cx = x;
 		int cy = y;
 
-		GLOBAL.processing.textFont(GLOBAL.tFont, 19);
-		width = (int)(GLOBAL.processing.textWidth(label)) + 10;
-		GLOBAL.processing.textAlign(GLOBAL.processing.LEFT);
+		GLOBAL.processing.textFont(GLOBAL.tFont, fontSize);
 		if(mouseOver()) 
 		{
 			super.draw();
@@ -32,7 +33,9 @@ public class TableEntry extends Widget {
 
 		GLOBAL.processing.strokeWeight(1);
 		GLOBAL.processing.fill(GLOBAL.colorButtonLabel);
-		GLOBAL.processing.text(label + "          " + val, cx + 5, cy + 20);
+		GLOBAL.processing.textAlign(GLOBAL.processing.LEFT);
+		GLOBAL.processing.text(label, cx + 5, cy + 20);
+		GLOBAL.processing.text(val, cx + width - 35 , cy + 20);
 
 	}
 	
@@ -42,4 +45,5 @@ public class TableEntry extends Widget {
 	
 	String label;
 	int val;
+	int fontSize;
 }
