@@ -33,7 +33,7 @@ public class main_class extends PApplet{
 		pars.parseBackgroundChars();	//Loads unacceptable character names from file names.txt
 		pars.parseAllTranscripts();		//Parse all episode transcripts
 		pars.filterCharacters();        //Remove characters in less than 1 episode
-		GLOBAL.parseForWordMap = true;	//Flag to enable parsing on .txt files for word mapping
+		GLOBAL.parseForWordMap = true;	//Flag to enable parsing on .txt files for word mapping [DO NOT REMOVE!!!]
 		pars.parseAllTranscripts();		//Parse all word file transcripts.
 		
 		

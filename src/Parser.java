@@ -218,20 +218,20 @@ public class Parser {
             parseFile("data/transcripts/SEASON6/S8E12.txt");
             parseFile("data/transcripts/SEASON6/S8E13.txt");
             
-            LIST_ALL.clear(); // DANI mod : Temporary fix for list double long
+            if(!GLOBAL.parseForWordMap) {
+	            //Aggregate all seasons
+	            LIST_ALL.addAll(LIST_S1);
+	            LIST_ALL.addAll(LIST_S2);
+	            LIST_ALL.addAll(LIST_S3);
+	            LIST_ALL.addAll(LIST_S4);
+	            LIST_ALL.addAll(LIST_S5);
+	            LIST_ALL.addAll(LIST_S6);
             
-            //Aggregate all seasons
-            LIST_ALL.addAll(LIST_S1);
-            LIST_ALL.addAll(LIST_S2);
-            LIST_ALL.addAll(LIST_S3);
-            LIST_ALL.addAll(LIST_S4);
-            LIST_ALL.addAll(LIST_S5);
-            LIST_ALL.addAll(LIST_S6);
-            
-            /*for(int n=0; n<LIST_ALL.size(); ++n) {
-            	Episode temp = LIST_ALL.get(n);
-            	System.out.println( temp.getSeason() + ": " + temp.getEpisode());
-            }*/
+	            /*for(int n=0; n<LIST_ALL.size(); ++n) {
+	            	Episode temp = LIST_ALL.get(n);
+	            	System.out.println( temp.getSeason() + ": " + temp.getEpisode());
+	            }*/
+            }
         }
        
         //Add episode to appropriate ArrayList
