@@ -121,21 +121,6 @@ public class GraphsArea extends Widget{
 				if (tableChart1 == null) {
 					tableChart1 = new TableChart(GLOBAL.CHARACTER_SELECTED, x + 20, y + 20, width - 20, height - 120, CHARACTER_GRAPH);
 				}
-				else if (tableChart2 == null) {
-					int chartHeight = (height - 140)/2;
-					tableChart2 = tableChart1;
-					tableChart2.changePosition(x + 20, y + 40 + chartHeight, width - 20, chartHeight);
-					tableChart1 = new TableChart(GLOBAL.CHARACTER_SELECTED, x + 20, y + 20, width - 20, chartHeight, CHARACTER_GRAPH);
-				}
-				else {
-					int chartHeight = (height - 160)/3;
-					tableChart3 = tableChart2;
-					tableChart2 = tableChart1;
-					// chart 2 and 3 = change x y width height
-					tableChart2.changePosition(x + 20, y + 40 + chartHeight, width - 20, chartHeight);
-					tableChart3.changePosition(x + 20, y + 60 + 2*chartHeight, width - 20, chartHeight);
-					tableChart1 = new TableChart(GLOBAL.CHARACTER_SELECTED, x + 20, y + 20, width - 20, chartHeight, CHARACTER_GRAPH);	
-				}
 			}
 		}
 

@@ -175,22 +175,31 @@ public class TableChart extends Widget {
 				String label = "S" + Parser.LIST_ALL.get(i).getSeason() +
 							  " E"+ Parser.LIST_ALL.get(i).getEpisode() +
 							  " " +Parser.LIST_ALL.get(i).getName();
-				int value = Parser.LIST_ALL.get(i).getNumberOfLinesPerCharacter(character);
 				
-				TableEntry newTableEntry = new TableEntry(label, value, 14, plotWidth - 100 - 35, 25);
+				ArrayList<Integer> values = new ArrayList<Integer>();
+				
+				for (int j=0; j<GLOBAL.charactersSelected.size(); j++){
+					values.add(new Integer(Parser.LIST_ALL.get(i).getNumberOfLinesPerCharacter(GLOBAL.charactersSelected.get(j))));
+					
+				}
+				
+				TableEntry newTableEntry = new TableEntry(label, values, 14, plotWidth - 100 - 35, 25);
 				newTableEntry.active = false;
 				allTableEntries.add(newTableEntry);
 
 			}
-			
-			// Draw icon and info		
-			GLOBAL.processing.fill(GLOBAL.colorText);
-			GLOBAL.processing.textFont(GLOBAL.tFont,16);
-			GLOBAL.processing.textAlign(GLOBAL.processing.CENTER);
-			GLOBAL.processing.text(character.getName(), x + width - 40, y + 20);
 
-			if (character.getIcon() != null)
-				GLOBAL.processing.image( character.getIcon(), x + width - 80, y + 30, 80, 80);
+			for (int j=0; j<GLOBAL.charactersSelected.size(); j++){
+				// Draw icon and info		
+				GLOBAL.processing.fill(GLOBAL.colorText);
+				GLOBAL.processing.textFont(GLOBAL.tFont,16);
+				GLOBAL.processing.textAlign(GLOBAL.processing.CENTER);
+				GLOBAL.processing.text(GLOBAL.charactersSelected.get(j).getName(), x + width - 40, y + 20 + j*200);
+
+				if (character.getIcon() != null)
+					GLOBAL.processing.image( GLOBAL.charactersSelected.get(j).getIcon(), x + width - 80, y + 30 + j*200, 80, 80);
+			}
+			
 		}
 		
 

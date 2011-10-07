@@ -1,13 +1,16 @@
+import java.util.ArrayList;
+
 
 public class TableEntry extends Widget {
 
-	public TableEntry (String s, int v, int font_size, int Width, int Height) {
+	public TableEntry (String s, ArrayList<Integer> list, int font_size, int Width, int Height) {
 		
 		label = s;
-		val = v;
 		fontSize = font_size;
 		height = Height;
 		width = Width;
+		
+		values = list;
 		
 	}
 	
@@ -35,8 +38,23 @@ public class TableEntry extends Widget {
 		GLOBAL.processing.fill(GLOBAL.colorButtonLabel);
 		GLOBAL.processing.textAlign(GLOBAL.processing.LEFT);
 		GLOBAL.processing.text(label, cx + 5, cy + 20);
-		GLOBAL.processing.text(val, cx + width - 35 , cy + 20);
-
+		
+		switch (values.size()) {
+		
+		case 1:
+			GLOBAL.processing.text(values.get(0), cx + width - 80 , cy + 20);
+			break;
+		case 2:
+			GLOBAL.processing.text(values.get(0), cx + width - 80 , cy + 20);
+			GLOBAL.processing.text(values.get(1), cx + width - 50 , cy + 20);
+			break;
+		case 3:
+			GLOBAL.processing.text(values.get(0), cx + width - 80 , cy + 20);
+			GLOBAL.processing.text(values.get(1), cx + width - 50 , cy + 20);
+			GLOBAL.processing.text(values.get(2), cx + width - 20, cy + 20);
+			break;
+		}
+		
 	}
 	
 	public void doAction() {
@@ -44,6 +62,6 @@ public class TableEntry extends Widget {
 	}
 	
 	String label;
-	int val;
+	ArrayList<Integer> values;
 	int fontSize;
 }
