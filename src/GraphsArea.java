@@ -26,8 +26,10 @@ public class GraphsArea extends Widget{
 	public HorizontalScrollBar scroll;
 	
 	// Rollover rectangle and label to be displayed 
-	public Widget rolloverRect;
-	public String rolloverLabel;
+	public Widget rolloverRect_CharacterCharts;
+	public Widget rolloverRect_SeasonCharts;
+	public String rolloverLabel_CharacterCharts;
+	public String rolloverLabel_SeasonCharts;
 	
 	public GraphsArea() {
 	
@@ -59,12 +61,23 @@ public class GraphsArea extends Widget{
 		if (GLOBAL.ANALYSIS_TYPE.equals("characters")) {
 			scroll.draw();
 			
-			if (rolloverRect != null && ( chart1 != null && chart1.mouseOver()) || ( chart2 != null && chart2.mouseOver()) || (chart3 != null && chart3.mouseOver()) ) {
-				rolloverRect.draw();
+			if (rolloverRect_CharacterCharts != null && ( chart1 != null && chart1.mouseOver()) || ( chart2 != null && chart2.mouseOver()) || (chart3 != null && chart3.mouseOver()) ) {
+				rolloverRect_CharacterCharts.draw();
 				GLOBAL.processing.fill(GLOBAL.colorText);
 				GLOBAL.processing.textFont(GLOBAL.tFont,18);
 				GLOBAL.processing.textAlign(GLOBAL.processing.CENTER);
-				GLOBAL.processing.text(rolloverLabel, x + width/2 - 50, y + height - 70);
+				GLOBAL.processing.text(rolloverLabel_CharacterCharts, x + width/2 - 50, y + height - 70);
+			}
+		}
+		
+		if (GLOBAL.ANALYSIS_TYPE.equals("seasons")) {
+			
+			if (rolloverRect_SeasonCharts != null && ( chart1 != null && chart1.mouseOver()) || ( chart2 != null && chart2.mouseOver()) || (chart3 != null && chart3.mouseOver()) ) {
+				rolloverRect_SeasonCharts.draw();
+//				GLOBAL.processing.fill(GLOBAL.colorText);
+//				GLOBAL.processing.textFont(GLOBAL.tFont,18);
+//				GLOBAL.processing.textAlign(GLOBAL.processing.CENTER);
+//				GLOBAL.processing.text(rolloverLabel_CharacterCharts, x + width/2 - 50, y + height - 70);
 			}
 		}
 
@@ -207,14 +220,26 @@ public class GraphsArea extends Widget{
 	
 	public void mouseCharacterRolloverFunction( float RectWidth, float x, String s ) {
 		
-		rolloverRect = new Widget();
-		rolloverRect.x = (int)(x - RectWidth/2);
-		rolloverRect.y = (int)(y + 20);
-		rolloverRect.width = (int)(RectWidth);
-		rolloverRect.height = (int)(height - 120);
+		rolloverRect_CharacterCharts = new Widget();
+		rolloverRect_CharacterCharts.x = (int)(x - RectWidth/2);
+		rolloverRect_CharacterCharts.y = (int)(y + 20);
+		rolloverRect_CharacterCharts.width = (int)(RectWidth);
+		rolloverRect_CharacterCharts.height = (int)(height - 120);
 		
-		rolloverLabel = s;
+		rolloverLabel_CharacterCharts = s;
 		
+	}
+	
+	public void mouseSeasonRolloverFunction( float RectWidth, float x, Character c ) {
+		
+		rolloverRect_SeasonCharts = new Widget();
+		rolloverRect_SeasonCharts.x = (int)(x - RectWidth/2);
+		rolloverRect_SeasonCharts.y = (int)(y + 20);
+		rolloverRect_SeasonCharts.width = (int)(RectWidth);
+		rolloverRect_SeasonCharts.height = (int)(height - 20);
+		
+		rolloverLabel_SeasonCharts = c.getName();
+				
 	}
 
 	public void mouseReleased() {

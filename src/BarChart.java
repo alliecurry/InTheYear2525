@@ -147,8 +147,7 @@ public class BarChart extends Widget{
 					rolloverRect.width = (int)(rectWidth);
 					rolloverRect.height = (int)(height);
 					rolloverRect.draw();
-					String label = charactersInEpisode.get(i).getName();
-					mouseEpisodeRolloverFunction(label, charactersInEpisode.get(i));
+					mouseRolloverFunction(charactersInEpisode.get(i));
 					
 				}
 			}
@@ -198,9 +197,21 @@ public class BarChart extends Widget{
 				}
 								
 				float barX = GLOBAL.processing.map(i, 0, Parser.ALL_CHARACTERS.size() - 1, x + rectWidth, x + width - rectWidth);
+				GLOBAL.processing.rectMode(GLOBAL.processing.CORNERS);
+				GLOBAL.processing.fill(GLOBAL.processing.color(255));
 				GLOBAL.processing.rect( barX - rectWidth/2, barY, barX+ rectWidth/2, y + height);
 			}
 			
+			// Rollover
+			for(int i =0; i < Parser.ALL_CHARACTERS.size(); i++) {
+				float barX = GLOBAL.processing.map(i, 0, Parser.ALL_CHARACTERS.size() - 1, x + rectWidth, x + width - rectWidth);
+				// Check for any mouse rollover functionality to be displayed
+				if (GLOBAL.processing.mouseX > (barX - rectWidth/2) && GLOBAL.processing.mouseX < (barX + rectWidth) 
+						&& GLOBAL.processing.mouseY > y && GLOBAL.processing.mouseY < (y  + height)) {	
+					main_class.graphArea.mouseSeasonRolloverFunction(rectWidth, barX, Parser.ALL_CHARACTERS.get(i));
+					mouseRolloverFunction(Parser.ALL_CHARACTERS.get(i));
+				}
+			}
 		} // end if
 		
 	}
@@ -323,7 +334,7 @@ public class BarChart extends Widget{
 		
 	}
 	
-	public void mouseEpisodeRolloverFunction(String charName, Character character) {
+	public void mouseRolloverFunction(Character character) {
 		
 		// Draw a rectangle, the label and an image inside, now the image is set to 100x100
 		
@@ -337,7 +348,7 @@ public class BarChart extends Widget{
 		GLOBAL.processing.fill(GLOBAL.colorBackgroundLayerTwo);
 		GLOBAL.processing.textFont(GLOBAL.tFont,14);
 		GLOBAL.processing.textAlign(GLOBAL.processing.CENTER);
-		GLOBAL.processing.text(charName, GLOBAL.processing.mouseX + 60, GLOBAL.processing.mouseY - 18 - 100); // center in the upper side, middle point, of the icon 100x100
+		GLOBAL.processing.text(character.getName(), GLOBAL.processing.mouseX + 60, GLOBAL.processing.mouseY - 18 - 100); // center in the upper side, middle point, of the icon 100x100
 		
 		// Image
 		if (character.getIcon()!= null)
