@@ -163,10 +163,10 @@ public class GraphsArea extends Widget{
 	public void createSeasonGraph() {
 		
 		if (chart1 == null)
-			chart1 = new BarChart(GLOBAL.SEASON_SELECTED, x + 20, y + 20, width - 100, height - 20, SEASON_GRAPH);
+			chart1 = new BarChart(GLOBAL.SEASON_SELECTED, x + 20, y + 20, width - 100, height - 40, SEASON_GRAPH);
 		else if (chart2 == null) {
 			chart2 = chart1;
-			chart2.changePosition(x + 20, y + (height)/2 + 30, width - 100, (height - 100) /2);
+			chart2.changePosition(x + 20, y + (height - 100)/2 + 80, width - 100, (height - 100) /2);
 			chart1 = new BarChart(GLOBAL.SEASON_SELECTED, x + 20, y + 20, width - 100, (height - 100) /2, SEASON_GRAPH);
 			}
 		else {
@@ -176,7 +176,8 @@ public class GraphsArea extends Widget{
 			// chart 2 and 3 = change x y width height
 			chart2.changePosition(x + 20, y + 80 + chartHeight, width - 100, chartHeight);
 			chart3.changePosition(x + 20, y + 140 + 2*chartHeight, width - 100, chartHeight);
-			chart1 = new BarChart(GLOBAL.SEASON_SELECTED, x + 20, y + 20, width - 100, chartHeight, SEASON_GRAPH);		}
+			chart1 = new BarChart(GLOBAL.SEASON_SELECTED, x + 20, y + 20, width - 100, chartHeight, SEASON_GRAPH);		
+			}
 		
 	}
 	
@@ -236,7 +237,7 @@ public class GraphsArea extends Widget{
 		rolloverRect_SeasonCharts.x = (int)(x - RectWidth/2);
 		rolloverRect_SeasonCharts.y = (int)(y + 20);
 		rolloverRect_SeasonCharts.width = (int)(RectWidth);
-		rolloverRect_SeasonCharts.height = (int)(height - 20);
+		rolloverRect_SeasonCharts.height = (int)(height - 40);
 		
 		rolloverLabel_SeasonCharts = c.getName();
 				

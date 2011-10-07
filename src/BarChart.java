@@ -162,6 +162,8 @@ public class BarChart extends Widget{
 			float barY = y + height;
 			float value;
 			
+			String c = " ";
+			
 			// For each character
 			for(int i =0; i < Parser.ALL_CHARACTERS.size(); i++) {
 
@@ -200,6 +202,19 @@ public class BarChart extends Widget{
 				GLOBAL.processing.rectMode(GLOBAL.processing.CORNERS);
 				GLOBAL.processing.fill(GLOBAL.processing.color(255));
 				GLOBAL.processing.rect( barX - rectWidth/2, barY, barX+ rectWidth/2, y + height);
+				
+				if (Parser.ALL_CHARACTERS.get(i).getName().toCharArray()[0] != c.toCharArray()[0]) {
+					c = Parser.ALL_CHARACTERS.get(i).getName().substring(0, 1);
+					GLOBAL.processing.fill(GLOBAL.colorText);
+					GLOBAL.processing.textFont(GLOBAL.tFont,10);
+					if (!c.equals("e") && !c.equals("q"))
+						GLOBAL.processing.textAlign(GLOBAL.processing.LEFT);
+					else
+						GLOBAL.processing.textAlign(GLOBAL.processing.RIGHT);
+					GLOBAL.processing.text(c.toUpperCase(), barX , y + height + 15);
+				}
+				
+				
 			}
 			
 			// Rollover
