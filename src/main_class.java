@@ -1,6 +1,7 @@
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.Comparator;
+import java.util.Random;
 import processing.core.*;
 import wordcram.*;
 
@@ -178,10 +179,23 @@ public class main_class extends PApplet{
 		GLOBAL.colorIconBackground = color(224);
 		GLOBAL.colorTagCloudBackground = color(224,224,224,0);
 		
-		int[] c = {color(136,204,238), color(68,170,153), color(17,119,51), color(221,204,119), 
+		int[] temp = {color(136,204,238), color(68,170,153), color(17,119,51), color(221,204,119), 
 					color(204,102,119), color(136,34,85), color(146,189,16), color(170,68,153), 
-					color(51,34,136)
+					color(51,34,136), color(255,255,225)
 		};
+		
+		//Randomize colors
+		int[] c = {-1,-1,-1,-1,-1,-1,-1,-1,-1,-1};
+		Random rand = new Random();
+		
+		for(int x=0; x<temp.length; ++x){
+			int n = rand.nextInt(temp.length);
+			while(c[n] != -1) {
+				n = rand.nextInt(temp.length);
+			}
+			c[n] = temp[x];
+		}
+		
 		GLOBAL.COLORS = new ColorSwatch(c);
 	}
 
