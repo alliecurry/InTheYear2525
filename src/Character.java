@@ -406,6 +406,10 @@ public class Character {
         		}
         	}
         	
+        	//Make first letter of name uppercase
+        	String f = topName.substring(0,1).toUpperCase();
+        	topName = f + topName.substring(1);
+        	
         	return topName;
         }
 }

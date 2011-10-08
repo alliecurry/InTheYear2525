@@ -40,21 +40,6 @@ public class intheyear2525 extends PApplet{
 		GLOBAL.parseForWordMap = true;	//Flag to enable parsing on .txt files for word mapping [DO NOT REMOVE!!!]
 		pars.parseAllTranscripts();		//Parse all word file transcripts.
 		
-		//WORD FREQUENCY TESTING ------------------------
-		/*ArrayList<Word> a1 = Parser.ALL_CHARACTERS.get(0).getWordRange(1, 1, 6, 26);
-		int max=50; if(a1.size()<max) { max = a1.size(); }*/
-		
-		/*System.out.println(a1.get(0).getWord() + "\t" + a1.get(0).getFreq());
-		System.out.println(a1.get(1).getWord() + "\t" + a1.get(1).getFreq());
-		System.out.println(a1.get(2).getWord() + "\t" + a1.get(2).getFreq());
-		a1 = Parser.ALL_CHARACTERS.get(0).getWordRange(1, 1, 6, 26);
-		System.out.println("------\n"+a1.get(0).getWord() + "\t" + a1.get(0).getFreq());
-		System.out.println(a1.get(1).getWord() + "\t" + a1.get(1).getFreq());
-		System.out.println(a1.get(2).getWord() + "\t" + a1.get(2).getFreq());*/
-		
-		//for(int z=0; z<max; ++z) {
-			//System.out.println(a1.get(z).getWord() + "\t" + a1.get(z).getFreq());
-		//}//------------------------------------------------*/
 		
 		//Sort ALL_CHARACTERS where characters in more episodes are listed first.
 		/*Collections.sort(Parser.ALL_CHARACTERS, new Comparator<Object>(){

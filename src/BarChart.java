@@ -302,6 +302,11 @@ public class BarChart extends GuiElement{
 		GLOBAL.processing.textFont(GLOBAL.tFont,16);
 		GLOBAL.processing.textAlign(GLOBAL.processing.CENTER);
 		GLOBAL.processing.text(character.getName_firstToUppercase(), x + width - 40, y + 20);
+		
+		//Display most appeared with
+		GLOBAL.processing.textFont(GLOBAL.tFont,14);
+		GLOBAL.processing.text("Appears Most With:", x + width - 38, y + 140);
+		GLOBAL.processing.text(character.getMostAppearence(), x + width - 38, y + 155);
 
 		if (character.getIcon() != null)
 			GLOBAL.processing.image( character.getIcon(), x + width - 80, y + 30, 80, 80);
@@ -339,7 +344,7 @@ public class BarChart extends GuiElement{
 				GLOBAL.processing.fill(character.getColor());
 				GLOBAL.processing.textFont(GLOBAL.tFont,14);
 				GLOBAL.processing.textAlign(GLOBAL.processing.CENTER);
-				GLOBAL.processing.text(character.getName_firstToUppercase() + " doesn't have any catchphrase", x + plotWidth/2, y + height/2);
+				GLOBAL.processing.text(character.getName_firstToUppercase() + " doesn't have any catchphrases", x + plotWidth/2, y + height/2);
 				break; 
 			}
 			
@@ -435,6 +440,11 @@ public class BarChart extends GuiElement{
 		GLOBAL.processing.textFont(GLOBAL.tFont,16);
 		GLOBAL.processing.textAlign(GLOBAL.processing.CENTER);
 		GLOBAL.processing.text(character.getName_firstToUppercase(), x + width - 40, y + 20);
+		
+		//Display most appeared with
+		GLOBAL.processing.textFont(GLOBAL.tFont,14);
+		GLOBAL.processing.text("Appears Most With:", x + width - 38, y + 140);
+		GLOBAL.processing.text(character.getMostAppearence(), x + width - 38, y + 155);
 
 		if (character.getIcon() != null)
 			GLOBAL.processing.image( character.getIcon(), x + width - 80, y + 30, 80, 80);
