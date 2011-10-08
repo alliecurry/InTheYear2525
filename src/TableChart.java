@@ -104,7 +104,7 @@ public class TableChart extends Widget {
 			if (GLOBAL.CATCHPHRASES_ANALYSIS == false)
 				createDialogueTableChart();
 			else {
-//				createCatchphraseTableChart();
+				createCatchphraseTableChart();
 			}
 			
 		}
@@ -120,7 +120,11 @@ public class TableChart extends Widget {
 		// Resize based on number of graphs and number of episodes
 		scroll.height = (numberOfElements + 1) * 25;
 		scroll.size = (float)4 / allTableEntries.size();
-		scroll.draw();
+		
+		if(allTableEntries.size() >= numberOfElements)
+			scroll.draw();
+		else
+			scroll.size = 1;
 		
 		// elementNumber: var for offset calculation
 		int elementNumber = 0;	
@@ -203,7 +207,7 @@ public class TableChart extends Widget {
 					GLOBAL.processing.image( GLOBAL.charactersSelected.get(j).getIcon(), x + width - 80, y + 30 + j*200, 80, 80);
 			}
 			
-			// Averagesinfo		
+			// Averages info		
 			GLOBAL.processing.textFont(GLOBAL.tFont,14);
 			GLOBAL.processing.textAlign(GLOBAL.processing.LEFT);
 			GLOBAL.processing.text("Average amounts of dialogue among the selected episodes: ", x + 20, y + 20);
@@ -216,61 +220,79 @@ public class TableChart extends Widget {
 		}
 		
 
-//		public void createCatchphraseTableChart() {
-//			
-//			float value;
-//
-//			int indexStart = 0;
-//			int indexEnd = Parser.LIST_ALL.size() -1;
-//
-//			allTableEntries.clear();
-//
-//			for (int i = 0; i< Parser.LIST_ALL.size() ; i++) {
-//				if (Parser.LIST_ALL.get(i).getSeason() == GLOBAL.episodeStart.getSeason() && Parser.LIST_ALL.get(i).getEpisode() == GLOBAL.episodeStart.getEpisode())
-//					indexStart = i;
-//				if (Parser.LIST_ALL.get(i).getSeason() == GLOBAL.episodeEnd.getSeason() && Parser.LIST_ALL.get(i).getEpisode() == GLOBAL.episodeEnd.getEpisode())
-//					indexEnd = i;
-//			}
-//
-//			
-//			for ( int i = indexStart; i <= indexEnd; i++ ) {
-//				
-//				ArrayList<Catchphrase> phrases = character.getAllPhrases();
-//				
-//				ArrayList<Integer> values = new ArrayList<Integer>();
-//				
-//				String label = "S" + Parser.LIST_ALL.get(i).getSeason() +
-//						  " E"+ Parser.LIST_ALL.get(i).getEpisode();
-//				
-//				for (int j=0; j<GLOBAL.charactersSelected.size(); j++){
-//					values.add(new Integer());
-//					
-//				}
-//				
-//				// for each phrase
-//				for (int j=0; j < phrases.size(); j++) {
-//					int numberOfTime = phrases.get(j).getTotalEpisode(Parser.LIST_ALL.get(i).getSeason(), Parser.LIST_ALL.get(i).getEpisode());
-//					if ( numberOfTime > 0){
-//					    stringPhrase.put(phrases.get(j).getPhrase(), new Integer((int)numberOfTime));
-//					    
-//					    
-//					}
-//				}
-//				
-//
-//
-//			}
-//
-//			// Draw icon and info		
-//			GLOBAL.processing.fill(GLOBAL.colorText);
-//			GLOBAL.processing.textFont(GLOBAL.tFont,16);
-//			GLOBAL.processing.textAlign(GLOBAL.processing.CENTER);
-//			GLOBAL.processing.text(character.getName(), x + width - 40, y + 20);
-//
-//			if (character.getIcon() != null)
-//				GLOBAL.processing.image( character.getIcon(), x + width - 80, y + 30, 80, 80);
-//			
-//		}
+		public void createCatchphraseTableChart() {
+			
+			int indexStart = 0;
+			int indexEnd = Parser.LIST_ALL.size() -1;
+
+			allTableEntries.clear();
+			
+			resetAverageToBePlot();
+
+			for (int i = 0; i< Parser.LIST_ALL.size() ; i++) {
+				if (Parser.LIST_ALL.get(i).getSeason() == GLOBAL.episodeStart.getSeason() && Parser.LIST_ALL.get(i).getEpisode() == GLOBAL.episodeStart.getEpisode())
+					indexStart = i;
+				if (Parser.LIST_ALL.get(i).getSeason() == GLOBAL.episodeEnd.getSeason() && Parser.LIST_ALL.get(i).getEpisode() == GLOBAL.episodeEnd.getEpisode())
+					indexEnd = i;
+			}
+
+			GLOBAL.COLORS.reset();
+			
+			int [] colors = new int[3];
+			colors[0] = GLOBAL.COLORS.getNextColor();
+			colors[1] = GLOBAL.COLORS.getNextColor();
+			colors[2] = GLOBAL.COLORS.getNextColor();
+			
+			// Averages info		
+			GLOBAL.processing.textFont(GLOBAL.tFont,14);
+			GLOBAL.processing.textAlign(GLOBAL.processing.LEFT);
+			GLOBAL.processing.text("Average number of catchphrases in the selected interval: ", x + 20, y + 20);
+			
+			// for each character
+			for (int k=0; k<GLOBAL.charactersSelected.size(); k++){
+
+				ArrayList<Catchphrase> phrases = GLOBAL.charactersSelected.get(k).getAllPhrases();
+				
+				int color = colors[k]; // 3 color based on the character
+
+				GLOBAL.processing.fill(color);
+				// If character doesn't have any catchphrase, print and go to the next character
+				if (phrases == null) {
+					GLOBAL.processing.text(GLOBAL.charactersSelected.get(k).getName() + " doesn't have any catchphrase", x + 20, y + 40 + 20*k);
+					continue; 
+				}
+				
+				// for each phrase of the character
+				for (int j=0; j < phrases.size(); j++) {
+					
+					int value = 0; 
+
+					String phraseString = phrases.get(j).getPhrase(); // 1 the phrase
+
+					// for each episode
+					for ( int i = indexStart; i <= indexEnd; i++ ) {
+						int numberOfTime = phrases.get(j).getTotalEpisode(Parser.LIST_ALL.get(i).getSeason(), Parser.LIST_ALL.get(i).getEpisode());
+						if ( numberOfTime > 0){
+							value = value + numberOfTime; // 2
+							
+							averagesToBePlot[k] = (averagesToBePlot[k] + value); // Average number of catchphrases per episode
+							countersForAverage[k] = countersForAverage[k] + 1;
+
+						}
+
+					}
+
+					// Put the value in the table
+					TableEntry newTableEntry = new TableEntry(phraseString, value, color, 14, plotWidth -50 - 35, 25); // 1,2,3,4,
+					newTableEntry.active = false;
+					allTableEntries.add(newTableEntry);
+				}
+
+				GLOBAL.processing.text(GLOBAL.charactersSelected.get(k).getName(), x + 20, y + 40 + 20*k);
+				GLOBAL.processing.text(averagesToBePlot[k]/countersForAverage[k], x + 100, y + 40 + 20*k);
+			}			
+
+		}
 		
 		public void createEpisodeTableChart() {
 						

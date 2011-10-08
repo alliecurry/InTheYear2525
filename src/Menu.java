@@ -112,12 +112,8 @@ public class Menu extends Widget{
 		else if(selectingEpisode)
 			episodePicker.draw();
 
-		if (GLOBAL.CATCHPHRASES_ANALYSIS == false) {
-			viewTypeButton.draw();
-			viewTypeButton.active = true;
-		}
-		else
-			viewTypeButton.active = false;
+		viewTypeButton.draw();
+		viewTypeButton.active = true;
 
 	}
 

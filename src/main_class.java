@@ -8,6 +8,8 @@ import wordcram.*;
 @SuppressWarnings("serial")
 public class main_class extends PApplet{
 	
+	int frameCounter = 0; // frame counter for noloop function
+
 	public GLOBAL g = new GLOBAL(this);
 	public Parser pars = new Parser();
 	
@@ -129,22 +131,27 @@ public class main_class extends PApplet{
 		smooth();
 		
 	}
-	
-    public void draw() {
-		
-    		
-			drawLayerTwoBackground();
-			graphArea.draw();
-			menu.draw();
-			analysisTypeButton.draw();
 
-			drawLayerTwoText();
-			noFill();
+	public void draw() {
+
+		frameCounter++;
 
 
+		drawLayerTwoBackground();
+		graphArea.draw();
+		menu.draw();
+		analysisTypeButton.draw();
+
+		drawLayerTwoText();
+		noFill();
+
+
+		if (frameCounter == 120) { // wait 2 sec before going to sleep
 			noLoop();
+			frameCount = 0;
+		}
 	}
-    	
+
 	// Draw the background of the second layer
 	public void drawLayerTwoBackground() {
 		background(GLOBAL.colorBackgroundLayerTwo);
@@ -195,15 +202,15 @@ public class main_class extends PApplet{
 			}
 			c[n] = temp[x];
 		}
-		
+
 		GLOBAL.COLORS = new ColorSwatch(c);
 	}
 
 	// If mouse is pressed, check what has been pressed and activate the action
 	public void mousePressed() { 
-
+		frameCounter = 0;
 		loop();
-		
+
 		println("x = " + mouseX+ "y =" + mouseY);
 
 		if(menu.mouseOver() || menu.characterPicker.mouseOver() || menu.seasonPicker.mouseOver() || menu.episodePicker.mouseOver())
@@ -220,18 +227,21 @@ public class main_class extends PApplet{
 			graphArea.doAction();
 
 	}
-	
+
 	public void mouseClicked() {
-		  loop();
-		}
-	public void mouseMoved() {
-		  loop();
-		}	
-	
-	public void mouseDragged() {
+		frameCounter = 0;
 		loop();
 	}
-	
+	public void mouseMoved() {
+		frameCounter = 0;
+		loop();
+	}	
+
+	public void mouseDragged() {
+		frameCounter = 0;
+		loop();
+	}
+
 	public void mouseReleased() {
 		// Scrolls must be released 
 		menu.episodePicker.scroll.mouseReleased();

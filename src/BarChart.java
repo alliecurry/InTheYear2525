@@ -316,7 +316,7 @@ public class BarChart extends Widget{
 		int indexStart = 0;
 		int indexEnd = Parser.LIST_ALL.size() -1;
 		
-		drawYLabel(0, 10, 1, 1,"");
+		drawYLabel(0, 5, 1, 1,"");
 
 		for (int i = 0; i< Parser.LIST_ALL.size() ; i++) {
 			if (Parser.LIST_ALL.get(i).getSeason() == GLOBAL.episodeStart.getSeason() && Parser.LIST_ALL.get(i).getEpisode() == GLOBAL.episodeStart.getEpisode())
@@ -332,6 +332,15 @@ public class BarChart extends Widget{
 			value = 0;
 			ArrayList<Catchphrase> phrases = character.getAllPhrases();
 			HashMap<Catchphrase, Integer> stringPhrase  = new HashMap();
+			
+			// If character doesn't have any catchphrase, print and go to the next character
+			if (phrases == null) {
+				GLOBAL.processing.fill(character.getColor());
+				GLOBAL.processing.textFont(GLOBAL.tFont,14);
+				GLOBAL.processing.textAlign(GLOBAL.processing.CENTER);
+				GLOBAL.processing.text(character.getName() + " doesn't have any catchphrase", x + plotWidth/2, y + height/2);
+				break; 
+			}
 			
 			// for each phrase
 			for (int j=0; j < phrases.size(); j++) {
@@ -350,7 +359,7 @@ public class BarChart extends Widget{
 			for(Entry<Catchphrase, Integer> entry : stringPhrase.entrySet()) {
 				
 				for ( int k = 0 ; k < entry.getValue(); k++) {
-					rectHeight = GLOBAL.processing.map(1, 0, 10, 0, height);					 
+					rectHeight = GLOBAL.processing.map(1, 0, 5, 0, height);					 
 					GLOBAL.processing.fill(entry.getKey().getColor());
 					GLOBAL.processing.rect( barX - rectWidth/2, y + height - blockNumber*rectHeight, barX + rectWidth/2, y + height - rectHeight - (blockNumber*rectHeight));
 					blockNumber++;
