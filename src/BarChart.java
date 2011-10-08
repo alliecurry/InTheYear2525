@@ -244,7 +244,7 @@ public class BarChart extends GuiElement{
 			if(season.intValue() != 0)
 				GLOBAL.processing.text("Season " + season.intValue(), x + 10, y - 5);
 			else
-				GLOBAL.processing.text("All season", x + 10, y - 5);
+				GLOBAL.processing.text("All Seasons", x + 10, y - 5);
 			
 			// Rollover
 			for(int i =0; i < Parser.ALL_CHARACTERS.size(); i++) {
@@ -262,6 +262,16 @@ public class BarChart extends GuiElement{
 
 	// Dialogue analysis for character
 	public void createDialogueBarChart() {
+		//Draw Title
+		GLOBAL.processing.textFont(GLOBAL.tFont,16);
+		GLOBAL.processing.text("Number of Lines Spoken by " 
+								+ character.getName_firstToUppercase()
+								+ " from S" + GLOBAL.episodeStart.getSeason()
+								+ "E" + GLOBAL.episodeStart.getEpisode()
+								+ " to S" + GLOBAL.episodeEnd.getSeason()
+								+ "E" + GLOBAL.episodeEnd.getEpisode(), 
+								x + 320, y - 4);
+		
 		float barY = y + height;
 		float value;
 
@@ -314,6 +324,15 @@ public class BarChart extends GuiElement{
 	
 
 	public void createCatchphraseBarChart() {
+		//Draw Title
+		GLOBAL.processing.textFont(GLOBAL.tFont,16);
+		GLOBAL.processing.text("Catchphrases said by " 
+								+ character.getName_firstToUppercase()
+								+ " from S" + GLOBAL.episodeStart.getSeason()
+								+ "E" + GLOBAL.episodeStart.getEpisode()
+								+ " to S" + GLOBAL.episodeEnd.getSeason()
+								+ "E" + GLOBAL.episodeEnd.getEpisode(), 
+								x + 320, y - 4);
 		
 		float rectHeight = y + height;
 		float value;

@@ -379,7 +379,8 @@ public class Character {
         
         //Add appearence of another character
         public void addAppearence(String c) {
-        	if(c.equals("")) { return; }
+        	//Ignore blank names or same name as character
+        	if(c.equals("") || c.equals(name)) { return; }
         	
         	Integer n = talkedWith.get(c);
         	
@@ -407,8 +408,7 @@ public class Character {
         	}
         	
         	//Make first letter of name uppercase
-        	String f = topName.substring(0,1).toUpperCase();
-        	topName = f + topName.substring(1);
+        	topName = topName.substring(0,1).toUpperCase() + topName.substring(1);
         	
         	return topName;
         }

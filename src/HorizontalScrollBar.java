@@ -1,6 +1,7 @@
 import java.util.ArrayList;
 
-import com.sun.org.apache.xpath.internal.axes.SelfIteratorNoPredicate;
+//Caused error?
+//import com.sun.org.apache.xpath.internal.axes.SelfIteratorNoPredicate;
 
 
 public class HorizontalScrollBar extends GuiElement{

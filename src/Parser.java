@@ -469,6 +469,10 @@ public class Parser {
 		   return "morris";
 	   }
 	   
+	   if(c.equals("ben beeler")) {
+		   return "beeler";
+	   }
+	   
 	   if(c.equals("turanga munda")) {
 		   return "munda";
 	   }

@@ -86,6 +86,15 @@ public class TagCloud extends GuiElement{
 	}
 
 	public void draw() {
+		//Draw Title
+		GLOBAL.processing.textFont(GLOBAL.tFont,16);
+		GLOBAL.processing.text(character.getName_firstToUppercase()
+								+ "'s Common Words from S" + GLOBAL.episodeStart.getSeason()
+								+ "E" + GLOBAL.episodeStart.getEpisode()
+								+ " to S" + GLOBAL.episodeEnd.getSeason()
+								+ "E" + GLOBAL.episodeEnd.getEpisode(), 
+								x + 320, y - 4);
+		
 		
 		GLOBAL.processing.noStroke();
 		GLOBAL.processing.rectMode(GLOBAL.processing.CORNERS);
@@ -106,7 +115,7 @@ public class TagCloud extends GuiElement{
 		GLOBAL.processing.fill(GLOBAL.colorText);
 		GLOBAL.processing.textFont(GLOBAL.tFont,16);
 		GLOBAL.processing.textAlign(GLOBAL.processing.CENTER);
-		GLOBAL.processing.text(character.getName(), x + width - 40, y + 20);
+		GLOBAL.processing.text(character.getName_firstToUppercase(), x + width - 40, y + 20);
 		
 		//Display most appeared with
 		GLOBAL.processing.textFont(GLOBAL.tFont,14);
