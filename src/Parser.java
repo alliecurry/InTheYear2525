@@ -1,5 +1,9 @@
 import java.io.*;
+import java.text.DateFormat;
+import java.text.ParseException;
+import java.text.SimpleDateFormat;
 import java.util.ArrayList;
+import java.util.Date;
 import java.util.Scanner;
 
 // Class for managing the parsing of the text file
@@ -296,12 +300,24 @@ public class Parser {
                 if(!GLOBAL.parseForWordMap) {
                 	//"19990328" : format of date in text file
                     //"03/28/1990" : format of String airdate below...
-                    String airdate = splitLine[5].substring(4,6) + "/" +
-                    					splitLine[5].substring(6) + "/" +
-                    						splitLine[5].substring(0,4);
+//                    String airdate = splitLine[5].substring(4,6) + "/" +
+//                    					splitLine[5].substring(6) + "/" +
+//                    						splitLine[5].substring(0,4);
+                    
+                    // DANI mod
+                    DateFormat formatter = new SimpleDateFormat("yyyyMMdd");
+                    DateFormat niceFormatter = new SimpleDateFormat("dd MMM yyyy");
+                    
+                    try {
+						Date airdate= formatter.parse(splitLine[5]);
+					
                 	
-                	ep = new Episode(episode, season, splitLine[2], airdate);
+                	ep = new Episode(episode, season, splitLine[2], niceFormatter.format(airdate));
                 	//hashKey = "S" + season + "E" + episode;         //Store current hash map key prefix
+                	
+                    } catch (ParseException e) {
+						e.printStackTrace();
+					}
                 }
         }
         

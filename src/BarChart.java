@@ -138,6 +138,19 @@ public class BarChart extends Widget{
 				
 			}
 			
+			// Draw info	
+			GLOBAL.processing.fill(GLOBAL.colorText);
+			GLOBAL.processing.textFont(GLOBAL.tFont,12);
+			GLOBAL.processing.textAlign(GLOBAL.processing.LEFT);
+			GLOBAL.processing.text(episode.getName(), x + 10, y - 5);
+			GLOBAL.processing.textAlign(GLOBAL.processing.CENTER);
+			GLOBAL.processing.text("Season n. " + episode.getSeason(), x + width + 55, y + 20);
+			GLOBAL.processing.text("Episode n. " + episode.getEpisode(), x + width + 55, y + 40);
+			GLOBAL.processing.text("Airdate:", x + width + 55, y + 70);
+			GLOBAL.processing.text(episode.getAirDate(), x + width + 55, y + 90);
+			GLOBAL.processing.text("Network:", x + width + 55, y + 120);
+			GLOBAL.processing.text(episode.getNetwork(), x + width + 55, y + 140);
+			
 			// Search for rollover functions
 			for(int i =0; i < charactersInEpisode.size(); i++) {
 				float barX = GLOBAL.processing.map(i, 0, charactersInEpisode.size() - 1, x + rectWidth, x + width - rectWidth);
@@ -153,7 +166,9 @@ public class BarChart extends Widget{
 					mouseRolloverFunction(charactersInEpisode.get(i));
 					
 				}
-			}
+				
+			}		
+			
 			
 		} // end if
 		
@@ -219,8 +234,17 @@ public class BarChart extends Widget{
 					GLOBAL.processing.text(c.toUpperCase(), barX , y + height + 15);
 				}
 				
-				
 			}
+			
+			
+			// Draw info	
+			GLOBAL.processing.fill(GLOBAL.colorText);
+			GLOBAL.processing.textFont(GLOBAL.tFont,12);
+			GLOBAL.processing.textAlign(GLOBAL.processing.LEFT);
+			if(season.intValue() != 0)
+				GLOBAL.processing.text("Season " + season.intValue(), x + 10, y - 5);
+			else
+				GLOBAL.processing.text("All season", x + 10, y - 5);
 			
 			// Rollover
 			for(int i =0; i < Parser.ALL_CHARACTERS.size(); i++) {
@@ -400,7 +424,7 @@ public class BarChart extends Widget{
 					GLOBAL.processing.textAlign(GLOBAL.processing.RIGHT);
 					GLOBAL.processing.text(GLOBAL.processing.floor(v) + s, plotX1 - 8, y + textOffset);
 					if (v % (yIntervalMinor*2) == 0) {
-						GLOBAL.processing.line(plotX1 - 4, y, plotX2 + 4, y);
+						GLOBAL.processing.line(plotX1 - 4, y, plotX2, y);
 					}
 					else {
 						GLOBAL.processing.line(plotX1 - 4, y, plotX1, y);     // Draw major tick
@@ -421,21 +445,26 @@ public class BarChart extends Widget{
 		
 		// Draw a rectangle, the label and an image inside, now the image is set to 100x100
 		
+		int x1 = GLOBAL.processing.mouseX + 10;
+		
+		if (x1 > GLOBAL.processing.width - 150)
+			x1 = x1 - 150;
+		
 		// Rectangle
 		GLOBAL.processing.noStroke();
 		GLOBAL.processing.rectMode(GLOBAL.processing.CORNER);
 		GLOBAL.processing.fill(GLOBAL.colorIconBackground);
-		GLOBAL.processing.rect( GLOBAL.processing.mouseX + 10 , GLOBAL.processing.mouseY - 40 - 100 , 100, 130); //x,y,width,height
+		GLOBAL.processing.rect( x1, GLOBAL.processing.mouseY - 40 - 120 , 100, 130); //x,y,width,height
 		
 		// Text
 		GLOBAL.processing.fill(GLOBAL.colorBackgroundLayerTwo);
 		GLOBAL.processing.textFont(GLOBAL.tFont,14);
 		GLOBAL.processing.textAlign(GLOBAL.processing.CENTER);
-		GLOBAL.processing.text(character.getName(), GLOBAL.processing.mouseX + 60, GLOBAL.processing.mouseY - 18 - 100); // center in the upper side, middle point, of the icon 100x100
+		GLOBAL.processing.text(character.getName().replace(" ", "\n"), x1 + 50, GLOBAL.processing.mouseY - 18 - 120); // center in the upper side, middle point, of the icon 100x100
 		
 		// Image
 		if (character.getIcon()!= null)
-			GLOBAL.processing.image(character.getIcon(), GLOBAL.processing.mouseX + 10, GLOBAL.processing.mouseY - 10 - 100, 100,100);
+			GLOBAL.processing.image(character.getIcon(), x1, GLOBAL.processing.mouseY - 10 - 100, 100,100);
 		
 	}
 

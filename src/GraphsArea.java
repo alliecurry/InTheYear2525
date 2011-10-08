@@ -172,20 +172,20 @@ public class GraphsArea extends Widget{
 	public void createSeasonGraph() {
 
 		if (chart1 == null)
-			chart1 = new BarChart(GLOBAL.SEASON_SELECTED, x + 20, y + 20, width - 100, height - 40, SEASON_GRAPH);
+			chart1 = new BarChart(GLOBAL.SEASON_SELECTED, x + 20, y + 20, width - 20, height - 40, SEASON_GRAPH);
 		else if (chart2 == null) {
 			chart2 = chart1;
-			chart2.changePosition(x + 20, y + (height - 100)/2 + 80, width - 100, (height - 100) /2);
-			chart1 = new BarChart(GLOBAL.SEASON_SELECTED, x + 20, y + 20, width - 100, (height - 100) /2, SEASON_GRAPH);
+			chart2.changePosition(x + 20, y + (height - 100)/2 + 80, width - 20, (height - 100) /2);
+			chart1 = new BarChart(GLOBAL.SEASON_SELECTED, x + 20, y + 20, width - 20, (height - 100) /2, SEASON_GRAPH);
 		}
 		else {
 			int chartHeight = (height - 160)/3;
 			chart3 = chart2;
 			chart2 = chart1;
 			// chart 2 and 3 = change x y width height
-			chart2.changePosition(x + 20, y + 80 + chartHeight, width - 100, chartHeight);
-			chart3.changePosition(x + 20, y + 140 + 2*chartHeight, width - 100, chartHeight);
-			chart1 = new BarChart(GLOBAL.SEASON_SELECTED, x + 20, y + 20, width - 100, chartHeight, SEASON_GRAPH);		
+			chart2.changePosition(x + 20, y + 80 + chartHeight, width - 20, chartHeight);
+			chart3.changePosition(x + 20, y + 140 + 2*chartHeight, width - 20, chartHeight);
+			chart1 = new BarChart(GLOBAL.SEASON_SELECTED, x + 20, y + 20, width - 20, chartHeight, SEASON_GRAPH);		
 		}
 
 		if (tableChart1 == null) {
