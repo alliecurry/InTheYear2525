@@ -86,7 +86,7 @@ public class Menu extends Widget{
 		GLOBAL.processing.rect(x, y, x+width, y+height);
 
 		GLOBAL.processing.strokeWeight(2);
-		GLOBAL.processing.stroke(GLOBAL.colorLinesLayerOne);
+		GLOBAL.processing.stroke(GLOBAL.colorLinesLabelY);
 		GLOBAL.processing.line(x + width, y, x+ width, y+height);
 		GLOBAL.processing.noFill();
 

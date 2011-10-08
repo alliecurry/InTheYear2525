@@ -164,22 +164,13 @@ public class main_class extends PApplet{
 		
 	}
 	
-//	public void drawLayerTwoStats(){
-//		  noStroke();
-//		  rectMode(CORNERS);
-//		  fill(GLOBAL.colorStatsArea);
-//		  rect(GLOBAL.statX1,GLOBAL.statY1, GLOBAL.statX2, GLOBAL.statY2);
-//		  fill(GLOBAL.colorText);
-//		  text("Statistics:",24,90);
-//	}
-	
 	// Color setup function, all colors should be set here, so every change will be global
 	public void setupColors() {
 		GLOBAL.colorToggleOff = color(152);
 		GLOBAL.colorText = color(224);
 		GLOBAL.colorBackgroundLayerOne = color(36);
 		GLOBAL.colorBackgroundLayerTwo = GLOBAL.colorBackgroundLayerOne;
-		GLOBAL.colorLinesLayerOne = color(128);		
+		GLOBAL.colorLinesLabelY = color(128);		
 		GLOBAL.colorButtonLabel = color(224);	
 		GLOBAL.colorPlotArea = color(0);
 		GLOBAL.colorStatsArea = color(28,28,28);

@@ -303,7 +303,7 @@ public class TableChart extends Widget {
 			}
 			
 			
-			// Averagesinfo		
+			// Averages info		
 			GLOBAL.processing.textFont(GLOBAL.tFont,14);
 			GLOBAL.processing.textAlign(GLOBAL.processing.LEFT);
 			GLOBAL.processing.text("Average amounts of dialogue among the characters appearing in the episode: ", x + 20, y + 20);
@@ -320,6 +320,10 @@ public class TableChart extends Widget {
 						
 			allTableEntries.clear();
 			
+			resetAverageToBePlot();
+			
+			GLOBAL.COLORS.reset();
+			
 			// For each character
 			for(int i =0; i < Parser.ALL_CHARACTERS.size(); i++) {
 								
@@ -327,13 +331,34 @@ public class TableChart extends Widget {
 				ArrayList<Integer> values = new ArrayList<Integer>();
 				
 				for (int j=0; j<GLOBAL.seasonsSelected.size(); j++){
-					values.add(new Integer(Parser.ALL_CHARACTERS.get(i).getTotalEpisodesBySeason(GLOBAL.seasonsSelected.get(j))));
+					int value = Parser.ALL_CHARACTERS.get(i).getTotalEpisodesBySeason(GLOBAL.seasonsSelected.get(j));
+					values.add(new Integer(value));
+					
+					if (value > 0) {
+						averagesToBePlot[j] = (averagesToBePlot[j] + value);
+						countersForAverage[j] = countersForAverage[j] + 1;
+					}
+					
 				}
 				
 				TableEntry newTableEntry = new TableEntry(label, values, 14, plotWidth - 50 - 35, 25);
 				newTableEntry.active = false;
 				allTableEntries.add(newTableEntry);
 			}
+			
+			// Averages info		
+			GLOBAL.processing.textFont(GLOBAL.tFont,14);
+			GLOBAL.processing.textAlign(GLOBAL.processing.LEFT);
+			GLOBAL.processing.text("Number of characters appearing in the selected season: ", x + 20, y + 20);
+			for (int j=0; j<GLOBAL.seasonsSelected.size(); j++) {
+				GLOBAL.processing.fill(GLOBAL.COLORS.getNextColor());
+				if (GLOBAL.seasonsSelected.get(j).intValue() != 0)
+					GLOBAL.processing.text("Season " + GLOBAL.seasonsSelected.get(j).intValue(), x + 20, y + 40 + 20*j);
+				else
+					GLOBAL.processing.text("All seasons", x + 20, y + 40 + 20*j);
+				GLOBAL.processing.text(countersForAverage[j], x + 140, y + 40 + 20*j);
+			}
+			
 		}
 		
 		public void resetAverageToBePlot() {

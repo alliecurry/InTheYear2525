@@ -100,6 +100,8 @@ public class BarChart extends Widget{
 		
 		else if (GRAPH_TYPE == EPISODE_GRAPH) {
 			
+			drawYLabel(0,90,5,10, "");
+			
 			ArrayList<Character> charactersInEpisode = new ArrayList<Character>();
 			
 			// For each character, add to the charactersInEpisode only the one that appears
@@ -120,7 +122,7 @@ public class BarChart extends Widget{
 			for(int i =0; i < charactersInEpisode.size(); i++) {
 				
 				value = episode.getNumberOfLinesPerCharacter(charactersInEpisode.get(i));
-				barY = GLOBAL.processing.map(value, 0, 100, y + height, y);					 // TODO 100 is a default value, must be set as the max	
+				barY = GLOBAL.processing.map(value, 0, 90, y + height, y);					 // TODO 100 is a default value, must be set as the max	
 				float barX = GLOBAL.processing.map(i, 0, charactersInEpisode.size() - 1, x + rectWidth, x + width - rectWidth);
 				
 				GLOBAL.processing.rectMode(GLOBAL.processing.CORNERS);
@@ -156,6 +158,8 @@ public class BarChart extends Widget{
 		} // end if
 		
 		else if (GRAPH_TYPE == SEASON_GRAPH) {
+			
+			drawYLabel(0,100,5,10,"%");
 
 			// Width of a single bar
 			rectWidth = (float)(width)/(2*Parser.ALL_CHARACTERS.size());
@@ -170,32 +174,32 @@ public class BarChart extends Widget{
 
 				switch ( season.intValue() ) {
 				case 0 : 
-					value = Parser.ALL_CHARACTERS.get(i).getTotalEpisodes();
-					barY = GLOBAL.processing.map(value, 0, Parser.LIST_ALL.size(), y + height, y);
+					value = 100* Parser.ALL_CHARACTERS.get(i).getTotalEpisodes() / Parser.LIST_ALL.size();
+					barY = GLOBAL.processing.map(value, 0, 100, y + height, y);
 					break;
 				case 1 :
-					value = Parser.ALL_CHARACTERS.get(i).getTotalEpisodesBySeason(1);
-					barY = GLOBAL.processing.map(value, 0, Parser.LIST_S1.size(), y + height, y);
+					value = 100* Parser.ALL_CHARACTERS.get(i).getTotalEpisodesBySeason(1) / Parser.LIST_S1.size();
+					barY = GLOBAL.processing.map(value, 0, 100, y + height, y);
 					break;
 				case 2 :
-					value = Parser.ALL_CHARACTERS.get(i).getTotalEpisodesBySeason(2);
-					barY = GLOBAL.processing.map(value, 0, Parser.LIST_S2.size(), y + height, y);
+					value = 100* Parser.ALL_CHARACTERS.get(i).getTotalEpisodesBySeason(2) / Parser.LIST_S2.size();
+					barY = GLOBAL.processing.map(value, 0, 100, y + height, y);
 					break;
 				case 3 :
-					value = Parser.ALL_CHARACTERS.get(i).getTotalEpisodesBySeason(3);
-					barY = GLOBAL.processing.map(value, 0, Parser.LIST_S3.size(), y + height, y);
+					value = 100* Parser.ALL_CHARACTERS.get(i).getTotalEpisodesBySeason(3) / Parser.LIST_S3.size();
+					barY = GLOBAL.processing.map(value, 0, 100, y + height, y);
 					break;
 				case 4 :
-					value = Parser.ALL_CHARACTERS.get(i).getTotalEpisodesBySeason(4);
-					barY = GLOBAL.processing.map(value, 0, Parser.LIST_S4.size(), y + height, y);
+					value = 100* Parser.ALL_CHARACTERS.get(i).getTotalEpisodesBySeason(4) / Parser.LIST_S4.size();
+					barY = GLOBAL.processing.map(value, 0, 100, y + height, y);
 					break;
 				case 5 :
-					value = Parser.ALL_CHARACTERS.get(i).getTotalEpisodesBySeason(5);
-					barY = GLOBAL.processing.map(value, 0, Parser.LIST_S5.size(), y + height, y);
+					value = 100* Parser.ALL_CHARACTERS.get(i).getTotalEpisodesBySeason(5) / Parser.LIST_S5.size();
+					barY = GLOBAL.processing.map(value, 0, 100, y + height, y);
 					break;
 				case 6 :
-					value = Parser.ALL_CHARACTERS.get(i).getTotalEpisodesBySeason(6);
-					barY = GLOBAL.processing.map(value, 0, Parser.LIST_S6.size(), y + height, y);
+					value = 100* Parser.ALL_CHARACTERS.get(i).getTotalEpisodesBySeason(6) / Parser.LIST_S6.size();
+					barY = GLOBAL.processing.map(value, 0, 100, y + height, y);
 					break;
 				}
 								
@@ -239,6 +243,8 @@ public class BarChart extends Widget{
 
 		int indexStart = 0;
 		int indexEnd = Parser.LIST_ALL.size() -1;
+		
+		drawYLabel(0, 90, 5, 10,"");
 
 		for (int i = 0; i< Parser.LIST_ALL.size() ; i++) {
 			if (Parser.LIST_ALL.get(i).getSeason() == GLOBAL.episodeStart.getSeason() && Parser.LIST_ALL.get(i).getEpisode() == GLOBAL.episodeStart.getEpisode())
@@ -254,7 +260,7 @@ public class BarChart extends Widget{
 			GLOBAL.processing.fill(GLOBAL.COLORS.getNextColor());
 			
 			value = Parser.LIST_ALL.get(i).getNumberOfLinesPerCharacter(character);
-			barY = GLOBAL.processing.map(value, 0, 100, y + height, y);					 // TODO 100 is a default value, must be set as the max	
+			barY = GLOBAL.processing.map(value, 0, 90, y + height, y);					 // TODO 100 is a default value, must be set as the max	
 			float barX = GLOBAL.processing.map(i, indexStart, indexEnd, x + rectWidth, x + plotWidth - rectWidth);
 			GLOBAL.processing.rect( barX - rectWidth/2, barY, barX + rectWidth/2, y + height);
 
@@ -266,7 +272,7 @@ public class BarChart extends Widget{
 				
 			}
 		}
-
+		
 		// Draw icon and info		
 		GLOBAL.processing.fill(GLOBAL.colorText);
 		GLOBAL.processing.textFont(GLOBAL.tFont,16);
@@ -285,6 +291,8 @@ public class BarChart extends Widget{
 
 		int indexStart = 0;
 		int indexEnd = Parser.LIST_ALL.size() -1;
+		
+		drawYLabel(0, 10, 1, 1,"");
 
 		for (int i = 0; i< Parser.LIST_ALL.size() ; i++) {
 			if (Parser.LIST_ALL.get(i).getSeason() == GLOBAL.episodeStart.getSeason() && Parser.LIST_ALL.get(i).getEpisode() == GLOBAL.episodeStart.getEpisode())
@@ -360,6 +368,53 @@ public class BarChart extends Widget{
 		if (character.getIcon() != null)
 			GLOBAL.processing.image( character.getIcon(), x + width - 80, y + 30, 80, 80);
 		
+	}
+	
+	public void drawYLabel(float minValue, float maxValue, int minInterval, int maxInterval, String s){
+		GLOBAL.processing.fill(GLOBAL.colorText);
+		GLOBAL.processing.textFont(GLOBAL.tFont,10);
+		GLOBAL.processing.stroke(GLOBAL.colorLinesLabelY);
+		GLOBAL.processing.strokeWeight(1);
+		
+		float min = minValue;
+		float max = maxValue;
+		
+		int yIntervalMinor = minInterval;
+		int yIntervalMayor = maxInterval;
+		
+		int plotX1 = x;
+		int plotX2 = x + plotWidth;
+		
+		for (float v = min; v <= max; v += yIntervalMinor) {
+
+			if (v % yIntervalMinor == 0) {     // If a tick mark
+				float y = GLOBAL.processing.map(v, min, max, this.y + height, this.y);  
+				if (v % yIntervalMayor == 0) {        // If a major tick mark
+					float textOffset = GLOBAL.processing.textAscent()/3;  // Center vertically
+					if (v == min) {
+						textOffset = 0;                   // Align by the bottom
+					} 
+					else if (v == max) {
+						textOffset = GLOBAL.processing.textAscent() - 4;        // Align by the top
+					}
+					GLOBAL.processing.textAlign(GLOBAL.processing.RIGHT);
+					GLOBAL.processing.text(GLOBAL.processing.floor(v) + s, plotX1 - 8, y + textOffset);
+					if (v % (yIntervalMinor*2) == 0) {
+						GLOBAL.processing.line(plotX1 - 4, y, plotX2 + 4, y);
+					}
+					else {
+						GLOBAL.processing.line(plotX1 - 4, y, plotX1, y);     // Draw major tick
+					}
+				} 
+				else {
+					GLOBAL.processing.line(plotX1 - 2, y, plotX1, y);   // Draw minor tick
+				}
+			}
+		}
+		
+		GLOBAL.processing.noStroke();
+
+	    	
 	}
 	
 	public void mouseRolloverFunction(Character character) {

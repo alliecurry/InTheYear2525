@@ -27,7 +27,7 @@ public class GLOBAL {
 	public static int colorToggleOff;
 	public static int colorText;
 	public static int colorBackgroundLayerOne;
-	public static int colorLinesLayerOne;
+	public static int colorLinesLabelY;
 	public static int colorButtonLabel;
 	public static int colorBackgroundLayerTwo;
 	public static int colorPlotArea;	
