@@ -104,7 +104,7 @@ public class Menu extends Widget{
 		GLOBAL.processing.fill(GLOBAL.colorText);
 		GLOBAL.processing.textFont(GLOBAL.tFont,24);
 		GLOBAL.processing.text("Menu", 20, 100);
-		
+
 		if (selectingCharacter)
 			characterPicker.draw();
 		else if (selectingSeason)
@@ -112,12 +112,18 @@ public class Menu extends Widget{
 		else if(selectingEpisode)
 			episodePicker.draw();
 
-		viewTypeButton.draw();
-		viewTypeButton.active = true;
+		if ( GLOBAL.WORD_ANALYSIS)
+			viewTypeButton.active = false;
+		else {
+			viewTypeButton.draw();
+			viewTypeButton.active = true;
+		}
 
 	}
 
 	public void doAction() {
+		
+		// Selection panels buttons
 		if (GLOBAL.ANALYSIS_TYPE.equals("characters") && cButton.mouseOver()) {
 			selectingEpisode = false;
 			selectingSeason = false;
@@ -145,25 +151,34 @@ public class Menu extends Widget{
 				selectingEpisode = true;
 			}
 		
+		// Type of graphs buttons
 		else if ( GLOBAL.ANALYSIS_TYPE.equals("characters") && dialButton.mouseOver() && (GLOBAL.CATCHPHRASES_ANALYSIS == true || 
 				GLOBAL.WORD_ANALYSIS == true)) {
 			GLOBAL.WORD_ANALYSIS = false;
-			GLOBAL.CATCHPHRASES_ANALYSIS = false;
+			GLOBAL.CATCHPHRASES_ANALYSIS = false;	
 			main_class.graphArea.clearGraphs();
-			GLOBAL.charactersSelected.clear();
+			for (int i=0; i < GLOBAL.charactersSelected.size() ; i++ ) {
+				GLOBAL.CHARACTER_SELECTED = GLOBAL.charactersSelected.get(i);
+				main_class.graphArea.createCharacterGraph();
+			}			
 		}
 		else if ( GLOBAL.ANALYSIS_TYPE.equals("characters") && phButton.mouseOver() && (GLOBAL.CATCHPHRASES_ANALYSIS == false|| 
 				GLOBAL.WORD_ANALYSIS == true)) {
 			GLOBAL.WORD_ANALYSIS = false;
 			GLOBAL.CATCHPHRASES_ANALYSIS = true;
 			main_class.graphArea.clearGraphs();
-			GLOBAL.charactersSelected.clear();
-		}
+			for (int i=0; i < GLOBAL.charactersSelected.size() ; i++ ) {
+				GLOBAL.CHARACTER_SELECTED = GLOBAL.charactersSelected.get(i);
+				main_class.graphArea.createCharacterGraph();
+			}			}
 		else if (GLOBAL.ANALYSIS_TYPE.equals("characters") && wordButton.mouseOver() && GLOBAL.WORD_ANALYSIS == false) {
 			GLOBAL.WORD_ANALYSIS = true;
 			GLOBAL.CATCHPHRASES_ANALYSIS = false;
 			main_class.graphArea.clearGraphs();
-			GLOBAL.charactersSelected.clear();
+			for (int i=0; i < GLOBAL.charactersSelected.size() ; i++ ) {
+				GLOBAL.CHARACTER_SELECTED = GLOBAL.charactersSelected.get(i);
+				main_class.graphArea.createCharacterGraph();
+			}	
 		}
 		
 		

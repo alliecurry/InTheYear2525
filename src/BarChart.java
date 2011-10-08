@@ -327,6 +327,7 @@ public class BarChart extends Widget{
 
 		rectWidth = (float)(width)/(2*(indexEnd - indexStart));
 		GLOBAL.COLORS.reset();
+		
 		for ( int i = indexStart; i <= indexEnd; i++ ) {
 			
 			value = 0;
@@ -366,28 +367,60 @@ public class BarChart extends Widget{
 				}
 			}
 
+		}
+		
+		// Rollover
+		for ( int i = indexStart; i <= indexEnd; i++ ) {
+			
+			value = 0;
+			ArrayList<Catchphrase> phrases = character.getAllPhrases();
+			HashMap<Catchphrase, Integer> stringPhrase  = new HashMap();
+			
+			float barX = GLOBAL.processing.map(i, indexStart, indexEnd, x + rectWidth, x + plotWidth - rectWidth);
+			
 			// Check for any mouse rollover functionality to be displayed
 			if (GLOBAL.processing.mouseX > (barX - rectWidth/2) && GLOBAL.processing.mouseX < (barX + rectWidth) 
 					&& GLOBAL.processing.mouseY > y && GLOBAL.processing.mouseY < (y  + height)) {
 				String label = "S"+ Parser.LIST_ALL.get(i).getSeason() + " E" + Parser.LIST_ALL.get(i).getEpisode()+ " " + Parser.LIST_ALL.get(i).getName();
 				main_class.graphArea.mouseCharacterRolloverFunction(rectWidth, barX, label);
+				
+				// for each phrase
+				for (int j=0; j < phrases.size(); j++) {
+					int numberOfTime = phrases.get(j).getTotalEpisode(Parser.LIST_ALL.get(i).getSeason(), Parser.LIST_ALL.get(i).getEpisode());
+					if ( numberOfTime > 0){
+						value += numberOfTime;
+					    stringPhrase.put(phrases.get(j), new Integer((int)numberOfTime));
+					}
+				}
 								
-				int padding = 15; // padding between catchphrases
+				int numElement = 0;
 				
 				for(Entry<Catchphrase, Integer> entry : stringPhrase.entrySet()) {
 					// Draw the rect
 					GLOBAL.processing.noStroke();
 					GLOBAL.processing.rectMode(GLOBAL.processing.CORNERS);
 					GLOBAL.processing.fill(GLOBAL.colorPlotArea);
-					GLOBAL.processing.rect(GLOBAL.processing.mouseX - 15 - GLOBAL.processing.textWidth(entry.getKey().getPhrase()) , GLOBAL.processing.mouseY - 8 - padding -10 , GLOBAL.processing.mouseX - 8, GLOBAL.processing.mouseY - 8 - padding);
+					if (GLOBAL.processing.mouseX > x + plotWidth/2)
+						GLOBAL.processing.rect(GLOBAL.processing.mouseX - 100 - GLOBAL.processing.textWidth(entry.getKey().getPhrase()) , GLOBAL.processing.mouseY - 8 - numElement*20 ,
+								GLOBAL.processing.mouseX - 2, GLOBAL.processing.mouseY - 8 - (numElement + 1)*20);
+					else
+						GLOBAL.processing.rect(GLOBAL.processing.mouseX + 100 + GLOBAL.processing.textWidth(entry.getKey().getPhrase()) , GLOBAL.processing.mouseY - 8 - numElement*20 ,
+								GLOBAL.processing.mouseX + 2, GLOBAL.processing.mouseY - 8 - (numElement + 1)*20);
 					GLOBAL.processing.fill(GLOBAL.processing.color(255));
 					
 					// Draw the catchphrases
 					GLOBAL.processing.fill(GLOBAL.colorText);
 					GLOBAL.processing.textFont(GLOBAL.tFont,14);
-					GLOBAL.processing.textAlign(GLOBAL.processing.RIGHT);
-					GLOBAL.processing.text(entry.getKey().getPhrase() + " = " + entry.getValue() , GLOBAL.processing.mouseX - 8, GLOBAL.processing.mouseY - padding);
-					padding += 15;
+					if (GLOBAL.processing.mouseX > x + plotWidth/2) {
+						GLOBAL.processing.textAlign(GLOBAL.processing.RIGHT);
+						GLOBAL.processing.text(entry.getKey().getPhrase() + " = " + entry.getValue() , GLOBAL.processing.mouseX - 8, GLOBAL.processing.mouseY - 11 -numElement*20);
+					}
+					else {
+						GLOBAL.processing.textAlign(GLOBAL.processing.LEFT);
+						GLOBAL.processing.text(entry.getKey().getPhrase() + " = " + entry.getValue() , GLOBAL.processing.mouseX + 8, GLOBAL.processing.mouseY - 11 -numElement*20);
+					}
+						
+					numElement++;
 				}
 			}
 		}
@@ -432,7 +465,7 @@ public class BarChart extends Widget{
 					}
 					GLOBAL.processing.textAlign(GLOBAL.processing.RIGHT);
 					GLOBAL.processing.text(GLOBAL.processing.floor(v) + s, plotX1 - 8, y + textOffset);
-					if (v % (yIntervalMinor*2) == 0) {
+					if (v % maxInterval == 0) {
 						GLOBAL.processing.line(plotX1 - 4, y, plotX2, y);
 					}
 					else {
@@ -456,7 +489,7 @@ public class BarChart extends Widget{
 		
 		int x1 = GLOBAL.processing.mouseX + 10;
 		
-		if (x1 > GLOBAL.processing.width - 150)
+		if (x1 > x + plotWidth/2)
 			x1 = x1 - 150;
 		
 		// Rectangle
@@ -465,15 +498,15 @@ public class BarChart extends Widget{
 		GLOBAL.processing.fill(GLOBAL.colorIconBackground);
 		GLOBAL.processing.rect( x1, GLOBAL.processing.mouseY - 40 - 120 , 100, 130); //x,y,width,height
 		
+		// Image
+		if (character.getIcon()!= null)
+			GLOBAL.processing.image(character.getIcon(), x1, GLOBAL.processing.mouseY - 10 - 100, 100,100);
+		
 		// Text
 		GLOBAL.processing.fill(GLOBAL.colorBackgroundLayerTwo);
 		GLOBAL.processing.textFont(GLOBAL.tFont,14);
 		GLOBAL.processing.textAlign(GLOBAL.processing.CENTER);
-		GLOBAL.processing.text(character.getName().replace(" ", "\n"), x1 + 50, GLOBAL.processing.mouseY - 18 - 120); // center in the upper side, middle point, of the icon 100x100
-		
-		// Image
-		if (character.getIcon()!= null)
-			GLOBAL.processing.image(character.getIcon(), x1, GLOBAL.processing.mouseY - 10 - 100, 100,100);
+		GLOBAL.processing.text(character.getName().replace(" ", "\n").replace("-", "-\n"), x1 + 50, GLOBAL.processing.mouseY - 18 - 120); // center in the upper side, middle point, of the icon 100x100
 		
 	}
 

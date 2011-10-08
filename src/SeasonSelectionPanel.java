@@ -75,7 +75,6 @@ public class SeasonSelectionPanel extends Widget{
 				GLOBAL.allSeasonsButtons.get(i).doAction();
 			}
 		}
-		Menu.selectingSeason = false;
 	}
 
 }

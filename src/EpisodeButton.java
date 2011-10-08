@@ -12,6 +12,9 @@ public class EpisodeButton extends Button{
 	@Override
 	public void doAction() {
 
+		if (GLOBAL.episodesSelected.contains(episode))
+			return;
+		
 		GLOBAL.EPISODE_SELECTED = episode;
 
 		// Add the episode to the list to be analyzed in graphs, add it in 1st position if it is full ( size = 3 )
@@ -29,10 +32,6 @@ public class EpisodeButton extends Button{
 		main_class.graphArea.createEpisodeGraph();
 		
 		Menu.selectingEpisode = false;
-		
-		System.out.println("Episodes selected: " + GLOBAL.episodesSelected.toString());
-		
-		
 
 	}
 

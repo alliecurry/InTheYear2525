@@ -138,12 +138,16 @@ public class CharacterButton extends Widget{
 		GLOBAL.processing.text(character.getName(), GLOBAL.processing.mouseX + 50, GLOBAL.processing.mouseY - 18 - 100); // center in the upper side, middle point, of the icon 100x100
 		
 		// Image
-		GLOBAL.processing.image(character.getIcon(), GLOBAL.processing.mouseX, GLOBAL.processing.mouseY - 10 - 100, 100,100);
+		if (character.getIcon() != null)
+			GLOBAL.processing.image(character.getIcon(), GLOBAL.processing.mouseX, GLOBAL.processing.mouseY - 10 - 100, 100,100);
 		
 	}
 
 	////////////////////////////////////////////////////////////////////////////////////////////////////
 	public void doAction() {
+		
+		if (GLOBAL.charactersSelected.contains(character))
+			return;
 		
 		// Add the character to the list to be analyzed in graphs, add it in 1st position if it is full ( size = 3 )
 		if (GLOBAL.charactersSelected.size() < 3) {
@@ -165,9 +169,7 @@ public class CharacterButton extends Widget{
 				}
 			}
 		}
-		
-		//main_class.graphArea.clearGraphs();
-		
+				
 		// Create the new graph to be plot
 		main_class.graphArea.createCharacterGraph();
 				

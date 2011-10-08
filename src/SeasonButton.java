@@ -11,6 +11,9 @@ public class SeasonButton extends Button{
 	//Override of the action to be performed, we need to set the filter for the episodes
 	@Override
 	public void doAction() {
+		
+		if (GLOBAL.seasonsSelected.contains(seasonNumber))
+			return;
 
 		// Add the season to the list to be analyzed in graphs, add it in 1st position if it is full ( size = 3 )
 		if (GLOBAL.seasonsSelected.size() < 3) {
@@ -23,8 +26,7 @@ public class SeasonButton extends Button{
 			GLOBAL.SEASON_SELECTED = seasonNumber;
 		}
 
-		//System.out.println(GLOBAL.seasonsSelected.toString());
-		//main_class.graphArea.clearGraphs();
+		Menu.selectingSeason = false;
 
 		main_class.graphArea.createSeasonGraph();
 		

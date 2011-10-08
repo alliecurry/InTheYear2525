@@ -140,7 +140,7 @@ public class HorizontalScrollBar extends Widget{
     		}
     	}
     	else if( GLOBAL.processing.mouseX > selectionStart.x + selectionStart.width && GLOBAL.processing.mouseX < selectionEnd.x
-    				&& GLOBAL.processing.mouseY > selectionStart.y && GLOBAL.processing.mouseX < selectionStart.y + selectionStart.height) {
+    				&& GLOBAL.processing.mouseY > selectionStart.y && GLOBAL.processing.mouseY < selectionStart.y + selectionStart.height) {
     		
     		int bh = (int)(size * width);
     		if(bh < 10) bh = 10;
