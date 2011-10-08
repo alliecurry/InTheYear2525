@@ -108,7 +108,7 @@ public class Parser {
         	String path;
         	
             //SEASON 1  	
-            parseFile("/data/transcripts/SEASON1/S1E1.txt"); //Series 1
+            parseFile("data/transcripts/SEASON1/S1E1.txt"); //Series 1
             parseFile("data/transcripts/SEASON1/S1E2.txt");
             parseFile("data/transcripts/SEASON1/S1E3.txt");
             parseFile("data/transcripts/SEASON1/S1E4.txt");
