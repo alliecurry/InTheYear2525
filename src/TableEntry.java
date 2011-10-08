@@ -1,7 +1,7 @@
 import java.util.ArrayList;
 
 
-public class TableEntry extends Widget {
+public class TableEntry extends GuiElement {
 
 	public TableEntry (String s, ArrayList<Integer> list, int font_size, int Width, int Height) {
 		

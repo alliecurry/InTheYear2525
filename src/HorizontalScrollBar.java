@@ -3,7 +3,7 @@ import java.util.ArrayList;
 import com.sun.org.apache.xpath.internal.axes.SelfIteratorNoPredicate;
 
 
-public class HorizontalScrollBar extends Widget{
+public class HorizontalScrollBar extends GuiElement{
 	
     ////////////////////////////////////////////////////////////////////////////////////////////////////
     public float size;
@@ -20,10 +20,10 @@ public class HorizontalScrollBar extends Widget{
     {
     	episodes = list;
     	
-        selectionStart = new Widget();
+        selectionStart = new GuiElement();
         selectionStart.backColor = GLOBAL.processing.color(200, 200, 255, 100);
         
-        selectionEnd = new Widget();
+        selectionEnd = new GuiElement();
         selectionEnd.backColor = GLOBAL.processing.color(200, 200, 255, 100);
         valEnd = (float)0.98;
     }
@@ -175,8 +175,8 @@ public class HorizontalScrollBar extends Widget{
     
     ////////////////////////////////////////////////////////////////////////////////////////////////////
     // Private stuff.
-    Widget selectionStart;
-    Widget selectionEnd;
+    GuiElement selectionStart;
+    GuiElement selectionEnd;
     private int dragX;
     private float indexStart;
     private float indexEnd;

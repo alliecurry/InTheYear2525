@@ -27,8 +27,9 @@ public class main_class extends PApplet{
 		
 		background(GLOBAL.colorBackgroundLayerTwo);
 		
-		GLOBAL.gu = new GradientUtils();
-		GLOBAL.tFont = loadFont("LucidaSans-48.vlw");
+		GLOBAL.gu = new GuiGradient();
+//		GLOBAL.tFont = loadFont("LucidaSans-48.vlw");
+		GLOBAL.tFont = createFont("Segoe UI", 20);
 		GLOBAL.selectedEpisodesList = Parser.LIST_ALL; // Initialize the displayed list to "all episodes"
 
 		//Parse all available transcripts.

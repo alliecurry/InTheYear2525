@@ -1,5 +1,5 @@
 
-public class GraphsArea extends Widget{
+public class GraphsArea extends GuiElement{
 	
 	// Define
 	public int CHARACTER_GRAPH = 0;
@@ -26,8 +26,8 @@ public class GraphsArea extends Widget{
 	public HorizontalScrollBar scroll;
 	
 	// Rollover rectangle and label to be displayed 
-	public Widget rolloverRect_CharacterCharts;
-	public Widget rolloverRect_SeasonCharts;
+	public GuiElement rolloverRect_CharacterCharts;
+	public GuiElement rolloverRect_SeasonCharts;
 	public String rolloverLabel_CharacterCharts;
 	public String rolloverLabel_SeasonCharts;
 	
@@ -234,7 +234,7 @@ public class GraphsArea extends Widget{
 	
 	public void mouseCharacterRolloverFunction( float RectWidth, float x, String s ) {
 		
-		rolloverRect_CharacterCharts = new Widget();
+		rolloverRect_CharacterCharts = new GuiElement();
 		rolloverRect_CharacterCharts.x = (int)(x - RectWidth/2);
 		rolloverRect_CharacterCharts.y = (int)(y + 20);
 		rolloverRect_CharacterCharts.width = (int)(RectWidth);
@@ -246,7 +246,7 @@ public class GraphsArea extends Widget{
 	
 	public void mouseSeasonRolloverFunction( float RectWidth, float x, Character c ) {
 		
-		rolloverRect_SeasonCharts = new Widget();
+		rolloverRect_SeasonCharts = new GuiElement();
 		rolloverRect_SeasonCharts.x = (int)(x - RectWidth/2);
 		rolloverRect_SeasonCharts.y = (int)(y + 20);
 		rolloverRect_SeasonCharts.width = (int)(RectWidth);

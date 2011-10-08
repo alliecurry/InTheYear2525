@@ -3,12 +3,12 @@ import java.util.HashMap;
 
 import processing.core.PImage;
 
-public class CharacterSelectionPanel extends Widget {
+public class CharacterSelectionPanel extends GuiElement {
 	
 	public Button treeView;
 	public Button listView;
 	
-	public ScrollBar scroll; // scrollbar for the list view
+	public VerticalScrollBar scroll; // scrollbar for the list view
 	
 	public boolean list = false;  // false = treeMap view. true = listView
 	
@@ -39,7 +39,7 @@ public class CharacterSelectionPanel extends Widget {
 		
 		
 		// Create a new scrollbar
-		scroll = new ScrollBar();
+		scroll = new VerticalScrollBar();
 		scroll.x = x + 20;
 		scroll.y = y + 100;	
 		scroll.width = 15;
@@ -93,7 +93,6 @@ public class CharacterSelectionPanel extends Widget {
 			// First, create and deactivate all buttons	
 			GLOBAL.allCharacterListButtons.clear();
 			for(int i =0; i < Parser.ALL_CHARACTERS.size(); i++) {
-//				CharacterButton b = new CharacterButton(Parser.ALL_CHARACTERS.get(i).getName(), Parser.ALL_CHARACTERS.get(i).getTotalEpisodes(), false);
 				CharacterButton b = new CharacterButton(Parser.ALL_CHARACTERS.get(i).getName(), CharacterButton.LABEL_TYPE);
 				b.active = false;
 				GLOBAL.allCharacterListButtons.add(b);
@@ -104,14 +103,22 @@ public class CharacterSelectionPanel extends Widget {
 			int elementNumber = 0;	
 						
 			// Find from what button we have to print, based on the value of the scrollbar in this moment
-			float val = GLOBAL.processing.map(scroll.val,0, 1,0,GLOBAL.allCharacterListButtons.size()-10);
+			float val = GLOBAL.processing.map(scroll.value,0, 1,0,GLOBAL.allCharacterListButtons.size());
 			// Draw all the visible series buttons
 			for(int j = (int)val; j <= val + 10 && j < GLOBAL.allCharacterListButtons.size(); j++) {
+				if (GLOBAL.allCharacterListButtons.get(j) == null)
+					break;
 				GLOBAL.allCharacterListButtons.get(j).x = x + 50;
 				GLOBAL.allCharacterListButtons.get(j).y = y + 100 + elementNumber*40;
 				GLOBAL.allCharacterListButtons.get(j).active = true;
 				GLOBAL.allCharacterListButtons.get(j).draw();
 				elementNumber++;
+			}
+			
+			// Rollover
+			for(int j = (int)val; j <= val + 10 && j < GLOBAL.allCharacterListButtons.size(); j++) {
+				if (GLOBAL.allCharacterListButtons.get(j).active && GLOBAL.allCharacterListButtons.get(j).mouseOver()) 
+					GLOBAL.allCharacterListButtons.get(j).mouseRolloverFunction();
 			}
 			
 		}

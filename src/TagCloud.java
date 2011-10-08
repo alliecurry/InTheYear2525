@@ -4,7 +4,7 @@ import processing.core.*;
 import wordcram.*;
 import wordcram.text.StopWords;
 
-public class TagCloud extends Widget{
+public class TagCloud extends GuiElement{
 	
 	public ArrayList<wordcram.Word> wordList;
 	public wordcram.Word[] w;
@@ -37,18 +37,10 @@ public class TagCloud extends Widget{
 	
 	public void setTagCloud() {
 		int i = Parser.findCharacter(character.getName()); //Find index of the character based on String name.
-		//The above is a static method.
 
-		//You need to create a new ArrayList<Word> 
-		// The following method will populate it with all the words said from season s1 episode e1, through (and including) season s2, episode e2
-//		    To clarify,if you want the words from season 1 episode 1 only, [s1=1, e1 =1, s2=1, s2=1]
-		//   if you want the words from season 2 episode 3 through season 4 episode 6 : [s1=2 e1=3 s2=4 e2=6]
 		ArrayList<Word> myList = Parser.ALL_CHARACTERS.get(i).getWordRange(GLOBAL.episodeStart.getSeason(), GLOBAL.episodeStart.getEpisode(), GLOBAL.episodeEnd.getSeason(), GLOBAL.episodeEnd.getEpisode());
 
-		//Now you have myList (ordered by weight! biggest first! yay!)... so you need to decide how many words you want to display on the map. make a variable for this...
-		int max = 100;  //if we want to display 50 words.
-		//Why? because the list could contain hundreds of words! I don't know how big the treeMap can be, but
-		//I figure you may need a limit.
+		int max = 60;  
 
 		System.out.println(myList.size());
 		
@@ -81,18 +73,18 @@ public class TagCloud extends Widget{
 		buffer.beginDraw();
 		buffer.background(GLOBAL.colorTagCloudBackground);
 				
-		  wc = new WordCram(GLOBAL.processing)
-		  .fromWords(w)
-				//.withColors(color(255,0,0), color(0), color(0,0,255)) // red, black, and blue
-		  .withCustomCanvas(buffer)
-		 .withColors(GLOBAL.COLORS.getArray())
-				    .sizedByWeight(6,60).withWordPadding(2).withAngler(Anglers.horiz())
-				    .withPlacer(Placers.centerClump())
-				    .maxNumberOfWordsToDraw(max)
-				    .withStopWords(StopWords.ENGLISH)
-				    .maxAttemptsToPlaceWord(10000);
+		wc = new WordCram(GLOBAL.processing)
+					.fromWords(w)
+					.withCustomCanvas(buffer)
+					.withColors(GLOBAL.COLORS.getArray())
+					.sizedByWeight(6,60).withWordPadding(3)
+					.withAngler(Anglers.horiz())
+					.withPlacer(Placers.centerClump())
+					.maxNumberOfWordsToDraw(max)
+					.withStopWords(StopWords.ENGLISH)
+					.maxAttemptsToPlaceWord(10000);
 	}
-	
+
 	public void draw() {
 		
 		GLOBAL.processing.noStroke();
@@ -102,22 +94,12 @@ public class TagCloud extends Widget{
 		GLOBAL.processing.fill(GLOBAL.processing.color(255));
 
 		if (wc.hasMore()) {  
-
-			// draw the progress bar
-			//float progress = wc.getProgress();
-			//drawProgressBar(progress);
-			//drawProgressText(progress);
-
-			wc.drawNext();
-			
+			wc.drawNext();		
 		}
 		else {
-
 			buffer.endDraw();
 			GLOBAL.processing.image(buffer, x, y);
-
 			//System.out.println(wc.getSkippedWords().length);
-
 		}
 
 		// Draw icon and info		

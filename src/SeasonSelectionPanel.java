@@ -1,5 +1,5 @@
 
-public class SeasonSelectionPanel extends Widget{
+public class SeasonSelectionPanel extends GuiElement{
 	
 	public SeasonSelectionPanel(int xValue, int yValue) {
 		

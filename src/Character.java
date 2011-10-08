@@ -127,6 +127,11 @@ public class Character {
                 return name;
         }
         
+        //Return character name with first letter to uppercase
+        public String getName_firstToUppercase() {
+            return name.substring(0,1).toUpperCase() + name.substring(1);
+        }
+        
         //Add a new catchphrase to phrases arraylist
         public void addPhrase(String p, String r) {
         	if(phrases == null) {
@@ -177,7 +182,7 @@ public class Character {
         }//--------------------
         
         public void setIcon() {
-        	icon = GLOBAL.processing.loadImage("images/" +name+ ".jpg");
+        	icon = GLOBAL.processing.loadImage("images/charImg/120P/" +name+ ".jpg");
         }
         
         public PImage getIcon() {

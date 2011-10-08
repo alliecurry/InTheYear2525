@@ -1,7 +1,7 @@
 import processing.core.*;
 
 // A character buttons should contain an image to be displayed (we may eventually change this behavior )
-public class CharacterButton extends Widget{
+public class CharacterButton extends GuiElement{
 	
 	public static int NO_LABEL_TYPE = 0;
 	public static int LABEL_TYPE = 1;
@@ -36,13 +36,13 @@ public class CharacterButton extends Widget{
 		else if (BUTTON_TYPE == NO_LABEL_TYPE) {
 			
 			label = name;
-			
-			// Find the character and save it
-			for (int i=0 ; i< Parser.ALL_CHARACTERS.size(); i++) {
-				if (Parser.ALL_CHARACTERS.get(i).getName().equals(name))
-					character = Parser.ALL_CHARACTERS.get(i);
-			}
-			
+			TYPE = BUTTON_TYPE;
+		}
+		
+		// Find the character and save it
+		for (int i=0 ; i< Parser.ALL_CHARACTERS.size(); i++) {
+			if (Parser.ALL_CHARACTERS.get(i).getName().equals(name))
+				character = Parser.ALL_CHARACTERS.get(i);
 		}
 	
 	}
@@ -116,7 +116,7 @@ public class CharacterButton extends Widget{
 
 			GLOBAL.processing.strokeWeight(1);
 			GLOBAL.processing.fill(GLOBAL.colorButtonLabel);
-			GLOBAL.processing.text(label, cx + 5, cy + 20);
+			GLOBAL.processing.text(label.substring(0,1).toUpperCase() + label.substring(1), cx + 5, cy + 20);
 		}
 
 	}
@@ -129,18 +129,12 @@ public class CharacterButton extends Widget{
 		GLOBAL.processing.noStroke();
 		GLOBAL.processing.rectMode(GLOBAL.processing.CORNER);
 		GLOBAL.processing.fill(GLOBAL.colorIconBackground);
-		GLOBAL.processing.rect( GLOBAL.processing.mouseX , GLOBAL.processing.mouseY - 40 - 100 , 100, 130); //x,y,width,height
-		
-		// Text
-		GLOBAL.processing.fill(GLOBAL.colorBackgroundLayerTwo);
-		GLOBAL.processing.textFont(GLOBAL.tFont,14);
-		GLOBAL.processing.textAlign(GLOBAL.processing.CENTER);
-		GLOBAL.processing.text(character.getName(), GLOBAL.processing.mouseX + 50, GLOBAL.processing.mouseY - 18 - 100); // center in the upper side, middle point, of the icon 100x100
+		GLOBAL.processing.rect( GLOBAL.processing.mouseX +12, GLOBAL.processing.mouseY - 18 -100 , 104, 104 ); //x,y,width,height
 		
 		// Image
-		if (character.getIcon() != null)
-			GLOBAL.processing.image(character.getIcon(), GLOBAL.processing.mouseX, GLOBAL.processing.mouseY - 10 - 100, 100,100);
-		
+		if (character.getIcon()!= null)
+			GLOBAL.processing.image(character.getIcon(), GLOBAL.processing.mouseX + 14, GLOBAL.processing.mouseY - 16 - 100, 100,100);
+
 	}
 
 	////////////////////////////////////////////////////////////////////////////////////////////////////

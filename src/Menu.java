@@ -1,5 +1,5 @@
 
-public class Menu extends Widget{
+public class Menu extends GuiElement{
 	
 	public Button cButton;
 	public Button eButton;
@@ -7,6 +7,7 @@ public class Menu extends Widget{
 	public Button phButton;
 	public Button dialButton;
 	public Button wordButton;
+	public Button clearButton;
 	
 	public MultistateButton viewTypeButton;
 	
@@ -75,6 +76,13 @@ public class Menu extends Widget{
 		viewTypeButton.addState("Statistical");
 		viewTypeButton.active = true;
 		
+		//Reset button
+		clearButton = new Button();
+		clearButton.x = 20;
+		clearButton.y = 700;
+		clearButton.setLabel("Clear graphs");
+		clearButton.active = true;
+		clearButton.setFontSize(14);
 
 	}
 
@@ -118,6 +126,8 @@ public class Menu extends Widget{
 			viewTypeButton.draw();
 			viewTypeButton.active = true;
 		}
+		
+		clearButton.draw();
 
 	}
 
@@ -182,7 +192,7 @@ public class Menu extends Widget{
 		}
 		
 		
-		if (selectingCharacter && characterPicker.mouseOver()) {
+		else if (selectingCharacter && characterPicker.mouseOver()) {
 			characterPicker.doAction();
 		}
 		else if (selectingEpisode && episodePicker.mouseOver())
@@ -190,10 +200,16 @@ public class Menu extends Widget{
 		else if(selectingSeason && seasonPicker.mouseOver())
 			seasonPicker.doAction();
 		
-		if (viewTypeButton.mouseOver() && viewTypeButton.active) {
+		else if (viewTypeButton.mouseOver() && viewTypeButton.active) {
 			GLOBAL.STAT_VIEW = !GLOBAL.STAT_VIEW;
 			viewTypeButton.doAction();
-			
+		}
+		
+		else if (clearButton.mouseOver()) {
+			main_class.graphArea.clearGraphs();
+			GLOBAL.episodesSelected.clear();
+			GLOBAL.charactersSelected.clear();
+			GLOBAL.seasonsSelected.clear();
 		}
 
 	}

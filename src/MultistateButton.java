@@ -3,7 +3,7 @@ import java.util.ArrayList;
 import processing.core.PImage;
 
 
-public class MultistateButton extends Widget{
+public class MultistateButton extends GuiElement{
 	
 	private ArrayList<String> states = new ArrayList<String>();
 	private int stateIndex;

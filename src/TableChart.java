@@ -4,7 +4,7 @@ import java.util.HashMap;
 import org.omg.PortableInterceptor.SYSTEM_EXCEPTION;
 
 
-public class TableChart extends Widget {
+public class TableChart extends GuiElement {
 
 	// Define
 	public int CHARACTER_GRAPH = 0;
@@ -22,7 +22,7 @@ public class TableChart extends Widget {
 	
 	public float rectWidth;
 	
-	public ScrollBar scroll; // scrollbar for the table
+	public VerticalScrollBar scroll; // scrollbar for the table
 	
 	public ArrayList<TableEntry> allTableEntries;
 	
@@ -130,7 +130,7 @@ public class TableChart extends Widget {
 		int elementNumber = 0;	
 					
 		// Find from what button we have to print, based on the value of the scrollbar in this moment
-		float val = GLOBAL.processing.map(scroll.val,0, 1,0,allTableEntries.size() - 5);
+		float val = GLOBAL.processing.map(scroll.value,0, 1,0,allTableEntries.size() - 5);
 		// Draw all the visible series buttons
 		for(int j = (int)val; j <= val + numberOfElements && j < allTableEntries.size(); j++) {
 			allTableEntries.get(j).x = x + 60;
@@ -145,7 +145,7 @@ public class TableChart extends Widget {
 	public void createScrollBar() {
 		
 		// Create a new scrollbar
-		scroll = new ScrollBar();
+		scroll = new VerticalScrollBar();
 		scroll.x = x + 20;
 		scroll.y = y + 100;	
 		scroll.width = 15;
@@ -201,7 +201,7 @@ public class TableChart extends Widget {
 				GLOBAL.processing.fill(GLOBAL.colorText);
 				GLOBAL.processing.textFont(GLOBAL.tFont,16);
 				GLOBAL.processing.textAlign(GLOBAL.processing.CENTER);
-				GLOBAL.processing.text(GLOBAL.charactersSelected.get(j).getName(), x + width - 40, y + 20 + j*200);
+				GLOBAL.processing.text(GLOBAL.charactersSelected.get(j).getName_firstToUppercase(), x + width - 40, y + 20 + j*200);
 
 				if (character.getIcon() != null)
 					GLOBAL.processing.image( GLOBAL.charactersSelected.get(j).getIcon(), x + width - 80, y + 30 + j*200, 80, 80);
@@ -213,7 +213,7 @@ public class TableChart extends Widget {
 			GLOBAL.processing.text("Average amounts of dialogue among the selected episodes: ", x + 20, y + 20);
 			for (int j=0; j<GLOBAL.charactersSelected.size(); j++) {
 				GLOBAL.processing.fill(GLOBAL.COLORS.getNextColor());
-				GLOBAL.processing.text(GLOBAL.charactersSelected.get(j).getName(), x + 20, y + 40 + 20*j);
+				GLOBAL.processing.text(GLOBAL.charactersSelected.get(j).getName_firstToUppercase(), x + 20, y + 40 + 20*j);
 				GLOBAL.processing.text(averagesToBePlot[j]/countersForAverage[j], x + 100, y + 40 + 20*j);
 			}
 			
@@ -258,7 +258,7 @@ public class TableChart extends Widget {
 				GLOBAL.processing.fill(color);
 				// If character doesn't have any catchphrase, print and go to the next character
 				if (phrases == null) {
-					GLOBAL.processing.text(GLOBAL.charactersSelected.get(k).getName() + " doesn't have any catchphrase", x + 20, y + 40 + 20*k);
+					GLOBAL.processing.text(GLOBAL.charactersSelected.get(k).getName_firstToUppercase() + " doesn't have any catchphrase", x + 20, y + 40 + 20*k);
 					continue; 
 				}
 				
@@ -288,7 +288,7 @@ public class TableChart extends Widget {
 					allTableEntries.add(newTableEntry);
 				}
 
-				GLOBAL.processing.text(GLOBAL.charactersSelected.get(k).getName(), x + 20, y + 40 + 20*k);
+				GLOBAL.processing.text(GLOBAL.charactersSelected.get(k).getName_firstToUppercase(), x + 20, y + 40 + 20*k);
 				GLOBAL.processing.text(averagesToBePlot[k]/countersForAverage[k], x + 100, y + 40 + 20*k);
 			}			
 
@@ -307,7 +307,7 @@ public class TableChart extends Widget {
 				
 				ArrayList<Integer> values = new ArrayList<Integer>();
 				
-				String label = Parser.ALL_CHARACTERS.get(i).getName(); 
+				String label = Parser.ALL_CHARACTERS.get(i).getName_firstToUppercase(); 
 				for (int j=0; j<GLOBAL.episodesSelected.size(); j++){
 					int value = GLOBAL.episodesSelected.get(j).getNumberOfLinesPerCharacter(Parser.ALL_CHARACTERS.get(i));
 					values.add(value);
@@ -349,7 +349,7 @@ public class TableChart extends Widget {
 			// For each character
 			for(int i =0; i < Parser.ALL_CHARACTERS.size(); i++) {
 								
-				String label = Parser.ALL_CHARACTERS.get(i).getName();
+				String label = Parser.ALL_CHARACTERS.get(i).getName_firstToUppercase();
 				ArrayList<Integer> values = new ArrayList<Integer>();
 				
 				for (int j=0; j<GLOBAL.seasonsSelected.size(); j++){

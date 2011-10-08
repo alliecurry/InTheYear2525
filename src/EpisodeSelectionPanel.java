@@ -1,7 +1,7 @@
 
-public class EpisodeSelectionPanel extends Widget{
+public class EpisodeSelectionPanel extends GuiElement{
 
-	ScrollBar scroll;
+	VerticalScrollBar scroll;
 	
 	public EpisodeSelectionPanel(int xValue, int yValue) {
 		
@@ -12,7 +12,7 @@ public class EpisodeSelectionPanel extends Widget{
 		height = 400;
 		
 		// Create a new scrollbar
-		scroll = new ScrollBar();
+		scroll = new VerticalScrollBar();
 		scroll.x = x + 20;
 		scroll.y = y + 100;	
 		scroll.width = 15;
@@ -85,7 +85,7 @@ public class EpisodeSelectionPanel extends Widget{
 		if (scroll.size > 1)
 			scroll.size = 1;
 		if (GLOBAL.selectedEpisodesListChanged) {
-			scroll.val = 0;
+			scroll.value = 0;
 			GLOBAL.selectedEpisodesListChanged = false;
 		}
 		scroll.draw();
@@ -100,7 +100,7 @@ public class EpisodeSelectionPanel extends Widget{
 			
 		}
 		// Find from what button we have to print, based on the value of the scrollbar in this moment
-		val = GLOBAL.processing.map(scroll.val,0, 1,0,GLOBAL.allEpisodesButtons.size()-5);
+		val = GLOBAL.processing.map(scroll.value,0, 1,0,GLOBAL.allEpisodesButtons.size()-5);
 		// Draw all the visible series buttons
 		for(int j = (int)val; j <= val + 5 && j < GLOBAL.allEpisodesButtons.size(); j++) {
 //			GLOBAL.allEpisodesButtons.get(j).x = 600;

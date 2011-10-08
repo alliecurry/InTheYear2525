@@ -12,7 +12,7 @@ public class GLOBAL {
 	public static PApplet processing;
 	
 	// Gradient functions
-	public static GradientUtils gu;
+	public static GuiGradient gu;
 	
 	// Text font
 	public static PFont tFont;

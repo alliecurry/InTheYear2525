@@ -4,7 +4,7 @@ import java.util.Map.Entry;
 import java.util.Set;
 
 
-public class BarChart extends Widget{
+public class BarChart extends GuiElement{
 	
 	// Define
 	public int CHARACTER_GRAPH = 0;
@@ -116,7 +116,7 @@ public class BarChart extends Widget{
 			float barY = y + height;
 			float value;
 			
-			Widget rolloverRect = new Widget();
+			GuiElement rolloverRect = new GuiElement();
 			
 			// For each character that appears, plot the bar
 			for(int i =0; i < charactersInEpisode.size(); i++) {
@@ -130,11 +130,11 @@ public class BarChart extends Widget{
 				GLOBAL.processing.rect( barX - rectWidth/2, barY, barX+ rectWidth/2, y + height);
 				
 				// Draw the character name
-				String label = charactersInEpisode.get(i).getName();
+				String label = charactersInEpisode.get(i).getName_firstToUppercase();
 				GLOBAL.processing.fill(GLOBAL.colorText);
 				GLOBAL.processing.textFont(GLOBAL.tFont,8);
 				GLOBAL.processing.textAlign(GLOBAL.processing.CENTER);
-				GLOBAL.processing.text(label, barX , y + height + 15);
+				GLOBAL.processing.text(label.replace(" ", "\n").replace("-", "-\n"), barX , y + height + 15);
 				
 			}
 			
@@ -223,11 +223,11 @@ public class BarChart extends Widget{
 				GLOBAL.processing.fill(Parser.ALL_CHARACTERS.get(i).getColor());
 				GLOBAL.processing.rect( barX - rectWidth/2, barY, barX+ rectWidth/2, y + height);
 				
-				if (Parser.ALL_CHARACTERS.get(i).getName().toCharArray()[0] != c.toCharArray()[0]) {
-					c = Parser.ALL_CHARACTERS.get(i).getName().substring(0, 1);
+				if (Parser.ALL_CHARACTERS.get(i).getName_firstToUppercase().toCharArray()[0] != c.toCharArray()[0]) {
+					c = Parser.ALL_CHARACTERS.get(i).getName_firstToUppercase().substring(0, 1);
 					GLOBAL.processing.fill(GLOBAL.colorText);
 					GLOBAL.processing.textFont(GLOBAL.tFont,10);
-					if (!c.equals("e") && !c.equals("q"))
+					if (!c.equals("E") && !c.equals("Q"))
 						GLOBAL.processing.textAlign(GLOBAL.processing.LEFT);
 					else
 						GLOBAL.processing.textAlign(GLOBAL.processing.RIGHT);
@@ -301,7 +301,7 @@ public class BarChart extends Widget{
 		GLOBAL.processing.fill(GLOBAL.colorText);
 		GLOBAL.processing.textFont(GLOBAL.tFont,16);
 		GLOBAL.processing.textAlign(GLOBAL.processing.CENTER);
-		GLOBAL.processing.text(character.getName(), x + width - 40, y + 20);
+		GLOBAL.processing.text(character.getName_firstToUppercase(), x + width - 40, y + 20);
 
 		if (character.getIcon() != null)
 			GLOBAL.processing.image( character.getIcon(), x + width - 80, y + 30, 80, 80);
@@ -339,7 +339,7 @@ public class BarChart extends Widget{
 				GLOBAL.processing.fill(character.getColor());
 				GLOBAL.processing.textFont(GLOBAL.tFont,14);
 				GLOBAL.processing.textAlign(GLOBAL.processing.CENTER);
-				GLOBAL.processing.text(character.getName() + " doesn't have any catchphrase", x + plotWidth/2, y + height/2);
+				GLOBAL.processing.text(character.getName_firstToUppercase() + " doesn't have any catchphrase", x + plotWidth/2, y + height/2);
 				break; 
 			}
 			
@@ -372,6 +372,7 @@ public class BarChart extends Widget{
 		// Rollover
 		for ( int i = indexStart; i <= indexEnd; i++ ) {
 			
+			
 			value = 0;
 			ArrayList<Catchphrase> phrases = character.getAllPhrases();
 			HashMap<Catchphrase, Integer> stringPhrase  = new HashMap();
@@ -383,6 +384,10 @@ public class BarChart extends Widget{
 					&& GLOBAL.processing.mouseY > y && GLOBAL.processing.mouseY < (y  + height)) {
 				String label = "S"+ Parser.LIST_ALL.get(i).getSeason() + " E" + Parser.LIST_ALL.get(i).getEpisode()+ " " + Parser.LIST_ALL.get(i).getName();
 				main_class.graphArea.mouseCharacterRolloverFunction(rectWidth, barX, label);
+				
+				// If character doesn't have any catchphrase, print and go to the next character
+				if (phrases == null) 
+					break;
 				
 				// for each phrase
 				for (int j=0; j < phrases.size(); j++) {
@@ -429,7 +434,7 @@ public class BarChart extends Widget{
 		GLOBAL.processing.fill(GLOBAL.colorText);
 		GLOBAL.processing.textFont(GLOBAL.tFont,16);
 		GLOBAL.processing.textAlign(GLOBAL.processing.CENTER);
-		GLOBAL.processing.text(character.getName(), x + width - 40, y + 20);
+		GLOBAL.processing.text(character.getName_firstToUppercase(), x + width - 40, y + 20);
 
 		if (character.getIcon() != null)
 			GLOBAL.processing.image( character.getIcon(), x + width - 80, y + 30, 80, 80);
@@ -506,7 +511,7 @@ public class BarChart extends Widget{
 		GLOBAL.processing.fill(GLOBAL.colorBackgroundLayerTwo);
 		GLOBAL.processing.textFont(GLOBAL.tFont,14);
 		GLOBAL.processing.textAlign(GLOBAL.processing.CENTER);
-		GLOBAL.processing.text(character.getName().replace(" ", "\n").replace("-", "-\n"), x1 + 50, GLOBAL.processing.mouseY - 18 - 120); // center in the upper side, middle point, of the icon 100x100
+		GLOBAL.processing.text(character.getName_firstToUppercase().replace(" ", "\n").replace("-", "-\n"), x1 + 50, GLOBAL.processing.mouseY - 18 - 120); // center in the upper side, middle point, of the icon 100x100
 		
 	}
 
