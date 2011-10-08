@@ -165,7 +165,7 @@ public class CharacterButton extends GuiElement{
 		}
 				
 		// Create the new graph to be plot
-		main_class.graphArea.createCharacterGraph();
+		intheyear2525.graphArea.createCharacterGraph();
 				
 		Menu.selectingCharacter = false;
 	}

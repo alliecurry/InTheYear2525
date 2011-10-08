@@ -29,7 +29,7 @@ public class EpisodeButton extends Button{
 		//main_class.graphArea.clearGraphs();
 
 		// Create the new graph to be plot
-		main_class.graphArea.createEpisodeGraph();
+		intheyear2525.graphArea.createEpisodeGraph();
 		
 		Menu.selectingEpisode = false;
 

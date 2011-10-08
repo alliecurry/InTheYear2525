@@ -158,12 +158,12 @@ public class HorizontalScrollBar extends GuiElement{
         
         // If we are in the tag cloud visualization
         if (GLOBAL.WORD_ANALYSIS && (draggingStart || draggingEnd || draggingAll) ) {
-        	main_class.graphArea.clearGraphs();
+        	intheyear2525.graphArea.clearGraphs();
         	
         	// UPDATE the tag clouds on releasing 
         	for (int i = 0; i < GLOBAL.charactersSelected.size() ; i++) {
         		GLOBAL.CHARACTER_SELECTED = GLOBAL.charactersSelected.get(i);
-        		main_class.graphArea.createCharacterGraph();
+        		intheyear2525.graphArea.createCharacterGraph();
         	}
         }
         

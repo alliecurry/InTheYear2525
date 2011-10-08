@@ -166,28 +166,28 @@ public class Menu extends GuiElement{
 				GLOBAL.WORD_ANALYSIS == true)) {
 			GLOBAL.WORD_ANALYSIS = false;
 			GLOBAL.CATCHPHRASES_ANALYSIS = false;	
-			main_class.graphArea.clearGraphs();
+			intheyear2525.graphArea.clearGraphs();
 			for (int i=0; i < GLOBAL.charactersSelected.size() ; i++ ) {
 				GLOBAL.CHARACTER_SELECTED = GLOBAL.charactersSelected.get(i);
-				main_class.graphArea.createCharacterGraph();
+				intheyear2525.graphArea.createCharacterGraph();
 			}			
 		}
 		else if ( GLOBAL.ANALYSIS_TYPE.equals("characters") && phButton.mouseOver() && (GLOBAL.CATCHPHRASES_ANALYSIS == false|| 
 				GLOBAL.WORD_ANALYSIS == true)) {
 			GLOBAL.WORD_ANALYSIS = false;
 			GLOBAL.CATCHPHRASES_ANALYSIS = true;
-			main_class.graphArea.clearGraphs();
+			intheyear2525.graphArea.clearGraphs();
 			for (int i=0; i < GLOBAL.charactersSelected.size() ; i++ ) {
 				GLOBAL.CHARACTER_SELECTED = GLOBAL.charactersSelected.get(i);
-				main_class.graphArea.createCharacterGraph();
+				intheyear2525.graphArea.createCharacterGraph();
 			}			}
 		else if (GLOBAL.ANALYSIS_TYPE.equals("characters") && wordButton.mouseOver() && GLOBAL.WORD_ANALYSIS == false) {
 			GLOBAL.WORD_ANALYSIS = true;
 			GLOBAL.CATCHPHRASES_ANALYSIS = false;
-			main_class.graphArea.clearGraphs();
+			intheyear2525.graphArea.clearGraphs();
 			for (int i=0; i < GLOBAL.charactersSelected.size() ; i++ ) {
 				GLOBAL.CHARACTER_SELECTED = GLOBAL.charactersSelected.get(i);
-				main_class.graphArea.createCharacterGraph();
+				intheyear2525.graphArea.createCharacterGraph();
 			}	
 		}
 		
@@ -206,7 +206,7 @@ public class Menu extends GuiElement{
 		}
 		
 		else if (clearButton.mouseOver()) {
-			main_class.graphArea.clearGraphs();
+			intheyear2525.graphArea.clearGraphs();
 			GLOBAL.episodesSelected.clear();
 			GLOBAL.charactersSelected.clear();
 			GLOBAL.seasonsSelected.clear();

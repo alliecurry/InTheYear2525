@@ -28,7 +28,7 @@ public class SeasonButton extends Button{
 
 		Menu.selectingSeason = false;
 
-		main_class.graphArea.createSeasonGraph();
+		intheyear2525.graphArea.createSeasonGraph();
 		
 	}
 

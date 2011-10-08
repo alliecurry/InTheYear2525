@@ -252,7 +252,7 @@ public class BarChart extends GuiElement{
 				// Check for any mouse rollover functionality to be displayed
 				if (GLOBAL.processing.mouseX > (barX - rectWidth/2) && GLOBAL.processing.mouseX < (barX + rectWidth) 
 						&& GLOBAL.processing.mouseY > y && GLOBAL.processing.mouseY < (y  + height)) {	
-					main_class.graphArea.mouseSeasonRolloverFunction(rectWidth, barX, Parser.ALL_CHARACTERS.get(i));
+					intheyear2525.graphArea.mouseSeasonRolloverFunction(rectWidth, barX, Parser.ALL_CHARACTERS.get(i));
 					mouseRolloverFunction(Parser.ALL_CHARACTERS.get(i));
 				}
 			}
@@ -292,7 +292,7 @@ public class BarChart extends GuiElement{
 			if (GLOBAL.processing.mouseX > (barX - rectWidth/2) && GLOBAL.processing.mouseX < (barX + rectWidth) 
 					&& GLOBAL.processing.mouseY > y && GLOBAL.processing.mouseY < (y  + height)) {
 				String label = "S"+ Parser.LIST_ALL.get(i).getSeason() + " E" + Parser.LIST_ALL.get(i).getEpisode()+ " " + Parser.LIST_ALL.get(i).getName();
-				main_class.graphArea.mouseCharacterRolloverFunction(rectWidth, barX, label);
+				intheyear2525.graphArea.mouseCharacterRolloverFunction(rectWidth, barX, label);
 				
 			}
 		}
@@ -383,7 +383,7 @@ public class BarChart extends GuiElement{
 			if (GLOBAL.processing.mouseX > (barX - rectWidth/2) && GLOBAL.processing.mouseX < (barX + rectWidth) 
 					&& GLOBAL.processing.mouseY > y && GLOBAL.processing.mouseY < (y  + height)) {
 				String label = "S"+ Parser.LIST_ALL.get(i).getSeason() + " E" + Parser.LIST_ALL.get(i).getEpisode()+ " " + Parser.LIST_ALL.get(i).getName();
-				main_class.graphArea.mouseCharacterRolloverFunction(rectWidth, barX, label);
+				intheyear2525.graphArea.mouseCharacterRolloverFunction(rectWidth, barX, label);
 				
 				// If character doesn't have any catchphrase, print and go to the next character
 				if (phrases == null) 
