@@ -38,6 +38,7 @@ public class Parser {
         
         Episode ep;		//Current object to be added to arraylist
        
+        int lastCharacter;	//Index in ALL_CHARACTERS of the character who last spoke
        
         //Character names to ignore
         ArrayList<String> backgroundChars = new ArrayList<String>();
@@ -259,27 +260,24 @@ public class Parser {
                 String character = splitLine[0].toLowerCase();  //Store character name
                 character = updateName(character);	//Check to see if name needs to be changed (eg. "inez" is also = "mrs. wong")
                 
-                
-                //Code for hashmap.... not needed for current implementation.
-                //String fullKey = hashKey + character;           //Full hash map key includes character name.
-                /*String value = ALL_DATA.get(fullKey);           //Get current episode dialog for this character
-               
-                if(value == null) {
-                        value = "";
-                }
-                value += splitLine[1] + "\n";   //Append dialog to any other episode dialog
-                ALL_DATA.put(fullKey, value);*/
-                
-                
                 //Add character to episode (unless is a background character)
                 if(!isBackgroundCharacter(character)){
-//                  ep.addCharacter(character);
-                    Character chr = new Character(character, GLOBAL.COLORS.getNextColor());      //make a new Character object
-                    ep.addCharacter(chr);
-                    //Add character to ArrayList ALL_CHARACTERS (unless already added)
-                    if(!isInAllCharacters(character)){
-//                                Character chr = new Character(character);      //make a new Character object
-                            ALL_CHARACTERS.add(chr);        //Add Character object to ArrayList
+                    
+                    int i  = findCharacter(character);	
+                    
+                    if(i < 0){	//If chracter does not exist
+                    		Character chr = new Character(character, GLOBAL.COLORS.getNextColor());	//make a new Character object
+                    		chr.addAppearence(ALL_CHARACTERS.get(lastCharacter).getName());	//Add the previous Character to its HashMap
+                    		
+                            ALL_CHARACTERS.add(chr);	//Add Character object to ArrayList
+                            ep.addCharacter(chr);		//Add Character object to Episode
+                            
+                            lastCharacter = ALL_CHARACTERS.size()-1;	//Store index of this Character
+                    }
+                    else {	//Add Character object to Episode
+                    	ALL_CHARACTERS.get(i).addAppearence(ALL_CHARACTERS.get(lastCharacter).getName());
+                    	ep.addCharacter(ALL_CHARACTERS.get(i));
+                    	lastCharacter = i;	//Store index of this Character
                     }
                     
                     //Determine if current line is a catchphrase of character

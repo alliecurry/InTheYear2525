@@ -2,6 +2,7 @@ import java.util.ArrayList;
 import java.util.Collections;
 import java.util.Comparator;
 import java.util.HashMap;
+import java.util.Set;
 
 import processing.core.PApplet;
 import processing.core.PImage;
@@ -27,6 +28,9 @@ public class Character {
         //Lists of 'important' words and how often they appear. (per season)
         private ArrayList<Word> wordWeights  = new ArrayList<Word>();
         
+        //Map of other characters who appeared with this character.
+        private HashMap<String, Integer> talkedWith;
+        
         public Character(String n, int c){
 	        name = n;
 	        color = c;
@@ -39,6 +43,7 @@ public class Character {
 	        episodes_s6 = new ArrayList<Integer>();
 
 	        episodes = new ArrayList<Episode>();
+	        talkedWith = new HashMap<String, Integer>();
         }
        
         public int getColor() {
@@ -372,4 +377,35 @@ public class Character {
         	}
         }
         
+        //Add appearence of another character
+        public void addAppearence(String c) {
+        	if(c.equals("")) { return; }
+        	
+        	Integer n = talkedWith.get(c);
+        	
+        	if(n == null) { n = 1; }
+        	else { n += 1; }
+        	
+        	talkedWith.put(c, n);
+        }
+        
+        //Get character most appeared with
+        public String getMostAppearence() {
+        	Object[] all = talkedWith.keySet().toArray();
+        	Integer n;
+        	int topNum = 0;			//Current greatest amount of appearences 
+        	String topName = "";	//Current name of character most appeared with
+        	
+        	//Parse all names
+        	for(int x=0; x<all.length; ++x) {
+        		n = talkedWith.get(all[x]);
+        		
+        		if(n > topNum) {
+        			topNum = n;
+        			topName = all[x].toString();
+        		}
+        	}
+        	
+        	return topName;
+        }
 }

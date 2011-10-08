@@ -40,10 +40,9 @@ public class intheyear2525 extends PApplet{
 		GLOBAL.parseForWordMap = true;	//Flag to enable parsing on .txt files for word mapping [DO NOT REMOVE!!!]
 		pars.parseAllTranscripts();		//Parse all word file transcripts.
 		
-		
 		//WORD FREQUENCY TESTING ------------------------
-		ArrayList<Word> a1 = Parser.ALL_CHARACTERS.get(0).getWordRange(1, 1, 6, 26);
-		int max=50; if(a1.size()<max) { max = a1.size(); }
+		/*ArrayList<Word> a1 = Parser.ALL_CHARACTERS.get(0).getWordRange(1, 1, 6, 26);
+		int max=50; if(a1.size()<max) { max = a1.size(); }*/
 		
 		/*System.out.println(a1.get(0).getWord() + "\t" + a1.get(0).getFreq());
 		System.out.println(a1.get(1).getWord() + "\t" + a1.get(1).getFreq());
@@ -189,11 +188,11 @@ public class intheyear2525 extends PApplet{
 		
 		int[] temp = {color(136,204,238), color(68,170,153), color(17,119,51), color(221,204,119), 
 					color(204,102,119), color(136,34,85), color(146,189,16), color(170,68,153), 
-					color(51,34,136), color(255,255,225)
+					color(51,34,136)
 		};
 		
 		//Randomize colors
-		int[] c = {-1,-1,-1,-1,-1,-1,-1,-1,-1,-1};
+		int[] c = {-1,-1,-1,-1,-1,-1,-1,-1,-1};
 		Random rand = new Random();
 		
 		for(int x=0; x<temp.length; ++x){
