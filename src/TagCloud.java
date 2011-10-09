@@ -87,6 +87,7 @@ public class TagCloud extends GuiElement{
 
 	public void draw() {
 		//Draw Title
+		GLOBAL.processing.fill(GLOBAL.colorText);
 		GLOBAL.processing.textFont(GLOBAL.tFont,14);
 		GLOBAL.processing.textAlign(GLOBAL.processing.CENTER);
 		GLOBAL.processing.text(character.getName_firstToUppercase()

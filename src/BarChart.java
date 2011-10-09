@@ -262,6 +262,7 @@ public class BarChart extends GuiElement{
 	// Dialogue analysis for character
 	public void createDialogueBarChart() {
 		//Draw Title
+		GLOBAL.processing.fill(GLOBAL.colorText);
 		GLOBAL.processing.textAlign(GLOBAL.processing.CENTER);
 		GLOBAL.processing.textFont(GLOBAL.tFont,14);
 		GLOBAL.processing.text("Number of Lines Spoken by " 
@@ -332,6 +333,7 @@ public class BarChart extends GuiElement{
 
 	public void createCatchphraseBarChart() {
 		//Draw Title
+		GLOBAL.processing.fill(GLOBAL.colorText);
 		GLOBAL.processing.textFont(GLOBAL.tFont,14);
 		GLOBAL.processing.textAlign(GLOBAL.processing.CENTER);
 		GLOBAL.processing.text("Catchphrases said by " 
