@@ -27,27 +27,27 @@ public class Menu extends GuiElement{
 		
 		cButton = new Button();
 		cButton.x = 20;
-		cButton.y = 150;
+		cButton.y = 200;
 		cButton.active = true;
 		cButton.setLabel("Pick a character");
 		sButton = new Button();
 		sButton.x = 20;
 		//sButton.y = 270;
-		sButton.y = 150;
+		sButton.y = 200;
 		sButton.active = true;
 		sButton.setLabel("Pick a season");
 		eButton = new Button();
 		eButton.x = 20;
 		//eButton.y = 210;
-		eButton.y = 150;
+		eButton.y = 200;
 		eButton.active = true;
-		eButton.setLabel("Pick a episode");
+		eButton.setLabel("Pick an episode");
 		
 		// Character buttons
 		// Number of lines
 		dialButton = new Button();
 		dialButton.x = 20;
-		dialButton.y = 190;
+		dialButton.y = 240;
 		dialButton.setLabel("All Dialog");
 		dialButton.active = true;
 		dialButton.setFontSize(14);
@@ -55,7 +55,7 @@ public class Menu extends GuiElement{
 		// Catchphrases
 		phButton = new Button();
 		phButton.x = 20;
-		phButton.y = 230;
+		phButton.y = 280;
 		phButton.setLabel("Catchphrases");
 		phButton.active = true;
 		phButton.setFontSize(14);
@@ -63,7 +63,7 @@ public class Menu extends GuiElement{
 		// Word
 		wordButton= new Button();
 		wordButton.x = 20;
-		wordButton.y = 270;
+		wordButton.y = 320;
 		wordButton.setLabel("Tag cloud");
 		wordButton.active = true;
 		wordButton.setFontSize(14);

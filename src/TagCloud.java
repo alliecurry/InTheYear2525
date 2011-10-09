@@ -87,13 +87,21 @@ public class TagCloud extends GuiElement{
 
 	public void draw() {
 		//Draw Title
-		GLOBAL.processing.textFont(GLOBAL.tFont,16);
+		GLOBAL.processing.textFont(GLOBAL.tFont,14);
+		GLOBAL.processing.textAlign(GLOBAL.processing.CENTER);
 		GLOBAL.processing.text(character.getName_firstToUppercase()
 								+ "'s Common Words from S" + GLOBAL.episodeStart.getSeason()
 								+ "E" + GLOBAL.episodeStart.getEpisode()
 								+ " to S" + GLOBAL.episodeEnd.getSeason()
 								+ "E" + GLOBAL.episodeEnd.getEpisode(), 
 								x + 320, y - 4);
+		
+		//Draw instructions for slider-bar
+		GLOBAL.processing.textAlign(GLOBAL.processing.LEFT);
+		GLOBAL.processing.textFont(GLOBAL.tFont,12);
+		GLOBAL.processing.fill(GLOBAL.processing.color(136,204,238));
+		GLOBAL.processing.text("Drag either end of bar to add/remove episodes. Drag middle of bar to move selection.", 
+								335, 760);
 		
 		
 		GLOBAL.processing.noStroke();

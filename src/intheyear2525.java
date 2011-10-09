@@ -100,8 +100,8 @@ public class intheyear2525 extends PApplet{
 		
 		// tristate button for setting type of analysis
 		analysisTypeButton = new MultistateButton();
-		analysisTypeButton.x = 860;
-		analysisTypeButton.y = 10;
+		analysisTypeButton.x = 20;
+		analysisTypeButton.y = 150;
 		analysisTypeButton.addState("characters");
 		analysisTypeButton.addState("episodes");
 		analysisTypeButton.addState("seasons");
@@ -153,7 +153,11 @@ public class intheyear2525 extends PApplet{
 //		text("You have selected: season " + GLOBAL.SEASON_SELECTED, width/2 - 150, 40);
 		text("In the year 2525", 100, 40);
 		textFont(GLOBAL.tFont,16);
-		text("Select type of analysis: ",750, 30);
+		GLOBAL.processing.textAlign(GLOBAL.processing.LEFT);
+		GLOBAL.processing.fill(color(136,204,238));
+		text("Select type of analysis: ",20, 140);
+		text("Stats or Plots: ",20, 390);
+		
 		
 	}
 	
@@ -173,7 +177,7 @@ public class intheyear2525 extends PApplet{
 		
 		int[] temp = {color(136,204,238), color(68,170,153), color(17,119,51), color(221,204,119), 
 					color(204,102,119), color(136,34,85), color(146,189,16), color(170,68,153), 
-					color(51,34,136)
+					color(115,100,190)
 		};
 		
 		//Randomize colors

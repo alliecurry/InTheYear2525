@@ -142,7 +142,7 @@ public class BarChart extends GuiElement{
 			GLOBAL.processing.fill(GLOBAL.colorText);
 			GLOBAL.processing.textFont(GLOBAL.tFont,12);
 			GLOBAL.processing.textAlign(GLOBAL.processing.LEFT);
-			GLOBAL.processing.text(episode.getName(), x + 10, y - 5);
+			GLOBAL.processing.text("\"" + episode.getName() + "\" Character Appearences (# of Lines Spoken)", x + 10, y - 5);
 			GLOBAL.processing.textAlign(GLOBAL.processing.CENTER);
 			GLOBAL.processing.text("Season n. " + episode.getSeason(), x + width + 55, y + 20);
 			GLOBAL.processing.text("Episode n. " + episode.getEpisode(), x + width + 55, y + 40);
@@ -236,15 +236,14 @@ public class BarChart extends GuiElement{
 				
 			}
 			
-			
 			// Draw info	
 			GLOBAL.processing.fill(GLOBAL.colorText);
 			GLOBAL.processing.textFont(GLOBAL.tFont,12);
 			GLOBAL.processing.textAlign(GLOBAL.processing.LEFT);
 			if(season.intValue() != 0)
-				GLOBAL.processing.text("Season " + season.intValue(), x + 10, y - 5);
+				GLOBAL.processing.text("Season " + season.intValue() + " Character Appearences (%)", x + 10, y - 5);
 			else
-				GLOBAL.processing.text("All Seasons", x + 10, y - 5);
+				GLOBAL.processing.text("Character Appearences Over All Seasons", x + 10, y - 5);
 			
 			// Rollover
 			for(int i =0; i < Parser.ALL_CHARACTERS.size(); i++) {
@@ -263,7 +262,8 @@ public class BarChart extends GuiElement{
 	// Dialogue analysis for character
 	public void createDialogueBarChart() {
 		//Draw Title
-		GLOBAL.processing.textFont(GLOBAL.tFont,16);
+		GLOBAL.processing.textAlign(GLOBAL.processing.CENTER);
+		GLOBAL.processing.textFont(GLOBAL.tFont,14);
 		GLOBAL.processing.text("Number of Lines Spoken by " 
 								+ character.getName_firstToUppercase()
 								+ " from S" + GLOBAL.episodeStart.getSeason()
@@ -271,6 +271,13 @@ public class BarChart extends GuiElement{
 								+ " to S" + GLOBAL.episodeEnd.getSeason()
 								+ "E" + GLOBAL.episodeEnd.getEpisode(), 
 								x + 320, y - 4);
+		
+		//Draw instructions for slider-bar
+		GLOBAL.processing.textAlign(GLOBAL.processing.LEFT);
+		GLOBAL.processing.textFont(GLOBAL.tFont,12);
+		GLOBAL.processing.fill(GLOBAL.processing.color(136,204,238));
+		GLOBAL.processing.text("Drag either end of bar to add/remove episodes. Drag middle of bar to move selection.", 
+								335, 760);
 		
 		float barY = y + height;
 		float value;
@@ -325,7 +332,8 @@ public class BarChart extends GuiElement{
 
 	public void createCatchphraseBarChart() {
 		//Draw Title
-		GLOBAL.processing.textFont(GLOBAL.tFont,16);
+		GLOBAL.processing.textFont(GLOBAL.tFont,14);
+		GLOBAL.processing.textAlign(GLOBAL.processing.CENTER);
 		GLOBAL.processing.text("Catchphrases said by " 
 								+ character.getName_firstToUppercase()
 								+ " from S" + GLOBAL.episodeStart.getSeason()
@@ -333,6 +341,13 @@ public class BarChart extends GuiElement{
 								+ " to S" + GLOBAL.episodeEnd.getSeason()
 								+ "E" + GLOBAL.episodeEnd.getEpisode(), 
 								x + 320, y - 4);
+		
+		//Draw instructions for slider-bar
+		GLOBAL.processing.textAlign(GLOBAL.processing.LEFT);
+		GLOBAL.processing.textFont(GLOBAL.tFont,12);
+		GLOBAL.processing.fill(GLOBAL.processing.color(136,204,238));
+		GLOBAL.processing.text("Drag either end of bar to add/remove episodes. Drag middle of bar to move selection.", 
+								335, 760);
 		
 		float rectHeight = y + height;
 		float value;
