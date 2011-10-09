@@ -232,8 +232,8 @@ public class GraphsArea extends GuiElement{
 		
 	}
 	
-	public void mouseCharacterRolloverFunction( float RectWidth, float x, String s ) {
-		
+	public void mouseCharacterRolloverFunction( float RectWidth, float x, String s) {
+			
 		rolloverRect_CharacterCharts = new GuiElement();
 		rolloverRect_CharacterCharts.x = (int)(x - RectWidth/2);
 		rolloverRect_CharacterCharts.y = (int)(y + 20);

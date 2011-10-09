@@ -136,6 +136,11 @@ public class BarChart extends GuiElement{
 				GLOBAL.processing.textAlign(GLOBAL.processing.CENTER);
 				GLOBAL.processing.text(label.replace(" ", "\n").replace("-", "-\n"), barX , y + height + 15);
 				
+				// Check for any mouse rollover functionality to be displayed
+				if (GLOBAL.processing.mouseX > (barX - rectWidth/2) && GLOBAL.processing.mouseX < (barX + rectWidth) 
+						&& GLOBAL.processing.mouseY > y && GLOBAL.processing.mouseY < (y  + height)) {
+					rolloverValue = (int)value;
+				}
 			}
 			
 			// Draw info	
@@ -163,7 +168,7 @@ public class BarChart extends GuiElement{
 					rolloverRect.width = (int)(rectWidth);
 					rolloverRect.height = (int)(height);
 					rolloverRect.draw();
-					mouseRolloverFunction(charactersInEpisode.get(i));
+					mouseRolloverFunction(charactersInEpisode.get(i), "");
 					
 				}
 				
@@ -180,7 +185,7 @@ public class BarChart extends GuiElement{
 			rectWidth = (float)(width)/(2*Parser.ALL_CHARACTERS.size());
 
 			float barY = y + height;
-			float value;
+			float value = 0;
 			
 			String c = " ";
 			
@@ -223,6 +228,12 @@ public class BarChart extends GuiElement{
 				GLOBAL.processing.fill(Parser.ALL_CHARACTERS.get(i).getColor());
 				GLOBAL.processing.rect( barX - rectWidth/2, barY, barX+ rectWidth/2, y + height);
 				
+				// Check for any mouse rollover functionality to be displayed
+				if (GLOBAL.processing.mouseX > (barX - rectWidth/2) && GLOBAL.processing.mouseX < (barX + rectWidth) 
+						&& GLOBAL.processing.mouseY > y && GLOBAL.processing.mouseY < (y  + height)) {
+					rolloverValue = (int)value;
+				}
+				
 				if (Parser.ALL_CHARACTERS.get(i).getName_firstToUppercase().toCharArray()[0] != c.toCharArray()[0]) {
 					c = Parser.ALL_CHARACTERS.get(i).getName_firstToUppercase().substring(0, 1);
 					GLOBAL.processing.fill(GLOBAL.colorText);
@@ -252,7 +263,7 @@ public class BarChart extends GuiElement{
 				if (GLOBAL.processing.mouseX > (barX - rectWidth/2) && GLOBAL.processing.mouseX < (barX + rectWidth) 
 						&& GLOBAL.processing.mouseY > y && GLOBAL.processing.mouseY < (y  + height)) {	
 					intheyear2525.graphArea.mouseSeasonRolloverFunction(rectWidth, barX, Parser.ALL_CHARACTERS.get(i));
-					mouseRolloverFunction(Parser.ALL_CHARACTERS.get(i));
+					mouseRolloverFunction(Parser.ALL_CHARACTERS.get(i), " %");
 				}
 			}
 		} // end if
@@ -281,7 +292,8 @@ public class BarChart extends GuiElement{
 								335, 760);
 		
 		float barY = y + height;
-		float value;
+		int value;
+		int rolloverValue = -1;
 
 		int indexStart = 0;
 		int indexEnd = Parser.LIST_ALL.size() -1;
@@ -311,7 +323,7 @@ public class BarChart extends GuiElement{
 			if (Parser.LIST_ALL.get(i).getEpisode() == 1 ) {
 				GLOBAL.processing.strokeWeight(1);
 				GLOBAL.processing.stroke(GLOBAL.colorLinesLabelY);
-				GLOBAL.processing.line(barX - rectWidth/2, y, barX- rectWidth/2, y+height);
+				GLOBAL.processing.line(barX - rectWidth, y, barX- rectWidth, y+height);
 				GLOBAL.processing.noStroke();
 			}
 			
@@ -322,10 +334,23 @@ public class BarChart extends GuiElement{
 					&& GLOBAL.processing.mouseY > y && GLOBAL.processing.mouseY < (y  + height)) {
 				String label = "S"+ Parser.LIST_ALL.get(i).getSeason() + " E" + Parser.LIST_ALL.get(i).getEpisode()+ " " + Parser.LIST_ALL.get(i).getName();
 				intheyear2525.graphArea.mouseCharacterRolloverFunction(rectWidth, barX, label);
-				
+				rolloverValue = value;
 			}
 		}
-		
+
+		if (rolloverValue >= 0) {
+			// Rectangle
+			GLOBAL.processing.noStroke();
+			GLOBAL.processing.rectMode(GLOBAL.processing.CORNER);
+			GLOBAL.processing.fill(GLOBAL.colorIconBackground);
+			GLOBAL.processing.rect(GLOBAL.processing.mouseX + 10, GLOBAL.processing.mouseY - 28 , 40, 20); //x,y,width,height
+			// Text
+			GLOBAL.processing.fill(GLOBAL.colorBackgroundLayerTwo);
+			GLOBAL.processing.textFont(GLOBAL.tFont,14);
+			GLOBAL.processing.textAlign(GLOBAL.processing.CENTER);
+			GLOBAL.processing.text(rolloverValue, GLOBAL.processing.mouseX + 30, GLOBAL.processing.mouseY -12);
+		}
+
 		// Draw icon and info		
 		GLOBAL.processing.fill(GLOBAL.colorText);
 		GLOBAL.processing.textFont(GLOBAL.tFont,16);
@@ -364,7 +389,7 @@ public class BarChart extends GuiElement{
 								335, 760);
 		
 		float rectHeight = y + height;
-		float value;
+		int value;
 
 		int indexStart = 0;
 		int indexEnd = Parser.LIST_ALL.size() -1;
@@ -412,7 +437,7 @@ public class BarChart extends GuiElement{
 			if (Parser.LIST_ALL.get(i).getEpisode() == 1 ) {
 				GLOBAL.processing.strokeWeight(1);
 				GLOBAL.processing.stroke(GLOBAL.colorLinesLabelY);
-				GLOBAL.processing.line(barX - rectWidth/2, y, barX- rectWidth/2, y+height);
+				GLOBAL.processing.line(barX - rectWidth, y, barX- rectWidth, y+height);
 				GLOBAL.processing.noStroke();
 			}
 			
@@ -556,7 +581,7 @@ public class BarChart extends GuiElement{
 	    	
 	}
 	
-	public void mouseRolloverFunction(Character character) {
+	public void mouseRolloverFunction(Character character, String s) {
 		
 		// Draw a rectangle, the label and an image inside, now the image is set to 100x100
 		
@@ -569,7 +594,7 @@ public class BarChart extends GuiElement{
 		GLOBAL.processing.noStroke();
 		GLOBAL.processing.rectMode(GLOBAL.processing.CORNER);
 		GLOBAL.processing.fill(GLOBAL.colorIconBackground);
-		GLOBAL.processing.rect( x1, GLOBAL.processing.mouseY - 40 - 120 , 100, 130); //x,y,width,height
+		GLOBAL.processing.rect( x1, GLOBAL.processing.mouseY - 40 - 140 , 100, 150); //x,y,width,height
 		
 		// Image
 		if (character.getIcon()!= null)
@@ -579,8 +604,11 @@ public class BarChart extends GuiElement{
 		GLOBAL.processing.fill(GLOBAL.colorBackgroundLayerTwo);
 		GLOBAL.processing.textFont(GLOBAL.tFont,14);
 		GLOBAL.processing.textAlign(GLOBAL.processing.CENTER);
+		GLOBAL.processing.text((rolloverValue) + s, x1 + 50, GLOBAL.processing.mouseY - 18 - 140);
 		GLOBAL.processing.text(character.getName_firstToUppercase().replace(" ", "\n").replace("-", "-\n"), x1 + 50, GLOBAL.processing.mouseY - 18 - 120); // center in the upper side, middle point, of the icon 100x100
 		
 	}
+	
+	int rolloverValue;
 
 }

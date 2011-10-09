@@ -276,9 +276,8 @@ public class TableChart extends GuiElement {
 							value = value + numberOfTime; // 2
 							
 							averagesToBePlot[k] = (averagesToBePlot[k] + value); // Average number of catchphrases per episode
-							countersForAverage[k] = countersForAverage[k] + 1;
-
 						}
+						countersForAverage[k] = countersForAverage[k] + 1;
 
 					}
 
