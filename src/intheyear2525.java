@@ -158,11 +158,10 @@ public class intheyear2525 extends PApplet{
 		
 		//Instructions to be displayed on startup + after clearing all graphs
 		if(GLOBAL.drawInstructions) {
-			fill(GLOBAL.colorText);
+			GLOBAL.processing.fill(GLOBAL.colorBlu);
 			textFont(GLOBAL.tFont,24);
 			text("Getting Started: ",220, 100);
 			
-			GLOBAL.processing.fill(GLOBAL.colorBlu);
 			textFont(GLOBAL.tFont,20);
 			text("1. Select analysis of Characters, Episodes, or Seasons.",240, 140);
 			text("2. Add Characters/Episodes/Seasons to your data set.",240, 220);

@@ -32,6 +32,7 @@ class Button extends GuiElement
 
 	public void draw()
 	{
+
 		int cx = x;
 		int cy = y;
 		if(icon != null)
@@ -42,12 +43,10 @@ class Button extends GuiElement
 		{
 			GLOBAL.processing.textFont(GLOBAL.tFont, fontSize);
 			width = (int)(GLOBAL.processing.textWidth(label)) + 10;
-			
-			if (fixedSize) {
+			if (fixedSize)
 				width = intheyear2525.menu.width-40;
-				GLOBAL.processing.textAlign(GLOBAL.processing.LEFT);
-			}
-			
+			GLOBAL.processing.textAlign(GLOBAL.processing.LEFT);
+
 			if(mouseOver()) 
 			{
 				super.draw();
@@ -75,8 +74,6 @@ class Button extends GuiElement
 				GLOBAL.processing.text(label, cx + 5, cy + 20);
 			}
 		}
-		
-		
 	}
 
 	public void setFontSize(int size) {
