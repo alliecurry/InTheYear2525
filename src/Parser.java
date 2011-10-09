@@ -1,10 +1,7 @@
-import java.io.*;
 import java.text.DateFormat;
-import java.text.ParseException;
 import java.text.SimpleDateFormat;
 import java.util.ArrayList;
 import java.util.Date;
-import java.util.Scanner;
 
 // Class for managing the parsing of the text file
 public class Parser {
@@ -45,21 +42,28 @@ public class Parser {
 
         public void parseBackgroundChars(){
         	//Constructor simply loads unacceptable character names into backgroundChars from file names.txt
-        	Scanner scan;    //Scanner for reading file
-        	
-        	try {
-        		scan = new Scanner(new FileReader("data/names.txt"));   //Initialize scanner with file.
-	        } catch (FileNotFoundException e) {
-	                e.printStackTrace();
-	                return;
-	        }
-
-	        //Scan all dialog
-	        while (scan.hasNextLine()) {    //Executes if a line of text exists
-	                backgroundChars.add(scan.nextLine());
-	        }
+//        	Scanner scan;    //Scanner for reading file
+//        	
+//        	try {
+//        		scan = new Scanner(new FileReader("data/names.txt"));   //Initialize scanner with file.
+//	        } catch (FileNotFoundException e) {
+//	                e.printStackTrace();
+//	                return;
+//	        }
+//
+//	        //Scan all dialog
+//	        while (scan.hasNextLine()) {    //Executes if a line of text exists
+//	                backgroundChars.add(scan.nextLine());
+//	        }
+//	        
+//	        scan.close();
+//	        
+            String[] lines = GLOBAL.processing.loadStrings("names.txt");
+            
+            for(int j=0; j<lines.length ; j++) {
+            	backgroundChars.add(lines[j]);
+            }
 	        
-	        scan.close();
         }
 
         public void parseFile(String fileName) {
@@ -77,26 +81,35 @@ public class Parser {
         //Parses transcripts (wordsFile = false)
         //OR word transcripts (have an added underscore to filename, and are used for word mapping) (wordsFile = true)
         public void parseFile(String fileName, boolean wordsFile) {
-            Scanner scan = null;    //Scanner for reading file
-            ep = null;
-           
-            try {
-                    scan = new Scanner(new FileReader(fileName));   //Initialize scanner with file.
-            } catch (FileNotFoundException e) {
-                    e.printStackTrace();
-                    return;
+//            Scanner scan = null;    //Scanner for reading file
+//            ep = null;
+//           
+//            try {
+//                    scan = new Scanner(new FileReader(fileName));   //Initialize scanner with file.
+//            } catch (FileNotFoundException e) {
+//                    e.printStackTrace();
+//                    return;
+//            }
+//           
+//            //Scan first line
+//            storeLineTitle(scan.nextLine());        //Store title of episode
+//           
+//            //Scan all dialog
+//            while (scan.hasNextLine()) {    //Executes if a line of text exists
+//            	if(wordsFile) { storeLineWords(scan.nextLine()); }
+//            	else { storeLine(scan.nextLine()); }    //Sends line to method storeLine()
+//            }
+//           
+//            scan.close();
+            
+            String[] lines = GLOBAL.processing.loadStrings(fileName);
+            
+            storeLineTitle(lines[0]);
+            
+            for(int j = 1; j < lines.length; j++) {
+            	if(wordsFile) { storeLineWords(lines[j]); }
+            	else { storeLine(lines[j]); }    //Sends line to method storeLine()
             }
-           
-            //Scan first line
-            storeLineTitle(scan.nextLine());        //Store title of episode
-           
-            //Scan all dialog
-            while (scan.hasNextLine()) {    //Executes if a line of text exists
-            	if(wordsFile) { storeLineWords(scan.nextLine()); }
-            	else { storeLine(scan.nextLine()); }    //Sends line to method storeLine()
-            }
-           
-            scan.close();
             
             if(!wordsFile) { //Only do the following when parsing initial transcripts
             	updateCharacterEpisodes();      //Add episode to appropriate Character objects.
@@ -108,119 +121,119 @@ public class Parser {
         public void parseAllTranscripts() {
         	String path;
         	
-            //SEASON 1  	
-            parseFile("data/transcripts/SEASON1/S1E1.txt"); //Series 1
-            parseFile("data/transcripts/SEASON1/S1E2.txt");
-            parseFile("data/transcripts/SEASON1/S1E3.txt");
-            parseFile("data/transcripts/SEASON1/S1E4.txt");
-            parseFile("data/transcripts/SEASON1/S1E5.txt");
-            parseFile("data/transcripts/SEASON1/S1E6.txt");
-            parseFile("data/transcripts/SEASON1/S1E7.txt");
-            parseFile("data/transcripts/SEASON1/S1E8.txt");
-            parseFile("data/transcripts/SEASON1/S1E9.txt");
-            parseFile("data/transcripts/SEASON1/S2E1.txt");	//Series 2
-            parseFile("data/transcripts/SEASON1/S2E2.txt");
-            parseFile("data/transcripts/SEASON1/S2E3.txt");
-            parseFile("data/transcripts/SEASON1/S2E4.txt");
+            //SEASON 1  
+            parseFile("transcripts/SEASON1/S1E1.txt"); //Series 1
+            parseFile("transcripts/SEASON1/S1E2.txt");
+            parseFile("transcripts/SEASON1/S1E3.txt");
+            parseFile("transcripts/SEASON1/S1E4.txt");
+            parseFile("transcripts/SEASON1/S1E5.txt");
+            parseFile("transcripts/SEASON1/S1E6.txt");
+            parseFile("transcripts/SEASON1/S1E7.txt");
+            parseFile("transcripts/SEASON1/S1E8.txt");
+            parseFile("transcripts/SEASON1/S1E9.txt");
+            parseFile("transcripts/SEASON1/S2E1.txt");	//Series 2
+            parseFile("transcripts/SEASON1/S2E2.txt");
+            parseFile("transcripts/SEASON1/S2E3.txt");
+            parseFile("transcripts/SEASON1/S2E4.txt");
            
             //SEASON 2
-            path = "data/transcripts/SEASON2/S2E";	//Series 2, continued
+            path = "transcripts/SEASON2/S2E";	//Series 2, continued
             for(int x=5; x<10; ++x) { //Build path name dynamically.
             	parseFile(path + x + ".txt");	
             }
-            parseFile("data/transcripts/SEASON2/S2E11.txt");
-            parseFile("data/transcripts/SEASON2/S2E10.txt");
-            parseFile("data/transcripts/SEASON2/S2E12.txt");
-            parseFile("data/transcripts/SEASON2/S2E13.txt");
-            parseFile("data/transcripts/SEASON2/S2E15.txt");
-            parseFile("data/transcripts/SEASON2/S2E14.txt");
-            parseFile("data/transcripts/SEASON2/S2E16.txt");
-            parseFile("data/transcripts/SEASON2/S2E17.txt");
-            parseFile("data/transcripts/SEASON2/S2E19.txt");
-            parseFile("data/transcripts/SEASON2/S2E18.txt");
-            parseFile("data/transcripts/SEASON2/S2E20.txt");
+            parseFile("transcripts/SEASON2/S2E11.txt");
+            parseFile("transcripts/SEASON2/S2E10.txt");
+            parseFile("transcripts/SEASON2/S2E12.txt");
+            parseFile("transcripts/SEASON2/S2E13.txt");
+            parseFile("transcripts/SEASON2/S2E15.txt");
+            parseFile("transcripts/SEASON2/S2E14.txt");
+            parseFile("transcripts/SEASON2/S2E16.txt");
+            parseFile("transcripts/SEASON2/S2E17.txt");
+            parseFile("transcripts/SEASON2/S2E19.txt");
+            parseFile("transcripts/SEASON2/S2E18.txt");
+            parseFile("transcripts/SEASON2/S2E20.txt");
             
-            parseFile("data/transcripts/SEASON2/S3E2.txt"); //Series 3
-            parseFile("data/transcripts/SEASON2/S3E1.txt");
-            parseFile("data/transcripts/SEASON2/S3E3.txt");
+            parseFile("transcripts/SEASON2/S3E2.txt"); //Series 3
+            parseFile("transcripts/SEASON2/S3E1.txt");
+            parseFile("transcripts/SEASON2/S3E3.txt");
             
             //SEASON 3
-            parseFile("data/transcripts/SEASON3/S3E5.txt");
-            parseFile("data/transcripts/SEASON3/S3E4.txt");
+            parseFile("transcripts/SEASON3/S3E5.txt");
+            parseFile("transcripts/SEASON3/S3E4.txt");
             
-            parseFile("data/transcripts/SEASON3/S4E2.txt");
+            parseFile("transcripts/SEASON3/S4E2.txt");
             
-            parseFile("data/transcripts/SEASON3/S3E10.txt");
-            parseFile("data/transcripts/SEASON3/S3E9.txt");
-            parseFile("data/transcripts/SEASON3/S3E6.txt"); 
-            parseFile("data/transcripts/SEASON3/S3E7.txt");
-            parseFile("data/transcripts/SEASON3/S3E8.txt");
-            parseFile("data/transcripts/SEASON3/S3E11.txt");
+            parseFile("transcripts/SEASON3/S3E10.txt");
+            parseFile("transcripts/SEASON3/S3E9.txt");
+            parseFile("transcripts/SEASON3/S3E6.txt"); 
+            parseFile("transcripts/SEASON3/S3E7.txt");
+            parseFile("transcripts/SEASON3/S3E8.txt");
+            parseFile("transcripts/SEASON3/S3E11.txt");
             
-            parseFile("data/transcripts/SEASON3/S4E6.txt");
-            parseFile("data/transcripts/SEASON3/S3E12.txt");
-            parseFile("data/transcripts/SEASON3/S5E3.txt");
+            parseFile("transcripts/SEASON3/S4E6.txt");
+            parseFile("transcripts/SEASON3/S3E12.txt");
+            parseFile("transcripts/SEASON3/S5E3.txt");
             
-            parseFile("data/transcripts/SEASON3/S3E13.txt");
-            parseFile("data/transcripts/SEASON3/S3E14.txt");
-            parseFile("data/transcripts/SEASON3/S3E15.txt");
+            parseFile("transcripts/SEASON3/S3E13.txt");
+            parseFile("transcripts/SEASON3/S3E14.txt");
+            parseFile("transcripts/SEASON3/S3E15.txt");
             
-            parseFile("data/transcripts/SEASON3/S4E10.txt");
-            parseFile("data/transcripts/SEASON3/S4E7.txt");
-            parseFile("data/transcripts/SEASON3/S4E3.txt");
-            parseFile("data/transcripts/SEASON3/S4E1.txt");
-            parseFile("data/transcripts/SEASON3/S4E8.txt");
-            parseFile("data/transcripts/SEASON3/S4E9.txt");
-            parseFile("data/transcripts/SEASON3/S4E11.txt");
+            parseFile("transcripts/SEASON3/S4E10.txt");
+            parseFile("transcripts/SEASON3/S4E7.txt");
+            parseFile("transcripts/SEASON3/S4E3.txt");
+            parseFile("transcripts/SEASON3/S4E1.txt");
+            parseFile("transcripts/SEASON3/S4E8.txt");
+            parseFile("transcripts/SEASON3/S4E9.txt");
+            parseFile("transcripts/SEASON3/S4E11.txt");
             
             //SEASON 4
-            parseFile("data/transcripts/SEASON4/S5E5.txt");
-            parseFile("data/transcripts/SEASON4/S4E5.txt");
-            parseFile("data/transcripts/SEASON4/S4E4.txt");
+            parseFile("transcripts/SEASON4/S5E5.txt");
+            parseFile("transcripts/SEASON4/S4E5.txt");
+            parseFile("transcripts/SEASON4/S4E4.txt");
             
-            parseFile("data/transcripts/SEASON4/S5E6.txt");
-            parseFile("data/transcripts/SEASON4/S5E4.txt");
-            parseFile("data/transcripts/SEASON4/S5E15.txt");
-            parseFile("data/transcripts/SEASON4/S5E2.txt");
-            parseFile("data/transcripts/SEASON4/S5E1.txt");
-            parseFile("data/transcripts/SEASON4/S5E7.txt");
-            parseFile("data/transcripts/SEASON4/S5E8.txt");
+            parseFile("transcripts/SEASON4/S5E6.txt");
+            parseFile("transcripts/SEASON4/S5E4.txt");
+            parseFile("transcripts/SEASON4/S5E15.txt");
+            parseFile("transcripts/SEASON4/S5E2.txt");
+            parseFile("transcripts/SEASON4/S5E1.txt");
+            parseFile("transcripts/SEASON4/S5E7.txt");
+            parseFile("transcripts/SEASON4/S5E8.txt");
             
-            parseFile("data/transcripts/SEASON4/S4E12.txt");
+            parseFile("transcripts/SEASON4/S4E12.txt");
             
-            parseFile("data/transcripts/SEASON4/S5E9.txt");
-            parseFile("data/transcripts/SEASON4/S5E13.txt");
-            parseFile("data/transcripts/SEASON4/S5E14.txt");
-            parseFile("data/transcripts/SEASON4/S5E10.txt");
-            parseFile("data/transcripts/SEASON4/S5E11.txt");
-            parseFile("data/transcripts/SEASON4/S5E12.txt");
-            parseFile("data/transcripts/SEASON4/S5E16.txt");
+            parseFile("transcripts/SEASON4/S5E9.txt");
+            parseFile("transcripts/SEASON4/S5E13.txt");
+            parseFile("transcripts/SEASON4/S5E14.txt");
+            parseFile("transcripts/SEASON4/S5E10.txt");
+            parseFile("transcripts/SEASON4/S5E11.txt");
+            parseFile("transcripts/SEASON4/S5E12.txt");
+            parseFile("transcripts/SEASON4/S5E16.txt");
             
             //SEASON 5
-            path = "data/transcripts/SEASON5/S6E";
+            path = "transcripts/SEASON5/S6E";
             for(int b=1; b<17; ++b) {
             	parseFile(path + b + ".txt");
             }
             
             //SEASON 6
-            path = "data/transcripts/SEASON6/S7E";
+            path = "transcripts/SEASON6/S7E";
             for(int c=1; c<14; ++c) {
             	parseFile(path + c + ".txt");
             }
             
-            parseFile("data/transcripts/SEASON6/S8E5.txt");
-            parseFile("data/transcripts/SEASON6/S8E8.txt");
-            parseFile("data/transcripts/SEASON6/S8E4.txt");
-            parseFile("data/transcripts/SEASON6/S8E2.txt");
-            parseFile("data/transcripts/SEASON6/S8E10.txt");
-            parseFile("data/transcripts/SEASON6/S8E3.txt");
-            parseFile("data/transcripts/SEASON6/S8E1.txt");
-            parseFile("data/transcripts/SEASON6/S8E6.txt");
-            parseFile("data/transcripts/SEASON6/S8E9.txt");
-            parseFile("data/transcripts/SEASON6/S8E7.txt");
-            parseFile("data/transcripts/SEASON6/S8E11.txt");
-            parseFile("data/transcripts/SEASON6/S8E12.txt");
-            parseFile("./data/transcripts/SEASON6/S8E13.txt");
+            parseFile("transcripts/SEASON6/S8E5.txt");
+            parseFile("transcripts/SEASON6/S8E8.txt");
+            parseFile("transcripts/SEASON6/S8E4.txt");
+            parseFile("transcripts/SEASON6/S8E2.txt");
+            parseFile("transcripts/SEASON6/S8E10.txt");
+            parseFile("transcripts/SEASON6/S8E3.txt");
+            parseFile("transcripts/SEASON6/S8E1.txt");
+            parseFile("transcripts/SEASON6/S8E6.txt");
+            parseFile("transcripts/SEASON6/S8E9.txt");
+            parseFile("transcripts/SEASON6/S8E7.txt");
+            parseFile("transcripts/SEASON6/S8E11.txt");
+            parseFile("transcripts/SEASON6/S8E12.txt");
+            parseFile("transcripts/SEASON6/S8E13.txt");
             
             if(!GLOBAL.parseForWordMap) {
 	            //Aggregate all seasons
@@ -313,7 +326,7 @@ public class Parser {
                 	ep = new Episode(episode, season, splitLine[2], niceFormatter.format(airdate));
                 	//hashKey = "S" + season + "E" + episode;         //Store current hash map key prefix
                 	
-                    } catch (ParseException e) {
+                    } catch (Exception e) {
 						e.printStackTrace();
 					}
                 }
@@ -498,21 +511,27 @@ public class Parser {
    public void parseCatchphrases(){
 	   createCatchphraseCharacters();	//Create characters needed for this method.
 	   
-	   Scanner scan;    //Scanner for reading file
-   	
-   		try {
-	   		scan = new Scanner(new FileReader("data/phrases.txt"));   //Initialize scanner with file.
-	    } catch (FileNotFoundException e) {
-               e.printStackTrace();
-               return;
-	    }
-	
-       //Scan all dialog
-       while (scan.hasNextLine()) {    //Executes if a line of text exists
-               storeCatchphrase(scan.nextLine());
+//	   Scanner scan;    //Scanner for reading file
+//   	
+//   		try {
+//	   		scan = new Scanner(new FileReader("data/phrases.txt"));   //Initialize scanner with file.
+//	    } catch (FileNotFoundException e) {
+//               e.printStackTrace();
+//               return;
+//	    }
+//	
+//       //Scan all dialog
+//       while (scan.hasNextLine()) {    //Executes if a line of text exists
+//               storeCatchphrase(scan.nextLine());
+//       }
+       
+       String[] lines = GLOBAL.processing.loadStrings("phrases.txt");
+       
+       for(int j = 0; j < lines.length; j++) {
+    	   storeCatchphrase(lines[j]);
        }
    
-       scan.close();
+//       scan.close();
    }
    
    public void storeCatchphrase(String line){
@@ -575,21 +594,29 @@ public class Parser {
    }
    
    public void parseWordFiles() {
-	   	Scanner scan;    //Scanner for reading file
-	   	
-  		try {
-	   		scan = new Scanner(new FileReader("data/phrases.txt"));   //Initialize scanner with file.
-	    } catch (FileNotFoundException e) {
-              e.printStackTrace();
-              return;
-	    }
-	
-      //Scan all dialog
-      while (scan.hasNextLine()) {    //Executes if a line of text exists
-              storeCatchphrase(scan.nextLine());
+//	   	Scanner scan;    //Scanner for reading file
+//	   	
+//  		try {
+//	   		scan = new Scanner(new FileReader("data/phrases.txt"));   //Initialize scanner with file.
+//	    } catch (FileNotFoundException e) {
+//              e.printStackTrace();
+//              return;
+//	    }
+//	
+//      //Scan all dialog
+//      while (scan.hasNextLine()) {    //Executes if a line of text exists
+//              storeCatchphrase(scan.nextLine());
+//      }
+//  
+//      scan.close();
+      
+      String[] lines = GLOBAL.processing.loadStrings("phrases.txt");
+      
+      for(int j = 0; j < lines.length; j++) {
+   	   storeCatchphrase(lines[j]);
       }
-  
-      scan.close();
+      
+      
    }
 }
 

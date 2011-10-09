@@ -118,6 +118,8 @@ public class intheyear2525 extends PApplet{
 	}
 
 	public void draw() {
+		
+		//this.setVisible(true);
 
 		frameCounter++;
 
@@ -240,7 +242,7 @@ public class intheyear2525 extends PApplet{
 	}
 
 	public static void main(String args[]) {
-		PApplet.main(new String[] { "--present", "intheyear2525" });
+		PApplet.main(new String[] { "--present --location=0,0", "intheyear2525" });
 	}
 
 }
