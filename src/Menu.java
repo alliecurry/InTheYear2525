@@ -1,5 +1,9 @@
+import processing.core.PImage;
+
 
 public class Menu extends GuiElement{
+	
+	public PImage info;
 	
 	public Button cButton;
 	public Button eButton;
@@ -8,6 +12,7 @@ public class Menu extends GuiElement{
 	public Button dialButton;
 	public Button wordButton;
 	public Button clearButton;
+	public Button infoButton;
 	
 	public MultistateButton viewTypeButton;
 	
@@ -18,9 +23,13 @@ public class Menu extends GuiElement{
 	public static boolean selectingCharacter = false;
 	public static boolean selectingEpisode = false;
 	public static boolean selectingSeason = false;
+	public static boolean showInfo = false;
 
 	// Menu contents
 	public Menu() {
+		
+		info = GLOBAL.processing.loadImage("images/info.jpg");
+		
 		characterPicker = new CharacterSelectionPanel(240,80);
 		episodePicker = new EpisodeSelectionPanel(250,200);
 		seasonPicker = new SeasonSelectionPanel(300,200);
@@ -85,11 +94,20 @@ public class Menu extends GuiElement{
 		//Reset button
 		clearButton = new Button();
 		clearButton.x = 20;
-		clearButton.y = 700;
+		clearButton.y = 660;
 		clearButton.setLabel("Clear graphs");
 		clearButton.active = true;
 		clearButton.setFontSize(14);
 		clearButton.fixedSize = true;
+		
+		//Info button
+		infoButton = new Button();
+		infoButton.x = 20;
+		infoButton.y = 700;
+		infoButton.setLabel("Info");
+		infoButton.active = true;
+		infoButton.setFontSize(14);
+		infoButton.fixedSize = true;
 
 	}
 
@@ -144,6 +162,10 @@ public class Menu extends GuiElement{
 		GLOBAL.processing.line(20, 435, 180, 435);
 		
 		clearButton.draw();
+		infoButton.draw();
+		
+		if (showInfo && info!=null)
+			GLOBAL.processing.image(info, 312 + width/2, 170);
 
 	}
 
@@ -227,6 +249,9 @@ public class Menu extends GuiElement{
 			GLOBAL.episodesSelected.clear();
 			GLOBAL.charactersSelected.clear();
 			GLOBAL.seasonsSelected.clear();
+		}
+		else if(infoButton.mouseOver()) {
+			showInfo = !showInfo;
 		}
 
 	}

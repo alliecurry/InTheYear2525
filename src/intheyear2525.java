@@ -31,7 +31,7 @@ public class intheyear2525 extends PApplet{
 //		GLOBAL.tFont = loadFont("LucidaSans-48.vlw");
 		GLOBAL.tFont = createFont("Segoe UI", 20);
 		GLOBAL.selectedEpisodesList = Parser.LIST_ALL; // Initialize the displayed list to "all episodes"
-
+				
 		//Parse all available transcripts.
 		pars.parseCatchphrases();		//Loads cathphrases (& their regular expressions) into corresponding Character objects
 		pars.parseBackgroundChars();	//Loads unacceptable character names from file names.txt
