@@ -31,8 +31,56 @@ public class CharacterSelectionPanel extends GuiElement {
 		
 		// Treemap list of character, it depends on the jpeg of treemap.jpg !!
 		setCharacterIconsTreemap(240, 180, 348, 433, "fry");
+		setCharacterIconsTreemap(240,435,352,679,"farnsworth");
+		setCharacterIconsTreemap(353,435,574,558,"zoidberg");
+		setCharacterIconsTreemap(353,559,574,679,"hermes");
+		setCharacterIconsTreemap(576,179,741,331,"amy");
 		setCharacterIconsTreemap(351, 181, 572, 302, "leela");
-		setCharacterIconsTreemap(868,555,900,583,"panucci");
+		setCharacterIconsTreemap(351, 305, 575, 433, "bender");
+		//setCharacterIconsTreemap(868, 555, 900, 583,"panucci");
+		setCharacterIconsTreemap(576,331,659,432,"zapp brannigan");
+		setCharacterIconsTreemap(659,333,741,431,"morbo");
+		setCharacterIconsTreemap(576,433,646,491,"url");
+		setCharacterIconsTreemap(577,492,648,548,"elzar");
+		setCharacterIconsTreemap(648,434,742,473,"mom");
+		setCharacterIconsTreemap(648,474,694,547,"mr. wong");
+		setCharacterIconsTreemap(694,474,742,548,"labarbara");
+		setCharacterIconsTreemap(576,549,652,594,"cubert");
+		setCharacterIconsTreemap(576,595,652,638,"hattie");
+		setCharacterIconsTreemap(576,638,652,679,"randy");
+		setCharacterIconsTreemap(653,549,697,617,"preacherbot");
+		setCharacterIconsTreemap(698,549,742,616,"igner");
+		setCharacterIconsTreemap(654,617,696,679,"mrs. wong");
+		setCharacterIconsTreemap(698,618,743,679,"petunia");
+		setCharacterIconsTreemap(741,181,802,298,"linda");
+		setCharacterIconsTreemap(803,179,899,237,"kif");
+		setCharacterIconsTreemap(804,238,899,297,"nixon");
+		setCharacterIconsTreemap(743,298,825,368,"scruffy");
+		setCharacterIconsTreemap(826,300,899,367,"calculon");
+		setCharacterIconsTreemap(742,369,825,431,"sal");
+		setCharacterIconsTreemap(825,369,899,433,"smitty");
+		setCharacterIconsTreemap(744,433,787,495,"nibbler");
+		setCharacterIconsTreemap(787,434,827,495,"walt");
+		setCharacterIconsTreemap(829,433,864,494,"lrrr");
+		setCharacterIconsTreemap(865,434,900,494,"hedonism bot");
+		setCharacterIconsTreemap(744,496,785,550,"larry");
+		setCharacterIconsTreemap(785,497,828,550,"wernstrom");
+		setCharacterIconsTreemap(829,495,865,550,"hyper-chicken");
+		setCharacterIconsTreemap(865,495,899,550,"dwight");
+		setCharacterIconsTreemap(744,551,769,618,"poopenmeyer");
+		setCharacterIconsTreemap(743,619,767,679,"roberto");
+		setCharacterIconsTreemap(768,551,818,587,"tinny tim");
+		setCharacterIconsTreemap(818,551,863,584,"bubblegum");
+		setCharacterIconsTreemap(863,551,899,584,"panucci");
+		setCharacterIconsTreemap(770,587,818,618,"monique");
+		setCharacterIconsTreemap(818,585,863,618,"transition announcer");
+		setCharacterIconsTreemap(863,585,899,618,"terry");
+		setCharacterIconsTreemap(768,620,817,650,"munda");
+		setCharacterIconsTreemap(818,619,859,649,"nd-nd");
+		setCharacterIconsTreemap(859,620,900,649,"paper-hatted salesman");
+		setCharacterIconsTreemap(769,650,818,679,"morris");
+		setCharacterIconsTreemap(819,649,859,679,"clamps");
+		setCharacterIconsTreemap(859,649,899,679,"dr. cahill");
 		
 		// TODO : to be completed ........
 		
