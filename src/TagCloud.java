@@ -42,7 +42,7 @@ public class TagCloud extends GuiElement{
 
 		int max = 60;  
 
-		System.out.println(myList.size());
+		//System.out.println(myList.size());
 		
 		if(myList.size() == 0) {
 			w = new wordcram.Word[1];

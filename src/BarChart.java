@@ -294,16 +294,27 @@ public class BarChart extends GuiElement{
 			if (Parser.LIST_ALL.get(i).getSeason() == GLOBAL.episodeEnd.getSeason() && Parser.LIST_ALL.get(i).getEpisode() == GLOBAL.episodeEnd.getEpisode())
 				indexEnd = i;
 		}
+		
 
 		rectWidth = (float)(width)/(2*(indexEnd - indexStart));
 		GLOBAL.COLORS.reset();
+				
 		for ( int i = indexStart; i <= indexEnd; i++ ) {
-			//GLOBAL.processing.stroke(GLOBAL.COLORS.getNextColor());
+
 			GLOBAL.processing.fill(GLOBAL.COLORS.getNextColor());
 			
 			value = Parser.LIST_ALL.get(i).getNumberOfLinesPerCharacter(character);
 			barY = GLOBAL.processing.map(value, 0, 90, y + height, y);					 // TODO 100 is a default value, must be set as the max	
 			float barX = GLOBAL.processing.map(i, indexStart, indexEnd, x + rectWidth, x + plotWidth - rectWidth);
+			
+			// Draw vertical lines
+			if (Parser.LIST_ALL.get(i).getEpisode() == 1 ) {
+				GLOBAL.processing.strokeWeight(1);
+				GLOBAL.processing.stroke(GLOBAL.colorLinesLabelY);
+				GLOBAL.processing.line(barX - rectWidth/2, y, barX- rectWidth/2, y+height);
+				GLOBAL.processing.noStroke();
+			}
+			
 			GLOBAL.processing.rect( barX - rectWidth/2, barY, barX + rectWidth/2, y + height);
 
 			// Check for any mouse rollover functionality to be displayed
@@ -395,6 +406,15 @@ public class BarChart extends GuiElement{
 			}
 			
 			float barX = GLOBAL.processing.map(i, indexStart, indexEnd, x + rectWidth, x + plotWidth - rectWidth);
+			
+			
+			// Draw vertical lines
+			if (Parser.LIST_ALL.get(i).getEpisode() == 1 ) {
+				GLOBAL.processing.strokeWeight(1);
+				GLOBAL.processing.stroke(GLOBAL.colorLinesLabelY);
+				GLOBAL.processing.line(barX - rectWidth/2, y, barX- rectWidth/2, y+height);
+				GLOBAL.processing.noStroke();
+			}
 			
 			int blockNumber = 0;
 			

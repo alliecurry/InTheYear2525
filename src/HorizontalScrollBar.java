@@ -1,22 +1,26 @@
 import java.util.ArrayList;
 
-//Caused error?
-//import com.sun.org.apache.xpath.internal.axes.SelfIteratorNoPredicate;
-
-
 public class HorizontalScrollBar extends GuiElement{
 	
-    ////////////////////////////////////////////////////////////////////////////////////////////////////
     public float size;
+    
     public float valStart;
     public float valEnd;
+    
     public boolean draggingStart;
     public boolean draggingEnd;
     public boolean draggingAll;
     
+    public GuiElement selectionStart;
+    public GuiElement selectionEnd;
+    
+    public int dragX;
+    
+    public float indexStart;
+    public float indexEnd;
+    
     public ArrayList<Episode> episodes;
 
-    ////////////////////////////////////////////////////////////////////////////////////////////////////
     public HorizontalScrollBar( ArrayList<Episode> list)
     {
     	episodes = list;
@@ -29,16 +33,15 @@ public class HorizontalScrollBar extends GuiElement{
         valEnd = (float)0.98;
     }
 
-    ////////////////////////////////////////////////////////////////////////////////////////////////////
     public void draw()
     {
         int bh = (int)(size * width);
         if(bh < 10) bh = 10;
         
-        GLOBAL.processing.stroke(0);
+        GLOBAL.processing.noStroke();
         GLOBAL.processing.fill(GLOBAL.colorPlotArea);
         GLOBAL.processing.rectMode(GLOBAL.processing.CORNERS);
-        GLOBAL.processing.rect(x, y, x + width, y + height);
+        GLOBAL.processing.rect(x, y, x + width-3, y + height);
         
         // Draw selectionStart region
         selectionStart.y = y;
@@ -54,8 +57,6 @@ public class HorizontalScrollBar extends GuiElement{
         selectionEnd.height = height;
         //selectionEnd.draw();     
         
-        //GLOBAL.gu.drawVGradient(selectionStart.x + selectionStart.width, selectionStart.y, -selectionStart.width, selectionStart.height, GLOBAL.processing.color(200, 200, 200), 255, GLOBAL.processing.color(255, 255, 255), 255, (float) 0.5);
-        //GLOBAL.gu.drawVGradient(selectionEnd.x + selectionEnd.width, selectionEnd.y, -selectionEnd.width, selectionEnd.height, GLOBAL.processing.color(200, 200, 200), 255, GLOBAL.processing.color(255, 255, 255), 255, (float) 0.5);
         GLOBAL.gu.drawVGradient(selectionEnd.x + selectionEnd.width, selectionEnd.y, -(selectionEnd.x - selectionStart.x+ selectionEnd.width), selectionStart.height, GLOBAL.processing.color(200, 200, 200), 255, GLOBAL.processing.color(255, 255, 255), 255, (float) 0.5);
        
         // Handle moving all the scrollbar
@@ -113,7 +114,6 @@ public class HorizontalScrollBar extends GuiElement{
         
     }
   
-    ////////////////////////////////////////////////////////////////////////////////////////////////////
     public void mousePressed()
     {
     	if (selectionStart.mouseOver() ) {
@@ -153,7 +153,6 @@ public class HorizontalScrollBar extends GuiElement{
         
     }
   
-    ////////////////////////////////////////////////////////////////////////////////////////////////////
     public void mouseReleased()
     {
         
@@ -174,11 +173,4 @@ public class HorizontalScrollBar extends GuiElement{
         
     }
     
-    ////////////////////////////////////////////////////////////////////////////////////////////////////
-    // Private stuff.
-    GuiElement selectionStart;
-    GuiElement selectionEnd;
-    private int dragX;
-    private float indexStart;
-    private float indexEnd;
 }

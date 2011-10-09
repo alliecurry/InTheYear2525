@@ -95,18 +95,18 @@ public class GraphsArea extends GuiElement{
 				chart1 = new BarChart(GLOBAL.CHARACTER_SELECTED, x + 20, y + 20, width - 20, height - 120, CHARACTER_GRAPH);
 			}
 			else if (chart2 == null) {
-				int chartHeight = (height - 140)/2;
+				int chartHeight = (height - 160)/2;
 				chart2 = chart1;
-				chart2.changePosition(x + 20, y + 40 + chartHeight, width - 20, chartHeight);
+				chart2.changePosition(x + 20, y + 60 + chartHeight, width - 20, chartHeight);
 				chart1 = new BarChart(GLOBAL.CHARACTER_SELECTED, x + 20, y + 20, width - 20, chartHeight, CHARACTER_GRAPH);
 			}
 			else {
-				int chartHeight = (height - 160)/3;
+				int chartHeight = (height - 200)/3;
 				chart3 = chart2;
 				chart2 = chart1;
 				// chart 2 and 3 = change x y width height
-				chart2.changePosition(x + 20, y + 40 + chartHeight, width - 20, chartHeight);
-				chart3.changePosition(x + 20, y + 60 + 2*chartHeight, width - 20, chartHeight);
+				chart2.changePosition(x + 20, y + 60 + chartHeight, width - 20, chartHeight);
+				chart3.changePosition(x + 20, y + 100 + 2*chartHeight, width - 20, chartHeight);
 				chart1 = new BarChart(GLOBAL.CHARACTER_SELECTED, x + 20, y + 20, width - 20, chartHeight, CHARACTER_GRAPH);	
 			}
 		}
@@ -115,18 +115,18 @@ public class GraphsArea extends GuiElement{
 				tagCloud1 = new TagCloud(GLOBAL.CHARACTER_SELECTED, x + 20, y + 20, width - 20, height - 120);
 			}
 			else if (tagCloud2 == null) {
-				int chartHeight = (height - 140)/2;
+				int chartHeight = (height - 160)/2;
 				tagCloud2 = tagCloud1;
-				tagCloud2.changePosition(x + 20, y + 40 + chartHeight, width - 20, chartHeight);
+				tagCloud2.changePosition(x + 20, y + 60 + chartHeight, width - 20, chartHeight);
 				tagCloud1 = new TagCloud(GLOBAL.CHARACTER_SELECTED, x + 20, y + 20, width - 20, chartHeight);
 			}
 			else {
-				int chartHeight = (height - 160)/3;
+				int chartHeight = (height - 200)/3;
 				tagCloud3 = tagCloud2;
 				tagCloud2 = tagCloud1;
 				// chart 2 and 3 = change x y width height
-				tagCloud2.changePosition(x + 20, y + 40 + chartHeight, width - 20, chartHeight);
-				tagCloud3.changePosition(x + 20, y + 60 + 2*chartHeight, width - 20, chartHeight);
+				tagCloud2.changePosition(x + 20, y + 60 + chartHeight, width - 20, chartHeight);
+				tagCloud3.changePosition(x + 20, y + 100 + 2*chartHeight, width - 20, chartHeight);
 				tagCloud1 = new TagCloud(GLOBAL.CHARACTER_SELECTED, x + 20, y + 20, width - 20, chartHeight);	
 			}
 		}

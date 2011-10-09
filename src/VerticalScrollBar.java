@@ -7,18 +7,17 @@ class VerticalScrollBar extends GuiElement
     public GuiElement selection;
     public int dragY;
 
-    public VerticalScrollBar()
-    {
+    public VerticalScrollBar() {
         selection = new GuiElement();
         selection.backColor = GLOBAL.processing.color(200, 200, 255, 100);
     }
 
-    public void draw()
-    {
+    public void draw() {
         int bh = (int)(size * height);
         if(bh < 10) bh = 10;
         
-        GLOBAL.processing.stroke(0);
+        GLOBAL.processing.strokeWeight(2);
+        GLOBAL.processing.stroke(GLOBAL.colorLinesLabelY);
         GLOBAL.processing.line(x + width / 2, y, x + width / 2, y + height);
         
         // Draw selection region
@@ -42,8 +41,7 @@ class VerticalScrollBar extends GuiElement
         }
     }
   
-    public void mousePressed()
-    {
+    public void mousePressed() {
         int bh = (int)(size * height);
         if(bh < 10) bh = 10;
         int y1 = y + (int)(value * height);
@@ -56,8 +54,7 @@ class VerticalScrollBar extends GuiElement
         }
     }
   
-    public void mouseReleased()
-    {
+    public void mouseReleased() {
         dragging = false;
     }
     

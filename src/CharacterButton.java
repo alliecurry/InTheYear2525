@@ -120,21 +120,41 @@ public class CharacterButton extends GuiElement{
 		}
 
 	}
-	
-	public void mouseRolloverFunction() {
-		
-		// Draw a rectangle, the label and an image inside, now the image is set to 100x100
-		
-		// Rectangle
-		GLOBAL.processing.noStroke();
-		GLOBAL.processing.rectMode(GLOBAL.processing.CORNER);
-		GLOBAL.processing.fill(GLOBAL.colorIconBackground);
-		GLOBAL.processing.rect( GLOBAL.processing.mouseX +12, GLOBAL.processing.mouseY - 18 -100 , 104, 104 ); //x,y,width,height
-		
-		// Image
-		if (character.getIcon()!= null)
-			GLOBAL.processing.image(character.getIcon(), GLOBAL.processing.mouseX + 14, GLOBAL.processing.mouseY - 16 - 100, 100,100);
 
+	public void mouseRolloverFunction() {
+
+		// Draw a rectangle, the label and an image inside, now the image is set to 100x100
+
+		if(TYPE==LABEL_TYPE) {
+			// Rectangle
+			GLOBAL.processing.noStroke();
+			GLOBAL.processing.rectMode(GLOBAL.processing.CORNER);
+			GLOBAL.processing.fill(GLOBAL.colorIconBackground);
+			GLOBAL.processing.rect( GLOBAL.processing.mouseX +12, GLOBAL.processing.mouseY - 18 -100 , 104, 104 ); //x,y,width,height
+
+			// Image
+			if (character.getIcon()!= null)
+				GLOBAL.processing.image(character.getIcon(), GLOBAL.processing.mouseX + 14, GLOBAL.processing.mouseY - 16 - 100, 100,100);
+		}
+		else {
+			// Rectangle
+			GLOBAL.processing.noStroke();
+			GLOBAL.processing.rectMode(GLOBAL.processing.CORNER);
+			GLOBAL.processing.fill(GLOBAL.colorIconBackground);
+			GLOBAL.processing.rect( GLOBAL.processing.mouseX, GLOBAL.processing.mouseY - 40 - 120 , 100, 130); //x,y,width,height
+			
+			// Image
+			if (character.getIcon()!= null)
+				GLOBAL.processing.image(character.getIcon(), GLOBAL.processing.mouseX, GLOBAL.processing.mouseY - 10 - 100, 100,100);
+			
+			// Text
+			GLOBAL.processing.fill(GLOBAL.colorBackgroundLayerTwo);
+			GLOBAL.processing.textFont(GLOBAL.tFont,14);
+			GLOBAL.processing.textAlign(GLOBAL.processing.CENTER);
+			GLOBAL.processing.text(character.getName_firstToUppercase().replace(" ", "\n").replace("-", "-\n"), 
+					GLOBAL.processing.mouseX + 50, GLOBAL.processing.mouseY - 18 - 120);
+		}
+		
 	}
 
 	////////////////////////////////////////////////////////////////////////////////////////////////////

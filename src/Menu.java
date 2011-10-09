@@ -30,18 +30,21 @@ public class Menu extends GuiElement{
 		cButton.y = 200;
 		cButton.active = true;
 		cButton.setLabel("Pick a character");
+		cButton.fixedSize = true;
 		sButton = new Button();
 		sButton.x = 20;
 		//sButton.y = 270;
 		sButton.y = 200;
 		sButton.active = true;
 		sButton.setLabel("Pick a season");
+		sButton.fixedSize = true;
 		eButton = new Button();
 		eButton.x = 20;
 		//eButton.y = 210;
 		eButton.y = 200;
 		eButton.active = true;
 		eButton.setLabel("Pick an episode");
+		eButton.fixedSize = true;
 		
 		// Character buttons
 		// Number of lines
@@ -51,6 +54,7 @@ public class Menu extends GuiElement{
 		dialButton.setLabel("All Dialog");
 		dialButton.active = true;
 		dialButton.setFontSize(14);
+		dialButton.fixedSize = true;
 		
 		// Catchphrases
 		phButton = new Button();
@@ -59,6 +63,7 @@ public class Menu extends GuiElement{
 		phButton.setLabel("Catchphrases");
 		phButton.active = true;
 		phButton.setFontSize(14);
+		phButton.fixedSize = true;
 		
 		// Word
 		wordButton= new Button();
@@ -67,6 +72,7 @@ public class Menu extends GuiElement{
 		wordButton.setLabel("Tag cloud");
 		wordButton.active = true;
 		wordButton.setFontSize(14);
+		wordButton.fixedSize = true;
 		
 		//Statistical view button
 		viewTypeButton = new MultistateButton();
@@ -83,6 +89,7 @@ public class Menu extends GuiElement{
 		clearButton.setLabel("Clear graphs");
 		clearButton.active = true;
 		clearButton.setFontSize(14);
+		clearButton.fixedSize = true;
 
 	}
 

@@ -6,6 +6,8 @@ class Button extends GuiElement
 	public PImage icon;
 	public  String label;
 	public  int fontSize;
+	public boolean color = false;
+	public boolean fixedSize = false;
 
 	public Button()
 	{
@@ -41,6 +43,8 @@ class Button extends GuiElement
 		{
 			GLOBAL.processing.textFont(GLOBAL.tFont, fontSize);
 			width = (int)(GLOBAL.processing.textWidth(label)) + 10;
+			if (fixedSize)
+				width = intheyear2525.menu.width-40;
 			GLOBAL.processing.textAlign(GLOBAL.processing.LEFT);
 
 			if(mouseOver()) 
@@ -65,6 +69,8 @@ class Button extends GuiElement
 			else
 			{
 				GLOBAL.processing.fill(GLOBAL.colorButtonLabel);
+				if (color)
+					GLOBAL.processing.fill(GLOBAL.colorBlu);
 				GLOBAL.processing.text(label, cx + 5, cy + 20);
 			}
 		}

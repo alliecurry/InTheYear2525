@@ -116,8 +116,16 @@ public class CharacterSelectionPanel extends GuiElement {
 		
 		GLOBAL.processing.noStroke();
 		GLOBAL.processing.rectMode(GLOBAL.processing.CORNERS);
+		GLOBAL.processing.fill(GLOBAL.colorBackgroundLayerTwo);
+		GLOBAL.processing.rect(intheyear2525.graphArea.x, 0, x+width, GLOBAL.processing.height);
 		GLOBAL.processing.fill(GLOBAL.colorStatsArea);
 		GLOBAL.processing.rect(x, y, x+width, y+height);
+		GLOBAL.processing.stroke(GLOBAL.colorLinesLabelY);
+		GLOBAL.processing.strokeWeight(3);
+		GLOBAL.processing.line(x-3, y-3, x+width+3, y-3);
+		GLOBAL.processing.line(x+width+3, y-3, x+width+3, y+height+3);
+		GLOBAL.processing.line(x-3, y+height+3, x+width+3, y+height+3);
+		GLOBAL.processing.line(x-3, y-3, x-3, y+height+3);
 		GLOBAL.processing.noFill();
 		
 		treeView.draw();

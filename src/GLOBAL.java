@@ -35,6 +35,7 @@ public class GLOBAL {
 	public static int colorMenuBackground;
 	public static int colorIconBackground;
 	public static int colorTagCloudBackground;
+	public static int colorBlu;
 
 	public static ColorSwatch COLORS;
 	

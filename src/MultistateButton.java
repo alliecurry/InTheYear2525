@@ -8,6 +8,7 @@ public class MultistateButton extends GuiElement{
 	private ArrayList<String> states = new ArrayList<String>();
 	private int stateIndex;
 	private String label;
+	public boolean color = false;
 
 	public MultistateButton()
 	{
@@ -28,7 +29,8 @@ public class MultistateButton extends GuiElement{
 
 
 		GLOBAL.processing.textFont(GLOBAL.tFont, 19);
-        width = (int)(GLOBAL.processing.textWidth(states.get(stateIndex))) + 20;
+//        width = (int)(GLOBAL.processing.textWidth(states.get(stateIndex))) + 20;
+		width = intheyear2525.menu.width-40;
 		GLOBAL.processing.textAlign(GLOBAL.processing.LEFT);
 
 		if(mouseOver()) 
@@ -47,7 +49,7 @@ public class MultistateButton extends GuiElement{
 		GLOBAL.processing.strokeWeight(1);
 
 		GLOBAL.processing.fill(GLOBAL.colorButtonLabel);
-		GLOBAL.processing.text(states.get(stateIndex).substring(0,1).toUpperCase() + states.get(stateIndex).substring(1), cx + 10, cy + 20);
+		GLOBAL.processing.text(states.get(stateIndex).substring(0,1).toUpperCase() + states.get(stateIndex).substring(1), cx + 5, cy + 20);
 
 	}
 	

@@ -93,7 +93,7 @@ public class intheyear2525 extends PApplet{
 		// Create the plotting area, composed at most by 3 plots
 		graphArea = new GraphsArea();
 		graphArea.x = 220;
-		graphArea.y = 40;
+		graphArea.y = 20;
 		graphArea.width = 1000 - 220;
 		graphArea.height = 750 - 40;
 		graphArea.createScrollBar();
@@ -119,11 +119,8 @@ public class intheyear2525 extends PApplet{
 
 	public void draw() {
 		
-		//this.setVisible(true);
-
 		frameCounter++;
-
-
+		
 		drawLayerTwoBackground();
 		graphArea.draw();
 		menu.draw();
@@ -131,7 +128,6 @@ public class intheyear2525 extends PApplet{
 
 		drawLayerTwoText();
 		noFill();
-
 
 		if (frameCounter == 120) { // wait 2 sec before going to sleep
 			noLoop();
@@ -148,20 +144,12 @@ public class intheyear2525 extends PApplet{
 		fill(GLOBAL.colorText);
 		textFont(GLOBAL.tFont,26);
 		textAlign(CENTER);
-//		// TODO now only for season
-//		if (GLOBAL.SEASON_SELECTED == 0)
-//			text("You have selected: all seasons", width/2 - 150, 40);
-//		else
-//		text("You have selected: season " + GLOBAL.SEASON_SELECTED, width/2 - 150, 40);
-		text("In the Year 2525", 100, 40);
-		
+		text("In the Year 2525", 100, 40);	
 		textFont(GLOBAL.tFont,16);
 		GLOBAL.processing.textAlign(GLOBAL.processing.LEFT);
-		GLOBAL.processing.fill(color(136,204,238));
+		GLOBAL.processing.fill(GLOBAL.colorBlu);
 		text("Select type of analysis: ",20, 140);
 		text("Stats or Plots: ",20, 390);
-		
-		
 	}
 	
 	// Color setup function, all colors should be set here, so every change will be global
@@ -177,6 +165,7 @@ public class intheyear2525 extends PApplet{
 		GLOBAL.colorMenuBackground = color(28,28,28);
 		GLOBAL.colorIconBackground = color(224);
 		GLOBAL.colorTagCloudBackground = color(224,224,224,0);
+		GLOBAL.colorBlu = color(136,204,238);
 		
 		int[] temp = {color(136,204,238), color(68,170,153), color(17,119,51), color(221,204,119), 
 					color(204,102,119), color(136,34,85), color(146,189,16), color(170,68,153), 
@@ -203,16 +192,20 @@ public class intheyear2525 extends PApplet{
 		frameCounter = 0;
 		loop();
 
-		println("x = " + mouseX+ "y =" + mouseY);
+		//println("x = " + mouseX+ "y =" + mouseY);
 
 		if(menu.mouseOver() || menu.characterPicker.mouseOver() || menu.seasonPicker.mouseOver() || menu.episodePicker.mouseOver())
 			menu.doAction();
 
 		// Change type of analysis
 		if ( analysisTypeButton.mouseOver() ) {
+			GLOBAL.WORD_ANALYSIS = false;
 			analysisTypeButton.doAction();
 			GLOBAL.ANALYSIS_TYPE = analysisTypeButton.getState();
 			graphArea.clearGraphs();
+			GLOBAL.charactersSelected.clear();
+			GLOBAL.episodesSelected.clear();
+			GLOBAL.seasonsSelected.clear();
 		}
 
 		if (graphArea.mouseOver())
