@@ -144,14 +144,15 @@ public class intheyear2525 extends PApplet{
 	
 	public void drawLayerTwoText() {
 		fill(GLOBAL.colorText);
-		textFont(GLOBAL.tFont,20);
+		textFont(GLOBAL.tFont,26);
 		textAlign(CENTER);
 //		// TODO now only for season
 //		if (GLOBAL.SEASON_SELECTED == 0)
 //			text("You have selected: all seasons", width/2 - 150, 40);
 //		else
 //		text("You have selected: season " + GLOBAL.SEASON_SELECTED, width/2 - 150, 40);
-		text("In the year 2525", 100, 40);
+		text("In the Year 2525", 100, 40);
+		
 		textFont(GLOBAL.tFont,16);
 		GLOBAL.processing.textAlign(GLOBAL.processing.LEFT);
 		GLOBAL.processing.fill(color(136,204,238));

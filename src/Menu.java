@@ -111,7 +111,7 @@ public class Menu extends GuiElement{
 		
 		GLOBAL.processing.fill(GLOBAL.colorText);
 		GLOBAL.processing.textFont(GLOBAL.tFont,24);
-		GLOBAL.processing.text("Menu", 20, 100);
+		GLOBAL.processing.text("Menu", 15, 100);
 
 		if (selectingCharacter)
 			characterPicker.draw();
@@ -126,6 +126,15 @@ public class Menu extends GuiElement{
 			viewTypeButton.draw();
 			viewTypeButton.active = true;
 		}
+		
+		GLOBAL.processing.stroke(GLOBAL.processing.color(128));
+		GLOBAL.processing.line(0, 60, 199, 60);
+		//GLOBAL.processing.line(0, 115, 200, 115);
+		
+		GLOBAL.processing.stroke(GLOBAL.processing.color(50,50,50));
+		GLOBAL.processing.line(20, 190, 180, 190);
+		GLOBAL.processing.line(20, 360, 180, 360);
+		GLOBAL.processing.line(20, 435, 180, 435);
 		
 		clearButton.draw();
 

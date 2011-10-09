@@ -445,6 +445,10 @@ public class Parser {
 		   return "joey mouspad";
 	   }
 	   
+	   if(c.equals("mr. fry")) {
+		   return "yancy";
+	   }
+	   
 	   if(c.equals("stephen hawking's head")) {
 		   return "stephen hawking";
 	   }

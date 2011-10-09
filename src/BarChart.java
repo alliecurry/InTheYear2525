@@ -323,8 +323,9 @@ public class BarChart extends GuiElement{
 		
 		//Display most appeared with
 		GLOBAL.processing.textFont(GLOBAL.tFont,14);
-		GLOBAL.processing.text("Appears Most With:", x + width - 38, y + 140);
-		GLOBAL.processing.text(character.getMostAppearence(), x + width - 38, y + 155);
+		GLOBAL.processing.text("Appears Most", x + width - 38, y + 130);
+		GLOBAL.processing.text("With:", x + width - 38, y + 145);
+		GLOBAL.processing.text(character.getMostAppearence(), x + width - 38, y + 162);
 
 		if (character.getIcon() != null)
 			GLOBAL.processing.image( character.getIcon(), x + width - 80, y + 30, 80, 80);
@@ -479,8 +480,9 @@ public class BarChart extends GuiElement{
 		
 		//Display most appeared with
 		GLOBAL.processing.textFont(GLOBAL.tFont,14);
-		GLOBAL.processing.text("Appears Most With:", x + width - 38, y + 140);
-		GLOBAL.processing.text(character.getMostAppearence(), x + width - 38, y + 155);
+		GLOBAL.processing.text("Appears Most", x + width - 38, y + 130);
+		GLOBAL.processing.text("With:", x + width - 38, y + 145);
+		GLOBAL.processing.text(character.getMostAppearence(), x + width - 38, y + 162);
 
 		if (character.getIcon() != null)
 			GLOBAL.processing.image( character.getIcon(), x + width - 80, y + 30, 80, 80);
