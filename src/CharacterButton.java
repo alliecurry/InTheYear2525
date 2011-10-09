@@ -10,22 +10,6 @@ public class CharacterButton extends GuiElement{
 	
 	public Character character;
 	
-//	// For now, the length of the square depends on the occurrences
-//	public CharacterButton(String name, int occurrences, boolean imageButton) {	
-//		if (imageButton) {
-//			label = name;
-//			setIcon("images/"+name+".jpg");
-//			int importanceScaleFactor = (int)((float)occurrences / 10 * 20); 
-//			height = importanceScaleFactor;
-//			width = importanceScaleFactor;
-//			//System.out.println(width+ " "+height);
-//		}
-//		else {
-//			setLabel(name);
-//			width = (int)(GLOBAL.processing.textWidth(label)) + 10;
-//		}
-//	}
-	
 	public CharacterButton(String name, int BUTTON_TYPE) {
 		
 		if (BUTTON_TYPE == LABEL_TYPE) {
@@ -47,7 +31,6 @@ public class CharacterButton extends GuiElement{
 	
 	}
 
-	////////////////////////////////////////////////////////////////////////////////////////////////////
 	public void setIcon(String name)
 	{
 		if(name != null)
@@ -56,7 +39,6 @@ public class CharacterButton extends GuiElement{
 		}
 	}
 
-	////////////////////////////////////////////////////////////////////////////////////////////////////
 	public void setLabel(String name)
 	{
 		label = name;
@@ -68,15 +50,12 @@ public class CharacterButton extends GuiElement{
 			
 	}
 
-	////////////////////////////////////////////////////////////////////////////////////////////////////
 	public void draw()
 	{
 
 		int cx = x;
 		int cy = y;
 		
-		// with icon
-//		if(icon != null)
 		if(TYPE == NO_LABEL_TYPE)
 		{
 			//GLOBAL.processing.image(icon, x, y, width, height);
@@ -95,11 +74,13 @@ public class CharacterButton extends GuiElement{
 			}
 			GLOBAL.processing.strokeWeight(1);
 		}
-		// without icon
+		// with label
 		else 
 		{
 			GLOBAL.processing.textFont(GLOBAL.tFont, 19);
-			width = (int)(GLOBAL.processing.textWidth(label)) + 10;
+			width = (int)(GLOBAL.processing.textWidth(label)) + 43;
+			if (character.getIcon() != null)
+				GLOBAL.processing.image(character.getIcon(), x, y, 30, 30);
 			GLOBAL.processing.textAlign(GLOBAL.processing.LEFT);
 			if(mouseOver()) 
 			{
@@ -116,7 +97,7 @@ public class CharacterButton extends GuiElement{
 
 			GLOBAL.processing.strokeWeight(1);
 			GLOBAL.processing.fill(GLOBAL.colorButtonLabel);
-			GLOBAL.processing.text(label.substring(0,1).toUpperCase() + label.substring(1), cx + 5, cy + 20);
+			GLOBAL.processing.text(label.substring(0,1).toUpperCase() + label.substring(1), cx + 35, cy + 20);
 		}
 
 	}
@@ -157,7 +138,6 @@ public class CharacterButton extends GuiElement{
 		
 	}
 
-	////////////////////////////////////////////////////////////////////////////////////////////////////
 	public void doAction() {
 		
 		if (GLOBAL.charactersSelected.contains(character))
@@ -190,8 +170,6 @@ public class CharacterButton extends GuiElement{
 		Menu.selectingCharacter = false;
 	}
 
-	////////////////////////////////////////////////////////////////////////////////////////////////////
-	// Private stuff.
 	PImage icon;
 	String label;
 	

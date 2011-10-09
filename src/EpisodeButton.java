@@ -26,8 +26,6 @@ public class EpisodeButton extends Button{
 			GLOBAL.episodesSelected.add(0,episode);
 		}
 		
-		//main_class.graphArea.clearGraphs();
-
 		// Create the new graph to be plot
 		intheyear2525.graphArea.createEpisodeGraph();
 		

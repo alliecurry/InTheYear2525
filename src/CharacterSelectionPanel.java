@@ -37,7 +37,6 @@ public class CharacterSelectionPanel extends GuiElement {
 		setCharacterIconsTreemap(576,179,741,331,"amy");
 		setCharacterIconsTreemap(351, 181, 572, 302, "leela");
 		setCharacterIconsTreemap(351, 305, 575, 433, "bender");
-		//setCharacterIconsTreemap(868, 555, 900, 583,"panucci");
 		setCharacterIconsTreemap(576,331,659,432,"zapp brannigan");
 		setCharacterIconsTreemap(659,333,741,431,"morbo");
 		setCharacterIconsTreemap(576,433,646,491,"url");
@@ -80,18 +79,14 @@ public class CharacterSelectionPanel extends GuiElement {
 		setCharacterIconsTreemap(859,620,900,649,"paper-hatted salesman");
 		setCharacterIconsTreemap(769,650,818,679,"morris");
 		setCharacterIconsTreemap(819,649,859,679,"clamps");
-		setCharacterIconsTreemap(859,649,899,679,"dr. cahill");
-		
-		// TODO : to be completed ........
-		
-		
+		setCharacterIconsTreemap(859,649,899,679,"dr. cahill");		
 		
 		// Create a new scrollbar
 		scroll = new VerticalScrollBar();
 		scroll.x = x + 20;
 		scroll.y = y + 100;	
 		scroll.width = 15;
-		scroll.height = 450;	
+		scroll.height = 430;	
 		scroll.size = (float)4 / Parser.ALL_CHARACTERS.size();
 		
 		treeView = new Button();
@@ -164,7 +159,7 @@ public class CharacterSelectionPanel extends GuiElement {
 			for(int j = (int)val; j <= val + 10 && j < GLOBAL.allCharacterListButtons.size(); j++) {
 				if (GLOBAL.allCharacterListButtons.get(j) == null)
 					break;
-				GLOBAL.allCharacterListButtons.get(j).x = x + 50;
+				GLOBAL.allCharacterListButtons.get(j).x = x + 70;
 				GLOBAL.allCharacterListButtons.get(j).y = y + 100 + elementNumber*40;
 				GLOBAL.allCharacterListButtons.get(j).active = true;
 				GLOBAL.allCharacterListButtons.get(j).draw();

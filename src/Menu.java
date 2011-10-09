@@ -200,6 +200,7 @@ public class Menu extends GuiElement{
 		else if (GLOBAL.ANALYSIS_TYPE.equals("characters") && wordButton.mouseOver() && GLOBAL.WORD_ANALYSIS == false) {
 			GLOBAL.WORD_ANALYSIS = true;
 			GLOBAL.CATCHPHRASES_ANALYSIS = false;
+			GLOBAL.STAT_VIEW = false;
 			intheyear2525.graphArea.clearGraphs();
 			for (int i=0; i < GLOBAL.charactersSelected.size() ; i++ ) {
 				GLOBAL.CHARACTER_SELECTED = GLOBAL.charactersSelected.get(i);
