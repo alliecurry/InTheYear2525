@@ -547,6 +547,7 @@ public class Parser {
        //splitLine[2] = Phrase in regex form.   
 
        int index = findCharacter(splitLine[0]);	//Find index of character in ALL_CHARACTERS
+       if(index == -1) { return; }
        //Add current catchphrase to the character's list of catchphrases.
        ALL_CHARACTERS.get(index).addPhrase(splitLine[1], splitLine[2]);
    }
