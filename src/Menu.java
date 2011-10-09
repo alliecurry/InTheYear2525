@@ -179,6 +179,9 @@ public class Menu extends GuiElement{
 				selectingCharacter = false;
 			else
 				selectingCharacter = true;
+			
+			//Hide instruction text
+			GLOBAL.drawInstructions = false;
 			}
 
 		else if (GLOBAL.ANALYSIS_TYPE.equals("seasons") && sButton.mouseOver()){
@@ -188,6 +191,9 @@ public class Menu extends GuiElement{
 				selectingSeason = false;
 			else
 				selectingSeason = true;
+			
+			//Hide instruction text
+			GLOBAL.drawInstructions = false;
 			}
 		
 		else if (GLOBAL.ANALYSIS_TYPE.equals("episodes") && eButton.mouseOver()){
@@ -197,6 +203,9 @@ public class Menu extends GuiElement{
 				selectingEpisode = false;
 			else
 				selectingEpisode = true;
+			
+			//Hide instruction text
+			GLOBAL.drawInstructions = false;
 			}
 		
 		// Type of graphs buttons
@@ -208,7 +217,9 @@ public class Menu extends GuiElement{
 			for (int i=0; i < GLOBAL.charactersSelected.size() ; i++ ) {
 				GLOBAL.CHARACTER_SELECTED = GLOBAL.charactersSelected.get(i);
 				intheyear2525.graphArea.createCharacterGraph();
-			}			
+			}
+			//Hide instruction text
+			GLOBAL.drawInstructions = false;
 		}
 		else if ( GLOBAL.ANALYSIS_TYPE.equals("characters") && phButton.mouseOver() && (GLOBAL.CATCHPHRASES_ANALYSIS == false|| 
 				GLOBAL.WORD_ANALYSIS == true)) {
@@ -227,7 +238,9 @@ public class Menu extends GuiElement{
 			for (int i=0; i < GLOBAL.charactersSelected.size() ; i++ ) {
 				GLOBAL.CHARACTER_SELECTED = GLOBAL.charactersSelected.get(i);
 				intheyear2525.graphArea.createCharacterGraph();
-			}	
+			}
+			//Hide instruction text
+			GLOBAL.drawInstructions = false;
 		}
 		
 		
@@ -249,9 +262,15 @@ public class Menu extends GuiElement{
 			GLOBAL.episodesSelected.clear();
 			GLOBAL.charactersSelected.clear();
 			GLOBAL.seasonsSelected.clear();
+			GLOBAL.drawInstructions = true;	//Show instruction text
 		}
 		else if(infoButton.mouseOver()) {
 			showInfo = !showInfo;
+			
+			if(showInfo) {
+				//Hide instruction text
+				GLOBAL.drawInstructions = false;
+			}
 		}
 
 	}

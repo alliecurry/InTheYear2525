@@ -17,8 +17,10 @@ public class intheyear2525 extends PApplet{
 	public static GraphsArea graphArea;
 	public static MultistateButton analysisTypeButton;
 	public TagCloud tc;
+	private PImage title;
 	
 	public void setup() {
+		title = GLOBAL.processing.loadImage("images/title.jpg");
 		
 		setupColors();
 		
@@ -141,15 +143,32 @@ public class intheyear2525 extends PApplet{
 	}
 	
 	public void drawLayerTwoText() {
+		
+		GLOBAL.processing.image(title, 0, 20);
+		
 		fill(GLOBAL.colorText);
-		textFont(GLOBAL.tFont,26);
+		/*textFont(GLOBAL.tFont,26);
 		textAlign(CENTER);
-		text("In the Year 2525", 100, 40);	
+		text("In the Year 2525", 100, 40);	*/
 		textFont(GLOBAL.tFont,16);
 		GLOBAL.processing.textAlign(GLOBAL.processing.LEFT);
 		GLOBAL.processing.fill(GLOBAL.colorBlu);
 		text("Select type of analysis: ",20, 140);
 		text("Stats or Plots: ",20, 390);
+		
+		//Instructions to be displayed on startup + after clearing all graphs
+		if(GLOBAL.drawInstructions) {
+			fill(GLOBAL.colorText);
+			textFont(GLOBAL.tFont,24);
+			text("Getting Started: ",220, 100);
+			
+			GLOBAL.processing.fill(GLOBAL.colorBlu);
+			textFont(GLOBAL.tFont,20);
+			text("1. Select analysis of Characters, Episodes, or Seasons.",240, 140);
+			text("2. Add Characters/Episodes/Seasons to your data set.",240, 220);
+			text("3. Select whether you wish to view data in graph or statistical form.",240, 390);
+			
+		}
 	}
 	
 	// Color setup function, all colors should be set here, so every change will be global

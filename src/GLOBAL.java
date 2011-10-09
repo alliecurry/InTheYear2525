@@ -83,6 +83,10 @@ public class GLOBAL {
 	//Variable used to determine if parsing transcripts with full dialog (= false), 
 	//	or only mapping words (= true)
 	public static boolean parseForWordMap = false;
+	
+	//Boolean representing whether or not to draw instructions on main screen
+	//	Only true on startup & after clearing graphs.
+	public static boolean drawInstructions = true;
 		
 	public GLOBAL(PApplet p) {
 		processing = p;
