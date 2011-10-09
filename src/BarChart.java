@@ -310,7 +310,7 @@ public class BarChart extends GuiElement{
 
 		rectWidth = (float)(width)/(2*(indexEnd - indexStart));
 		GLOBAL.COLORS.reset();
-				
+
 		for ( int i = indexStart; i <= indexEnd; i++ ) {
 
 			GLOBAL.processing.fill(GLOBAL.COLORS.getNextColor());
@@ -325,6 +325,8 @@ public class BarChart extends GuiElement{
 				GLOBAL.processing.stroke(GLOBAL.colorLinesLabelY);
 				GLOBAL.processing.line(barX - rectWidth, y, barX- rectWidth, y+height);
 				GLOBAL.processing.noStroke();
+				GLOBAL.processing.textAlign(GLOBAL.processing.CENTER);
+				GLOBAL.processing.text(Parser.LIST_ALL.get(i).getSeason(), barX-rectWidth, y + height + 10);
 			}
 			
 			GLOBAL.processing.rect( barX - rectWidth/2, barY, barX + rectWidth/2, y + height);
