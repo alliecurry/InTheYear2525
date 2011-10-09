@@ -32,7 +32,6 @@ class Button extends GuiElement
 
 	public void draw()
 	{
-
 		int cx = x;
 		int cy = y;
 		if(icon != null)
@@ -47,7 +46,6 @@ class Button extends GuiElement
 			if (fixedSize) {
 				width = intheyear2525.menu.width-40;
 				GLOBAL.processing.textAlign(GLOBAL.processing.LEFT);
-				GLOBAL.gu.drawBox(x, y, width, height, 0, GLOBAL.processing.color(50,50,50), 255);
 			}
 			
 			if(mouseOver()) 

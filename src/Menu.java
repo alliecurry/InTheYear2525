@@ -156,7 +156,7 @@ public class Menu extends GuiElement{
 		GLOBAL.processing.line(0, 60, 199, 60);
 		//GLOBAL.processing.line(0, 115, 200, 115);
 		
-		GLOBAL.processing.stroke(GLOBAL.colorBlu);
+		GLOBAL.processing.stroke(GLOBAL.processing.color(50));
 		GLOBAL.processing.line(20, 190, 180, 190);
 		GLOBAL.processing.line(20, 360, 180, 360);
 		GLOBAL.processing.line(20, 435, 180, 435);
@@ -166,7 +166,6 @@ public class Menu extends GuiElement{
 		
 		if (showInfo && info!=null)
 			GLOBAL.processing.image(info, 312 + width/2, 170);
-
 	}
 
 	public void doAction() {
