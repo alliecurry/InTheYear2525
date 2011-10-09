@@ -163,9 +163,9 @@ public class intheyear2525 extends PApplet{
 			text("Getting Started: ",220, 100);
 			
 			textFont(GLOBAL.tFont,20);
-			text("1. Select analysis of Characters, Episodes, or Seasons.",240, 140);
-			text("2. Add Characters/Episodes/Seasons to your data set.",240, 220);
-			text("3. Select whether you wish to view data in graph or statistical form.",240, 390);
+			text("<-- Select analysis of Characters, Episodes, or Seasons.",240, 140);
+			text("<-- Add Characters/Episodes/Seasons to your data set.",240, 220);
+			text("<-- Select whether you wish to view data in graph or statistical form.",240, 390);
 			
 		}
 	}
