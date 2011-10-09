@@ -160,7 +160,7 @@ public class intheyear2525 extends PApplet{
 		if(GLOBAL.drawInstructions) {
 			GLOBAL.processing.fill(GLOBAL.colorBlu);
 			textFont(GLOBAL.tFont,24);
-			text("Getting Started: ",220, 100);
+			text("Getting Started: ",240, 45);
 			
 			textFont(GLOBAL.tFont,20);
 			text("<-- Select analysis of Characters, Episodes, or Seasons.",240, 140);
