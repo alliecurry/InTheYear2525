@@ -27,7 +27,9 @@ public class Parser {
         public static ArrayList<Episode> LIST_ALL = new ArrayList<Episode>(); 
         
         //Array that lists characters who have catchphrases
-        String[] phraseChars = {"fry", "bender", "leela", "farnsworth", "zoidberg", "amy", "zapp brannigan", "lrrr","kif"};
+        String[] phraseChars = {"fry", "bender", "leela", "farnsworth", "zoidberg", "hermes", "amy", "zapp brannigan", 
+        						"lrrr", "kif", "scruffy", "dwight", "terry", "url", "elzar", "vernon", "santa"
+        						 };
        
         int episode;    //Current episode number
         int season;		//Current season number

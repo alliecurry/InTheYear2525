@@ -1,4 +1,4 @@
-6	15	Möbius Dick	8	8	20110804	103
+6	15	Mobius Dick	8	8	20110804	103
 Leela	Where's,Professor
 Bender	Eh,probably,dead,dissolving,bathtub,we're,lucky
 Professor Farnsworth	widow's,walk,keeping,hopeless,vigil,return,delivery,crew,It's,fifty,years,disappeared
