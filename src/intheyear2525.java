@@ -153,7 +153,7 @@ public class intheyear2525 extends PApplet{
 		textFont(GLOBAL.tFont,16);
 		GLOBAL.processing.textAlign(GLOBAL.processing.LEFT);
 		GLOBAL.processing.fill(GLOBAL.colorBlu);
-		text("Select type of analysis: ",20, 140);
+		text("Select analysis type: ",20, 140);
 		text("Stats or Plots: ",20, 390);
 		
 		//Instructions to be displayed on startup + after clearing all graphs
