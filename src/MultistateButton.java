@@ -9,20 +9,17 @@ public class MultistateButton extends GuiElement{
 	private int stateIndex;
 	private String label;
 
-	////////////////////////////////////////////////////////////////////////////////////////////////////
 	public MultistateButton()
 	{
 		width = (int)(GLOBAL.processing.textWidth("characters") + 20);
 		height = 30;
 	}
 
-	////////////////////////////////////////////////////////////////////////////////////////////////////
 	public void setLabel(String name)
 	{
 		label = name;
 	}
 
-	////////////////////////////////////////////////////////////////////////////////////////////////////
 	public void draw()
 	{
 
@@ -31,8 +28,8 @@ public class MultistateButton extends GuiElement{
 
 
 		GLOBAL.processing.textFont(GLOBAL.tFont, 19);
-        width = (int)(GLOBAL.processing.textWidth("characters")) + 20;
-		GLOBAL.processing.textAlign(GLOBAL.processing.CENTER);
+        width = (int)(GLOBAL.processing.textWidth(states.get(stateIndex))) + 20;
+		GLOBAL.processing.textAlign(GLOBAL.processing.LEFT);
 
 		if(mouseOver()) 
 		{
@@ -50,7 +47,7 @@ public class MultistateButton extends GuiElement{
 		GLOBAL.processing.strokeWeight(1);
 
 		GLOBAL.processing.fill(GLOBAL.colorButtonLabel);
-		GLOBAL.processing.text(states.get(stateIndex), cx + 10 + GLOBAL.processing.textWidth("characters")/2, cy + 20);
+		GLOBAL.processing.text(states.get(stateIndex).substring(0,1).toUpperCase() + states.get(stateIndex).substring(1), cx + 10, cy + 20);
 
 	}
 	
