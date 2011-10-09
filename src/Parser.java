@@ -28,8 +28,8 @@ public class Parser {
         
         //Array that lists characters who have catchphrases
         String[] phraseChars = {"fry", "bender", "leela", "farnsworth", "zoidberg", "hermes", "amy", "zapp brannigan", 
-        						"lrrr", "kif", "scruffy", "dwight", "terry", "url", "elzar", "vernon", "santa"
-        						 };
+        						"lrrr", "kif", "scruffy", "dwight", "terry", "url", "elzar", "vernon", "santa",
+        						 "labarbara", "cubert", "sal", "nixon", "nd-nd", "hattie"};
        
         int episode;    //Current episode number
         int season;		//Current season number
