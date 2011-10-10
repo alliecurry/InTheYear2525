@@ -313,7 +313,8 @@ public class BarChart extends GuiElement{
 
 		for ( int i = indexStart; i <= indexEnd; i++ ) {
 
-			GLOBAL.processing.fill(GLOBAL.COLORS.getNextColor());
+			//GLOBAL.processing.fill(GLOBAL.COLORS.getNextColor());
+			GLOBAL.processing.fill(GLOBAL.COLORS.getColor(i));
 			
 			value = Parser.LIST_ALL.get(i).getNumberOfLinesPerCharacter(character);
 			barY = GLOBAL.processing.map(value, 0, 90, y + height, y);					 // TODO 100 is a default value, must be set as the max	

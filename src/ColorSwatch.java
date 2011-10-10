@@ -30,4 +30,9 @@ public class ColorSwatch {
 		return colors;
 	}
 	
+	public int getColor(int i)
+	{
+		return colors[i%(colors.length)];
+	}
+	
 }
