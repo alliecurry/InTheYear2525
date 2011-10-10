@@ -325,6 +325,7 @@ public class BarChart extends GuiElement{
 				GLOBAL.processing.stroke(GLOBAL.colorLinesLabelY);
 				GLOBAL.processing.line(barX - rectWidth, y, barX- rectWidth, y+height);
 				GLOBAL.processing.noStroke();
+				GLOBAL.processing.fill(GLOBAL.colorText);
 				GLOBAL.processing.textAlign(GLOBAL.processing.CENTER);
 				GLOBAL.processing.text(Parser.LIST_ALL.get(i).getSeason(), barX-rectWidth, y + height + 10);
 			}
@@ -441,6 +442,7 @@ public class BarChart extends GuiElement{
 				GLOBAL.processing.stroke(GLOBAL.colorLinesLabelY);
 				GLOBAL.processing.line(barX - rectWidth, y, barX- rectWidth, y+height);
 				GLOBAL.processing.noStroke();
+				GLOBAL.processing.fill(GLOBAL.colorText);
 				GLOBAL.processing.textAlign(GLOBAL.processing.CENTER);
 				GLOBAL.processing.text(Parser.LIST_ALL.get(i).getSeason(), barX-rectWidth, y + height + 10);
 			}
