@@ -20,7 +20,7 @@ public class intheyear2525 extends PApplet{
 	private PImage title;
 	
 	public void setup() {
-		title = GLOBAL.processing.loadImage("images/title.jpg");
+		title = GLOBAL.processing.loadImage("images/title1.jpg");
 		
 		setupColors();
 		

@@ -148,8 +148,9 @@ public class Menu extends GuiElement{
 			viewTypeButton.active = true;
 		}
 		
-		GLOBAL.processing.stroke(GLOBAL.processing.color(128));
-		GLOBAL.processing.line(0, 60, 199, 60);
+		//Line under title
+		/*GLOBAL.processing.stroke(GLOBAL.processing.color(128));
+		GLOBAL.processing.line(0, 60, 199, 60);*/
 		
 		GLOBAL.processing.stroke(GLOBAL.processing.color(50,50,50));
 		GLOBAL.processing.line(20, 115, 180, 115);
