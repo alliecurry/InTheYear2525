@@ -593,26 +593,30 @@ public class BarChart extends GuiElement{
 		// Draw a rectangle, the label and an image inside, now the image is set to 100x100
 		
 		int x1 = GLOBAL.processing.mouseX + 10;
+		int y1 = GLOBAL.processing.mouseY + 20;
 		
 		if (x1 > x + plotWidth/2)
 			x1 = x1 - 150;
+		if(y1 > y + height/2)
+			y1 = y1-180;
+
 		
 		// Rectangle
 		GLOBAL.processing.noStroke();
 		GLOBAL.processing.rectMode(GLOBAL.processing.CORNER);
 		GLOBAL.processing.fill(GLOBAL.colorIconBackground);
-		GLOBAL.processing.rect( x1, GLOBAL.processing.mouseY - 40 - 140 , 100, 150); //x,y,width,height
+		GLOBAL.processing.rect( x1, /*GLOBAL.processing.mouseY - 40 - 140*/y1 , 100, 150); //x,y,width,height
 		
 		// Image
 		if (character.getIcon()!= null)
-			GLOBAL.processing.image(character.getIcon(), x1, GLOBAL.processing.mouseY - 10 - 100, 100,100);
+			GLOBAL.processing.image(character.getIcon(), x1, /*GLOBAL.processing.mouseY - 10 - 100*/y1+60, 100,100);
 		
 		// Text
 		GLOBAL.processing.fill(GLOBAL.colorBackgroundLayerTwo);
 		GLOBAL.processing.textFont(GLOBAL.tFont,14);
 		GLOBAL.processing.textAlign(GLOBAL.processing.CENTER);
-		GLOBAL.processing.text((rolloverValue) + s, x1 + 50, GLOBAL.processing.mouseY - 18 - 140);
-		GLOBAL.processing.text(character.getName_firstToUppercase().replace(" ", "\n").replace("-", "-\n"), x1 + 50, GLOBAL.processing.mouseY - 18 - 120); // center in the upper side, middle point, of the icon 100x100
+		GLOBAL.processing.text((rolloverValue) + s, x1 + 50, /*GLOBAL.processing.mouseY - 18 - 140*/y1+57);
+		GLOBAL.processing.text(character.getName_firstToUppercase().replace(" ", "\n").replace("-", "-\n"), x1 + 50, /*GLOBAL.processing.mouseY - 18 - 120*/y1+16); // center in the upper side, middle point, of the icon 100x100
 		
 	}
 	
