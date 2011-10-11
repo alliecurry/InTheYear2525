@@ -147,9 +147,6 @@ public class intheyear2525 extends PApplet{
 		GLOBAL.processing.image(title, 0, 20);
 		
 		fill(GLOBAL.colorText);
-		/*textFont(GLOBAL.tFont,26);
-		textAlign(CENTER);
-		text("In the Year 2525", 100, 40);	*/
 		textFont(GLOBAL.tFont,16);
 		GLOBAL.processing.textAlign(GLOBAL.processing.LEFT);
 		GLOBAL.processing.fill(GLOBAL.colorBlu);

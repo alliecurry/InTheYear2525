@@ -91,13 +91,13 @@ public class CharacterSelectionPanel extends GuiElement {
 		
 		treeView = new Button();
 		treeView.x = x + 20;
-		treeView.y = y + 30;
+		treeView.y = y + 40;
 		treeView.active = true;
 		treeView.setLabel("Treemap View");
 		
 		listView = new Button();
 		listView.x = x + 200;
-		listView.y = y + 30;
+		listView.y = y + 40;
 		listView.active = true;
 		listView.setLabel("List View");
 		
@@ -132,13 +132,13 @@ public class CharacterSelectionPanel extends GuiElement {
 				GLOBAL.processing.image(treemap, x, y + 100, 660, 500);
 			
 			if (legend != null) {
-				GLOBAL.processing.image(legend, x + 390, y + 30);
+				GLOBAL.processing.image(legend, x + 390, y + 40);
 				GLOBAL.processing.fill(GLOBAL.colorText);
 				GLOBAL.processing.textFont(GLOBAL.tFont,10);
 				GLOBAL.processing.textAlign(GLOBAL.processing.LEFT);
-				GLOBAL.processing.text(" 0-25    26-50   51-75   76-100   101-120", x + 390, y + 20);
-				GLOBAL.processing.text("- min      5", x + 597, y + 40);
-				GLOBAL.processing.text("+ max 114", x + 597, y + 57);
+				GLOBAL.processing.text(" 0-25    26-50   51-75   76-100   101-120", x + 390, y + 30);
+				GLOBAL.processing.text("- min      6", x + 597, y + 50);
+				GLOBAL.processing.text("+ max 114", x + 597, y + 67);
 			}
 			
 			for (int i=0; i< characterIconsTreemap.size() ; i++) {
