@@ -12,8 +12,8 @@ public class CharacterSelectionPanel extends GuiElement {
 	
 	public boolean list = false;  // false = treeMap view. true = listView
 	
-	// test
 	public PImage treemap;
+	public PImage legend;
 	
 	public ArrayList<CharacterButton> characterIconsTreemap;
 	
@@ -91,18 +91,18 @@ public class CharacterSelectionPanel extends GuiElement {
 		
 		treeView = new Button();
 		treeView.x = x + 20;
-		treeView.y = y + 50;
+		treeView.y = y + 30;
 		treeView.active = true;
 		treeView.setLabel("Treemap View");
 		
 		listView = new Button();
 		listView.x = x + 200;
-		listView.y = y + 50;
+		listView.y = y + 30;
 		listView.active = true;
 		listView.setLabel("List View");
 		
-		// test
 		treemap = GLOBAL.processing.loadImage("images/treemap2.jpg");
+		legend = GLOBAL.processing.loadImage("images/legend.jpg");
 		
 	}
 	
@@ -122,16 +122,24 @@ public class CharacterSelectionPanel extends GuiElement {
 		GLOBAL.processing.line(x-3, y+height+3, x+width+3, y+height+3);
 		GLOBAL.processing.line(x-3, y-3, x-3, y+height+3);
 		GLOBAL.processing.noFill();
-		
+
 		treeView.draw();
 		listView.draw();
 
-		if ( !list ) {/*
-			for(int i = 0; i < GLOBAL.allCharacterButtons.size(); i++) {	
-				GLOBAL.allCharacterButtons.get(i).draw();
-			}*/
+		if ( !list ) {
 			
-			GLOBAL.processing.image(treemap, x, y + 100, 660, 500);
+			if (treemap!= null) 
+				GLOBAL.processing.image(treemap, x, y + 100, 660, 500);
+			
+			if (legend != null) {
+				GLOBAL.processing.image(legend, x + 390, y + 30);
+				GLOBAL.processing.fill(GLOBAL.colorText);
+				GLOBAL.processing.textFont(GLOBAL.tFont,10);
+				GLOBAL.processing.textAlign(GLOBAL.processing.LEFT);
+				GLOBAL.processing.text(" 0-25    26-50   51-75   76-100   101-120", x + 390, y + 20);
+				GLOBAL.processing.text("- min      5", x + 597, y + 40);
+				GLOBAL.processing.text("+ max 114", x + 597, y + 57);
+			}
 			
 			for (int i=0; i< characterIconsTreemap.size() ; i++) {
 				characterIconsTreemap.get(i).draw();
